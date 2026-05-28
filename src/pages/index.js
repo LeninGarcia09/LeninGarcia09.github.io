@@ -61,6 +61,22 @@ const tracks = [
     link: "/docs/az-700/overview",
     challenges: 0,
   },
+  {
+    emoji: "🟠",
+    title: "Claude Certified Architect – Foundations",
+    type: "Certification — Foundations",
+    desc: "Agentic architecture, multi-agent orchestration, MCP integration, Claude Code config, prompt engineering & context management. 5 domains · 12 weeks.",
+    link: "/docs/claude-architect/overview",
+    challenges: 0,
+  },
+  {
+    emoji: "📦",
+    title: "Tools & Learning Resources",
+    type: "Reference Hub",
+    desc: "Curated tools, articles, courses, and documentation for AI Solution Architects. Add your own favorites.",
+    link: "/docs/resources/overview",
+    challenges: null,
+  },
 ];
 
 export default function Home() {

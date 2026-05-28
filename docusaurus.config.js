@@ -99,6 +99,18 @@ const config = {
             label: 'AZ-700',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'claudeArchitectSidebar',
+            position: 'left',
+            label: '🟠 Claude Architect',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'resourcesSidebar',
+            position: 'left',
+            label: '📦 Resources',
+          },
+          {
             href: 'https://github.com/LeninGarcia09/LeninGarcia09.github.io',
             label: 'GitHub',
             position: 'right',
@@ -118,6 +130,7 @@ const config = {
           {
             title: 'Certifications',
             items: [
+              { label: '🟠 Claude Certified Architect', to: '/docs/claude-architect/overview' },
               { label: 'AI-102: Azure AI Engineer', to: '/docs/ai-102/overview' },
               { label: 'AZ-305: Solutions Architect Expert', to: '/docs/az-305/overview' },
               { label: 'SC-500: Cloud & AI Security', to: '/docs/sc-500/overview' },
@@ -128,11 +141,11 @@ const config = {
           {
             title: 'Resources',
             items: [
+              { label: '🛠️ Tools', to: '/docs/resources/tools' },
+              { label: '📰 Articles', to: '/docs/resources/articles' },
+              { label: '📚 Learning', to: '/docs/resources/learning' },
               { label: 'Microsoft Learn', href: 'https://learn.microsoft.com' },
-              { label: 'Microsoft Foundry Portal', href: 'https://ai.azure.com' },
-              { label: 'PyRIT Red Teaming Toolkit', href: 'https://github.com/Azure/PyRIT' },
-              { label: 'EU AI Act', href: 'https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689' },
-              { label: 'NIST AI RMF', href: 'https://www.nist.gov/artificial-intelligence/ai-risk-management-framework' },
+              { label: 'Anthropic Academy', href: 'https://academy.anthropic.com' },
             ],
           },
           {

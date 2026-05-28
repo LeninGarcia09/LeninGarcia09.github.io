@@ -56,6 +56,17 @@ const sidebars = {
   az700Sidebar: [
     { type: 'doc', id: 'az-700/overview', label: 'Exam Overview' },
   ],
+
+  claudeArchitectSidebar: [
+    { type: 'doc', id: 'claude-architect/overview', label: 'Exam Overview & Study Plan' },
+  ],
+
+  resourcesSidebar: [
+    { type: 'doc', id: 'resources/overview', label: 'Resources Hub' },
+    { type: 'doc', id: 'resources/tools', label: '🛠️ Tools' },
+    { type: 'doc', id: 'resources/articles', label: '📰 Articles' },
+    { type: 'doc', id: 'resources/learning', label: '📚 Learning' },
+  ],
 };
 
 export default sidebars;
