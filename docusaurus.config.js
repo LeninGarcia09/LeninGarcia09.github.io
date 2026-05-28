@@ -52,8 +52,8 @@ const config = {
       navbar: {
         title: 'Responsible AI Architect',
         logo: {
-          alt: 'Responsible AI Architect',
-          src: 'img/logo.svg',
+          alt: 'Lenin Garcia - AI Journey',
+          src: 'img/logo.png',
         },
         items: [
           {
