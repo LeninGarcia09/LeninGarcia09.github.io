@@ -4,14 +4,16 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 
-const tracks = [
+const skillTracks = [
   {
     emoji: "🤖",
     title: "Azure AI Foundry + Hosted Agents",
     type: "Skill Track",
-    desc: "Production-grade labs using real enterprise scenarios: data residency, agent hallucinations, multi-agent security, and scale.",
+    desc: "Production-grade labs: data residency, agent hallucinations, multi-agent security, and enterprise-scale AI orchestration.",
     link: "/docs/azure-ai-foundry/overview",
     challenges: 14,
+    tags: ["Foundry", "Agents", "Enterprise", "Multi-Agent"],
+    accent: "linear-gradient(90deg, #003087, #0078d4)",
   },
   {
     emoji: "⚖️",
@@ -20,150 +22,224 @@ const tracks = [
     desc: "RAI Standard v2, Purview AI Hub, Azure AI Content Safety, PyRIT red teaming, EU AI Act & NIST RMF compliance.",
     link: "/docs/responsible-ai/overview",
     challenges: 10,
+    tags: ["Governance", "Compliance", "EU AI Act", "Red Teaming"],
+    accent: "linear-gradient(90deg, #0f4c0f, #107c10)",
   },
   {
     emoji: "🔬",
     title: "Agentic Reliability",
     type: "Skill Track",
-    desc: "The 5 failure modes that kill AI agents in production: hallucination on error, context rot, math gaps, intelligence degradation, and semantic drift. Build production-grade defenses.",
+    desc: "The 5 failure modes that kill AI agents in production. Build defenses against hallucination, context rot, math gaps, intelligence degradation, and semantic drift.",
     link: "/docs/agentic-reliability/overview",
     challenges: 4,
-  },
-  {
-    emoji: "🧠",
-    title: "AI-102: Azure AI Engineer",
-    type: "Certification — Associate",
-    desc: "Generative AI, agentic solutions, vision, NLP, knowledge mining. Redesigned April 2025.",
-    link: "/docs/ai-102/overview",
-    challenges: 0,
-  },
-  {
-    emoji: "🏗️",
-    title: "AZ-305: Solutions Architect Expert",
-    type: "Certification — Expert",
-    desc: "Architecture design, trade-offs, governance, and enterprise-scale cloud solutions.",
-    link: "/docs/az-305/overview",
-    challenges: 0,
-  },
-  {
-    emoji: "🛡️",
-    title: "SC-500: Cloud & AI Security",
-    type: "Certification — Associate",
-    desc: "Defender for AI, Purview, Zero Trust, identity, and network security controls.",
-    link: "/docs/sc-500/overview",
-    challenges: 0,
-  },
-  {
-    emoji: "🔧",
-    title: "AZ-104: Azure Administrator",
-    type: "Certification — Associate",
-    desc: "Identity, storage, compute, networking, and monitoring — the infra foundation for AI architects.",
-    link: "/docs/az-104/overview",
-    challenges: 0,
-  },
-  {
-    emoji: "🌐",
-    title: "AZ-700: Network Engineer",
-    type: "Certification — Associate",
-    desc: "Private endpoints, VNet, VPN, ExpressRoute — critical for Foundry enterprise isolation.",
-    link: "/docs/az-700/overview",
-    challenges: 0,
-  },
-  {
-    emoji: "🟠",
-    title: "Claude Certified Architect – Foundations",
-    type: "Certification — Foundations",
-    desc: "Agentic architecture, multi-agent orchestration, MCP integration, Claude Code config, prompt engineering & context management. 5 domains · 12 weeks.",
-    link: "/docs/claude-architect/overview",
-    challenges: 0,
-  },
-  {
-    emoji: "📦",
-    title: "Tools & Learning Resources",
-    type: "Reference Hub",
-    desc: "Curated tools, articles, courses, and documentation for AI Solution Architects. Add your own favorites.",
-    link: "/docs/resources/overview",
-    challenges: null,
+    tags: ["Production", "Hallucination", "TRACE", "FINRA"],
+    accent: "linear-gradient(90deg, #3d1a5c, #7b2fbf)",
+    challengePreview: [
+      { num: "01", title: "The Hallucination Audit", link: "/docs/agentic-reliability/01-hallucination-audit/challenge-01", scenario: "Financial analyst agent fabricates board report figures" },
+      { num: "02", title: "Context Rot at Scale", link: "/docs/agentic-reliability/02-context-rot/challenge-02", scenario: "Clinical decision agent degrades after 3 turns" },
+      { num: "03", title: "The Verifiable Orchestrator", link: "/docs/agentic-reliability/03-verifiable-orchestrator/challenge-03", scenario: "Regulator demands audit trail for every AI figure" },
+      { num: "04", title: "Semantic Control", link: "/docs/agentic-reliability/04-semantic-control/challenge-04", scenario: "Agent uses stale 2023 index composition" },
+    ],
   },
 ];
+
+const certTracks = [
+  { emoji: "🧠", code: "AI-102", name: "Azure AI Engineer", level: "Associate", link: "/docs/ai-102/overview" },
+  { emoji: "🏗️", code: "AZ-305", name: "Solutions Architect Expert", level: "Expert", link: "/docs/az-305/overview" },
+  { emoji: "🛡️", code: "SC-500", name: "Cloud & AI Security", level: "Associate", link: "/docs/sc-500/overview" },
+  { emoji: "🔧", code: "AZ-104", name: "Azure Administrator", level: "Associate", link: "/docs/az-104/overview" },
+  { emoji: "🌐", code: "AZ-700", name: "Network Engineer", level: "Associate", link: "/docs/az-700/overview" },
+  { emoji: "🟠", code: "Claude", name: "Claude Certified Architect – Foundations", level: "Foundations", link: "/docs/claude-architect/overview" },
+];
+
+const resources = [
+  { emoji: "🛠️", title: "Tools", desc: "64+ tools for AI architects — observability, evaluation, deterministic computation, red teaming", link: "/docs/resources/tools" },
+  { emoji: "📰", title: "Articles", desc: "Curated reads: TRACE pattern, academic papers, Azure WAF AI, hallucination benchmarks", link: "/docs/resources/articles" },
+  { emoji: "📚", title: "Learning", desc: "MS Learn paths, Anthropic Academy, courses, repos, and YouTube channels", link: "/docs/resources/learning" },
+];
+
+const levelClass = {
+  "Associate": styles.certLevelAssociate,
+  "Expert": styles.certLevelExpert,
+  "Foundations": styles.certLevelFoundations,
+};
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout title="Home" description={siteConfig.tagline}>
-      <header className="hero hero--primary">
+
+      {/* ── Hero ─────────────────────────────────────────────── */}
+      <header className="hero hero--primary" style={{ textAlign: "center", padding: "3.5rem 1rem" }}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div style={{ display: "flex", gap: "1rem", marginTop: "1.5rem", flexWrap: "wrap" }}>
-            <Link className="button button--secondary button--lg" to="/docs/azure-ai-foundry/overview">
-              Start with AI Foundry →
+          <h1 className="hero__title" style={{ fontSize: "2.4rem", marginBottom: "0.75rem" }}>
+            {siteConfig.title}
+          </h1>
+          <p className="hero__subtitle" style={{ fontSize: "1.1rem", maxWidth: "680px", margin: "0 auto", opacity: 0.9 }}>
+            {siteConfig.tagline}
+          </p>
+
+          {/* Stats strip */}
+          <div className={styles.statStrip}>
+            {[
+              { n: "28", l: "Challenges" },
+              { n: "6", l: "Certifications" },
+              { n: "64+", l: "Tools" },
+              { n: "3", l: "Skill Tracks" },
+            ].map((s) => (
+              <div key={s.l} className={styles.stat}>
+                <span className={styles.statNumber}>{s.n}</span>
+                <span className={styles.statLabel}>{s.l}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className={styles.heroCta}>
+            <Link className="button button--secondary button--lg" to="/docs/agentic-reliability/overview">
+              🔬 Start with Agentic Reliability
             </Link>
-            <Link className="button button--outline button--secondary button--lg" to="/docs/responsible-ai/overview">
-              Responsible AI Track →
+            <Link className="button button--outline button--secondary button--lg" to="/docs/azure-ai-foundry/overview">
+              🤖 Azure AI Foundry Track
             </Link>
           </div>
         </div>
       </header>
 
       <main>
-        <div className="container" style={{ padding: "3rem 0" }}>
-          <div style={{ textAlign: "center", marginBottom: "2.5rem" }}>
-            <h2>What makes this different</h2>
-            <p style={{ fontSize: "1.1rem", maxWidth: "700px", margin: "0 auto" }}>
-              Every challenge is built from <strong>real enterprise scenarios</strong> — the exact problems customers bring to AI Solution Architects today.
-              Not lab exercises. Not exam memorization. Actual production architecture decisions.
-            </p>
-          </div>
+        <div className="container" style={{ padding: "0 0 4rem" }}>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "1.5rem", marginBottom: "3rem" }}>
+          {/* ── Jump to a Challenge ─────────────────────────────── */}
+          <div className={styles.sectionHeader}>
+            <span className={styles.sectionLabel}>Quick Access</span>
+            <h2 className={styles.sectionTitle}>Jump to a Challenge</h2>
+          </div>
+          <div className={styles.challengeJumpGrid}>
             {[
-              { icon: "🏥", title: "Healthcare", scenario: "Deploy AI agents to process patient records without data leaving the hospital VNet (HIPAA + EU AI Act)" },
-              { icon: "🏦", title: "Financial Services", scenario: "AI credit decision model flagged for disparate impact — diagnose, mitigate, document for regulators" },
-              { icon: "🏭", title: "Enterprise", scenario: "300 employees using ChatGPT without controls — build a governed AI platform in 30 days" },
-              { icon: "🏛️", title: "Government", scenario: "EU regulator demands your full AI system inventory under Article 51. You have 30 days." },
-            ].map((item, i) => (
-              <div key={i} className="feature-card">
-                <div style={{ fontSize: "2rem" }}>{item.icon}</div>
-                <h3>{item.title}</h3>
-                <p style={{ fontSize: "0.95rem", color: "var(--ifm-color-emphasis-700)" }}>{item.scenario}</p>
-              </div>
-            ))}
-          </div>
-
-          <h2 style={{ marginBottom: "1.5rem" }}>All Learning Tracks</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "1.25rem" }}>
-            {tracks.map((t, i) => (
-              <Link key={i} to={t.link} style={{ textDecoration: "none", color: "inherit" }}>
-                <div className="feature-card" style={{ cursor: "pointer", transition: "border-color 0.2s" }}>
-                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-                    <span style={{ fontSize: "2rem" }}>{t.emoji}</span>
-                    <span style={{ fontSize: "0.75rem", background: "var(--ifm-color-primary)", color: "white", borderRadius: "4px", padding: "2px 8px" }}>
-                      {t.type}
-                    </span>
-                  </div>
-                  <h3 style={{ marginTop: "0.75rem", marginBottom: "0.5rem" }}>{t.title}</h3>
-                  <p style={{ fontSize: "0.9rem", color: "var(--ifm-color-emphasis-700)", marginBottom: "0.75rem" }}>{t.desc}</p>
-                  {t.challenges > 0 && (
-                    <span style={{ fontSize: "0.8rem", color: "var(--ifm-color-primary)" }}>
-                      {t.challenges} challenges →
-                    </span>
-                  )}
+              { num: "01", title: "The Hallucination Audit", scenario: "Financial analyst agent fabricates board report figures — PostToolUse hooks, structured error contracts", track: "Agentic Reliability", link: "/docs/agentic-reliability/01-hallucination-audit/challenge-01" },
+              { num: "02", title: "Context Rot at Scale", scenario: "Clinical decision agent loses accuracy after 3 turns — context budgeting, scratchpad patterns", track: "Agentic Reliability", link: "/docs/agentic-reliability/02-context-rot/challenge-02" },
+              { num: "03", title: "The Verifiable Orchestrator", scenario: "Regulator demands audit trail for every AI-generated figure — TRACE pattern, DuckDB, FINRA", track: "Agentic Reliability", link: "/docs/agentic-reliability/03-verifiable-orchestrator/challenge-03" },
+              { num: "04", title: "Semantic Control & Business Rules", scenario: "Agent uses stale 2023 index composition — MCP concept registry, temporal grounding", track: "Agentic Reliability", link: "/docs/agentic-reliability/04-semantic-control/challenge-04" },
+              { num: "01", title: "Foundry Challenge 01", scenario: "Deploy an AI agent inside a hospital VNet — private endpoints, HIPAA, data residency", track: "Azure AI Foundry", link: "/docs/azure-ai-foundry/overview" },
+              { num: "02", title: "Foundry Challenge 02", scenario: "Multi-agent coordination with security boundaries and Entra Agent ID", track: "Azure AI Foundry", link: "/docs/azure-ai-foundry/overview" },
+              { num: "03", title: "RAI Challenge 01", scenario: "AI credit model flagged for disparate impact — diagnose, mitigate, document for regulators", track: "Responsible AI", link: "/docs/responsible-ai/overview" },
+              { num: "04", title: "RAI Challenge 02", scenario: "EU Article 51 demand: full AI system inventory in 30 days — Purview AI Hub", track: "Responsible AI", link: "/docs/responsible-ai/overview" },
+            ].map((c, i) => (
+              <Link key={i} to={c.link} className={styles.challengeJumpCard}>
+                <div className={styles.challengeJumpNum}>{c.num}</div>
+                <div className={styles.challengeJumpBody}>
+                  <p className={styles.challengeJumpTitle}>{c.title}</p>
+                  <p className={styles.challengeJumpScenario}>{c.scenario}</p>
+                  <p className={styles.challengeJumpTrack}>📂 {c.track}</p>
                 </div>
               </Link>
             ))}
           </div>
-          <div style={{ textAlign: "center", marginTop: "3rem", padding: "2rem", border: "1px solid var(--ifm-color-emphasis-300)", borderRadius: "8px" }}>
-            <h2>Feedback & Contact</h2>
-            <p style={{ fontSize: "1rem", maxWidth: "600px", margin: "0 auto 1rem" }}>
-              Found a bug, have a suggestion, or want to contribute a scenario? Reach out directly or open a GitHub issue.
+
+          <div className={styles.divider} />
+
+          {/* ── Skill Tracks ─────────────────────────────────────── */}
+          <div className={styles.sectionHeader}>
+            <span className={styles.sectionLabel}>Skill Tracks</span>
+            <h2 className={styles.sectionTitle}>Enterprise AI Architecture</h2>
+          </div>
+          <p style={{ marginTop: "-1rem", marginBottom: "2rem", color: "var(--ifm-color-emphasis-700)", maxWidth: "680px" }}>
+            Every track is built from real customer problems — not lab exercises or exam memorization.
+            Actual production architecture decisions with code, break-and-fix exercises, and knowledge checks.
+          </p>
+
+          <div className={styles.trackGrid}>
+            {skillTracks.map((t, i) => (
+              <div key={i} className={styles.trackCard}>
+                {/* Accent bar — NOT a link so inner links work */}
+                <div className={styles.trackCardAccent} style={{ background: t.accent }} />
+                <div className={styles.trackCardBody}>
+                  <div className={styles.trackCardTop}>
+                    <span className={styles.trackEmoji}>{t.emoji}</span>
+                    <span className={styles.trackTypeBadge}>{t.type}</span>
+                  </div>
+                  <h3 className={styles.trackTitle}>{t.title}</h3>
+                  <p className={styles.trackDesc}>{t.desc}</p>
+                  <div className={styles.trackTags}>
+                    {t.tags.map((tag) => <span key={tag} className={styles.tag}>{tag}</span>)}
+                  </div>
+                  <div className={styles.trackCta}>
+                    <span className={styles.challengeCount}>🏆 {t.challenges} challenges</span>
+                    <Link className="button button--sm button--primary" to={t.link}>
+                      Explore Track →
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Challenge preview (Agentic Reliability only) */}
+                {t.challengePreview && (
+                  <div className={styles.challengePreview}>
+                    <p className={styles.challengePreviewLabel}>Challenges in this track</p>
+                    <div className={styles.challengeMiniGrid}>
+                      {t.challengePreview.map((c) => (
+                        <Link key={c.num} to={c.link} className={styles.challengeMiniCard}>
+                          <div className={styles.challengeNum}>{c.num}</div>
+                          <div>
+                            <p className={styles.challengeMiniTitle}>{c.title}</p>
+                            <p className={styles.challengeMiniScenario}>{c.scenario}</p>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          <div className={styles.divider} />
+
+          {/* ── Certification Prep ──────────────────────────────── */}
+          <div className={styles.sectionHeader}>
+            <span className={styles.sectionLabel}>Certifications</span>
+            <h2 className={styles.sectionTitle}>Certification Prep</h2>
+          </div>
+          <div className={styles.certGrid}>
+            {certTracks.map((c, i) => (
+              <Link key={i} to={c.link} className={styles.certCard}>
+                <span className={styles.certEmoji}>{c.emoji}</span>
+                <span className={styles.certCode}>{c.code}</span>
+                <p className={styles.certName}>{c.name}</p>
+                <span className={`${styles.certLevel} ${levelClass[c.level]}`}>{c.level}</span>
+              </Link>
+            ))}
+          </div>
+
+          <div className={styles.divider} />
+
+          {/* ── Resources ───────────────────────────────────────── */}
+          <div className={styles.sectionHeader}>
+            <span className={styles.sectionLabel}>Reference</span>
+            <h2 className={styles.sectionTitle}>Tools & Resources</h2>
+          </div>
+          <div className={styles.resourceGrid}>
+            {resources.map((r, i) => (
+              <Link key={i} to={r.link} className={styles.resourceCard}>
+                <span className={styles.resourceEmoji}>{r.emoji}</span>
+                <p className={styles.resourceTitle}>{r.title}</p>
+                <p className={styles.resourceDesc}>{r.desc}</p>
+              </Link>
+            ))}
+          </div>
+
+          {/* ── Contact ─────────────────────────────────────────── */}
+          <div className={styles.contactSection}>
+            <h2 style={{ margin: "0 0 0.5rem" }}>Feedback & Contact</h2>
+            <p style={{ fontSize: "0.95rem", color: "var(--ifm-color-emphasis-700)", maxWidth: "560px", margin: "0 auto" }}>
+              Found a bug, have a scenario suggestion, or want to discuss a challenge?
+              Reach out or open a GitHub issue.
             </p>
-            <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
+            <div className={styles.contactButtons}>
               <a className="button button--primary" href="mailto:lesalgad@microsoft.com">✉️ lesalgad@microsoft.com</a>
               <a className="button button--secondary" href="mailto:garcia.lenin@outlook.com">✉️ garcia.lenin@outlook.com</a>
               <Link className="button button--outline button--secondary" to="https://github.com/LeninGarcia09/LeninGarcia09.github.io/issues">Open a GitHub Issue</Link>
             </div>
           </div>
+
         </div>
       </main>
     </Layout>
