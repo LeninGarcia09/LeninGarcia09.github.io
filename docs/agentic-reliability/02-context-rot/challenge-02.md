@@ -369,3 +369,26 @@ class BrokenContextManager:
 2. Why does selective context loading require a classification step? What happens if you skip it and always load all scratchpad data?
 3. A subagent is delegated a question but its minimal context is still 38% of the context window. What options do you have?
 4. A care coordinator reports: "The agent gave me the right answer on turn 1, wrong answer on turn 5, right answer again on turn 6." What explains this pattern?
+
+---
+
+## ?? Tools & References
+
+### Key Tools for This Challenge
+
+| Tool | Role in This Challenge | Link |
+|------|----------------------|------|
+| **tiktoken** | The most important tool for this challenge — measure **exact token counts** per turn, per tool result, per context snapshot before each LLM call | [GitHub](https://github.com/openai/tiktoken) |
+| **Azure AI Foundry Tracing** | Capture context window fill percentage as a custom span attribute on every agent turn — surface context degradation in dashboards | [Docs](https://learn.microsoft.com/azure/foundry/observability/how-to/trace-agent-setup) |
+| **Langfuse** | Open-source session tracing — visualize context growth across turns to find the exact turn where degradation began | [langfuse.com](https://langfuse.com) |
+| **Arize Phoenix** | Detect context drift in production — alerts when agent accuracy correlates with rising context fill percentage | [GitHub](https://github.com/Arize-ai/phoenix) |
+| **LangChain ConversationTokenBufferMemory** | Drop-in token-aware memory trimming — automatically prunes conversation history to stay under a configurable token budget | [Docs](https://python.langchain.com/docs/modules/memory/) |
+| **Confident AI** | Multi-turn agent evaluation — measures whether accuracy holds across long sessions, not just single-turn tests | [confident-ai.com](https://www.confident-ai.com) |
+
+### Required Reading
+
+| Resource | Why It Matters |
+|----------|---------------|
+| [Lost in the Middle (arXiv:2601.15300)](https://arxiv.org/abs/2601.15300) | The research paper proving the 40–50% context cliff — **read this before building any long-session agent** |
+| [Same Task, More Tokens (arXiv:2510.05381)](https://arxiv.org/abs/2510.05381) | Proves that adding more context hurts performance even when retrieval is perfect — the context length paradox |
+| [The LLM-as-Analyst Trap, Part 1](https://appliedingenuity.substack.com/p/the-llm-as-analyst-trap-a-technical) | Section on "Multi-Turn Context Accumulation" — the healthcare scenario this challenge is based on |

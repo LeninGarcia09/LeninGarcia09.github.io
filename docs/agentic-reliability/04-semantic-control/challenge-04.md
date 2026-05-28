@@ -441,3 +441,27 @@ def enforce_scope(query, allowed_topics):
 2. A PM asks: "Compare this year's Q1 to last year's Q1." How many concept resolutions does `ConceptAwareIntentParser` need to perform before the LLM sees the query?
 3. Why is temporal grounding injected per-request rather than in the system prompt at agent creation time?
 4. Your scope enforcement hook misclassifies "What was META's PE ratio in 2024?" as "strategic_analysis" and blocks it. It's actually a factual data query. How do you improve classification accuracy without relaxing the security boundary?
+
+---
+
+## ?? Tools & References
+
+### Key Tools for This Challenge
+
+| Tool | Role in This Challenge | Link |
+|------|----------------------|------|
+| **Pydantic v2** | Define the concept registry schema — IndexComposition, TemporalConcept, and MetricDefinition as typed models with validation | [docs.pydantic.dev](https://docs.pydantic.dev) |
+| **Guardrails.ai** | Scope enforcement at the input layer — classify and block out-of-scope queries before they reach the LLM | [guardrailsai.com](https://www.guardrailsai.com) |
+| **Instructor** | Force structured concept resolution output — LLM returns a typed IntentQuery object, not free-form text | [GitHub](https://github.com/jxnl/instructor) |
+| **DeepEval** | Semantic similarity metrics — evaluate whether the agent's concept resolution matches ground-truth registry definitions | [GitHub](https://github.com/confident-ai/deepeval) |
+| **RAGAS** | Context precision evaluator — measures whether temporal concept lookups are returning the right time-scoped data | [GitHub](https://github.com/explodinggradients/ragas) |
+| **Opik (Comet)** | Regression testing for semantic concepts — detect when model updates change how the LLM interprets index names or metric terms | [comet.com/opik](https://www.comet.com/opik) |
+| **Azure AI Foundry Evaluations** | Custom evaluators — build domain-specific graders that check concept resolution accuracy against your registry | [Docs](https://learn.microsoft.com/azure/ai-studio/how-to/evaluate-generative-ai-app) |
+
+### Required Reading
+
+| Resource | Why It Matters |
+|----------|---------------|
+| [The LLM-as-Analyst Trap, Part 1 — Semantic Drift section](https://appliedingenuity.substack.com/p/the-llm-as-analyst-trap-a-technical) | The original failure mode this challenge addresses — LLMs use training data definitions, not current enterprise ones |
+| [Guardrails.ai Documentation](https://www.guardrailsai.com/docs) | Comprehensive guide to building output and input validators for LLM systems |
+| [Instructor: Structured outputs for Claude and OpenAI](https://python.useinstructor.com) | How to force LLMs to return typed Pydantic objects — the foundation of deterministic intent parsing |

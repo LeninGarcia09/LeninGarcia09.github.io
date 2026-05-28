@@ -305,6 +305,31 @@ def validate_output(response, source):
 
 ---
 
+## 📚 Tools & References
+
+### Key Tools for This Challenge
+
+| Tool | Role in This Challenge | Link |
+|------|----------------------|------|
+| **DuckDB** | In-process OLAP database — the deterministic data layer. Same SQL = same result = auditable | [duckdb.org](https://duckdb.org) |
+| **Pydantic v2** | Enforce structured error contracts on every tool response — validate schema before the LLM sees any data | [docs.pydantic.dev](https://docs.pydantic.dev) |
+| **tiktoken** | Count tokens consumed by tool results — essential for production cost monitoring and context budget tracking | [GitHub](https://github.com/openai/tiktoken) |
+| **Azure AI Foundry Evaluations** | Run groundedness evaluator to score whether every LLM claim is supported by retrieved tool data | [Docs](https://learn.microsoft.com/azure/ai-studio/how-to/evaluate-generative-ai-app) |
+| **Azure AI Foundry Tracing** | Capture per-turn spans including tool call inputs/outputs — reconstruct the exact path to every number | [Docs](https://learn.microsoft.com/azure/foundry/observability/how-to/trace-agent-setup) |
+| **RAGAS** | Faithfulness evaluator — measures if LLM claims are entailed by source tool data | [GitHub](https://github.com/explodinggradients/ragas) |
+| **Patronus AI** | Finance-specific hallucination detection with domain-aware scorers for regulated financial language | [patronus.ai](https://www.patronus.ai) |
+| **Braintrust** | Trace-to-eval pipeline — connect every production agent run to an evaluation score for continuous monitoring | [braintrust.dev](https://www.braintrust.dev) |
+
+### Required Reading
+
+| Resource | Why It Matters |
+|----------|---------------|
+| [The LLM-as-Analyst Trap, Part 1](https://appliedingenuity.substack.com/p/the-llm-as-analyst-trap-a-technical) | The original article describing the 5 failure modes this challenge is built from |
+| [AgentHallu Benchmark (arXiv:2601.06818)](https://arxiv.org/abs/2601.06818) | Rigorous benchmarking showing that even frontier models fail in multi-step tool-use hallucination scenarios |
+| [Azure AI Foundry — Groundedness Evaluator](https://learn.microsoft.com/azure/ai-studio/how-to/evaluate-generative-ai-app) | How to run production groundedness scoring on agent outputs at scale |
+
+---
+
 ## Cleanup
 
 ```bash

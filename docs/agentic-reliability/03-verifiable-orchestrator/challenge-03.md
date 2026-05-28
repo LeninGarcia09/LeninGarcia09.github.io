@@ -462,3 +462,27 @@ def parse_intent(question):
 2. A user asks: "Compare Netflix Q1 2024 vs Q1 2025 returns." The intent parser produces `start_date: 2024-01-01, end_date: 2024-03-31` for the first period. How does the system handle the second period, and where is fiscal calendar definition handled?
 3. Your deterministic engine calculates NFLX percent return as `51.5234%`. The report shows `51.52%`. Is this value defensible to a regulator? Why or why not?
 4. A competitor says: "Just use Claude's extended thinking â€” it's more accurate at math than GPT-4." Why does this not solve the verifiability problem?
+
+---
+
+## ?? Tools & References
+
+### Key Tools for This Challenge
+
+| Tool | Role in This Challenge | Link |
+|------|----------------------|------|
+| **DuckDB** | The deterministic computation engine at the heart of TRACE — SQL queries return the same result every time, enabling provable audit trails | [duckdb.org](https://duckdb.org) |
+| **Pydantic v2** | Enforce structured intent parsing — ResponseFormatJsonSchema forces the LLM to produce type-safe, validatable query parameters | [docs.pydantic.dev](https://docs.pydantic.dev) |
+| **Great Expectations** | Data contract validation — assert that every dataset feeding the deterministic engine meets expected schemas before execution | [greatexpectations.io](https://greatexpectations.io) |
+| **MLflow** | Track every deterministic engine run — log inputs, SQL queries, output hashes, and model versions for full lineage | [mlflow.org](https://mlflow.org) |
+| **Prefect** | Workflow orchestration for deterministic pipelines — attach run IDs, retry policies, and structured execution logs to every computation | [prefect.io](https://www.prefect.io) |
+| **Azure AI Foundry Tracing** | Capture the separation of LLM calls from deterministic tool calls as distinct span types — visible in Application Insights dashboards | [Docs](https://learn.microsoft.com/azure/foundry/observability/how-to/trace-agent-setup) |
+| **Patronus AI** | Finance-specific compliance checks — validate that audit trail entries meet FINRA record-keeping format requirements | [patronus.ai](https://www.patronus.ai) |
+
+### Required Reading
+
+| Resource | Why It Matters |
+|----------|---------------|
+| [The Verifiable Orchestrator (Part 2)](https://appliedingenuity.substack.com/p/the-verifiable-orchestrator) | The source article for this challenge — TRACE architecture explained with full code patterns |
+| [Azure AI Foundry Tracing Setup](https://learn.microsoft.com/azure/foundry/observability/how-to/trace-agent-setup) | How to separate deterministic tool spans from LLM reasoning spans in production |
+| [FINRA Rule 4511 — Books and Records](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) | The actual regulation governing broker-dealer recordkeeping — understand what "defensible to a regulator" really means |

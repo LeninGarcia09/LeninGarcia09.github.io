@@ -52,10 +52,10 @@ User → LLM [intent only: "what does the user want?"]
 
 | # | Challenge | Scenario | Key Skill |
 |---|-----------|----------|-----------|
-| [01](./01-hallucination-audit/challenge-01) | The Hallucination Audit | Financial analyst agent gives wrong board report numbers | Error guardrails, PostToolUse hooks, deterministic validation |
-| [02](./02-context-rot/challenge-02) | Context Rot at Scale | Clinical decision agent degrades after 3–4 turns | Context budgeting, summarization, scratchpad patterns |
-| [03](./03-verifiable-orchestrator/challenge-03) | The Verifiable Orchestrator | Regulator demands audit trail for every AI-generated figure | Orchestrator pattern, source tracing, deterministic output |
-| [04](./04-semantic-control/challenge-04) | Semantic Control & Business Rules | Agent uses stale "Magnificent Seven" from 2023 training data | Temporal grounding, externalized business rules, scope hooks |
+| [01](./01-hallucination-audit/challenge-01.md) | The Hallucination Audit | Financial analyst agent gives wrong board report numbers | Error guardrails, PostToolUse hooks, deterministic validation |
+| [02](./02-context-rot/challenge-02.md) | Context Rot at Scale | Clinical decision agent degrades after 3–4 turns | Context budgeting, summarization, scratchpad patterns |
+| [03](./03-verifiable-orchestrator/challenge-03.md) | The Verifiable Orchestrator | Regulator demands audit trail for every AI-generated figure | Orchestrator pattern, source tracing, deterministic output |
+| [04](./04-semantic-control/challenge-04.md) | Semantic Control & Business Rules | Agent uses stale "Magnificent Seven" from 2023 training data | Temporal grounding, externalized business rules, scope hooks |
 
 ---
 
