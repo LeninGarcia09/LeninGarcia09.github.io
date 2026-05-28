@@ -22,6 +22,14 @@ const tracks = [
     challenges: 10,
   },
   {
+    emoji: "🔬",
+    title: "Agentic Reliability",
+    type: "Skill Track",
+    desc: "The 5 failure modes that kill AI agents in production: hallucination on error, context rot, math gaps, intelligence degradation, and semantic drift. Build production-grade defenses.",
+    link: "/docs/agentic-reliability/overview",
+    challenges: 4,
+  },
+  {
     emoji: "🧠",
     title: "AI-102: Azure AI Engineer",
     type: "Certification — Associate",

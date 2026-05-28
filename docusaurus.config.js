@@ -70,6 +70,12 @@ const config = {
           },
           {
             type: 'docSidebar',
+            sidebarId: 'agenticReliabilitySidebar',
+            position: 'left',
+            label: '🔬 Agentic Reliability',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'ai102Sidebar',
             position: 'left',
             label: 'AI-102',
@@ -125,6 +131,7 @@ const config = {
             items: [
               { label: '🤖 Azure AI Foundry + Hosted Agents', to: '/docs/azure-ai-foundry/overview' },
               { label: '⚖️ Responsible AI & Governance', to: '/docs/responsible-ai/overview' },
+              { label: '🔬 Agentic Reliability', to: '/docs/agentic-reliability/overview' },
             ],
           },
           {
