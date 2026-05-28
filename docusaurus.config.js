@@ -136,10 +136,12 @@ const config = {
             ],
           },
           {
-            title: 'About',
+            title: 'Contact & Feedback',
             items: [
+              { label: '✉️ lesalgad@microsoft.com', href: 'mailto:lesalgad@microsoft.com' },
+              { label: '✉️ garcia.lenin@outlook.com', href: 'mailto:garcia.lenin@outlook.com' },
               { label: 'GitHub', href: 'https://github.com/LeninGarcia09' },
-              { label: 'Report an Issue', href: 'https://github.com/LeninGarcia09/LeninGarcia09.github.io/issues' },
+              { label: 'Open an Issue', href: 'https://github.com/LeninGarcia09/LeninGarcia09.github.io/issues' },
             ],
           },
         ],

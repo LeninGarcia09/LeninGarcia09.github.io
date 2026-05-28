@@ -129,6 +129,17 @@ export default function Home() {
               </Link>
             ))}
           </div>
+          <div style={{ textAlign: "center", marginTop: "3rem", padding: "2rem", border: "1px solid var(--ifm-color-emphasis-300)", borderRadius: "8px" }}>
+            <h2>Feedback & Contact</h2>
+            <p style={{ fontSize: "1rem", maxWidth: "600px", margin: "0 auto 1rem" }}>
+              Found a bug, have a suggestion, or want to contribute a scenario? Reach out directly or open a GitHub issue.
+            </p>
+            <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
+              <a className="button button--primary" href="mailto:lesalgad@microsoft.com">✉️ lesalgad@microsoft.com</a>
+              <a className="button button--secondary" href="mailto:garcia.lenin@outlook.com">✉️ garcia.lenin@outlook.com</a>
+              <Link className="button button--outline button--secondary" to="https://github.com/LeninGarcia09/LeninGarcia09.github.io/issues">Open a GitHub Issue</Link>
+            </div>
+          </div>
         </div>
       </main>
     </Layout>
