@@ -35,10 +35,10 @@ const skillTracks = [
     tags: ["Production", "Hallucination", "TRACE", "FINRA"],
     accent: "linear-gradient(90deg, #3d1a5c, #7b2fbf)",
     challengePreview: [
-      { num: "01", title: "The Hallucination Audit", link: "/docs/agentic-reliability/01-hallucination-audit/challenge-01", scenario: "Financial analyst agent fabricates board report figures" },
-      { num: "02", title: "Context Rot at Scale", link: "/docs/agentic-reliability/02-context-rot/challenge-02", scenario: "Clinical decision agent degrades after 3 turns" },
-      { num: "03", title: "The Verifiable Orchestrator", link: "/docs/agentic-reliability/03-verifiable-orchestrator/challenge-03", scenario: "Regulator demands audit trail for every AI figure" },
-      { num: "04", title: "Semantic Control", link: "/docs/agentic-reliability/04-semantic-control/challenge-04", scenario: "Agent uses stale 2023 index composition" },
+      { num: "01", title: "The Hallucination Audit", link: "/docs/agentic-reliability/hallucination-audit/challenge-01", scenario: "Financial analyst agent fabricates board report figures" },
+      { num: "02", title: "Context Rot at Scale", link: "/docs/agentic-reliability/context-rot/challenge-02", scenario: "Clinical decision agent degrades after 3 turns" },
+      { num: "03", title: "The Verifiable Orchestrator", link: "/docs/agentic-reliability/verifiable-orchestrator/challenge-03", scenario: "Regulator demands audit trail for every AI figure" },
+      { num: "04", title: "Semantic Control", link: "/docs/agentic-reliability/semantic-control/challenge-04", scenario: "Agent uses stale 2023 index composition" },
     ],
   },
 ];
@@ -115,10 +115,10 @@ export default function Home() {
           </div>
           <div className={styles.challengeJumpGrid}>
             {[
-              { num: "01", title: "The Hallucination Audit", scenario: "Financial analyst agent fabricates board report figures — PostToolUse hooks, structured error contracts", track: "Agentic Reliability", link: "/docs/agentic-reliability/01-hallucination-audit/challenge-01" },
-              { num: "02", title: "Context Rot at Scale", scenario: "Clinical decision agent loses accuracy after 3 turns — context budgeting, scratchpad patterns", track: "Agentic Reliability", link: "/docs/agentic-reliability/02-context-rot/challenge-02" },
-              { num: "03", title: "The Verifiable Orchestrator", scenario: "Regulator demands audit trail for every AI-generated figure — TRACE pattern, DuckDB, FINRA", track: "Agentic Reliability", link: "/docs/agentic-reliability/03-verifiable-orchestrator/challenge-03" },
-              { num: "04", title: "Semantic Control & Business Rules", scenario: "Agent uses stale 2023 index composition — MCP concept registry, temporal grounding", track: "Agentic Reliability", link: "/docs/agentic-reliability/04-semantic-control/challenge-04" },
+              { num: "01", title: "The Hallucination Audit", scenario: "Financial analyst agent fabricates board report figures — PostToolUse hooks, structured error contracts", track: "Agentic Reliability", link: "/docs/agentic-reliability/hallucination-audit/challenge-01" },
+              { num: "02", title: "Context Rot at Scale", scenario: "Clinical decision agent loses accuracy after 3 turns — context budgeting, scratchpad patterns", track: "Agentic Reliability", link: "/docs/agentic-reliability/context-rot/challenge-02" },
+              { num: "03", title: "The Verifiable Orchestrator", scenario: "Regulator demands audit trail for every AI-generated figure — TRACE pattern, DuckDB, FINRA", track: "Agentic Reliability", link: "/docs/agentic-reliability/verifiable-orchestrator/challenge-03" },
+              { num: "04", title: "Semantic Control & Business Rules", scenario: "Agent uses stale 2023 index composition — MCP concept registry, temporal grounding", track: "Agentic Reliability", link: "/docs/agentic-reliability/semantic-control/challenge-04" },
               { num: "01", title: "Foundry Challenge 01", scenario: "Deploy an AI agent inside a hospital VNet — private endpoints, HIPAA, data residency", track: "Azure AI Foundry", link: "/docs/azure-ai-foundry/overview" },
               { num: "02", title: "Foundry Challenge 02", scenario: "Multi-agent coordination with security boundaries and Entra Agent ID", track: "Azure AI Foundry", link: "/docs/azure-ai-foundry/overview" },
               { num: "03", title: "RAI Challenge 01", scenario: "AI credit model flagged for disparate impact — diagnose, mitigate, document for regulators", track: "Responsible AI", link: "/docs/responsible-ai/overview" },
