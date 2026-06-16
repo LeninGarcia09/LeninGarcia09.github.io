@@ -1,4 +1,4 @@
-﻿// @ts-check
+// @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -64,6 +64,7 @@ const config = {
               { type: 'docSidebar', sidebarId: 'foundrySkillSidebar', label: '🤖 Azure AI Foundry + Hosted Agents' },
               { type: 'docSidebar', sidebarId: 'responsibleAiSidebar', label: '⚖️ Responsible AI & Governance' },
               { type: 'docSidebar', sidebarId: 'agenticReliabilitySidebar', label: '🔬 Agentic Reliability' },
+              { type: 'docSidebar', sidebarId: 'aiArchitectureRaiSidebar', label: '🏗️ AI Architecture + Responsible AI' },
             ],
           },
           {
@@ -107,6 +108,7 @@ const config = {
               { label: '🤖 Azure AI Foundry + Hosted Agents', to: '/docs/azure-ai-foundry/overview' },
               { label: '⚖️ Responsible AI & Governance', to: '/docs/responsible-ai/overview' },
               { label: '🔬 Agentic Reliability', to: '/docs/agentic-reliability/overview' },
+              { label: '🏗️ AI Architecture + Responsible AI', to: '/docs/ai-architecture-rai/overview' },
             ],
           },
           {
@@ -135,7 +137,7 @@ const config = {
             title: 'Contact & Feedback',
             items: [
               { label: '✉️ lesalgad@microsoft.com', href: 'mailto:lesalgad@microsoft.com' },
-              { label: '✉️ garcia.lenin@outlook.com', href: 'mailto:garcia.lenin@outlook.com' },
+              { label: '✉️ garcia.legion@outlook.com', href: 'mailto:garcia.legion@outlook.com' },
               { label: 'GitHub', href: 'https://github.com/LeninGarcia09' },
               { label: 'Open an Issue', href: 'https://github.com/LeninGarcia09/LeninGarcia09.github.io/issues' },
             ],
