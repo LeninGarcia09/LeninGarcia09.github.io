@@ -72,10 +72,10 @@ const config = {
             position: 'left',
             type: 'dropdown',
             items: [
+              { type: 'docSidebar', sidebarId: 'aiArchitectureRaiSidebar', label: '🏗️ AI Architecture + Responsible AI' },
               { type: 'docSidebar', sidebarId: 'foundrySkillSidebar', label: '🤖 Azure AI Foundry + Hosted Agents' },
               { type: 'docSidebar', sidebarId: 'responsibleAiSidebar', label: '⚖️ Responsible AI & Governance' },
               { type: 'docSidebar', sidebarId: 'agenticReliabilitySidebar', label: '🔬 Agentic Reliability' },
-              { type: 'docSidebar', sidebarId: 'aiArchitectureRaiSidebar', label: '🏗️ AI Architecture + Responsible AI' },
             ],
           },
           {
