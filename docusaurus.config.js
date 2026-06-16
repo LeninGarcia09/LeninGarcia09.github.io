@@ -45,14 +45,25 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/favicon.ico',
+
+      announcementBar: {
+        id: 'author-disclosure-2026',
+        content:
+          '🏗️ Built by <strong>Lenin Garcia</strong> — Senior Technical Program Manager @ Microsoft · Personal learning journey in AI Architecture &amp; Responsible AI · <a href="https://github.com/LeninGarcia09" target="_blank" rel="noopener">GitHub</a> · <em>Not affiliated with or endorsed by Microsoft Corporation.</em>',
+        backgroundColor: '#001a4d',
+        textColor: '#e8f4fd',
+        isCloseable: true,
+      },
+
       colorMode: {
         defaultMode: 'dark',
         respectPrefersColorScheme: true,
       },
+
       navbar: {
         title: 'Responsible AI Architect',
         logo: {
-          alt: 'Lenin Garcia - AI Journey',
+          alt: 'Lenin Garcia — AI Architecture & Responsible AI',
           src: 'img/logo.png',
         },
         items: [
@@ -99,6 +110,7 @@ const config = {
           },
         ],
       },
+
       footer: {
         style: 'dark',
         links: [
@@ -134,17 +146,21 @@ const config = {
             ],
           },
           {
-            title: 'Contact & Feedback',
+            title: 'About',
             items: [
+              { label: '👤 Lenin Garcia', href: 'https://github.com/LeninGarcia09' },
               { label: '✉️ lesalgad@microsoft.com', href: 'mailto:lesalgad@microsoft.com' },
-              { label: '✉️ garcia.legion@outlook.com', href: 'mailto:garcia.legion@outlook.com' },
-              { label: 'GitHub', href: 'https://github.com/LeninGarcia09' },
-              { label: 'Open an Issue', href: 'https://github.com/LeninGarcia09/LeninGarcia09.github.io/issues' },
+              { label: '✉️ garcia.lenin@outlook.com', href: 'mailto:garcia.lenin@outlook.com' },
+              { label: '🐛 Open an Issue', href: 'https://github.com/LeninGarcia09/LeninGarcia09.github.io/issues' },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Lenin Garcia. Built with Docusaurus. Not affiliated with Microsoft.`,
+        copyright: `Copyright © ${new Date().getFullYear()} <strong>Lenin Garcia</strong>. Built with Docusaurus.<br/>
+<small>Personal learning portfolio — all content represents my own views and learning journey.<br/>
+Not affiliated with, endorsed by, or representing Microsoft Corporation or any other organization.<br/>
+Product names, logos, and trademarks referenced belong to their respective owners.</small>`,
       },
+
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
