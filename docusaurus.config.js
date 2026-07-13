@@ -119,7 +119,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'learningPlanSidebar',
             position: 'left',
-            label: '🗺️ Plan de Desarrollo',
+            label: '🗺️ Learning Plan v4',
           },
           {
             href: 'https://github.com/LeninGarcia09/LeninGarcia09.github.io',
@@ -158,7 +158,7 @@ const config = {
               { label: '🛠️ Tools', to: '/docs/resources/tools' },
               { label: '📰 Articles', to: '/docs/resources/articles' },
               { label: '📚 Learning', to: '/docs/resources/learning' },
-              { label: '🗺️ Plan de Desarrollo', to: '/docs/learning-plan/overview' },
+              { label: '🗺️ Learning Plan v4', to: '/docs/learning-plan/overview' },
               { label: 'Microsoft Learn', href: 'https://learn.microsoft.com' },
               { label: 'Anthropic Academy', href: 'https://academy.anthropic.com' },
             ],

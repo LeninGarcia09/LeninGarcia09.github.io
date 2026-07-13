@@ -108,6 +108,26 @@ export default function Home() {
       <main>
         <div className="container" style={{ padding: "0 0 4rem" }}>
 
+          {/* ── New Learning Plan v4 ───────────────────────────── */}
+          <div className={styles.sectionHeader} style={{ marginTop: "2rem" }}>
+            <span className={styles.sectionLabel}>New</span>
+            <h2 className={styles.sectionTitle}>Learning Plan v4</h2>
+          </div>
+          <p style={{ marginTop: "-1rem", marginBottom: "1.5rem", color: "var(--ifm-color-emphasis-700)", maxWidth: "720px" }}>
+            Follow the new 26-week execution model with weekly tracking, checkpoint gates, and evidence-first progress.
+          </p>
+          <div className={styles.heroCta} style={{ justifyContent: "flex-start", marginBottom: "2rem" }}>
+            <Link className="button button--primary button--lg" to="/docs/learning-plan/overview">
+              🗺️ Open Learning Plan v4
+            </Link>
+            <Link className="button button--secondary button--lg" to="/docs/learning-plan/weekly-tracker">
+              📊 Weekly Tracker
+            </Link>
+            <Link className="button button--outline button--secondary button--lg" to="/docs/learning-plan/checkpoints">
+              ✅ Checkpoint Gates
+            </Link>
+          </div>
+
           {/* ── Jump to a Challenge ─────────────────────────────── */}
           <div className={styles.sectionHeader}>
             <span className={styles.sectionLabel}>Quick Access</span>
