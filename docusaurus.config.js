@@ -116,10 +116,13 @@ const config = {
             label: '📦 Resources',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'learningPlanSidebar',
+            label: '🗺️ Career Plans',
             position: 'left',
-            label: '🗺️ Learning Plan v4',
+            type: 'dropdown',
+            items: [
+              { type: 'docSidebar', sidebarId: 'learningPlanSidebar', label: '🗺️ Plan de Desarrollo (36 semanas)' },
+              { type: 'docSidebar', sidebarId: 'learningPlanV4Sidebar', label: '🧭 Learning Plan v4 (26 semanas)' },
+            ],
           },
           {
             href: 'https://github.com/LeninGarcia09/LeninGarcia09.github.io',
@@ -158,7 +161,8 @@ const config = {
               { label: '🛠️ Tools', to: '/docs/resources/tools' },
               { label: '📰 Articles', to: '/docs/resources/articles' },
               { label: '📚 Learning', to: '/docs/resources/learning' },
-              { label: '🗺️ Learning Plan v4', to: '/docs/learning-plan/overview' },
+              { label: '🗺️ Plan de Desarrollo (36 semanas)', to: '/docs/learning-plan/overview' },
+              { label: '🧭 Learning Plan v4 (26 semanas)', to: '/docs/learning-plan-v4/overview' },
               { label: 'Microsoft Learn', href: 'https://learn.microsoft.com' },
               { label: 'Anthropic Academy', href: 'https://academy.anthropic.com' },
             ],

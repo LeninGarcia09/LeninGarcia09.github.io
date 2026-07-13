@@ -108,22 +108,25 @@ export default function Home() {
       <main>
         <div className="container" style={{ padding: "0 0 4rem" }}>
 
-          {/* ── New Learning Plan v4 ───────────────────────────── */}
+          {/* ── Career Plans ────────────────────────────────────── */}
           <div className={styles.sectionHeader} style={{ marginTop: "2rem" }}>
-            <span className={styles.sectionLabel}>New</span>
-            <h2 className={styles.sectionTitle}>Learning Plan v4</h2>
+            <span className={styles.sectionLabel}>Career Roadmaps</span>
+            <h2 className={styles.sectionTitle}>Two Development Plans</h2>
           </div>
           <p style={{ marginTop: "-1rem", marginBottom: "1.5rem", color: "var(--ifm-color-emphasis-700)", maxWidth: "720px" }}>
-            Follow the new 26-week execution model with weekly tracking, checkpoint gates, and evidence-first progress.
+            Choose the roadmap that fits your pace: the original 36-week plan or the execution-focused v4 26-week model.
           </p>
           <div className={styles.heroCta} style={{ justifyContent: "flex-start", marginBottom: "2rem" }}>
             <Link className="button button--primary button--lg" to="/docs/learning-plan/overview">
-              🗺️ Open Learning Plan v4
+              🗺️ Open Plan de Desarrollo (36 semanas)
             </Link>
-            <Link className="button button--secondary button--lg" to="/docs/learning-plan/weekly-tracker">
+            <Link className="button button--secondary button--lg" to="/docs/learning-plan-v4/overview">
+              🧭 Open Learning Plan v4 (26 semanas)
+            </Link>
+            <Link className="button button--outline button--secondary button--lg" to="/docs/learning-plan-v4/weekly-tracker">
               📊 Weekly Tracker
             </Link>
-            <Link className="button button--outline button--secondary button--lg" to="/docs/learning-plan/checkpoints">
+            <Link className="button button--outline button--secondary button--lg" to="/docs/learning-plan-v4/checkpoints">
               ✅ Checkpoint Gates
             </Link>
           </div>

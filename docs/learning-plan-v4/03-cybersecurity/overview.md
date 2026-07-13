@@ -3,9 +3,9 @@ sidebar_position: 3
 title: "Fase 3 — Ciberseguridad Moderna"
 ---
 
-# Fase 3: Ciberseguridad Moderna (Semanas 9–12)
+# Fase 3: Ciberseguridad Moderna (Semanas 13–16)
 
-> **Objetivo:** Capitalizar la experiencia previa en informática forense y llevarla al nivel de ciberseguridad moderna con Zero Trust, SOC operations, y preparación para SC-900.
+> **Objetivo:** Capitalizar la experiencia forense para seguridad AI empresarial, con foco en arquitectura (AZ-305) y seguridad cloud+AI (SC-500/SC-900 segun ruta vigente).
 
 ## 🎯 Resultados Esperados
 
@@ -13,7 +13,7 @@ Al completar esta fase:
 - Comprensión de SOC moderno y detección de amenazas
 - Threat modeling aplicado a sistemas AI
 - Identidad y Zero Trust implementados
-- Certificación SC-900 obtenida
+- Preparacion de certificacion alineada a ruta v4 (AZ-305 + SC-500 como prioridad)
 - Experiencia forense reposicionada como ventaja competitiva
 
 ---
@@ -142,42 +142,38 @@ Crear un assessment de Zero Trust que incluya:
 
 ---
 
-## Semana 12: Preparación y Certificación SC-900
+## Semana 12: Certificación de seguridad (ruta v4)
 
 ### Objetivo
-Consolidar conocimientos y obtener la certificación SC-900.
+Consolidar conocimientos y calendarizar la certificacion que mejor soporte los loops activos: SC-500 (prioridad) o SC-900 (fundamentos).
 
 ### Recursos Principales
 
 | Recurso | Idioma | Tipo | Duración |
 |---------|--------|------|----------|
-| [Microsoft Learn: SC-900](https://learn.microsoft.com/es-es/training/paths/describe-concepts-of-security-compliance-identity/) | 🇪🇸 Español | Learning Path | 8 hrs |
-| [SC-900 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/security-compliance-and-identity-fundamentals/) | 🇪🇸 Español | Guía oficial | Referencia |
-| [John Savill SC-900 Study Cram](https://www.youtube.com/watch?v=Bz-8jM3jg-8) | 🇬🇧 Inglés | Video | 2 hrs |
-| [MeasureUp SC-900 Practice](https://www.measureup.com/sc-900-microsoft-security-compliance-and-identity-fundamentals.html) | 🇬🇧 Inglés | Practice exam | 2 hrs |
+| [Cloud and AI Security Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/) | 🇬🇧 Inglés | Cert page | 1 hr |
+| [SC-500 Study Guide](https://aka.ms/SC500-StudyGuide) | 🇬🇧 Inglés | Guía oficial | Referencia |
+| [SC-900 Learning Path](https://learn.microsoft.com/es-es/training/paths/describe-concepts-of-security-compliance-identity/) | 🇪🇸 Español | Ruta fundamentos | 6-8 hrs |
+| [AZ-305 Study Guide](https://aka.ms/AZ305-StudyGuide) | 🇬🇧 Inglés | Arquitectura | Referencia |
 
 ### Plan Diario
 
-| Día | Módulo SC-900 | Tema |
+| Día | Ruta | Tema |
 |-----|---------------|------|
-| Lunes | Módulo 1 | Conceptos de seguridad, compliance e identidad |
-| Martes | Módulo 2 | Capacidades de Microsoft Entra |
-| Miércoles | Módulo 3 | Capacidades de soluciones de seguridad Microsoft |
-| Jueves | Módulo 4 | Capacidades de Microsoft compliance |
-| Viernes | Repaso | Exámenes de práctica |
-| Sábado | **Examen** | SC-900 |
+| Lunes | SC-500 | Manage identity, access, and governance |
+| Martes | SC-500 | Secure storage, databases, and networking |
+| Miércoles | SC-500 | Secure compute |
+| Jueves | SC-500 | Manage and monitor security posture |
+| Viernes | Decision gate | SC-500 vs SC-900 segun readiness y disponibilidad |
+| Sábado | Examen | Ejecutar certificacion seleccionada |
 
-### Certificación: SC-900
+### Certificación: SC-500 (prioridad) / SC-900 (fallback)
 
-- **Costo:** $99 USD
-- **Idioma del examen:** Disponible en español
-- **Formato:** 40-60 preguntas, 45 minutos
+- **Costo:** Precio por region (Pearson Vue)
+- **Idioma del examen:** Validar segun cert seleccionada
+- **Formato:** Proctored; validar duracion segun examen
 - **Puntuación para pasar:** 700/1000
-- **Dominios:**
-  - Security, compliance, and identity concepts (10-15%)
-  - Microsoft Entra capabilities (25-30%)
-  - Microsoft security solutions capabilities (25-30%)
-  - Microsoft compliance solutions capabilities (25-30%)
+- **Regla v4:** priorizar la certificacion que fortalezca la historia tecnica para entrevistas activas, no acumular certs por volumen.
 
 ---
 
@@ -189,14 +185,20 @@ Consolidar conocimientos y obtener la certificación SC-900.
 - [ ] MITRE ATLAS explorado
 - [ ] Zero Trust principles dominados
 - [ ] Zero Trust assessment creado
-- [ ] SC-900 Learning Path completado
-- [ ] **Certificación SC-900 obtenida**
+- [ ] Decision gate de certificacion ejecutado (SC-500 o SC-900)
+- [ ] Certificacion de seguridad seleccionada calendarizada o completada
 - [ ] Portfolio actualizado con proyectos de security
+
+## Operacion v4
+
+- [Checkpoint Gates v4](../checkpoints)
+- [Template de Evidencia v4](../evidence-template)
+- [Weekly Tracker v4](../weekly-tracker)
 
 ## 🔗 Valor para el CV
 
 Después de esta fase:
-> "Profesional de ciberseguridad con certificaciones AZ-900 y SC-900, experiencia en threat modeling para sistemas AI (STRIDE + MITRE ATLAS), implementación de Zero Trust architecture, y operaciones SOC modernas con Microsoft Sentinel."
+> "Profesional de ciberseguridad aplicado a AI, con experiencia en threat modeling para sistemas agenticos (STRIDE + MITRE ATLAS), implementacion de Zero Trust architecture y narrativa fuerte de seguridad cloud+AI para entornos enterprise."
 
 ## ⏭️ Siguiente Fase
 
