@@ -1,93 +1,82 @@
 ---
 sidebar_position: 1
-title: "Plan de Desarrollo Profesional — 36 Semanas"
+title: "Plan de Desarrollo Profesional v4 — 26 Semanas"
 ---
 
-# 🚀 Plan de Desarrollo Profesional: De IT Manager a AI-Enabled Technology Leader
+# Plan de Desarrollo Profesional v4: AI Solution Architect -> AI Success Engineering
 
-> **Programa de 9 meses** para profesionales con experiencia en IT Management, Informática Forense y algo de programación que buscan posicionarse en el mercado laboral de la era AI (2026-2030).
+> **Programa intensivo de 26 semanas (~9 horas/semana)** para posicionarte en roles de arquitectura AI, adopcion empresarial y AI Success Engineering con evidencia tecnica publicable.
 
-## 🎯 Perfil del Candidato
+## Perfil objetivo
 
-- Experiencia en **gestión de IT** y operaciones
-- Background en **informática forense** y ciberseguridad
-- Conocimientos básicos de **programación**
-- Idioma principal: **Español** (recursos en inglés cuando sea crítico)
-- Necesidad de **reposicionamiento laboral** inmediato
+- Experiencia en gestion de IT y operaciones
+- Background en ciberseguridad y analisis forense
+- Base funcional en programacion (Python, APIs, automatizacion)
+- Necesidad de reposicionamiento en roles AI de alto impacto
 
-## 🏆 Objetivo del Programa
+## Tesis profesional
 
-Transformar el perfil profesional de:
+"Llevo soluciones de AI de piloto a produccion, con arquitectura, gobernanza y adopcion medible en negocio."
 
-> *"IT Manager con experiencia técnica"*
+## Principios v4
 
-A:
+- **Proof over study:** cada bloque termina con evidencia publica (repo, benchmark o write-up).
+- **Cert + proyecto acoplados:** ninguna certificacion va sola.
+- **GA-first:** usar rutas y credenciales vigentes del portfolio 2026.
+- **Sequencing disciplinado:** 1 hilo de cert + 1 hilo de proyecto + 1 hilo de networking por semana.
 
-> *"AI-enabled Technology Leader con experiencia en ciberseguridad, cloud, automatización, gobernanza, analítica de datos e implementación de AI, respaldado por certificaciones y un portafolio de proyectos reales."*
-
-## 💼 Roles Objetivo
-
-| Rol | Rango Salarial (USD) |
-|-----|---------------------|
-| AI Program Manager | $130k – $180k |
-| AI Governance Specialist | $120k – $160k |
-| Responsible AI Analyst | $110k – $150k |
-| Cybersecurity Program Manager | $130k – $180k |
-| Security Operations Manager | $120k – $160k |
-| Technical Program Manager | $130k – $170k |
-| Cloud Operations Manager | $120k – $155k |
-| AI Risk & Compliance Consultant | $130k – $180k+ |
-| IT Transformation Manager | $120k – $160k |
-| Security Architect (Governance) | $150k – $200k+ |
-
-## 📚 Filosofía de Aprendizaje
-
-Basada en los modelos de desarrollo profesional de **Microsoft**, **Google**, **AWS**, **IBM**, **ISC2** e **ISACA**:
-
-| Componente | Porcentaje | Descripción |
-|-----------|-----------|-------------|
-| 🔨 Proyectos Prácticos | 70% | Construir, automatizar, documentar |
-| 📖 Entrenamiento Guiado | 20% | Cursos, certificaciones, labs |
-| 📰 Lectura y Research | 10% | Artículos, frameworks, estándares |
-
-## 🗓️ Estructura del Programa
+## Estructura del plan
 
 | Fase | Semanas | Enfoque |
 |------|---------|---------|
-| [Fase 1](./foundation/overview) | 1–4 | Fundamentos de Tecnología Moderna |
-| [Fase 2](./data-automation/overview) | 5–8 | Datos y Automatización |
-| [Fase 3](./cybersecurity/overview) | 9–12 | Ciberseguridad Moderna |
-| [Fase 4](./ai-business/overview) | 13–20 | AI para Negocios e IT |
-| [Fase 5](./cloud-ai/overview) | 21–28 | Cloud + AI Integración |
-| [Fase 6](./career-launch/overview) | 29–36 | Lanzamiento de Carrera |
+| [Fase 1](./foundation/overview) | 1-4 | Fundamentos + AI-103 + posicionamiento |
+| [Fase 2](./data-automation/overview) | 5-12 | Portafolio tecnico (RAG, agentes, evaluacion) |
+| [Fase 3](./cybersecurity/overview) | 13-16 | Arquitectura + seguridad empresarial (AZ-305 + SC-500) |
+| [Fase 4](./ai-business/overview) | 17-21 | Value realization + contenido publico + networking |
+| [Fase 5](./cloud-ai/overview) | 22-26 | Entrevistas, role-play ejecutivo y pipeline de aplicaciones |
+| [Fase 6](./career-launch/overview) | Paralelo | Operacion comercial de carrera (referidos, outreach, seguimiento) |
 
-## 🎓 Certificaciones (Orden de Prioridad)
+## Certificaciones (vigentes 2026)
 
-1. **AZ-900** — Azure Fundamentals
-2. **SC-900** — Security, Compliance, and Identity Fundamentals
-3. **AI-900** — Azure AI Fundamentals
-4. **AI-102** — Azure AI Engineer Associate
-5. **CC (ISC2)** — Certified in Cybersecurity
-6. **CompTIA Security+**
+1. **AI-103** - Azure AI Apps and Agents Developer Associate (prioridad critica)
+2. **AZ-305** - Designing Microsoft Azure Infrastructure Solutions
+3. **SC-500** - Cloud and AI Security Engineer Associate (**verificar estado beta/GA antes de calendarizar exam**)
+4. **GitHub Copilot** (quick win)
+5. **AI-200** - Azure AI Cloud Developer Associate (opcional, segun necesidad en loops activos)
 
-## 📊 Resultados del Programa
+## Entregables minimos del plan
 
-Al completar las 36 semanas, el candidato tendrá:
+- 3 repos tecnicos fuertes (RAG evaluado, comparativa tri-plataforma de agentes, benchmark fine-tuning vs RAG)
+- 3-5 piezas publicas (arquitectura, evaluacion, seguridad, valor de negocio)
+- 1 one-pager de despliegue seguro enterprise AI
+- 1 framework reusable de value realization con KPI tree
 
-- ✅ 3-4 certificaciones reconocidas globalmente
-- ✅ Portafolio en GitHub con 5+ proyectos reales
-- ✅ Sitio web profesional con portfolio
-- ✅ LinkedIn optimizado con keywords de la industria
-- ✅ Experiencia demostrable en AI, Cloud, Security y Automation
-- ✅ Red profesional activa en la industria
+## Checkpoints de control
 
-## 🌐 Nota sobre Idioma
+| Fecha objetivo | Gate |
+|----------------|------|
+| Semana 4 | AI-103 completado + CV cuantificado + outreach iniciado |
+| Semana 12 | 3 proyectos publicos con evaluacion reproducible |
+| Semana 16 | AZ-305 + avance fuerte en seguridad AI empresarial |
+| Semana 21 | 3 publicaciones tecnicas + pipeline de networking activo |
+| Semana 26 | Loops de entrevista en curso y paquete de historias listo |
 
-Este plan está diseñado para hispanohablantes. Los recursos se priorizan en español cuando están disponibles, pero **no se limita** el acceso a recursos en inglés cuando son:
-- La única fuente oficial (Microsoft Learn, NIST, ISO)
-- Significativamente superiores en calidad
-- Requeridos para certificaciones (los exámenes están disponibles en español)
+Recursos operativos:
+- [Checkpoint Gates v4](./checkpoints)
+- [Template de Evidencia v4](./evidence-template)
+- [Weekly Tracker v4](./weekly-tracker)
+
+## Regla de actualizacion continua
+
+Antes de cada sprint de certificacion o arquitectura:
+- Verifica en Microsoft Learn estado de examen, skills measured y disponibilidad de practice assessment.
+- Si hay cambios de portfolio, actualiza el plan primero y estudia despues.
+
+## Nota de implementacion
+
+Este overview y las fases del learning plan ya estan alineados a la ruta v4,
+con checkpoints operativos y plantilla de evidencia para ejecucion semanal.
 
 ---
 
-*Plan validado contra frameworks de desarrollo profesional de Microsoft, Google, AWS, IBM, ISC2, ISACA y NIST.*
+Plan versionado para mantener trazabilidad de cambios de mercado, portfolio de certificaciones y demanda real de entrevistas.

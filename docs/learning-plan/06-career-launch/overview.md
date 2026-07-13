@@ -3,7 +3,7 @@ sidebar_position: 6
 title: "Fase 6 — Lanzamiento de Carrera"
 ---
 
-# Fase 6: Lanzamiento de Carrera (Semanas 29–36)
+# Fase 6: Lanzamiento de Carrera (Paralelo durante Semanas 1-26)
 
 > **Objetivo:** Convertir todo el conocimiento y proyectos en oportunidades laborales reales. Optimizar presencia profesional, preparar entrevistas, y ejecutar búsqueda de empleo agresiva.
 
@@ -80,7 +80,7 @@ AI Program Manager | Cloud Security | AI Governance (NIST AI RMF) | Azure Certif
 1. Artificial Intelligence
 2. AI Governance
 3. Prompt Engineering
-4. Azure (AZ-900, SC-900, AI-900)
+4. Azure (AI-103, AZ-305, SC-500/SC-900)
 5. Python
 6. Power BI
 7. Cybersecurity
@@ -131,14 +131,14 @@ AI Program Manager | Cloud Security | AI Governance
 PROFESSIONAL SUMMARY (4-5 líneas)
 Technology leader transitioning from IT Management and 
 Digital Forensics into AI Program Management and Governance.
-Certified in Azure (AZ-900, SC-900, AI-900). Built enterprise 
+Certified in Azure (AI-103, AZ-305, SC-900). Built enterprise 
 AI solutions including RAG systems, security assistants, and 
 governance frameworks aligned to NIST AI RMF and ISO 42001.
 
 CERTIFICATIONS
-- Microsoft Certified: Azure Fundamentals (AZ-900)
-- Microsoft Certified: Security Fundamentals (SC-900)
-- Microsoft Certified: Azure AI Fundamentals (AI-900)
+- Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103)
+- Microsoft Certified: Designing Microsoft Azure Infrastructure Solutions (AZ-305)
+- Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)
 - [En progreso si aplica]
 
 TECHNICAL SKILLS
@@ -322,7 +322,7 @@ transitioning hacia AI Program Management. Vi tu perfil
 y me encantaría aprender más sobre tu rol en [empresa].
 
 Actualmente tengo certificaciones Azure (AZ-900, SC-900, 
-AI-900), un portfolio de proyectos AI incluyendo sistemas 
+AI-103), un portfolio de proyectos AI incluyendo sistemas 
 RAG y asistentes de seguridad con AI, y experiencia previa 
 en gestión de IT y forensics.
 
@@ -340,7 +340,7 @@ Dear Hiring Manager,
 I'm a technology leader combining 
 [X years] of IT Management and Digital Forensics experience 
 with modern AI, cloud, and security skills. With certifications 
-in Azure (AZ-900, SC-900, AI-900) and a portfolio of enterprise 
+in Azure (AI-103, AZ-305, SC-900) and a portfolio of enterprise 
 AI projects — including RAG systems, AI security assistants, and 
 governance frameworks aligned to NIST AI RMF — I bring the unique 
 intersection of operational experience and emerging technology 
@@ -364,6 +364,12 @@ expertise that [Company] needs for the [Role] position.
 - [ ] 4+ informational interviews
 - [ ] Active interview pipeline
 
+## Operacion v4
+
+- [Checkpoint Gates v4](../checkpoints)
+- [Template de Evidencia v4](../evidence-template)
+- [Weekly Tracker v4](../weekly-tracker)
+
 ---
 
 ## 🏆 Resultado Final del Programa
@@ -371,14 +377,15 @@ expertise that [Company] needs for the [Role] position.
 ### Antes (Mes 0):
 > "IT Manager con experiencia en forensics buscando empleo"
 
-### Después (Mes 9):
-> "AI-enabled Technology Leader con certificaciones Azure (AZ-900, SC-900, AI-900), portfolio de 12+ proyectos incluyendo RAG systems, AI security assistants, y governance frameworks. Expertise en NIST AI RMF, Zero Trust, prompt engineering, y cloud security. Background único en forensics y IT operations que fortalece capacidades de AI governance y risk management."
+### Después (Mes 6):
+> "AI-enabled Technology Leader con certificaciones Azure vigentes (AI-103, AZ-305, SC-900/SC-500), portfolio de 12+ proyectos incluyendo RAG systems, AI security assistants, y governance frameworks. Expertise en NIST AI RMF, Zero Trust, prompt engineering, y cloud security. Background único en forensics y IT operations que fortalece capacidades de AI governance y risk management."
 
 ### Certificaciones Obtenidas:
-- ✅ AZ-900 (Azure Fundamentals)
+- ✅ AI-103 (Azure AI Apps and Agents Developer Associate)
+- ✅ AZ-305 (Designing Microsoft Azure Infrastructure Solutions)
 - ✅ SC-900 (Security Fundamentals)
-- ✅ AI-900 (AI Fundamentals)
-- 🎯 AI-102 (AI Engineer) — opcional
+- 🎯 SC-500 (Cloud and AI Security Engineer) — validar estado beta/GA al calendarizar
+- 🎯 AI-200 (Azure AI Cloud Developer) — opcional segun loops
 - 🎯 ISC2 CC — siguiente meta
 
 ### Skills Demostradas:

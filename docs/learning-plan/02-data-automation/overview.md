@@ -3,9 +3,9 @@ sidebar_position: 2
 title: "Fase 2 — Datos y Automatización"
 ---
 
-# Fase 2: Datos y Automatización (Semanas 5–8)
+# Fase 2: Datos y Automatización (Semanas 5–12)
 
-> **Objetivo:** Desarrollar habilidades de análisis de datos y automatización que demuestren valor empresarial inmediato. Estas son las skills más demandadas en roles de AI Program Management.
+> **Objetivo:** Construir el bloque de ejecucion tecnica para proyectos y evidencia de negocio. Esta fase se extiende en v4 para conectar datos, automatizacion y medicion de valor.
 
 ## 🎯 Resultados Esperados
 
@@ -190,7 +190,13 @@ Automatización que:
 - [ ] Power BI: Dashboard ejecutivo publicado
 - [ ] Power Automate: Flujo de tickets operativo
 - [ ] 4 proyectos nuevos en GitHub portfolio
-- [ ] AZ-900 completado (si no se hizo en semana 4)
+- [ ] Evidencia cuantificada de impacto (antes/despues) agregada al CV y LinkedIn
+
+## Operacion v4
+
+- [Checkpoint Gates v4](../checkpoints)
+- [Template de Evidencia v4](../evidence-template)
+- [Weekly Tracker v4](../weekly-tracker)
 
 ## 🔗 Valor para el CV
 

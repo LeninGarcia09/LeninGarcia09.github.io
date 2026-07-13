@@ -11,7 +11,7 @@ const skillTracks = [
     type: "Skill Track",
     desc: "Production-grade labs: data residency, agent hallucinations, multi-agent security, and enterprise-scale AI orchestration.",
     link: "/docs/azure-ai-foundry/overview",
-    challenges: 14,
+    challenges: 5,
     tags: ["Foundry", "Agents", "Enterprise", "Multi-Agent"],
     accent: "linear-gradient(90deg, #003087, #0078d4)",
   },
@@ -21,7 +21,7 @@ const skillTracks = [
     type: "Skill Track",
     desc: "RAI Standard v2, Purview AI Hub, Azure AI Content Safety, PyRIT red teaming, EU AI Act & NIST RMF compliance.",
     link: "/docs/responsible-ai/overview",
-    challenges: 10,
+    challenges: 3,
     tags: ["Governance", "Compliance", "EU AI Act", "Red Teaming"],
     accent: "linear-gradient(90deg, #0f4c0f, #107c10)",
   },
@@ -82,7 +82,7 @@ export default function Home() {
           {/* Stats strip */}
           <div className={styles.statStrip}>
             {[
-              { n: "28", l: "Challenges" },
+              { n: "12", l: "Challenges" },
               { n: "6", l: "Certifications" },
               { n: "64+", l: "Tools" },
               { n: "3", l: "Skill Tracks" },
@@ -119,10 +119,10 @@ export default function Home() {
               { num: "02", title: "Context Rot at Scale", scenario: "Clinical decision agent loses accuracy after 3 turns — context budgeting, scratchpad patterns", track: "Agentic Reliability", link: "/docs/agentic-reliability/context-rot/challenge-02" },
               { num: "03", title: "The Verifiable Orchestrator", scenario: "Regulator demands audit trail for every AI-generated figure — TRACE pattern, DuckDB, FINRA", track: "Agentic Reliability", link: "/docs/agentic-reliability/verifiable-orchestrator/challenge-03" },
               { num: "04", title: "Semantic Control & Business Rules", scenario: "Agent uses stale 2023 index composition — MCP concept registry, temporal grounding", track: "Agentic Reliability", link: "/docs/agentic-reliability/semantic-control/challenge-04" },
-              { num: "01", title: "Foundry Challenge 01", scenario: "Deploy an AI agent inside a hospital VNet — private endpoints, HIPAA, data residency", track: "Azure AI Foundry", link: "/docs/azure-ai-foundry/overview" },
-              { num: "02", title: "Foundry Challenge 02", scenario: "Multi-agent coordination with security boundaries and Entra Agent ID", track: "Azure AI Foundry", link: "/docs/azure-ai-foundry/overview" },
-              { num: "03", title: "RAI Challenge 01", scenario: "AI credit model flagged for disparate impact — diagnose, mitigate, document for regulators", track: "Responsible AI", link: "/docs/responsible-ai/overview" },
-              { num: "04", title: "RAI Challenge 02", scenario: "EU Article 51 demand: full AI system inventory in 30 days — Purview AI Hub", track: "Responsible AI", link: "/docs/responsible-ai/overview" },
+              { num: "01", title: "Patient Data Never Leaves the VNet", scenario: "Deploy an AI agent inside a hospital VNet — private endpoints, HIPAA, data residency", track: "Azure AI Foundry", link: "/docs/azure-ai-foundry/platform/challenge-01" },
+              { num: "02", title: "Agent Hallucinating 20% of the Time", scenario: "Production agent hallucination rate spiking — guardrails, evaluation, monitoring", track: "Azure AI Foundry", link: "/docs/azure-ai-foundry/platform/challenge-02" },
+              { num: "01", title: "EU AI Inventory in 30 Days", scenario: "EU regulator demands full AI system inventory — Purview AI Hub, classification", track: "Responsible AI", link: "/docs/responsible-ai/rai-standard/challenge-01" },
+              { num: "02", title: "Shadow AI Detection", scenario: "Discover unsanctioned AI usage across the org — Purview AI Hub governance", track: "Responsible AI", link: "/docs/responsible-ai/purview-ai-hub/challenge-02" },
             ].map((c, i) => (
               <Link key={i} to={c.link} className={styles.challengeJumpCard}>
                 <div className={styles.challengeJumpNum}>{c.num}</div>

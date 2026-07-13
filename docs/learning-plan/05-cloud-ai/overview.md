@@ -3,9 +3,9 @@ sidebar_position: 5
 title: "Fase 5 — Cloud + AI Integración"
 ---
 
-# Fase 5: Cloud + AI Integración (Semanas 21–28)
+# Fase 5: Cloud + AI Integración (Semanas 22-26)
 
-> **Objetivo:** Integrar conocimientos de cloud y AI en soluciones empresariales completas. Construir sistemas RAG, aprender evaluación de modelos, y obtener certificación AI-900 (con opción de AI-102).
+> **Objetivo:** Integrar conocimientos de cloud y AI en soluciones empresariales completas. Construir sistemas RAG, fortalecer evaluacion/observabilidad, y cerrar con ruta de certificacion vigente (AI-103 como referencia principal, AI-200 opcional).
 
 ## 🎯 Resultados Esperados
 
@@ -13,7 +13,7 @@ Al completar esta fase:
 - Azure AI Foundry dominado (modelos, evaluaciones, agentes)
 - RAG (Retrieval-Augmented Generation) implementado
 - Evaluación y monitoreo de AI en producción
-- Certificación AI-900 obtenida
+- Ruta de certificacion AI vigente alineada a objetivos de entrevista
 - Sistema RAG funcional en portfolio
 
 ---
@@ -197,61 +197,60 @@ Crear un framework de testing que incluya:
 
 ---
 
-## Semanas 27-28: Certificación AI-900 (+ Opcional AI-102)
+## Semanas 27-28: Certificaciones AI vigentes (AI-103 / AI-200 opcional)
 
 ### Objetivo
-Consolidar conocimiento y obtener certificación AI-900.
+Consolidar conocimiento para cerrar brechas de certificacion segun rol objetivo, usando el portfolio actual de examenes.
 
-### Recursos para AI-900
+### Recursos para AI-103
 
 | Recurso | Idioma | Tipo | Duración |
 |---------|--------|------|----------|
-| [Microsoft Learn: AI-900](https://learn.microsoft.com/es-es/training/paths/get-started-with-artificial-intelligence-on-azure/) | 🇪🇸 Español | Learning Path | 8 hrs |
-| [AI-900 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/azure-ai-fundamentals/) | 🇪🇸 Español | Guía oficial | Referencia |
-| [John Savill AI-900 Cram](https://www.youtube.com/watch?v=E9aarWMLJw0) | 🇬🇧 Inglés | Video | 2 hrs |
-| [MeasureUp Practice Test](https://www.measureup.com/ai-900.html) | 🇬🇧 Inglés | Practice | 2 hrs |
+| [AI-103 Certification Page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/) | 🇬🇧 Inglés | Referencia oficial | 1 hr |
+| [AI-103 Study Guide](https://aka.ms/AI103-StudyGuide) | 🇬🇧 Inglés | Guía oficial | Referencia |
+| [Agent Framework: Your First Agent](https://learn.microsoft.com/en-us/agent-framework/get-started/your-first-agent) | 🇬🇧 Inglés | Lab guiado | 1-2 hrs |
+| [Azure AI Foundry Learning Paths](https://learn.microsoft.com/en-us/training/browse/?products=azure&terms=foundry) | 🇬🇧 Inglés | Learning paths | 4-6 hrs |
 
-### Plan Semana 27
+### Plan Semana 27 (AI-103)
 
 | Día | Módulo | Tema |
 |-----|--------|------|
-| Lunes | Módulo 1 | AI workloads y consideraciones |
-| Martes | Módulo 2 | Machine Learning fundamentals |
-| Miércoles | Módulo 3 | Computer Vision |
-| Jueves | Módulo 4 | NLP y Document Intelligence |
-| Viernes | Módulo 5 | Generative AI |
+| Lunes | Dominio 1 | Plan and manage Azure AI solutions |
+| Martes | Dominio 2 | Implement generative AI and agentic solutions |
+| Miércoles | Dominio 3 | Implement computer vision solutions |
+| Jueves | Dominio 4 | Implement text analysis solutions |
+| Viernes | Dominio 5 | Implement information extraction solutions |
 
-### Plan Semana 28
+### Plan Semana 28 (cierre y opcion AI-200)
 
 | Día | Actividad |
 |-----|-----------|
-| Lunes | Repaso general + gaps |
-| Martes | Practice exams |
+| Lunes | Repaso general + matriz de gaps |
+| Martes | Simulacion por objetivos (sin depender de practice assessment oficial) |
 | Miércoles | Repaso áreas débiles |
-| Jueves | Practice exam final |
-| Viernes | **Examen AI-900** |
-| Sábado | Si pasó: planear AI-102 |
+| Jueves | Sandbox + rehearsal final |
+| Viernes | **Examen AI-103** |
+| Sábado | Decidir AI-200 segun loops activos |
 
-### Certificación: AI-900
+### Certificación: AI-103
 
-- **Costo:** $99 USD
-- **Idioma:** Disponible en español
-- **Formato:** 40-60 preguntas, 45 minutos
+- **Costo:** Precio por region (Pearson Vue)
+- **Idioma:** Ingles (validar disponibilidad vigente)
+- **Formato:** Evaluacion proctored, 120 minutos
 - **Puntuación para pasar:** 700/1000
-- **Dominios:**
-  - AI workloads and considerations (15-20%)
-  - Machine Learning on Azure (20-25%)
-  - Computer Vision workloads (15-20%)
-  - NLP workloads (15-20%)
-  - Generative AI workloads (15-20%)
+- **Dominios evaluados:**
+  - Plan and manage an Azure AI solution
+  - Implement generative AI and agentic solutions
+  - Implement computer vision solutions
+  - Implement text analysis solutions
+  - Implement information extraction solutions
 
-### Opcional: AI-102 (si hay tiempo y motivación)
+### Opcional: AI-200 (si hay necesidad real de señal adicional)
 
-Para candidatos avanzados, AI-102 agrega valor significativo:
-- Nivel Associate (más peso que Fundamentals)
-- Incluye agentic AI y generative AI
-- $165 USD, disponible en español
-- Requiere 4-6 semanas adicionales de preparación
+Para candidatos avanzados, AI-200 agrega valor en loops orientados a desarrollo cloud nativo:
+- Enfasis en soluciones containerizadas, servicios de datos y observabilidad
+- Complementa AI-103 con foco de implementacion back-end
+- No reemplaza experiencia demostrable: priorizar portfolio y articulacion tecnica
 
 ---
 
@@ -263,14 +262,21 @@ Para candidatos avanzados, AI-102 agrega valor significativo:
 - [ ] AI Safety: OWASP LLM Top 10 entendido
 - [ ] Red teaming: ejercicio completado
 - [ ] AI Safety Testing Framework: creado
-- [ ] AI-900 Learning Path: completado
-- [ ] **Certificación AI-900: obtenida**
+- [ ] AI-103 Study Guide: completada por dominio
+- [ ] **Certificación AI-103: completada**
+- [ ] AI-200 decision gate ejecutado (si/no con razon)
 - [ ] Portfolio: 10+ proyectos en GitHub
+
+## Operacion v4
+
+- [Checkpoint Gates v4](../checkpoints)
+- [Template de Evidencia v4](../evidence-template)
+- [Weekly Tracker v4](../weekly-tracker)
 
 ## 🔗 Valor para el CV
 
 Después de esta fase:
-> "Implementé sistemas RAG empresariales con Azure AI Foundry, incluyendo document ingestion, vector search y generation con source citations. Diseñé frameworks de AI safety testing que evalúan hallucinations, prompt injection y data leakage. Certificaciones: AZ-900, SC-900, AI-900."
+> "Implemente sistemas RAG empresariales con Azure AI Foundry, incluyendo ingest, retrieval y evaluacion reproducible. Disene frameworks de AI safety testing para prompt injection y data leakage, y complete la ruta de certificacion vigente para soluciones AI y agentes en Azure."
 
 ## ⏭️ Siguiente Fase
 

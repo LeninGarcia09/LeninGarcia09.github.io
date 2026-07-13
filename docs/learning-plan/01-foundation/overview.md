@@ -5,7 +5,7 @@ title: "Fase 1 — Fundamentos de Tecnología Moderna"
 
 # Fase 1: Fundamentos de Tecnología Moderna (Semanas 1–4)
 
-> **Objetivo:** Construir la base tecnológica moderna que todo profesional AI necesita. Establecer presencia digital profesional.
+> **Objetivo:** Construir base tecnica y de posicionamiento para entrar al plan v4: Python aplicado, presencia profesional y readiness para AI-103.
 
 ## 🎯 Resultados Esperados
 
@@ -13,7 +13,7 @@ Al completar esta fase:
 - Comprensión sólida de qué es AI y cómo transforma industrias
 - Python básico funcional para automatización
 - Git/GitHub operativo con repositorio propio
-- Certificación AZ-900 obtenida o en progreso
+- Readiness para AI-103 definida por dominio (con matriz de gaps)
 - LinkedIn y GitHub configurados profesionalmente
 
 ---
@@ -160,38 +160,38 @@ portfolio/
 
 ---
 
-## Semana 4: Cloud Fundamentals (Azure)
+## Semana 4: Azure AI Foundations para AI-103
 
 ### Objetivo
-Entender cloud computing y prepararse para la certificación AZ-900.
+Mapear fundamentos de Azure AI y agentes a los dominios de AI-103 para cerrar brechas temprano.
 
 ### Recursos Principales
 
 | Recurso | Idioma | Tipo | Duración |
 |---------|--------|------|----------|
-| [Microsoft Learn: AZ-900](https://learn.microsoft.com/es-es/training/paths/az-900-describe-cloud-concepts/) | 🇪🇸 Español | Learning Path | 8-10 hrs |
-| [Azure Fundamentals (YouTube)](https://www.youtube.com/playlist?list=PLGjZwEtPN7j-Q59JYso3L4_yoCjj2syrM) | 🇬🇧 Inglés | Video series | 6 hrs |
-| [AZ-900 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/azure-fundamentals/) | 🇪🇸 Español | Guía oficial | Referencia |
-| [Cloud Computing Concepts](https://www.coursera.org/learn/cloud-computing) | 🇬🇧 Inglés | Course | 4 hrs |
+| [AI-103 Certification Page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/) | 🇬🇧 Inglés | Referencia oficial | 1 hr |
+| [AI-103 Study Guide](https://aka.ms/AI103-StudyGuide) | 🇬🇧 Inglés | Guía oficial | Referencia |
+| [Step 1: Your First Agent](https://learn.microsoft.com/en-us/agent-framework/get-started/your-first-agent) | 🇬🇧 Inglés | Lab guiado | 1-2 hrs |
+| [Azure AI Foundry Training](https://learn.microsoft.com/en-us/training/browse/?products=azure&terms=foundry) | 🇬🇧 Inglés | Learning paths | 4-6 hrs |
 
 ### Plan Diario
 
-| Día | Módulo AZ-900 | Tema |
+| Día | Dominio AI-103 | Tema |
 |-----|---------------|------|
-| Lunes | Módulo 1 | Conceptos de cloud computing |
-| Martes | Módulo 2 | Beneficios de usar cloud |
-| Miércoles | Módulo 3 | Tipos de servicios cloud |
-| Jueves | Módulo 4 | Azure architecture y servicios |
-| Viernes | Módulo 5 | Identidad, gobierno, compliance |
-| Sábado | Práctica | Examen de práctica + revisión |
+| Lunes | Dominio 1 | Plan and manage Azure AI solutions |
+| Martes | Dominio 2 | Implement generative AI and agentic solutions |
+| Miércoles | Dominio 3 | Implement computer vision solutions |
+| Jueves | Dominio 4 | Implement text analysis solutions |
+| Viernes | Dominio 5 | Implement information extraction solutions |
+| Sábado | Práctica | Matriz de gaps + rehearsal por objetivos |
 
-### Certificación: AZ-900
+### Hito de certificación: AI-103 readiness
 
-- **Costo:** $99 USD (descuentos disponibles)
-- **Idioma del examen:** Disponible en español
-- **Formato:** 40-60 preguntas, 45 minutos
+- **Costo:** Precio por region (Pearson Vue)
+- **Idioma del examen:** Ingles (validar disponibilidad vigente)
+- **Formato:** Evaluacion proctored, 120 minutos
 - **Puntuación para pasar:** 700/1000
-- **Preparación recomendada:** 2 semanas de estudio (empezar esta semana, completar en semana 5)
+- **Preparación recomendada:** Sprint inicial de 2 semanas + cierre de gaps por dominio
 
 ### Conexión con Experiencia Previa
 
@@ -209,9 +209,15 @@ Entender cloud computing y prepararse para la certificación AZ-900.
 - [ ] Python básico funcional (script de logs)
 - [ ] Git workflow dominado
 - [ ] Repositorio portfolio creado
-- [ ] AZ-900 Learning Path completado
-- [ ] Examen AZ-900 programado o completado
+- [ ] Matriz de dominios AI-103 completada
+- [ ] Plan de cierre de gaps AI-103 definido
 - [ ] Journal de aprendizaje al día
+
+## Operacion v4
+
+- [Checkpoint Gates v4](../checkpoints)
+- [Template de Evidencia v4](../evidence-template)
+- [Weekly Tracker v4](../weekly-tracker)
 
 ## ⏭️ Siguiente Fase
 

@@ -3,9 +3,9 @@ sidebar_position: 4
 title: "Fase 4 — AI para Negocios e IT"
 ---
 
-# Fase 4: AI para Negocios e IT (Semanas 13–20)
+# Fase 4: AI para Negocios e IT (Semanas 17–21)
 
-> **Objetivo:** Esta es la fase más importante del programa. Aquí es donde la experiencia previa se fusiona con AI para crear un perfil profesional de alto valor. Se construyen proyectos reales de AI que demuestran impacto empresarial.
+> **Objetivo:** Convertir la base tecnica en narrativa de valor de negocio: proyectos publicables, adopcion enterprise y evidencia para entrevistas de AI Success Engineering.
 
 ## 🎯 Resultados Esperados
 
@@ -324,7 +324,7 @@ Crear sitio web profesional que muestre todo el trabajo realizado.
 
 1. **About Me** — Bio profesional, experiencia, visión
 2. **Skills** — Competencias técnicas con evidencia
-3. **Certifications** — AZ-900, SC-900, en progreso
+3. **Certifications** — AI-103, AZ-305, SC-500/SC-900 (segun ruta)
 4. **Projects** — Cada proyecto con descripción, tech stack, link
 5. **Blog/Notes** — Aprendizajes clave (opcional)
 6. **Contact** — LinkedIn, GitHub, email
@@ -343,6 +343,12 @@ Crear sitio web profesional que muestre todo el trabajo realizado.
 - [ ] **Proyecto 2: Risk Assessment Assistant** completado
 - [ ] **Portfolio website** publicado
 - [ ] GitHub portfolio con 7+ proyectos
+
+## Operacion v4
+
+- [Checkpoint Gates v4](../checkpoints)
+- [Template de Evidencia v4](../evidence-template)
+- [Weekly Tracker v4](../weekly-tracker)
 
 ## 🔗 Valor para el CV
 
