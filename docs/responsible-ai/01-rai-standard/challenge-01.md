@@ -73,24 +73,35 @@ This is a **governance discovery** exercise, so most of your setup is access and
 | PowerShell + **Exchange Online Management** module | Export AI activity via `Connect-IPPSSession` | `Get-Module -ListAvailable ExchangeOnlineManagement` |
 | A spreadsheet / **Microsoft Lists** or **Dataverse** table | Hold your AI system inventory + risk classification | Microsoft 365 |
 
-### Step 0 — Confirm access (10 min)
+### Step 0 — Confirm you can actually see AI activity (10 min) — *the "where do I go"*
 
-Before discovery, verify you can actually reach the data:
+This exercise depends on **Microsoft Purview DSPM for AI**. Before anything else, prove you can reach it and that data is flowing — otherwise Task 1 discovery returns empty and you'll think you have no shadow AI when you just have no visibility.
+
+1. Go to **[purview.microsoft.com](https://purview.microsoft.com)** and sign in with an account that has the **Purview / compliance admin** role.
+2. In the left nav, open **DSPM for AI** (Data Security Posture Management for AI). If you don't see it, your tenant is missing the **M365 E5** or Purview compliance license — see the official [DSPM for AI get-started guide](https://learn.microsoft.com/purview/dspm-for-ai).
+3. On the **Overview** page, confirm **Activity** tiles show data. If they're empty, turn on the **one-time setup** options (audit + Copilot/AI analytics) — DSPM for AI prompts you; allow up to 24–48h for first data.
+4. Verify the PowerShell path you'll use to export activity:
 
 ```powershell
-# Verify you can connect to the compliance endpoint
 Install-Module ExchangeOnlineManagement -Scope CurrentUser   # if not already installed
-Connect-IPPSSession
-# Then open https://purview.microsoft.com -> Data Security -> AI Hub
+Connect-IPPSSession   # opens sign-in; this is your compliance/eDiscovery endpoint
 ```
 
-### Step 1 — Prepare your inventory sheet (10 min)
+✅ **Done when** DSPM for AI shows activity tiles **and** `Connect-IPPSSession` connects without error.
 
-Create the columns you'll fill during discovery, so classification is systematic rather than ad hoc:
+### Step 1 — Create your inventory as a governed list, not a spreadsheet (10 min)
 
-`System name | Owner | Data touched | EU AI Act risk tier | Art. 11 doc? | Registered?`
+Your inventory is a regulated artifact, so give it ownership, history, and access control from the start. Create a **Microsoft List** (or a **Dataverse** table) with these exact columns:
 
-> 🟦 **Microsoft-first note:** this challenge is already Microsoft-native — **Purview AI Hub** does the discovery, **Purview DLP** enforces the guardrails, and your inventory belongs in **Microsoft Lists** or **Dataverse** (not a loose spreadsheet) so it has ownership, history, and access control.
+`System name | Owner | Data touched | EU AI Act risk tier | Art. 11 doc? | Registered? | Last reviewed`
+
+To create it: **[Microsoft Lists](https://www.microsoft.com/microsoft-365/microsoft-lists)** → **+ New list** → **Blank list** → add the columns above (use a **Choice** column for *risk tier*: Prohibited / High / Limited / Minimal).
+
+✅ **Done when** the list exists with all 7 columns and at least you as owner.
+
+> 🟦 **Microsoft-first note:** this challenge is already Microsoft-native — **Purview DSPM for AI** does the discovery, **Purview DLP** enforces the guardrails, and your inventory belongs in **Microsoft Lists** or **Dataverse** (not a loose spreadsheet) so it has ownership, history, and access control.
+
+> **Common fixes:** DSPM for AI not visible → missing E5/Purview license or compliance-admin role. Activity empty → enable auditing under DSPM for AI **one-time setup** and wait for data to accrue.
 
 ### The path through this challenge
 
