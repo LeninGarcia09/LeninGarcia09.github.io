@@ -60,6 +60,56 @@ Turn 5: Care coordinator asks a simple question...    ← Model is now unreliabl
 
 ---
 
+## 🧰 Before You Start — Environment Setup
+
+Context rot only reveals itself across **many turns**, so your setup must let you run a repeatable multi-turn session and measure context fill at each step.
+
+### Prerequisites
+
+| Requirement | Why you need it | How to check |
+|-------------|-----------------|--------------|
+| Python 3.10+ | Async agent loop + test harness | `python --version` |
+| **Azure OpenAI** via [Azure AI Foundry](https://ai.azure.com) | The model under test — you must know its exact context-window size | Deploy `gpt-4o` (128K) in Foundry |
+| **Azure AI Foundry — Tracing** | Record context-fill % as a span on every turn — this is how you *see* the cliff | [Docs](https://learn.microsoft.com/azure/foundry/observability/how-to/trace-agent-setup) |
+| tiktoken *(third-party)* | Count exact tokens per turn / per tool result | `pip show tiktoken` |
+| Scratchpad store — **Azure Blob / OneLake / Cosmos DB** (prod); local folder here | Hold full tool results *outside* the context window | Azure portal / `mkdir .scratchpad` |
+
+### Step 0 — Create an isolated workspace (5 min)
+
+```bash
+mkdir context-rot && cd context-rot
+python -m venv .venv
+# Windows:  .venv\Scripts\activate    |    macOS/Linux:  source .venv/bin/activate
+pip install azure-ai-projects azure-identity openai tiktoken
+mkdir .scratchpad   # local stand-in for Azure Blob / OneLake
+```
+
+### Step 1 — Pin your context limit and a repeatable test (10 min)
+
+You cannot measure "40% fill" without knowing the denominator. Record your model's context window, then build a fixed list of multi-turn questions with KNOWN answers (like `CLINICAL_TEST_CASES` in Task 1) so every run is comparable.
+
+```python
+# config.py — know your denominator
+MODEL = "gpt-4o"
+CONTEXT_LIMIT = 128_000     # confirm in the Azure AI Foundry model card
+SAFETY_THRESHOLD = 0.35     # stay below the ~40% cliff
+```
+
+> 🟦 **Microsoft-first note:** the `.scratchpad` folder is a local stand-in. In production, offload full tool results to **Azure Blob Storage**, **OneLake**, or **Azure Cosmos DB**, and delegate data-heavy turns to fresh-context agents via the **Azure AI Foundry Agent Service**. The budgeting logic is identical.
+
+### The path through this challenge
+
+1. **Task 1** — measure your baseline degradation (find *your* cliff turn).
+2. **Task 2** — enforce a per-turn context budget (cap the fill).
+3. **Task 3** — load context selectively (only what the turn needs).
+4. **Task 4** — delegate heavy turns to fresh-context subagents.
+5. **Success Criteria** — prove fill stays below 35% and accuracy holds.
+6. **Adapt to Your Business** — apply budgeting to *your* long sessions.
+
+> ⏱️ **Time budget:** ~2–3 hours. Task 1 (measure) is the highest-value step — do not skip it.
+
+---
+
 ## Tasks
 
 ### Task 1 — Measure Your Baseline Degradation
@@ -323,6 +373,61 @@ class ClinicalCoordinator:
 
 ---
 
+## 🔁 Adapt This to Your Own Business
+
+The scenario is a **clinical decision agent**, but context rot hits *any* agent whose conversations grow long: the accuracy cliff at ~40–50% context fill is model behavior, not a healthcare quirk.
+
+### Step 1 — Find your "long session"
+
+Identify where your users have **multi-turn, data-heavy conversations** — that's where rot silently sets in.
+
+| Industry | The long session | What degrades after a few turns |
+|----------|------------------|---------------------------------|
+| **Customer support** | Multi-issue troubleshooting thread | Agent forgets the earlier ticket detail |
+| **Financial services** | Portfolio review across many holdings | Mixes up figures between accounts |
+| **Legal** | Long contract / discovery review | Misattributes a clause to the wrong document |
+| **Field service** | Multi-step diagnostic session | Recommends a part from an earlier, unrelated case |
+| **Sales / RevOps** | Deal-desk Q&A across accounts | Quotes terms from a different opportunity |
+| **IT / SRE** | Long incident-response chat | Loses the original error while chasing new logs |
+
+### Step 2 — Map the building blocks to your stack (Microsoft-first)
+
+| In this challenge | In your project — replace with |
+|-------------------|--------------------------------|
+| `tiktoken` counting | Same — tiktoken is the correct tokenizer for Azure OpenAI GPT-4o/4.1 |
+| `.scratchpad/*.json` | **Azure Blob Storage**, **OneLake**, or **Azure Cosmos DB** — durable store outside the context window |
+| `classify_data_needs()` | A cheap **Azure OpenAI** model (e.g. `gpt-4o-mini`) as a router |
+| `ClinicalCoordinator` subagents | **Azure AI Foundry Agent Service** connected/hosted agents with fresh context |
+| Context-fill logging | **Azure AI Foundry Tracing** span attribute + **Azure Monitor** alerts |
+
+### Step 3 — The 5-question implementation checklist
+
+1. **What is your context limit, and what % is one typical tool result?** If one result exceeds 10% of the window → you will hit the cliff fast.
+2. **Do raw tool results stay in the thread forever?** If yes → offload to a scratchpad store and pass a summary + pointer.
+3. **Does every turn reload the entire history?** If yes → add selective loading (classify, then load only what's needed).
+4. **At what fill % do you delegate to a fresh agent?** If the answer is "over 50%" or "never" → move it to ~30%.
+5. **Can you see context-fill % per turn in a dashboard?** If not → add the trace span before you tune anything.
+
+### Step 4 — A 1-week rollout plan
+
+| Day | Action | Owner |
+|-----|--------|-------|
+| **Day 1** | Instrument context-fill % per turn (Foundry Tracing) on one real agent | Eng lead |
+| **Day 2** | Run the degradation harness; find *your* cliff turn | QA / eng |
+| **Day 3** | Add per-turn token budget + scratchpad offload (Blob/OneLake/Cosmos) | Backend dev |
+| **Day 4** | Add selective loading + a `gpt-4o-mini` router | Backend dev |
+| **Day 5** | Delegate heavy turns to Foundry Agent Service; re-run harness | Backend dev |
+
+### Step 5 — Prove the ROI
+
+- **Accuracy retention** — accuracy at turn 8 ÷ accuracy at turn 1 *(target: ≥ 0.95)*.
+- **Peak context fill** — max fill % across a real session *(target: ≤ 35%)*.
+- **Cost per session** — tokens × price; budgeting typically cuts this **40%+**.
+
+> 💡 **Rule of thumb:** if your agent "gets dumber the longer you talk to it," you have a context-budget problem, not a model problem. Cap the fill before you change the model.
+
+---
+
 ## Regulatory Mapping
 
 | Regulation | Requirement | How This Challenge Addresses It |
@@ -372,23 +477,28 @@ class BrokenContextManager:
 
 ---
 
-## ?? Tools & References
+## 📚 Tools & References
 
 ### Key Tools for This Challenge
 
+> **Microsoft-first:** lead with Azure-native tooling. Third-party tools are listed only where they add reliable, best-in-class capability not yet covered natively.
+
 | Tool | Role in This Challenge | Link |
 |------|----------------------|------|
-| **tiktoken** | The most important tool for this challenge � measure **exact token counts** per turn, per tool result, per context snapshot before each LLM call | [GitHub](https://github.com/openai/tiktoken) |
-| **Azure AI Foundry Tracing** | Capture context window fill percentage as a custom span attribute on every agent turn � surface context degradation in dashboards | [Docs](https://learn.microsoft.com/azure/foundry/observability/how-to/trace-agent-setup) |
-| **Langfuse** | Open-source session tracing � visualize context growth across turns to find the exact turn where degradation began | [langfuse.com](https://langfuse.com) |
-| **Arize Phoenix** | Detect context drift in production � alerts when agent accuracy correlates with rising context fill percentage | [GitHub](https://github.com/Arize-ai/phoenix) |
-| **LangChain ConversationTokenBufferMemory** | Drop-in token-aware memory trimming � automatically prunes conversation history to stay under a configurable token budget | [Docs](https://python.langchain.com/docs/modules/memory/) |
-| **Confident AI** | Multi-turn agent evaluation � measures whether accuracy holds across long sessions, not just single-turn tests | [confident-ai.com](https://www.confident-ai.com) |
+| **Azure AI Foundry Tracing** | Capture context-window fill % as a custom span attribute on every agent turn — surface degradation in dashboards | [Docs](https://learn.microsoft.com/azure/foundry/observability/how-to/trace-agent-setup) |
+| **Azure AI Foundry Agent Service** | Delegate data-heavy turns to connected/hosted agents that start with fresh context — the production form of Task 4 | [Docs](https://learn.microsoft.com/azure/foundry/agents/overview) |
+| **Azure Blob / OneLake / Cosmos DB** | Durable scratchpad — hold full tool results outside the context window | [Blob](https://learn.microsoft.com/azure/storage/blobs/) · [OneLake](https://learn.microsoft.com/fabric/onelake/onelake-overview) · [Cosmos DB](https://learn.microsoft.com/azure/cosmos-db/introduction) |
+| **Azure AI Foundry Evaluations** | Multi-turn evaluation — verify accuracy holds across long sessions, not just single turns | [Docs](https://learn.microsoft.com/azure/foundry/observability/how-to/evaluate-agent) |
+| tiktoken *(third-party)* | Measure **exact token counts** per turn, per tool result, per context snapshot before each LLM call | [GitHub](https://github.com/openai/tiktoken) |
+| Langfuse *(third-party)* | Open-source session tracing — visualize context growth across turns to find the exact turn where degradation began | [langfuse.com](https://langfuse.com) |
+| Arize Phoenix *(third-party)* | Detect context drift in production — alerts when accuracy correlates with rising context fill | [GitHub](https://github.com/Arize-ai/phoenix) |
+| Confident AI *(third-party)* | Multi-turn agent evaluation — measures whether accuracy holds across long sessions | [confident-ai.com](https://www.confident-ai.com) |
 
 ### Required Reading
 
 | Resource | Why It Matters |
 |----------|---------------|
-| [Lost in the Middle (arXiv:2601.15300)](https://arxiv.org/abs/2601.15300) | The research paper proving the 40�50% context cliff � **read this before building any long-session agent** |
-| [Same Task, More Tokens (arXiv:2510.05381)](https://arxiv.org/abs/2510.05381) | Proves that adding more context hurts performance even when retrieval is perfect � the context length paradox |
-| [The LLM-as-Analyst Trap, Part 1](https://appliedingenuity.substack.com/p/the-llm-as-analyst-trap-a-technical) | Section on "Multi-Turn Context Accumulation" � the healthcare scenario this challenge is based on |
+| [Lost in the Middle (arXiv:2601.15300)](https://arxiv.org/abs/2601.15300) | The research proving the 40–50% context cliff — **read this before building any long-session agent** |
+| [Same Task, More Tokens (arXiv:2510.05381)](https://arxiv.org/abs/2510.05381) | Proves that adding more context hurts performance even when retrieval is perfect — the context-length paradox |
+| [Context engineering for AI agents (Azure Architecture Center)](https://learn.microsoft.com/azure/architecture/ai-ml/guide/ai-agent-design-patterns) | Microsoft guidance on managing agent context and memory in production |
+| [The LLM-as-Analyst Trap, Part 1](https://appliedingenuity.substack.com/p/the-llm-as-analyst-trap-a-technical) | Section on "Multi-Turn Context Accumulation" — the healthcare scenario this challenge is based on |

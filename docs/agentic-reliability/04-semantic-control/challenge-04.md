@@ -46,6 +46,59 @@ The fix is **Semantic Control**: externalize all business concept definitions in
 
 ---
 
+## 🧰 Before You Start — Environment Setup
+
+This challenge is about **owning your business semantics** instead of borrowing them from the model's training data. Your setup needs a place to store concept definitions (a registry) and a way to inject "now" on every request.
+
+### Prerequisites
+
+| Requirement | Why you need it | How to check |
+|-------------|-----------------|--------------|
+| Python 3.10+ | Registry, parser, and enforcement hooks | `python --version` |
+| **Azure OpenAI** via [Azure AI Foundry](https://ai.azure.com) | The intent parser — it resolves *phrasing*, never *definitions* | Deploy `gpt-4o` in Foundry |
+| A concept registry store — **Azure SQL / Dataverse / Cosmos DB / App Configuration** (prod); local JSON here | The authoritative, version-controlled source of what "Magnificent Seven" means today | Azure portal / `mkdir .registry` |
+| **Azure AI Foundry — Evaluations** | Grade concept-resolution accuracy against your registry | [Docs](https://learn.microsoft.com/azure/foundry/how-to/evaluate-generative-ai-app) |
+
+### Step 0 — Create an isolated workspace (5 min)
+
+```bash
+mkdir semantic-control && cd semantic-control
+python -m venv .venv
+# Windows:  .venv\Scripts\activate    |    macOS/Linux:  source .venv/bin/activate
+pip install azure-ai-projects azure-identity openai pydantic
+mkdir .registry   # local stand-in for Azure SQL / Dataverse / App Configuration
+```
+
+### Step 1 — Seed a versioned concept registry (10 min)
+
+Store each business concept **with an effective date** so historical queries resolve correctly. These are **sample definitions** — replace with your firm's real ones.
+
+```python
+# registry.json — the authoritative definitions your code owns
+{
+  "magnificent_seven": [
+    {"effective": "2023-01-01", "members": ["AAPL","MSFT","NVDA","AMZN","GOOGL","META","TSLA"]},
+    {"effective": "2025-01-01", "members": ["AAPL","MSFT","NVDA","AMZN","GOOGL","META","AVGO"]}
+  ],
+  "fiscal_q1": {"start_rule": "prior_year_dec_31_close", "end_rule": "mar_31_close"}
+}
+```
+
+> 🟦 **Microsoft-first note:** the `.registry` folder / JSON is a local stand-in. In production the registry belongs in **Azure SQL** (temporal tables give you free version history), **Microsoft Dataverse** (business-user editable), **Azure Cosmos DB**, or **Azure App Configuration** for feature-flag-style rollout. The temporal grounding (`date.today()` injected per-request) and scope-enforcement hooks stay in deterministic Python either way.
+
+### The path through this challenge
+
+1. **Task 1** — build the externalized concept registry.
+2. **Task 2** — inject temporal grounding on every request.
+3. **Task 3** — build a concept-aware intent parser.
+4. **Task 4** — add a scope-enforcement hook (pre-LLM).
+5. **Success Criteria** — definitions come from *your* registry, not training data.
+6. **Adapt to Your Business** — externalize *your* concepts.
+
+> ⏱️ **Time budget:** ~3 hours. Task 1 (the registry) is the linchpin — every other task depends on it.
+
+---
+
 ## Tasks
 
 ### Task 1 — Build the Concept Registry
@@ -395,6 +448,60 @@ def pre_llm_scope_check(user_query: str) -> dict:
 
 ---
 
+## 🔁 Adapt This to Your Own Business
+
+The scenario is a **quant fund**, but *every* company has business terms whose meaning the model gets subtly — and confidently — wrong. The fix is always the same: **your system owns the definition, not the LLM.**
+
+### Step 1 — Find your "the model thinks it knows, but it's wrong" terms
+
+| Industry | Ambiguous term the LLM guesses | What it should mean (owned by you) |
+|----------|--------------------------------|-------------------------------------|
+| **Retail** | "Top sellers" | Your current merchandising list, not last year's |
+| **Healthcare** | "High-risk patient" | Your clinical protocol's exact criteria |
+| **Insurance** | "Preferred customer" | Your current tier rules, effective this quarter |
+| **SaaS / RevOps** | "Enterprise account" | Your segmentation thresholds, not a generic guess |
+| **Manufacturing** | "Critical part" | Your current BOM criticality flags |
+| **Public sector** | "Current fiscal year" | Your jurisdiction's calendar, not Jan–Dec |
+
+### Step 2 — Map the building blocks to your stack (Microsoft-first)
+
+| In this challenge | In your project — replace with |
+|-------------------|--------------------------------|
+| `registry.json` | **Azure SQL** (temporal tables), **Dataverse**, **Cosmos DB**, or **App Configuration** |
+| Effective-dated concept versions | SQL temporal tables / Dataverse audit history |
+| Temporal grounding injection | Middleware that injects `date.today()` per request |
+| Concept-aware intent parser | **Azure OpenAI** for phrasing only — resolution stays in code |
+| Scope-enforcement hook | Deterministic pre-LLM gateway (Azure Functions / API Management) |
+| Resolution accuracy grading | **Azure AI Foundry Evaluations** custom evaluator |
+
+### Step 3 — The 5-question implementation checklist
+
+1. **Which business terms would embarrass you if the model defined them?** Those go in the registry first.
+2. **Do any of your definitions change over time?** If yes → store them effective-dated, and resolve by query date.
+3. **Does your agent ever assume today's date?** If yes → inject `date.today()` per request, never at startup.
+4. **Can a clever rephrasing bypass your "only answer about X" rule?** If yes → move scope enforcement into pre-LLM code.
+5. **Can you prove where a definition came from?** If not → log `source: "concept_registry"` on every expansion.
+
+### Step 4 — A 1-week rollout plan
+
+| Day | Action | Owner |
+|-----|--------|-------|
+| **Day 1** | Inventory the top 10 ambiguous business terms your agent handles | Domain expert + eng |
+| **Day 2** | Build the effective-dated registry in Azure SQL / Dataverse | Data eng |
+| **Day 3** | Add per-request temporal grounding middleware | Backend dev |
+| **Day 4** | Move scope enforcement to a pre-LLM gateway | Backend dev |
+| **Day 5** | Add a Foundry Evaluations grader for concept accuracy | ML eng |
+
+### Step 5 — Prove the ROI
+
+- **Definition accuracy** — % of concept resolutions matching the registry *(target: 100%)*.
+- **Temporal correctness** — % of "now/last week/this quarter" queries resolved to correct absolute dates *(target: 100%)*.
+- **Scope-bypass rate** — % of adversarial rephrasings that slip past enforcement *(target: 0%)*.
+
+> 💡 **Rule of thumb:** if the answer to "what does this term mean?" lives only in the model's head, it *will* drift when the model updates. Put the definition in your system, date-stamp it, and log where it came from.
+
+---
+
 ## Regulatory Mapping
 
 | Regulation | Requirement | How This Challenge Addresses It |
@@ -444,24 +551,28 @@ def enforce_scope(query, allowed_topics):
 
 ---
 
-## ?? Tools & References
+## 📚 Tools & References
 
 ### Key Tools for This Challenge
 
+> **Microsoft-first:** lead with Azure-native tooling. Third-party tools are listed only where they add reliable, best-in-class capability not yet covered natively.
+
 | Tool | Role in This Challenge | Link |
 |------|----------------------|------|
-| **Pydantic v2** | Define the concept registry schema � IndexComposition, TemporalConcept, and MetricDefinition as typed models with validation | [docs.pydantic.dev](https://docs.pydantic.dev) |
-| **Guardrails.ai** | Scope enforcement at the input layer � classify and block out-of-scope queries before they reach the LLM | [guardrailsai.com](https://www.guardrailsai.com) |
-| **Instructor** | Force structured concept resolution output � LLM returns a typed IntentQuery object, not free-form text | [GitHub](https://github.com/jxnl/instructor) |
-| **DeepEval** | Semantic similarity metrics � evaluate whether the agent's concept resolution matches ground-truth registry definitions | [GitHub](https://github.com/confident-ai/deepeval) |
-| **RAGAS** | Context precision evaluator � measures whether temporal concept lookups are returning the right time-scoped data | [GitHub](https://github.com/explodinggradients/ragas) |
-| **Opik (Comet)** | Regression testing for semantic concepts � detect when model updates change how the LLM interprets index names or metric terms | [comet.com/opik](https://www.comet.com/opik) |
-| **Azure AI Foundry Evaluations** | Custom evaluators � build domain-specific graders that check concept resolution accuracy against your registry | [Docs](https://learn.microsoft.com/azure/ai-studio/how-to/evaluate-generative-ai-app) |
+| **Azure SQL Database (temporal tables)** | Store the concept registry with built-in, queryable version history — resolve "Magnificent Seven" as of any date | [Docs](https://learn.microsoft.com/azure/azure-sql/) |
+| **Microsoft Dataverse** | Business-user-editable concept registry with audit history — update definitions without a code deploy | [Docs](https://learn.microsoft.com/power-apps/maker/data-platform/) |
+| **Azure App Configuration** | Feature-flag-style rollout of definition changes (effective dates, gradual cutover) | [Docs](https://learn.microsoft.com/azure/azure-app-configuration/overview) |
+| **Azure OpenAI — Structured Outputs** | Force the intent parser to return a typed `IntentQuery` object, not free-form text | [Docs](https://learn.microsoft.com/azure/ai-services/openai/how-to/structured-outputs) |
+| **Azure AI Foundry Evaluations** | Custom evaluators — grade concept-resolution accuracy against your registry | [Docs](https://learn.microsoft.com/azure/foundry/how-to/evaluate-generative-ai-app) |
+| **Azure API Management / Azure Functions** | Deterministic pre-LLM scope-enforcement gateway — block out-of-scope queries before the model sees them | [APIM](https://learn.microsoft.com/azure/api-management/) · [Functions](https://learn.microsoft.com/azure/azure-functions/) |
+| Pydantic v2 *(third-party)* | Local schema for registry models when not using Structured Outputs | [docs.pydantic.dev](https://docs.pydantic.dev) |
+| DeepEval / RAGAS *(third-party)* | Semantic-similarity metrics for concept-resolution regression tests | [DeepEval](https://github.com/confident-ai/deepeval) · [RAGAS](https://github.com/explodinggradients/ragas) |
 
 ### Required Reading
 
 | Resource | Why It Matters |
 |----------|---------------|
-| [The LLM-as-Analyst Trap, Part 1 � Semantic Drift section](https://appliedingenuity.substack.com/p/the-llm-as-analyst-trap-a-technical) | The original failure mode this challenge addresses � LLMs use training data definitions, not current enterprise ones |
-| [Guardrails.ai Documentation](https://www.guardrailsai.com/docs) | Comprehensive guide to building output and input validators for LLM systems |
-| [Instructor: Structured outputs for Claude and OpenAI](https://python.useinstructor.com) | How to force LLMs to return typed Pydantic objects � the foundation of deterministic intent parsing |
+| [The LLM-as-Analyst Trap, Part 1 — Semantic Drift section](https://appliedingenuity.substack.com/p/the-llm-as-analyst-trap-a-technical) | The original failure mode this challenge addresses — LLMs use training-data definitions, not current enterprise ones |
+| [Azure OpenAI Structured Outputs](https://learn.microsoft.com/azure/ai-services/openai/how-to/structured-outputs) | How to force the LLM to return typed objects — the foundation of deterministic intent parsing |
+| [Azure SQL temporal tables](https://learn.microsoft.com/azure/azure-sql/temporal-tables) | How to store effective-dated concept definitions with automatic version history |
+| [Data governance for high-risk AI (Azure)](https://learn.microsoft.com/azure/architecture/ai-ml/guide/ai-agent-design-patterns) | Microsoft guidance on authoritative data sources for agent decisions |
