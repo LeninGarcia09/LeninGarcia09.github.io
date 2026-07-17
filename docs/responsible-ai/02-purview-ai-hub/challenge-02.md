@@ -371,6 +371,18 @@ The scenario is a **sales agent leaking pricing**, but *any* agent with access t
 
 > 💡 **Rule of thumb:** if you haven't attacked your own agent, an outsider will do it for you. Measure the breach first — a scary baseline is what earns the budget to fix it.
 
+### Doing this solo (no team, portfolio-first)
+
+No team, no budget? A red-team report that drives attack success to 0% is a security portfolio piece that speaks for itself. Run the week solo:
+
+- **Mon–Tue** — point PyRIT at your **own** test agent and record the baseline breach rate.
+- **Wed–Thu** — enable Prompt Shields + tune Content Safety; add an information-boundary rule.
+- **Fri** — re-run PyRIT and capture the before/after attack-success chart.
+
+📦 **Ship this artifact:** a red-team report (breach rate before → 0%) + the PyRIT scorecard. Resume bullet: *"Red-teamed an AI agent with PyRIT — drove prompt-injection success to 0% using Prompt Shields + content-safety gating."*
+
+> 🆓 **Free-tier path:** PyRIT is free Microsoft OSS and Azure AI Content Safety has a free tier — the whole red-team loop runs on a laptop.
+
 ---
 
 ## Regulatory Mapping

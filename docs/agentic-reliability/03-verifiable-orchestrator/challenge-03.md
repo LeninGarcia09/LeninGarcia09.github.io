@@ -545,6 +545,18 @@ If a wrong number triggers a fine, a restatement, or a lawsuit → you need the 
 
 > 💡 **Rule of thumb:** the LLM should decide *what* to compute, never *compute it*. If a regulator can't re-run your number and get the same answer, it isn't defensible — no matter how good the model is.
 
+### Doing this solo (no team, portfolio-first)
+
+No team, no budget? "Every number is provable and reproducible" is exactly the discipline regulated employers hire for. Run the week solo:
+
+- **Mon–Tue** — move *all* arithmetic out of the LLM into SQL (local SQLite/DuckDB now); the LLM parses intent only via Structured Outputs.
+- **Wed–Thu** — add a `source_ref` on each value + an append-only audit log + a `prove_value()` replay path.
+- **Fri** — run a mock audit: pick 5 output numbers and prove each in under a minute.
+
+📦 **Ship this artifact:** a public repo where any output number re-computes to the identical value, plus a short `prove_value()` demo. Resume bullet: *"Built a verifiable analytics agent — 100% of output numbers reproducible and source-traceable, any figure provable to an auditor in under a minute."*
+
+> 🆓 **Free-tier path:** SQLite/DuckDB + the Azure OpenAI consumption tier — deterministic compute costs nothing to prove.
+
 ---
 
 ## Regulatory Mapping

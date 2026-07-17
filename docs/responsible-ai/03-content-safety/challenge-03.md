@@ -376,6 +376,18 @@ The scenario is a **hiring tool**, but *any* AI that makes or influences decisio
 
 > 💡 **Rule of thumb:** removing the protected attribute does **not** remove the bias — models learn proxies. Measure outcomes by group, or you're flying blind.
 
+### Doing this solo (no team, portfolio-first)
+
+No team, no budget? A fairness audit with a real before/after DIR is one of the most respected Responsible-AI portfolio pieces. Run the week solo:
+
+- **Mon–Tue** — pick a public dataset (or the synthetic one from setup) and compute DIR / the 4/5ths rule per protected group.
+- **Wed–Thu** — find the proxy variables in the Responsible AI dashboard, apply a Fairlearn mitigation, and re-measure.
+- **Fri** — export the before/after DIR and write a one-page bias incident report.
+
+📦 **Ship this artifact:** a Fairlearn notebook + an RAI-dashboard export showing DIR rising past 0.8. Resume bullet: *"Diagnosed and mitigated disparate impact — raised the Disparate Impact Ratio past 0.85 and documented the fix per NIST AI RMF."*
+
+> 🆓 **Free-tier path:** Fairlearn and the Responsible AI dashboard are free OSS — the entire audit runs locally on a laptop.
+
 ---
 
 ## Regulatory Mapping

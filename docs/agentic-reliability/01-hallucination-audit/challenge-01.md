@@ -453,6 +453,18 @@ Measure two numbers before and after. This is the slide that justifies the work:
 
 > 💡 **Rule of thumb:** if you cannot answer *"where did this number come from?"* in one click, the system is not production-ready — no matter how good the demo looked.
 
+### Doing this solo (no team, portfolio-first)
+
+No team, no budget? This is one of the most hireable things you can show — it proves you build **trustworthy** agents, not just demos. Run the same week as one person:
+
+- **Mon–Tue** — build one tool that can fail + the `ToolResult` contract on a free public dataset (or the DuckDB stand-in from setup).
+- **Wed–Thu** — add the `PostToolUse` hard-stop, the honest error message, and the `source_ref` validator.
+- **Fri** — record the **before/after** on the two ROI numbers above (silent-failure rate → 0%, traceability → 100%) in the README.
+
+📦 **Ship this artifact:** a small public GitHub repo with a 3-line "problem → fix → measured result" summary and a screenshot of the agent *refusing* to answer when the tool fails instead of fabricating. Resume bullet: *"Cut agent silent-failure rate to 0% and made 100% of outputs source-traceable with a tool-result contract + validation gate."*
+
+> 🆓 **Free-tier path:** the Azure OpenAI consumption tier plus the local DuckDB stand-in run this for cents — cost is never the blocker.
+
 ---
 
 ## Regulatory Mapping

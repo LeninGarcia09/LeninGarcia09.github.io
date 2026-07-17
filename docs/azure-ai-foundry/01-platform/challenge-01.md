@@ -267,6 +267,18 @@ The scenario is a **German hospital under GDPR**, but *many* organizations have 
 
 > 💡 **Rule of thumb:** "we configured it privately" is not the same as "we proved nothing leaks." Resolve the DNS, check the IP, and let Azure Policy keep it that way.
 
+### Doing this solo (no team, portfolio-first)
+
+No team, no budget? Data-residency architecture is a rare, well-paid skill — you can prove it with one small deployment. Run the week solo:
+
+- **Mon–Tue** — deploy Foundry Standard mode + one storage account in your required region.
+- **Wed–Thu** — add a private endpoint + private DNS to one dependency and disable public network access.
+- **Fri** — capture the proof: `nslookup` resolving to a `10.x` private IP + an Azure Policy compliance screenshot. Then tear it down (see Cleanup).
+
+📦 **Ship this artifact:** an architecture diagram (draw.io / Mermaid) + the DNS-to-private-IP screenshot + a one-page "residency guarantee" write-up. Resume bullet: *"Designed a data-residency-compliant AI platform — 100% private-link coverage with DNS-verified private egress and Azure Policy enforcement."*
+
+> 🆓 **Free-tier path:** an Azure free account (starter credit) covers one VNet + private endpoint for the exercise; delete the resource group the same day to stay at $0.
+
 ---
 
 ## Regulatory Mapping

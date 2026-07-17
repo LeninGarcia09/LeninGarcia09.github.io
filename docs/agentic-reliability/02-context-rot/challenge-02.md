@@ -456,6 +456,18 @@ Identify where your users have **multi-turn, data-heavy conversations** — that
 
 > 💡 **Rule of thumb:** if your agent "gets dumber the longer you talk to it," you have a context-budget problem, not a model problem. Cap the fill before you change the model.
 
+### Doing this solo (no team, portfolio-first)
+
+No team, no budget? A clean "accuracy vs. conversation length" chart is a standout portfolio piece — it proves you understand *why* agents degrade. Run the week solo:
+
+- **Mon–Tue** — run the degradation harness on gpt-4o and find *your* accuracy cliff; log context-fill % per turn.
+- **Wed–Thu** — add a per-turn token budget + scratchpad offload (local JSON now; Blob/Cosmos later) + selective loading with a cheap `gpt-4o-mini` router.
+- **Fri** — re-run the harness and chart accuracy-vs-turn before/after.
+
+📦 **Ship this artifact:** a notebook/repo with the accuracy-vs-turn chart showing retention rising to ≥ 0.95 and peak fill capped at ≤ 35%. Resume bullet: *"Eliminated multi-turn context rot — held agent accuracy at 95% of turn-1 through turn 8 while cutting per-session token cost 40%."*
+
+> 🆓 **Free-tier path:** a `gpt-4o-mini` router + a local JSON scratchpad make this a pennies-per-run experiment.
+
 ---
 
 ## Regulatory Mapping

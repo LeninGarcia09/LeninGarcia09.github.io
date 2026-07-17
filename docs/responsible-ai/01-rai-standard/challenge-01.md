@@ -325,6 +325,18 @@ The scenario is an **EU regulator inquiry**, but *every* organization needs an A
 
 > 💡 **Rule of thumb:** you cannot govern what you cannot see. Turn on discovery *before* you write a single policy — the surprises are the whole point.
 
+### Doing this solo (no team, portfolio-first)
+
+No team, no budget? An AI governance inventory needs zero code and proves you can operationalize the EU AI Act — a skill in huge demand. Run the week solo:
+
+- **Mon–Tue** — list every AI system you can find (start with your own tenant's Copilot/GenAI use) into a Microsoft List/Excel register, each with a named owner.
+- **Wed–Thu** — classify each by EU AI Act tier + RAI Standard; draft a Transparency Note for the highest-risk one.
+- **Fri** — time yourself producing the full inventory — that's your audit-readiness number.
+
+📦 **Ship this artifact:** a completed RAI inventory register + one Transparency Note. Resume bullet: *"Stood up an EU AI Act-ready AI inventory — 100% of systems governed with named owners, risk tier, and transparency documentation."*
+
+> 🆓 **Free-tier path:** Microsoft Lists / Excel + the public RAI Standard template — this one is genuinely $0.
+
 ---
 
 ## Regulatory Mapping
