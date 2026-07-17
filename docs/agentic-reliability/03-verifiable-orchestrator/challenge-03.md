@@ -63,6 +63,73 @@ User query
 
 ---
 
+## 🏗️ Reference Architecture — Azure Components (customer-ready)
+
+The two patterns above are conceptual. Below is the **same pattern with real components on every box** — drop this straight into a customer architecture review. Everything is Microsoft-first; reliable third-party options are tagged where a customer may already own one.
+
+### ❌ Simple Agentic — the trap
+
+```mermaid
+flowchart TD
+    U["User / Channel"] --> LLM["LLM does everything<br/>planner + data fetch + math + formatting<br/>Azure OpenAI gpt-4o"]
+    DB["Database<br/>raw rows pulled into LLM context"] --> LLM
+    LLM --> OUT["Polished answer"]
+    OUT --> X["No audit trail<br/>cannot prove any single number"]
+    style X fill:#ffd6d6,stroke:#c0392b,color:#000
+    style LLM fill:#fff2b2,stroke:#b7791f,color:#000
+```
+
+The model both *fetches* and *computes*, so a wrong number is indistinguishable from a right one. There is nothing to hand an auditor.
+
+### ✅ Verifiable Orchestrator — the fix
+
+```mermaid
+flowchart TD
+    U["User / Channel<br/>Teams · Power Apps · Web"] --> FE["Front end<br/>Azure App Service / Static Web Apps"]
+    FE --> ORCH["Orchestrator<br/>Azure AI Foundry Agent Service<br/>or Semantic Kernel"]
+    ORCH --> LLM["Intent-only LLM<br/>Azure OpenAI gpt-4o + Structured Outputs"]
+    LLM -->|"validated QuerySpec — params only, no raw data"| VAL{"Schema valid?<br/>Pydantic / JSON Schema"}
+    VAL -->|no| REJ["Reject and ask user to clarify"]
+    VAL -->|yes| COMPUTE["Deterministic compute<br/>Azure Functions"]
+    COMPUTE --> DATA["System of record<br/>Azure SQL DB · Microsoft Fabric · Cosmos DB"]
+    DATA --> COMPUTE
+    COMPUTE --> AUDIT["Audit log — source_ref per value<br/>Azure SQL Ledger (tamper-evident)"]
+    COMPUTE --> RENDER["Template render<br/>deterministic formatting — no LLM"]
+    RENDER --> OUT["Verified, fully traceable answer"]
+    ORCH -.trace.-> OBS["Azure AI Foundry Tracing<br/>+ Application Insights"]
+    COMPUTE -.trace.-> OBS
+    style AUDIT fill:#d6f5d6,stroke:#1e7e34,color:#000
+    style COMPUTE fill:#d6e4ff,stroke:#1c4587,color:#000
+```
+
+### Component mapping — what to actually deploy
+
+| Pipeline stage | Its one job | Azure / Microsoft service (primary) | Reliable third-party alt |
+|----------------|-------------|--------------------------------------|--------------------------|
+| **Channel / UI** | Where the user asks | Microsoft Teams (Copilot), **Power Apps**, **Azure Static Web Apps** / **App Service** | React SPA, Slack *(third-party)* |
+| **Orchestration** | Coordinates flow + tool routing | **Azure AI Foundry Agent Service** · **Semantic Kernel** ([docs](https://learn.microsoft.com/semantic-kernel/overview/)) | LangGraph, LlamaIndex *(third-party)* |
+| **Intent-only LLM** | Language → structured params **only** | **Azure OpenAI gpt-4o** + [Structured Outputs](https://learn.microsoft.com/azure/ai-services/openai/how-to/structured-outputs) | — (keep on Azure OpenAI) |
+| **Schema validation** | Reject anything off-contract | **Pydantic v2** / JSON Schema | zod (TS) *(third-party)* |
+| **Deterministic compute** | All math, aggregation, formatting | **Azure Functions** ([docs](https://learn.microsoft.com/azure/azure-functions/functions-overview)) | Container job on AKS |
+| **System of record** | The real data — never the LLM | **Azure SQL Database** · **Microsoft Fabric / OneLake** · **Azure Cosmos DB** · **Dataverse** | Postgres, Snowflake *(third-party)* |
+| **Audit log (`source_ref`)** | Immutable, tamper-evident chain of custody | **Azure SQL Database Ledger** ([docs](https://learn.microsoft.com/azure/azure-sql/database/ledger-overview)) · [temporal tables](https://learn.microsoft.com/azure/azure-sql/temporal-tables) · [WORM Blob](https://learn.microsoft.com/azure/storage/blobs/immutable-storage-overview) | — |
+| **Observability** | Separate LLM spans vs deterministic spans | **Azure AI Foundry Tracing** + **Application Insights** + **Azure Monitor** | OpenTelemetry + Grafana *(third-party)* |
+| **Identity & secrets** | Keyless auth + secret storage | **Microsoft Entra** managed identity · **Azure Key Vault** | HashiCorp Vault *(third-party)* |
+| **Governance** | Policy + data classification | **Microsoft Purview** · **Azure Policy** | — |
+
+### How a request flows (the 6 steps to show a customer)
+
+1. **User asks** in Teams / Power Apps / web → hits the front end.
+2. **Orchestrator** (Agent Service or Semantic Kernel) sends the message to **Azure OpenAI** with **Structured Outputs** — the model may return *only* a schema-valid `QuerySpec` (ticker, dates, metric). No raw data ever enters the model.
+3. **Validation gate** rejects anything that doesn't match the contract before a single row is read.
+4. **Azure Functions** runs the deterministic query against the **system of record** and does all arithmetic in code.
+5. Every output value is written to the **Azure SQL Ledger** audit log with a `source_ref` (source row + formula) — cryptographically tamper-evident.
+6. A **template** renders the answer (no LLM in the output path). **Foundry Tracing** keeps LLM spans and compute spans separate, so you can prove which layer produced which number.
+
+> 🟦 **Take this to your customer:** the line that closes regulated deals is *"the LLM decides **what** to compute; it never computes it — and **Azure SQL Ledger** makes every figure tamper-evident."* That single sentence answers the FINRA question in the scenario: *was this number altered by the AI model?* → **provably no.**
+
+---
+
 ## 🧰 Before You Start — Environment Setup
 
 This challenge is about **provable determinism**, so your setup must let you re-run the exact same computation and get byte-identical results. The LLM only parses intent; a deterministic engine does all the math.
