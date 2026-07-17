@@ -45,6 +45,46 @@ Their current AI chatbot sends summaries to a US-based cloud API. After a GDPR i
 
 ---
 
+## 🧰 Before You Start — Environment Setup
+
+This challenge is a **data-residency / network-isolation** build. Your setup is mostly Azure access and networking — the win is proving no data leaves your boundary.
+
+### Prerequisites
+
+| Requirement | Why you need it | How to check |
+|-------------|-----------------|--------------|
+| **Azure subscription** with Contributor on a resource group | Create Foundry, VNet, private endpoints | `az account show` |
+| **Azure CLI** (or Azure PowerShell) | Provision + verify network isolation | `az version` |
+| Rights to create a **VNet + Private Endpoints + Private DNS** | The whole point — keep traffic off the public internet | Network Contributor role |
+| A region matching your residency rule (e.g. `germanywestcentral`) | Data must physically reside in-boundary | `az account list-locations -o table` |
+
+### Step 0 — Sign in and set your context (5 min)
+
+```bash
+az login
+az account set --subscription "<your-subscription-id>"
+az group create --name rg-foundry-private --location germanywestcentral
+```
+
+### Step 1 — Confirm the residency requirement in writing (5 min)
+
+Before building, write down the exact rule you must satisfy (region, no public egress, BYO storage). Everything you configure will be verified against this one sentence in Success Criteria.
+
+> 🟦 **Microsoft-first note:** this challenge is already 100% Azure-native — **Azure AI Foundry Standard mode**, **Private Endpoints**, **BYO VNet + Storage + Key Vault**, **Private DNS zones**, and **Azure Policy** for enforcement. There is no third-party component to add; the skill is wiring them correctly.
+
+### The path through this challenge
+
+1. **Task 1** — deploy Foundry in Standard mode with BYO storage.
+2. **Task 2** — add private endpoints + private DNS.
+3. **Task 3** — disable public network access everywhere.
+4. **Task 4** — verify residency with Azure Policy + a DNS test.
+5. **Success Criteria** — prove traffic resolves to a `10.x` VNet IP.
+6. **Adapt to Your Business** — apply the boundary to *your* data rule.
+
+> ⏱️ **Time budget:** ~90 minutes. The DNS/private-endpoint verification (Task 4) is where you actually *prove* isolation — don't skip it.
+
+---
+
 ## Your Tasks
 
 ### Task 1: Deploy Foundry Account in Standard Mode
@@ -162,6 +202,58 @@ az policy assignment create \
 - [ ] Agent deployed and returns responses only via private endpoint
 - [ ] `Resolve-DnsName northside-foundry.services.ai.azure.com` returns a `10.x.x.x` IP from VNet VM
 - [ ] Azure Policy shows compliant
+
+---
+
+## 🔁 Adapt This to Your Own Business
+
+The scenario is a **German hospital under GDPR**, but *many* organizations have a hard "data must not leave X" boundary. The pattern — private networking + BYO storage + policy enforcement — is identical whether the driver is HIPAA, GDPR, or a sovereign-cloud mandate.
+
+### Step 1 — Find your data-residency boundary
+
+| Industry | The hard requirement | The driver |
+|----------|----------------------|-----------|
+| **Healthcare** | PHI never leaves the region / VNet | HIPAA, GDPR |
+| **Financial services** | Customer data in-country only | Data sovereignty laws |
+| **Government / defense** | Data in a sovereign or Gov cloud | FedRAMP / national rules |
+| **Legal** | Privileged data never on shared infra | Attorney-client privilege |
+| **Any EU entity** | No transfer outside the EEA | GDPR Chapter V |
+
+### Step 2 — Map the building blocks to your stack (Microsoft-first)
+
+| In this challenge | In your project — use |
+|-------------------|-----------------------|
+| Foundry Standard mode + BYO storage | Same — **Azure AI Foundry Standard mode** with your storage account |
+| Private Endpoints + Private DNS | Same — extend to every dependency (SQL, Search, Key Vault) |
+| Disable public network access | Apply to **all** data services, not just Foundry |
+| Azure Policy compliance | **Azure Policy** initiative + **Purview** for data governance |
+| Region pinning | Deploy to your required region; consider **sovereign cloud** |
+
+### Step 3 — The 5-question implementation checklist
+
+1. **What is the exact boundary?** Write it as one sentence before you build.
+2. **Does every dependency have a private endpoint?** One public egress point breaks the whole guarantee.
+3. **Is public network access disabled everywhere?** Default-deny, then allow the VNet.
+4. **Can you prove traffic stays private?** A DNS resolution to a `10.x` IP is your evidence.
+5. **Is compliance enforced, not just configured?** Azure Policy stops drift.
+
+### Step 4 — A 1-week rollout plan
+
+| Day | Action | Owner |
+|-----|--------|-------|
+| **Day 1** | Document the residency rule; pick the region | Compliance + cloud |
+| **Day 2** | Deploy Foundry Standard mode + BYO storage in-region | Cloud eng |
+| **Day 3** | Add private endpoints + private DNS for every dependency | Network eng |
+| **Day 4** | Disable public access; run the DNS/private-link test | Network eng |
+| **Day 5** | Apply an Azure Policy initiative; confirm compliant | Governance |
+
+### Step 5 — Prove the ROI
+
+- **Private-link coverage** — % of data services with public access disabled *(target: 100%)*.
+- **Egress proof** — DNS resolves to a private `10.x` IP *(target: yes, on every endpoint)*.
+- **Policy compliance** — % of resources compliant with the residency initiative *(target: 100%)*.
+
+> 💡 **Rule of thumb:** "we configured it privately" is not the same as "we proved nothing leaks." Resolve the DNS, check the IP, and let Azure Policy keep it that way.
 
 ---
 

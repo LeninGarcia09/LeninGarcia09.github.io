@@ -45,6 +45,53 @@ You need to instrument the agent, diagnose the root cause, and implement evaluat
 
 ---
 
+## 🧰 Before You Start — Environment Setup
+
+This challenge is **measure-then-gate**: you quantify the hallucination rate, find the retrieval root cause, and add an evaluation gate so it can't ship again. Setup centers on the Evaluation SDK and a labeled test set.
+
+### Prerequisites
+
+| Requirement | Why you need it | How to check |
+|-------------|-----------------|--------------|
+| **Azure subscription** + an **Azure AI Foundry** project | Host the agent and run evaluations | `az account show` |
+| **Azure AI Evaluation SDK** | Score groundedness, coherence, relevance | `pip show azure-ai-evaluation` |
+| **Azure AI Search** index (the agent's knowledge source) | Retrieval quality is the usual root cause | Azure portal |
+| **Azure AI Content Safety** | Quality/safety gate on responses | [Create resource](https://learn.microsoft.com/azure/ai-services/content-safety/overview) |
+| **Azure Monitor / Application Insights** | View OpenTelemetry traces | Azure portal |
+
+### Step 0 — Create an isolated workspace (5 min)
+
+```bash
+mkdir hallucination-gate && cd hallucination-gate
+python -m venv .venv
+# Windows:  .venv\Scripts\activate    |    macOS/Linux:  source .venv/bin/activate
+pip install azure-ai-evaluation azure-ai-projects azure-identity openai
+```
+
+### Step 1 — Build a KNOWN evaluation set (15 min)
+
+Create at least 10 Q&A pairs where you already know the correct answer, and **deliberately include 3+ that the agent tends to hallucinate**. You can only prove a gate works if you know which examples *should* fail.
+
+```python
+# eval_set.py — include known-good AND known-hallucination cases
+# groundedness < 4.0 on the planted cases = your gate is working.
+```
+
+> 🟦 **Microsoft-first note:** every component is Azure-native — the **Azure AI Evaluation SDK** for scoring, **Azure AI Search** for retrieval tuning, **Content Safety** as the gate, and **Azure Monitor** for OpenTelemetry traces. Wire the gate into **Azure DevOps** or **GitHub Actions** CI/CD.
+
+### The path through this challenge
+
+1. **Task 1** — instrument the agent with tracing.
+2. **Task 2** — run groundedness/relevance evaluations.
+3. **Task 3** — diagnose retrieval quality (the usual culprit).
+4. **Task 4** — add a CI/CD gate that blocks groundedness < 4.0.
+5. **Success Criteria** — the gate fails the planted hallucinations.
+6. **Adapt to Your Business** — gate *your* factual agent.
+
+> ⏱️ **Time budget:** ~90 minutes. The evaluation set (Step 1 / Task 2) is the linchpin — a weak test set means a useless gate.
+
+---
+
 ## Your Tasks
 
 ### Task 1: Create an Evaluation Dataset
@@ -187,6 +234,60 @@ with tracer.start_as_current_span("agent-policy-query") as span:
 - [ ] Deployment gate script exits with code 1 when groundedness < 4.0
 - [ ] Content Safety filter correctly blocks a harmful/incorrect response
 - [ ] OpenTelemetry traces visible in Azure Monitor for at least one agent run
+
+---
+
+## 🔁 Adapt This to Your Own Business
+
+The scenario is an **insurance policy agent**, but *any* agent that answers factual questions from a knowledge base can hallucinate — and confident wrong answers are the dangerous kind. The instrument → evaluate → gate loop applies to every RAG system you run.
+
+### Step 1 — Find your "confidently wrong" risk
+
+| Industry | The factual agent | Cost of a hallucination |
+|----------|-------------------|--------------------------|
+| **Insurance** | Coverage / claims Q&A | Wrongful denial, legal exposure |
+| **Customer support** | Product / policy answers | Bad guidance, churn |
+| **Healthcare** | Clinical info assistant | Patient-safety risk |
+| **Financial services** | Account / product terms | Mis-selling, compliance breach |
+| **Legal** | Contract / policy lookup | Wrong advice, liability |
+| **Public sector** | Benefits / eligibility info | Citizen harm, appeals |
+
+### Step 2 — Map the building blocks to your stack (Microsoft-first)
+
+| In this challenge | In your project — use |
+|-------------------|-----------------------|
+| Groundedness/relevance scoring | **Azure AI Evaluation SDK** |
+| Retrieval tuning | **Azure AI Search** (chunking, field weights, semantic ranker) |
+| Response gate | **Azure AI Content Safety** + a groundedness threshold |
+| CI/CD deployment gate | **Azure DevOps** / **GitHub Actions** eval step |
+| Tracing / observability | **Azure Monitor** + **Application Insights** (OpenTelemetry) |
+| Continuous evaluation | **Azure AI Foundry** scheduled evaluations |
+
+### Step 3 — The 5-question implementation checklist
+
+1. **Do you measure groundedness at all?** If not → you don't know your hallucination rate.
+2. **Is retrieval returning the right chunks?** Low relevance → fix Search before blaming the model.
+3. **Does the agent say "I don't know" when context is empty?** If not → add the instruction + a grounding check.
+4. **Can a bad build reach production?** If yes → add an eval gate that blocks groundedness < 4.0.
+5. **Can you trace a single bad answer end to end?** If not → wire OpenTelemetry to Azure Monitor.
+
+### Step 4 — A 1-week rollout plan
+
+| Day | Action | Owner |
+|-----|--------|-------|
+| **Day 1** | Build a labeled eval set with known hallucinations | Product + ML |
+| **Day 2** | Run groundedness/relevance; record baseline rate | ML eng |
+| **Day 3** | Tune Azure AI Search retrieval; re-measure | Data eng |
+| **Day 4** | Add the CI/CD eval gate (block < 4.0) | DevOps |
+| **Day 5** | Wire OpenTelemetry traces to Azure Monitor | SRE |
+
+### Step 5 — Prove the ROI
+
+- **Groundedness score** — mean across the eval set *(target: ≥ 4.0/5)*.
+- **Hallucination rate** — % of answers unsupported by sources *(target: under 2%)*.
+- **Gate coverage** — % of deployments passing through the eval gate *(target: 100%)*.
+
+> 💡 **Rule of thumb:** most "the model is hallucinating" problems are actually retrieval problems. Fix what the agent *sees* before you touch the prompt — and never ship without a groundedness gate.
 
 ---
 

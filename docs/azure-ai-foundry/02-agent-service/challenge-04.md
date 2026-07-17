@@ -53,6 +53,48 @@ The CISO has 8 questions on their security questionnaire. You have one week to b
 
 ---
 
+## 🧰 Before You Start — Environment Setup
+
+This challenge is a **multi-agent architecture** build that must survive a security review: private agent-to-agent communication, per-agent identity, and one trace ID per claim end to end.
+
+### Prerequisites
+
+| Requirement | Why you need it | How to check |
+|-------------|-----------------|--------------|
+| **Azure subscription** with Contributor + RBAC rights | Create multiple agents, identities, networking | `az account show` |
+| **Azure AI Foundry** Standard mode project | Hosted agents + BYO VNet + Entra Agent ID | Azure portal |
+| **Azure Cosmos DB** | Store claim records with an audit trail | `az cosmosdb list -o table` |
+| **Azure Monitor / Application Insights** | End-to-end trace correlation across agents | Azure portal |
+| A VNet for private agent-to-agent traffic | No agent comms over the public internet | Network Contributor |
+
+### Step 0 — Sign in and lay out the topology (10 min)
+
+Sketch the 1 orchestrator + 3 specialists and the **single trace ID** that must follow a claim through all of them. The architecture diagram above is your target.
+
+```bash
+az login
+az group create --name rg-claims-multiagent --location eastus
+```
+
+### Step 1 — Answer the CISO's 8 questions on paper first (10 min)
+
+Read the security questionnaire before building. Each answer maps to a concrete Azure control (private networking, Entra Agent ID, Cosmos audit, correlated tracing). Build to the questions.
+
+> 🟦 **Microsoft-first note:** the entire architecture is Azure-native — **Azure AI Foundry** hosted agents, **Microsoft Entra Agent ID** per agent, private **VNet** agent-to-agent comms, **Azure Cosmos DB** for claim records, and **Azure Monitor** for correlated traces. Multi-agent workflows use the **Foundry Agent Service** connected-agents model.
+
+### The path through this challenge
+
+1. **Task 1** — build the orchestrator + 3 specialist agents.
+2. **Task 2** — give each a scoped Entra Agent ID.
+3. **Task 3** — force agent-to-agent traffic through the VNet.
+4. **Task 4** — correlate one trace ID per claim in Azure Monitor.
+5. **Success Criteria** — answer all 8 CISO questions with evidence.
+6. **Adapt to Your Business** — apply the pattern to *your* multi-agent flow.
+
+> ⏱️ **Time budget:** ~120 minutes. Trace correlation (Task 4) is what makes the system auditable — it's the hardest and most important part.
+
+---
+
 ## Your Tasks
 
 ### Task 1: Create the Orchestrator and Specialist Agents
@@ -200,6 +242,58 @@ Based on the architecture you've built, document answers to these 8 questions:
 - [ ] End-to-end trace visible in Azure Monitor with claim ID correlation
 - [ ] CISO questionnaire completed with specific technical details
 - [ ] Role assignments documented: each agent has minimum required permissions only
+
+---
+
+## 🔁 Adapt This to Your Own Business
+
+The scenario is a **bank claims system**, but *any* multi-agent workflow faces the same three questions from security: who did what, was communication private, and can you audit a single transaction end to end? The pattern is the same across industries.
+
+### Step 1 — Find your multi-agent workflow
+
+| Industry | The orchestrator + specialists | What must be auditable |
+|----------|-------------------------------|------------------------|
+| **Financial services** | Claim router → medical/auto/property | Every routing + decision |
+| **Healthcare** | Intake → triage/coding/billing agents | Each PHI access |
+| **Supply chain** | Order agent → sourcing/logistics/finance | Each cross-system action |
+| **Customer service** | Router → billing/tech/retention agents | The full case chain |
+| **Legal** | Matter agent → research/drafting/review | Each document touch |
+
+### Step 2 — Map the building blocks to your stack (Microsoft-first)
+
+| In this challenge | In your project — use |
+|-------------------|-----------------------|
+| Orchestrator + specialists | **Azure AI Foundry Agent Service** connected agents / multi-agent workflow |
+| Per-agent identity | **Microsoft Entra Agent ID** with scoped RBAC |
+| Private agent-to-agent comms | **BYO VNet** + private endpoints (no public egress) |
+| Transaction records | **Azure Cosmos DB** (append-friendly, per-claim) |
+| End-to-end trace correlation | **Azure Monitor** + **Application Insights** (one trace ID) |
+
+### Step 3 — The 5-question implementation checklist
+
+1. **Can you tell which agent made which decision?** If not → add per-agent identity + correlated tracing.
+2. **Is agent-to-agent traffic on the public internet?** If yes → move it inside a VNet.
+3. **Does one trace ID follow a transaction across all agents?** If not → propagate a correlation ID.
+4. **Does each agent have only the permissions it needs?** If not → scope Entra Agent IDs.
+5. **Can you replay a single transaction's full chain?** If not → persist it in Cosmos DB with the trace ID.
+
+### Step 4 — A 1-week rollout plan
+
+| Day | Action | Owner |
+|-----|--------|-------|
+| **Day 1** | Map the orchestrator + specialists and the trace-ID flow | Architect |
+| **Day 2** | Build the agents in Foundry Agent Service | Backend dev |
+| **Day 3** | Assign per-agent Entra Agent IDs; force VNet comms | Cloud + security |
+| **Day 4** | Persist records in Cosmos DB with correlation IDs | Backend dev |
+| **Day 5** | Wire end-to-end tracing; answer the security questionnaire | SRE + security |
+
+### Step 5 — Prove the ROI
+
+- **Decision attribution** — % of agent decisions traceable to a specific agent identity *(target: 100%)*.
+- **Private comms** — % of agent-to-agent traffic off the public internet *(target: 100%)*.
+- **Auditability** — time to reconstruct one transaction's full chain *(target: minutes)*.
+
+> 💡 **Rule of thumb:** a multi-agent system a security team can't audit will never reach production. Design the trace ID and the per-agent identities first — the intelligence is the easy part.
 
 ---
 

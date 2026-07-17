@@ -47,6 +47,48 @@ When a Hosted Agent fails at scale, check in this order:
 
 ---
 
+## 🧰 Before You Start — Environment Setup
+
+This challenge is a **production-resilience** drill: an agent that works in dev collapses at scale. Your setup needs observability and a way to generate concurrent load so you can reproduce and fix the failure.
+
+### Prerequisites
+
+| Requirement | Why you need it | How to check |
+|-------------|-----------------|--------------|
+| **Azure subscription** + a deployed **Hosted Agent** | The thing under load | Azure portal |
+| **Azure Monitor / Application Insights** | Read health metrics, request rate, traces | Azure portal |
+| **Azure CLI** | Inspect agent config, timeouts, scaling | `az version` |
+| A load-generation tool — **Azure Load Testing** (or `locust` *(third-party)*) | Reproduce the concurrency that breaks it | Azure portal / `pip show locust` |
+| Access to the agent's downstream tools/APIs | Circuit-breaker and latency fixes live here | app config |
+
+### Step 0 — Get eyes on the system first (5 min)
+
+Before changing anything, open the dashboards. Under time pressure the instinct is to guess — resist it and read the metrics.
+
+```bash
+az login
+# Open Application Insights: request rate, failure rate, dependency latency
+```
+
+### Step 1 — Reproduce the failure with load (10 min)
+
+You can't fix what you can't reproduce. Use **Azure Load Testing** to ramp concurrency (e.g. 5 → 100 → 500) and watch where timeouts begin — that inflection point is your target.
+
+> 🟦 **Microsoft-first note:** diagnosis and load are Microsoft-native — **Azure Monitor**, **Application Insights**, Hosted Agent **Micro-VM metrics**, and **Azure Load Testing**. `locust` is listed only as a third-party local alternative for quick load generation.
+
+### The path through this challenge
+
+1. **Diagnostic Framework** — walk the 6-step checklist in order.
+2. **Task 1** — read logs + Micro-VM metrics to find the bottleneck.
+3. **Task 2** — fix concurrency/timeout config.
+4. **Task 3** — add a circuit breaker for downstream failures.
+5. **Success Criteria** — under 5% error rate at 100 concurrent users.
+6. **Adapt to Your Business** — harden *your* agent for peak load.
+
+> ⏱️ **Time budget:** ~90 minutes. Follow the diagnostic order — jumping to a fix before finding the bottleneck is how the 4-hour clock runs out.
+
+---
+
 ## Your Tasks
 
 ### Task 1: Enable Comprehensive Monitoring
@@ -239,6 +281,59 @@ hey -n 1000 -c 500 -t 30 \
 - [ ] Async batch processing handles 50 concurrent requests without timeouts
 - [ ] Health check script correctly identifies a stopped or slow agent
 - [ ] Load test shows &lt;5% error rate at 100 concurrent users
+
+---
+
+## 🔁 Adapt This to Your Own Business
+
+The scenario is a **Black Friday shopping assistant**, but *any* agent faces the gap between "works in the demo" and "survives real traffic." The diagnose-in-order + resilience-patterns approach applies to every production agent.
+
+### Step 1 — Find your peak-load moment
+
+| Industry | The peak event | What fails first |
+|----------|----------------|------------------|
+| **Retail / e-commerce** | Black Friday / flash sale | Timeouts, stale recommendations |
+| **Financial services** | Market open, tax season | Downstream API saturation |
+| **Healthcare** | Enrollment periods | Slow retrieval under concurrency |
+| **Travel / hospitality** | Holiday booking surges | Cold starts, rate limits |
+| **Public sector** | Filing deadlines | Queue backups, dropped requests |
+
+### Step 2 — Map the building blocks to your stack (Microsoft-first)
+
+| In this challenge | In your project — use |
+|-------------------|-----------------------|
+| Health + request metrics | **Azure Monitor** + **Application Insights** |
+| Container / Micro-VM metrics | Hosted Agent metrics in **Azure Monitor** |
+| Load generation | **Azure Load Testing** *(locust as a third-party local option)* |
+| Concurrency / timeout tuning | Hosted Agent scaling + timeout config |
+| Circuit breaker | Resilience in code (e.g. Polly for .NET) for downstream calls |
+| Caching hot data | **Azure Cache for Redis** for recommendations/lookups |
+
+### Step 3 — The 5-question implementation checklist
+
+1. **Can you see request rate, failure rate, and latency live?** If not → instrument first, fix second.
+2. **Can you reproduce the failure with load?** If not → run Azure Load Testing before changing anything.
+3. **Is it cold start or saturation?** Read Micro-VM metrics — the fix differs completely.
+4. **Do downstream failures cascade?** If yes → add a circuit breaker + timeouts.
+5. **Is hot data recomputed every request?** If yes → cache it (Azure Cache for Redis).
+
+### Step 4 — A 1-week rollout plan
+
+| Day | Action | Owner |
+|-----|--------|-------|
+| **Day 1** | Add full request/dependency instrumentation | SRE |
+| **Day 2** | Load test to find the failure inflection point | SRE |
+| **Day 3** | Tune concurrency + timeout config | Backend dev |
+| **Day 4** | Add circuit breaker + downstream timeouts | Backend dev |
+| **Day 5** | Add caching; re-run load test to confirm under 5% errors | SRE |
+
+### Step 5 — Prove the ROI
+
+- **Error rate at target load** — % failed requests at peak concurrency *(target: under 5%)*.
+- **P95 latency under load** — response time at peak *(target: within SLA)*.
+- **Cold-start impact** — % of slow requests attributable to cold start *(target: near 0)*.
+
+> 💡 **Rule of thumb:** "works locally" tests correctness; production tests concurrency. Instrument, reproduce with load, then fix in the diagnostic order — guessing under a revenue-loss clock is how outages get longer.
 
 ---
 
