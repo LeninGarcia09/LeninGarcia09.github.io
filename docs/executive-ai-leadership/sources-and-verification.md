@@ -17,7 +17,7 @@ A learning plan is only trustworthy if its recommendations are **real, current, 
 3. **Separate fact from recommendation** — program existence/scope is verifiable *fact*; sequence and timing are labeled *judgment*.
 4. **Re-verify quarterly** — executive programs and Microsoft certs are renamed or retired regularly.
 
-**Last verified:** 2026-07-17
+**Last verified:** 2026-07-18
 
 ---
 
@@ -81,6 +81,8 @@ Verified free options for building the same executive AI literacy at zero or low
 | Google AI Essentials | Google | **Free** | Free | [ai.google/ai-essentials](https://ai.google/ai-essentials/) |
 | Elements of AI | University of Helsinki + Reaktor | **Free** | Free | [elementsofai.com](https://www.elementsofai.com/) |
 | AI learning paths & applied skills | Microsoft Learn | **Free** | Free (Applied Skills) | [learn.microsoft.com](https://learn.microsoft.com/en-us/training/) |
+| Transform your business with AI (learning path) | Microsoft Learn | **Free** | Free (badge) | [learn.microsoft.com](https://learn.microsoft.com/en-us/training/paths/transform-your-business-with-microsoft-ai/) |
+| Google Prompting Essentials | Google (Coursera) | **Free to audit** | Paid only | [coursera.org](https://www.coursera.org/learn/prompting-essentials) |
 | Anthropic Academy | Anthropic | **Free** | Varies | [anthropic.com/learn](https://www.anthropic.com/learn) |
 | AI RMF Playbook & Roadmap | NIST | **Free** | N/A | [nist.gov](https://www.nist.gov/itl/ai-risk-management-framework) |
 
