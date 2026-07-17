@@ -47,6 +47,54 @@ Disparate Impact: The AI produces different outcomes for protected groups
 
 ---
 
+## 🧰 Before You Start — Environment Setup
+
+This is a **fairness measurement** exercise. You quantify the disparity, find its root cause, mitigate it, and prove the metric improved. Setup centers on the fairness tooling and a dataset where you *know* the bias exists.
+
+### Prerequisites
+
+| Requirement | Why you need it | How to check |
+|-------------|-----------------|--------------|
+| Python 3.10+ + pandas | Compute disparity metrics | `python --version` |
+| **Azure AI Evaluation SDK** | Run fairness/quality evaluators on model outputs | `pip show azure-ai-evaluation` |
+| **Responsible AI dashboard** (Azure Machine Learning) | Visualize performance disparities across groups | [Docs](https://learn.microsoft.com/azure/machine-learning/concept-responsible-ai-dashboard) |
+| **Fairlearn** *(Microsoft open-source)* | Disparity metrics + mitigation algorithms | `pip show fairlearn` |
+| A labeled dataset with a protected attribute | Compute the Disparate Impact Ratio (DIR) | see Step 1 |
+
+### Step 0 — Create an isolated workspace (5 min)
+
+```bash
+mkdir fairness-audit && cd fairness-audit
+python -m venv .venv
+# Windows:  .venv\Scripts\activate    |    macOS/Linux:  source .venv/bin/activate
+pip install pandas azure-ai-evaluation fairlearn azure-ai-ml azure-identity
+```
+
+### Step 1 — Load a KNOWN-biased sample dataset (10 min)
+
+Use a small dataset where the disparity is *deliberately present* (these are **synthetic sample rows**, not real candidates), so you can prove your metric detects it and your mitigation fixes it.
+
+```python
+# sample_scores.py — synthetic data, NOT real candidates
+# Columns: candidate_id, group, model_score, hired
+# Construct it so one group's selection rate is clearly below 0.8x the top group.
+```
+
+> 🟦 **Microsoft-first note:** the fairness stack here is Microsoft — the **Azure AI Evaluation SDK** and the **Responsible AI dashboard** in **Azure Machine Learning**, plus **Fairlearn** (Microsoft's open-source fairness toolkit). Store the audited dataset and results in **Azure ML datastores** / **Microsoft Fabric**, not loose CSVs.
+
+### The path through this challenge
+
+1. **Task 1** — measure the disparity (Disparate Impact Ratio per group).
+2. **Task 2** — visualize it in the Responsible AI dashboard.
+3. **Task 3** — find the root cause (proxy variables).
+4. **Task 4** — apply a mitigation and add human-in-the-loop.
+5. **Success Criteria** — DIR ≥ 0.85 across all groups.
+6. **Adapt to Your Business** — audit *your* people-decision model.
+
+> ⏱️ **Time budget:** ~90 minutes. Measuring the DIR (Task 1) is the anchor — everything else is judged against it.
+
+---
+
 ## Your Tasks
 
 ### Task 1: Measure the Disparity
@@ -259,6 +307,60 @@ in the past" which reflected historical bias rather than job performance.
 - [ ] Post-processing mitigation raises DIR to ≥ 0.85 across all groups
 - [ ] Human-in-the-loop override mechanism implemented
 - [ ] Legal documentation completed with findings, root cause, and mitigation
+
+---
+
+## 🔁 Adapt This to Your Own Business
+
+The scenario is a **hiring tool**, but *any* AI that makes or influences decisions **about people** can produce disparate impact — often through proxy variables, without any explicit protected attribute. The measure → diagnose → mitigate → document loop is the same everywhere.
+
+### Step 1 — Find your "AI decides something about a person" moment
+
+| Industry | The people-decision | The disparate-impact risk |
+|----------|---------------------|---------------------------|
+| **HR / recruiting** | Resume screening, promotion scoring | Gender / ethnicity proxies |
+| **Lending / fintech** | Credit approval, pricing | ZIP-code / income proxies |
+| **Insurance** | Underwriting, claims triage | Age / disability proxies |
+| **Higher education** | Admissions, scholarship scoring | Socioeconomic proxies |
+| **Healthcare** | Triage, care-management targeting | Race / access proxies |
+| **Public sector** | Benefits eligibility, fraud scoring | Protected-class proxies |
+
+### Step 2 — Map the building blocks to your stack (Microsoft-first)
+
+| In this challenge | In your project — use |
+|-------------------|-----------------------|
+| DIR / disparity metrics | **Fairlearn** + **Azure AI Evaluation SDK** |
+| Disparity visualization | **Responsible AI dashboard** (Azure ML) |
+| Root-cause analysis | RAI dashboard feature importance / error analysis |
+| Mitigation | Fairlearn pre/in/post-processing algorithms |
+| Human-in-the-loop override | Required reviewer step (Power Apps / Dataverse workflow) |
+| Ongoing monitoring | Scheduled **Azure ML** fairness jobs + **Azure Monitor** |
+
+### Step 3 — The 5-question implementation checklist
+
+1. **Does your model influence a decision about a person?** If yes → it needs a fairness audit, full stop.
+2. **Do you measure outcomes by protected group?** If not → compute DIR / the 4/5ths rule now.
+3. **Could a proxy variable be leaking group membership?** If unsure → run feature importance in the RAI dashboard.
+4. **Is there a human override for adverse decisions?** If not → add human-in-the-loop before the DIR fix.
+5. **Do you re-audit on a schedule?** If not → set a quarterly fairness job; models drift.
+
+### Step 4 — A 1-week rollout plan
+
+| Day | Action | Owner |
+|-----|--------|-------|
+| **Day 1** | Compute DIR / 4/5ths rule for each protected group | Data scientist |
+| **Day 2** | Load the model into the Responsible AI dashboard | ML eng |
+| **Day 3** | Identify proxy variables driving the disparity | Data scientist |
+| **Day 4** | Apply a Fairlearn mitigation; re-measure DIR | ML eng |
+| **Day 5** | Add human-in-the-loop + write the bias incident report | Compliance + ML |
+
+### Step 5 — Prove the ROI
+
+- **Disparate Impact Ratio** — lowest group's selection rate ÷ highest's *(target: ≥ 0.8, ideally ≥ 0.85)*.
+- **Group coverage** — % of protected groups actually tested *(target: 100%)*.
+- **Human-override coverage** — % of adverse decisions with a human reviewer *(target: 100%)*.
+
+> 💡 **Rule of thumb:** removing the protected attribute does **not** remove the bias — models learn proxies. Measure outcomes by group, or you're flying blind.
 
 ---
 
