@@ -1,13 +1,34 @@
 ﻿---
 sidebar_position: 1
-title: AI-102 — Azure AI Engineer Associate
+title: AI-102 → AI-103 — Azure AI Apps and Agents Developer
 ---
 
-# AI-102: Azure AI Engineer Associate
+# AI-102 → AI-103: Azure AI Apps and Agents Developer Associate
 
-> **⚠️ This track is under construction.** Challenges coming soon.
+:::danger AI-102 se retiró el 30 de junio de 2026 — usa AI-103
+Microsoft **retiró el examen AI-102** el **30-jun-2026**. Su sucesor es **AI-103 — Azure AI Apps and Agents Developer Associate**, orientado a construir apps de IA generativa y soluciones **multi-agente con Microsoft Foundry** usando Python.
 
-## Exam Overview
+- Página oficial: [Azure AI Apps and Agents Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/)
+- Study guide: [AI-103 skills measured](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103)
+- Contexto verificado: ver [Fuentes y Verificación v4](/docs/learning-plan-v4/sources-and-verification)
+
+**Verifica el estado (beta/GA) y los *skills measured* en la página oficial antes de calendarizar.**
+:::
+
+> **⚠️ Este track se está actualizando de AI-102 a AI-103.** Los retos se migrarán al nuevo alcance.
+
+## Exam Overview (AI-103)
+
+- **Exam:** AI-103 (sucesor de AI-102, retirado 30-jun-2026)
+- **Level:** Associate
+- **Target Audience:** AI Engineers, Solution Architects
+- **Enfoque:** apps de IA generativa + soluciones multi-agente con Microsoft Foundry (Python)
+- **Passing Score:** 700/1000
+- **Validity:** verificar en la página oficial
+
+> Los datos históricos de AI-102 (redesign de abril 2025) se conservan abajo como referencia hasta completar la migración a AI-103.
+
+## Referencia histórica — AI-102 (retirado)
 
 - **Exam:** AI-102 (Redesigned April 2025)
 - **Level:** Associate
