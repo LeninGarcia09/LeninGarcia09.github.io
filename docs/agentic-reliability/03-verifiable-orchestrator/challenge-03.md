@@ -63,6 +63,58 @@ User query
 
 ---
 
+## 🧰 Before You Start — Environment Setup
+
+This challenge is about **provable determinism**, so your setup must let you re-run the exact same computation and get byte-identical results. The LLM only parses intent; a deterministic engine does all the math.
+
+### Prerequisites
+
+| Requirement | Why you need it | How to check |
+|-------------|-----------------|--------------|
+| Python 3.10+ | Orchestrator + deterministic engine | `python --version` |
+| **Azure OpenAI** via [Azure AI Foundry](https://ai.azure.com) with **Structured Outputs** | Force the LLM to emit a schema-validated `QuerySpec` and nothing else | Deploy `gpt-4o` + [structured outputs](https://learn.microsoft.com/azure/ai-services/openai/how-to/structured-outputs) |
+| A deterministic SQL engine — **Azure SQL Database** or **Microsoft Fabric** (prod); DuckDB local | The same query must always return the same number — this is your audit backbone | Azure portal / `pip show duckdb` |
+| An append-only audit store — **Azure SQL** or **Cosmos DB** (prod); local file here | Immutable chain of custody for every figure | Azure portal / `mkdir .audit` |
+| **Azure AI Foundry — Tracing** | Record LLM spans vs deterministic-tool spans separately | [Docs](https://learn.microsoft.com/azure/foundry/observability/how-to/trace-agent-setup) |
+
+### Step 0 — Create an isolated workspace (5 min)
+
+```bash
+mkdir verifiable-orchestrator && cd verifiable-orchestrator
+python -m venv .venv
+# Windows:  .venv\Scripts\activate    |    macOS/Linux:  source .venv/bin/activate
+pip install azure-ai-projects azure-identity openai pydantic duckdb
+mkdir .audit   # local stand-in for the Azure SQL / Cosmos DB audit log
+```
+
+### Step 1 — Seed a KNOWN dataset (10 min)
+
+Load a small table of prices with values you already know (these are **sample values, not real market data**). Because you know the true numbers, you can prove your engine returns them exactly.
+
+```python
+# seed.py — sample values only, NOT real market data
+ROWS = [
+    ("NFLX", "2026-03-14", 605.88),
+    ("NFLX", "2026-03-15", 611.20),
+]
+# In production this is an Azure SQL table or a Fabric Lakehouse table.
+```
+
+> 🟦 **Microsoft-first note:** DuckDB and the `.audit` folder are local stand-ins so you can run offline. In production the deterministic engine is **Azure SQL Database** or a **Microsoft Fabric** warehouse (SQL is deterministic by definition), and the append-only audit log lives in **Azure SQL** or **Azure Cosmos DB**. The orchestration pattern is identical.
+
+### The path through this challenge
+
+1. **Task 1** — write the intent-only LLM contract (structured outputs).
+2. **Task 2** — build the deterministic computation layer.
+3. **Task 3** — build the auditable output generator (`source_ref`).
+4. **Task 4** — demonstrate regulatory defensibility (`prove_value()`).
+5. **Success Criteria** — every number traces to a row + formula.
+6. **Adapt to Your Business** — apply this to *your* regulated numbers.
+
+> ⏱️ **Time budget:** ~3–4 hours. The deterministic engine (Task 2) is where the audit guarantee is won — invest there.
+
+---
+
 ## Tasks
 
 ### Task 1 — Design the Intent-Only LLM Contract
@@ -409,6 +461,62 @@ def prove_value(report_id: str, ticker: str, value: float) -> dict:
 
 ---
 
+## 🔁 Adapt This to Your Own Business
+
+The scenario is a **financial report under FINRA audit**, but the pattern applies to *any* business where a number must be **provably correct and traceable** — where "the AI probably got it right" is not good enough.
+
+### Step 1 — Find your "every number must be defensible" moment
+
+| Industry | The high-stakes numbers | Who audits them |
+|----------|-------------------------|-----------------|
+| **Financial services** | Returns, risk metrics, portfolio values | FINRA / SEC / auditors |
+| **Healthcare billing** | Claim amounts, coding, reimbursements | CMS / payers |
+| **Insurance** | Premiums, reserves, payout calculations | State regulators / actuaries |
+| **Energy / commodities** | Settlement prices, volume calculations | FERC / exchanges |
+| **Supply chain** | Landed cost, tariff, inventory valuation | Customs / finance |
+| **Tax & accounting** | Taxable amounts, depreciation, credits | IRS / external auditors |
+
+If a wrong number triggers a fine, a restatement, or a lawsuit → you need the Verifiable Orchestrator.
+
+### Step 2 — Map the building blocks to your stack (Microsoft-first)
+
+| In this challenge | In your project — replace with |
+|-------------------|--------------------------------|
+| Intent parser (LLM) | **Azure OpenAI Structured Outputs** — schema-validated params only |
+| DuckDB engine | **Azure SQL Database** or **Microsoft Fabric** warehouse (deterministic SQL) |
+| `source_ref` on each value | A row/formula pointer stored with each output field |
+| Append-only audit log | **Azure SQL** (temporal tables) or **Azure Cosmos DB** |
+| `prove_value()` | A stored procedure / API that replays the exact query |
+| LLM-vs-tool span separation | **Azure AI Foundry Tracing** + **Application Insights** |
+
+### Step 3 — The 5-question implementation checklist
+
+1. **Does your LLM ever do arithmetic?** If yes → move all math into deterministic code/SQL. The LLM parses intent only.
+2. **Can you re-run any output and get the identical number?** If no → your engine isn't deterministic yet.
+3. **Does every displayed number carry a pointer to its source row + formula?** If no → add `source_ref`.
+4. **Is your audit log append-only and immutable?** If it can be edited → it is not defensible.
+5. **Can you answer "prove this number" in under a minute?** If not → build the `prove_value()` path.
+
+### Step 4 — A 1-week rollout plan
+
+| Day | Action | Owner |
+|-----|--------|-------|
+| **Day 1** | Inventory every AI-produced number and its blast radius | Compliance + eng |
+| **Day 2** | Move intent parsing to Azure OpenAI Structured Outputs | Backend dev |
+| **Day 3** | Move all computation into Azure SQL / Fabric (deterministic) | Data eng |
+| **Day 4** | Add `source_ref` + append-only audit log (Azure SQL / Cosmos) | Backend dev |
+| **Day 5** | Build `prove_value()` and run a mock audit | Eng + compliance |
+
+### Step 5 — Prove the ROI
+
+- **Traceability coverage** — % of output numbers with a valid `source_ref` *(target: 100%)*.
+- **Reproducibility** — % of outputs that re-compute to the identical value *(target: 100%)*.
+- **Audit response time** — minutes to prove any single number *(target: under 1 min)*.
+
+> 💡 **Rule of thumb:** the LLM should decide *what* to compute, never *compute it*. If a regulator can't re-run your number and get the same answer, it isn't defensible — no matter how good the model is.
+
+---
+
 ## Regulatory Mapping
 
 | Regulation | Requirement | How This Challenge Addresses It |
@@ -465,24 +573,28 @@ def parse_intent(question):
 
 ---
 
-## ?? Tools & References
+## 📚 Tools & References
 
 ### Key Tools for This Challenge
 
+> **Microsoft-first:** lead with Azure-native tooling. Third-party tools are listed only where they add reliable, best-in-class capability not yet covered natively.
+
 | Tool | Role in This Challenge | Link |
 |------|----------------------|------|
-| **DuckDB** | The deterministic computation engine at the heart of TRACE � SQL queries return the same result every time, enabling provable audit trails | [duckdb.org](https://duckdb.org) |
-| **Pydantic v2** | Enforce structured intent parsing � ResponseFormatJsonSchema forces the LLM to produce type-safe, validatable query parameters | [docs.pydantic.dev](https://docs.pydantic.dev) |
-| **Great Expectations** | Data contract validation � assert that every dataset feeding the deterministic engine meets expected schemas before execution | [greatexpectations.io](https://greatexpectations.io) |
-| **MLflow** | Track every deterministic engine run � log inputs, SQL queries, output hashes, and model versions for full lineage | [mlflow.org](https://mlflow.org) |
-| **Prefect** | Workflow orchestration for deterministic pipelines � attach run IDs, retry policies, and structured execution logs to every computation | [prefect.io](https://www.prefect.io) |
-| **Azure AI Foundry Tracing** | Capture the separation of LLM calls from deterministic tool calls as distinct span types � visible in Application Insights dashboards | [Docs](https://learn.microsoft.com/azure/foundry/observability/how-to/trace-agent-setup) |
-| **Patronus AI** | Finance-specific compliance checks � validate that audit trail entries meet FINRA record-keeping format requirements | [patronus.ai](https://www.patronus.ai) |
+| **Azure SQL Database / Microsoft Fabric** | The deterministic computation engine — SQL returns the same result every time, giving you a provable audit trail | [Azure SQL](https://learn.microsoft.com/azure/azure-sql/) · [Fabric](https://learn.microsoft.com/fabric/) |
+| **Azure OpenAI — Structured Outputs** | Force the LLM to emit a schema-validated `QuerySpec` and nothing else — type-safe, non-negotiable intent parsing | [Docs](https://learn.microsoft.com/azure/ai-services/openai/how-to/structured-outputs) |
+| **Azure Cosmos DB** | Append-only, immutable audit log — chain of custody for every figure | [Docs](https://learn.microsoft.com/azure/cosmos-db/introduction) |
+| **Azure AI Foundry Tracing** | Capture LLM calls and deterministic tool calls as distinct span types — visible in Application Insights | [Docs](https://learn.microsoft.com/azure/foundry/observability/how-to/trace-agent-setup) |
+| **Azure Monitor / Application Insights** | Query and alert on the computation log; retain audit evidence | [Docs](https://learn.microsoft.com/azure/azure-monitor/fundamentals/overview) |
+| DuckDB *(third-party)* | Local, offline stand-in for the deterministic engine while you build — SQL queries return identical results every run | [duckdb.org](https://duckdb.org) |
+| Pydantic v2 *(third-party)* | Local schema validation of parsed intent when not using Structured Outputs | [docs.pydantic.dev](https://docs.pydantic.dev) |
+| Great Expectations *(third-party)* | Data-contract validation — assert datasets meet expected schemas before execution | [greatexpectations.io](https://greatexpectations.io) |
 
 ### Required Reading
 
 | Resource | Why It Matters |
 |----------|---------------|
-| [The Verifiable Orchestrator (Part 2)](https://appliedingenuity.substack.com/p/the-verifiable-orchestrator) | The source article for this challenge � TRACE architecture explained with full code patterns |
+| [The Verifiable Orchestrator (Part 2)](https://appliedingenuity.substack.com/p/the-verifiable-orchestrator) | The source article for this challenge — the TRACE architecture explained with full code patterns |
+| [Azure OpenAI Structured Outputs](https://learn.microsoft.com/azure/ai-services/openai/how-to/structured-outputs) | How to guarantee the LLM only ever emits schema-valid query parameters |
 | [Azure AI Foundry Tracing Setup](https://learn.microsoft.com/azure/foundry/observability/how-to/trace-agent-setup) | How to separate deterministic tool spans from LLM reasoning spans in production |
-| [FINRA Rule 4511 � Books and Records](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) | The actual regulation governing broker-dealer recordkeeping � understand what "defensible to a regulator" really means |
+| [FINRA Rule 4511 — Books and Records](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) | The actual regulation governing broker-dealer recordkeeping — what "defensible to a regulator" really means |
