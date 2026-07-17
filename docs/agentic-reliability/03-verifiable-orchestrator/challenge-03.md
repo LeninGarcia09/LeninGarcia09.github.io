@@ -17,57 +17,13 @@ You have 30 days to re-architect before the formal audit.
 
 ---
 
-## The Core Problem: The Black Box
+## The idea in 30 seconds
 
-In the "Simple Agentic" pattern, the LLM is simultaneously the planner, the calculator, and the formatter. The same model that decides to call a tool also performs arithmetic on the result and writes the final report. There is **no deterministic layer between source data and output**.
+**What you'll build:** a reporting agent where the LLM *never touches a number*. It only turns the user's request into structured parameters — then deterministic code does the fetch, the math, and the formatting, and every figure carries a `source_ref` you can hand to an auditor.
 
-```
-SIMPLE AGENTIC — The Black Box
-──────────────────────────────
-Database → [raw rows] → LLM context → [invisible transformation] → Report
-                                       ↑
-                         Did the LLM:
-                         (a) copy the value correctly?
-                         (b) round it differently?
-                         (c) confuse it with a different ticker's data?
-                         (d) hallucinate it entirely?
-                         → YOU CANNOT TELL FROM THE OUTPUT
-```
+> **The one principle:** the LLM decides *what* to compute. It never computes it.
 
-The "Verifiable Orchestrator" pattern solves this by giving the LLM **exactly one job**: parse user intent into structured query parameters. All computation, calculation, and output generation happens in deterministic Python code — outside the LLM's probabilistic reasoning.
-
-```
-VERIFIABLE ORCHESTRATOR
-───────────────────────
-User query
-  → LLM [ONLY: extract intent → structured parameters]
-  → Parameters [ticker=NFLX, start=2024-03-15, end=2025-03-14, metric=close]
-  → Deterministic Python [fetch + calculate + format]
-  → Output + source_ref [every number traceable to DB row + calculation]
-  → User + Audit Log
-```
-
----
-
-## Architecture Decision Table
-
-| Component | Simple Agentic | Verifiable Orchestrator |
-|-----------|---------------|------------------------|
-| Intent parsing | LLM | LLM |
-| Data fetching | LLM decides tool params probabilistically | LLM outputs structured params → deterministic fetch |
-| Calculation | LLM arithmetic (token prediction) | Python math (deterministic) |
-| Formatting | LLM natural language | Template-based rendering |
-| Audit trail | None | Every value has `source_ref` |
-| Accuracy guarantee | None | 100% for fetched values, &lt;0.001% rounding only |
-| Regulatory defensibility | None | Full — queryable audit log |
-
----
-
-## 🏗️ Reference Architecture — Azure Components (customer-ready)
-
-The two patterns above are conceptual. Below is the **same pattern with real components on every box** — drop this straight into a customer architecture review. Everything is Microsoft-first; reliable third-party options are tagged where a customer may already own one.
-
-### ❌ Simple Agentic — the trap
+**❌ Simple Agentic — the trap** &nbsp; *(the model fetches **and** computes, so a wrong number looks exactly like a right one)*
 
 ```mermaid
 flowchart TD
@@ -79,9 +35,7 @@ flowchart TD
     style LLM fill:#fff2b2,stroke:#b7791f,color:#000
 ```
 
-The model both *fetches* and *computes*, so a wrong number is indistinguishable from a right one. There is nothing to hand an auditor.
-
-### ✅ Verifiable Orchestrator — the fix
+**✅ Verifiable Orchestrator — the fix** &nbsp; *(the LLM emits parameters only; deterministic code produces every number)*
 
 ```mermaid
 flowchart TD
@@ -102,7 +56,22 @@ flowchart TD
     style COMPUTE fill:#d6e4ff,stroke:#1c4587,color:#000
 ```
 
-### Component mapping — what to actually deploy
+<details>
+<summary>🏗️ <strong>Take it to a customer</strong> — real Azure components, decision table & talk-track</summary>
+
+**Simple Agentic vs Verifiable Orchestrator**
+
+| Component | Simple Agentic | Verifiable Orchestrator |
+|-----------|---------------|------------------------|
+| Intent parsing | LLM | LLM |
+| Data fetching | LLM decides tool params probabilistically | LLM outputs structured params → deterministic fetch |
+| Calculation | LLM arithmetic (token prediction) | Python math (deterministic) |
+| Formatting | LLM natural language | Template-based rendering |
+| Audit trail | None | Every value has `source_ref` |
+| Accuracy guarantee | None | 100% for fetched values, &lt;0.001% rounding only |
+| Regulatory defensibility | None | Full — queryable audit log |
+
+**What to actually deploy**
 
 | Pipeline stage | Its one job | Azure / Microsoft service (primary) | Reliable third-party alt |
 |----------------|-------------|--------------------------------------|--------------------------|
@@ -117,16 +86,18 @@ flowchart TD
 | **Identity & secrets** | Keyless auth + secret storage | **Microsoft Entra** managed identity · **Azure Key Vault** | HashiCorp Vault *(third-party)* |
 | **Governance** | Policy + data classification | **Microsoft Purview** · **Azure Policy** | — |
 
-### How a request flows (the 6 steps to show a customer)
+**How a request flows**
 
 1. **User asks** in Teams / Power Apps / web → hits the front end.
-2. **Orchestrator** (Agent Service or Semantic Kernel) sends the message to **Azure OpenAI** with **Structured Outputs** — the model may return *only* a schema-valid `QuerySpec` (ticker, dates, metric). No raw data ever enters the model.
-3. **Validation gate** rejects anything that doesn't match the contract before a single row is read.
+2. **Orchestrator** sends the message to **Azure OpenAI** with **Structured Outputs** — the model may return *only* a schema-valid `QuerySpec`. No raw data ever enters the model.
+3. **Validation gate** rejects anything off-contract before a single row is read.
 4. **Azure Functions** runs the deterministic query against the **system of record** and does all arithmetic in code.
-5. Every output value is written to the **Azure SQL Ledger** audit log with a `source_ref` (source row + formula) — cryptographically tamper-evident.
-6. A **template** renders the answer (no LLM in the output path). **Foundry Tracing** keeps LLM spans and compute spans separate, so you can prove which layer produced which number.
+5. Every output value is written to the **Azure SQL Ledger** audit log with a `source_ref` — cryptographically tamper-evident.
+6. A **template** renders the answer (no LLM in the output path); **Foundry Tracing** keeps LLM and compute spans separate.
 
-> 🟦 **Take this to your customer:** the line that closes regulated deals is *"the LLM decides **what** to compute; it never computes it — and **Azure SQL Ledger** makes every figure tamper-evident."* That single sentence answers the FINRA question in the scenario: *was this number altered by the AI model?* → **provably no.**
+> 🟦 **The line that closes regulated deals:** *"the LLM decides **what** to compute; it never computes it — and **Azure SQL Ledger** makes every figure tamper-evident."* That answers the FINRA question in the scenario — *was this number altered by the AI?* → **provably no.**
+
+</details>
 
 ---
 
@@ -626,7 +597,8 @@ No team, no budget? "Every number is provable and reproducible" is exactly the d
 
 ---
 
-## Regulatory Mapping
+<details>
+<summary>📋 <strong>Regulatory mapping</strong> — FINRA · SEC · EU AI Act · SOX · MiFID II</summary>
 
 | Regulation | Requirement | How This Challenge Addresses It |
 |-----------|-------------|--------------------------------|
@@ -636,9 +608,12 @@ No team, no budget? "Every number is provable and reproducible" is exactly the d
 | **SOX Section 302/906** | CEO/CFO certification of financial accuracy | `prove_value()` provides certification evidence |
 | **MiFID II** | Audit trail for investment advice | Report ID + defensibility check |
 
+</details>
+
 ---
 
-## Break & Fix
+<details>
+<summary>🧪 <strong>Break &amp; Fix</strong> — spot why three plausible "fixes" reintroduce the black box</summary>
 
 ```python
 # broken_orchestrator.py
@@ -670,6 +645,8 @@ def parse_intent(question):
 2. **String search is not proof**: `value in str(record)` returns `True` if `174.4` appears anywhere in the record, including as a partial match for `174.42`. This doesn't prove the value came from a specific DB row via a specific formula. FINRA requires a complete chain of custody.
 3. **Free-form LLM parsing is non-deterministic**: The same question phrased two ways could produce different parameters. Using `ResponseFormatJsonSchema` with schema validation guarantees the LLM output is always parseable and matches expected types.
 :::
+
+</details>
 
 ---
 
