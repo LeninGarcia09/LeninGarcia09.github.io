@@ -38,11 +38,20 @@ title: "Plan de Desarrollo Profesional v4 — 26 Semanas"
 
 ## Certificaciones (vigentes 2026)
 
-1. **AI-103** - Azure AI Apps and Agents Developer Associate (prioridad critica)
-2. **AZ-305** - Designing Microsoft Azure Infrastructure Solutions
+1. **AI-103** - Azure AI Apps and Agents Developer Associate (prioridad critica; **reemplaza a AI-102, que se retira el 30-jun-2026**)
+2. **AZ-305** - Azure Solutions Architect Expert (Designing Microsoft Azure Infrastructure Solutions)
 3. **SC-500** - Cloud and AI Security Engineer Associate (**verificar estado beta/GA antes de calendarizar exam**)
-4. **GitHub Copilot** (quick win)
+4. **GitHub Copilot (GH-300)** (quick win)
 5. **AI-200** - Azure AI Cloud Developer Associate (opcional, segun necesidad en loops activos)
+
+:::tip Antes de empezar: lee estas dos paginas
+Todo el portafolio de certificaciones AI de Microsoft esta rotando en 2026 (betas y reemplazos). Para que este plan sea confiable:
+
+- 📚 [**Fuentes y Verificacion v4**](./sources-and-verification) — cada certificacion, framework y recurso con enlace a su fuente primaria oficial.
+- 🧭 [**Metodologia y Mejores Practicas v4**](./methodology-best-practices) — por que el plan usa "proof over study", 70-20-10 y una rubrica de capstone "hiring-ready".
+
+**Verifica siempre el estado (beta/GA) y los *skills measured* en la pagina oficial antes de calendarizar un examen.**
+:::
 
 ## Entregables minimos del plan
 

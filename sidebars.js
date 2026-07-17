@@ -156,6 +156,8 @@ const sidebars = {
     { type: 'doc', id: 'learning-plan-v4/weekly-tracker', label: '📊 Weekly Tracker v4' },
     { type: 'doc', id: 'learning-plan-v4/checkpoints', label: '✅ Checkpoint Gates v4' },
     { type: 'doc', id: 'learning-plan-v4/evidence-template', label: '🧾 Evidence Template v4' },
+    { type: 'doc', id: 'learning-plan-v4/sources-and-verification', label: '📚 Fuentes y Verificación v4' },
+    { type: 'doc', id: 'learning-plan-v4/methodology-best-practices', label: '🧭 Metodología y Mejores Prácticas v4' },
     {
       type: 'category',
       label: 'Fase 1: Fundamentos (Semanas 1-4)',

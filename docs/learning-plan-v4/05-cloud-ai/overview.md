@@ -27,9 +27,9 @@ Dominar la plataforma de AI de Microsoft para construir y desplegar soluciones e
 
 | Recurso | Idioma | Tipo | Duración |
 |---------|--------|------|----------|
-| [Azure AI Foundry Documentation](https://learn.microsoft.com/es-es/azure/ai-studio/) | 🇪🇸 Español | Docs | 8 hrs |
-| [Microsoft Learn: Azure AI Foundry](https://learn.microsoft.com/es-es/training/paths/create-custom-copilots-ai-studio/) | 🇪🇸 Español | Learning Path | 6 hrs |
-| [Azure AI Foundry Quickstarts](https://learn.microsoft.com/es-es/azure/ai-studio/quickstarts/) | 🇪🇸 Español | Labs | 4 hrs |
+| [Azure AI Foundry Documentation](https://learn.microsoft.com/es-es/azure/ai-foundry/) | 🇪🇸 Español | Docs | 8 hrs |
+| [Microsoft Learn: Azure AI Foundry](https://learn.microsoft.com/es-es/training/browse/?products=azure-ai-foundry) | 🇪🇸 Español | Learning Path | 6 hrs |
+| [Azure AI Foundry Quickstarts](https://learn.microsoft.com/es-es/azure/ai-foundry/quickstarts/) | 🇪🇸 Español | Labs | 4 hrs |
 | [Azure OpenAI Service](https://learn.microsoft.com/es-es/azure/ai-services/openai/) | 🇪🇸 Español | Docs | 4 hrs |
 | [DeepLearning.AI: Building with Azure AI](https://www.deeplearning.ai/) | 🇬🇧 Inglés | Course | 3 hrs |
 
@@ -88,7 +88,7 @@ Construir un sistema que responde preguntas basándose en documentos internos, e
 
 | Recurso | Idioma | Tipo | Duración |
 |---------|--------|------|----------|
-| [Microsoft Learn: RAG with Azure AI](https://learn.microsoft.com/es-es/azure/ai-studio/concepts/retrieval-augmented-generation) | 🇪🇸 Español | Docs | 3 hrs |
+| [Microsoft Learn: RAG with Azure AI](https://learn.microsoft.com/es-es/azure/ai-foundry/concepts/retrieval-augmented-generation) | 🇪🇸 Español | Docs | 3 hrs |
 | [DeepLearning.AI: Building RAG Applications](https://www.deeplearning.ai/short-courses/) | 🇬🇧 Inglés | Course | 3 hrs |
 | [LangChain RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/) | 🇬🇧 Inglés | Tutorial | 4 hrs |
 | [Azure AI Search Documentation](https://learn.microsoft.com/es-es/azure/search/) | 🇪🇸 Español | Docs | 4 hrs |
@@ -160,7 +160,7 @@ Aprender a monitorear sistemas AI en producción y detectar problemas antes que 
 | Recurso | Idioma | Tipo | Duración |
 |---------|--------|------|----------|
 | [Microsoft: AI Content Safety](https://learn.microsoft.com/es-es/azure/ai-services/content-safety/) | 🇪🇸 Español | Docs | 3 hrs |
-| [Azure AI Evaluation SDK](https://learn.microsoft.com/es-es/azure/ai-studio/how-to/develop/evaluate-sdk) | 🇪🇸 Español | Tutorial | 4 hrs |
+| [Azure AI Evaluation SDK](https://learn.microsoft.com/es-es/azure/ai-foundry/how-to/develop/evaluate-sdk) | 🇪🇸 Español | Tutorial | 4 hrs |
 | [Giskard: AI Testing](https://www.giskard.ai/) | 🇬🇧 Inglés | Tool | 3 hrs |
 | [OWASP Top 10 for LLMs](https://owasp.org/www-project-top-10-for-large-language-model-applications/) | 🇬🇧 Inglés | Framework | 4 hrs |
 | [Microsoft: Red Teaming AI](https://learn.microsoft.com/es-es/azure/ai-services/openai/concepts/red-teaming) | 🇪🇸 Español | Guide | 2 hrs |
