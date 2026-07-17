@@ -199,29 +199,35 @@ Crear un assessment completo para un sistema AI ficticio:
 
 ---
 
-## Semana 17: Microsoft Copilot y Agentes
+## Semana 17: Copilot Empresarial y Agentes Avanzados
 
 ### Objetivo
-Dominar las herramientas AI de Microsoft que están transformando la productividad empresarial.
+Escalar de agentes básicos (ya construidos en la [Fase 1](../foundation/overview)) a **escenarios empresariales**: agentes autónomos, integración M365 Copilot, adopción y governance.
+
+:::note Fundamentos ya cubiertos
+La construcción de tu primer agente en Copilot Studio se movió a la **Fase 1** como módulo prioritario. Esta semana asume que ya tienes un agente publicado y se enfoca en **capacidades avanzadas y estrategia empresarial**.
+:::
 
 ### Recursos Principales
 
 | Recurso | Idioma | Tipo | Duración |
 |---------|--------|------|----------|
-| [Microsoft Copilot Documentation](https://learn.microsoft.com/es-es/copilot/) | 🇪🇸 Español | Docs | 4 hrs |
-| [Microsoft Learn: Copilot](https://learn.microsoft.com/es-es/training/paths/prepare-your-organization-microsoft-365-copilot/) | 🇪🇸 Español | Learning Path | 6 hrs |
-| [Copilot Studio](https://learn.microsoft.com/es-es/microsoft-copilot-studio/) | 🇪🇸 Español | Platform | 4 hrs |
-| [Microsoft 365 Copilot Adoption](https://adoption.microsoft.com/en-us/copilot/) | 🇬🇧 Inglés | Guide | 3 hrs |
+| [Microsoft 365 Copilot Adoption](https://adoption.microsoft.com/en-us/copilot/) | 🇬🇧 Inglés | Guía de adopción | 3 hrs |
+| [Learning Path: Prepare your organization for M365 Copilot](https://learn.microsoft.com/es-es/training/paths/prepare-your-organization-microsoft-365-copilot/) | 🇪🇸 Español | Learning Path | 6 hrs |
+| [Applied Skill: Enhance agents with autonomous capabilities](https://learn.microsoft.com/en-us/credentials/applied-skills/enhance-agents-with-autonomous-capabilities/) | 🇬🇧 Inglés | Credencial (lab) | 3-4 hrs |
+| [Copilot Studio Agent Academy (rangos avanzados)](https://microsoft.github.io/agent-academy/) | 🇬🇧 Inglés | Currículo práctico | Variable |
 
 ### Plan Diario
 
 | Día | Tema | Práctica |
 |-----|------|----------|
-| Lunes | M365 Copilot: Word, Excel, PowerPoint | Crear documentos con AI |
-| Martes | Copilot en Teams: reuniones, resúmenes | Simular workflows |
-| Miércoles | Copilot Studio: crear agentes | Bot de help desk |
-| Jueves | Copilot + Power Automate | Flujos inteligentes |
-| Viernes | Adoption strategy y governance | Plan de rollout |
+| Lunes | Agentes autónomos: triggers por evento | Añadir comportamiento autónomo a tu agente |
+| Martes | Agent flows avanzados + conectores | Integrar un sistema externo (Dataverse/API) |
+| Miércoles | M365 Copilot: extender con agentes declarativos | Agente sobre datos de la organización |
+| Jueves | Governance: DLP, autenticación, RAI para agentes | Revisión de seguridad del agente |
+| Viernes | Adoption strategy y rollout empresarial | Plan de despliegue + medición de valor |
+
+> **Meta de la semana:** obtener la Applied Skill *"Enhance agents with autonomous capabilities"*, que valida agent flows, triggers autónomos y hand-off a humano.
 
 ---
 

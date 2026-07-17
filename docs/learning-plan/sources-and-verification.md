@@ -111,6 +111,26 @@ Las proporciones 70/20/10 son una **filosofía orientadora** basada en investiga
 
 ---
 
+## Microsoft Copilot Studio (verificado)
+
+Recursos y credenciales oficiales para el [módulo prioritario de Copilot Studio](./foundation/overview) de la Fase 1. Copilot Studio evoluciona rápido (agentes autónomos, generative actions); **re-verifica antes de calendarizar una credencial**.
+
+| Recurso / Credencial | Tipo | Costo | Fuente primaria |
+|----------------------|------|-------|-----------------|
+| Documentación oficial de Copilot Studio | Docs | Gratis | [learn.microsoft.com](https://learn.microsoft.com/es-es/microsoft-copilot-studio/) |
+| Learning Path: *Create agents in Microsoft Copilot Studio* (9 módulos) | Learning Path con labs | Gratis | [learn.microsoft.com](https://learn.microsoft.com/en-us/training/paths/create-extend-custom-copilots-microsoft-copilot-studio/) |
+| Copilot Studio Agent Academy | Currículo práctico | Gratis | [microsoft.github.io/agent-academy](https://microsoft.github.io/agent-academy/) |
+| Agent in a Day — Workshop | Workshop guiado | Gratis | [learn.microsoft.com](https://learn.microsoft.com/en-us/training/paths/agents-online-workshop/) |
+| **Applied Skill:** Create agents in Microsoft Copilot Studio | Credencial (lab interactivo) | Gratis / bajo costo | [learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/applied-skills/create-agents-in-microsoft-copilot-studio/) |
+| **Applied Skill:** Enhance agents with autonomous capabilities | Credencial (lab interactivo) | Gratis / bajo costo | [learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/applied-skills/enhance-agents-with-autonomous-capabilities/) |
+| Copilot Studio Samples | Código de ejemplo | Gratis | [github.com/microsoft/CopilotStudioSamples](https://github.com/microsoft/CopilotStudioSamples) |
+
+:::note Sobre las Applied Skills
+Son **credenciales basadas en laboratorio interactivo** (no examen de opción múltiple): demuestras la habilidad ejecutando tareas reales en un entorno sandbox. Ambas páginas oficiales fueron confirmadas y actualizadas por Microsoft en 2025-2026. Copilot Studio es la evolución de **Power Virtual Agents**.
+:::
+
+---
+
 ## Nota sobre rangos salariales
 
 Los rangos salariales del [Plan Overview](./overview) son **orientativos (mercado de EE. UU., 2025-2026)**, no garantías. Varían fuertemente por país, industria, tamaño de empresa y seniority. Para cifras específicas por región/rol, consulta fuentes de datos en vivo como:

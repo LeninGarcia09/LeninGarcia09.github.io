@@ -60,7 +60,7 @@ Esta filosofía se inspira en el modelo **70-20-10** (Center for Creative Leader
 
 | Fase | Semanas | Enfoque |
 |------|---------|---------|
-| [Fase 1](./foundation/overview) | 1–4 | Fundamentos de Tecnología Moderna |
+| [Fase 1](./foundation/overview) | 1–4 | Fundamentos de Tecnología Moderna + **Copilot Studio (Fast-Track)** |
 | [Fase 2](./data-automation/overview) | 5–8 | Datos y Automatización |
 | [Fase 3](./cybersecurity/overview) | 9–12 | Ciberseguridad Moderna |
 | [Fase 4](./ai-business/overview) | 13–20 | AI para Negocios e IT |
@@ -76,6 +76,10 @@ Esta filosofía se inspira en el modelo **70-20-10** (Center for Creative Leader
 5. **AI-102** — Azure AI Engineer Associate *(opcional/avanzada — orientada a desarrolladores; ver [Fuentes y Verificación](./sources-and-verification))*
 6. **CC (ISC2)** — Certified in Cybersecurity
 7. **CompTIA Security+**
+
+:::tip Credenciales prácticas de Copilot Studio (Applied Skills)
+Además de los exámenes anteriores, las **Microsoft Applied Skills** validan capacidad práctica mediante laboratorios interactivos (gratis o bajo costo). Recomendadas desde la Fase 1: *"Create agents in Microsoft Copilot Studio"* y *"Enhance agents with autonomous capabilities"*. Detalles en [Fuentes y Verificación](./sources-and-verification#microsoft-copilot-studio-verificado).
+:::
 
 :::note Verifica antes de pagar el examen
 Precios (~$99 USD por examen *Fundamentals*), temario y disponibilidad de *practice assessments* cambian. Confirma siempre en la página oficial de la credencial antes de calendarizar. Microsoft ofrece **vouchers gratuitos** en sus *Virtual Training Days*. Detalles en [Fuentes y Verificación](./sources-and-verification).
