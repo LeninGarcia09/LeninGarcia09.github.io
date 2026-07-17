@@ -76,11 +76,23 @@ az login
 az group create --name rg-claims-multiagent --location eastus
 ```
 
-### Step 1 — Answer the CISO's 8 questions on paper first (10 min)
+✅ **Done when** `az group show -n rg-claims-multiagent` exists and you have a diagram showing where the trace ID is created (orchestrator) and where it's read (every specialist + Cosmos).
 
-Read the security questionnaire before building. Each answer maps to a concrete Azure control (private networking, Entra Agent ID, Cosmos audit, correlated tracing). Build to the questions.
+### Step 1 — Provision the backbone, then answer the CISO's 8 questions (15 min) — *the "where do I go"*
+
+Stand up the three shared resources every task depends on, then map each CISO question to the control that answers it. Where to click:
+
+1. **Standard-mode Foundry project** (enables per-agent identity + private networking) in **[ai.azure.com](https://ai.azure.com)** → **Create project → Advanced options** ([agent identity concepts](https://learn.microsoft.com/azure/foundry/agents/concepts/agent-identity)).
+2. **Per-agent Entra Agent ID** for the orchestrator + 3 specialists ([Entra Agent ID guided setup](https://learn.microsoft.com/entra/agent-id/agent-id-ai-guided-setup)).
+3. **Azure Cosmos DB** for claim records with the trace ID as a field — create via the [portal quickstart](https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-portal).
+
+Now answer the security questionnaire **on paper first** — each answer maps to a concrete control (private networking, Entra Agent ID, Cosmos audit, correlated tracing). Build to the questions.
+
+✅ **Done when** you have a Standard-mode project, four agent identities visible in Entra, a Cosmos container, and a one-line answer + Azure control for each of the 8 questions.
 
 > 🟦 **Microsoft-first note:** the entire architecture is Azure-native — **Azure AI Foundry** hosted agents, **Microsoft Entra Agent ID** per agent, private **VNet** agent-to-agent comms, **Azure Cosmos DB** for claim records, and **Azure Monitor** for correlated traces. Multi-agent workflows use the **Foundry Agent Service** connected-agents model.
+
+> **Common fixes:** no per-agent identity → project isn't Standard mode. Trace IDs don't correlate across agents → you're generating a new ID per agent instead of **propagating the orchestrator's** one ID (fix in Task 4).
 
 ### The path through this challenge
 

@@ -66,11 +66,23 @@ az account set --subscription "<your-subscription-id>"
 az group create --name rg-foundry-private --location germanywestcentral
 ```
 
-### Step 1 — Confirm the residency requirement in writing (5 min)
+✅ **Done when** `az account show` returns the right subscription and `az group show -n rg-foundry-private` exists in your residency region.
 
-Before building, write down the exact rule you must satisfy (region, no public egress, BYO storage). Everything you configure will be verified against this one sentence in Success Criteria.
+### Step 1 — Confirm the requirement, then create the Standard-mode project (10 min) — *the "where do I go"*
+
+First, write down the exact rule you must satisfy (region, no public egress, BYO storage) — everything you build is verified against this one sentence in Success Criteria.
+
+Then create the project that makes isolation possible. Data-residency + BYO networking require **Standard mode** (a hub-based Foundry project), *not* the default free project:
+
+1. Go to **[ai.azure.com](https://ai.azure.com)** → **+ Create project** → **Advanced options**.
+2. Set **Region** to your residency region (e.g. `germanywestcentral`), and choose **Create new hub** so you can attach your own storage/Key Vault later.
+3. After it provisions, open **Management center → your project → Overview** and note the **hub** it's attached to — Tasks 1–3 configure private endpoints on that hub's resources.
+
+✅ **Done when** you have a hub-based project in the correct region (its resource group shows a **Storage account + Key Vault** you can bring under a private endpoint).
 
 > 🟦 **Microsoft-first note:** this challenge is already 100% Azure-native — **Azure AI Foundry Standard mode**, **Private Endpoints**, **BYO VNet + Storage + Key Vault**, **Private DNS zones**, and **Azure Policy** for enforcement. There is no third-party component to add; the skill is wiring them correctly.
+
+> **Common fixes:** no BYO storage/networking options → you created a *default* project, not a hub-based **Standard** one; recreate via **Advanced options**. Region locked → check your subscription's allowed regions with `az account list-locations -o table`.
 
 ### The path through this challenge
 
