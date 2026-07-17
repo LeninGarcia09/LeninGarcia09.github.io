@@ -117,6 +117,8 @@ This challenge is about **provable determinism**, so your setup must let you re-
 
 ### Step 0 — Create an isolated workspace (5 min)
 
+**Where you run this:** everything in Step 0 runs **locally on your own machine** — open a terminal (VS Code's integrated terminal, PowerShell, or bash) in whatever folder you keep projects. You don't touch Azure or the cloud until Step 1. A virtual environment (`venv`) keeps this challenge's packages isolated so nothing you install here can break another project.
+
 ```bash
 mkdir verifiable-orchestrator && cd verifiable-orchestrator
 python -m venv .venv
@@ -125,7 +127,7 @@ pip install azure-ai-projects azure-identity openai pydantic duckdb python-doten
 mkdir .audit   # local stand-in for the Azure SQL / Cosmos DB audit log
 ```
 
-✅ **Done when** your prompt shows `(.venv)` and `pip list` includes `azure-ai-projects`.
+✅ **Done when** your terminal prompt shows `(.venv)` and `pip list` includes `azure-ai-projects`.
 
 ### Step 1 — Provision your model & sign in (10 min)
 
