@@ -52,6 +52,10 @@ Basada en los modelos de desarrollo profesional de **Microsoft**, **Google**, **
 | 📖 Entrenamiento Guiado | 20% | Cursos, certificaciones, labs |
 | 📰 Lectura y Research | 10% | Artículos, frameworks, estándares |
 
+:::tip Cómo ejecutar este plan como un programa de clase mundial
+Esta filosofía se inspira en el modelo **70-20-10** (Center for Creative Leadership) y en el diseño de los programas de reskilling con mejores resultados (Google, AWS re/Start, IBM SkillsBuild). Para sacarle el máximo —mentoría y cohorte (el "20"), protocolo de estudio con *spaced repetition*, alineación con las habilidades del **WEF Future of Jobs 2025** y medición por OKRs— sigue la guía completa en **[Metodología y Mejores Prácticas](./methodology-best-practices)**.
+:::
+
 ## 🗓️ Estructura del Programa
 
 | Fase | Semanas | Enfoque |
