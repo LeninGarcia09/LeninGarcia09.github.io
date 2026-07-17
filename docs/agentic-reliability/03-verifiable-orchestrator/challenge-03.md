@@ -82,12 +82,42 @@ This challenge is about **provable determinism**, so your setup must let you re-
 ```bash
 mkdir verifiable-orchestrator && cd verifiable-orchestrator
 python -m venv .venv
-# Windows:  .venv\Scripts\activate    |    macOS/Linux:  source .venv/bin/activate
-pip install azure-ai-projects azure-identity openai pydantic duckdb
+# Windows (PowerShell):  .venv\Scripts\Activate.ps1    |    macOS/Linux:  source .venv/bin/activate
+pip install azure-ai-projects azure-identity openai pydantic duckdb python-dotenv
 mkdir .audit   # local stand-in for the Azure SQL / Cosmos DB audit log
 ```
 
-### Step 1 — Seed a KNOWN dataset (10 min)
+✅ **Done when** your prompt shows `(.venv)` and `pip list` includes `azure-ai-projects`.
+
+### Step 1 — Provision your model & sign in (10 min)
+
+This challenge forces the LLM to emit a schema-validated `QuerySpec` via **Structured Outputs**, so you need a deployed `gpt-4o`. If you have **not** deployed one yet, do **Steps 1–2 of [Challenge 01 — The Hallucination Audit](../01-hallucination-audit/challenge-01.md)** for the exact portal walkthrough and the two values below, then create a `.env`:
+
+```bash
+# .env  — from Azure AI Foundry (never commit this file)
+# PROJECT_ENDPOINT=https://<your-project>.services.ai.azure.com/api/projects/<name>
+# MODEL_DEPLOYMENT_NAME=gpt-4o
+az login   # keyless auth via DefaultAzureCredential
+```
+
+Confirm your model supports Structured Outputs and smoke-test the connection ([structured outputs reference](https://learn.microsoft.com/azure/ai-services/openai/how-to/structured-outputs)):
+
+```python
+# smoke_test.py — prints "setup works" when endpoint + deployment + az login are all correct
+import os
+from dotenv import load_dotenv
+from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+load_dotenv()
+project = AIProjectClient(endpoint=os.environ["PROJECT_ENDPOINT"], credential=DefaultAzureCredential())
+client = project.inference.get_azure_openai_client(api_version="2024-10-21")
+print(client.chat.completions.create(model=os.environ["MODEL_DEPLOYMENT_NAME"],
+      messages=[{"role":"user","content":"Reply with exactly: setup works"}]).choices[0].message.content)
+```
+
+> **Common fixes:** `DefaultAzureCredential failed` → `az login` again. `DeploymentNotFound` → deployment name mismatch. `401` → add the **Azure AI User** role on the project.
+
+### Step 2 — Seed a KNOWN dataset (10 min)
 
 Load a small table of prices with values you already know (these are **sample values, not real market data**). Because you know the true numbers, you can prove your engine returns them exactly.
 
