@@ -29,7 +29,7 @@ Entender cómo la AI está cambiando el mercado laboral y las industrias.
 |---------|--------|------|----------|
 | [Elements of AI](https://www.elementsofai.com/) | 🇪🇸 Español | Curso gratuito | 6-8 hrs |
 | [Microsoft AI Skills Initiative](https://www.microsoft.com/en-us/ai/ai-skills) | 🇬🇧 Inglés | Learning paths | 4-6 hrs |
-| [Google AI Essentials](https://grow.google/intl/es/courses-and-tools/) | 🇪🇸 Español | Curso | 4 hrs |
+| [Google AI Essentials](https://grow.google/ai-essentials/) | 🇬🇧 Inglés (subs ES) | Curso + certificado | 4-8 hrs |
 | [IBM AI Fundamentals](https://www.ibm.com/training/collection/artificial-intelligence) | 🇬🇧 Inglés | Course | 3 hrs |
 
 ### Actividades Diarias (Lunes a Viernes)
@@ -131,6 +131,7 @@ Dominar el flujo de trabajo con Git para gestión de código y documentación.
 | [Pro Git Book](https://git-scm.com/book/es/v2) | 🇪🇸 Español | Libro gratis | Referencia |
 | [Microsoft Learn: Git](https://learn.microsoft.com/es-es/training/paths/intro-to-vc-git/) | 🇪🇸 Español | Learning Path | 3 hrs |
 | [Git Immersion](https://gitimmersion.com/) | 🇬🇧 Inglés | Labs | 2 hrs |
+| [GitHub Foundations (GH-900) — ruta de prep gratis](https://learn.microsoft.com/es-es/credentials/certifications/github-foundations/) | 🇬🇧 Inglés | Cert quick-win (prep gratis) | Referencia |
 
 ### Plan Diario
 

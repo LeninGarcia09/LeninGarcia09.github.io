@@ -153,8 +153,8 @@ Consolidar conocimientos y obtener la certificación SC-900.
 |---------|--------|------|----------|
 | [Microsoft Learn: SC-900](https://learn.microsoft.com/es-es/training/paths/describe-concepts-of-security-compliance-identity/) | 🇪🇸 Español | Learning Path | 8 hrs |
 | [SC-900 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/security-compliance-and-identity-fundamentals/) | 🇪🇸 Español | Guía oficial | Referencia |
-| [John Savill SC-900 Study Cram](https://www.youtube.com/watch?v=Bz-8jM3jg-8) | 🇬🇧 Inglés | Video | 2 hrs |
-| [MeasureUp SC-900 Practice](https://www.measureup.com/sc-900-microsoft-security-compliance-and-identity-fundamentals.html) | 🇬🇧 Inglés | Practice exam | 2 hrs |
+| [John Savill's Technical Training (YouTube)](https://www.youtube.com/@NTFAQGuy) | 🇬🇧 Inglés | Video (study cram) | 2 hrs |
+| [Practice Assessment oficial de SC-900 (gratis)](https://learn.microsoft.com/es-es/credentials/certifications/security-compliance-and-identity-fundamentals/practice/assessment?assessmentId=17) | 🇪🇸 Español | Práctica oficial gratis | 2 hrs |
 
 ### Plan Diario
 
