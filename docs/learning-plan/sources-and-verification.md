@@ -16,7 +16,7 @@ Un plan de aprendizaje solo es confiable si sus recomendaciones son **reales, vi
 3. **Separar hecho de recomendación** — la existencia y el alcance de un examen es *hecho verificable*; la secuencia y el timing son *criterio*.
 4. **Re-verificar antes de cada examen** — Microsoft renueva, renombra o retira credenciales con regularidad.
 
-**Última verificación:** 2026-07-17
+**Última verificación:** 2026-07-24
 
 ---
 
@@ -88,6 +88,29 @@ Los planes de aprendizaje se desactualizan cuando los proveedores renombran prod
 
 ---
 
+## Marcos de diseño de aprendizaje y datos de mercado
+
+La [Metodología y Mejores Prácticas](./methodology-best-practices) se apoya en estas fuentes primarias:
+
+| Fuente | Qué aporta | Tipo | Fuente primaria |
+|--------|-----------|------|-----------------|
+| WEF *Future of Jobs Report 2025* | Habilidades en demanda y datos de transformación por IA (86%, 39%, ~63%) | Reporte de investigación | [weforum.org](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) |
+| Modelo 70-20-10 | Balance experiencia/social/formal en desarrollo de líderes | Marco (CCL) | [ccl.org](https://www.ccl.org/articles/leading-effectively-articles/70-20-10-rule/) |
+| Dunlosky et al. (2013) | Eficacia de active recall y spaced/retrieval practice | Estudio revisado por pares | [journals.sagepub.com](https://journals.sagepub.com/doi/10.1177/1529100612453266) |
+| Google Career Certificates | Diseño con proyectos + capstone + consorcio de empleadores | Programa de referencia | [grow.google/certificates](https://grow.google/certificates/) |
+| AWS re/Start | Diseño por cohorte + labs de escenario | Programa de referencia | [aws.amazon.com](https://aws.amazon.com/training/restart/) |
+| IBM SkillsBuild | Aprendizaje basado en proyectos + credenciales apilables | Programa de referencia | [skillsbuild.org](https://skillsbuild.org/) |
+
+:::note Sobre las estadísticas del WEF
+Las cifras (86% de empleadores espera transformación por IA; 39% de habilidades centrales cambiarán; ~63% cita la brecha de habilidades como barrera principal) provienen del **Future of Jobs Report 2025** del Foro Económico Mundial. Son **datos de encuesta a empleadores**, no proyecciones garantizadas. Los porcentajes de resultados de empleo de Google/AWS/IBM son **reportados por cada proveedor** y deben leerse como marketing verificable, no como estudios independientes.
+:::
+
+:::warning Sobre el modelo 70-20-10
+Las proporciones 70/20/10 son una **filosofía orientadora** basada en investigación del Center for Creative Leadership (McCall, Lombardo y Eichinger, 1988), **no una fórmula validada estadísticamente**. Úsalas como guía de balance, no como regla exacta.
+:::
+
+---
+
 ## Nota sobre rangos salariales
 
 Los rangos salariales del [Plan Overview](./overview) son **orientativos (mercado de EE. UU., 2025-2026)**, no garantías. Varían fuertemente por país, industria, tamaño de empresa y seniority. Para cifras específicas por región/rol, consulta fuentes de datos en vivo como:
@@ -102,5 +125,6 @@ Los rangos salariales del [Plan Overview](./overview) son **orientativos (mercad
 
 - **Hechos verificados:** existencia, código, precio (~$99 fundamentals / $165 AI-102) e idioma de las certificaciones Microsoft; identificadores de frameworks (NIST AI RMF 1.0, ISO/IEC 42001:2023, EU AI Act = Reglamento (UE) 2024/1689, NIST SP 800-207).
 - **Criterio (no hecho):** la secuencia de fases, el timing semanal y la selección de roles objetivo son *recomendaciones*.
+- **Marcos de diseño:** el modelo 70-20-10 (CCL) y los datos del WEF *Future of Jobs 2025* respaldan la [metodología](./methodology-best-practices); las proporciones 70/20/10 son filosofía orientadora, no fórmula validada, y las estadísticas del WEF son datos de encuesta con año/fuente citados.
 - **Orientativo pendiente de verificación:** rangos salariales y cualquier estadística de mercado.
 - **Precios e URLs cambian:** confirma siempre en la fuente antes de inscribirte o calendarizar un examen.
