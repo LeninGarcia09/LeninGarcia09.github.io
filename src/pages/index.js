@@ -44,7 +44,7 @@ const skillTracks = [
 ];
 
 const certTracks = [
-  { emoji: "🧠", code: "AI-102", name: "Azure AI Engineer", level: "Associate", link: "/docs/ai-102/overview" },
+  { emoji: "🧠", code: "AI-102 → AI-103", name: "Azure AI Apps & Agents Developer", level: "Associate", link: "/docs/ai-102/overview" },
   { emoji: "🏗️", code: "AZ-305", name: "Solutions Architect Expert", level: "Expert", link: "/docs/az-305/overview" },
   { emoji: "🛡️", code: "SC-500", name: "Cloud & AI Security", level: "Associate", link: "/docs/sc-500/overview" },
   { emoji: "🔧", code: "AZ-104", name: "Azure Administrator", level: "Associate", link: "/docs/az-104/overview" },
