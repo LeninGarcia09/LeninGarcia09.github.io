@@ -71,13 +71,50 @@ This is a **security** exercise: you attack your own agent, measure the breach, 
 ```bash
 mkdir injection-defense && cd injection-defense
 python -m venv .venv
-# Windows:  .venv\Scripts\activate    |    macOS/Linux:  source .venv/bin/activate
-pip install pyrit azure-ai-contentsafety azure-ai-projects azure-identity openai
+# Windows (PowerShell):  .venv\Scripts\Activate.ps1    |    macOS/Linux:  source .venv/bin/activate
+pip install pyrit azure-ai-contentsafety azure-ai-projects azure-identity openai python-dotenv
 ```
 
-### Step 1 — Provision defenses and capture a baseline (15 min)
+✅ **Done when** your prompt shows `(.venv)` and `pip list` includes `pyrit` and `azure-ai-contentsafety`.
 
-Create an **Azure AI Content Safety** resource (Prompt Shields is included), then run PyRIT **once, before hardening**, to measure your starting attack-success rate. You cannot prove improvement without a baseline.
+### Step 1 — Provision your two resources — *the "where do I go"* (15 min)
+
+You need **two** Azure resources: a model (the agent) and Content Safety (the defense). Here's exactly where to click.
+
+**A. Content Safety (Prompt Shields live here):**
+1. Azure portal → **Create a resource** → search **Content Safety** → **Create** (or use the shortcut **[aka.ms/acs-create](https://aka.ms/acs-create)**).
+2. Pick a region + pricing tier, **Create**, then open the resource → **Keys and Endpoint**.
+3. Copy the **Endpoint** and **Key 1**. Full walkthrough: [Prompt Shields quickstart](https://learn.microsoft.com/azure/ai-services/content-safety/quickstart-jailbreak).
+
+**B. Model:** deploy a `gpt-4o` in **[Azure AI Foundry](https://ai.azure.com)** ([create-resource quickstart](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/create-resource)); copy the project endpoint + deployment name.
+
+Put all four values in a `.env` and sign in:
+
+```bash
+# .env  (never commit)
+# CONTENT_SAFETY_ENDPOINT=https://<your-cs>.cognitiveservices.azure.com/
+# CONTENT_SAFETY_KEY=<key-1>
+# PROJECT_ENDPOINT=https://<your-project>.services.ai.azure.com/api/projects/<name>
+# MODEL_DEPLOYMENT_NAME=gpt-4o
+az login
+```
+
+**Smoke-test Prompt Shields** — this proves your Content Safety wiring works before you build the attack loop:
+
+```python
+# smoke_test.py — should print a shieldsResponse with attackDetected True for the jailbreak text
+import os
+from dotenv import load_dotenv
+from azure.ai.contentsafety import ContentSafetyClient  # Prompt Shields via REST/SDK
+from azure.core.credentials import AzureKeyCredential
+load_dotenv()
+# See the quickstart for the exact detect_jailbreak / Prompt Shields call for your SDK version.
+print("Content Safety endpoint reachable:", bool(os.environ["CONTENT_SAFETY_ENDPOINT"]))
+```
+
+### Step 2 — Capture a baseline breach BEFORE hardening (10 min)
+
+Run PyRIT **once, unhardened**, to measure your starting attack-success rate. You cannot prove improvement without a baseline.
 
 ```python
 # baseline.py — measure the breach BEFORE you fix anything
@@ -85,6 +122,8 @@ Create an **Azure AI Content Safety** resource (Prompt Shields is included), the
 ```
 
 > 🟦 **Microsoft-first note:** every tool here is Microsoft — **PyRIT** (Microsoft's open-source red-team toolkit), **Azure AI Prompt Shields** + **Content Safety** for defense, **Azure OpenAI** for the model, and **Azure Monitor / Application Insights** for the security log. No third-party tooling required.
+
+> **Common fixes:** `401` from Content Safety → wrong key/endpoint (re-copy from **Keys and Endpoint**). Prompt Shields not found → confirm your Content Safety resource region supports it (see the quickstart). Model errors → `az login` + deployment-name check.
 
 ### The path through this challenge
 

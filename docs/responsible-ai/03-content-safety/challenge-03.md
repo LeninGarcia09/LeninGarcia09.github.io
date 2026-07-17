@@ -66,21 +66,35 @@ This is a **fairness measurement** exercise. You quantify the disparity, find it
 ```bash
 mkdir fairness-audit && cd fairness-audit
 python -m venv .venv
-# Windows:  .venv\Scripts\activate    |    macOS/Linux:  source .venv/bin/activate
+# Windows (PowerShell):  .venv\Scripts\Activate.ps1    |    macOS/Linux:  source .venv/bin/activate
 pip install pandas azure-ai-evaluation fairlearn azure-ai-ml azure-identity
+az login   # only needed for Task 2 (Responsible AI dashboard in Azure ML); the DIR math runs locally
 ```
 
-### Step 1 — Load a KNOWN-biased sample dataset (10 min)
+✅ **Done when** your prompt shows `(.venv)` and `python -c "import fairlearn, pandas"` runs without error.
 
-Use a small dataset where the disparity is *deliberately present* (these are **synthetic sample rows**, not real candidates), so you can prove your metric detects it and your mitigation fixes it.
+### Step 1 — Generate a KNOWN-biased sample dataset (10 min)
+
+Use a small dataset where the disparity is *deliberately present* (these are **synthetic sample rows**, not real candidates), so you can prove your metric detects it and your mitigation fixes it. Run this to create it:
 
 ```python
-# sample_scores.py — synthetic data, NOT real candidates
-# Columns: candidate_id, group, model_score, hired
-# Construct it so one group's selection rate is clearly below 0.8x the top group.
+# make_sample.py — synthetic data, NOT real candidates. Group B is deliberately under-selected.
+import numpy as np, pandas as pd
+rng = np.random.default_rng(42)
+n = 500
+group = rng.choice(["A", "B"], size=n, p=[0.6, 0.4])
+# Bias baked in: group A scores higher on average, so its selection rate exceeds B's.
+score = np.where(group == "A", rng.normal(0.65, 0.15, n), rng.normal(0.45, 0.15, n)).clip(0, 1)
+hired = (score >= 0.5).astype(int)
+pd.DataFrame({"candidate_id": range(n), "group": group,
+              "model_score": score.round(3), "hired": hired}).to_csv("sample_scores.csv", index=False)
+sel = pd.read_csv("sample_scores.csv").groupby("group")["hired"].mean()
+print(sel, "\nDIR (B/A):", round(sel["B"] / sel["A"], 3))   # expect well below 0.8 → bias confirmed
 ```
 
-> 🟦 **Microsoft-first note:** the fairness stack here is Microsoft — the **Azure AI Evaluation SDK** and the **Responsible AI dashboard** in **Azure Machine Learning**, plus **Fairlearn** (Microsoft's open-source fairness toolkit). Store the audited dataset and results in **Azure ML datastores** / **Microsoft Fabric**, not loose CSVs.
+✅ **Done when** `python make_sample.py` prints a **DIR below 0.8** — that's your provable starting disparity for Task 1.
+
+> 🟦 **Microsoft-first note:** the fairness stack here is Microsoft — the **Azure AI Evaluation SDK** ([how-to](https://learn.microsoft.com/azure/ai-foundry/how-to/develop/evaluate-sdk)) and the **Responsible AI dashboard** in **Azure Machine Learning**, plus **Fairlearn** (Microsoft's open-source fairness toolkit). Store the audited dataset and results in **Azure ML datastores** / **Microsoft Fabric**, not loose CSVs.
 
 ### The path through this challenge
 
