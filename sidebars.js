@@ -117,6 +117,7 @@ const sidebars = {
 
   learningPlanSidebar: [
     { type: 'doc', id: 'learning-plan/overview', label: '🎯 Plan Overview' },
+    { type: 'doc', id: 'learning-plan/sources-and-verification', label: '✅ Fuentes y Verificación' },
     {
       type: 'category',
       label: 'Fase 1: Fundamentos (Semanas 1-4)',

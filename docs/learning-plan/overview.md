@@ -27,7 +27,9 @@ A:
 
 ## 💼 Roles Objetivo
 
-| Rol | Rango Salarial (USD) |
+> Rangos salariales **orientativos** (mercado EE. UU., 2025-2026). Varían por país, industria y seniority — ver caveat y fuentes de datos en vivo en [Fuentes y Verificación](./sources-and-verification#nota-sobre-rangos-salariales).
+
+| Rol | Rango Salarial (USD, orientativo) |
 |-----|---------------------|
 | AI Program Manager | $130k – $180k |
 | AI Governance Specialist | $120k – $160k |
@@ -66,9 +68,14 @@ Basada en los modelos de desarrollo profesional de **Microsoft**, **Google**, **
 1. **AZ-900** — Azure Fundamentals
 2. **SC-900** — Security, Compliance, and Identity Fundamentals
 3. **AI-900** — Azure AI Fundamentals
-4. **AI-102** — Azure AI Engineer Associate
-5. **CC (ISC2)** — Certified in Cybersecurity
-6. **CompTIA Security+**
+4. **GH-900** — GitHub Foundations *(quick win; prep gratis)*
+5. **AI-102** — Azure AI Engineer Associate *(opcional/avanzada — orientada a desarrolladores; ver [Fuentes y Verificación](./sources-and-verification))*
+6. **CC (ISC2)** — Certified in Cybersecurity
+7. **CompTIA Security+**
+
+:::note Verifica antes de pagar el examen
+Precios (~$99 USD por examen *Fundamentals*), temario y disponibilidad de *practice assessments* cambian. Confirma siempre en la página oficial de la credencial antes de calendarizar. Microsoft ofrece **vouchers gratuitos** en sus *Virtual Training Days*. Detalles en [Fuentes y Verificación](./sources-and-verification).
+:::
 
 ## 📊 Resultados del Programa
 

@@ -109,7 +109,7 @@ Crear visualizaciones ejecutivas que comuniquen insights de datos.
 | Recurso | Idioma | Tipo | Duración |
 |---------|--------|------|----------|
 | [Microsoft Learn: Power BI](https://learn.microsoft.com/es-es/training/paths/create-use-analytics-reports-power-bi/) | 🇪🇸 Español | Learning Path | 8 hrs |
-| [Power BI Guided Learning](https://learn.microsoft.com/es-es/power-bi/guided-learning/) | 🇪🇸 Español | Tutorial | 6 hrs |
+| [Power BI: Preparar y visualizar datos](https://learn.microsoft.com/es-es/training/paths/prepare-visualize-data-power-bi/) | 🇪🇸 Español | Learning Path | 6 hrs |
 | [Guy in a Cube (YouTube)](https://www.youtube.com/@GuyInACube) | 🇬🇧 Inglés | Videos | Referencia |
 | [SQLBI: DAX Fundamentals](https://www.sqlbi.com/learn/introduction-to-dax/) | 🇬🇧 Inglés | Curso | 4 hrs |
 
