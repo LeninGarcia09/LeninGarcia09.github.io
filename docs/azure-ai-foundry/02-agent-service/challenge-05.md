@@ -61,20 +61,25 @@ This challenge is a **production-resilience** drill: an agent that works in dev 
 | A load-generation tool — **Azure Load Testing** (or `locust` *(third-party)*) | Reproduce the concurrency that breaks it | Azure portal / `pip show locust` |
 | Access to the agent's downstream tools/APIs | Circuit-breaker and latency fixes live here | app config |
 
-### Step 0 — Get eyes on the system first (5 min)
+### Step 0 — Get eyes on the system first (5 min) — *the "where do I go"*
 
 Before changing anything, open the dashboards. Under time pressure the instinct is to guess — resist it and read the metrics.
 
-```bash
-az login
-# Open Application Insights: request rate, failure rate, dependency latency
-```
+1. `az login`.
+2. Open your Hosted Agent's **Application Insights** resource → **Live metrics** and the **Failures** + **Performance** blades ([App Insights overview](https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview)). If your agent has no App Insights attached, add one from the agent's resource → **Monitoring**.
+3. Note three baseline numbers at *current* traffic: request rate, failure rate, and p95 dependency latency.
+
+✅ **Done when** you can see live request rate, failure rate, and dependency latency for the agent — this is the instrumentation Tasks 1–3 rely on.
 
 ### Step 1 — Reproduce the failure with load (10 min)
 
-You can't fix what you can't reproduce. Use **Azure Load Testing** to ramp concurrency (e.g. 5 → 100 → 500) and watch where timeouts begin — that inflection point is your target.
+You can't fix what you can't reproduce. Create an **Azure Load Testing** resource and ramp concurrency (e.g. 5 → 100 → 500) to find where timeouts begin — that inflection point is your target. Follow the [create-and-run quickstart](https://learn.microsoft.com/azure/load-testing/quickstart-create-and-run-load-test); point the test at your agent's endpoint.
+
+✅ **Done when** a load test reproduces the failure (error rate climbs at higher concurrency) and you've recorded the concurrency level where it starts — that number frames every fix.
 
 > 🟦 **Microsoft-first note:** diagnosis and load are Microsoft-native — **Azure Monitor**, **Application Insights**, Hosted Agent **Micro-VM metrics**, and **Azure Load Testing**. `locust` is listed only as a third-party local alternative for quick load generation.
+
+> **Common fixes:** load test can't reach the agent → check the endpoint URL + any auth header the test needs. No Micro-VM metrics → confirm the Hosted Agent (not a local run) is the target, and metrics are enabled in Azure Monitor.
 
 ### The path through this challenge
 

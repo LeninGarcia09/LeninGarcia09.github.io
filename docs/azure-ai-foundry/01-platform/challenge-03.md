@@ -63,11 +63,28 @@ az login
 az role assignment list --assignee <current-sp-id> -o table
 ```
 
-### Step 1 — Decide the least-privilege map (10 min)
+✅ **Done when** the list prints — note any broad roles (e.g. `Contributor`, `Storage Blob Data Contributor` at subscription scope). That breadth is your blast radius.
 
-Before creating identities, write down **each agent → the single narrowest role it needs** (e.g. `Storage Blob Data Reader` on one container). Least privilege is a design decision, not an afterthought.
+### Step 1 — Decide the least-privilege map, then enable Entra Agent ID (10 min) — *the "where do I go"*
+
+First, write down **each agent → the single narrowest role it needs** (e.g. `Storage Blob Data Reader` on *one* container). Least privilege is a design decision, not an afterthought:
+
+| Agent | Resource | Narrowest role |
+|-------|----------|----------------|
+| Reader agent | `container-reports` | Storage Blob Data **Reader** |
+| Writer agent | `container-drafts` | Storage Blob Data **Contributor** |
+
+Then enable per-agent identity. **Entra Agent ID** gives each agent its own managed identity automatically when the project runs in **Standard mode**:
+
+1. In **[ai.azure.com](https://ai.azure.com)**, confirm your project is **Standard mode** (hub-based) — see [agent identity concepts](https://learn.microsoft.com/azure/foundry/agents/concepts/agent-identity).
+2. Follow the [Entra Agent ID guided setup](https://learn.microsoft.com/entra/agent-id/agent-id-ai-guided-setup) to view each agent's identity in the Entra admin center.
+3. Assign each identity **only** its row from the table above with `az role assignment create --scope <resource-id> --role "<role>" --assignee <agent-identity-id>`.
+
+✅ **Done when** each agent identity appears in Entra **and** `az role assignment list --assignee <agent-id> -o table` shows exactly one narrowly-scoped role.
 
 > 🟦 **Microsoft-first note:** this is a pure Microsoft identity exercise — **Microsoft Entra Agent ID**, **Azure RBAC** scoped roles, **BYO Key Vault + Storage**, and **Azure Monitor** for identity auditing. No third-party IAM is involved.
+
+> **Common fixes:** no per-agent identity → project is not Standard mode. `AuthorizationFailed` assigning roles → you need **Owner** or **User Access Administrator** on the target resource scope.
 
 ### The path through this challenge
 

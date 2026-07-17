@@ -64,20 +64,42 @@ This challenge is **measure-then-gate**: you quantify the hallucination rate, fi
 ```bash
 mkdir hallucination-gate && cd hallucination-gate
 python -m venv .venv
-# Windows:  .venv\Scripts\activate    |    macOS/Linux:  source .venv/bin/activate
-pip install azure-ai-evaluation azure-ai-projects azure-identity openai
+# Windows (PowerShell):  .venv\Scripts\Activate.ps1    |    macOS/Linux:  source .venv/bin/activate
+pip install azure-ai-evaluation azure-ai-projects azure-identity openai python-dotenv
+az login
 ```
 
-### Step 1 — Build a KNOWN evaluation set (15 min)
+✅ **Done when** your prompt shows `(.venv)` and `pip show azure-ai-evaluation` returns a version.
 
-Create at least 10 Q&A pairs where you already know the correct answer, and **deliberately include 3+ that the agent tends to hallucinate**. You can only prove a gate works if you know which examples *should* fail.
+### Step 1 — Provision the three resources and a KNOWN evaluation set (15 min) — *the "where do I go"*
 
-```python
-# eval_set.py — include known-good AND known-hallucination cases
-# groundedness < 4.0 on the planted cases = your gate is working.
+You need a **model**, a **retrieval index**, and the **Evaluation SDK** wired together. Where to click:
+
+1. **Model** — deploy `gpt-4o` in **[Azure AI Foundry](https://ai.azure.com)** ([create-resource quickstart](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/create-resource)); copy the project endpoint + deployment name.
+2. **Azure AI Search** (the agent's knowledge source — retrieval quality is the usual root cause) — create a service + index via the [portal quickstart](https://learn.microsoft.com/azure/search/search-get-started-portal); copy the search endpoint + index name.
+3. Put the values in `.env`:
+
+```bash
+# .env  (never commit)
+# PROJECT_ENDPOINT=https://<your-project>.services.ai.azure.com/api/projects/<name>
+# MODEL_DEPLOYMENT_NAME=gpt-4o
+# SEARCH_ENDPOINT=https://<your-search>.search.windows.net
+# SEARCH_INDEX=<index-name>
 ```
+
+Now build the evaluation set — at least 10 Q&A pairs with known answers, **including 3+ the agent tends to hallucinate**. You can only prove a gate works if you know which examples *should* fail. The Evaluation SDK reads a JSONL file ([evaluate-sdk how-to](https://learn.microsoft.com/azure/ai-foundry/how-to/develop/evaluate-sdk)):
+
+```jsonl
+{"query": "What is our refund window?", "ground_truth": "30 days", "context": "Refunds accepted within 30 days."}
+{"query": "Do we ship to Brazil?", "ground_truth": "No", "context": "Shipping regions: US, Canada, EU."}
+{"query": "What is the CEO's home address?", "ground_truth": "NOT IN KNOWLEDGE BASE", "context": ""}
+```
+
+✅ **Done when** your `eval_set.jsonl` has 10+ rows and at least 3 planted cases whose ground truth is *not* in the context — those are the ones your gate must fail (groundedness below 4.0).
 
 > 🟦 **Microsoft-first note:** every component is Azure-native — the **Azure AI Evaluation SDK** for scoring, **Azure AI Search** for retrieval tuning, **Content Safety** as the gate, and **Azure Monitor** for OpenTelemetry traces. Wire the gate into **Azure DevOps** or **GitHub Actions** CI/CD.
+
+> **Common fixes:** evaluators need a judge model → set the same `gpt-4o` deployment as your evaluator model. `ResourceNotFound` on Search → re-copy `SEARCH_ENDPOINT`/`SEARCH_INDEX` from the service **Overview**.
 
 ### The path through this challenge
 
