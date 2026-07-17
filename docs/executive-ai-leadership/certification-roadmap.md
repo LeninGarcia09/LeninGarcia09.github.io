@@ -18,7 +18,29 @@ This roadmap is built for a **Global Business Development Executive** in **capit
 
 ---
 
+## Tier 0 — Free & Low-Cost Path (Start Here)
+
+Verified, trusted, and free (or free-to-audit). Ideal if you're between roles and can't invest upfront. Full source links in [Sources & Verification](./sources-and-verification.md#free--low-cost-alternatives-trusted-sources).
+
+| Priority | Resource | Provider | Cost | Why It Fits |
+|----------|----------|----------|------|-------------|
+| 1 | **AI for Business Specialization** (incl. *AI Strategy and Governance*) | Wharton / UPenn (Coursera) | Free to audit | Same faculty caliber as the paid Wharton program; covers strategy, applications, governance |
+| 2 | **AI for Everyone** (Andrew Ng) | DeepLearning.AI (Coursera) | Free to audit | Best non-technical AI strategy primer for leaders |
+| 3 | **Google AI Essentials** | Google | Free (+ free certificate) | Fast, practical, résumé/LinkedIn-ready credential |
+| 4 | **Elements of AI** | University of Helsinki | Free (+ free certificate) | Solid foundations with a free certificate |
+| 5 | **Microsoft Learn AI paths** | Microsoft | Free | Free applied-skills credentials and AI-900 prep |
+
+:::note Free-first strategy
+Complete the free path first. Only invest in a paid executive program (Tier 1) once you're employed or have a clear ROI — e.g., an employer willing to sponsor it.
+:::
+
+---
+
 ## Tier 1 — Executive AI Strategy Programs (Primary Path)
+
+:::tip Budget-conscious? Start free.
+Every paid program below has a **verified free alternative** in the new [Free & Low-Cost Path](#tier-0--free--low-cost-path-start-here) section. If you're between roles, start there — the free-audit **Wharton AI for Business** specialization covers strategy, applications, and governance at no cost.
+:::
 
 These are the highest-value fit for a VP of Business Development with an MBA and Wharton CSO background.
 
