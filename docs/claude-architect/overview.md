@@ -12,6 +12,15 @@ slug: /claude-architect/overview
 
 This certification validates your ability to **design, build, and operate production-grade agentic AI systems** using Claude. Unlike generic AI certs, it tests architectural reasoning — *why* certain patterns beat others, not just *what* they are.
 
+:::warning Verified facts & official sources (last checked 2026-07-17)
+The **Claude Certification Program is an official Anthropic program** (launched March 12, 2026), delivered with **Pearson VUE**, with preparation via the **Anthropic Partner Academy** and digital badges through **Credly**. It offers three roles — **Practitioner, Architect, and Developer** — and counts toward Claude Partner Network standing.
+
+- Program overview: [Claude Certification Program (Pearson VUE)](https://www.pearsonvue.com/us/en/anthropic.html)
+- Prep & scheduling: [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/)
+- **Retake policy:** 14 days after attempt 1, 30 after attempt 2, 90 after attempt 3; up to 4 attempts per rolling 12 months.
+- **Register only through the official channels above.** Several similarly named third‑party sites exist (e.g. `claudecertifications.com`, `claudearchitectcertification.com`) that are **not** Anthropic's official portal. Confirm exact question count, passing score and format on the official page before scheduling.
+:::
+
 ---
 
 ## 5 Exam Domains
@@ -190,13 +199,18 @@ These appear as distractors in ~60% of questions. If you can spot them, you elim
 
 | Resource | Link |
 |----------|------|
-| Official Exam Page | [claudecertifications.com](https://claudecertifications.com/claude-certified-architect/) |
-| Study Guide (12-week) | [Study Plan](https://claudecertifications.com/claude-certified-architect/study-guide) |
-| Anthropic Academy (Skilljar) | [academy.anthropic.com](https://academy.anthropic.com) |
+| Official program (Pearson VUE) | [pearsonvue.com/anthropic](https://www.pearsonvue.com/us/en/anthropic.html) |
+| Prep & scheduling — Anthropic Partner Academy | [anthropic-partners.skilljar.com](https://anthropic-partners.skilljar.com/) |
+| Anthropic Academy (learning) | [anthropic.com/learn](https://www.anthropic.com/learn) |
+| Digital badges (Credly) | [credly.com](https://www.credly.com/) |
 | Claude Docs — Agent SDK | [docs.anthropic.com/agents](https://docs.anthropic.com/en/docs/agents-and-tools/agents-overview) |
 | Claude Docs — MCP | [docs.anthropic.com/mcp](https://docs.anthropic.com/en/docs/agents-and-tools/mcp) |
 | Claude Docs — Tool Use | [docs.anthropic.com/tool-use](https://docs.anthropic.com/en/docs/tool-use/overview) |
 | Anthropic GitHub | [github.com/anthropics](https://github.com/anthropics) |
+
+:::note Source & currency
+Program facts above are verified against Anthropic's official Pearson VUE program page and Anthropic Partner Academy (checked 2026-07-17). Exam details can change — always confirm on the official pages before scheduling. The 12-week plan and practice-test counts on this page are a **study aid**, not official exam specifications.
+:::
 
 ---
 

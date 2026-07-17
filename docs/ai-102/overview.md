@@ -53,12 +53,22 @@ AI-102 was significantly redesigned in April 2025 to include **agentic solutions
 | Implement natural language processing solutions | 15-20% |
 | Implement knowledge mining and document intelligence solutions | 15-20% |
 
-## Upcoming Challenges
+## How to Study (learning-science approach)
 
-Challenges will cover real enterprise scenarios for each domain. Check back soon.
+The same evidence-based sequence used across these cert tracks:
+
+1. **Diagnose first** with the official practice assessment to expose weak areas.
+2. **Build in Azure AI Foundry.** AI-103 rewards practitioners — implement a RAG app and a multi-agent flow in Python, don't just read.
+3. **Active recall + spacing.** After each module, reconstruct the pattern from memory; revisit across days (Dunlosky et al., 2013).
+4. **Teach it back** with a short write-up or diagram per domain.
+5. **Re-test to 80%+** on the practice assessment before booking.
 
 ## Preparation Resources
 
-- [AI-102 Study Guide (Microsoft)](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/)
-- [AI-102 Practice Assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/practice/assessment)
-- [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/)
+- [AI-103 credential page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/) (**free**)
+- [AI-103 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) (**free**)
+- [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/) (**free docs**)
+
+## Verification & currency
+
+For the full verified certification map (AI-103, AZ-305, SC-500, GH-300, AI-200) and the sources behind these facts, see **[Fuentes y Verificación v4](/docs/learning-plan-v4/sources-and-verification)**. AI-102 retired 2026-06-30; confirm AI-103 status and skills measured on the official page before scheduling.
