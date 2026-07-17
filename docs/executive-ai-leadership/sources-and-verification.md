@@ -25,7 +25,7 @@ A learning plan is only trustworthy if its recommendations are **real, current, 
 
 | Program | Provider | Verified Detail | Primary Source |
 |---------|----------|-----------------|----------------|
-| Artificial Intelligence: Implications for Business Strategy | MIT Sloan Executive Education | ~6-week online, non-technical, executive-focused, capstone AI roadmap | [executive.mit.edu](https://executive.mit.edu/course/artificial-intelligence-implications-for-business-strategy/a04U1000002yXPlIAM) |
+| Artificial Intelligence: Implications for Business Strategy | MIT Sloan Executive Education | ~6-week online, non-technical, executive-focused, capstone AI roadmap | [executive.mit.edu](https://executive.mit.edu/course/artificial-intelligence/a056g00000URaa3AAD.html) |
 | AI Strategy and Decision Making | Wharton Executive Education | Self-paced; decision frameworks; leader-oriented | [executiveeducation.wharton.upenn.edu](https://executiveeducation.wharton.upenn.edu/for-individuals/all-programs/ai-strategy-and-decision-making/) |
 | Leadership Program in AI and Analytics | Wharton Executive Education | Senior leaders (10+ yrs exp); enterprise AI roadmaps | [executiveeducation.wharton.upenn.edu](https://executiveeducation.wharton.upenn.edu/for-individuals/program-topics/ai-and-analytics/) |
 | AI Strategies for Business Transformation (Generative & Agentic) | Kellogg Executive Education | ~8-week online; AI Canvas 2.0, AI Radar 2.0, capability maturity; vertical industry focus | [kellogg.northwestern.edu](https://www.kellogg.northwestern.edu/executive-education/individual/online-programs/ai-strategies-for-business-transformation.aspx) |
@@ -70,7 +70,23 @@ Consulting/market figures (e.g., spend forecasts, profit numbers) shift year to 
 
 ---
 
-## Known Limitations / Honesty Log
+## Free & Low-Cost Alternatives (Trusted Sources)
+
+Verified free options for building the same executive AI literacy at zero or low cost.
+
+| Resource | Provider | Cost | Certificate | Primary Source |
+|----------|----------|------|-------------|----------------|
+| AI for Business Specialization (incl. *AI Strategy and Governance*) | Wharton / University of Pennsylvania (Coursera) | **Free to audit** | Paid only | [coursera.org](https://www.coursera.org/specializations/wharton-ai-business) |
+| AI for Everyone (Andrew Ng) | DeepLearning.AI (Coursera) | **Free to audit** | Paid only | [coursera.org](https://www.coursera.org/learn/ai-for-everyone) |
+| Google AI Essentials | Google | **Free** | Free | [ai.google/ai-essentials](https://ai.google/ai-essentials/) |
+| Elements of AI | University of Helsinki + Reaktor | **Free** | Free | [elementsofai.com](https://www.elementsofai.com/) |
+| AI learning paths & applied skills | Microsoft Learn | **Free** | Free (Applied Skills) | [learn.microsoft.com](https://learn.microsoft.com/en-us/training/) |
+| Anthropic Academy | Anthropic | **Free** | Varies | [anthropic.com/learn](https://www.anthropic.com/learn) |
+| AI RMF Playbook & Roadmap | NIST | **Free** | N/A | [nist.gov](https://www.nist.gov/itl/ai-risk-management-framework) |
+
+:::tip For someone between roles
+Start with the **free-audit Wharton AI for Business** specialization — it covers strategy, applications, and governance with the same faculty caliber as the paid programs, at no cost. Add **Elements of AI** and **Google AI Essentials** for free certificates you can list on LinkedIn.
+:::
 
 - **Pricing and start dates** change frequently — confirm on the provider page at time of enrollment.
 - **Certification names** get renamed/retired by Microsoft (community chatter about an AI-102 successor exists but is **not** officially confirmed as of the last verification).
