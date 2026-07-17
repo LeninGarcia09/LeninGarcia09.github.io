@@ -41,6 +41,47 @@ You need to implement **Entra Agent ID** — each agent gets its own managed ide
 
 ---
 
+## 🧰 Before You Start — Environment Setup
+
+This challenge is a **least-privilege identity** build: replace one over-privileged shared principal with per-agent managed identities scoped to exactly what each agent needs.
+
+### Prerequisites
+
+| Requirement | Why you need it | How to check |
+|-------------|-----------------|--------------|
+| **Azure subscription** + ability to assign RBAC | Create identities and scope roles | `az account show` |
+| **Azure CLI** | Provision agents, inspect role assignments | `az version` |
+| **Microsoft Entra** rights to manage identities | Entra Agent ID = per-agent managed identity | Entra admin center |
+| **Azure AI Foundry** Standard mode project | Standard mode enables BYO + per-agent identity | Azure portal |
+| A scoped data resource (e.g. a storage container) | Somewhere to grant a narrow role and test the deny | `az storage account list` |
+
+### Step 0 — Sign in and check current exposure (5 min)
+
+```bash
+az login
+# See how broad your current agent principal is — this is the problem you're fixing:
+az role assignment list --assignee <current-sp-id> -o table
+```
+
+### Step 1 — Decide the least-privilege map (10 min)
+
+Before creating identities, write down **each agent → the single narrowest role it needs** (e.g. `Storage Blob Data Reader` on one container). Least privilege is a design decision, not an afterthought.
+
+> 🟦 **Microsoft-first note:** this is a pure Microsoft identity exercise — **Microsoft Entra Agent ID**, **Azure RBAC** scoped roles, **BYO Key Vault + Storage**, and **Azure Monitor** for identity auditing. No third-party IAM is involved.
+
+### The path through this challenge
+
+1. **Task 1** — enable Standard mode with BYO Key Vault + Storage.
+2. **Task 2** — give each agent its own Entra Agent ID.
+3. **Task 3** — assign the narrowest RBAC role per agent.
+4. **Task 4** — audit identity activity in Azure Monitor.
+5. **Success Criteria** — prove an agent can read but *cannot* write (403).
+6. **Adapt to Your Business** — apply per-agent identity to *your* fleet.
+
+> ⏱️ **Time budget:** ~60 minutes. The 403 write-deny test (Success Criteria) is the proof that least privilege actually holds.
+
+---
+
 ## Your Tasks
 
 ### Task 1: Understand Entra Agent ID
@@ -147,6 +188,58 @@ az role assignment list \
 - [ ] Agent can successfully read from the `invoices` container
 - [ ] Agent cannot write to storage (test: `az storage blob upload` using agent identity should fail with 403)
 - [ ] Role assignment audit shows no Contributor or Owner roles
+
+---
+
+## 🔁 Adapt This to Your Own Business
+
+The scenario is a **SOC 2 audit**, but *any* organization running multiple agents on a shared, over-privileged identity has the same blast-radius problem. Per-agent identity + least-privilege RBAC is a Zero Trust baseline everywhere.
+
+### Step 1 — Find your shared-identity blast radius
+
+| Organization type | The shared-identity risk | What a compromise reaches |
+|-------------------|--------------------------|---------------------------|
+| **Enterprise SaaS** | One SP for all agents/services | Every prod database |
+| **Financial services** | Shared automation identity | Payment + customer systems |
+| **Healthcare** | Broad app registration | All PHI stores |
+| **Retail** | Shared integration principal | Orders, payments, inventory |
+| **Any regulated org** | Contributor/Owner on the subscription | Everything, on one leak |
+
+### Step 2 — Map the building blocks to your stack (Microsoft-first)
+
+| In this challenge | In your project — use |
+|-------------------|-----------------------|
+| Per-agent identity | **Microsoft Entra Agent ID** (managed identity per agent) |
+| Narrow permissions | **Azure RBAC** roles scoped to a single resource |
+| Secret/storage isolation | **BYO Key Vault + Storage** in Standard mode |
+| Identity auditing | **Azure Monitor** + **Entra sign-in / audit logs** |
+| Policy enforcement | **Azure Policy** to forbid Owner/Contributor on agents |
+
+### Step 3 — The 5-question implementation checklist
+
+1. **Do multiple agents share one identity?** If yes → that's your blast radius; split them.
+2. **Does any agent have Contributor/Owner?** If yes → replace with a data-plane role scoped to one resource.
+3. **Is the role scoped to a resource, not the subscription?** Scope down to the container/database.
+4. **Can you prove an agent is denied out-of-scope actions?** A 403 on write is your evidence.
+5. **Are identity actions audited?** If not → send Entra + resource logs to Azure Monitor.
+
+### Step 4 — A 1-week rollout plan
+
+| Day | Action | Owner |
+|-----|--------|-------|
+| **Day 1** | Inventory every agent and its current permissions | Security |
+| **Day 2** | Map each agent to its single least-privilege role | Security + eng |
+| **Day 3** | Create per-agent Entra Agent IDs | Cloud eng |
+| **Day 4** | Assign scoped RBAC; run the 403 deny test | Cloud eng |
+| **Day 5** | Wire identity audit logs; add an Azure Policy guard | SRE + governance |
+
+### Step 5 — Prove the ROI
+
+- **Blast-radius reduction** — max resources reachable by any one identity *(target: 1 scope)*.
+- **Over-privilege count** — agents with Owner/Contributor *(target: 0)*.
+- **Deny verification** — out-of-scope actions return 403 *(target: 100%)*.
+
+> 💡 **Rule of thumb:** if one leaked credential can reach everything, you don't have an agent-security problem — you have an identity-architecture problem. One identity per agent, one narrow role each.
 
 ---
 
