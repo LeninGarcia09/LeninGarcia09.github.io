@@ -56,6 +56,15 @@ Design and implement agentic systems using Claude's Agent SDK.
 - Flat multi-agent vs hub-and-spoke (flat = no coordinator = chaos at scale)
 - Overly narrow task decomposition → coverage gaps
 
+**📚 Official resources (Anthropic):**
+- [Agent SDK overview](https://code.claude.com/docs/en/agent-sdk/overview)
+- [How the agent loop works](https://code.claude.com/docs/en/agent-sdk/agent-loop) — message lifecycle & `stop_reason`
+- [Subagents in the SDK](https://code.claude.com/docs/en/agent-sdk/subagents) — context isolation & parallelism
+- [Work with sessions](https://code.claude.com/docs/en/agent-sdk/sessions) — `continue`, `resume`, `fork`
+- [Intercept and control agent behavior with hooks](https://code.claude.com/docs/en/agent-sdk/hooks)
+- [Run agents in parallel](https://code.claude.com/docs/en/agents) — subagents vs agent teams
+- [Stop reasons and fallback](https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons)
+
 ---
 
 ### Domain 2 — Tool Design & MCP Integration (~20%)
@@ -73,6 +82,15 @@ Design effective tools and integrate with Model Context Protocol servers.
 - Generic error messages (no `isRetryable` → agent retries indefinitely)
 - Too many tools per agent → decision paralysis
 - User-level MCP for project-specific servers (should be project-level)
+
+**📚 Official resources (Anthropic):**
+- [Tool use with Claude — overview](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview)
+- [How tool use works](https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works)
+- [Define tools](https://platform.claude.com/docs/en/agents-and-tools/tool-use/define-tools) — descriptions, schemas, examples
+- [Give Claude custom tools (SDK in-process MCP)](https://code.claude.com/docs/en/agent-sdk/custom-tools)
+- [Connect to external tools with MCP](https://code.claude.com/docs/en/agent-sdk/mcp) — transports, auth, error handling
+- [MCP connector](https://platform.claude.com/docs/en/agents-and-tools/mcp-connector) & [Remote MCP servers](https://platform.claude.com/docs/en/agents-and-tools/remote-mcp-servers)
+- [Scale to many tools with tool search](https://code.claude.com/docs/en/agent-sdk/tool-search)
 
 ---
 
@@ -96,6 +114,15 @@ Configure Claude Code for team development workflows.
 - Using direct execution mode for complex multi-file refactors
 - Same session for generator + reviewer (loses independent perspective)
 
+**📚 Official resources (Anthropic):**
+- [Extend Claude Code](https://code.claude.com/docs/en/features-overview) — when to use CLAUDE.md, Skills, subagents, hooks, MCP
+- [Explore the .claude directory](https://code.claude.com/docs/en/claude-directory) — CLAUDE.md, settings, hooks, skills, commands
+- [Commands](https://code.claude.com/docs/en/commands) — built-in & custom slash commands
+- [Agent Skills — overview](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) & [authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices)
+- [Automate actions with hooks](https://code.claude.com/docs/en/hooks-guide)
+- [Run Claude Code programmatically (headless / CI)](https://code.claude.com/docs/en/headless) & [GitHub Actions](https://code.claude.com/docs/en/github-actions)
+- [Best practices for Claude Code](https://code.claude.com/docs/en/best-practices)
+
 ---
 
 ### Domain 4 — Prompt Engineering & Structured Output (~20%)
@@ -116,6 +143,14 @@ Master prompt engineering for production-scale systems.
 - Vague instructions → inconsistent outputs
 - Self-review in same session (retains reasoning context, defeats the purpose)
 - Generic retry prompts without specific error context
+
+**📚 Official resources (Anthropic):**
+- [Prompt engineering — overview](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview)
+- [Structured outputs](https://platform.claude.com/docs/en/build-with-claude/structured-outputs) — guaranteed JSON schema compliance
+- [Get structured output from agents (SDK)](https://code.claude.com/docs/en/agent-sdk/structured-outputs) — JSON Schema / Zod / Pydantic
+- [Strict tool use](https://platform.claude.com/docs/en/agents-and-tools/tool-use/strict-tool-use) & [Handle tool calls](https://platform.claude.com/docs/en/agents-and-tools/tool-use/handle-tool-calls) — `tool_choice`
+- [Tutorial: build a tool-using agent](https://platform.claude.com/docs/en/agents-and-tools/tool-use/build-a-tool-using-agent)
+- [Anthropic Academy / Learn](https://www.anthropic.com/learn) — guided prompt-engineering courses
 
 ---
 
@@ -138,6 +173,14 @@ Manage context effectively in long-running production systems.
 - Appending all context chronologically (no position-awareness)
 - Escalating on sentiment rather than actual complexity/policy gap
 - No crash recovery manifest → lost progress on failure
+
+**📚 Official resources (Anthropic):**
+- [Context windows](https://platform.claude.com/docs/en/build-with-claude/context-windows) — the 'lost in the middle' effect
+- [Context editing](https://platform.claude.com/docs/en/build-with-claude/context-editing) & [Compaction](https://platform.claude.com/docs/en/build-with-claude/compaction)
+- [Prompt caching](https://platform.claude.com/docs/en/build-with-claude/prompt-caching) — reuse stable context efficiently
+- [Explore the context window (Claude Code)](https://code.claude.com/docs/en/context-window)
+- [Checkpointing](https://code.claude.com/docs/en/checkpointing) — rewind & recover session state
+- [Memory tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool) & [Track cost and usage (SDK)](https://code.claude.com/docs/en/agent-sdk/cost-tracking)
 
 ---
 
