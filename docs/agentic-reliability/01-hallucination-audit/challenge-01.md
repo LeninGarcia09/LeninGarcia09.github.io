@@ -52,31 +52,86 @@ The model generated rounded "approximate" figures that looked professional — e
 
 ## 🧰 Before You Start — Environment Setup
 
-This challenge is hands-on. Set up a clean workspace first so every task below runs without friction. **If you have never built an agent before, do not skip this section** — the tasks assume the environment exists.
+This challenge is hands-on. The tasks below assume you already have a model to call and a database to query. **If you have never built an agent before, do the five steps in order** — by the end you'll have a running agent that you can watch hallucinate, which is the whole point of Task 1. Budget ~30 minutes for setup.
 
 ### Prerequisites
 
-| Requirement | Why you need it | How to check |
-|-------------|-----------------|--------------|
-| Python 3.10+ | Async agent loop + dataclasses | `python --version` |
-| **Azure OpenAI** via [Azure AI Foundry](https://ai.azure.com) | The model that powers the agent — **Microsoft-first primary path** | Deploy a `gpt-4o` model in Foundry |
-| System of record — **Azure SQL Database** or **Microsoft Fabric / OneLake** (production); DuckDB as a zero-cost *local* stand-in for this exercise | Deterministic data layer (same query → same result) | Azure portal / `pip show duckdb` |
-| VS Code + terminal | You must read the raw message thread | [code.visualstudio.com](https://code.visualstudio.com) |
+| Requirement | Why you need it | How to get / check it |
+|-------------|-----------------|-----------------------|
+| Python 3.10+ | Async agent loop + dataclasses | `python --version` → if missing, install from [python.org/downloads](https://www.python.org/downloads/) |
+| An **Azure subscription** | To create the Azure OpenAI model in Step 1 | [azure.microsoft.com/free](https://azure.microsoft.com/free/) — free tier is enough |
+| **Azure CLI** | Lets your code sign in without pasting API keys | `az version` → if missing, [install the Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli) |
+| **Azure OpenAI** model via [Azure AI Foundry](https://ai.azure.com) | The model that powers the agent — **Microsoft-first primary path** | You'll deploy `gpt-4o` in **Step 1** below |
+| System of record — **Azure SQL Database** / **Microsoft Fabric (OneLake)** in production; DuckDB as a zero-cost *local* stand-in here | Deterministic data layer (same query → same result) | Installed via `pip` in Step 0 |
+| VS Code + a terminal | You must read the raw message thread | [code.visualstudio.com](https://code.visualstudio.com) |
 
 ### Step 0 — Create an isolated workspace (5 min)
+
+A virtual environment (`venv`) keeps this challenge's packages separate from the rest of your machine, so nothing you install here can break another project.
 
 ```bash
 mkdir hallucination-audit && cd hallucination-audit
 python -m venv .venv
-# Windows:  .venv\Scripts\activate
-# macOS/Linux:  source .venv/bin/activate
 
-# Microsoft-first: Azure AI Foundry + Azure OpenAI (the `openai` package ships the AzureOpenAI client).
-# duckdb is only the local, offline stand-in for the system of record.
-pip install azure-ai-projects azure-identity openai pydantic tiktoken duckdb
+# Activate it (your prompt should then start with "(.venv)"):
+# Windows (PowerShell):  .venv\Scripts\Activate.ps1
+# Windows (cmd):         .venv\Scripts\activate.bat
+# macOS/Linux:           source .venv/bin/activate
+
+# Microsoft-first stack. duckdb is only the local, offline stand-in for the system of record.
+pip install azure-ai-projects azure-identity openai pydantic tiktoken duckdb python-dotenv
 ```
 
-### Step 1 — Seed a small, KNOWN dataset (5 min)
+✅ **You're done with this step when** your terminal prompt shows `(.venv)` and `pip list` includes `azure-ai-projects`.
+
+### Step 1 — Deploy a model in Azure AI Foundry — *this is the "where do I go"* (10 min)
+
+The tasks call a real model. Here is exactly where to click to create one and the **two values you must copy**. Follow the official quickstart if you get stuck: [Create and deploy an Azure OpenAI resource](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/create-resource).
+
+1. Go to **[ai.azure.com](https://ai.azure.com)** and sign in with your Azure account.
+2. Click **+ Create project** (accept the default new resource/hub it offers). Wait ~1 min for it to provision.
+3. In the left pane under **My assets**, click **Models + endpoints**.
+4. Click **+ Deploy model → Deploy base model**, search **`gpt-4o`**, select it, click **Confirm → Deploy**.
+5. Open the deployment you just created and **copy two things**:
+   - the **Deployment name** (e.g. `gpt-4o`) → you'll set it as `MODEL_DEPLOYMENT_NAME`
+   - your **project's endpoint** — from the project **Overview** page, the **Azure AI Foundry project endpoint** (looks like `https://<your-project>.services.ai.azure.com/api/projects/<name>`) → you'll set it as `PROJECT_ENDPOINT`
+
+> 💡 **New to Foundry?** The [get-started overview](https://learn.microsoft.com/azure/ai-foundry/openai/overview#get-started-with-azure-openai) walks through the portal with screenshots.
+
+### Step 2 — Wire up authentication (5 min)
+
+The task code uses `DefaultAzureCredential`, which means **no API keys in your code** — it signs in as *you* via the Azure CLI. This is the Microsoft-recommended, keyless pattern.
+
+```bash
+# 1. Sign in once (opens a browser). Your code reuses this session.
+az login
+
+# 2. Save the two values from Step 1 into a .env file (never commit this file).
+#    Windows PowerShell:
+#      "PROJECT_ENDPOINT=https://<your-project>.services.ai.azure.com/api/projects/<name>" | Out-File .env -Encoding utf8
+#      "MODEL_DEPLOYMENT_NAME=gpt-4o" | Out-File .env -Append -Encoding utf8
+#    macOS/Linux:
+#      echo 'PROJECT_ENDPOINT=https://<your-project>.services.ai.azure.com/api/projects/<name>' >> .env
+#      echo 'MODEL_DEPLOYMENT_NAME=gpt-4o' >> .env
+```
+
+Your task scripts load these two lines at the top:
+
+```python
+import os
+from dotenv import load_dotenv
+from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+
+load_dotenv()
+project = AIProjectClient(
+    endpoint=os.environ["PROJECT_ENDPOINT"],
+    credential=DefaultAzureCredential(),
+)
+DEPLOYMENT = os.environ["MODEL_DEPLOYMENT_NAME"]
+```
+
+### Step 3 — Seed a small, KNOWN dataset (5 min)
 
 You cannot *detect* a hallucination unless you know the ground truth. Create a tiny table where you know every value — then any "extra" number the agent produces is **provably fabricated**.
 
@@ -95,7 +150,34 @@ con.executemany(
 print(con.execute("SELECT * FROM stock_prices").fetchall())
 ```
 
+Run it: `python seed.py`. You should see the 5 rows printed back.
+
 > 🟦 **Microsoft-first note:** DuckDB is used here only as a zero-setup, deterministic *local* stand-in so you can focus on the guardrail pattern. In production — at Microsoft or on a customer engagement — the system of record is **Azure SQL Database**, **Microsoft Fabric / OneLake**, **Azure Cosmos DB**, or **Dataverse**. The guardrail architecture in Tasks 2–4 is identical regardless of the backing store.
+
+### Step 4 — Smoke-test the connection (2 min)
+
+Before Task 1, confirm the model actually answers. If this prints a reply, your endpoint, deployment name, and `az login` are all correct — so any failure later is *your agent logic*, not setup.
+
+```python
+# smoke_test.py — proves Steps 1–2 work end to end.
+import os
+from dotenv import load_dotenv
+from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+
+load_dotenv()
+project = AIProjectClient(endpoint=os.environ["PROJECT_ENDPOINT"], credential=DefaultAzureCredential())
+client = project.inference.get_azure_openai_client(api_version="2024-10-21")
+resp = client.chat.completions.create(
+    model=os.environ["MODEL_DEPLOYMENT_NAME"],
+    messages=[{"role": "user", "content": "Reply with exactly: setup works"}],
+)
+print(resp.choices[0].message.content)
+```
+
+✅ **You're ready for the tasks when** `python smoke_test.py` prints `setup works`.
+
+> **Common fixes:** `DefaultAzureCredential failed` → run `az login` again. `DeploymentNotFound` → `MODEL_DEPLOYMENT_NAME` must match the name from Step 1.5 exactly. `401 / PermissionDenied` → in the portal, give your account the **Azure AI User** role on the project (Access control → Add role assignment).
 
 ### The path through this challenge
 
@@ -106,7 +188,7 @@ print(con.execute("SELECT * FROM stock_prices").fetchall())
 5. **Success Criteria** — prove each guardrail works.
 6. **Adapt to Your Business** — replace "stocks" with *your* domain.
 
-> ⏱️ **Time budget:** ~2–3 hours. Do Tasks 1–3 in one sitting — they build on each other.
+> ⏱️ **Time budget:** ~30 min setup, then ~2–3 hours for the tasks. Do Tasks 1–3 in one sitting — they build on each other.
 
 ---
 
