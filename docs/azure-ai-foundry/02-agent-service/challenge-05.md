@@ -340,6 +340,18 @@ The scenario is a **Black Friday shopping assistant**, but *any* agent faces the
 
 > 💡 **Rule of thumb:** "works locally" tests correctness; production tests concurrency. Instrument, reproduce with load, then fix in the diagnostic order — guessing under a revenue-loss clock is how outages get longer.
 
+### Doing this solo (no team, portfolio-first)
+
+No team, no budget? A before/after load-test report is one of the clearest "I make things production-ready" artifacts you can show. Run the week solo:
+
+- **Mon–Tue** — instrument request/failure/latency, then run a first load test to find the failure inflection point.
+- **Wed–Thu** — tune concurrency/timeouts, add a circuit breaker, and cache hot data.
+- **Fri** — re-run the load test and capture the before/after error-rate-vs-concurrency chart.
+
+📦 **Ship this artifact:** a load-test report (before/after) showing error rate held under 5% at peak. Resume bullet: *"Hardened an agent for peak traffic — held error rate under 5% and p95 within SLA at 500 concurrent users."*
+
+> 🆓 **Free-tier path:** if Azure Load Testing budget isn't available, run `locust` *(third-party)* locally against a free-tier endpoint — the report looks the same.
+
 ---
 
 ## Regulatory Mapping

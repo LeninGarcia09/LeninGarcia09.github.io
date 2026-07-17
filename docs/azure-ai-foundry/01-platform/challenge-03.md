@@ -258,6 +258,18 @@ The scenario is a **SOC 2 audit**, but *any* organization running multiple agent
 
 > 💡 **Rule of thumb:** if one leaked credential can reach everything, you don't have an agent-security problem — you have an identity-architecture problem. One identity per agent, one narrow role each.
 
+### Doing this solo (no team, portfolio-first)
+
+No team, no budget? Least-privilege agent identity is pure Zero-Trust judgment — and Entra + RBAC cost nothing to demo. Run the week solo:
+
+- **Mon–Tue** — inventory your agents and map each to exactly one least-privilege role.
+- **Wed–Thu** — create per-agent Entra Agent IDs (or managed identities) and assign resource-scoped RBAC.
+- **Fri** — run the deny test: attempt an out-of-scope action and screenshot the 403.
+
+📦 **Ship this artifact:** a least-privilege role map (table/diagram) + the 403-on-out-of-scope screenshot. Resume bullet: *"Cut agent blast radius to a single resource scope — 0 over-privileged identities, 100% of out-of-scope actions denied (verified 403)."*
+
+> 🆓 **Free-tier path:** Entra ID and Azure RBAC are free; one free-tier storage or Cosmos resource is enough to prove the deny.
+
 ---
 
 ## Regulatory Mapping

@@ -311,6 +311,18 @@ The scenario is an **insurance policy agent**, but *any* agent that answers fact
 
 > 💡 **Rule of thumb:** most "the model is hallucinating" problems are actually retrieval problems. Fix what the agent *sees* before you touch the prompt — and never ship without a groundedness gate.
 
+### Doing this solo (no team, portfolio-first)
+
+No team, no budget? A working RAG **quality gate** in CI is a portfolio piece hiring managers immediately understand. Run the week solo:
+
+- **Mon–Tue** — build a 20-row labeled eval set (JSONL) with known hallucinations; run the Azure AI Evaluation SDK for a baseline.
+- **Wed–Thu** — tune Azure AI Search retrieval, then add a GitHub Actions gate that blocks groundedness below 4.0.
+- **Fri** — capture before/after groundedness + a screenshot of the CI gate failing a bad build.
+
+📦 **Ship this artifact:** a public repo with the eval set + a GitHub Actions workflow that gates on groundedness. Resume bullet: *"Shipped a RAG quality gate — raised groundedness to 4.x/5, kept hallucinations under 2%, and blocked 100% of failing builds in CI."*
+
+> 🆓 **Free-tier path:** Azure AI Search has a free tier and the Evaluation SDK runs locally — the whole loop fits a free account.
+
 ---
 
 ## Regulatory Mapping

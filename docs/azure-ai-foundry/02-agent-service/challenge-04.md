@@ -307,6 +307,18 @@ The scenario is a **bank claims system**, but *any* multi-agent workflow faces t
 
 > 💡 **Rule of thumb:** a multi-agent system a security team can't audit will never reach production. Design the trace ID and the per-agent identities first — the intelligence is the easy part.
 
+### Doing this solo (no team, portfolio-first)
+
+No team, no budget? One trace ID stitched across several agents is a screenshot that instantly signals production maturity. Run the week solo:
+
+- **Mon–Tue** — build an orchestrator + two specialist agents in Foundry Agent Service.
+- **Wed–Thu** — give each a per-agent identity, propagate one correlation/trace ID, and persist records in Cosmos DB (free tier).
+- **Fri** — replay one transaction end to end from its trace ID.
+
+📦 **Ship this artifact:** a repo + a single screenshot showing one trace ID stitched across all three agents. Resume bullet: *"Built an auditable multi-agent workflow — 100% of decisions attributable per-agent, any transaction reconstructable end-to-end in minutes."*
+
+> 🆓 **Free-tier path:** Cosmos DB free tier + Application Insights sampling keep this inside a free account.
+
 ---
 
 ## Regulatory Mapping

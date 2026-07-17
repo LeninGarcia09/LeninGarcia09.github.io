@@ -530,6 +530,18 @@ The scenario is a **quant fund**, but *every* company has business terms whose m
 
 > 💡 **Rule of thumb:** if the answer to "what does this term mean?" lives only in the model's head, it *will* drift when the model updates. Put the definition in your system, date-stamp it, and log where it came from.
 
+### Doing this solo (no team, portfolio-first)
+
+No team, no budget? A "the system owns the definition, not the LLM" demo shows senior judgment few juniors have. Run the week solo:
+
+- **Mon–Tue** — inventory your 10 riskiest business terms; build an effective-dated concept registry (local JSON/SQLite now, Azure SQL/Dataverse later).
+- **Wed–Thu** — add per-request temporal grounding (`date.today()`) + a pre-LLM scope gate.
+- **Fri** — run a small eval: definition accuracy, temporal correctness, and adversarial scope-bypass attempts.
+
+📦 **Ship this artifact:** the registry + an eval report showing 100% definition/temporal accuracy and 0% scope bypass. Resume bullet: *"Made business-term resolution deterministic — 100% definition and date accuracy, 0% scope-bypass on adversarial rephrasings."*
+
+> 🆓 **Free-tier path:** a local registry file + the consumption-tier model — no infrastructure required to prove the pattern.
+
 ---
 
 ## Regulatory Mapping
