@@ -14,6 +14,7 @@ Al completar esta fase:
 - Python básico funcional para automatización
 - Git/GitHub operativo con repositorio propio
 - Certificación AZ-900 obtenida o en progreso
+- **Primer agente funcional construido en Microsoft Copilot Studio** (listo para oportunidades de proyecto)
 - LinkedIn y GitHub configurados profesionalmente
 
 ---
@@ -202,6 +203,82 @@ Entender cloud computing y prepararse para la certificación AZ-900.
 
 ---
 
+## 🚀 Módulo Prioritario: Microsoft Copilot Studio (Fast-Track)
+
+:::info Por qué está en la Fase 1 y no más adelante
+Copilot Studio es **low-code/no-code**: no requiere Python ni cloud avanzado, así que puedes empezar **desde el Día 1** en paralelo a las semanas anteriores. Con oportunidades reales de proyecto en el horizonte, este módulo te deja **listo para construir agentes en semanas, no meses**. Es la habilidad de esta fase con mayor retorno inmediato para el mercado.
+:::
+
+### Objetivo
+Construir, probar, publicar y **gobernar** un agente (copilot) funcional en Microsoft Copilot Studio, y validar la habilidad con una credencial oficial verificable.
+
+### Qué es Copilot Studio (contexto)
+Plataforma gráfica de Microsoft para crear **agentes conversacionales y autónomos** que responden con IA generativa sobre tus datos (knowledge grounding), ejecutan acciones vía **agent flows / Power Automate**, y se publican en **Teams, sitios web, M365 Copilot** y otros canales. Es la evolución de Power Virtual Agents.
+
+### Recursos Principales (verificados)
+
+| Recurso | Idioma | Tipo | Costo |
+|---------|--------|------|-------|
+| [Documentación oficial de Copilot Studio](https://learn.microsoft.com/es-es/microsoft-copilot-studio/) | 🇪🇸 Español | Docs | Gratis |
+| [Learning Path: Create agents in Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/paths/create-extend-custom-copilots-microsoft-copilot-studio/) | 🇬🇧 Inglés | Learning Path (9 módulos, con labs) | Gratis |
+| [Copilot Studio Agent Academy](https://microsoft.github.io/agent-academy/) | 🇬🇧 Inglés | Currículo práctico por rangos + misiones | Gratis |
+| [Agent in a Day — Workshop](https://learn.microsoft.com/en-us/training/paths/agents-online-workshop/) | 🇬🇧 Inglés | Workshop guiado | Gratis |
+| [Copilot Studio Samples (GitHub)](https://github.com/microsoft/CopilotStudioSamples) | 🇬🇧 Inglés | Ejemplos reutilizables | Gratis |
+
+:::tip Prueba gratuita
+Copilot Studio ofrece **prueba gratuita** para practicar sin costo. Actívala desde la [página del producto](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio) para tener un entorno real donde construir tu primer agente.
+:::
+
+### Componentes Críticos a Dominar
+
+Estos son los bloques que separan "hice un chatbot de demo" de "puedo entregar un agente listo para negocio":
+
+| # | Componente | Por qué es crítico |
+|---|-----------|--------------------|
+| 1 | **Topics y trigger phrases** | Diseño conversacional: cómo el agente entiende e inicia flujos |
+| 2 | **Generative answers + knowledge grounding** | Respuestas con IA sobre TUS fuentes (SharePoint, sitios, docs) — reduce alucinaciones |
+| 3 | **Entities y variables** | Capturar y reutilizar datos del usuario dentro de la conversación |
+| 4 | **Agent flows / Power Automate** | Que el agente **ejecute acciones** (crear ticket, consultar sistema, enviar correo) |
+| 5 | **Triggers autónomos y manejo de errores** | Agentes que actúan por evento, con fallback y **hand-off a humano** |
+| 6 | **Publicación multicanal** | Desplegar en Teams, web y M365 Copilot |
+| 7 | **Responsible AI y governance** | Autenticación, alcance de datos, DLP y control de contenido (alinea con NIST AI RMF — ver Fase 4) |
+
+### Ruta de Aprendizaje (2 semanas en paralelo, ~1 hr/día)
+
+| Etapa | Foco | Práctica |
+|-------|------|----------|
+| Días 1-2 | Fundamentos + activar prueba gratuita | Crear tu primer agente "Hola mundo" |
+| Días 3-4 | Topics, entities, variables | Diseñar un flujo conversacional real |
+| Días 5-6 | Generative answers + knowledge | Conectar una fuente de conocimiento propia |
+| Días 7-8 | Agent flows / Power Automate | Que el agente ejecute una acción |
+| Días 9-10 | Triggers autónomos + manejo de errores | Añadir comportamiento autónomo + hand-off |
+| Días 11-12 | Publicar + governance | Desplegar en Teams + revisar seguridad/RAI |
+
+### 🔨 Proyecto: Agente de Help Desk / Onboarding
+
+Construir un agente que resuelva un problema de negocio real y demuestre los 7 componentes:
+
+- Responde preguntas frecuentes usando una **base de conocimiento** (generative answers)
+- Captura datos del usuario con **entities/variables**
+- Ejecuta una **acción** vía agent flow (ej. registrar una solicitud)
+- Escala a un humano cuando no puede resolver (**hand-off**)
+- Publicado en **Teams** y documentado
+
+**Entregable:** Repositorio en GitHub con: descripción del caso de negocio, diagrama del agente (topics + flows), capturas del agente funcionando, y una **demo grabada de 5 min**. Este proyecto es evidencia directa para oportunidades de proyecto con Copilot Studio.
+
+### 🏅 Credencial oficial (quick-win verificable)
+
+Microsoft ofrece **Applied Skills**: credenciales por **laboratorio interactivo** (no examen de opción múltiple), gratuitas o de bajo costo, que validan que **realmente sabes construir agentes**:
+
+| Credencial | Qué evalúa | Fuente oficial |
+|-----------|-----------|----------------|
+| **Create agents in Microsoft Copilot Studio** | Crear y publicar un agente de extremo a extremo | [learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/applied-skills/create-agents-in-microsoft-copilot-studio/) |
+| **Enhance agents with autonomous capabilities** | Agent flows, triggers autónomos, manejo de errores y hand-off | [learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/applied-skills/enhance-agents-with-autonomous-capabilities/) |
+
+> **Meta de la fase:** obtener al menos la Applied Skill *"Create agents in Microsoft Copilot Studio"*. Es un badge de LinkedIn que demuestra capacidad práctica —exactamente lo que un cliente o empleador quiere ver antes de asignar un proyecto.
+
+---
+
 ## 📋 Checklist de Fase 1
 
 - [ ] LinkedIn actualizado con nuevo enfoque profesional
@@ -212,6 +289,9 @@ Entender cloud computing y prepararse para la certificación AZ-900.
 - [ ] Repositorio portfolio creado
 - [ ] AZ-900 Learning Path completado
 - [ ] Examen AZ-900 programado o completado
+- [ ] **Copilot Studio: prueba gratuita activada + primer agente construido**
+- [ ] **Proyecto: Agente de Help Desk / Onboarding publicado en Teams**
+- [ ] **Applied Skill "Create agents in Microsoft Copilot Studio" obtenida (o en progreso)**
 - [ ] Journal de aprendizaje al día
 
 ## ⏭️ Siguiente Fase
