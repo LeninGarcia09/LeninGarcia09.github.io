@@ -52,6 +52,53 @@ Information Extraction:
 
 ---
 
+## 🧰 Before You Start — Environment Setup
+
+This is a **security** exercise: you attack your own agent, measure the breach, harden it, then prove the attack now fails. Your setup needs an attack tool and Azure's injection defenses side by side.
+
+### Prerequisites
+
+| Requirement | Why you need it | How to check |
+|-------------|-----------------|--------------|
+| Python 3.10+ | Run PyRIT and the agent under test | `python --version` |
+| **Azure AI Content Safety** resource (with **Prompt Shields**) | Detect direct + indirect injection before it reaches the model | [Create resource](https://learn.microsoft.com/azure/ai-services/content-safety/overview) |
+| **Azure OpenAI** via [Azure AI Foundry](https://ai.azure.com) | The model behind your sales agent | Deploy `gpt-4o` |
+| **PyRIT** *(Microsoft open-source)* | Automated red-team attack generation | `pip show pyrit` |
+| **Application Insights / Azure Monitor** | Log every blocked attack with severity | Azure portal |
+
+### Step 0 — Create an isolated workspace (5 min)
+
+```bash
+mkdir injection-defense && cd injection-defense
+python -m venv .venv
+# Windows:  .venv\Scripts\activate    |    macOS/Linux:  source .venv/bin/activate
+pip install pyrit azure-ai-contentsafety azure-ai-projects azure-identity openai
+```
+
+### Step 1 — Provision defenses and capture a baseline (15 min)
+
+Create an **Azure AI Content Safety** resource (Prompt Shields is included), then run PyRIT **once, before hardening**, to measure your starting attack-success rate. You cannot prove improvement without a baseline.
+
+```python
+# baseline.py — measure the breach BEFORE you fix anything
+# Expected result on an unhardened agent: multiple successful extractions.
+```
+
+> 🟦 **Microsoft-first note:** every tool here is Microsoft — **PyRIT** (Microsoft's open-source red-team toolkit), **Azure AI Prompt Shields** + **Content Safety** for defense, **Azure OpenAI** for the model, and **Azure Monitor / Application Insights** for the security log. No third-party tooling required.
+
+### The path through this challenge
+
+1. **Task 1** — run PyRIT to breach your own agent (baseline).
+2. **Task 2** — enable Prompt Shields for direct + indirect injection.
+3. **Task 3** — tune Content Safety severity thresholds.
+4. **Task 4** — harden the system prompt + information boundaries.
+5. **Success Criteria** — re-run PyRIT; attack success drops to 0%.
+6. **Adapt to Your Business** — protect *your* sensitive knowledge base.
+
+> ⏱️ **Time budget:** ~90 minutes. The baseline breach (Task 1) is the motivator — run it first, unhardened.
+
+---
+
 ## Your Tasks
 
 ### Task 1: Install and Configure PyRIT
@@ -230,6 +277,60 @@ def log_security_event(event_type: str, user_id: str, message: str, blocked: boo
 - [ ] Hardened system prompt prevents information disclosure in manual testing
 - [ ] Security events are logged in Application Insights with severity levels
 - [ ] Re-run PyRIT after hardening — attack success rate drops to 0%
+
+---
+
+## 🔁 Adapt This to Your Own Business
+
+The scenario is a **sales agent leaking pricing**, but *any* agent with access to sensitive data is one prompt-injection away from disclosure. The attack → measure → harden → re-test loop applies to every RAG or tool-using agent you ship.
+
+### Step 1 — Find your "what could this agent be tricked into revealing?" moment
+
+| Industry | The agent's sensitive access | What an attacker extracts |
+|----------|------------------------------|---------------------------|
+| **Enterprise SaaS** | Pricing, margins, roadmaps | Competitive intelligence |
+| **Healthcare** | Patient records via RAG | PHI / diagnoses |
+| **Financial services** | Account + transaction data | PII, balances, strategy |
+| **Legal** | Privileged documents | Case strategy, client secrets |
+| **HR / recruiting** | Employee + candidate data | Comp, PII, evaluations |
+| **Public sector** | Citizen records | Personal data, case files |
+
+### Step 2 — Map the building blocks to your stack (Microsoft-first)
+
+| In this challenge | In your project — use |
+|-------------------|-----------------------|
+| PyRIT attack runs | **PyRIT** as a CI/CD red-team gate on every release |
+| Direct/indirect injection detection | **Azure AI Prompt Shields** (Content Safety) |
+| Harmful-content thresholds | **Azure AI Content Safety** severity config |
+| Retrieval trust boundary | Scope RAG to **Azure AI Search** with document-level security |
+| Security event logging | **Application Insights** + **Azure Monitor** alerts |
+| Data-leak governance | **Microsoft Purview DLP** for AI |
+
+### Step 3 — The 5-question implementation checklist
+
+1. **Have you actually attacked your own agent?** If not → run PyRIT before you trust it.
+2. **Do you screen *retrieved documents*, not just user input?** If not → you're exposed to indirect injection.
+3. **Is there a hard boundary on what the agent may disclose?** If it relies only on the system prompt → harden it in code.
+4. **Do blocked attacks get logged with severity?** If not → add Application Insights security events.
+5. **Does a red-team test run on every deploy?** If not → add PyRIT as a CI/CD gate.
+
+### Step 4 — A 1-week rollout plan
+
+| Day | Action | Owner |
+|-----|--------|-------|
+| **Day 1** | Run PyRIT against your real agent; record baseline breach rate | Security eng |
+| **Day 2** | Enable Prompt Shields (direct + indirect) | Backend dev |
+| **Day 3** | Tune Content Safety thresholds; add info-boundary logic | Backend dev |
+| **Day 4** | Wire security events to Application Insights + alerts | SRE |
+| **Day 5** | Add PyRIT smoke test to CI/CD; re-run and confirm 0% | Security eng |
+
+### Step 5 — Prove the ROI
+
+- **Attack success rate** — % of injection attempts that extract data *(target: 0%)*.
+- **Coverage** — % of known attack patterns blocked *(target: 100%)*.
+- **Detection** — % of attempts logged with severity *(target: 100%)*.
+
+> 💡 **Rule of thumb:** if you haven't attacked your own agent, an outsider will do it for you. Measure the breach first — a scary baseline is what earns the budget to fix it.
 
 ---
 

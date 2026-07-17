@@ -60,6 +60,51 @@ Their IT team estimates they have "about 15 AI systems" but has no formal invent
 
 ---
 
+## 🧰 Before You Start — Environment Setup
+
+This is a **governance discovery** exercise, so most of your setup is access and permissions, not code. The goal: be able to see *all* AI activity in your tenant, then classify and document it.
+
+### Prerequisites
+
+| Requirement | Why you need it | How to check |
+|-------------|-----------------|--------------|
+| **Microsoft 365 E5** or a **Purview compliance** license | Unlocks **Microsoft Purview AI Hub** (AI activity discovery + DSPM for AI) | [Purview portal](https://purview.microsoft.com) → Data Security → AI Hub |
+| **Purview / compliance admin** role | Run activity reports and author DLP policies | Microsoft 365 admin center → Roles |
+| PowerShell + **Exchange Online Management** module | Export AI activity via `Connect-IPPSSession` | `Get-Module -ListAvailable ExchangeOnlineManagement` |
+| A spreadsheet / **Microsoft Lists** or **Dataverse** table | Hold your AI system inventory + risk classification | Microsoft 365 |
+
+### Step 0 — Confirm access (10 min)
+
+Before discovery, verify you can actually reach the data:
+
+```powershell
+# Verify you can connect to the compliance endpoint
+Install-Module ExchangeOnlineManagement -Scope CurrentUser   # if not already installed
+Connect-IPPSSession
+# Then open https://purview.microsoft.com -> Data Security -> AI Hub
+```
+
+### Step 1 — Prepare your inventory sheet (10 min)
+
+Create the columns you'll fill during discovery, so classification is systematic rather than ad hoc:
+
+`System name | Owner | Data touched | EU AI Act risk tier | Art. 11 doc? | Registered?`
+
+> 🟦 **Microsoft-first note:** this challenge is already Microsoft-native — **Purview AI Hub** does the discovery, **Purview DLP** enforces the guardrails, and your inventory belongs in **Microsoft Lists** or **Dataverse** (not a loose spreadsheet) so it has ownership, history, and access control.
+
+### The path through this challenge
+
+1. **Task 1** — discover AI activity with Purview AI Hub (expect shadow AI).
+2. **Task 2** — classify every system by EU AI Act risk tier.
+3. **Task 3** — complete Article 11 technical documentation for high-risk systems.
+4. **Task 4** — stand up a Purview DLP policy blocking sensitive data to external AI.
+5. **Success Criteria** — a complete, defensible inventory + regulator response.
+6. **Adapt to Your Business** — run this discovery on *your* org.
+
+> ⏱️ **Time budget:** ~90 minutes. Discovery (Task 1) usually surprises people — budget extra for shadow-AI findings.
+
+---
+
 ## Your Tasks
 
 ### Task 1: Discover AI Activity with Microsoft Purview AI Hub
@@ -215,6 +260,59 @@ New-DlpComplianceRule -Name "Block-AI-PII-Transfer" `
 - [ ] Registration requirement identified for each high-risk system
 - [ ] Purview policy blocking sensitive data to external AI tools is active
 - [ ] 30-day response to regulator is drafted with complete system inventory
+
+---
+
+## 🔁 Adapt This to Your Own Business
+
+The scenario is an **EU regulator inquiry**, but *every* organization needs an AI inventory — for the EU AI Act, ISO 42001, NIST AI RMF, internal audit, or simply knowing what's running. The discovery-classify-document loop is universal.
+
+### Step 1 — Find your "what AI is even running here?" moment
+
+| Organization type | The trigger | What you'll discover |
+|-------------------|-------------|----------------------|
+| **Multinational enterprise** | EU AI Act / cross-border audit | High-risk HR, credit, or biometric systems |
+| **Regulated finance** | Model risk management (SR 11-7) | Undocumented scoring / pricing models |
+| **Healthcare** | FDA SaMD / HIPAA review | Clinical-decision tools without oversight docs |
+| **Public sector** | Transparency / FOIA obligations | Citizen-facing AI needing disclosure |
+| **Any company** | Copilot / GenAI rollout | Shadow AI: staff pasting data into public tools |
+
+### Step 2 — Map the building blocks to your stack (Microsoft-first)
+
+| In this challenge | In your project — use |
+|-------------------|-----------------------|
+| Purview AI Hub discovery | **Microsoft Purview AI Hub / DSPM for AI** — tenant-wide AI activity |
+| Risk classification | **Microsoft RAI Standard v2** + EU AI Act Annex III tiers |
+| Article 11 documentation | A **Transparency Note** / **Dataverse** record per system |
+| Inventory register | **Microsoft Lists** or **Dataverse** (owned, audited) |
+| Blocking sensitive data | **Purview DLP** policy for generative-AI apps |
+| Ongoing monitoring | **Purview Compliance Manager** + **Azure Monitor** |
+
+### Step 3 — The 5-question implementation checklist
+
+1. **Can you see AI usage you didn't approve?** If not → turn on Purview AI Hub / DSPM for AI first.
+2. **Does every AI system have a named owner?** If not → assign one before classifying.
+3. **Do you know which systems are "high-risk"?** If not → apply Annex III + RAI Standard v2.
+4. **Is sensitive data leaving to public AI tools?** If unknown → a DLP policy answers this fast.
+5. **Could you produce this inventory in 30 days under audit?** If not → this challenge *is* your fire drill.
+
+### Step 4 — A 1-week rollout plan
+
+| Day | Action | Owner |
+|-----|--------|-------|
+| **Day 1** | Enable Purview AI Hub / DSPM for AI; run a 30-day activity report | Compliance admin |
+| **Day 2** | Build the inventory register in Microsoft Lists / Dataverse | Governance lead |
+| **Day 3** | Classify each system by EU AI Act tier + RAI Standard | Risk + eng |
+| **Day 4** | Draft Art. 11 / Transparency Notes for high-risk systems | Product owner |
+| **Day 5** | Deploy a Purview DLP policy for external AI tools | Security |
+
+### Step 5 — Prove the ROI
+
+- **Inventory completeness** — % of AI systems in a governed register *(target: 100%)*.
+- **Shadow-AI reduction** — unapproved AI tools blocked or sanctioned *(track month over month)*.
+- **Audit readiness** — days to produce a full inventory *(target: well under 30)*.
+
+> 💡 **Rule of thumb:** you cannot govern what you cannot see. Turn on discovery *before* you write a single policy — the surprises are the whole point.
 
 ---
 
