@@ -79,19 +79,49 @@ Context rot only reveals itself across **many turns**, so your setup must let yo
 ```bash
 mkdir context-rot && cd context-rot
 python -m venv .venv
-# Windows:  .venv\Scripts\activate    |    macOS/Linux:  source .venv/bin/activate
-pip install azure-ai-projects azure-identity openai tiktoken
+# Windows (PowerShell):  .venv\Scripts\Activate.ps1    |    macOS/Linux:  source .venv/bin/activate
+pip install azure-ai-projects azure-identity openai tiktoken python-dotenv
 mkdir .scratchpad   # local stand-in for Azure Blob / OneLake
 ```
 
-### Step 1 — Pin your context limit and a repeatable test (10 min)
+✅ **Done when** your prompt shows `(.venv)` and `pip list` includes `azure-ai-projects`.
+
+### Step 1 — Provision your model & sign in (10 min)
+
+This challenge calls a real `gpt-4o` model. If you have **not** already deployed one, do **Steps 1–2 of [Challenge 01 — The Hallucination Audit](../01-hallucination-audit/challenge-01.md)** now — they walk through the exact portal clicks and give you the two values below. Then create a `.env` here:
+
+```bash
+# .env  — the two values you copied from Azure AI Foundry (never commit this file)
+# PROJECT_ENDPOINT=https://<your-project>.services.ai.azure.com/api/projects/<name>
+# MODEL_DEPLOYMENT_NAME=gpt-4o
+az login   # keyless auth — your code signs in as you, no API keys
+```
+
+**Smoke-test it** before you go further — if this prints `setup works`, the rest is your agent logic, not setup:
+
+```python
+# smoke_test.py
+import os
+from dotenv import load_dotenv
+from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+load_dotenv()
+project = AIProjectClient(endpoint=os.environ["PROJECT_ENDPOINT"], credential=DefaultAzureCredential())
+client = project.inference.get_azure_openai_client(api_version="2024-10-21")
+print(client.chat.completions.create(model=os.environ["MODEL_DEPLOYMENT_NAME"],
+      messages=[{"role":"user","content":"Reply with exactly: setup works"}]).choices[0].message.content)
+```
+
+> **Common fixes:** `DefaultAzureCredential failed` → run `az login` again. `DeploymentNotFound` → `MODEL_DEPLOYMENT_NAME` must match your Foundry deployment name exactly. `401` → give your account the **Azure AI User** role on the project.
+
+### Step 2 — Pin your context limit and a repeatable test (10 min)
 
 You cannot measure "40% fill" without knowing the denominator. Record your model's context window, then build a fixed list of multi-turn questions with KNOWN answers (like `CLINICAL_TEST_CASES` in Task 1) so every run is comparable.
 
 ```python
 # config.py — know your denominator
 MODEL = "gpt-4o"
-CONTEXT_LIMIT = 128_000     # confirm in the Azure AI Foundry model card
+CONTEXT_LIMIT = 128_000     # confirm on your model card in Azure AI Foundry (Models + endpoints → your deployment)
 SAFETY_THRESHOLD = 0.35     # stay below the ~40% cliff
 ```
 

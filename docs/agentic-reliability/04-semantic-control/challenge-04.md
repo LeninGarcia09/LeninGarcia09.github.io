@@ -64,12 +64,42 @@ This challenge is about **owning your business semantics** instead of borrowing 
 ```bash
 mkdir semantic-control && cd semantic-control
 python -m venv .venv
-# Windows:  .venv\Scripts\activate    |    macOS/Linux:  source .venv/bin/activate
-pip install azure-ai-projects azure-identity openai pydantic
+# Windows (PowerShell):  .venv\Scripts\Activate.ps1    |    macOS/Linux:  source .venv/bin/activate
+pip install azure-ai-projects azure-identity openai pydantic python-dotenv
 mkdir .registry   # local stand-in for Azure SQL / Dataverse / App Configuration
 ```
 
-### Step 1 — Seed a versioned concept registry (10 min)
+✅ **Done when** your prompt shows `(.venv)` and `pip list` includes `azure-ai-projects`.
+
+### Step 1 — Provision your model & sign in (10 min)
+
+The intent parser is a real `gpt-4o` deployment. If you have **not** deployed one, do **Steps 1–2 of [Challenge 01 — The Hallucination Audit](../01-hallucination-audit/challenge-01.md)** for the exact portal walkthrough and the two values below, then create a `.env`:
+
+```bash
+# .env  — from Azure AI Foundry (never commit this file)
+# PROJECT_ENDPOINT=https://<your-project>.services.ai.azure.com/api/projects/<name>
+# MODEL_DEPLOYMENT_NAME=gpt-4o
+az login   # keyless auth via DefaultAzureCredential
+```
+
+Smoke-test before Task 1 — if it prints `setup works`, any later failure is your logic, not setup:
+
+```python
+# smoke_test.py
+import os
+from dotenv import load_dotenv
+from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+load_dotenv()
+project = AIProjectClient(endpoint=os.environ["PROJECT_ENDPOINT"], credential=DefaultAzureCredential())
+client = project.inference.get_azure_openai_client(api_version="2024-10-21")
+print(client.chat.completions.create(model=os.environ["MODEL_DEPLOYMENT_NAME"],
+      messages=[{"role":"user","content":"Reply with exactly: setup works"}]).choices[0].message.content)
+```
+
+> **Common fixes:** `DefaultAzureCredential failed` → `az login` again. `DeploymentNotFound` → deployment name mismatch. `401` → add the **Azure AI User** role on the project.
+
+### Step 2 — Seed a versioned concept registry (10 min)
 
 Store each business concept **with an effective date** so historical queries resolve correctly. These are **sample definitions** — replace with your firm's real ones.
 
