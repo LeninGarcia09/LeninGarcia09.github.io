@@ -57,6 +57,8 @@ This challenge is a **least-privilege identity** build: replace one over-privile
 
 ### Step 0 — Sign in and check current exposure (5 min)
 
+**Where you run this:** in a terminal with the **Azure CLI** signed in — unlike the local-only Python challenges, these `az` commands run against **real resources in your Azure subscription**.
+
 ```bash
 az login
 # See how broad your current agent principal is — this is the problem you're fixing:
@@ -272,7 +274,8 @@ No team, no budget? Least-privilege agent identity is pure Zero-Trust judgment �
 
 ---
 
-## Regulatory Mapping
+<details>
+<summary>📋 <strong>Regulatory mapping</strong> — NIST · SOC 2 · Zero Trust</summary>
 
 | Requirement | Regulation | Enforcement |
 |-------------|-----------|-------------|
@@ -280,6 +283,8 @@ No team, no budget? Least-privilege agent identity is pure Zero-Trust judgment �
 | Non-repudiation | SOC 2 CC6.1 | Each action logged under unique agent principal ID |
 | Identity separation | Zero Trust principle | Entra Agent ID per agent — no shared identities |
 | Access reviews | SOC 2 CC6.3 | Quarterly RBAC audit via `az role assignment list` |
+
+</details>
 
 ---
 

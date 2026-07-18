@@ -46,7 +46,8 @@ Turn 5: Care coordinator asks a simple question...    ← Model is now unreliabl
 
 ---
 
-## Architecture Decision Table
+<details>
+<summary>🏗️ <strong>Architecture decision table</strong> — context-growth strategies compared</summary>
 
 | Strategy | Context Growth | Accuracy Preserved | Cost |
 |----------|---------------|-------------------|------|
@@ -57,6 +58,8 @@ Turn 5: Care coordinator asks a simple question...    ← Model is now unreliabl
 | ✅ Subagent delegation with fresh context | Minimal | Yes — each subagent starts clean | Low + parallelizable |
 
 **Decision for healthcare:** Combine **context window budgeting** (never exceed 35% fill) with **scratchpad files** (persist data outside the context window, load selectively per turn).
+
+</details>
 
 ---
 
@@ -75,6 +78,8 @@ Context rot only reveals itself across **many turns**, so your setup must let yo
 | Scratchpad store — **Azure Blob / OneLake / Cosmos DB** (prod); local folder here | Hold full tool results *outside* the context window | Azure portal / `mkdir .scratchpad` |
 
 ### Step 0 — Create an isolated workspace (5 min)
+
+**Where you run this:** Step 0 runs **locally on your own machine** — open a terminal (VS Code's integrated terminal, PowerShell, or bash). You don't touch Azure until Step 1.
 
 ```bash
 mkdir context-rot && cd context-rot
@@ -470,7 +475,8 @@ No team, no budget? A clean "accuracy vs. conversation length" chart is a stando
 
 ---
 
-## Regulatory Mapping
+<details>
+<summary>📋 <strong>Regulatory mapping</strong> — HIPAA · EU AI Act · FDA · Joint Commission</summary>
 
 | Regulation | Requirement | How This Challenge Addresses It |
 |-----------|-------------|--------------------------------|
@@ -479,9 +485,12 @@ No team, no budget? A clean "accuracy vs. conversation length" chart is a stando
 | **FDA AI/ML SaMD Guidance** | Performance monitoring post-deployment | Degradation test harness as ongoing accuracy audit |
 | **Joint Commission Standards** | Clinical decision support accuracy | Context budgeting as architecture safeguard |
 
+</details>
+
 ---
 
-## Break & Fix
+<details>
+<summary>🧪 <strong>Break &amp; Fix</strong> — spot why three plausible "fixes" corrupt context</summary>
 
 ```python
 # broken_context_manager.py
@@ -507,6 +516,8 @@ class BrokenContextManager:
 2. **100-token summary loses clinical precision**: Lab values, medication doses, and vital signs must be exact. A summary like "blood pressure was elevated" is useless compared to "BP 145/92 on 2026-03-14." Clinical data needs numeric precision, not prose summaries.
 3. **80% threshold is past the cliff**: The degradation cliff occurs at 40–50%. By the time you delegate at 80%, the model has already been operating in "collapsed accuracy" mode for 30–40% of the context window — potentially dozens of turns of degraded clinical answers.
 :::
+
+</details>
 
 ---
 

@@ -63,6 +63,8 @@ This is a **fairness measurement** exercise. You quantify the disparity, find it
 
 ### Step 0 — Create an isolated workspace (5 min)
 
+**Where you run this:** Step 0 runs **locally on your own machine** — open a terminal (VS Code's integrated terminal, PowerShell, or bash). The DIR math runs locally; you only reach Azure in Task 2.
+
 ```bash
 mkdir fairness-audit && cd fairness-audit
 python -m venv .venv
@@ -390,7 +392,8 @@ No team, no budget? A fairness audit with a real before/after DIR is one of the 
 
 ---
 
-## Regulatory Mapping
+<details>
+<summary>📋 <strong>Regulatory mapping</strong> — EU AI Act · EEOC · NIST AI RMF</summary>
 
 | Requirement | Regulation | Implementation |
 |-------------|-----------|----------------|
@@ -399,6 +402,8 @@ No team, no budget? A fairness audit with a real before/after DIR is one of the 
 | Human oversight | EU AI Act Art. 14 | HR reviewer required for all decisions |
 | Technical documentation | EU AI Act Art. 11 | Bias incident report + ongoing monitoring plan |
 | MEASURE 2.5 — Bias evaluation | NIST AI RMF | Quarterly fairness audit cycle |
+
+</details>
 
 ---
 

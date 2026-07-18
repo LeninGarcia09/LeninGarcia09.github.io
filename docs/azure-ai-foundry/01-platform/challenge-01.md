@@ -60,6 +60,8 @@ This challenge is a **data-residency / network-isolation** build. Your setup is 
 
 ### Step 0 — Sign in and set your context (5 min)
 
+**Where you run this:** in a terminal with the **Azure CLI** signed in — unlike the local-only Python challenges, these `az` commands run against **real resources in your Azure subscription**.
+
 ```bash
 az login
 az account set --subscription "<your-subscription-id>"
@@ -281,7 +283,8 @@ No team, no budget? Data-residency architecture is a rare, well-paid skill — y
 
 ---
 
-## Regulatory Mapping
+<details>
+<summary>📋 <strong>Regulatory mapping</strong> — GDPR · EU AI Act · HIPAA</summary>
 
 | Requirement | Regulation | Enforcement |
 |-------------|-----------|-------------|
@@ -289,6 +292,8 @@ No team, no budget? Data-residency architecture is a rare, well-paid skill — y
 | No public internet transit | GDPR Art. 32 | Private endpoints + disabled public access |
 | Customer-managed keys | HIPAA § 164.312(a) | Key Vault CMK for storage encryption |
 | Auditability | EU AI Act Art. 12 | Azure Monitor + Activity Log |
+
+</details>
 
 ---
 

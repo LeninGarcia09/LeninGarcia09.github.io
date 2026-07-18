@@ -68,6 +68,8 @@ This is a **security** exercise: you attack your own agent, measure the breach, 
 
 ### Step 0 — Create an isolated workspace (5 min)
 
+**Where you run this:** Step 0 runs **locally on your own machine** — open a terminal (VS Code's integrated terminal, PowerShell, or bash). You don't touch Azure until Step 1.
+
 ```bash
 mkdir injection-defense && cd injection-defense
 python -m venv .venv
@@ -385,7 +387,8 @@ No team, no budget? A red-team report that drives attack success to 0% is a secu
 
 ---
 
-## Regulatory Mapping
+<details>
+<summary>📋 <strong>Regulatory mapping</strong> — EU AI Act · NIST AI RMF · SOC 2</summary>
 
 | Requirement | Regulation | Implementation |
 |-------------|-----------|----------------|
@@ -394,6 +397,8 @@ No team, no budget? A red-team report that drives attack success to 0% is a secu
 | Incident logging | EU AI Act Art. 20, SOC 2 | Security event logging in Azure Monitor |
 | Ongoing monitoring | NIST AI RMF MEASURE 2.6 | Automated daily PyRIT smoke tests |
 | Trade secret protection | Common law + NDA | System prompt hardening + information boundaries |
+
+</details>
 
 ---
 
