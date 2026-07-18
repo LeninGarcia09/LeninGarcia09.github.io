@@ -61,6 +61,8 @@ This challenge is **measure-then-gate**: you quantify the hallucination rate, fi
 
 ### Step 0 — Create an isolated workspace (5 min)
 
+**Where you run this:** Step 0 runs **locally on your own machine** — open a terminal (VS Code's integrated terminal, PowerShell, or bash). The `az login` here just signs your CLI in; you provision Azure resources in Step 1.
+
 ```bash
 mkdir hallucination-gate && cd hallucination-gate
 python -m venv .venv
@@ -325,7 +327,8 @@ No team, no budget? A working RAG **quality gate** in CI is a portfolio piece hi
 
 ---
 
-## Regulatory Mapping
+<details>
+<summary>📋 <strong>Regulatory mapping</strong> — EU AI Act · NIST AI RMF</summary>
 
 | Requirement | Regulation | Enforcement |
 |-------------|-----------|-------------|
@@ -334,6 +337,8 @@ No team, no budget? A working RAG **quality gate** in CI is a portfolio piece hi
 | Human oversight capability | EU AI Act Art. 14 | Trace logs + escalation path |
 | Technical documentation | EU AI Act Art. 11 | Eval results stored per deployment |
 | Measure 2.5 — Residual risk | NIST AI RMF | Groundedness threshold as risk gate |
+
+</details>
 
 ---
 

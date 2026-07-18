@@ -339,7 +339,8 @@ No team, no budget? An AI governance inventory needs zero code and proves you ca
 
 ---
 
-## Regulatory Mapping
+<details>
+<summary>📋 <strong>Regulatory mapping</strong> — EU AI Act articles &amp; deadlines</summary>
 
 | Requirement | Article | Deadline | Status Check |
 |-------------|---------|----------|-------------|
@@ -349,6 +350,8 @@ No team, no budget? An AI governance inventory needs zero code and proves you ca
 | Risk management system | Art. 9 | Before deployment | Is risk register maintained? |
 | Post-market monitoring | Art. 72 | Ongoing | Are KPIs being tracked? |
 | Transparency disclosure | Art. 52 | Immediate | Are chatbots disclosing AI to users? |
+
+</details>
 
 ---
 

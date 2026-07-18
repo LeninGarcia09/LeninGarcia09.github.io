@@ -71,6 +71,8 @@ This challenge is a **multi-agent architecture** build that must survive a secur
 
 Sketch the 1 orchestrator + 3 specialists and the **single trace ID** that must follow a claim through all of them. The architecture diagram above is your target.
 
+**Where you run this:** in a terminal with the **Azure CLI** signed in — unlike the local-only Python challenges, these `az` commands run against **real resources in your Azure subscription**.
+
 ```bash
 az login
 az group create --name rg-claims-multiagent --location eastus
@@ -321,7 +323,8 @@ No team, no budget? One trace ID stitched across several agents is a screenshot 
 
 ---
 
-## Regulatory Mapping
+<details>
+<summary>📋 <strong>Regulatory mapping</strong> — EU AI Act · GDPR · PCI-DSS</summary>
 
 | Requirement | Regulation | Implementation |
 |-------------|-----------|----------------|
@@ -329,6 +332,8 @@ No team, no budget? One trace ID stitched across several agents is a screenshot 
 | Auditability of AI decisions | EU AI Act Art. 12, PCI-DSS 10.x | Correlated traces per claim in Azure Monitor |
 | Data minimization | GDPR Art. 5(1)(c) | Agents receive only claim-specific context |
 | High-risk AI classification | EU AI Act Annex III, Section 5(b) | Documented, registered before deployment |
+
+</details>
 
 ---
 

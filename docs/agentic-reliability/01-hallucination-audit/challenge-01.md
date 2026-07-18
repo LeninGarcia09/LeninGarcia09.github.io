@@ -37,7 +37,8 @@ The model generated rounded "approximate" figures that looked professional — e
 
 ---
 
-## Architecture Decision Table
+<details>
+<summary>🏗️ <strong>Architecture decision table</strong> — accuracy vs auditability tradeoffs</summary>
 
 | Approach | Accuracy Guarantee | Auditability | Complexity |
 |----------|-------------------|--------------|------------|
@@ -47,6 +48,8 @@ The model generated rounded "approximate" figures that looked professional — e
 | ✅ Structured error response + validation layer | Deterministic | Full + traceable | Medium |
 
 **Decision:** Use `PostToolUse` hooks combined with structured error contracts on every tool. Never allow the LLM to "work around" a tool failure.
+
+</details>
 
 ---
 
@@ -67,7 +70,7 @@ This challenge is hands-on. The tasks below assume you already have a model to c
 
 ### Step 0 — Create an isolated workspace (5 min)
 
-A virtual environment (`venv`) keeps this challenge's packages separate from the rest of your machine, so nothing you install here can break another project.
+**Where you run this:** Step 0 runs **locally on your own machine** — open a terminal (VS Code's integrated terminal, PowerShell, or bash). You don't touch Azure until Step 1. A virtual environment (`venv`) keeps this challenge's packages separate from the rest of your machine, so nothing you install here can break another project.
 
 ```bash
 mkdir hallucination-audit && cd hallucination-audit
@@ -467,7 +470,8 @@ No team, no budget? This is one of the most hireable things you can show — it 
 
 ---
 
-## Regulatory Mapping
+<details>
+<summary>📋 <strong>Regulatory mapping</strong> — EU AI Act · SOX · FINRA</summary>
 
 | Regulation | Requirement | How This Challenge Addresses It |
 |-----------|-------------|--------------------------------|
@@ -476,9 +480,12 @@ No team, no budget? This is one of the most hireable things you can show — it 
 | **SOX Section 302** | Executives certify financial report accuracy | Source refs + validation report provide audit evidence |
 | **FINRA Rule 4511** | Books and records — traceable data | `source_ref` on every output value |
 
+</details>
+
 ---
 
-## Break & Fix
+<details>
+<summary>🧪 <strong>Break &amp; Fix</strong> — find the three bugs your colleague introduced</summary>
 
 Your colleague made these "improvements." Find and explain each bug:
 
@@ -506,6 +513,8 @@ def validate_output(response, source):
 2. **Missing `source_ref`**: Passing raw data without a source reference breaks the audit trail. Every value must be traceable.
 3. **Exact match breaks on rounding**: DB stores `174.4199981689453`, LLM outputs `174.42`. Exact match fails, flagging a correct answer as unverified. Use tolerance-based matching (e.g., `abs(a-b) < 0.01`).
 :::
+
+</details>
 
 ---
 

@@ -354,7 +354,8 @@ No team, no budget? A before/after load-test report is one of the clearest "I ma
 
 ---
 
-## Regulatory Mapping
+<details>
+<summary>📋 <strong>Regulatory mapping</strong> — SLA · EU AI Act · NIST</summary>
 
 | Requirement | Regulation | Implementation |
 |-------------|-----------|----------------|
@@ -362,6 +363,8 @@ No team, no budget? A before/after load-test report is one of the clearest "I ma
 | Incident logging | EU AI Act Art. 20 | All failures logged with context in Azure Monitor |
 | Performance monitoring | NIST AI RMF MANAGE 1.3 | Latency metrics + automated alerting |
 | Graceful degradation | Good engineering practice | Circuit breaker returns helpful fallback message |
+
+</details>
 
 ---
 
