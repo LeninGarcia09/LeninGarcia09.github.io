@@ -378,8 +378,8 @@ expertise that [Company] needs for the [Role] position.
 - ✅ AZ-900 (Azure Fundamentals)
 - ✅ SC-900 (Security Fundamentals)
 - ✅ AI-900 (AI Fundamentals)
-- 🎯 AI-102 (AI Engineer) — opcional
-- 🎯 ISC2 CC — siguiente meta
+- 🎯 IAPP AIGP o PMI-CPMAI (gobernanza/programa — vendor-neutral) — siguiente meta
+- 🎯 ISC2 CC (gratis) o AI-103 (avanzada, desarrollo) — según objetivo de rol
 
 ### Skills Demostradas:
 - Python + API integration

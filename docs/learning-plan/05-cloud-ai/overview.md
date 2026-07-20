@@ -5,7 +5,7 @@ title: "Fase 5 — Cloud + AI Integración"
 
 # Fase 5: Cloud + AI Integración (Semanas 21–28)
 
-> **Objetivo:** Integrar conocimientos de cloud y AI en soluciones empresariales completas. Construir sistemas RAG, aprender evaluación de modelos, y obtener certificación AI-900 (con opción de AI-102).
+> **Objetivo:** Integrar conocimientos de cloud y AI en soluciones empresariales completas. Construir sistemas RAG, aprender evaluación de modelos, y obtener certificación AI-900 (con opción avanzada de AI-103).
 
 ## 🎯 Resultados Esperados
 
@@ -197,7 +197,7 @@ Crear un framework de testing que incluya:
 
 ---
 
-## Semanas 27-28: Certificación AI-900 (+ Opcional AI-102)
+## Semanas 27-28: Certificación AI-900 (+ Opcional AI-103)
 
 ### Objetivo
 Consolidar conocimiento y obtener certificación AI-900.
@@ -230,7 +230,7 @@ Consolidar conocimiento y obtener certificación AI-900.
 | Miércoles | Repaso áreas débiles |
 | Jueves | Practice exam final |
 | Viernes | **Examen AI-900** |
-| Sábado | Si pasó: planear AI-102 |
+| Sábado | Si pasó: planear siguiente credencial (AI-103 o vendor-neutral) |
 
 ### Certificación: AI-900
 
@@ -245,13 +245,21 @@ Consolidar conocimiento y obtener certificación AI-900.
   - NLP workloads (15-20%)
   - Generative AI workloads (15-20%)
 
-### Opcional: AI-102 (si hay tiempo y motivación)
+### Opcional: AI-103 (si hay tiempo y motivación)
 
-Para candidatos avanzados, AI-102 agrega valor significativo:
+Para candidatos avanzados con objetivo **de desarrollo**, AI-103 agrega valor:
 - Nivel Associate (más peso que Fundamentals)
-- Incluye agentic AI y generative AI
-- $165 USD, disponible en español
+- **Sucesor de AI-102** (retirado 30-jun-2026); cubre apps de IA generativa y soluciones multi-agente con Microsoft Foundry (Python)
+- Verifica precio, estado (beta/GA) y temario en la [página oficial de AI-103](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/)
 - Requiere 4-6 semanas adicionales de preparación
+
+:::tip ¿Gobernanza/programa en vez de desarrollo? Considera vendor-neutral
+Si tu objetivo es **AI Program Manager / AI Governance / TPM** (no escribir código de producción), una credencial **vendor-neutral** como **IAPP AIGP** o **PMI-CPMAI** (examen en español) suele rendir más que AI-103. Ver la escalera completa en [Plan Overview](../overview#-certificaciones--escalera-vendor-neutral-gratis-primero).
+:::
+
+:::note Portabilidad del stack
+Los patrones de esta fase (RAG, evaluación, agentes, safety) **no dependen de un proveedor**. Todo lo que construyes en Azure AI Foundry se replica con **LangChain / LlamaIndex**, modelos abiertos (**Llama, Mistral, Phi**) y vector stores abiertos (**ChromaDB, pgvector, FAISS**). Usa Azure como *un* ejemplo, pero documenta tu proyecto de forma agnóstica para que aplique a empleadores que usan AWS, GCP o stacks open-source.
+:::
 
 ---
 
