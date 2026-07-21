@@ -62,7 +62,7 @@ Al completar esta fase:
 
 | Recurso | Idioma | Tipo |
 |---------|--------|------|
-| [LinkedIn para profesionales técnicos](https://learn.microsoft.com/es-es/training/modules/develop-your-personal-brand/) | 🇪🇸 | Learning Path |
+| [Career growth (Microsoft Learn)](https://learn.microsoft.com/es-es/training/modules/career-growth/) | 🇪🇸 | Learning Path |
 
 **Entregable + [Gate CP4](../checkpoints#gate-cp4-semana-21):**
 - [ ] Framework de value realization publicado

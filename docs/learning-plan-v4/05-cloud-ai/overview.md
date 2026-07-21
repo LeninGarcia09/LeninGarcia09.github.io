@@ -25,7 +25,7 @@ Al completar esta fase:
 | Recurso | Idioma | Tipo |
 |---------|--------|------|
 | [System design para AI/ML](https://github.com/donnemartin/system-design-primer) | 🇬🇧 | Repo |
-| [Behavioral interview — método STAR](https://learn.microsoft.com/es-es/training/modules/prepare-job-interview/) | 🇪🇸 | Learning Path |
+| [Behavioral interview + método STAR (Copilot)](https://learn.microsoft.com/es-es/training/modules/enhance-linkedin-profile-with-copilot-ace-your-interview/) | 🇪🇸 | Learning Path |
 
 **Entregable:** one-pager de perfil + pitch ejecutivo de 90 s ("qué construyo, qué valor genero") + lista de 8–10 preguntas frecuentes con respuestas ensayadas.
 
@@ -47,7 +47,7 @@ Al completar esta fase:
 
 | Recurso | Idioma | Tipo |
 |---------|--------|------|
-| [Cómo pedir un referral efectivo](https://learn.microsoft.com/es-es/training/modules/develop-your-personal-brand/) | 🇪🇸 | Guía |
+| [Cómo pedir un referral efectivo](https://learn.microsoft.com/es-es/training/modules/career-growth/) | 🇪🇸 | Guía |
 
 **Entregable:** tabla de pipeline (empresa, rol, contacto, estado, próximo paso, fecha) con **10–15 aplicaciones priorizando referrals** sobre aplicaciones frías. Ver [Fase 6](../career-launch/overview) para el motor continuo.
 
