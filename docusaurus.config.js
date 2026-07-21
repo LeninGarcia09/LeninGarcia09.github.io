@@ -123,7 +123,7 @@ const config = {
             type: 'dropdown',
             items: [
               { type: 'docSidebar', sidebarId: 'learningPlanSidebar', label: '🗺️ Plan de Desarrollo (36 semanas)' },
-              { type: 'docSidebar', sidebarId: 'learningPlanV4Sidebar', label: '🧭 Learning Plan v4 (26 semanas)' },
+              { type: 'docSidebar', sidebarId: 'learningPlanV4Sidebar', label: '🏗️ AI Solution Architect — Responsible AI (26 sem)' },
               { type: 'docSidebar', sidebarId: 'executiveAiLeadershipSidebar', label: '🧠 Executive AI Leadership Plan' },
             ],
           },
@@ -165,7 +165,7 @@ const config = {
               { label: '📰 Articles', to: '/docs/resources/articles' },
               { label: '📚 Learning', to: '/docs/resources/learning' },
               { label: '🗺️ Plan de Desarrollo (36 semanas)', to: '/docs/learning-plan/overview' },
-              { label: '🧭 Learning Plan v4 (26 semanas)', to: '/docs/learning-plan-v4/overview' },
+              { label: '🏗️ AI Solution Architect — Responsible AI (26 sem)', to: '/docs/learning-plan-v4/overview' },
               { label: '🧠 Executive AI Leadership Plan', to: '/docs/executive-ai-leadership/overview' },
               { label: 'Microsoft Learn', href: 'https://learn.microsoft.com' },
               { label: 'Anthropic Academy', href: 'https://academy.anthropic.com' },

@@ -1,208 +1,140 @@
 ---
 sidebar_position: 2
-title: "Fase 2 — Datos y Automatización"
+title: "Fase 2 — Portafolio Técnico: RAG, Agentes y Evaluación"
 ---
 
-# Fase 2: Datos y Automatización (Semanas 5–12)
+# Fase 2: Portafolio Técnico — RAG, Agentes y Evaluación (Semanas 5–12)
 
-> **Objetivo:** Construir el bloque de ejecucion tecnica para proyectos y evidencia de negocio. Esta fase se extiende en v4 para conectar datos, automatizacion y medicion de valor.
+> **Objetivo:** Construir la evidencia técnica central del perfil de AI Solution Architect. En 8 semanas produces **3 artefactos fuertes y reproducibles** (un pipeline de datos con valor de negocio, un sistema RAG evaluado y una comparativa de agentes) que sostienen la narrativa de arquitectura en entrevistas.
 
 ## 🎯 Resultados Esperados
 
 Al completar esta fase:
-- Excel avanzado y Power Query operativos
-- SQL funcional para consultas y reportes
-- Dashboard profesional en Power BI
-- Flujo automatizado con Power Automate
-- 2 proyectos adicionales en el portfolio
+- Pipeline de datos que alimenta un caso de AI, con métrica de impacto documentada
+- Sistema **RAG** implementado **con evaluación reproducible** (groundedness, relevance)
+- Comparativa de **agentes** con trazas y criterios de selección
+- 3 repos con README profesional listos para el **Gate CP2 (Semana 12)**
+
+:::tip Regla de la fase
+"Proof over study": cada semana cierra con evidencia publicada (repo, benchmark o write-up). Ver [Metodología](../methodology-best-practices).
+:::
 
 ---
 
-## Semana 5: Excel Avanzado y Power Query
+## Bloque A — Datos que alimentan AI (Semanas 5–8)
 
-### Objetivo
-Dominar las herramientas de datos más usadas en entornos corporativos.
+### Semana 5 — Proyecto de datos #1: ingesta y limpieza
 
-### Recursos Principales
+**Objetivo:** construir un pipeline reproducible que transforme datos crudos en un dataset listo para AI (base de un RAG o de un dashboard).
 
-| Recurso | Idioma | Tipo | Duración |
-|---------|--------|------|----------|
-| [Microsoft Learn: Power Query](https://learn.microsoft.com/es-es/training/modules/clean-data-power-query/) | 🇪🇸 Español | Learning Path | 4 hrs |
-| [Excel Skills for Business (Coursera)](https://www.coursera.org/specializations/excel) | 🇬🇧 Inglés (subs ES) | Specialization | 6 hrs |
-| [Power Query Documentation](https://learn.microsoft.com/es-es/power-query/) | 🇪🇸 Español | Docs | Referencia |
-| [ExcelJet](https://exceljet.net/) | 🇬🇧 Inglés | Tutoriales | Referencia |
+| Recurso | Idioma | Tipo |
+|---------|--------|------|
+| [Python: pandas](https://pandas.pydata.org/docs/getting_started/index.html) | 🇬🇧 | Docs |
+| [Microsoft Learn: Power Query](https://learn.microsoft.com/es-es/training/modules/clean-data-power-query/) | 🇪🇸 | Learning Path |
+| [SQL — SQLBolt](https://sqlbolt.com/) | 🇬🇧 | Interactivo |
 
-### Plan Diario
+**Entregable:** repo `data-pipeline/` — script de ingesta + limpieza, dataset de salida versionado, README con diagrama de flujo y **una métrica** (registros procesados, % de errores corregidos).
 
-| Día | Tema | Práctica |
-|-----|------|----------|
-| Lunes | Tablas dinámicas avanzadas | Dataset de incidentes |
-| Martes | VLOOKUP, INDEX/MATCH, XLOOKUP | Cruce de datos |
-| Miércoles | Power Query: conectar y transformar | ETL de logs |
-| Jueves | Power Query: combinaciones avanzadas | Merge de fuentes |
-| Viernes | Dashboards en Excel | Template reutilizable |
+### Semana 6 — Proyecto de datos #2: métrica de impacto
 
-### 🔨 Proyecto: Dashboard de Seguridad Automatizado
+**Objetivo:** enriquecer el pipeline con una segunda fuente y calcular una métrica de negocio (ahorro de tiempo, cobertura, calidad).
 
-Crear un dashboard ejecutivo que:
-- Conecte múltiples fuentes de datos (CSV de logs, API mock)
-- Transforme y limpie datos con Power Query
-- Presente métricas clave: incidentes/mes, tiempo de resolución, categorías
-- Se actualice automáticamente al refrescar
+**Entregable:** notebook o script que produce la métrica antes/después + write-up corto de "por qué importa al negocio".
 
-**Entregable:** Archivo Excel + documentación en GitHub.
+### Semana 7 — Dashboard ejecutivo + write-up
 
----
+**Objetivo:** comunicar el resultado a una audiencia ejecutiva.
 
-## Semana 6: SQL Fundamentals
+| Recurso | Idioma | Tipo |
+|---------|--------|------|
+| [Microsoft Learn: Power BI](https://learn.microsoft.com/es-es/training/paths/create-use-analytics-reports-power-bi/) | 🇪🇸 | Learning Path |
+| [SQLBI: DAX](https://www.sqlbi.com/learn/introduction-to-dax/) | 🇬🇧 | Curso |
 
-### Objetivo
-Consultar bases de datos para análisis de incidentes y reporting.
+**Entregable:** dashboard (Power BI o similar) con 3–5 KPIs + write-up de 1 página con la historia del dato.
 
-### Recursos Principales
+### Semana 8 — Automatización del workflow + README
 
-| Recurso | Idioma | Tipo | Duración |
-|---------|--------|------|----------|
-| [SQLBolt](https://sqlbolt.com/) | 🇬🇧 Inglés | Interactivo | 4-6 hrs |
-| [Khan Academy: SQL](https://www.khanacademy.org/computing/computer-programming/sql) | 🇪🇸 Español | Interactivo | 5 hrs |
-| [W3Schools SQL](https://www.w3schools.com/sql/) | 🇬🇧 Inglés | Tutorial | Referencia |
-| [Microsoft Learn: Azure SQL](https://learn.microsoft.com/es-es/training/paths/azure-sql-fundamentals/) | 🇪🇸 Español | Learning Path | 4 hrs |
-| [Mode Analytics SQL Tutorial](https://mode.com/sql-tutorial/) | 🇬🇧 Inglés | Práctico | 6 hrs |
+**Objetivo:** eliminar los pasos manuales del pipeline.
 
-### Plan Diario
+| Recurso | Idioma | Tipo |
+|---------|--------|------|
+| [Power Automate](https://learn.microsoft.com/es-es/training/paths/automate-process-power-automate/) | 🇪🇸 | Learning Path |
+| [Python: scheduling / cron básico](https://docs.python.org/3/library/sched.html) | 🇬🇧 | Docs |
 
-| Día | Tema | Ejercicios |
-|-----|------|-----------|
-| Lunes | SELECT, WHERE, ORDER BY | SQLBolt Lessons 1-4 |
-| Martes | JOINs (INNER, LEFT, RIGHT) | SQLBolt Lessons 6-7 |
-| Miércoles | Aggregation (COUNT, SUM, AVG, GROUP BY) | SQLBolt Lessons 10-12 |
-| Jueves | Subqueries y CTEs | Mode Analytics |
-| Viernes | CREATE, INSERT, UPDATE | Diseño de schema |
-| Sábado | **Proyecto completo** | — |
-
-### 🔨 Proyecto: Base de Datos de Tracking de Incidentes
-
-```sql
--- Schema para gestión de incidentes de seguridad
--- Demuestra: diseño de DB, queries complejas, reporting
-
--- Tablas: incidents, analysts, categories, resolutions
--- Queries: KPIs mensuales, tiempo promedio de resolución,
---          top categorías, carga por analista
-```
-
-**Entregable:** 
-- Schema SQL documentado
-- 10+ queries útiles para reporting
-- README explicando el diseño
-- Repositorio en GitHub
+**Entregable:** flujo automatizado documentado + README que cualquiera pueda ejecutar. **Cierre del Bloque A: artefacto #1 publicable.**
 
 ---
 
-## Semana 7: Power BI
+## Bloque B — RAG y Agentes (Semanas 9–12)
 
-### Objetivo
-Crear visualizaciones ejecutivas que comuniquen insights de datos.
+### Semana 9 — RAG lab prerequisito + benchmark base
 
-### Recursos Principales
+**Objetivo:** entender la arquitectura RAG y establecer una línea base de calidad medible.
 
-| Recurso | Idioma | Tipo | Duración |
-|---------|--------|------|----------|
-| [Microsoft Learn: Power BI](https://learn.microsoft.com/es-es/training/paths/create-use-analytics-reports-power-bi/) | 🇪🇸 Español | Learning Path | 8 hrs |
-| [Power BI (rutas modulares en Microsoft Learn)](https://learn.microsoft.com/es-es/training/browse/?products=power-bi) | 🇪🇸 Español | Learning paths | 6 hrs |
-| [Guy in a Cube (YouTube)](https://www.youtube.com/@GuyInACube) | 🇬🇧 Inglés | Videos | Referencia |
-| [SQLBI: DAX Fundamentals](https://www.sqlbi.com/learn/introduction-to-dax/) | 🇬🇧 Inglés | Curso | 4 hrs |
+| Recurso | Idioma | Tipo |
+|---------|--------|------|
+| [Microsoft Learn: RAG con Azure AI](https://learn.microsoft.com/es-es/azure/ai-foundry/concepts/retrieval-augmented-generation) | 🇪🇸 | Docs |
+| [LangChain: RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/) | 🇬🇧 | Tutorial |
+| [Azure AI Search](https://learn.microsoft.com/es-es/azure/search/) | 🇪🇸 | Docs |
 
-### Plan Diario
+**Entregable:** diagrama de arquitectura RAG + un set de 15–20 preguntas de evaluación (tu "benchmark base").
 
-| Día | Tema | Práctica |
-|-----|------|----------|
-| Lunes | Instalación, conexión de datos, primer reporte | MS Learn Mod 1 |
-| Martes | Visualizaciones: gráficos, tablas, KPIs | MS Learn Mod 2 |
-| Miércoles | DAX básico: medidas y columnas calculadas | SQLBI intro |
-| Jueves | Modelado de datos y relaciones | Dataset de seguridad |
-| Viernes | Publicación y sharing | Power BI Service |
-| Sábado | **Proyecto final** | — |
+### Semana 10 — Implementación RAG + evaluación
 
-### 🔨 Proyecto: Executive Security Metrics Dashboard
+**Objetivo:** construir el RAG y **medir su calidad** (no solo que "funcione").
 
-Dashboard en Power BI que muestre:
-- Resumen ejecutivo de postura de seguridad
-- Tendencias de incidentes (mes a mes)
-- Heat map de categorías de riesgo
-- SLAs de respuesta (cumplimiento vs. target)
-- Drill-down por equipo/región
+| Recurso | Idioma | Tipo |
+|---------|--------|------|
+| [Azure AI Evaluation SDK](https://learn.microsoft.com/es-es/azure/ai-foundry/how-to/develop/evaluate-sdk) | 🇪🇸 | Tutorial |
+| [Chunking strategies](https://learn.microsoft.com/es-es/azure/search/vector-search-how-to-chunk-documents) | 🇪🇸 | Docs |
 
-**Entregable:** 
-- Archivo .pbix publicado
-- Screenshots en GitHub portfolio
-- Documentación del modelo de datos
+**Arquitectura de referencia:** ingesta → chunking → embeddings → vector store (Azure AI Search / Chroma) → retrieval (híbrido + reranking) → generación con **citas de fuente** → evaluación (groundedness, relevance).
 
----
+**Entregable:** repo `rag-evaluado/` — RAG funcional + reporte de evaluación con métricas por pregunta. **Artefacto #2 publicable.**
 
-## Semana 8: Automatización con Power Automate
+### Semana 11 — Agentes comparativos + trazas
 
-### Objetivo
-Crear flujos de trabajo automatizados que eliminen tareas manuales repetitivas.
+**Objetivo:** comparar 2–3 enfoques de agentes sobre una misma tarea y justificar la selección.
 
-### Recursos Principales
+| Recurso | Idioma | Tipo |
+|---------|--------|------|
+| [Azure AI Agent Service](https://learn.microsoft.com/es-es/azure/ai-services/agents/) | 🇪🇸 | Docs |
+| [Agent Framework: Your First Agent](https://learn.microsoft.com/en-us/agent-framework/get-started/your-first-agent) | 🇬🇧 | Lab |
+| [LangGraph (open, portable)](https://langchain-ai.github.io/langgraph/) | 🇬🇧 | Docs |
 
-| Recurso | Idioma | Tipo | Duración |
-|---------|--------|------|----------|
-| [Microsoft Learn: Power Automate](https://learn.microsoft.com/es-es/training/paths/automate-process-power-automate/) | 🇪🇸 Español | Learning Path | 6 hrs |
-| [Power Automate Documentation](https://learn.microsoft.com/es-es/power-automate/) | 🇪🇸 Español | Docs | Referencia |
-| [Power Automate in a Day](https://learn.microsoft.com/es-es/power-automate/guidance/planning/introduction) | 🇪🇸 Español | Workshop | 8 hrs |
-| [Reza Dorrani (YouTube)](https://www.youtube.com/@RezaDorrani) | 🇬🇧 Inglés | Tutoriales | Referencia |
+**Entregable:** repo con la misma tarea resuelta por 2–3 agentes, **trazas de ejecución** capturadas, y una tabla de trade-offs (latencia, costo, fiabilidad).
 
-### Plan Diario
+### Semana 12 — Cierre CP2: 3 artefactos fuertes
 
-| Día | Tema | Práctica |
-|-----|------|----------|
-| Lunes | Introducción, triggers, actions | Flujo email → Excel |
-| Martes | Condiciones, loops, variables | Lógica de negocio |
-| Miércoles | Conectores: SharePoint, Teams, Outlook | Integración M365 |
-| Jueves | HTTP connector y APIs | Conectar servicio externo |
-| Viernes | Error handling y monitoring | Flujo robusto |
-| Sábado | **Proyecto final** | — |
+**Objetivo:** dejar los tres artefactos hiring-ready y pasar el gate.
 
-### 🔨 Proyecto: Flujo Automatizado de Reporting de Tickets
-
-Automatización que:
-1. Detecta nuevos tickets de seguridad (trigger)
-2. Clasifica por prioridad (condición)
-3. Notifica al equipo correcto (Teams)
-4. Actualiza dashboard (Excel/SharePoint)
-5. Genera reporte semanal automático (email)
-
-**Entregable:**
-- Flujo documentado con screenshots
-- Diagrama de arquitectura
-- README en GitHub
+**Checklist del [Gate CP2](../checkpoints#gate-cp2-semana-12):**
+- [ ] 3 repos con README profesional
+- [ ] Al menos 1 benchmark reproducible (el RAG evaluado)
+- [ ] Al menos 1 write-up técnico publicado
+- [ ] Narrativa lista para whiteboard de arquitectura
 
 ---
 
 ## 📋 Checklist de Fase 2
 
-- [ ] Excel: Power Query dominado
-- [ ] Dashboard de seguridad en Excel creado
-- [ ] SQL: Queries complejas funcionales
-- [ ] Base de datos de incidentes diseñada
-- [ ] Power BI: Dashboard ejecutivo publicado
-- [ ] Power Automate: Flujo de tickets operativo
-- [ ] 4 proyectos nuevos en GitHub portfolio
-- [ ] Evidencia cuantificada de impacto (antes/despues) agregada al CV y LinkedIn
+- [ ] Pipeline de datos con métrica de impacto (artefacto #1)
+- [ ] Sistema RAG con evaluación reproducible (artefacto #2)
+- [ ] Comparativa de agentes con trazas (artefacto #3)
+- [ ] Dashboard ejecutivo + write-up publicados
+- [ ] 3 repos con README profesional
+- [ ] Gate CP2 aprobado
 
 ## Operacion v4
 
-- [Checkpoint Gates v4](../checkpoints)
-- [Template de Evidencia v4](../evidence-template)
-- [Weekly Tracker v4](../weekly-tracker)
+- [Checkpoint Gates](../checkpoints)
+- [Template de Evidencia](../evidence-template)
+- [Weekly Tracker](../weekly-tracker)
 
 ## 🔗 Valor para el CV
 
-Después de esta fase, puedes decir:
-> "Diseñé e implementé dashboards ejecutivos de seguridad usando Power BI y SQL, automaticé flujos de reporting que redujeron tiempo manual en un 60%, y creé pipelines de datos con Power Query."
+> "Construí un sistema RAG empresarial con evaluación reproducible (groundedness/relevance), una comparativa de agentes con trazas y criterios de selección, y un pipeline de datos con impacto de negocio medible — todo publicado en GitHub."
 
 ## ⏭️ Siguiente Fase
 
-[Fase 3: Ciberseguridad Moderna →](../cybersecurity/overview)
+[Fase 3: Arquitectura + Seguridad Empresarial →](../cybersecurity/overview)

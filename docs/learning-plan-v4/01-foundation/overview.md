@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-title: "Fase 1 — Fundamentos de Tecnología Moderna"
+title: "Fase 1 — Fundamentos + AI-103 + Posicionamiento"
 ---
 
-# Fase 1: Fundamentos de Tecnología Moderna (Semanas 1–4)
+# Fase 1: Fundamentos + AI-103 + Posicionamiento (Semanas 1–4)
 
 > **Objetivo:** Construir base tecnica y de posicionamiento para entrar al plan v4: Python aplicado, presencia profesional y readiness para AI-103.
 
@@ -221,4 +221,4 @@ Mapear fundamentos de Azure AI y agentes a los dominios de AI-103 para cerrar br
 
 ## ⏭️ Siguiente Fase
 
-[Fase 2: Datos y Automatización →](../data-automation/overview)
+[Fase 2: Portafolio Técnico — RAG, Agentes y Evaluación →](../data-automation/overview)
