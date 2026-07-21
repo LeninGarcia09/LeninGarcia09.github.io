@@ -118,7 +118,7 @@ export default function Home() {
           </p>
           <div className={styles.heroCta} style={{ justifyContent: "flex-start", marginBottom: "2rem" }}>
             <Link className="button button--primary button--lg" to="/docs/learning-plan/overview">
-              🗺️ Open Plan de Desarrollo (36 semanas)
+              🛡️ Open AI Security Professional (9 meses)
             </Link>
             <Link className="button button--secondary button--lg" to="/docs/learning-plan-v4/overview">
               🧭 Open Learning Plan v4 (26 semanas)

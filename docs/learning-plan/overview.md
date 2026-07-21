@@ -1,10 +1,12 @@
 ---
 sidebar_position: 1
-title: "Plan de Desarrollo Profesional — 36 Semanas"
+title: "AI Security Professional — 36 Semanas"
 ---
 
-# 🚀 Plan de Desarrollo Profesional: De IT Manager a AI-Enabled Technology Leader
+# 🛡️ AI Security Professional
 
+> **Plan de Desarrollo Profesional: De IT Manager a AI-Enabled Technology Leader**
+>
 > **Programa de 9 meses** para profesionales con experiencia en IT Management, Informática Forense y algo de programación que buscan posicionarse en el mercado laboral de la era AI (2026-2030).
 
 ## 🎯 Perfil del Candidato
