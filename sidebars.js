@@ -163,6 +163,7 @@ const sidebars = {
     { type: 'doc', id: 'learning-plan-v4/evidence-template', label: '🧾 Evidence Template' },
     { type: 'doc', id: 'learning-plan-v4/sources-and-verification', label: '📚 Fuentes y Verificación' },
     { type: 'doc', id: 'learning-plan-v4/methodology-best-practices', label: '🧭 Metodología y Mejores Prácticas' },
+    { type: 'doc', id: 'learning-plan-v4/role-competency-map', label: '🎯 Competencias + Benchmark Externo' },
     {
       type: 'category',
       label: 'Fase 1: Fundamentos + AI-103 (Sem 1-4)',
