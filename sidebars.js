@@ -116,7 +116,7 @@ const sidebars = {
   ],
 
   learningPlanSidebar: [
-    { type: 'doc', id: 'learning-plan/overview', label: '🎯 Plan Overview' },
+    { type: 'doc', id: 'learning-plan/overview', label: '🛡️ AI Security Professional' },
     { type: 'doc', id: 'learning-plan/sources-and-verification', label: '✅ Fuentes y Verificación' },
     { type: 'doc', id: 'learning-plan/methodology-best-practices', label: '🧭 Metodología y Mejores Prácticas' },
     {

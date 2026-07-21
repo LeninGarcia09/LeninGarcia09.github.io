@@ -122,7 +122,7 @@ const config = {
             position: 'left',
             type: 'dropdown',
             items: [
-              { type: 'docSidebar', sidebarId: 'learningPlanSidebar', label: '🗺️ Plan de Desarrollo (36 semanas)' },
+              { type: 'docSidebar', sidebarId: 'learningPlanSidebar', label: '🛡️ AI Security Professional (9 meses)' },
               { type: 'docSidebar', sidebarId: 'learningPlanV4Sidebar', label: '🏗️ AI Solution Architect — Responsible AI (26 sem)' },
               { type: 'docSidebar', sidebarId: 'executiveAiLeadershipSidebar', label: '🧠 Executive AI Leadership Plan' },
             ],
@@ -164,7 +164,7 @@ const config = {
               { label: '🛠️ Tools', to: '/docs/resources/tools' },
               { label: '📰 Articles', to: '/docs/resources/articles' },
               { label: '📚 Learning', to: '/docs/resources/learning' },
-              { label: '🗺️ Plan de Desarrollo (36 semanas)', to: '/docs/learning-plan/overview' },
+              { label: '🛡️ AI Security Professional (9 meses)', to: '/docs/learning-plan/overview' },
               { label: '🏗️ AI Solution Architect — Responsible AI (26 sem)', to: '/docs/learning-plan-v4/overview' },
               { label: '🧠 Executive AI Leadership Plan', to: '/docs/executive-ai-leadership/overview' },
               { label: 'Microsoft Learn', href: 'https://learn.microsoft.com' },

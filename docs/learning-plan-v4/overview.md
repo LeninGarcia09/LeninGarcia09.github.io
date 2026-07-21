@@ -9,7 +9,7 @@ title: "AI Solution Architect — Responsible AI (26 Semanas)"
 
 :::info Cómo se diferencia de los otros dos planes
 Este es uno de tres planes del sitio. Para evitar confusión:
-- 🗺️ **[Plan de Desarrollo (36 semanas)](../learning-plan/overview)** — reempleo **vendor-neutral** en AI/seguridad (gratis primero, cualquier plataforma).
+- 🛡️ **[AI Security Professional (9 meses)](../learning-plan/overview)** — reempleo **vendor-neutral** en AI/seguridad (gratis primero, cualquier plataforma).
 - 🧠 **[Executive AI Leadership Plan](../executive-ai-leadership/overview)** — liderazgo ejecutivo de AI.
 - 🏗️ **Este plan** — ruta técnica **AI Solution Architect + Responsible AI**, Microsoft-first (AI-103, AZ-305, SC-500), orientada a construir arquitectura y gobernanza de AI empresarial.
 :::
