@@ -56,6 +56,7 @@ Todo el portafolio de certificaciones AI de Microsoft esta rotando en 2026 (beta
 
 - 📚 [**Fuentes y Verificacion v4**](./sources-and-verification) — cada certificacion, framework y recurso con enlace a su fuente primaria oficial.
 - 🧭 [**Metodologia y Mejores Practicas v4**](./methodology-best-practices) — por que el plan usa "proof over study", 70-20-10 y una rubrica de capstone "hiring-ready".
+- 🎯 [**Competencias + Benchmark Externo**](./role-competency-map) — las 10 competencias del rol contrastadas con Azure Well-Architected for AI, AWS, Google Cloud, Chip Huyen y DeepLearning.AI, con autoevaluacion y cross-walk multiplataforma.
 
 **Verifica siempre el estado (beta/GA) y los *skills measured* en la pagina oficial antes de calendarizar un examen.**
 :::
