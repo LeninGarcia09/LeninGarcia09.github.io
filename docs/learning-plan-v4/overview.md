@@ -1,11 +1,18 @@
 ---
 sidebar_position: 1
-title: "Plan de Desarrollo Profesional v4 — 26 Semanas"
+title: "AI Solution Architect — Responsible AI (26 Semanas)"
 ---
 
-# Plan de Desarrollo Profesional v4: AI Solution Architect -> AI Success Engineering
+# AI Solution Architect — Responsible AI
 
-> **Programa intensivo de 26 semanas (~9 horas/semana)** para posicionarte en roles de arquitectura AI, adopcion empresarial y AI Success Engineering con evidencia tecnica publicable.
+> **Programa intensivo de 26 semanas (~9 horas/semana)** para posicionarte como **AI Solution Architect con foco en Responsible AI**: llevar soluciones de AI de piloto a producción con arquitectura sólida, gobernanza y adopción medible en negocio, con evidencia técnica publicable.
+
+:::info Cómo se diferencia de los otros dos planes
+Este es uno de tres planes del sitio. Para evitar confusión:
+- 🗺️ **[Plan de Desarrollo (36 semanas)](../learning-plan/overview)** — reempleo **vendor-neutral** en AI/seguridad (gratis primero, cualquier plataforma).
+- 🧠 **[Executive AI Leadership Plan](../executive-ai-leadership/overview)** — liderazgo ejecutivo de AI.
+- 🏗️ **Este plan** — ruta técnica **AI Solution Architect + Responsible AI**, Microsoft-first (AI-103, AZ-305, SC-500), orientada a construir arquitectura y gobernanza de AI empresarial.
+:::
 
 ## Perfil objetivo
 
