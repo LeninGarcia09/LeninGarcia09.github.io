@@ -28,7 +28,7 @@ Entender cómo la AI está cambiando el mercado laboral y las industrias.
 | Recurso | Idioma | Tipo | Duración |
 |---------|--------|------|----------|
 | [Elements of AI](https://www.elementsofai.com/) | 🇪🇸 Español | Curso gratuito | 6-8 hrs |
-| [Microsoft AI Skills Initiative](https://www.microsoft.com/en-us/ai/ai-skills) | 🇬🇧 Inglés | Learning paths | 4-6 hrs |
+| [Microsoft AI Skills Navigator](https://aiskillsnavigator.microsoft.com/) | 🇬🇧 Inglés | Learning paths | 4-6 hrs |
 | [Google AI Essentials](https://grow.google/intl/es/courses-and-tools/) | 🇪🇸 Español | Curso | 4 hrs |
 | [IBM AI Fundamentals](https://www.ibm.com/training/collection/artificial-intelligence) | 🇬🇧 Inglés | Course | 3 hrs |
 

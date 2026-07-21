@@ -38,7 +38,7 @@ Cada semana, sin excepción: **3 outreach nuevos + 5 seguimientos + 1 pieza de v
 
 | Recurso | Idioma | Tipo |
 |---------|--------|------|
-| [Construir marca personal (Microsoft Learn)](https://learn.microsoft.com/es-es/training/modules/develop-your-personal-brand/) | 🇪🇸 | Learning Path |
+| [Career growth (Microsoft Learn)](https://learn.microsoft.com/es-es/training/modules/career-growth/) | 🇪🇸 | Learning Path |
 | [LinkedIn: red profesional efectiva](https://www.linkedin.com/learning/) | 🇬🇧/🇪🇸 | Cursos |
 
 **Prácticas:**

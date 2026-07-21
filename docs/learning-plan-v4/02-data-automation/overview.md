@@ -30,7 +30,7 @@ Al completar esta fase:
 | Recurso | Idioma | Tipo |
 |---------|--------|------|
 | [Python: pandas](https://pandas.pydata.org/docs/getting_started/index.html) | 🇬🇧 | Docs |
-| [Microsoft Learn: Power Query](https://learn.microsoft.com/es-es/training/modules/clean-data-power-query/) | 🇪🇸 | Learning Path |
+| [Microsoft Learn: Power Query](https://learn.microsoft.com/es-es/training/modules/automate-data-cleaning-power-query/) | 🇪🇸 | Learning Path |
 | [SQL — SQLBolt](https://sqlbolt.com/) | 🇬🇧 | Interactivo |
 
 **Entregable:** repo `data-pipeline/` — script de ingesta + limpieza, dataset de salida versionado, README con diagrama de flujo y **una métrica** (registros procesados, % de errores corregidos).
@@ -48,7 +48,7 @@ Al completar esta fase:
 | Recurso | Idioma | Tipo |
 |---------|--------|------|
 | [Microsoft Learn: Power BI](https://learn.microsoft.com/es-es/training/paths/create-use-analytics-reports-power-bi/) | 🇪🇸 | Learning Path |
-| [SQLBI: DAX](https://www.sqlbi.com/learn/introduction-to-dax/) | 🇬🇧 | Curso |
+| [DAX Guide (SQLBI)](https://dax.guide/) | 🇬🇧 | Referencia |
 
 **Entregable:** dashboard (Power BI o similar) con 3–5 KPIs + write-up de 1 página con la historia del dato.
 
