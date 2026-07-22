@@ -1,11 +1,13 @@
 ---
 id: anti-patterns
-title: Anti-Patrones Clave
-sidebar_label: ⚠️ Anti-Patrones Clave
+title: Key Anti-Patterns
+sidebar_label: ⚠️ Key Anti-Patterns
 sidebar_position: 5
 ---
 
 # ⚠️ Key Anti-Patterns (High-Yield Exam Content)
+
+> 🌐 **Language:** English · [Versión en Español](./es/anti-patterns)
 
 These appear as distractors in ~60% of questions. If you can spot them, you eliminate 2–3 options immediately.
 
@@ -38,4 +40,4 @@ Hands-on experience with the Agent SDK, MCP servers, and Claude Code solidifies 
 
 ---
 
-➡️ Siguiente: **[🔗 Recursos & Fuentes](./resources)**.
+➡️ Next: **[🔗 Resources & Sources](./resources)**.

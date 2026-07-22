@@ -1,13 +1,15 @@
 ---
 id: domains
-title: Los 5 Dominios del Examen
-sidebar_label: 📚 Los 5 Dominios
+title: The 5 Exam Domains
+sidebar_label: 📚 The 5 Domains
 sidebar_position: 2
 ---
 
-# 📚 Los 5 Dominios del Examen
+# 📚 The 5 Exam Domains
 
-> Desglose por dominio: conceptos clave, anti-patrones y recursos oficiales de Anthropic. Los pesos (%) están en el [Exam Overview](./overview#los-5-dominios-del-examen).
+> 🌐 **Language:** English · [Versión en Español](./es/domains)
+>
+> Per-domain breakdown: key concepts, anti-patterns, and official Anthropic resources. Weights (%) are on the [Exam Overview](./overview#the-5-exam-domains).
 
 ## Domain 1 — Agentic Architecture & Orchestration (~25%)
 
@@ -36,7 +38,7 @@ Design and implement agentic systems using Claude's Agent SDK.
 - [Intercept and control agent behavior with hooks](https://code.claude.com/docs/en/agent-sdk/hooks)
 - [Run agents in parallel](https://code.claude.com/docs/en/agents) — subagents vs agent teams
 - [Stop reasons and fallback](https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons)
-- 🎓 [Anthropic Academy — *Introduction to Subagents* (curso gratuito)](https://anthropic.skilljar.com/introduction-to-subagents) — aislamiento de contexto, `/agents`, output estructurado, límites de tools, anti-patrones
+- 🎓 [Anthropic Academy — *Introduction to Subagents* (free course)](https://anthropic.skilljar.com/introduction-to-subagents) — context isolation, `/agents`, structured output, tool limits, anti-patterns
 
 ---
 
@@ -64,8 +66,8 @@ Design effective tools and integrate with Model Context Protocol servers.
 - [Connect to external tools with MCP](https://code.claude.com/docs/en/agent-sdk/mcp) — transports, auth, error handling
 - [MCP connector](https://platform.claude.com/docs/en/agents-and-tools/mcp-connector) & [Remote MCP servers](https://platform.claude.com/docs/en/agents-and-tools/remote-mcp-servers)
 - [Scale to many tools with tool search](https://code.claude.com/docs/en/agent-sdk/tool-search)
-- 🎓 [Anthropic Academy — *Introduction to Model Context Protocol* (curso gratuito)](https://anthropic.skilljar.com/introduction-to-model-context-protocol) — fundamentos de MCP: servidores, tools, transports
-- 🎓 [Anthropic Academy — *Model Context Protocol: Advanced Topics* (curso gratuito)](https://anthropic.skilljar.com/model-context-protocol-advanced-topics) — auth, remote servers, manejo de errores, escala
+- 🎓 [Anthropic Academy — *Introduction to Model Context Protocol* (free course)](https://anthropic.skilljar.com/introduction-to-model-context-protocol) — MCP fundamentals: servers, tools, transports
+- 🎓 [Anthropic Academy — *Model Context Protocol: Advanced Topics* (free course)](https://anthropic.skilljar.com/model-context-protocol-advanced-topics) — auth, remote servers, error handling, scale
 
 ---
 
@@ -126,7 +128,7 @@ Master prompt engineering for production-scale systems.
 - [Strict tool use](https://platform.claude.com/docs/en/agents-and-tools/tool-use/strict-tool-use) & [Handle tool calls](https://platform.claude.com/docs/en/agents-and-tools/tool-use/handle-tool-calls) — `tool_choice`
 - [Tutorial: build a tool-using agent](https://platform.claude.com/docs/en/agents-and-tools/tool-use/build-a-tool-using-agent)
 - [Anthropic Academy / Learn](https://www.anthropic.com/learn) — guided prompt-engineering courses
-- 🎓 [Anthropic Academy — *Claude with the Anthropic API* (curso gratuito)](https://anthropic.skilljar.com/claude-with-the-anthropic-api) — auth, prompt engineering, output estructurado, RAG y agentes
+- 🎓 [Anthropic Academy — *Claude with the Anthropic API* (free course)](https://anthropic.skilljar.com/claude-with-the-anthropic-api) — auth, prompt engineering, structured output, RAG & agents
 
 ---
 
@@ -160,4 +162,4 @@ Manage context effectively in long-running production systems.
 
 ---
 
-➡️ Siguiente: **[🎓 Cursos + Mock Exam](./courses)** — pon en práctica cada dominio con los cursos gratuitos oficiales.
+➡️ Next: **[🎓 Courses + Mock Exam](./courses)** — put each domain into practice with the free official courses.

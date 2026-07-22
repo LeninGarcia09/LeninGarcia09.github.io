@@ -1,25 +1,27 @@
 ---
 id: courses
-title: Cursos Oficiales + Mock Exam
-sidebar_label: 🎓 Cursos + Mock Exam
+title: Official Courses + Mock Exam
+sidebar_label: 🎓 Courses + Mock Exam
 sidebar_position: 3
 ---
 
-# 🎓 Cursos Oficiales de Anthropic Academy (gratuitos, self-paced)
+# 🎓 Official Anthropic Academy Courses (free, self-paced)
 
-Cursos **oficiales de Anthropic** (sin costo, sin registro obligatorio en `anthropic.skilljar.com`). Mapeados a los dominios del examen — úsalos como el núcleo práctico del plan de estudio:
+> 🌐 **Language:** English · [Versión en Español](./es/courses)
 
-| Curso | Cubre | Dominio(s) |
-|-------|-------|-----------|
-| [Claude with the Anthropic API](https://anthropic.skilljar.com/claude-with-the-anthropic-api) | Auth, prompt engineering, output estructurado, RAG, agentes | 1 · 4 |
-| [Introduction to Model Context Protocol](https://anthropic.skilljar.com/introduction-to-model-context-protocol) | Fundamentos de MCP: servidores, tools, transports | 2 |
-| [Model Context Protocol: Advanced Topics](https://anthropic.skilljar.com/model-context-protocol-advanced-topics) | Auth, remote servers, manejo de errores, escala | 2 |
-| [Introduction to Subagents](https://anthropic.skilljar.com/introduction-to-subagents) | Aislamiento de contexto, `/agents`, output estructurado, tool scoping, anti-patrones | 1 |
+**Official Anthropic courses** (free, no mandatory sign-up, on `anthropic.skilljar.com`). Mapped to the exam domains — use them as the practical core of your study plan:
 
-:::tip Práctica de examen (recurso comunitario, no oficial)
-[claudecertificationguide.com](https://claudecertificationguide.com/) es un recurso **independiente y gratuito** (no afiliado a Anthropic) con diagnóstico, 30 lecciones, 240+ preguntas de práctica y un **mock exam completo**. Excelente para simular el examen — pero valida siempre los datos oficiales en Anthropic Academy antes de agendar.
+| Course | Covers | Domain(s) |
+|-------|--------|-----------|
+| [Claude with the Anthropic API](https://anthropic.skilljar.com/claude-with-the-anthropic-api) | Auth, prompt engineering, structured output, RAG, agents | 1 · 4 |
+| [Introduction to Model Context Protocol](https://anthropic.skilljar.com/introduction-to-model-context-protocol) | MCP fundamentals: servers, tools, transports | 2 |
+| [Model Context Protocol: Advanced Topics](https://anthropic.skilljar.com/model-context-protocol-advanced-topics) | Auth, remote servers, error handling, scale | 2 |
+| [Introduction to Subagents](https://anthropic.skilljar.com/introduction-to-subagents) | Context isolation, `/agents`, structured output, tool scoping, anti-patterns | 1 |
+
+:::tip Exam practice (community resource, unofficial)
+[claudecertificationguide.com](https://claudecertificationguide.com/) is an **independent, free** resource (not affiliated with Anthropic) with a diagnostic, 30 lessons, 240+ practice questions, and a **full mock exam**. Great for simulating the exam — but always confirm the official facts on Anthropic Academy before scheduling.
 :::
 
 ---
 
-➡️ Siguiente: **[🗓️ Plan de Estudio (12 semanas)](./study-plan)** — organiza estos cursos en una ruta semanal.
+➡️ Next: **[🗓️ Study Plan (12 weeks)](./study-plan)** — organize these courses into a weekly path.
