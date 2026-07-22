@@ -1,0 +1,47 @@
+---
+id: study-plan
+title: Plan de Estudio — 12 Semanas
+sidebar_label: 🗓️ Plan de Estudio (12 sem)
+sidebar_position: 4
+---
+
+# 🗓️ 12-Week Study Plan
+
+> **Guía de estudio** (~1 hora/día · 84 horas). No es una especificación oficial del examen — es una ruta sugerida. Combina los [cursos oficiales](./courses) con los [dominios](./domains).
+
+## Phase 1: Foundations (Weeks 1–4)
+
+| Week | Focus | Practice Test |
+|------|-------|--------------|
+| W1 | Agentic Loops & Core API | Test 1 — Agentic Loops (10q) |
+| W2 | Multi-Agent Orchestration | Test 2 — Multi-Agent Systems (10q) |
+| W3 | Hooks, Workflows & Sessions | Test 3 — Hooks & Sessions (10q) |
+| W4 | Tool Design & MCP | Test 4 — Tool Design & MCP (10q) |
+
+## Phase 2: Applied Knowledge (Weeks 5–8)
+
+| Week | Focus | Practice Test |
+|------|-------|--------------|
+| W5 | Claude Code Configuration | Test 5 — Claude Code Config (10q) |
+| W6 | Plan Mode, Iteration & CI/CD | Test 6 — Plan Mode & CI/CD (10q) |
+| W7 | Prompt Engineering & Structured Output | Test 7 — Prompt Engineering (10q) |
+| W8 | Validation, Batch & Multi-Pass | Test 8 — Validation & Multi-Pass (10q) |
+
+## Phase 3: Exam Prep (Weeks 9–12)
+
+| Week | Focus | Practice Test |
+|------|-------|--------------|
+| W9 | Context Management | Test 9 — Context & Reliability (10q) |
+| W10 | Advanced Context & Provenance | Test 10 — Advanced Context (10q) |
+| W11 | Integration & Hands-On Exercises | Practice Exam 1 — Full (50q) |
+| W12 | Final Exam Prep | Practice Exams 2 & 3 — Full (50q each) |
+
+**Week 11 Hands-On Exercises:**
+1. Multi-Tool Agent with Escalation Logic
+2. Claude Code Team Workflow Configuration
+3. Structured Data Extraction Pipeline
+4. Multi-Agent Research Pipeline
+
+---
+
+➡️ Siguiente: **[⚠️ Anti-Patrones Clave](./anti-patterns)** — el contenido de mayor rendimiento para el examen.
