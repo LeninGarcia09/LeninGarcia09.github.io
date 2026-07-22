@@ -8,45 +8,47 @@ slug: /claude-architect/overview
 
 # Claude Certified Architect – Foundations
 
-> **Vendor:** Anthropic · **Level:** Foundations · **Format:** 60 preguntas (multiple choice + multiple response), basadas en escenarios  
-> **Examen:** 120 min · escala 100–1000, **720 para aprobar** · **$125 USD** · válida 12 meses · online proctored o Pearson test center  
-> **Study Plan (guía de estudio):** 12 semanas · ~1 hora/día · 84 horas · 13 practice tests
+> 🌐 **Language:** English · [Versión en Español](./es/overview)
+
+> **Vendor:** Anthropic · **Level:** Foundations · **Format:** 60 questions (multiple choice + multiple response), scenario-based  
+> **Exam:** 120 min · scaled score 100–1000, **720 to pass** · **$125 USD** · valid 12 months · online proctored or Pearson test center  
+> **Study Plan (study aid):** 12 weeks · ~1 hour/day · 84 hours · 13 practice tests
 
 This certification validates your ability to **design, build, and operate production-grade agentic AI systems** using Claude. Unlike generic AI certs, it tests architectural reasoning — *why* certain patterns beat others, not just *what* they are.
 
 :::warning Verified facts & official sources (last checked 2026-07-22)
-The **Claude Certification Program is an official Anthropic program** (launched March 12, 2026), delivered with **Pearson VUE**, with preparation via **Anthropic Academy** (cursos gratuitos self-paced) y la **Anthropic Partner Academy**, y badges digitales vía **Credly**. It offers three roles — **Practitioner, Architect, and Developer** — and counts toward Claude Partner Network standing.
+The **Claude Certification Program is an official Anthropic program** (launched March 12, 2026), delivered with **Pearson VUE**, with preparation via **Anthropic Academy** (free self-paced courses) and the **Anthropic Partner Academy**, and digital badges through **Credly**. It offers three roles — **Practitioner, Architect, and Developer** — and counts toward Claude Partner Network standing.
 
 - Program overview: [Claude Certification Program (Pearson VUE)](https://www.pearsonvue.com/us/en/anthropic.html)
 - Official cert page: [Claude Certified Architect – Foundations (Anthropic Academy)](https://anthropic.skilljar.com/claude-certified-architect-foundations-certification/444989)
 - Free self-paced training: [Anthropic Academy](https://anthropic.skilljar.com/)
 - Prep & scheduling: [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/)
-- **Exam format (Exam Guide v0.2, 30 jun 2026):** 60 preguntas (multiple choice + multiple response) · 120 min · escala 100–1000, **720 para aprobar** · **$125 USD** · válida 12 meses · online proctored o Pearson test center.
+- **Exam format (Exam Guide v0.2, 30 Jun 2026):** 60 questions (multiple choice + multiple response) · 120 min · scaled score 100–1000, **720 to pass** · **$125 USD** · valid 12 months · online proctored or Pearson test center.
 - **Retake policy:** 14 days after attempt 1, 30 after attempt 2, 90 after attempt 3; up to 4 attempts per rolling 12 months.
-- **Register only through the official channels above.** Existen varios sitios de terceros con nombres similares (p. ej. `claudecertifications.com`, `claudearchitectcertification.com`) que **no** son el portal oficial de Anthropic. Un recurso comunitario **independiente (no afiliado a Anthropic)** — [claudecertificationguide.com](https://claudecertificationguide.com/) — ofrece un diagnóstico gratuito + mock exam útil para practicar; aun así, **confirma todos los datos del examen en la página oficial de Anthropic Academy antes de agendar.**
+- **Register only through the official channels above.** Several similarly named third-party sites exist (e.g. `claudecertifications.com`, `claudearchitectcertification.com`) that are **not** Anthropic's official portal. One **independent (not affiliated with Anthropic)** community resource — [claudecertificationguide.com](https://claudecertificationguide.com/) — offers a free diagnostic + mock exam that is useful for practice; even so, **confirm all exam facts on the official Anthropic Academy page before scheduling.**
 :::
 
 ---
 
-## 🗺️ Cómo usar esta guía
+## 🗺️ How to use this guide
 
-La guía está dividida en secciones. Recórrelas en orden con los botones **Anterior / Siguiente** al pie de cada página, o salta directo a lo que necesites:
+This guide is split into sections. Move through them in order with the **Previous / Next** buttons at the bottom of each page, or jump straight to what you need:
 
-| Sección | Qué encontrarás |
-|---------|-----------------|
-| **[📚 Los 5 Dominios](./domains)** | Desglose por dominio: conceptos clave, anti-patrones y recursos oficiales de Anthropic. |
-| **[🎓 Cursos + Mock Exam](./courses)** | Los 4 cursos gratuitos de Anthropic Academy mapeados a cada dominio, y el mock exam comunitario. |
-| **[🗓️ Plan de Estudio (12 semanas)](./study-plan)** | Ruta semana a semana con practice tests y ejercicios hands-on. |
-| **[⚠️ Anti-Patrones Clave](./anti-patterns)** | La tabla de alto rendimiento: los distractores que aparecen en ~60% de las preguntas. |
-| **[🔗 Recursos & Fuentes](./resources)** | Enlaces oficiales, badges, docs y verificación de fuentes. |
+| Section | What you'll find |
+|---------|------------------|
+| **[📚 The 5 Domains](./domains)** | Per-domain breakdown: key concepts, anti-patterns, and official Anthropic resources. |
+| **[🎓 Courses + Mock Exam](./courses)** | The 4 free Anthropic Academy courses mapped to each domain, plus the community mock exam. |
+| **[🗓️ Study Plan (12 weeks)](./study-plan)** | Week-by-week path with practice tests and hands-on exercises. |
+| **[⚠️ Key Anti-Patterns](./anti-patterns)** | The high-yield table: the distractors that appear in ~60% of questions. |
+| **[🔗 Resources & Sources](./resources)** | Official links, badges, docs, and source verification. |
 
-:::tip Ruta recomendada
-1. Lee esta página. → 2. Estudia los **[5 dominios](./domains)**. → 3. Completa los **[cursos oficiales](./courses)**. → 4. Sigue el **[plan de 12 semanas](./study-plan)**. → 5. Memoriza los **[anti-patrones](./anti-patterns)** antes del examen.
+:::tip Recommended path
+1. Read this page. → 2. Study the **[5 domains](./domains)**. → 3. Complete the **[official courses](./courses)**. → 4. Follow the **[12-week plan](./study-plan)**. → 5. Memorize the **[anti-patterns](./anti-patterns)** before the exam.
 :::
 
 ---
 
-## Los 5 Dominios del Examen
+## The 5 Exam Domains
 
 | Domain | Topic | Weight |
 |--------|-------|--------|
@@ -56,4 +58,4 @@ La guía está dividida en secciones. Recórrelas en orden con los botones **Ant
 | **4** | Prompt Engineering & Structured Output | ~20% |
 | **5** | Context Management & Reliability | ~15% |
 
-➡️ Desglose completo, con conceptos, anti-patrones y recursos por dominio, en **[📚 Los 5 Dominios](./domains)**.
+➡️ Full breakdown — with concepts, anti-patterns, and resources per domain — in **[📚 The 5 Domains](./domains)**.

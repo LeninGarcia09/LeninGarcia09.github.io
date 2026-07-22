@@ -1,13 +1,15 @@
 ---
 id: study-plan
-title: Plan de Estudio — 12 Semanas
-sidebar_label: 🗓️ Plan de Estudio (12 sem)
+title: Study Plan — 12 Weeks
+sidebar_label: 🗓️ Study Plan (12 wk)
 sidebar_position: 4
 ---
 
 # 🗓️ 12-Week Study Plan
 
-> **Guía de estudio** (~1 hora/día · 84 horas). No es una especificación oficial del examen — es una ruta sugerida. Combina los [cursos oficiales](./courses) con los [dominios](./domains).
+> 🌐 **Language:** English · [Versión en Español](./es/study-plan)
+>
+> A **study aid** (~1 hour/day · 84 hours). This is not an official exam specification — it's a suggested path. Combine the [official courses](./courses) with the [domains](./domains).
 
 ## Phase 1: Foundations (Weeks 1–4)
 
@@ -44,4 +46,4 @@ sidebar_position: 4
 
 ---
 
-➡️ Siguiente: **[⚠️ Anti-Patrones Clave](./anti-patterns)** — el contenido de mayor rendimiento para el examen.
+➡️ Next: **[⚠️ Key Anti-Patterns](./anti-patterns)** — the highest-yield content for the exam.

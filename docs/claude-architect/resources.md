@@ -1,11 +1,13 @@
 ---
 id: resources
-title: Recursos & Fuentes
-sidebar_label: 🔗 Recursos & Fuentes
+title: Resources & Sources
+sidebar_label: 🔗 Resources & Sources
 sidebar_position: 6
 ---
 
 # 🔗 Resources
+
+> 🌐 **Language:** English · [Versión en Español](./es/resources)
 
 | Resource | Link |
 |----------|------|
@@ -22,9 +24,9 @@ sidebar_position: 6
 | Anthropic GitHub | [github.com/anthropics](https://github.com/anthropics) |
 
 :::note Source & currency
-Program facts across this guide are verified against Anthropic's official Pearson VUE program page, the Anthropic Academy cert page (Claude Certified Architect – Foundations) and Anthropic's Exam Guide v0.2 (30 jun 2026), checked 2026-07-22. Exam details can change — always confirm on the official pages before scheduling. The 12-week plan and practice-test counts in this guide are a **study aid**, not official exam specifications.
+Program facts across this guide are verified against Anthropic's official Pearson VUE program page, the Anthropic Academy cert page (Claude Certified Architect – Foundations) and Anthropic's Exam Guide v0.2 (30 Jun 2026), checked 2026-07-22. Exam details can change — always confirm on the official pages before scheduling. The 12-week plan and practice-test counts in this guide are a **study aid**, not official exam specifications.
 :::
 
 ---
 
-⬅️ Volver al **[🏠 Exam Overview](./overview)**.
+⬅️ Back to the **[🏠 Exam Overview](./overview)**.
