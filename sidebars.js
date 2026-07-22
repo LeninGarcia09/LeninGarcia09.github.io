@@ -105,7 +105,12 @@ const sidebars = {
   ],
 
   claudeArchitectSidebar: [
-    { type: 'doc', id: 'claude-architect/overview', label: 'Exam Overview & Study Plan' },
+    { type: 'doc', id: 'claude-architect/overview', label: '🏠 Exam Overview' },
+    { type: 'doc', id: 'claude-architect/domains', label: '📚 Los 5 Dominios' },
+    { type: 'doc', id: 'claude-architect/courses', label: '🎓 Cursos + Mock Exam' },
+    { type: 'doc', id: 'claude-architect/study-plan', label: '🗓️ Plan de Estudio (12 sem)' },
+    { type: 'doc', id: 'claude-architect/anti-patterns', label: '⚠️ Anti-Patrones Clave' },
+    { type: 'doc', id: 'claude-architect/resources', label: '🔗 Recursos & Fuentes' },
   ],
 
   resourcesSidebar: [
