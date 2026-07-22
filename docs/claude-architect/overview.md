@@ -7,18 +7,22 @@ slug: /claude-architect/overview
 
 # Claude Certified Architect – Foundations
 
-> **Vendor:** Anthropic · **Level:** Foundations · **Format:** Multiple choice (scenario-based)  
-> **Study Plan:** 12 weeks · ~1 hour/day · 84 hours total · 13 practice tests
+> **Vendor:** Anthropic · **Level:** Foundations · **Format:** 60 preguntas (multiple choice + multiple response), basadas en escenarios  
+> **Examen:** 120 min · escala 100–1000, **720 para aprobar** · **$125 USD** · válida 12 meses · online proctored o Pearson test center  
+> **Study Plan (guía de estudio):** 12 semanas · ~1 hora/día · 84 horas · 13 practice tests
 
 This certification validates your ability to **design, build, and operate production-grade agentic AI systems** using Claude. Unlike generic AI certs, it tests architectural reasoning — *why* certain patterns beat others, not just *what* they are.
 
-:::warning Verified facts & official sources (last checked 2026-07-17)
-The **Claude Certification Program is an official Anthropic program** (launched March 12, 2026), delivered with **Pearson VUE**, with preparation via the **Anthropic Partner Academy** and digital badges through **Credly**. It offers three roles — **Practitioner, Architect, and Developer** — and counts toward Claude Partner Network standing.
+:::warning Verified facts & official sources (last checked 2026-07-22)
+The **Claude Certification Program is an official Anthropic program** (launched March 12, 2026), delivered with **Pearson VUE**, with preparation via **Anthropic Academy** (cursos gratuitos self-paced) y la **Anthropic Partner Academy**, y badges digitales vía **Credly**. It offers three roles — **Practitioner, Architect, and Developer** — and counts toward Claude Partner Network standing.
 
 - Program overview: [Claude Certification Program (Pearson VUE)](https://www.pearsonvue.com/us/en/anthropic.html)
+- Official cert page: [Claude Certified Architect – Foundations (Anthropic Academy)](https://anthropic.skilljar.com/claude-certified-architect-foundations-certification/444989)
+- Free self-paced training: [Anthropic Academy](https://anthropic.skilljar.com/)
 - Prep & scheduling: [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/)
+- **Exam format (Exam Guide v0.2, 30 jun 2026):** 60 preguntas (multiple choice + multiple response) · 120 min · escala 100–1000, **720 para aprobar** · **$125 USD** · válida 12 meses · online proctored o Pearson test center.
 - **Retake policy:** 14 days after attempt 1, 30 after attempt 2, 90 after attempt 3; up to 4 attempts per rolling 12 months.
-- **Register only through the official channels above.** Several similarly named third‑party sites exist (e.g. `claudecertifications.com`, `claudearchitectcertification.com`) that are **not** Anthropic's official portal. Confirm exact question count, passing score and format on the official page before scheduling.
+- **Register only through the official channels above.** Existen varios sitios de terceros con nombres similares (p. ej. `claudecertifications.com`, `claudearchitectcertification.com`) que **no** son el portal oficial de Anthropic. Un recurso comunitario **independiente (no afiliado a Anthropic)** — [claudecertificationguide.com](https://claudecertificationguide.com/) — ofrece un diagnóstico gratuito + mock exam útil para practicar; aun así, **confirma todos los datos del examen en la página oficial de Anthropic Academy antes de agendar.**
 :::
 
 ---
@@ -64,6 +68,7 @@ Design and implement agentic systems using Claude's Agent SDK.
 - [Intercept and control agent behavior with hooks](https://code.claude.com/docs/en/agent-sdk/hooks)
 - [Run agents in parallel](https://code.claude.com/docs/en/agents) — subagents vs agent teams
 - [Stop reasons and fallback](https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons)
+- 🎓 [Anthropic Academy — *Introduction to Subagents* (curso gratuito)](https://anthropic.skilljar.com/introduction-to-subagents) — aislamiento de contexto, `/agents`, output estructurado, límites de tools, anti-patrones
 
 ---
 
@@ -91,6 +96,8 @@ Design effective tools and integrate with Model Context Protocol servers.
 - [Connect to external tools with MCP](https://code.claude.com/docs/en/agent-sdk/mcp) — transports, auth, error handling
 - [MCP connector](https://platform.claude.com/docs/en/agents-and-tools/mcp-connector) & [Remote MCP servers](https://platform.claude.com/docs/en/agents-and-tools/remote-mcp-servers)
 - [Scale to many tools with tool search](https://code.claude.com/docs/en/agent-sdk/tool-search)
+- 🎓 [Anthropic Academy — *Introduction to Model Context Protocol* (curso gratuito)](https://anthropic.skilljar.com/introduction-to-model-context-protocol) — fundamentos de MCP: servidores, tools, transports
+- 🎓 [Anthropic Academy — *Model Context Protocol: Advanced Topics* (curso gratuito)](https://anthropic.skilljar.com/model-context-protocol-advanced-topics) — auth, remote servers, manejo de errores, escala
 
 ---
 
@@ -151,6 +158,7 @@ Master prompt engineering for production-scale systems.
 - [Strict tool use](https://platform.claude.com/docs/en/agents-and-tools/tool-use/strict-tool-use) & [Handle tool calls](https://platform.claude.com/docs/en/agents-and-tools/tool-use/handle-tool-calls) — `tool_choice`
 - [Tutorial: build a tool-using agent](https://platform.claude.com/docs/en/agents-and-tools/tool-use/build-a-tool-using-agent)
 - [Anthropic Academy / Learn](https://www.anthropic.com/learn) — guided prompt-engineering courses
+- 🎓 [Anthropic Academy — *Claude with the Anthropic API* (curso gratuito)](https://anthropic.skilljar.com/claude-with-the-anthropic-api) — auth, prompt engineering, output estructurado, RAG y agentes
 
 ---
 
@@ -181,6 +189,23 @@ Manage context effectively in long-running production systems.
 - [Explore the context window (Claude Code)](https://code.claude.com/docs/en/context-window)
 - [Checkpointing](https://code.claude.com/docs/en/checkpointing) — rewind & recover session state
 - [Memory tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool) & [Track cost and usage (SDK)](https://code.claude.com/docs/en/agent-sdk/cost-tracking)
+
+---
+
+## 🎓 Cursos Oficiales de Anthropic Academy (gratuitos, self-paced)
+
+Cursos **oficiales de Anthropic** (sin costo, sin registro obligatorio en `anthropic.skilljar.com`). Mapeados a los dominios del examen — úsalos como el núcleo práctico del plan de estudio:
+
+| Curso | Cubre | Dominio(s) |
+|-------|-------|-----------|
+| [Claude with the Anthropic API](https://anthropic.skilljar.com/claude-with-the-anthropic-api) | Auth, prompt engineering, output estructurado, RAG, agentes | 1 · 4 |
+| [Introduction to Model Context Protocol](https://anthropic.skilljar.com/introduction-to-model-context-protocol) | Fundamentos de MCP: servidores, tools, transports | 2 |
+| [Model Context Protocol: Advanced Topics](https://anthropic.skilljar.com/model-context-protocol-advanced-topics) | Auth, remote servers, manejo de errores, escala | 2 |
+| [Introduction to Subagents](https://anthropic.skilljar.com/introduction-to-subagents) | Aislamiento de contexto, `/agents`, output estructurado, tool scoping, anti-patrones | 1 |
+
+:::tip Práctica de examen (recurso comunitario, no oficial)
+[claudecertificationguide.com](https://claudecertificationguide.com/) es un recurso **independiente y gratuito** (no afiliado a Anthropic) con diagnóstico, 30 lecciones, 240+ preguntas de práctica y un **mock exam completo**. Excelente para simular el examen — pero valida siempre los datos oficiales en Anthropic Academy antes de agendar.
+:::
 
 ---
 
@@ -243,6 +268,9 @@ These appear as distractors in ~60% of questions. If you can spot them, you elim
 | Resource | Link |
 |----------|------|
 | Official program (Pearson VUE) | [pearsonvue.com/anthropic](https://www.pearsonvue.com/us/en/anthropic.html) |
+| Official cert page (CCA-F) | [Anthropic Academy — Claude Certified Architect – Foundations](https://anthropic.skilljar.com/claude-certified-architect-foundations-certification/444989) |
+| Anthropic Academy — free courses | [anthropic.skilljar.com](https://anthropic.skilljar.com/) |
+| Mock exam & study guide (community, unaffiliated) | [claudecertificationguide.com](https://claudecertificationguide.com/) |
 | Prep & scheduling — Anthropic Partner Academy | [anthropic-partners.skilljar.com](https://anthropic-partners.skilljar.com/) |
 | Anthropic Academy (learning) | [anthropic.com/learn](https://www.anthropic.com/learn) |
 | Digital badges (Credly) | [credly.com](https://www.credly.com/) |
@@ -252,7 +280,7 @@ These appear as distractors in ~60% of questions. If you can spot them, you elim
 | Anthropic GitHub | [github.com/anthropics](https://github.com/anthropics) |
 
 :::note Source & currency
-Program facts above are verified against Anthropic's official Pearson VUE program page and Anthropic Partner Academy (checked 2026-07-17). Exam details can change — always confirm on the official pages before scheduling. The 12-week plan and practice-test counts on this page are a **study aid**, not official exam specifications.
+Program facts above are verified against Anthropic's official Pearson VUE program page, the Anthropic Academy cert page (Claude Certified Architect – Foundations) and Anthropic's Exam Guide v0.2 (30 jun 2026), checked 2026-07-22. Exam details can change — always confirm on the official pages before scheduling. The 12-week plan and practice-test counts on this page are a **study aid**, not official exam specifications.
 :::
 
 ---
