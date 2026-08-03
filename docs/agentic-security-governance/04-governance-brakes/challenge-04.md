@@ -25,7 +25,7 @@ The **brakes** every autonomous system needs — human-approval gates, a **kill-
 
 ## The Core Problem: Capable Systems Need Circuit Breakers
 
-Challenges 01–03 gave you constrained objectives, least privilege, and behavior monitoring. Governance is what turns those into an **operating discipline**: *who* approves high-impact actions, *what* stops a misbehaving agent, and *how fast* you can revoke its access. The o1 incident completed with **no human checkpoint and no interrupt** — the missing layer here.
+Challenges 01–03 gave you constrained objectives, least privilege, and behavior monitoring. Governance is what turns those into an **operating discipline**: *who* approves high-impact actions, *what* stops a misbehaving agent, and *how fast* you can revoke its access. The 2026 HF incident ran a full multi‑day kill chain with **no human checkpoint and no interrupt**, and the defenders' hardest problem was acting at **machine speed** — the missing layer here. (Its 2024 precursor, the o1 eval, completed the same way: no checkpoint, no brake.)
 
 ```
 GOVERNANCE = the brakes on autonomy
@@ -46,8 +46,13 @@ Detect (Ch03) ─▶ Decide (policy) ─▶ Act
 | **Session termination** | Pause/stop a running agent | Orchestrator stop signal, revoke session token | Kill signal to agent runtime |
 | **Access revocation** | Cut what the identity can reach — fast | Entra: disable identity, revoke tokens, Conditional Access block | IAM disable, STS revoke, key rotation |
 | **Escalation workflow** | Get the right human deciding quickly | Sentinel/Defender incident → on-call → decision owner | SIEM incident → PagerDuty → runbook |
+| **Agent identity & registry** | Know every agent exists, who owns it, and what it did | **Agent 365 / Entra Agent ID** — per‑agent identity, registry, trajectory logging, revocation | Per‑agent IAM principal + inventory/registry + audit trail |
 
-**Decision:** Define, in advance, **thresholds** that trigger each brake and the **owner** who pulls it. A brake with no owner and no threshold is decoration.
+**Decision:** Define, in advance, **thresholds** that trigger each brake and the **owner** who pulls it. A brake with no owner and no threshold is decoration. And you can only brake an agent you can **see** — every agent needs a registered identity and owner *before* it runs.
+
+:::note Emerging worked example — hold loosely
+Microsoft **Agent 365** and **Entra Agent ID** are early/directional capabilities for treating each agent as a governed digital identity (registry, least privilege, trajectory, kill switch). The *principle* — per‑agent identity + registry + revocation — is vendor‑neutral; the specific product surface is still maturing.
+:::
 </details>
 
 ---
@@ -88,7 +93,7 @@ Produce a **one-page** readout using the four takeaways. This is what you actual
 
 **Title:** *From AI Safety to AI Readiness — Governing Agentic Systems at Enterprise Scale*
 
-1. **What happened (plain language):** A capable AI system pursued its assigned goal through an unintended path, exposing weak boundaries, permissions, and monitoring. *(Cite: OpenAI o1 System Card, evaluated by Palisade Research.)*
+1. **What happened (plain language):** A capable AI system pursued its assigned goal through an unintended path, exposing weak boundaries, permissions, and monitoring. *(Cite: [Hugging Face security incident, July 2026](https://huggingface.co/blog/security-incident-july-2026), joint OpenAI/HF disclosure; precursor: [OpenAI o1 System Card](https://openai.com/index/openai-o1-system-card/), evaluated by Palisade Research.)*
 2. **Why traditional AppSec isn't enough:** The security boundary is no longer the model — it's the model + tools + identities + data + infrastructure + monitoring.
 3. **The four takeaways:**
    - AI risk is shifting from **harmful outputs** to **autonomous actions**.
