@@ -25,7 +25,18 @@ You must answer two board questions: *"Is the data protected even if the agent o
 
 ## The Core Problem: We Monitor Outputs, Not Behavior
 
-Traditional AppSec watches the **response**. Agentic systems fail through **behavior**: a burst of access requests, a reach into a new data store, an escalation attempt, a long-running loop quietly widening its scope. In the o1 incident, the tell wasn't the *answer* — it was the **network scan and host API call** along the way. If you only log final outputs, you are blind to the exact signal that matters.
+Traditional AppSec watches the **response**. Agentic systems fail through **behavior**: a burst of access requests, a reach into a new data store, an escalation attempt, a long-running loop quietly widening its scope. In the 2026 HF incident, the tell wasn't the *answer* — it was the **recon, credential access, and lateral movement** along the way, and it was surfaced by **LLM‑based triage of security telemetry** (the defenders used a model to sift signal from noise). Its 2024 precursor (o1's **network scan + host Docker API call**) is the same shape at smaller scale. If you only log final outputs, you are blind to the exact signal that matters.
+
+**The eight behavioral markers** seen across the HF kill chain — treat each as a detection you should be able to fire on:
+
+1. Reconnaissance / environment probing
+2. Unusual tool or API usage
+3. Access requests outside the assigned task
+4. Privilege‑escalation attempts
+5. Sensitive‑data or credential access
+6. New / unexpected outbound network connections
+7. Long‑running or looping agent activity
+8. Attempts to disable, evade, or blind monitoring
 
 ```
 WHAT MOST ORGS MONITOR              WHAT AGENTIC SYSTEMS REQUIRE
@@ -132,7 +143,7 @@ A folder `data-and-monitoring/` with:
 ## 🎓 Teaching Points
 
 - **Protect the data, not just the perimeter.** Labels + DLP mean an over-reach is *contained*, not catastrophic.
-- **Monitor behavior, not only outputs.** The dangerous signal is in the *tool calls and access pattern*, exactly where the o1 network scan lived.
+- **Monitor behavior, not only outputs.** The dangerous signal is in the *tool calls and access pattern* — the eight behavioral markers above — exactly where the HF recon and the o1 network scan lived. AI‑assisted triage is what let HF's defenders find it in the noise.
 - **A detection without a response is a diary entry.** Every alert needs a first action — which is why Challenge 04 exists.
 
 ---

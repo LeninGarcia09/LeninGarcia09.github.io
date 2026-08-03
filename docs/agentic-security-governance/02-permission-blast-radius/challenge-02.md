@@ -25,7 +25,7 @@ You are brought in to answer: *"If this agent behaved unexpectedly, what could i
 
 ## The Core Problem: Capability = Identity × Access × Tools × Connected Systems
 
-An agent's real power is not its model — it's the **union of everything its identity can reach.** The o1 incident is a permission story too: the eval identity could see the **host network and Docker daemon**, so a blocked task became a host-level action. Remove that reachability and the "unintended path" simply doesn't exist.
+An agent's real power is not its model — it's the **union of everything its identity can reach.** The 2026 HF incident is a permission and **reachability** story: once the agent defeated the egress **proxy**, its sandbox could reach the open internet and then a third party's production clusters. Governed, identity‑aware egress (deny‑by‑default, ZTNA) would have meant the "unintended path" had **nowhere to go**. Remove the reachability and the exploit chain simply doesn't exist.
 
 ```
 BLAST RADIUS = everything the agent's identity can reach
@@ -49,8 +49,9 @@ Agent → CRM (read, own-region) · Tickets (create only) · [no finance] · [no
 | **Just-Enough / Just-in-Time access** | "For how long / how much?" | **PIM** (Privileged Identity Management) | Time-bound tokens, STS session credentials |
 | **Conditional Access** | "Under what conditions?" | Entra **Conditional Access** policies | Context-aware access, policy-as-code |
 | **Resource segmentation** | "What's even reachable?" | Network isolation, private endpoints, per-env boundaries | VPC/subnet isolation, no ambient egress |
+| **Identity‑governed egress** | "Where may it connect *out*?" | **Entra Global Secure Access** (identity‑based SWG, ZTNA, Universal Conditional Access) | Identity‑aware egress proxy / ZTNA, deny‑by‑default outbound |
 
-**Decision:** One **dedicated identity per agent**, **scoped RBAC**, **JIT elevation via PIM** for anything privileged, **Conditional Access** conditions, and **deny-by-default network egress**.
+**Decision:** One **dedicated identity per agent**, **scoped RBAC**, **JIT elevation via PIM** for anything privileged, **Conditional Access** conditions, **deny-by-default network egress**, and **identity‑governed egress** so a sandbox breakout has nowhere to reach.
 </details>
 
 ---
@@ -137,7 +138,7 @@ A folder `permission-blast-radius/` with:
 
 - **Treat every agent like a digital employee:** unique identity, least privilege, and an offboarding (revocation) plan on day one.
 - **Limit blast radius *before* an incident** — it is the cheapest control and the one you'll wish you had after.
-- **Reachability is the vulnerability.** The o1 host access and Ceiba's outbound email are the same lesson: if it can't reach it, it can't misuse it.
+- **Reachability is the vulnerability.** The HF sandbox egress breakout and Ceiba's outbound email are the same lesson: if it can't reach it, it can't misuse it.
 
 ---
 
