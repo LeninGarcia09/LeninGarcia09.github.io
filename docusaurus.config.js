@@ -96,6 +96,7 @@ const config = {
               { type: 'docSidebar', sidebarId: 'foundrySkillSidebar', label: '🤖 Azure AI Foundry + Hosted Agents' },
               { type: 'docSidebar', sidebarId: 'responsibleAiSidebar', label: '⚖️ Responsible AI & Governance' },
               { type: 'docSidebar', sidebarId: 'agenticReliabilitySidebar', label: '🔬 Agentic Reliability' },
+              { type: 'docSidebar', sidebarId: 'agenticSecuritySidebar', label: '🛡️ Agentic Security & Governance' },
             ],
           },
           {
@@ -144,6 +145,7 @@ const config = {
               { label: '🤖 Azure AI Foundry + Hosted Agents', to: '/docs/azure-ai-foundry/overview' },
               { label: '⚖️ Responsible AI & Governance', to: '/docs/responsible-ai/overview' },
               { label: '🔬 Agentic Reliability', to: '/docs/agentic-reliability/overview' },
+              { label: '🛡️ Agentic Security & Governance', to: '/docs/agentic-security-governance/overview' },
               { label: '🏗️ AI Architecture + Responsible AI', to: '/docs/ai-architecture-rai/overview' },
             ],
           },
