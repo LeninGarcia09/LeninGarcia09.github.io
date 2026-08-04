@@ -80,7 +80,7 @@ The difference between "uses AI" and "leads AI transformation" is what separates
 - Target-role/company list with matched keywords
 - Interview narrative + STAR stories + a published POV piece
 
-:::tip This is the payoff
+:::tip[This is the payoff]
 Every artifact from Weeks 1-28 becomes proof of work. You're not claiming AI fluency — you're demonstrating it with tangible executive deliverables.
 :::
 

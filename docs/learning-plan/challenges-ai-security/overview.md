@@ -7,7 +7,7 @@ title: "Track de Retos — Seguridad de IA Aplicada"
 
 > **Vendor-neutral. Gratis. Práctico.** Cuatro laboratorios que convierten tu experiencia en ciberseguridad en **evidencia de portafolio** para roles de Seguridad y Gobernanza de IA — sin depender de ningún proveedor.
 
-:::info Por qué existe este track
+:::info[Por qué existe este track]
 Las ofertas de trabajo en seguridad de IA (AI Security Engineer, Detection Engineer, Especialista en Seguridad de IA, Consultor de Seguridad) piden una cosa por encima de todo: **haberlo hecho, no solo estudiado**. Cada reto aquí produce un **artefacto verificable** (un reporte, un mapeo de amenazas, un assessment) que puedes publicar en GitHub y explicar en una entrevista. Todas las herramientas son **de código abierto y gratuitas**.
 :::
 
@@ -35,7 +35,7 @@ Cada reto está anclado a responsabilidades reales de ofertas actuales de seguri
 | "Requisitos de seguridad de IA, cumplimiento (EU AI Act, NIST AI RMF), gobernanza y ética" | Reto 3 |
 | "Identificación y clasificación de datos sensibles (DLP, PII), protección de datos" | Reto 4 |
 
-:::tip Regla de oro del portafolio
+:::tip[Regla de oro del portafolio]
 Un reto no está "terminado" hasta que cumple la [rúbrica de capstone](../methodology-best-practices#rúbrica-de-capstone-calidad-hiring-ready): README profesional, reproducible, diagrama, decisiones/trade-offs, y una demo de 5 minutos que puedas explicar sin notas.
 :::
 

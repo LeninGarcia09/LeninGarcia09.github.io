@@ -7,7 +7,7 @@ title: "Reto 4 — Detección de PII (DLP) con Presidio"
 
 > **Herramienta:** [Presidio](https://github.com/data-privacy-stack/presidio) (open source, MIT) · **Marcos:** GDPR / LFPDPPP · **Tiempo:** 3–4 h
 
-:::tip Qué vas a construir
+:::tip[Qué vas a construir]
 Un **pipeline de clasificación de datos**: detecta datos personales (PII) en texto — nombres, correos, teléfonos, tarjetas, CURP/RFC — y los **anonimiza** automáticamente. Es el corazón de un programa de DLP y clasificación de datos.
 :::
 
@@ -76,7 +76,7 @@ Un repositorio `pii-dlp-pipeline/` con:
 - [ ] Añadiste **1 reconocedor personalizado** local (RFC/CURP/CLABE).
 - [ ] Explicaste el vínculo con **GDPR o LFPDPPP** en el README.
 
-:::warning Usa datos ficticios
+:::warning[Usa datos ficticios]
 Nunca proceses PII real de personas sin base legal y consentimiento. Para este reto usa **datos sintéticos/ficticios** que tú generes.
 :::
 

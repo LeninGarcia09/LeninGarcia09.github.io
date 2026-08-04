@@ -15,7 +15,7 @@ Al completar esta fase:
 - Comparativa de **agentes** con trazas y criterios de selección
 - 3 repos con README profesional listos para el **Gate CP2 (Semana 12)**
 
-:::tip Regla de la fase
+:::tip[Regla de la fase]
 "Proof over study": cada semana cierra con evidencia publicada (repo, benchmark o write-up). Ver [Metodología](../methodology-best-practices).
 :::
 

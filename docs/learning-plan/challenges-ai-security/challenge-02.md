@@ -7,7 +7,7 @@ title: "Reto 2 — Red-teaming de IA con PyRIT"
 
 > **Herramienta:** [PyRIT](https://github.com/Azure/PyRIT) (open source, MIT) · **Framework:** [MITRE ATLAS](https://atlas.mitre.org/) · **Tiempo:** 4–5 h
 
-:::tip Qué vas a construir
+:::tip[Qué vas a construir]
 Un **informe de red-team** de IA: usas PyRIT para automatizar ataques adversariales contra un modelo y luego **mapeas cada técnica a MITRE ATLAS** (el "ATT&CK de la IA"). Es el artefacto que buscan los roles de *threat hunting* y *detection engineering* con IA.
 :::
 
@@ -84,7 +84,7 @@ Un repositorio `ai-red-team/` con:
 - [ ] Incluiste una **contramedida** por técnica (mentalidad de defensor, no solo atacante).
 - [ ] El informe distingue *ataque exitoso* de *ataque bloqueado por el modelo*.
 
-:::warning Ética y legalidad
+:::warning[Ética y legalidad]
 Solo contra modelos propios o autorizados. El red-teaming no autorizado a sistemas de terceros es ilegal y puede constituir delito.
 :::
 

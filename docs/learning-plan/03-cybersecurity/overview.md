@@ -7,11 +7,11 @@ title: "Fase 3 — Ciberseguridad Moderna"
 
 > **Objetivo:** Capitalizar la experiencia previa en informática forense y llevarla al nivel de ciberseguridad moderna con Zero Trust, SOC operations, y preparación para una certificación de seguridad (SC-900 u opción vendor-neutral).
 
-:::info Vendor-neutral por diseño
+:::info[Vendor-neutral por diseño]
 Esta fase usa Microsoft (Sentinel, Entra, SC-900) como **un** ejemplo concreto, pero las competencias son **agnósticas de proveedor**. Donde veas una herramienta Microsoft, tienes una alternativa abierta equivalente (Wazuh/Security Onion para SIEM, Sigma para reglas de detección, OWASP/MITRE para amenazas de IA). Elige según el stack de tu empleador objetivo.
 :::
 
-:::tip 🧪 Aplica lo aprendido: Track de Retos de Seguridad de IA
+:::tip[🧪 Aplica lo aprendido: Track de Retos de Seguridad de IA]
 Los 4 laboratorios del **[Track de Retos: Seguridad de IA Aplicada](../challenges-ai-security/overview)** (Garak, PyRIT, Presidio; OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF, ISO 42001) convierten esta fase en **evidencia de portafolio** — exactamente lo que piden roles como AI Security Engineer, Detection Engineer y Especialista en Seguridad de IA.
 :::
 
@@ -190,7 +190,7 @@ Consolidar conocimientos y obtener la certificación SC-900.
   - Microsoft security solutions capabilities (25-30%)
   - Microsoft compliance solutions capabilities (25-30%)
 
-:::tip Alternativas vendor-neutral a SC-900
+:::tip[Alternativas vendor-neutral a SC-900]
 SC-900 es una excelente puerta de entrada (barata, en español), pero **no es obligatoria**. Si tu empleador objetivo no es Microsoft-céntrico, considera **ISC2 CC** (examen gratuito vía el programa "1M Certified in Cybersecurity") o **CompTIA Security+** como credencial de seguridad vendor-neutral. Para el ángulo de **seguridad de IA** específicamente, tu diferenciador son los artefactos del [Track de Retos de Seguridad de IA](../challenges-ai-security/overview) + dominio de OWASP LLM Top 10, MITRE ATLAS y NIST AI RMF.
 :::
 

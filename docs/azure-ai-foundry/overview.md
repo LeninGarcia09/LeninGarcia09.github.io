@@ -11,7 +11,7 @@ title: Azure AI Foundry + Hosted Agents
 
 ---
 
-:::tip What You'll Build
+:::tip[What You'll Build]
 Production-grade AI architectures grounded in real enterprise constraints. Every challenge starts from a customer scenario — the kind you'll encounter in actual customer engagements.
 :::
 
@@ -72,7 +72,7 @@ Hosted Agents are the **enterprise-grade, code-first** option. Key facts every a
 | **Basic** | Microsoft manages | Public | Dev/test only |
 | **Standard** | Customer BYO (Storage + Key Vault + Search) | Private endpoints available | **All enterprise workloads** |
 
-:::danger Always Use Standard Mode for Enterprise
+:::danger[Always Use Standard Mode for Enterprise]
 Basic mode gives Microsoft access to your conversation data and artifacts. Any customer with data residency, HIPAA, PCI, or EU AI Act requirements **must** use Standard mode.
 :::
 

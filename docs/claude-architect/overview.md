@@ -16,7 +16,7 @@ slug: /claude-architect/overview
 
 This certification validates your ability to **design, build, and operate production-grade agentic AI systems** using Claude. Unlike generic AI certs, it tests architectural reasoning — *why* certain patterns beat others, not just *what* they are.
 
-:::warning Verified facts & official sources (last checked 2026-07-22)
+:::warning[Verified facts & official sources (last checked 2026-07-22)]
 The **Claude Certification Program is an official Anthropic program** (launched March 12, 2026), delivered with **Pearson VUE**, with preparation via **Anthropic Academy** (free self-paced courses) and the **Anthropic Partner Academy**, and digital badges through **Credly**. It offers three roles — **Practitioner, Architect, and Developer** — and counts toward Claude Partner Network standing.
 
 - Program overview: [Claude Certification Program (Pearson VUE)](https://www.pearsonvue.com/us/en/anthropic.html)
@@ -42,7 +42,7 @@ This guide is split into sections. Move through them in order with the **Previou
 | **[⚠️ Key Anti-Patterns](./anti-patterns)** | The high-yield table: the distractors that appear in ~60% of questions. |
 | **[🔗 Resources & Sources](./resources)** | Official links, badges, docs, and source verification. |
 
-:::tip Recommended path
+:::tip[Recommended path]
 1. Read this page. → 2. Study the **[5 domains](./domains)**. → 3. Complete the **[official courses](./courses)**. → 4. Follow the **[12-week plan](./study-plan)**. → 5. Memorize the **[anti-patterns](./anti-patterns)** before the exam.
 :::
 

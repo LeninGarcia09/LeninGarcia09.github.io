@@ -5,7 +5,7 @@ title: SC-500 — Cloud and AI Security Engineer Associate
 
 # SC-500: Cloud and AI Security Engineer Associate
 
-:::warning Verified facts (last checked 2026-07-17)
+:::warning[Verified facts (last checked 2026-07-17)]
 Earlier versions of this page incorrectly described SC-500 as "Microsoft Cybersecurity Architect (Expert)" replacing SC-100. **That was wrong.** SC-500 is the **Cloud and AI Security Engineer Associate** certification (Associate/Intermediate level, Security Engineer role). SC-100 (Cybersecurity Architect Expert) is a separate, still-existing credential.
 
 - Official credential page: [Cloud and AI Security Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/cloud-and-ai-security-engineer-associate/)
@@ -41,7 +41,7 @@ The official study guide organizes the exam around these responsibility areas. W
 - Secure **AI solutions**
 - **Manage and monitor** security posture
 
-:::note Why no fixed percentages here
+:::note[Why no fixed percentages here]
 Microsoft periodically re-weights skill domains between exam versions. We deliberately list the verified skill *areas* and link to the live study guide instead of publishing percentages that could go stale. This is intentional curation, not an omission.
 :::
 

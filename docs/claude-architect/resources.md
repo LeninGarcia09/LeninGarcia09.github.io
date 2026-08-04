@@ -23,7 +23,7 @@ sidebar_position: 6
 | Claude Docs — Tool Use | [docs.anthropic.com/tool-use](https://docs.anthropic.com/en/docs/tool-use/overview) |
 | Anthropic GitHub | [github.com/anthropics](https://github.com/anthropics) |
 
-:::note Source & currency
+:::note[Source & currency]
 Program facts across this guide are verified against Anthropic's official Pearson VUE program page, the Anthropic Academy cert page (Claude Certified Architect – Foundations) and Anthropic's Exam Guide v0.2 (30 Jun 2026), checked 2026-07-22. Exam details can change — always confirm on the official pages before scheduling. The 12-week plan and practice-test counts in this guide are a **study aid**, not official exam specifications.
 :::
 

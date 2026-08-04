@@ -6,7 +6,7 @@ sidebar_position: 6
 
 # Sources & Verification
 
-:::info Why this page exists
+:::info[Why this page exists]
 A learning plan is only trustworthy if its recommendations are **real, current, and independently verifiable**. This page documents every program, certification, and framework referenced in this section, with links to **primary sources** so a reader, sponsor, CEO, or Board can confirm them directly.
 :::
 
@@ -38,7 +38,7 @@ A learning plan is only trustworthy if its recommendations are **real, current, 
 |---------------|----------|-----------------|----------------|
 | AI-900: Azure AI Fundamentals | Microsoft | Real & current; skills measured as of May 2, 2025; non-coding | [learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/) |
 
-:::warning Deliberately not recommended for this profile
+:::warning[Deliberately not recommended for this profile]
 **AI-102 (Azure AI Engineer Associate)** is real and current, but the official skills page confirms it targets **software developers** using **Python/C#**. It is the wrong altitude for a VP of Business Development and is intentionally excluded. Source: [learn.microsoft.com — Azure AI Engineer](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/)
 :::
 
@@ -64,7 +64,7 @@ Used to ground use cases in this person's actual domain (mining, heavy industry,
 | Accenture — "From Explore to Ore" | Industry report | AI in mineral exploration cycle | [accenture.com](https://www.accenture.com/content/dam/accenture/final/accenture-com/document-3/Accenture-From-Explore-To-Ore.pdf) |
 | GlobalData — AI in Mining: Strategic Intelligence | Market report | Use-case taxonomy and forecasts | [globaldata.com](https://www.globaldata.com/store/report/ai-in-mining-theme-analysis/) |
 
-:::note Verify before citing to executives
+:::note[Verify before citing to executives]
 Consulting/market figures (e.g., spend forecasts, profit numbers) shift year to year. Confirm the latest figure at the source before quoting it in a Board deck.
 :::
 
@@ -86,7 +86,7 @@ Verified free options for building the same executive AI literacy at zero or low
 | Anthropic Academy | Anthropic | **Free** | Varies | [anthropic.com/learn](https://www.anthropic.com/learn) |
 | AI RMF Playbook & Roadmap | NIST | **Free** | N/A | [nist.gov](https://www.nist.gov/itl/ai-risk-management-framework) |
 
-:::tip For someone between roles
+:::tip[For someone between roles]
 Start with the **free-audit Wharton AI for Business** specialization — it covers strategy, applications, and governance with the same faculty caliber as the paid programs, at no cost. Add **Elements of AI** and **Google AI Essentials** for free certificates you can list on LinkedIn.
 :::
 

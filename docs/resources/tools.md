@@ -133,6 +133,6 @@ Tools for building **production-grade agents** that are auditable, deterministic
 
 ---
 
-:::tip Suggest a Tool
+:::tip[Suggest a Tool]
 Missing something useful? [Open an issue](https://github.com/LeninGarcia09/LeninGarcia09.github.io/issues) or email [lesalgad@microsoft.com](mailto:lesalgad@microsoft.com).
 :::

@@ -115,6 +115,6 @@ Essential research papers every AI Solution Architect should know when designing
 
 ---
 
-:::tip Suggest an Article
+:::tip[Suggest an Article]
 Read something worth sharing? [Open an issue](https://github.com/LeninGarcia09/LeninGarcia09.github.io/issues) with the link and a sentence on why it belongs here.
 :::

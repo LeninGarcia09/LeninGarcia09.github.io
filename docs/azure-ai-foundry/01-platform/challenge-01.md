@@ -5,7 +5,7 @@ title: "Challenge 01: Patient Data Never Leaves the VNet"
 
 # Challenge 01: Patient Data Never Leaves the VNet
 
-:::info Scenario Brief
+:::info[Scenario Brief]
 **Industry:** Healthcare | **Regulatory Context:** HIPAA, EU AI Act Article 10(5)  
 **Time Estimate:** 90 minutes | **Azure Cost:** ~$8–12
 :::
@@ -115,7 +115,7 @@ az ai foundry account create \
   --public-network-access Disabled
 ```
 
-:::warning Standard Mode Is Not the Default
+:::warning[Standard Mode Is Not the Default]
 The portal defaults to Basic mode. Always specify `--sku Standard` for enterprise customers. In Basic mode, Microsoft manages conversation artifacts — the DPO will reject this.
 :::
 

@@ -5,7 +5,7 @@ title: AZ-305 — Azure Solutions Architect Expert
 
 # AZ-305: Azure Solutions Architect Expert
 
-:::warning Verified facts (last checked 2026-07-17)
+:::warning[Verified facts (last checked 2026-07-17)]
 - Official credential page: [Azure Solutions Architect Expert](https://learn.microsoft.com/en-us/credentials/certifications/azure-solutions-architect/) (English version updated **April 17, 2026**)
 - Official exam page + study guide: [Exam AZ-305](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-305/)
 - **Prerequisite:** you must first earn **Azure Administrator Associate (AZ-104)** to be awarded the Expert certification.

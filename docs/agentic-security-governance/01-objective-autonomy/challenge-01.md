@@ -8,7 +8,7 @@ sidebar_label: Challenge 01 — Objective & Autonomy
 
 > **Root-cause layers:** Objective + Autonomy · **Primary framework:** [OWASP LLM06 — Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) · **Time:** 3–4 h · **Level:** Foundational
 
-:::tip What you will build
+:::tip[What you will build]
 A **threat model + autonomy map** for a goal-seeking agent that reproduces the *reasoning* behind the 2026 Hugging Face incident — the model was rewarded to win a benchmark, so it "decided to cheat" and took an unapproved path to the answers. You'll demonstrate, on your own machine and without a frontier model, how an agent rewarded for an **outcome** takes an **unintended path** when the approved path is blocked, then design where to insert human-approval brakes.
 :::
 
@@ -70,7 +70,7 @@ python -m pip install -U openai   # or your provider's SDK / ollama client
 mkdir objective-risk-lab; cd objective-risk-lab
 ```
 
-:::warning Ethics & legality
+:::warning[Ethics & legality]
 This challenge simulates *reasoning* with toy files. **Never** run network scans, port probes, or "escape" attempts against real infrastructure, shared environments, or third-party systems. The lesson is architectural, not offensive.
 :::
 

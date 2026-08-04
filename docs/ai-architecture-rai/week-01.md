@@ -5,7 +5,7 @@ title: "Week 1: RAI Foundations for Architects"
 
 # Week 1: RAI Foundations for Architects
 
-:::info Week Overview
+:::info[Week Overview]
 **Objective:** Build the mental model for RAI as an architectural discipline — not a compliance checkbox applied at the end.  
 **Time Estimate:** 8–10 hours  
 **Deliverable:** RAI Architecture Lens — a 1-page reference card mapping each RAI principle to design-time questions
@@ -95,7 +95,7 @@ MINIMAL RISK — No obligations
 
 ## Hands-On Exercise
 
-:::tip Exercise — Gap Analysis Against NIST AI RMF
+:::tip[Exercise — Gap Analysis Against NIST AI RMF]
 Take an AI system you have previously designed or reviewed. Map it against the four NIST AI RMF functions:
 
 1. **Govern**: Is there a documented policy for this system? Who owns it?

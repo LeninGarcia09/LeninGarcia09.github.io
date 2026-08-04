@@ -7,7 +7,7 @@ title: "AI Solution Architect — Responsible AI (26 Semanas)"
 
 > **Programa intensivo de 26 semanas (~9 horas/semana)** para posicionarte como **AI Solution Architect con foco en Responsible AI**: llevar soluciones de AI de piloto a producción con arquitectura sólida, gobernanza y adopción medible en negocio, con evidencia técnica publicable.
 
-:::info Cómo se diferencia de los otros dos planes
+:::info[Cómo se diferencia de los otros dos planes]
 Este es uno de tres planes del sitio. Para evitar confusión:
 - 🛡️ **[AI Security Professional (9 meses)](../learning-plan/overview)** — reempleo **vendor-neutral** en AI/seguridad (gratis primero, cualquier plataforma).
 - 🧠 **[Executive AI Leadership Plan](../executive-ai-leadership/overview)** — liderazgo ejecutivo de AI.
@@ -51,7 +51,7 @@ Este es uno de tres planes del sitio. Para evitar confusión:
 4. **GitHub Copilot (GH-300)** (quick win)
 5. **AI-200** - Azure AI Cloud Developer Associate (opcional, segun necesidad en loops activos)
 
-:::tip Antes de empezar: lee estas dos paginas
+:::tip[Antes de empezar: lee estas dos paginas]
 Todo el portafolio de certificaciones AI de Microsoft esta rotando en 2026 (betas y reemplazos). Para que este plan sea confiable:
 
 - 📚 [**Fuentes y Verificacion v4**](./sources-and-verification) — cada certificacion, framework y recurso con enlace a su fuente primaria oficial.

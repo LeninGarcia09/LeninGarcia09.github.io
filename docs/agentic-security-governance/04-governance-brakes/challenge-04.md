@@ -8,7 +8,7 @@ sidebar_label: Challenge 04 — Governance & Brakes
 
 > **Root-cause layers:** Autonomy + all · **Frameworks:** [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) (Govern/Manage) · [Microsoft Agentic AI Taxonomy](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents/) · **Time:** 3–4 h · **Level:** Capstone
 
-:::tip What you will build
+:::tip[What you will build]
 The **brakes** every autonomous system needs — human-approval gates, a **kill-switch runbook**, and access-revocation processes — plus the capstone **"Build a Secure AI Agent"** exercise and a **board-ready executive readout**. This challenge integrates the deliverables from 01–03 into a single governance package.
 :::
 
@@ -50,7 +50,7 @@ Detect (Ch03) ─▶ Decide (policy) ─▶ Act
 
 **Decision:** Define, in advance, **thresholds** that trigger each brake and the **owner** who pulls it. A brake with no owner and no threshold is decoration. And you can only brake an agent you can **see** — every agent needs a registered identity and owner *before* it runs.
 
-:::note Emerging worked example — hold loosely
+:::note[Emerging worked example — hold loosely]
 Microsoft **Agent 365** and **Entra Agent ID** are early/directional capabilities for treating each agent as a governed digital identity (registry, least privilege, trajectory, kill switch). The *principle* — per‑agent identity + registry + revocation — is vendor‑neutral; the specific product surface is still maturing.
 :::
 </details>

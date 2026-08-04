@@ -79,7 +79,7 @@ A 5-page executive brief containing:
 4. **Risk lens** — key risks framed in NIST AI RMF language
 5. **Recommendation** — what to pilot first, and why
 
-:::tip Reuse this artifact
+:::tip[Reuse this artifact]
 This becomes the input to Phase 2's account playbook and the First 90 Days plan. It's also a portfolio piece you can discuss in executive interviews.
 :::
 

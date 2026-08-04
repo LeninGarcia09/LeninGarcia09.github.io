@@ -18,7 +18,7 @@ sidebar_position: 3
 | [Model Context Protocol: Advanced Topics](https://anthropic.skilljar.com/model-context-protocol-advanced-topics) | Auth, remote servers, error handling, scale | 2 |
 | [Introduction to Subagents](https://anthropic.skilljar.com/introduction-to-subagents) | Context isolation, `/agents`, structured output, tool scoping, anti-patterns | 1 |
 
-:::tip Exam practice (community resource, unofficial)
+:::tip[Exam practice (community resource, unofficial)]
 [claudecertificationguide.com](https://claudecertificationguide.com/) is an **independent, free** resource (not affiliated with Anthropic) with a diagnostic, 30 lessons, 240+ practice questions, and a **full mock exam**. Great for simulating the exam — but always confirm the official facts on Anthropic Academy before scheduling.
 :::
 

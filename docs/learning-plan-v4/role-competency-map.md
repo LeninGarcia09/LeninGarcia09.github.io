@@ -5,7 +5,7 @@ title: "Marco de Competencias del AI Solution Architect + Benchmark Externo"
 
 # Marco de Competencias del AI Solution Architect + Benchmark Externo
 
-:::info Para qué sirve esta página
+:::info[Para qué sirve esta página]
 Contrasta este plan de 26 semanas contra los **marcos de referencia más reputados** para el rol (Azure Well-Architected for AI, ruta oficial de Solution Architect de Microsoft, AWS Generative AI, Google Cloud ML Engineer, el libro *AI Engineering* de Chip Huyen, DeepLearning.AI y roadmap.sh). Sirve para: (1) confirmar que el plan cubre lo que el mercado espera, (2) hacer **transparentes los gaps** y cómo cerrarlos, y (3) auto-evaluar tu nivel por competencia. Todos los enlaces externos están verificados.
 :::
 
@@ -30,7 +30,7 @@ Cada competencia indica **dónde la construye este plan** y **qué fuente reputa
 | 9 | **LLMOps / operación en producción** (CI/CD, serving, monitoreo, drift) | Fase 3 (introducido) · rúbrica capstone | [Google Cloud ML Engineer](https://cloud.google.com/learn/certification/machine-learning-engineer) | 🟡 |
 | 10 | **Costo / FinOps de IA** (economía de tokens, right-sizing de inferencia) | Fase 3-4 (transversal) | [Azure Well-Architected for AI — costo](https://learn.microsoft.com/es-es/azure/well-architected/ai/get-started) | 🟡 |
 
-:::tip Cómo leer los estados 🟡
+:::tip[Cómo leer los estados 🟡]
 Los estados 🟡 (competencias 9 y 10) son **áreas de profundización deliberada**: el plan las introduce en contexto, pero para roles senior conviene reforzarlas con el recurso externo indicado. No son omisiones — son el siguiente nivel de madurez.
 :::
 

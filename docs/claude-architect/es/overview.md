@@ -17,7 +17,7 @@ sidebar_position: 1
 
 Esta certificación valida tu capacidad de **diseñar, construir y operar sistemas de IA agéntica de nivel producción** con Claude. A diferencia de certificaciones genéricas de IA, evalúa el razonamiento arquitectónico — *por qué* ciertos patrones superan a otros, no solo *qué* son.
 
-:::warning Datos verificados y fuentes oficiales (última revisión 2026-07-22)
+:::warning[Datos verificados y fuentes oficiales (última revisión 2026-07-22)]
 El **Claude Certification Program es un programa oficial de Anthropic** (lanzado el 12 de marzo de 2026), impartido con **Pearson VUE**, con preparación vía **Anthropic Academy** (cursos gratuitos self-paced) y la **Anthropic Partner Academy**, y badges digitales vía **Credly**. Ofrece tres roles — **Practitioner, Architect y Developer** — y cuenta para el estatus en el Claude Partner Network.
 
 - Resumen del programa: [Claude Certification Program (Pearson VUE)](https://www.pearsonvue.com/us/en/anthropic.html)
@@ -43,7 +43,7 @@ La guía está dividida en secciones. Recórrelas en orden con los botones **Ant
 | **[⚠️ Anti-Patrones Clave](./anti-patterns)** | La tabla de alto rendimiento: los distractores que aparecen en ~60% de las preguntas. |
 | **[🔗 Recursos y Fuentes](./resources)** | Enlaces oficiales, badges, docs y verificación de fuentes. |
 
-:::tip Ruta recomendada
+:::tip[Ruta recomendada]
 1. Lee esta página. → 2. Estudia los **[5 dominios](./domains)**. → 3. Completa los **[cursos oficiales](./courses)**. → 4. Sigue el **[plan de 12 semanas](./study-plan)**. → 5. Memoriza los **[anti-patrones](./anti-patterns)** antes del examen.
 :::
 

@@ -5,7 +5,7 @@ title: "Week 2: Architecture Patterns + RAI by Design"
 
 # Week 2: Architecture Patterns + RAI by Design
 
-:::info Week Overview
+:::info[Week Overview]
 **Objective:** Learn the core AI architecture patterns (RAG, agentic, tool-use) and understand where RAI controls must be embedded structurally in each.  
 **Time Estimate:** 8–10 hours  
 **Deliverable:** RAI Threat Model Template — a reusable diagram with annotated risk layers for RAG, agentic, and tool-use patterns
@@ -116,7 +116,7 @@ These are **architectural failures**, not application bugs:
 
 ## Hands-On Exercise
 
-:::tip Exercise — Annotate a RAG Architecture
+:::tip[Exercise — Annotate a RAG Architecture]
 Draw a RAG architecture diagram. For each component (data ingestion, embedding, retrieval, generation, output):
 
 1. Label the **RAI risk** at that layer (use OWASP LLM Top 10 as reference)

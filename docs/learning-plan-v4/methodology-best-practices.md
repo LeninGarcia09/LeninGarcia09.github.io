@@ -5,7 +5,7 @@ title: "Metodología y Mejores Prácticas v4"
 
 # Metodología y Mejores Prácticas (v4)
 
-:::info Para qué sirve esta página
+:::info[Para qué sirve esta página]
 Explica **por qué** el plan v4 está diseñado como está: por qué "prueba sobre estudio", por qué se acopla cada certificación a un proyecto, y cómo se mide el progreso. Está construida sobre marcos públicos y evidencia (WEF 2025, CCL 70-20-10, ciencia del aprendizaje y programas de referencia de Google/AWS/IBM). Verifica cada fuente en [Fuentes y Verificación](./sources-and-verification).
 :::
 
@@ -35,7 +35,7 @@ El modelo [70-20-10](https://www.ccl.org/articles/leading-effectively-articles/7
 - **20% — Comunidad y revisión (social).** Aquí está el mayor apalancamiento y el más descuidado: revisión de código/arquitectura con pares, participación en comunidades técnicas (Microsoft Tech Community, GitHub, discords de IA), pedir *design review* de tus arquitecturas, escribir *post-mortems* públicos. **Este 20% es lo que convierte un portafolio en reputación.**
 - **10% — Formación formal.** Certificaciones (AI-103, AZ-305, SC-500, GH-300, AI-200) y cursos. Necesario para señalizar y estructurar, pero **no suficiente** por sí solo.
 
-:::tip El error más común en perfiles técnicos
+:::tip[El error más común en perfiles técnicos]
 Sobre-invertir en el 10% (acumular cursos y certificados) y descuidar el 20% (comunidad, revisión por pares, visibilidad). Un ingeniero con 3 certificados y cero presencia técnica pública compite peor que uno con 1 certificado, un repo excelente y una red que conoce su trabajo. **Protege deliberadamente el 20%.**
 :::
 
@@ -109,7 +109,7 @@ El artefacto final debe pasar la prueba del reclutador técnico. Un capstone v4 
 - [ ] **Narrativa de negocio** — qué problema resuelve y para quién, no solo qué tecnología usa.
 - [ ] **Credencial que lo respalda** (AI-103 / AZ-305 / SC-500 / GH-300 según la fase).
 
-:::tip La prueba definitiva
+:::tip[La prueba definitiva]
 Si un ingeniero senior puede clonar tu repo, correr tu eval y entender tus decisiones en 15 minutos, tienes un portafolio. Si solo tienes un certificado y un slide, tienes una promesa. **v4 optimiza para lo primero.**
 :::
 

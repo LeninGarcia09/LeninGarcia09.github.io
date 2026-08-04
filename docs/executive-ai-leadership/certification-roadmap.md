@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # Executive AI Programs & Credentials Roadmap
 
-:::info Aligned to profile, not to generic IT tracks
+:::info[Aligned to profile, not to generic IT tracks]
 This roadmap is built for a **Global Business Development Executive** in **capital-intensive industrial and mining markets** — not for a software engineer. It deliberately excludes developer certifications (e.g., AI-102, which is a Python/C# coding exam) because they do not match the role, the seniority, or the value this person creates. See [Sources & Verification](./sources-and-verification.md) for how every item below was validated.
 :::
 
@@ -30,7 +30,7 @@ Verified, trusted, and free (or free-to-audit). Ideal if you're between roles an
 | 4 | **Elements of AI** | University of Helsinki | Free (+ free certificate) | Solid foundations with a free certificate |
 | 5 | **Microsoft Learn AI paths** | Microsoft | Free | Free applied-skills credentials and AI-900 prep |
 
-:::note Free-first strategy
+:::note[Free-first strategy]
 Complete the free path first. Only invest in a paid executive program (Tier 1) once you're employed or have a clear ROI — e.g., an employer willing to sponsor it.
 :::
 
@@ -38,7 +38,7 @@ Complete the free path first. Only invest in a paid executive program (Tier 1) o
 
 ## Tier 1 — Executive AI Strategy Programs (Primary Path)
 
-:::tip Budget-conscious? Start free.
+:::tip[Budget-conscious? Start free.]
 Every paid program below has a **verified free alternative** in the new [Free & Low-Cost Path](#tier-0--free--low-cost-path-start-here) section. If you're between roles, start there — the free-audit **Wharton AI for Business** specialization covers strategy, applications, and governance at no cost.
 :::
 

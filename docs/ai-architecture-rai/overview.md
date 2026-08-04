@@ -14,7 +14,7 @@ slug: /ai-architecture-rai/overview
 
 ---
 
-:::tip What You'll Build
+:::tip[What You'll Build]
 Four reusable artifacts: a RAI Architecture Lens card, a threat model template for AI architectures, a RAI Architecture Decision Record (ADR) template, and a portfolio of three annotated architecture diagrams with full compliance analysis.
 :::
 
