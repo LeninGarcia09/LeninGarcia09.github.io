@@ -2,14 +2,33 @@
 id: challenge-04
 title: "Desafío 04 — Gobernanza, Frenos e Informe Ejecutivo"
 sidebar_label: Desafío 04 — Gobernanza y Frenos
+description: "Capstone: diseña puertas de aprobación humana, un runbook de kill switch y procesos de revocación de acceso, luego integra 01–03 en un informe ejecutivo listo para junta."
+tags:
+  - challenge
+  - tutorial
+  - agentic-security
+  - governance
+  - capstone
 ---
 
 # Desafío 04 — Gobernanza, Frenos e Informe Ejecutivo
 
-> **Capas de causa raíz:** Autonomía + todo · **Marcos:** [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) (Govern/Manage) · [Microsoft Agentic AI Taxonomy](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents/) · **Tiempo:** 3–4 h · **Nivel:** Capstone
+> **Capas de causa raíz:** Autonomía + todo · **Marcos:** [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) (Govern/Manage) · [Microsoft Agentic AI Taxonomy](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents/) · **⏱ Tiempo:** 3–4 h · **Nivel:** 🔴 Capstone · **Tipo:** 🧪 Laboratorio práctico + 📊 informe ejecutivo
 
-:::tip[Qué construirás]
-Los **frenos** que todo sistema autónomo necesita: puertas de aprobación humana, un **runbook de kill switch** y procesos de revocación de acceso, además del ejercicio capstone **"Build a Secure AI Agent"** y un **informe ejecutivo listo para junta**. Este desafío integra los entregables de 01–03 en un solo paquete de gobernanza.
+:::tip[🎯 Lo que construirás y podrás hacer]
+Los **frenos** que todo sistema autónomo necesita — puertas de aprobación humana, un **runbook de kill switch** y procesos de revocación de acceso — además del ejercicio capstone **"Build a Secure AI Agent"** y un **informe ejecutivo listo para junta**.
+
+Al terminar podrás:
+- **Diseñar** puertas de aprobación que se ubican antes de acciones irreversibles o fuera de alcance.
+- **Escribir** un runbook de kill switch + revocación de acceso que podrías ejecutar bajo presión.
+- **Integrar** los entregables de los Desafíos 01–03 en un solo paquete de gobernanza.
+- **Informar** a una junta sobre el riesgo agéntico y los controles que hacen segura la adopción.
+:::
+
+:::note[📌 Resumen]
+- Todo sistema autónomo necesita **frenos**: puertas de aprobación, un kill switch y revocación — diseñados antes de que los necesites.
+- Este capstone integra 01–03 en un solo paquete de gobernanza y un informe ejecutivo de una página.
+- Entregable: diseño de puertas de aprobación + runbook de kill switch + informe de junta + el ejercicio "Build a Secure AI Agent" completado.
 :::
 
 ---
@@ -106,6 +125,13 @@ Produce un informe de **una página** usando las cuatro conclusiones. Esto es lo
 </details>
 
 ---
+
+:::note[🧪 Verificación de conocimiento]
+Antes de ensamblar el informe, asegúrate de poder responder:
+1. ¿Cuál es la diferencia entre una **puerta de aprobación** y un **kill switch** — y cuándo necesitas cada uno?
+2. ¿Qué debe contener un runbook de kill switch para ser ejecutable *bajo presión* (quién, qué, cómo, verificación)?
+3. ¿Cómo explicarías a una junta que estos frenos **habilitan** la adopción en lugar de bloquearla?
+:::
 
 ## 📦 Entregable
 

@@ -2,14 +2,33 @@
 id: challenge-03
 title: "Desafío 03 — Protección de Datos y Monitoreo en Ejecución"
 sidebar_label: Desafío 03 — Datos y Monitoreo
+description: "Protege los datos incluso después de que un agente obtiene acceso, y diseña monitoreo de comportamiento en ejecución que observa llamadas a herramientas, solicitudes de acceso y escalaciones — no solo las salidas."
+tags:
+  - challenge
+  - tutorial
+  - agentic-security
+  - data-protection
+  - monitoring
+  - intermediate
 ---
 
 # Desafío 03 — Protección de Datos y Monitoreo en Ejecución
 
-> **Capa de causa raíz:** Visibilidad · **Marcos:** Microsoft Purview · Defender/Sentinel · [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) (Measure) · **Tiempo:** 3–4 h · **Nivel:** Intermedio
+> **Capa de causa raíz:** Visibilidad · **Marcos:** Microsoft Purview · Defender/Sentinel · [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) (Measure) · **⏱ Tiempo:** 3–4 h · **Nivel:** 🟡 Intermedio · **Tipo:** 🧪 Laboratorio práctico
 
-:::tip[Qué construirás]
-Dos cosas que faltan en la mayoría de los despliegues de agentes: un **plan de protección de datos** que protege la información *incluso después* de que un agente obtiene acceso, y un **diseño de monitoreo de comportamiento en ejecución** que observa lo que el agente *hace* (llamadas a herramientas, solicitudes de acceso, escalaciones), no solo lo que *dice*.
+:::tip[🎯 Lo que construirás y podrás hacer]
+Dos cosas que faltan en la mayoría de los despliegues de agentes: un **plan de protección de datos** que protege la información *incluso después* de que un agente obtiene acceso, y un **diseño de monitoreo de comportamiento en ejecución** que observa lo que el agente *hace* — no solo lo que *dice*.
+
+Al terminar podrás:
+- **Clasificar y proteger** datos sensibles con etiquetas + DLP para que un exceso quede contenido, no sea catastrófico.
+- **Emitir telemetría de comportamiento estructurada** (llamadas a herramientas, solicitudes de acceso, escalaciones) desde un agente.
+- **Escribir detecciones** que se activen ante excesos y permanezcan en silencio ante actividad normal, cada una mapeada a una función del NIST AI RMF y una primera acción de respuesta.
+:::
+
+:::note[📌 Resumen]
+- La mayoría de las organizaciones monitorean **salidas**; la señal peligrosa está en el **comportamiento** — las llamadas a herramientas y el patrón de acceso — exactamente donde vivieron el reconocimiento de HF y el escaneo de red de o1.
+- Protegerás los datos con etiquetas/DLP, luego instrumentarás el agente para emitir telemetría de comportamiento y escribirás detecciones sobre las que un analista SOC pueda actuar.
+- Entregable: un plan de protección de datos + un diseño de detección de comportamiento de agentes.
 :::
 
 ---
@@ -120,6 +139,13 @@ Para cada detección, anota la función de **NIST AI RMF** que satisface (princi
 
 ---
 
+:::note[🧪 Verificación de conocimiento]
+Antes de continuar, asegúrate de poder responder:
+1. ¿Por qué monitorear **salidas** es insuficiente — qué captura la telemetría de comportamiento que las salidas omiten?
+2. ¿Cuál de los **ocho marcadores de comportamiento** atraparían tus detecciones, y cuál se escaparía?
+3. ¿Por qué "una detección sin respuesta" es solo una entrada de diario — qué hace que una alerta sea accionable?
+:::
+
 ## 📦 Entregable
 
 Una carpeta `data-and-monitoring/` con:
@@ -148,4 +174,9 @@ Una carpeta `data-and-monitoring/` con:
 
 ---
 
-**Siguiente:** [Desafío 04 — Gobernanza, Frenos e Informe Ejecutivo →](../04-governance-brakes/challenge-04.md)
+## ➡️ Siguiente recomendado
+
+| Siguiente | Por qué | Tiempo |
+|------|-----|------|
+| [**Desafío 04 — Gobernanza, Frenos e Informe Ejecutivo**](../04-governance-brakes/challenge-04.md) | Ya puedes *ver* el mal comportamiento; ahora construye los **frenos** y el informe de junta. Capstone. | 3–4 h · 🔴 Capstone |
+| [Descripción general del track — 8 marcadores de comportamiento](../overview.md) | Relee las señales a velocidad de máquina que tus detecciones deben apuntar. | 5 min |

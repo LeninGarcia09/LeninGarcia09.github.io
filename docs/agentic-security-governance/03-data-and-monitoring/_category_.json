@@ -1,4 +1,8 @@
 {
   "label": "Data Protection & Runtime Monitoring",
-  "position": 3
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "agentic-security-governance/data-and-monitoring/challenge-03"
+  }
 }

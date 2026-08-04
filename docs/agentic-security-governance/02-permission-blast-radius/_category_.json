@@ -1,4 +1,8 @@
 {
   "label": "Permission & Blast Radius",
-  "position": 2
+  "position": 2,
+  "link": {
+    "type": "doc",
+    "id": "agentic-security-governance/permission-blast-radius/challenge-02"
+  }
 }

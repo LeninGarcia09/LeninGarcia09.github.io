@@ -2,14 +2,33 @@
 id: challenge-03
 title: "Challenge 03 — Data Protection & Runtime Monitoring"
 sidebar_label: Challenge 03 — Data & Monitoring
+description: "Protect data even after an agent gains access, and design runtime behavior monitoring that watches tool calls, access requests, and escalations — not just outputs."
+tags:
+  - challenge
+  - tutorial
+  - agentic-security
+  - data-protection
+  - monitoring
+  - intermediate
 ---
 
 # Challenge 03 — Data Protection & Runtime Monitoring
 
-> **Root-cause layer:** Visibility · **Frameworks:** Microsoft Purview · Defender/Sentinel · [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) (Measure) · **Time:** 3–4 h · **Level:** Intermediate
+> **Root-cause layer:** Visibility · **Frameworks:** Microsoft Purview · Defender/Sentinel · [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) (Measure) · **⏱ Time:** 3–4 h · **Level:** 🟡 Intermediate · **Type:** 🧪 Hands-on lab
 
-:::tip[What you will build]
-Two things most agent deployments lack: a **data-protection plan** that protects information *even after* an agent gains access, and a **runtime behavior-monitoring design** that watches what the agent *does* (tool calls, access requests, escalations) — not just what it *says*.
+:::tip[🎯 What you'll build & be able to do]
+Two things most agent deployments lack: a **data-protection plan** that protects information *even after* an agent gains access, and a **runtime behavior-monitoring design** that watches what the agent *does* — not just what it *says*.
+
+By the end you'll be able to:
+- **Classify and protect** sensitive data with labels + DLP so an over-reach is contained, not catastrophic.
+- **Emit structured behavior telemetry** (tool calls, access requests, escalations) from an agent.
+- **Write detections** that fire on over-reach and stay quiet on normal activity, each mapped to a NIST AI RMF function and a first response action.
+:::
+
+:::note[📌 TL;DR]
+- Most orgs monitor **outputs**; the dangerous signal is in the **behavior** — the tool calls and access pattern — exactly where the HF recon and the o1 network scan lived.
+- You'll protect the data with labels/DLP, then instrument the agent to emit behavior telemetry and write detections a SOC analyst can act on.
+- Deliverable: a data-protection plan + an agent behavior-detection design.
 :::
 
 ---
@@ -120,6 +139,13 @@ For each detection, note the **NIST AI RMF** function it satisfies (mostly **MEA
 
 ---
 
+:::note[🧪 Knowledge check]
+Before moving on, make sure you can answer:
+1. Why is monitoring **outputs** insufficient — what does behavior telemetry capture that outputs miss?
+2. Which of the **eight behavioral markers** would your detections catch, and which would slip through?
+3. Why is "a detection without a response" only a diary entry — what makes an alert actionable?
+:::
+
 ## 📦 Deliverable
 
 A folder `data-and-monitoring/` with:
@@ -148,4 +174,9 @@ A folder `data-and-monitoring/` with:
 
 ---
 
-**Next:** [Challenge 04 — Governance, Brakes & Executive Readout →](../04-governance-brakes/challenge-04.md)
+## ➡️ Recommended next
+
+| Next | Why | Time |
+|------|-----|------|
+| [**Challenge 04 — Governance, Brakes & Executive Readout**](../04-governance-brakes/challenge-04.md) | You can *see* misbehavior; now build the **brakes** and the board readout. Capstone. | 3–4 h · 🔴 Capstone |
+| [Track overview — 8 behavioral markers](../overview.md) | Re-read the machine-speed tells your detections should target. | 5 min |
