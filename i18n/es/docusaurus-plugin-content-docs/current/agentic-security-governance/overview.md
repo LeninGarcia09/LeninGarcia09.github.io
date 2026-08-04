@@ -49,7 +49,7 @@ Al terminar este track podrás:
 No todos necesitan leer este track de la misma forma. Elige tu rol — tu elección se recuerda y se puede compartir mediante la URL de la página.
 
 <Tabs groupId="reader-role" queryString="role">
-<TabItem value="exec" label="📊 Ejecutivos y Juntas" default>
+<TabItem value="exec" label="📊 Ejecutivos y Líderes" default>
 
 **Tu meta:** entender el riesgo y las decisiones que te corresponden — en ~15 minutos, sin código.
 
