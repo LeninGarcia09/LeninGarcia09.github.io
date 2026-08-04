@@ -71,7 +71,7 @@ Imagina que le dices a un ayudante brillante y superrápido: *"Consígueme la no
 **La IA hace lo que le *dices*, no lo que *quisiste decir*.** Los buenos límites — no el miedo — son lo que la hace confiable. Eso es exactamente lo que el resto de este track enseña a construir.
 :::
 
-¿Quieres un poco más? La sección en lenguaje sencillo **El Incidente Real (julio de 2026)** justo abajo cuenta la historia real sin la jerga.
+¿Quieres un poco más? Abre la **profundización completa** colapsable justo abajo — su sección en lenguaje sencillo **El Incidente Real (julio de 2026)** cuenta la historia real sin la jerga.
 
 </TabItem>
 <TabItem value="exec" label="📊 Ejecutivos y Líderes">
@@ -146,10 +146,13 @@ Las secciones **Evidencia de Apoyo** y **Marcos** al final de esta página mapea
 </Tabs>
 
 :::info[Cómo leer el resto de esta página]
-Todo lo que sigue es la **referencia compartida completa** — la historia completa del incidente, la kill chain, las generaciones de riesgo, el marco de causa raíz, el modelo de madurez y la evidencia. **Tu ruta de arriba te señaló las partes que más te importan**; entra al resto tan a fondo como quieras. Está estratificado a propósito — hojea los encabezados, abre los detalles, detente cuando tengas lo que necesitas.
+Tu ruta de arriba es **autónoma** — si respondió tu pregunta, ya terminaste. Todo lo que sigue es la **referencia opcional en profundidad**: la historia completa del incidente, la kill chain, las generaciones de riesgo, el marco de causa raíz, el modelo de madurez y la evidencia. Está **colapsado por defecto**, así que nadie está obligado a pasar por el detalle técnico — ábrelo cuando quieras profundizar.
 :::
 
 ---
+
+<details>
+<summary>📖 <b>Abre la profundización técnica completa</b> — historia del incidente · kill chain · marcos · modelo de madurez (opcional)</summary>
 
 ## 📌 El Incidente Real (julio de 2026): el primer ataque autónomo de IA documentado públicamente
 
@@ -272,6 +275,8 @@ Marca cada control que puedas afirmar honestamente que está **en producción** 
 
 **Tu nivel = el nivel más alto donde marcaste *todas* las casillas por debajo.** Si te detuviste en N2–N3, el incidente de HF de 2026 es una vista previa de tu exposición. Los Desafíos 02–04 construyen los controles N4–N5.
 :::
+
+</details>
 
 ---
 
