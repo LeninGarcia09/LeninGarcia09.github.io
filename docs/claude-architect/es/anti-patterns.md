@@ -26,15 +26,15 @@ Aparecen como distractores en ~60% de las preguntas. Si los reconoces, eliminas 
 
 ## Consejos de Estudio
 
-:::tip Enfócate en el PORQUÉ
+:::tip[Enfócate en el PORQUÉ]
 El examen evalúa **razonamiento arquitectónico**, no memorización. Entiende por qué hub-and-spoke supera a multi-agente plano. Por qué los hooks superan a los prompts para enforcement. Por qué la revisión multi-pass requiere aislamiento de sesión.
 :::
 
-:::warning Los Anti-Patrones Son Trampas
+:::warning[Los Anti-Patrones Son Trampas]
 Los distractores del examen suelen ser anti-patrones plausibles. Si una respuesta suena como "solo usa un prompt para eso" — probablemente está mal.
 :::
 
-:::info Construye Proyectos Reales
+:::info[Construye Proyectos Reales]
 La experiencia hands-on con el Agent SDK, servidores MCP y Claude Code consolida la comprensión conceptual más rápido que releer notas.
 :::
 

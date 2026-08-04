@@ -46,7 +46,7 @@ client = AIProjectClient(
 )
 ```
 
-:::note Execution Policy (Windows)
+:::note[Execution Policy (Windows)]
 If running PowerShell scripts from this site on Windows, run:
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass

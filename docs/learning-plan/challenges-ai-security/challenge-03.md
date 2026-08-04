@@ -7,7 +7,7 @@ title: "Reto 3 — Gobernanza: NIST AI RMF + ISO 42001"
 
 > **Herramienta:** ninguna — es un **artefacto documental** · **Frameworks:** [NIST AI RMF 1.0](https://www.nist.gov/itl/ai-risk-management-framework) + [ISO/IEC 42001](https://www.iso.org/standard/81230.html) · **Tiempo:** 4–6 h
 
-:::tip Qué vas a construir
+:::tip[Qué vas a construir]
 Un **gap assessment ejecutivo**: tomas una organización (real o ficticia), evalúas su madurez de gobernanza de IA contra NIST AI RMF e ISO/IEC 42001, y entregas un reporte con hallazgos, riesgos y un roadmap. Es exactamente lo que hace un consultor de seguridad de IA o un Especialista en Seguridad de IA en su primer trimestre.
 :::
 
@@ -66,7 +66,7 @@ Un documento `ai-governance-assessment.pdf` (o repo con `.md`) con:
 - [ ] Cada gap tiene **riesgo + acción + plazo + owner**.
 - [ ] El resumen ejecutivo es entendible por un board (sin jerga técnica).
 
-:::info Sin costo
+:::info[Sin costo]
 NIST AI RMF es **gratuito y descargable**. ISO/IEC 42001 es de pago, pero para este reto basta con la estructura pública de la norma y resúmenes oficiales — no necesitas comprarla para practicar.
 :::
 

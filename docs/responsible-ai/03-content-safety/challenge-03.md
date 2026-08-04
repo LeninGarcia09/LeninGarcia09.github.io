@@ -5,7 +5,7 @@ title: "Challenge 03: AI Hiring Tool Flagged for Bias"
 
 # Challenge 03: AI Hiring Tool Flagged for Bias in Three Departments
 
-:::info Scenario Brief
+:::info[Scenario Brief]
 **Industry:** Enterprise HR | **Regulatory Context:** EU AI Act Annex III Sec. 4, EEOC AI Guidance, NIST AI RMF MEASURE 2.5  
 **Time Estimate:** 90 minutes | **Azure Cost:** ~$3–6
 :::

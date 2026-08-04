@@ -5,7 +5,7 @@ title: "Week 3: Microsoft Stack Deep Dive"
 
 # Week 3: Microsoft Stack Deep Dive
 
-:::info Week Overview
+:::info[Week Overview]
 **Objective:** Master RAI architecture in the Azure AI / Copilot / MCP ecosystem and understand how governance integrates structurally at design time.  
 **Time Estimate:** 8–10 hours  
 **Deliverable:** RAI Architecture Decision Record (ADR) Template — standardized format for documenting RAI decisions at design time
@@ -74,7 +74,7 @@ Build evaluations into the deployment pipeline — not run manually:
 | **4: + GenAI RA** | LLM inside any handler, OR generates content, OR escalation-trigger tools | Security + Privacy + GenAI RA |
 | **5: + Restricted Use** | Code execution, healthcare/legal, customer-facing autonomous, cross-tenant | All above + Restricted Use |
 
-:::warning The Row Teams Get Wrong Every Time
+:::warning[The Row Teams Get Wrong Every Time]
 An MCP server with **no AI inside** still requires a GenAI RA if it exposes escalation-trigger tools:
 - `send_email()` / `send_teams_message()` — mass communications at AI agent speed
 - `execute_sql()` with write access — bulk data modification
@@ -129,7 +129,7 @@ The question is: *can an AI agent use this server to cause harm at scale?*
 
 ## Hands-On Exercise
 
-:::tip Exercise — Compliance Gate Analysis
+:::tip[Exercise — Compliance Gate Analysis]
 Design a Copilot-connected AI assistant with three MCP tools:
 1. `search_documents()` — reads SharePoint documents (read-only, internal)
 2. `send_email()` — sends email via M365 Mail (write, external communication)

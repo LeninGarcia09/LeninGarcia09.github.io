@@ -5,7 +5,7 @@ title: "Challenge 02: Agent Hallucinating 20% of the Time in Production"
 
 # Challenge 02: Agent Hallucinating 20% of the Time in Production
 
-:::info Scenario Brief
+:::info[Scenario Brief]
 **Industry:** Insurance / Enterprise | **Regulatory Context:** EU AI Act Art. 13 (Transparency), NIST AI RMF MEASURE 2.5  
 **Time Estimate:** 90 minutes | **Azure Cost:** ~$5–8
 :::

@@ -5,7 +5,7 @@ title: "Challenge 04: Multi-Agent Claims System — Bank Security Review"
 
 # Challenge 04: Multi-Agent Claims System That Survives a Bank Security Review
 
-:::info Scenario Brief
+:::info[Scenario Brief]
 **Industry:** Financial Services | **Regulatory Context:** PCI-DSS, EU AI Act Art. 9, FFIEC AI Guidance  
 **Time Estimate:** 120 minutes | **Azure Cost:** ~$15–20
 :::

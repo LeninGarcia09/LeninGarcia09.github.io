@@ -15,7 +15,7 @@ Manteniendo esta operación durante las 26 semanas:
 - **Seguimiento** sistemático (ningún loop se enfría por olvido)
 - Marca personal que acompaña la evidencia técnica de cada fase
 
-:::tip Regla del motor
+:::tip[Regla del motor]
 Cada semana, sin excepción: **3 outreach nuevos + 5 seguimientos + 1 pieza de visibilidad**. La consistencia gana sobre la intensidad esporádica.
 :::
 

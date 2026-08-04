@@ -7,7 +7,7 @@ title: "Reto 1 — Auditoría de LLM (OWASP Top 10)"
 
 > **Herramienta:** [garak](https://github.com/NVIDIA/garak) (open source, Apache-2.0) · **Framework:** [OWASP Top 10 for LLM Apps](https://genai.owasp.org/llm-top-10/) · **Tiempo:** 3–4 h
 
-:::tip Qué vas a construir
+:::tip[Qué vas a construir]
 Un **reporte de vulnerabilidades** de un LLM: le lanzas sondas automáticas (prompt injection, fuga de datos, toxicidad, jailbreaks) y documentas los hallazgos mapeados al OWASP LLM Top 10. Es el equivalente a un "pentest report", pero para IA.
 :::
 
@@ -68,7 +68,7 @@ Un repositorio `llm-security-audit/` con:
 - [ ] Propusiste una **mitigación** por hallazgo (no solo lo describiste).
 - [ ] El README lo entiende un hiring manager no técnico en 2 minutos.
 
-:::warning Ética y legalidad
+:::warning[Ética y legalidad]
 Audita **solo** modelos propios o con permiso explícito. Nunca ejecutes garak contra un sistema de producción de un tercero sin autorización por escrito.
 :::
 

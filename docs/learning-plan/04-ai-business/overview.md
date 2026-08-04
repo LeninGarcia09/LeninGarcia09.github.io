@@ -204,7 +204,7 @@ Crear un assessment completo para un sistema AI ficticio:
 ### Objetivo
 Escalar de agentes básicos (ya construidos en la [Fase 1](../foundation/overview)) a **escenarios empresariales**: agentes autónomos, integración M365 Copilot, adopción y governance.
 
-:::note Fundamentos ya cubiertos
+:::note[Fundamentos ya cubiertos]
 La construcción de tu primer agente en Copilot Studio se movió a la **Fase 1** como módulo prioritario. Esta semana asume que ya tienes un agente publicado y se enfoca en **capacidades avanzadas y estrategia empresarial**.
 :::
 

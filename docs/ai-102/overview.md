@@ -5,7 +5,7 @@ title: AI-102 → AI-103 — Azure AI Apps and Agents Developer
 
 # AI-102 → AI-103: Azure AI Apps and Agents Developer Associate
 
-:::danger AI-102 se retiró el 30 de junio de 2026 — usa AI-103
+:::danger[AI-102 se retiró el 30 de junio de 2026 — usa AI-103]
 Microsoft **retiró el examen AI-102** el **30-jun-2026**. Su sucesor es **AI-103 — Azure AI Apps and Agents Developer Associate**, orientado a construir apps de IA generativa y soluciones **multi-agente con Microsoft Foundry** usando Python.
 
 - Página oficial: [Azure AI Apps and Agents Developer Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/)

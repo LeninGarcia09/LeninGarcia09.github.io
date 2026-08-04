@@ -5,7 +5,7 @@ title: "Fuentes y Verificación"
 
 # Fuentes y Verificación
 
-:::info Por qué existe esta página
+:::info[Por qué existe esta página]
 Un plan de aprendizaje solo es confiable si sus recomendaciones son **reales, vigentes y verificables de forma independiente**. Esta página documenta cada certificación, framework y recurso clave referenciado en el plan, con enlaces a **fuentes primarias** (universidades, Microsoft, organismos de estándares) para que cualquier persona —o un reclutador— pueda confirmarlos directamente.
 :::
 
@@ -30,11 +30,11 @@ Un plan de aprendizaje solo es confiable si sus recomendaciones son **reales, vi
 | GitHub Foundations | GH-900 | $99 (prep gratis) | Inglés | [learn.microsoft.com](https://learn.microsoft.com/es-es/credentials/certifications/github-foundations/) |
 | Azure AI Apps and Agents Developer Associate | **AI-103** | verificar en la página oficial | Verificar | [learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/) |
 
-:::danger AI-102 se retiró el 30 de junio de 2026 — usa AI-103
+:::danger[AI-102 se retiró el 30 de junio de 2026 — usa AI-103]
 Microsoft **retiró el examen AI-102** el **30-jun-2026**. Su sucesor es **AI-103 — Azure AI Apps and Agents Developer Associate** (apps de IA generativa + soluciones multi-agente con Microsoft Foundry, en Python). Página oficial: [AI-103](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/) · [Study guide AI-103](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103). **Confirma estado (beta/GA), precio y *skills measured* en la página oficial antes de calendarizar.**
 :::
 
-:::warning Sobre AI-103 para este perfil
+:::warning[Sobre AI-103 para este perfil]
 AI-103 (nivel Associate) está **orientada a desarrolladores** que construyen soluciones de IA con **Python** y Microsoft Foundry. Para este perfil (IT Manager que apunta a **AI Program Manager / AI Governance / TPM**) es **opcional y avanzada**: solo vale la pena si el objetivo incluye construir soluciones de IA con código. Para roles de gobernanza/programa, priorizar credenciales vendor-neutral (**IAPP AIGP, PMI-CPMAI**) + portafolio + frameworks (NIST/ISO) rinde más.
 :::
 
@@ -54,7 +54,7 @@ Este plan **no es "primero Microsoft"**. Estas credenciales son independientes d
 | CC — Certified in Cybersecurity | ISC2 | Ninguno | Español disponible | [isc2.org](https://www.isc2.org/certifications/cc) |
 | Security+ | CompTIA | Ninguno | Español disponible | [comptia.org](https://www.comptia.org/certifications/security) |
 
-:::warning Verificación de prerrequisitos y nombres
+:::warning[Verificación de prerrequisitos y nombres]
 - **ISACA AAIA requiere CISA** (u otra designación de auditoría/contaduría aceptada) como prerrequisito — confirmado en la página oficial. Planifica CISA primero si aún no la tienes.
 - El nombre oficial de la credencial de PMI es **"PMI Certified Professional in Managing AI (PMI-CPMAI)"** (antes referida como *AI Project Management*).
 - No pudimos confirmar una credencial ISACA "AAISM" como producto distinto; solo **AAIA** está verificada. Si ves "AAISM", verifícala directamente en isaca.org antes de citarla.
@@ -63,7 +63,7 @@ Este plan **no es "primero Microsoft"**. Estas credenciales son independientes d
 
 ---
 
-:::note Guardarraíl de vigencia
+:::note[Guardarraíl de vigencia]
 Microsoft actualiza *skills measured*, precios y disponibilidad de *practice assessments* con frecuencia. **Antes de calendarizar cualquier examen**, confirma en la página oficial de la credencial: estado del examen, temario vigente y si hay *practice assessment* gratuito.
 :::
 
@@ -111,11 +111,11 @@ Base del [Track de Retos: Seguridad de IA Aplicada](./challenges-ai-security/ove
 | PyRIT | Toolkit de red-teaming de IA generativa | Gratis (MIT) | [github.com/Azure/PyRIT](https://github.com/Azure/PyRIT) |
 | Presidio | Detección/anonimización de PII (DLP) | Gratis (MIT) | [github.com/data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) |
 
-:::note Cambios de ubicación ya verificados (2026-07)
+:::note[Cambios de ubicación ya verificados (2026-07)]
 `garak` se movió de `leondz/garak` a **`NVIDIA/garak`**. **Presidio** salió de la organización de Microsoft a **`data-privacy-stack/presidio`** (docs en [data-privacy-stack.github.io/presidio](https://data-privacy-stack.github.io/presidio/)). Usa siempre las URLs nuevas.
 :::
 
-:::tip Para quien está entre trabajos
+:::tip[Para quien está entre trabajos]
 El **stack gratuito** (Elements of AI + Microsoft Learn + Py4E + GitHub Skills + practice assessments oficiales) cubre casi todo el plan sin costo. El único gasto obligatorio son los **exámenes de certificación (~$99 c/u)** — y Microsoft ofrece **vouchers gratuitos** periódicamente en sus *Virtual Training Days*. Verifica en la [página de eventos de Microsoft Learn](https://learn.microsoft.com/es-es/training/) antes de pagar.
 :::
 
@@ -157,11 +157,11 @@ La [Metodología y Mejores Prácticas](./methodology-best-practices) se apoya en
 | **~La mitad** de las ofertas que piden habilidades de IA ya están **fuera de TI** (RR. HH., finanzas) | Indeed Hiring Lab (jun-2025) | Reporte de mercado | [hiringlab.org](https://www.hiringlab.org/2025/06/17/the-rise-of-responsible-ai-jobs/) |
 | Compensación total promedio en privacidad/gobernanza de IA ~**$200k**; especialista en gobernanza de IA mediana ~**$152k** | IAPP (2025–26) | Reporte de encuesta | [iapp.org](https://iapp.org/resources/article/infographic-salary-and-jobs-report/) |
 
-:::note Sobre las estadísticas del WEF
+:::note[Sobre las estadísticas del WEF]
 Las cifras (86% de empleadores espera transformación por IA; 39% de habilidades centrales cambiarán; ~63% cita la brecha de habilidades como barrera principal) provienen del **Future of Jobs Report 2025** del Foro Económico Mundial. Son **datos de encuesta a empleadores**, no proyecciones garantizadas. Los porcentajes de resultados de empleo de Google/AWS/IBM son **reportados por cada proveedor** y deben leerse como marketing verificable, no como estudios independientes.
 :::
 
-:::warning Sobre el modelo 70-20-10
+:::warning[Sobre el modelo 70-20-10]
 Las proporciones 70/20/10 son una **filosofía orientadora** basada en investigación del Center for Creative Leadership (McCall, Lombardo y Eichinger, 1988), **no una fórmula validada estadísticamente**. Úsalas como guía de balance, no como regla exacta.
 :::
 
@@ -181,7 +181,7 @@ Recursos y credenciales oficiales para el [módulo prioritario de Copilot Studio
 | **Applied Skill:** Enhance agents with autonomous capabilities | Credencial (lab interactivo) | Gratis / bajo costo | [learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/applied-skills/enhance-agents-with-autonomous-capabilities/) |
 | Copilot Studio Samples | Código de ejemplo | Gratis | [github.com/microsoft/CopilotStudioSamples](https://github.com/microsoft/CopilotStudioSamples) |
 
-:::note Sobre las Applied Skills
+:::note[Sobre las Applied Skills]
 Son **credenciales basadas en laboratorio interactivo** (no examen de opción múltiple): demuestras la habilidad ejecutando tareas reales en un entorno sandbox. Ambas páginas oficiales fueron confirmadas y actualizadas por Microsoft en 2025-2026. Copilot Studio es la evolución de **Power Virtual Agents**.
 :::
 

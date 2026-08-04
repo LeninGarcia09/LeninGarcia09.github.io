@@ -5,7 +5,7 @@ title: "Observability & Evaluation — Coming Soon"
 
 # Observability & Evaluation
 
-:::info Coming Soon
+:::info[Coming Soon]
 This section will cover end-to-end observability for AI agents: OpenTelemetry traces, Azure Monitor dashboards, evaluation SDK scoring, and production monitoring patterns.
 :::
 

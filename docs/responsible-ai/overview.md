@@ -11,7 +11,7 @@ title: Responsible AI & Governance
 
 ---
 
-:::tip What You'll Build
+:::tip[What You'll Build]
 Governance frameworks grounded in real regulatory situations. Every challenge is based on an actual scenario customers face — an EU regulator demanding an AI inventory, a red team finding a data leakage vulnerability, a bias complaint requiring a technical response.
 :::
 

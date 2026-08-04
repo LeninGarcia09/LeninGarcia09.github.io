@@ -205,7 +205,7 @@ Entender cloud computing y prepararse para la certificación AZ-900.
 
 ## 🚀 Módulo Prioritario: Microsoft Copilot Studio (Fast-Track)
 
-:::info Por qué está en la Fase 1 y no más adelante
+:::info[Por qué está en la Fase 1 y no más adelante]
 Copilot Studio es **low-code/no-code**: no requiere Python ni cloud avanzado, así que puedes empezar **desde el Día 1** en paralelo a las semanas anteriores. Con oportunidades reales de proyecto en el horizonte, este módulo te deja **listo para construir agentes en semanas, no meses**. Es la habilidad de esta fase con mayor retorno inmediato para el mercado.
 :::
 
@@ -225,7 +225,7 @@ Plataforma gráfica de Microsoft para crear **agentes conversacionales y autóno
 | [Agent in a Day — Workshop](https://learn.microsoft.com/en-us/training/paths/agents-online-workshop/) | 🇬🇧 Inglés | Workshop guiado | Gratis |
 | [Copilot Studio Samples (GitHub)](https://github.com/microsoft/CopilotStudioSamples) | 🇬🇧 Inglés | Ejemplos reutilizables | Gratis |
 
-:::tip Prueba gratuita
+:::tip[Prueba gratuita]
 Copilot Studio ofrece **prueba gratuita** para practicar sin costo. Actívala desde la [página del producto](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio) para tener un entorno real donde construir tu primer agente.
 :::
 

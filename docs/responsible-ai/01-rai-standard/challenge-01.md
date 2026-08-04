@@ -5,7 +5,7 @@ title: "Challenge 01: EU Regulator Wants Your AI Inventory in 30 Days"
 
 # Challenge 01: EU Regulator Wants Your AI Inventory in 30 Days
 
-:::info Scenario Brief
+:::info[Scenario Brief]
 **Industry:** Enterprise (any) | **Regulatory Context:** EU AI Act Art. 51, GDPR Art. 35  
 **Time Estimate:** 90 minutes | **Azure Cost:** ~$0–5 (Purview licensing required)
 :::

@@ -34,7 +34,7 @@ Transform from high-performing commercial growth executive into an **AI-enabled 
 - **Industry-aligned:** grounded in **mining, heavy industry, energy, and industrial B2B** — his actual domain, not generic IT tracks
 - **Global operating model:** multilingual (English/Spanish), cross-jurisdiction, and governance-aware
 
-:::caution Aligned to his expertise — not to developer tracks
+:::caution[Aligned to his expertise — not to developer tracks]
 This plan intentionally **excludes coding certifications** (e.g., AI-102, which is a Python/C# developer exam). The training targets an **executive commercial leader**: AI strategy, commercial-AI, governance, and mining/industrial-sector applications. See [Programs & Credentials Roadmap](./certification-roadmap.md) and [Sources & Verification](./sources-and-verification.md).
 :::
 

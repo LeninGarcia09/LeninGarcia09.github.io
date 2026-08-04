@@ -5,7 +5,7 @@ title: "Challenge 02: Red Team Found Agent Leaking Competitor Pricing"
 
 # Challenge 02: Red Team Found Your Agent Is Leaking Competitor Pricing
 
-:::info Scenario Brief
+:::info[Scenario Brief]
 **Industry:** Enterprise SaaS / Retail | **Regulatory Context:** Trade secrets, NIST AI RMF MEASURE 2.6  
 **Time Estimate:** 90 minutes | **Azure Cost:** ~$5–10
 :::

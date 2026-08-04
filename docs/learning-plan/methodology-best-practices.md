@@ -5,7 +5,7 @@ title: "Metodología y Mejores Prácticas"
 
 # Metodología y Mejores Prácticas (Best-in-Class)
 
-:::info Por qué esta página
+:::info[Por qué esta página]
 Un buen plan no es solo una lista de cursos: es un **diseño de desarrollo profesional**. Esta página explica los principios —tomados de programas de reskilling de clase mundial y de la ciencia del aprendizaje— que hacen que este plan funcione, y añade las **prácticas que faltaban** para llevarlo al nivel de los mejores programas del mundo. Todas las afirmaciones tienen fuente primaria en [Fuentes y Verificación](./sources-and-verification).
 :::
 
@@ -31,7 +31,7 @@ El modelo **70-20-10** proviene de investigación del **Center for Creative Lead
 - **20% social** — mentoría, coaching, comunidad y feedback
 - **10% formal** — cursos y certificaciones
 
-:::warning Brecha detectada en el plan original
+:::warning[Brecha detectada en el plan original]
 El plan es **fuerte en el 70% (proyectos) y el 10% (certificaciones)**, pero **débil en el 20% social** (mentoría, cohorte, feedback). Los programas de clase mundial deben gran parte de su tasa de empleo a ese 20%. La sección *"Añade el 20 que falta"* más abajo lo corrige.
 :::
 
@@ -48,7 +48,7 @@ La investigación (Dunlosky et al., 2013; Roediger & Butler, 2011) demuestra que
 | **Retrieval practice** | Auto-testeo frecuente | Usa los **practice assessments oficiales gratuitos** de Microsoft cada semana, no solo al final |
 | **Interleaving** | Mezclar temas | Alterna hilos: 1 cert + 1 proyecto + 1 networking por semana |
 
-:::tip Protocolo de estudio semanal (30 min extra, gran impacto)
+:::tip[Protocolo de estudio semanal (30 min extra, gran impacto)]
 **Viernes:** cierra todo el material y responde de memoria "¿qué aprendí?" (active recall). **Fin de semana:** repasa el mazo de Anki (spaced repetition) + 1 practice assessment (retrieval). Esto convierte estudio pasivo en retención real y reduce el tiempo total a examen.
 :::
 
@@ -110,7 +110,7 @@ Los checklists dicen *qué hiciste*; los OKRs dicen *si estás avanzando hacia e
 | **O3: Capital social (el 20%)** | 1 mentor activo + 6 informational interviews + 300+ conexiones relevantes en LinkedIn |
 | **O4: Pipeline de empleo** | 15 empresas objetivo mapeadas + aplicaciones activas + 1+ loop de entrevista |
 
-:::tip Revisión quincenal (15 min)
+:::tip[Revisión quincenal (15 min)]
 Cada dos semanas puntúa cada KR de 0.0 a 1.0. Un KR estancado dos ciclos seguidos es una **señal de escalamiento**: cambia de recurso, pide ayuda al mentor o ajusta el alcance. Medir el progreso hacia el *empleo* —no solo hacia el *estudio*— es lo que hacen los mejores programas.
 :::
 

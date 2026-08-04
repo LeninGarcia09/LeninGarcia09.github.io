@@ -5,7 +5,7 @@ title: "Week 4: Applied Design + Review Practice"
 
 # Week 4: Applied Design + Review Practice
 
-:::info Week Overview
+:::info[Week Overview]
 **Objective:** Build fluency through end-to-end architecture design and adversarial review under RAI constraints.  
 **Time Estimate:** 8–10 hours  
 **Deliverable:** RAI Architecture Portfolio — 3 annotated architecture diagrams with full compliance analysis

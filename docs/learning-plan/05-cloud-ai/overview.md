@@ -253,11 +253,11 @@ Para candidatos avanzados con objetivo **de desarrollo**, AI-103 agrega valor:
 - Verifica precio, estado (beta/GA) y temario en la [página oficial de AI-103](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/)
 - Requiere 4-6 semanas adicionales de preparación
 
-:::tip ¿Gobernanza/programa en vez de desarrollo? Considera vendor-neutral
+:::tip[¿Gobernanza/programa en vez de desarrollo? Considera vendor-neutral]
 Si tu objetivo es **AI Program Manager / AI Governance / TPM** (no escribir código de producción), una credencial **vendor-neutral** como **IAPP AIGP** o **PMI-CPMAI** (examen en español) suele rendir más que AI-103. Ver la escalera completa en [Plan Overview](../overview#-certificaciones--escalera-vendor-neutral-gratis-primero).
 :::
 
-:::note Portabilidad del stack
+:::note[Portabilidad del stack]
 Los patrones de esta fase (RAG, evaluación, agentes, safety) **no dependen de un proveedor**. Todo lo que construyes en Azure AI Foundry se replica con **LangChain / LlamaIndex**, modelos abiertos (**Llama, Mistral, Phi**) y vector stores abiertos (**ChromaDB, pgvector, FAISS**). Usa Azure como *un* ejemplo, pero documenta tu proyecto de forma agnóstica para que aplique a empleadores que usan AWS, GCP o stacks open-source.
 :::
 

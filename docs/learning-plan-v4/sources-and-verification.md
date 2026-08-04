@@ -5,7 +5,7 @@ title: "Fuentes y Verificación v4"
 
 # Fuentes y Verificación (v4)
 
-:::info Por qué existe esta página
+:::info[Por qué existe esta página]
 Un plan de nivel arquitectura/ingeniería solo es creíble si sus certificaciones y recursos son **reales, vigentes y verificables de forma independiente**. Esta página documenta cada credencial, framework y recurso clave del plan v4 con enlaces a **fuentes primarias** (Microsoft Learn, GitHub, organismos de estándares) para que cualquier persona —o un reclutador técnico— lo confirme directamente.
 :::
 
@@ -18,7 +18,7 @@ Un plan de nivel arquitectura/ingeniería solo es creíble si sus certificacione
 
 **Última verificación:** 2026-07-17
 
-:::warning El portafolio AI de Microsoft está cambiando en 2026
+:::warning[El portafolio AI de Microsoft está cambiando en 2026]
 Microsoft anunció una renovación de credenciales Azure y Data/AI. Varios exámenes de este plan son **nuevos o en transición beta → GA durante 2026**. Confirma el estado (beta/GA), *skills measured* y disponibilidad de *practice assessment* en la página oficial **antes de calendarizar**. Anuncio oficial: [Updates to several Azure and Data/AI certifications](https://learn.microsoft.com/en-us/credentials/certifications/posts/updates-to-several-azure-and-data-ai-certifications-are-coming-soon).
 :::
 
@@ -34,7 +34,7 @@ Microsoft anunció una renovación de credenciales Azure y Data/AI. Varios exám
 | GitHub Copilot | **GH-300** | Vigente · $99 USD · 700/1000 · válida 24 meses · disponible en español | [Página de la credencial](https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/) · [Study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300) |
 | Azure AI Cloud Developer Associate | **AI-200** | Nuevo 2026 (transición beta → GA) — **verifica disponibilidad** | [Anuncio oficial de credenciales](https://learn.microsoft.com/en-us/credentials/certifications/posts/updates-to-several-azure-and-data-ai-certifications-are-coming-soon) |
 
-:::note Contexto de la transición AI-102 → AI-103
+:::note[Contexto de la transición AI-102 → AI-103]
 La página oficial confirma que **AI-102 se retira el 30 de junio de 2026** y que **AI-103 (Azure AI Apps and Agents Developer Associate)** es su sucesora, orientada a construir apps de IA generativa y soluciones **multi-agente con Microsoft Foundry** usando Python. No hay migración automática: para la credencial nueva hay que presentar el examen nuevo. Otros movimientos del portafolio 2026 relevantes: **AI-901** (reemplaza a AI-900), **AI-300** (MLOps Engineer). Confirma siempre en la fuente.
 :::
 
@@ -69,7 +69,7 @@ Stack verificado para construir la evidencia técnica del plan (RAG, agentes, ev
 | GitHub Skills | GitHub | **Gratis** | [skills.github.com](https://skills.github.com/) |
 | Anthropic / OpenAI cookbooks | Anthropic / OpenAI | **Gratis** | [anthropic.com/learn](https://www.anthropic.com/learn) · [cookbook.openai.com](https://cookbook.openai.com/) |
 
-:::tip Para quien está entre trabajos
+:::tip[Para quien está entre trabajos]
 El **stack gratuito** (Microsoft Learn + Azure AI Foundry docs + Azure Samples + DeepLearning.AI + practice assessments oficiales) cubre casi toda la construcción de evidencia. El gasto obligatorio son los **exámenes de certificación**; Microsoft ofrece **vouchers gratuitos** periódicamente en sus *Virtual Training Days*. Verifica en la [página de eventos de Microsoft Learn](https://learn.microsoft.com/es-es/training/) antes de pagar.
 :::
 
@@ -96,7 +96,7 @@ La [Metodología y Mejores Prácticas v4](./methodology-best-practices) se apoya
 | Dunlosky et al. (2013) | Eficacia de active recall y spaced/retrieval practice | Estudio revisado por pares | [journals.sagepub.com](https://journals.sagepub.com/doi/10.1177/1529100612453266) |
 | Google Career Certificates / AWS re/Start / IBM SkillsBuild | Diseño con proyectos + capstone + conexión con empleadores | Programas de referencia | [grow.google/certificates](https://grow.google/certificates/) · [aws.amazon.com](https://aws.amazon.com/training/restart/) · [skillsbuild.org](https://skillsbuild.org/) |
 
-:::note Sobre las estadísticas y proporciones
+:::note[Sobre las estadísticas y proporciones]
 Las cifras del WEF (86% / 39% / ~63%) son **datos de encuesta a empleadores**, no proyecciones garantizadas. Las proporciones **70-20-10** son una **filosofía orientadora** (CCL, 1988), no una fórmula validada estadísticamente. Los porcentajes de resultados de empleo de Google/AWS/IBM son **reportados por cada proveedor**.
 :::
 

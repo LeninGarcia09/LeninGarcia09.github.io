@@ -8,7 +8,7 @@ sidebar_label: Challenge 02 — Permission & Blast Radius
 
 > **Root-cause layer:** Permission · **Frameworks:** Microsoft Entra ID · Zero Trust · [MITRE ATLAS](https://atlas.mitre.org/) · **Time:** 3–4 h · **Level:** Intermediate
 
-:::tip What you will build
+:::tip[What you will build]
 A **least-privilege identity design** and a **blast-radius diagram** for an agent that already has too much access — the single highest-leverage control after an incident. Core principle: **every AI agent is a digital employee.** It needs an identity, scoped permissions, and an offboarding plan.
 :::
 
@@ -60,7 +60,7 @@ Agent → CRM (read, own-region) · Tickets (create only) · [no finance] · [no
 
 You can complete the **design** deliverables with no cloud tenant. If you *have* an Entra tenant (a [free Microsoft 365 Developer](https://developer.microsoft.com/microsoft-365/dev-program) or Azure trial works), do the optional hands-on steps to make it real.
 
-:::warning Ethics & legality
+:::warning[Ethics & legality]
 Only configure identities and permissions in a tenant **you own or are authorized to administer.** Never test access controls against an employer's or customer's production tenant without written authorization.
 :::
 

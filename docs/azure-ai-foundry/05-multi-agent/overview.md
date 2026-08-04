@@ -5,7 +5,7 @@ title: "Multi-Agent Orchestration — Coming Soon"
 
 # Multi-Agent Orchestration
 
-:::info Coming Soon
+:::info[Coming Soon]
 This section will cover coordinating multiple specialized agents: handoff patterns, shared memory, security boundaries, and enterprise-scale multi-agent architectures.
 :::
 

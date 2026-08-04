@@ -54,7 +54,7 @@ Basada en los modelos de desarrollo profesional de **Google**, **AWS**, **IBM**,
 | 📖 Entrenamiento Guiado | 20% | Cursos, certificaciones, labs |
 | 📰 Lectura y Research | 10% | Artículos, frameworks, estándares |
 
-:::tip Cómo ejecutar este plan como un programa de clase mundial
+:::tip[Cómo ejecutar este plan como un programa de clase mundial]
 Esta filosofía se inspira en el modelo **70-20-10** (Center for Creative Leadership) y en el diseño de los programas de reskilling con mejores resultados (Google, AWS re/Start, IBM SkillsBuild). Para sacarle el máximo —mentoría y cohorte (el "20"), protocolo de estudio con *spaced repetition*, alineación con las habilidades del **WEF Future of Jobs 2025** y medición por OKRs— sigue la guía completa en **[Metodología y Mejores Prácticas](./methodology-best-practices)**.
 :::
 
@@ -69,13 +69,13 @@ Esta filosofía se inspira en el modelo **70-20-10** (Center for Creative Leader
 | [Fase 5](./cloud-ai/overview) | 21–28 | Cloud + AI Integración |
 | [Fase 6](./career-launch/overview) | 29–36 | Lanzamiento de Carrera |
 
-:::tip 🧪 Retos prácticos de Seguridad de IA (vendor-neutral)
+:::tip[🧪 Retos prácticos de Seguridad de IA (vendor-neutral)]
 En paralelo a la Fase 3, construye evidencia real con el **[Track de Retos: Seguridad de IA Aplicada](./challenges-ai-security/overview)** — 4 laboratorios prácticos con herramientas 100% gratuitas y abiertas (Garak, PyRIT, Presidio) alineados a OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF e ISO 42001. Cada reto produce un artefacto para tu portafolio.
 :::
 
 ## 🎓 Certificaciones — Escalera Vendor-Neutral (gratis primero)
 
-:::info Este plan NO es "primero Microsoft"
+:::info[Este plan NO es "primero Microsoft"]
 El objetivo es **volver a emplearte en IA lo antes posible**, en cualquier industria y con cualquier plataforma. Por eso las credenciales se ordenan por **valor de empleabilidad y costo**, no por proveedor. Empieza por lo **gratuito y vendor-neutral** (NIST, OWASP, ISO); añade **una** certificación de proveedor solo cuando sepas qué stack usa tu empleador objetivo (Microsoft, Google o AWS), como complemento, no como base.
 :::
 
@@ -114,11 +114,11 @@ El objetivo es **volver a emplearte en IA lo antes posible**, en cualquier indus
 | **Google** | [Google AI Essentials](https://grow.google/ai-essentials/) / Cloud Digital Leader | Bajo costo / audit gratis | Español disponible |
 | **AWS** | AWS Certified AI Practitioner | ~$100 | Español disponible |
 
-:::note AI-102 se retiró — usa AI-103
+:::note[AI-102 se retiró — usa AI-103]
 Microsoft **retiró AI-102 el 30-jun-2026**; su sucesor es **AI-103 (Azure AI Apps and Agents Developer Associate)**. Para roles de **gobernanza / programa / TPM**, AI-103 es *opcional y avanzada* (orientada a desarrolladores): rinde más priorizar AIGP/CPMAI + portafolio + frameworks (NIST/ISO). Ver [Fuentes y Verificación](./sources-and-verification).
 :::
 
-:::tip Para quien está entre trabajos: primero lo gratis
+:::tip[Para quien está entre trabajos: primero lo gratis]
 El **Nivel 0 completo es gratis** y ya te hace empleable en conversaciones de gobernanza y seguridad de IA. Invierte en un examen de pago (Nivel 1) solo cuando tengas portafolio y un rol objetivo claro. Muchas certificaciones de proveedor tienen **vouchers gratuitos** (Microsoft *Virtual Training Days*) y **Coursera Financial Aid** puede desbloquear cursos de pago sin costo. Verifica siempre precio y temario en la página oficial antes de calendarizar. Detalles en [Fuentes y Verificación](./sources-and-verification).
 :::
 

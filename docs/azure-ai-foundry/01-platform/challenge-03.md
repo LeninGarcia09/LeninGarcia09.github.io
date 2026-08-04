@@ -5,7 +5,7 @@ title: "Challenge 03: Standard Mode — Entra Agent ID + RBAC"
 
 # Challenge 03: Entra Agent ID + RBAC in Standard Mode
 
-:::info Scenario Brief
+:::info[Scenario Brief]
 **Industry:** Enterprise SaaS | **Regulatory Context:** Zero Trust, NIST AI RMF GOVERN 1.2  
 **Time Estimate:** 60 minutes | **Azure Cost:** ~$2–4
 :::

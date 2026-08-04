@@ -5,7 +5,7 @@ title: "Challenge 05: Hosted Agent Works Locally, Fails at Scale"
 
 # Challenge 05: Works Locally, Fails in Production at Scale
 
-:::info Scenario Brief
+:::info[Scenario Brief]
 **Industry:** Retail / E-Commerce | **Regulatory Context:** SLA obligations, NIST AI RMF MANAGE 1.3  
 **Time Estimate:** 90 minutes | **Azure Cost:** ~$5–10
 :::

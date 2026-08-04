@@ -16,7 +16,7 @@ Al completar esta fase:
 - Checklist de seguridad y arquitectura **enterprise** reutilizable
 - Listo para el **Gate CP3 (Semana 16)**
 
-:::info Este plan es Microsoft-first
+:::info[Este plan es Microsoft-first]
 Las certificaciones ancla son **AZ-305** (arquitectura) y **SC-500** (seguridad cloud & AI). Los frameworks abiertos (OWASP LLM, MITRE ATLAS, NIST AI RMF) se usan como lenguaje común de riesgo.
 :::
 

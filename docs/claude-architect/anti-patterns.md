@@ -26,15 +26,15 @@ These appear as distractors in ~60% of questions. If you can spot them, you elim
 
 ## Study Tips
 
-:::tip Focus on the WHY
+:::tip[Focus on the WHY]
 The exam tests **architectural reasoning**, not memorization. Know why hub-and-spoke beats flat multi-agent. Know why hooks beat prompts for enforcement. Know why multi-pass review requires session isolation.
 :::
 
-:::warning Anti-Patterns Are Traps
+:::warning[Anti-Patterns Are Traps]
 Exam distractors are often plausible anti-patterns. If an answer sounds like "just use a prompt for that" — it's probably wrong.
 :::
 
-:::info Build Real Projects
+:::info[Build Real Projects]
 Hands-on experience with the Agent SDK, MCP servers, and Claude Code solidifies conceptual understanding faster than re-reading notes.
 :::
 

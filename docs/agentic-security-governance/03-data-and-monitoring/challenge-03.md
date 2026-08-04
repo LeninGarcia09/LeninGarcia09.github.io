@@ -8,7 +8,7 @@ sidebar_label: Challenge 03 — Data & Monitoring
 
 > **Root-cause layer:** Visibility · **Frameworks:** Microsoft Purview · Defender/Sentinel · [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) (Measure) · **Time:** 3–4 h · **Level:** Intermediate
 
-:::tip What you will build
+:::tip[What you will build]
 Two things most agent deployments lack: a **data-protection plan** that protects information *even after* an agent gains access, and a **runtime behavior-monitoring design** that watches what the agent *does* (tool calls, access requests, escalations) — not just what it *says*.
 :::
 
@@ -67,7 +67,7 @@ final output / content     →        + tool usage & call frequency
 
 The design deliverables need no cloud. For hands-on signal generation, you'll emit **structured agent logs** locally and write **detections as queries** (KQL-style) you could paste into Sentinel/Defender or adapt to any SIEM.
 
-:::warning Ethics & legality — use synthetic data only
+:::warning[Ethics & legality — use synthetic data only]
 **Never** use real PII/PHI. Generate fake records (e.g., with `faker`). Never point monitoring or DLP experiments at production data or a system you don't own.
 :::
 

@@ -108,6 +108,6 @@ Structured learning paths, official documentation, and courses organized by role
 
 ---
 
-:::tip Build to Learn
+:::tip[Build to Learn]
 The fastest path to expertise is deploying something to production. Each track on this site is designed around real enterprise scenarios — not tutorials. Start with the [Azure AI Foundry track](/docs/azure-ai-foundry/overview) or the [Claude Architect cert prep](/docs/claude-architect/overview) and build alongside.
 :::

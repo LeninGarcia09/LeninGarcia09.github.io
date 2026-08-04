@@ -5,7 +5,7 @@ title: AZ-104 — Azure Administrator Associate
 
 # AZ-104: Azure Administrator Associate
 
-:::warning Verified facts (last checked 2026-07-17)
+:::warning[Verified facts (last checked 2026-07-17)]
 - Official credential page: [Azure Administrator Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/) (Last Updated **04/17/2026**)
 - Official exam page + study guide: [Exam AZ-104](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-104/)
 - Renewal: **every 12 months** (free online assessment on Microsoft Learn).

@@ -5,7 +5,7 @@ title: AZ-700 — Azure Network Engineer Associate
 
 # AZ-700: Azure Network Engineer Associate
 
-:::warning Verified facts (last checked 2026-07-17)
+:::warning[Verified facts (last checked 2026-07-17)]
 - Official credential page: [Azure Network Engineer Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-network-engineer-associate/) (Last Updated 04/24/2026)
 - Official exam page + study guide: [Exam AZ-700](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-700/)
 - **Heads up:** the English version was scheduled to be **updated on July 27, 2026** — review the study guide for changes before scheduling.
