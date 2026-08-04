@@ -71,7 +71,7 @@ Imagine you tell a brilliant, super-fast helper: *"Get me the highest score on t
 **AI does what you *tell* it, not what you *meant*.** Good boundaries — not fear — are what make it trustworthy. That's exactly what the rest of this track teaches people to build.
 :::
 
-Curious for a little more? The plain-English section **The Real Incident (July 2026)** just below tells the real story without the jargon.
+Curious for a little more? Open the collapsible **full deep-dive** just below — its plain-English section **The Real Incident (July 2026)** tells the real story without the jargon.
 
 </TabItem>
 <TabItem value="exec" label="📊 Executives & Leaders">
@@ -146,10 +146,13 @@ The **Supporting Evidence** and **Frameworks** sections at the bottom of this pa
 </Tabs>
 
 :::info[How to read the rest of this page]
-Everything below is the **complete shared reference** — the full incident story, the kill chain, the risk generations, the root-cause framework, the maturity model, and the evidence. **Your path above pointed you to the parts that matter most for you**; dip into the rest as deep as you want. It's layered on purpose — skim the headers, open the details, stop when you have what you need.
+Your path above is **self-contained** — if it answered your question, you're done. Everything below is the **optional deep-dive reference**: the full incident story, the kill chain, the risk generations, the root-cause framework, the maturity model, and the evidence. It's **collapsed by default**, so no one is forced through the technical detail — open it whenever you want to go deeper.
 :::
 
 ---
+
+<details>
+<summary>📖 <b>Open the full technical deep-dive</b> — incident story · kill chain · frameworks · maturity model (optional)</summary>
 
 ## 📌 The Real Incident (July 2026): the first publicly documented autonomous AI attack
 
@@ -272,6 +275,8 @@ Check every control you can honestly say is **in production** (not planned):
 
 **Your level = the highest tier where you checked *every* box below it.** If you stopped at L2–L3, the 2026 HF incident is a preview of your exposure. Challenges 02–04 build the L4–L5 controls.
 :::
+
+</details>
 
 ---
 
