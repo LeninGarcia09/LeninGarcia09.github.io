@@ -119,7 +119,7 @@ Produce a **one-page** readout using the four takeaways. This is what you actual
    - Strong security = **identity + data protection + monitoring + governance + human oversight**.
    - Every autonomous system needs **brakes** (approval gates, kill switch, revocation).
    - The goal is **not to prevent AI adoption** — it's to enable **trustworthy AI at scale**.
-4. **Our maturity today vs. target:** *(place your org on the Level 1–5 [maturity model](../overview#-ai-safety-maturity-model); name the gap and the next two actions with owners and dates.)*
+4. **Our maturity today vs. target:** *(place your org on the Level 1–5 [maturity model](../the-incident#-ai-safety-maturity-model); name the gap and the next two actions with owners and dates.)*
 5. **Ask:** the decision/budget you need from the board.
 
 </details>

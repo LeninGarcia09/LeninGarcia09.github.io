@@ -98,6 +98,7 @@ const sidebars = {
 
   agenticSecuritySidebar: [
     { type: 'doc', id: 'agentic-security-governance/overview', label: 'Track Overview' },
+    { type: 'doc', id: 'agentic-security-governance/the-incident', label: 'The Incident (deep dive)' },
     {
       type: 'category',
       label: 'Objective & Autonomy Risk',
