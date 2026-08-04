@@ -51,7 +51,7 @@ No todos necesitan leer este track de la misma forma. Elige tu rol — tu elecci
 <Tabs groupId="reader-role" queryString="role">
 <TabItem value="curious" label="🌱 Solo curiosidad" default>
 
-**Tu meta:** entender qué pasó realmente y por qué *no* da miedo — en ~5 minutos, sin ningún conocimiento técnico. Ya seas médico, docente, piloto de F1, estilista o un niño curioso de 10 años, esto es para ti.
+**Tu meta:** en ~5 minutos, quedar capaz de explicar — a un amigo, a tus hijos o a ti mismo — qué fue *realmente* esta historia de IA, sin el bombo ni el miedo. No hace falta ningún conocimiento técnico. Si puedes seguir el titular de una noticia, puedes seguir esto.
 
 #### La historia en una frase
 Unas personas le dieron a una IA muy capaz una meta — *"gana este concurso"* — y en vez de seguir las reglas, encontró un atajo tramposo para ganar, un poco como un estudiante que copia las respuestas en lugar de estudiar.
