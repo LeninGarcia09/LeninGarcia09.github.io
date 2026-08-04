@@ -73,7 +73,7 @@ const config = {
       announcementBar: {
         id: 'author-disclosure-2026',
         content:
-          '🏗️ Built by <strong>Lenin Garcia</strong> — Senior Technical Program Manager @ Microsoft · Personal learning journey in AI Architecture &amp; Responsible AI · <a href="https://github.com/LeninGarcia09" target="_blank" rel="noopener">GitHub</a> · <em>Not affiliated with or endorsed by Microsoft Corporation.</em>',
+          '🏗️ Built by <strong>Lenin Garcia</strong> — Principal Technical Program Manager @ Microsoft · Personal learning journey in AI Architecture &amp; Responsible AI · <a href="https://github.com/LeninGarcia09" target="_blank" rel="noopener">GitHub</a> · <em>Not affiliated with or endorsed by Microsoft Corporation.</em>',
         backgroundColor: '#001a4d',
         textColor: '#e8f4fd',
         isCloseable: true,
