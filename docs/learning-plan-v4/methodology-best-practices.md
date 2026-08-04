@@ -1,123 +1,123 @@
 ---
 sidebar_position: 3
-title: "Metodología y Mejores Prácticas v4"
+title: "Methodology and Best Practices v4"
 ---
 
-# Metodología y Mejores Prácticas (v4)
+# Methodology and Best Practices (v4)
 
-:::info[Para qué sirve esta página]
-Explica **por qué** el plan v4 está diseñado como está: por qué "prueba sobre estudio", por qué se acopla cada certificación a un proyecto, y cómo se mide el progreso. Está construida sobre marcos públicos y evidencia (WEF 2025, CCL 70-20-10, ciencia del aprendizaje y programas de referencia de Google/AWS/IBM). Verifica cada fuente en [Fuentes y Verificación](./sources-and-verification).
+:::info[What this page is for]
+Explains **why** the v4 plan is designed the way it is: why "proof over study," why every certification is coupled to a project, and how progress is measured. It is built on public frameworks and evidence (WEF 2025, CCL 70-20-10, learning science, and Google/AWS/IBM reference programs). Verify every source in [Sources and Verification](./sources-and-verification).
 :::
 
-El plan v4 no forma "alguien que sabe de IA": forma **un ingeniero que puede llevar sistemas de IA a producción y demostrarlo**. Esa diferencia define toda la metodología.
+The v4 plan does not form "someone who knows AI": it forms **an engineer who can take AI systems to production and prove it**. That difference defines the entire methodology.
 
 ---
 
-## Principio rector: proof-over-study
+## Guiding principle: proof-over-study
 
-En perfiles junior, un certificado es señal suficiente. En arquitectura/ingeniería de IA, el mercado ya no compra "hice el curso": compra **"construí, evalué y operé esto en producción"**. Por eso v4 invierte la jerarquía tradicional:
+For junior profiles, a certificate is enough of a signal. In AI architecture/engineering, the market no longer buys "I took the course": it buys **"I built, evaluated, and operated this in production."** That is why v4 inverts the traditional hierarchy:
 
-| Enfoque tradicional | Enfoque v4 |
+| Traditional approach | v4 approach |
 |---------------------|-----------|
-| Estudio → examen → certificado | Problema → sistema funcionando → evidencia → certificado como validación |
-| El certificado es la meta | El **portafolio evaluable** es la meta; el certificado lo respalda |
-| "Sé la teoría" | "Aquí está el repo, el eval y las métricas" |
+| Study → exam → certificate | Problem → working system → evidence → certificate as validation |
+| The certificate is the goal | The **evaluable portfolio** is the goal; the certificate supports it |
+| "I know the theory" | "Here is the repo, the eval, and the metrics" |
 
-Esto se alinea con la razón por la que Microsoft creó las **Applied Skills** (evaluación basada en escenarios reales) junto a las certificaciones: el mercado valora demostración, no solo memorización.
+This aligns with the reason Microsoft created **Applied Skills** (scenario-based real-world assessment) alongside certifications: the market values demonstration, not only memorization.
 
 ---
 
-## Marco 70-20-10 aplicado a ingeniería de IA
+## 70-20-10 framework applied to AI engineering
 
-El modelo [70-20-10](https://www.ccl.org/articles/leading-effectively-articles/70-20-10-rule/) (CCL) sostiene que el desarrollo profesional efectivo proviene ~70% de experiencia práctica, ~20% de aprendizaje social y ~10% de formación estructurada. En v4 se traduce así:
+The [70-20-10](https://www.ccl.org/articles/leading-effectively-articles/70-20-10-rule/) model (CCL) holds that effective professional development comes ~70% from practical experience, ~20% from social learning, and ~10% from structured training. In v4 it translates like this:
 
-- **70% — Construcción (experiencia).** Cada fase produce un artefacto de producción: pipeline RAG con evaluación, agente multi-herramienta, arquitectura desplegada, controles de seguridad. Este es el núcleo del plan, no un extra.
-- **20% — Comunidad y revisión (social).** Aquí está el mayor apalancamiento y el más descuidado: revisión de código/arquitectura con pares, participación en comunidades técnicas (Microsoft Tech Community, GitHub, discords de IA), pedir *design review* de tus arquitecturas, escribir *post-mortems* públicos. **Este 20% es lo que convierte un portafolio en reputación.**
-- **10% — Formación formal.** Certificaciones (AI-103, AZ-305, SC-500, GH-300, AI-200) y cursos. Necesario para señalizar y estructurar, pero **no suficiente** por sí solo.
+- **70% — Building (experience).** Every phase produces a production artifact: RAG pipeline with evaluation, multi-tool agent, deployed architecture, security controls. This is the core of the plan, not an extra.
+- **20% — Community and review (social).** This is the highest leverage and most neglected area: code/architecture review with peers, participation in technical communities (Microsoft Tech Community, GitHub, AI Discords), requesting *design review* of your architectures, and writing public *post-mortems*. **This 20% turns a portfolio into reputation.**
+- **10% — Formal training.** Certifications (AI-103, AZ-305, SC-500, GH-300, AI-200) and courses. Necessary for signaling and structure, but **not sufficient** on their own.
 
-:::tip[El error más común en perfiles técnicos]
-Sobre-invertir en el 10% (acumular cursos y certificados) y descuidar el 20% (comunidad, revisión por pares, visibilidad). Un ingeniero con 3 certificados y cero presencia técnica pública compite peor que uno con 1 certificado, un repo excelente y una red que conoce su trabajo. **Protege deliberadamente el 20%.**
+:::tip[The most common mistake in technical profiles]
+Over-investing in the 10% (accumulating courses and certificates) and neglecting the 20% (community, peer review, visibility). An engineer with 3 certificates and zero public technical presence competes worse than one with 1 certificate, an excellent repo, and a network that knows their work. **Deliberately protect the 20%.**
 :::
 
 ---
 
-## Alineación con la demanda del mercado (WEF Future of Jobs 2025)
+## Alignment with market demand (WEF Future of Jobs 2025)
 
-El [Future of Jobs Report 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) del Foro Económico Mundial reporta que **86% de los empleadores espera que la IA transforme su negocio para 2030** y que **~39% de las habilidades base cambiarán**. Para un rol de arquitectura/ingeniería de IA, esto se traduce en cuatro clusters de habilidad que v4 desarrolla explícitamente:
+The World Economic Forum's [Future of Jobs Report 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) reports that **86% of employers expect AI to transform their business by 2030** and that **~39% of core skills will change**. For an AI architecture/engineering role, this translates into four skill clusters that v4 explicitly develops:
 
-| Cluster de habilidad (WEF 2025) | Cómo lo construye v4 |
+| Skill cluster (WEF 2025) | How v4 builds it |
 |---------------------------------|----------------------|
-| Pensamiento analítico y resolución de problemas complejos | Diseño de sistemas RAG/agénticos con trade-offs explícitos |
-| Alfabetización tecnológica / IA y big data | AI-103, Azure AI Foundry, evaluación con SDK |
-| Resiliencia, adaptabilidad y aprendizaje continuo | Regla de actualización continua del plan; re-verificación de certs |
-| Diseño y experiencia de usuario / pensamiento de sistemas | Arquitectura Well-Architected + seguridad (SC-500, NIST, OWASP LLM) |
+| Analytical thinking and complex problem solving | Design of RAG/agentic systems with explicit trade-offs |
+| Technology literacy / AI and big data | AI-103, Azure AI Foundry, SDK-based evaluation |
+| Resilience, adaptability, and continuous learning | Continuous update rule for the plan; certification re-verification |
+| Design and user experience / systems thinking | Well-Architected architecture + security (SC-500, NIST, OWASP LLM) |
 
-La habilidad diferenciadora en 2025+ no es "usar un LLM" —eso se está comoditizando— sino **diseñar, evaluar y operar sistemas de IA confiables y seguros**. Ese es exactamente el eje de v4.
-
----
-
-## Ciencia del aprendizaje: cómo estudiar para que quede
-
-La formación formal (el 10%) rinde mucho más si se estudia con técnicas validadas. La revisión de [Dunlosky et al. (2013)](https://journals.sagepub.com/doi/10.1177/1529100612453266) identifica dos técnicas de **alta eficacia**:
-
-1. **Práctica de recuperación (active recall).** No releas la documentación: ciérrala y reconstruye de memoria cómo funciona un pipeline RAG o un flujo de agente. La dificultad de recuperar es la que consolida.
-2. **Práctica espaciada (spaced practice).** Distribuye el repaso en el tiempo en vez de concentrarlo. Repasa los *skills measured* de AI-103 en sesiones separadas por días, no en un maratón.
-
-Aplicación concreta en v4:
-- Usa los **practice assessments oficiales gratuitos** de Microsoft Learn como recuperación, no como examen final.
-- **Enseña lo que aprendes** (escribe un post técnico, explica tu arquitectura en un README): el *effect de protégé* es una de las formas más potentes de recuperación.
-- Convierte cada proyecto en un **eval reproducible**: medir es recuperar bajo condiciones reales.
+The differentiating skill in 2025+ is not "using an LLM" — that is becoming commoditized — but **designing, evaluating, and operating reliable and secure AI systems**. That is exactly the axis of v4.
 
 ---
 
-## ADN de los programas de formación best-in-class
+## Learning science: how to study so it sticks
 
-Los programas de referencia del mercado —[Google Career Certificates](https://grow.google/certificates/), [AWS re/Start](https://aws.amazon.com/training/restart/), [IBM SkillsBuild](https://skillsbuild.org/)— comparten cinco rasgos. v4 los incorpora:
+Formal training (the 10%) yields much more if studied with validated techniques. The review by [Dunlosky et al. (2013)](https://journals.sagepub.com/doi/10.1177/1529100612453266) identifies two **high-efficacy** techniques:
 
-| Rasgo best-in-class | Implementación en v4 |
+1. **Retrieval practice (active recall).** Do not reread the documentation: close it and reconstruct from memory how a RAG pipeline or agent flow works. The difficulty of retrieval is what consolidates learning.
+2. **Spaced practice.** Distribute review over time instead of cramming. Review AI-103 *skills measured* in sessions separated by days, not in a marathon.
+
+Concrete application in v4:
+- Use the **free official practice assessments** from Microsoft Learn as retrieval, not as a final exam only.
+- **Teach what you learn** (write a technical post, explain your architecture in a README): the *protégé effect* is one of the most powerful forms of retrieval.
+- Turn every project into a **reproducible eval**: measuring is retrieval under real conditions.
+
+---
+
+## DNA of best-in-class training programs
+
+Market reference programs — [Google Career Certificates](https://grow.google/certificates/), [AWS re/Start](https://aws.amazon.com/training/restart/), [IBM SkillsBuild](https://skillsbuild.org/) — share five traits. v4 incorporates them:
+
+| Best-in-class trait | Implementation in v4 |
 |---------------------|----------------------|
-| Aprendizaje basado en proyectos | Cada fase entrega un artefacto de producción, no un quiz |
-| Capstone / portafolio | Sistema final integrado + evidencia versionada en repo |
-| Credenciales apilables (*stackable*) | GH-300 → AI-103 → AZ-305 → SC-500, en secuencia deliberada |
-| Conexión con empleadores / mundo real | Escenarios de producción, no ejercicios de juguete; visibilidad pública |
-| Mentoría y cohorte | El 20% social: revisión por pares y comunidad técnica |
+| Project-based learning | Every phase delivers a production artifact, not a quiz |
+| Capstone / portfolio | Integrated final system + versioned evidence in a repo |
+| Stackable credentials | GH-300 → AI-103 → AZ-305 → SC-500, in deliberate sequence |
+| Employer / real-world connection | Production scenarios, not toy exercises; public visibility |
+| Mentorship and cohort | The social 20%: peer review and technical community |
 
 ---
 
-## Capa de medición: OKRs por fase
+## Measurement layer: OKRs by phase
 
-Sin métricas, un plan de aprendizaje es una lista de deseos. Define OKRs por fase:
+Without metrics, a learning plan is a wish list. Define OKRs by phase:
 
-- **Objetivo (cualitativo):** p. ej., "Ser capaz de diseñar y evaluar un sistema RAG de nivel producción."
-- **Resultados clave (medibles):**
-  - KR1: pipeline RAG desplegado con eval automatizado y ≥ X en la métrica de calidad definida.
-  - KR2: AI-103 aprobado (o *practice assessment* ≥ 80% si el examen aún está en beta).
-  - KR3: 1 *design review* recibido de un par y las mejoras incorporadas.
+- **Objective (qualitative):** e.g., "Be able to design and evaluate a production-level RAG system."
+- **Key Results (measurable):**
+  - KR1: RAG pipeline deployed with automated eval and ≥ X on the defined quality metric.
+  - KR2: AI-103 passed (or *practice assessment* ≥ 80% if the exam is still in beta).
+  - KR3: 1 *design review* received from a peer and improvements incorporated.
 
-Revisa los OKRs en cada *checkpoint* del plan. Si un KR no se movió, el problema es de ejecución o de diseño del plan —ambos accionables.
+Review OKRs at every *checkpoint* in the plan. If a KR did not move, the issue is execution or plan design — both actionable.
 
 ---
 
-## Rúbrica del capstone: "hiring-ready", no "course-complete"
+## Capstone rubric: "hiring-ready," not "course-complete"
 
-El artefacto final debe pasar la prueba del reclutador técnico. Un capstone v4 está **listo** cuando:
+The final artifact must pass the technical recruiter test. A v4 capstone is **ready** when:
 
-- [ ] **Repositorio público** con README claro: problema, arquitectura (diagrama), decisiones y trade-offs.
-- [ ] **Evaluación reproducible** — no "funciona en mi máquina", sino métricas y un script de eval que otro pueda correr.
-- [ ] **Consideraciones de seguridad y gobernanza** explícitas (alineadas a NIST AI RMF / OWASP LLM Top 10 / EU AI Act según aplique).
-- [ ] **Costo y operación** documentados: qué cuesta correrlo y cómo se monitorea.
-- [ ] **Narrativa de negocio** — qué problema resuelve y para quién, no solo qué tecnología usa.
-- [ ] **Credencial que lo respalda** (AI-103 / AZ-305 / SC-500 / GH-300 según la fase).
+- [ ] **Public repository** with clear README: problem, architecture (diagram), decisions, and trade-offs.
+- [ ] **Reproducible evaluation** — not "works on my machine," but metrics and an eval script another person can run.
+- [ ] Explicit **security and governance considerations** (aligned to NIST AI RMF / OWASP LLM Top 10 / EU AI Act as applicable).
+- [ ] **Cost and operations** documented: what it costs to run and how it is monitored.
+- [ ] **Business narrative** — what problem it solves and for whom, not only what technology it uses.
+- [ ] **Supporting credential** (AI-103 / AZ-305 / SC-500 / GH-300 depending on the phase).
 
-:::tip[La prueba definitiva]
-Si un ingeniero senior puede clonar tu repo, correr tu eval y entender tus decisiones en 15 minutos, tienes un portafolio. Si solo tienes un certificado y un slide, tienes una promesa. **v4 optimiza para lo primero.**
+:::tip[The definitive test]
+If a senior engineer can clone your repo, run your eval, and understand your decisions in 15 minutes, you have a portfolio. If you only have a certificate and a slide, you have a promise. **v4 optimizes for the first.**
 :::
 
 ---
 
-## Cómo mantener este plan confiable en el tiempo
+## How to keep this plan reliable over time
 
-1. **Re-verifica las certificaciones cada trimestre** — el portafolio AI de Microsoft rota rápido en 2026 (ver [Fuentes y Verificación](./sources-and-verification)).
-2. **Prioriza contenido GA sobre beta** para lo crítico; usa beta solo con la guarda de "confirmar disponibilidad".
-3. **Actualiza los enlaces de producto** cuando Microsoft renombre servicios (p. ej., Azure AI Studio → Azure AI Foundry).
-4. **Trata los datos de mercado como orientativos** y re-consúltalos en la fuente antes de tomar decisiones.
+1. **Re-verify certifications every quarter** — the Microsoft AI portfolio rotates quickly in 2026 (see [Sources and Verification](./sources-and-verification)).
+2. **Prioritize GA content over beta** for critical items; use beta only with the guardrail of "confirm availability."
+3. **Update product links** when Microsoft renames services (e.g., Azure AI Studio → Azure AI Foundry).
+4. **Treat market data as directional** and re-check it at the source before making decisions.

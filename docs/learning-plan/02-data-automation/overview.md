@@ -1,86 +1,86 @@
 ---
 sidebar_position: 2
-title: "Fase 2 — Datos y Automatización"
+title: "Phase 2 — Data and Automation"
 ---
 
-# Fase 2: Datos y Automatización (Semanas 5–8)
+# Phase 2: Data and Automation (Weeks 5–8)
 
-> **Objetivo:** Desarrollar habilidades de análisis de datos y automatización que demuestren valor empresarial inmediato. Estas son las skills más demandadas en roles de AI Program Management.
+> **Objective:** Develop data analysis and automation skills that demonstrate immediate business value. These are among the most demanded skills in AI Program Management roles.
 
-## 🎯 Resultados Esperados
+## 🎯 Expected Outcomes
 
-Al completar esta fase:
-- Excel avanzado y Power Query operativos
-- SQL funcional para consultas y reportes
-- Dashboard profesional en Power BI
-- Flujo automatizado con Power Automate
-- 2 proyectos adicionales en el portfolio
+By completing this phase:
+- Advanced Excel and Power Query operational
+- Functional SQL for queries and reports
+- Professional dashboard in Power BI
+- Automated flow with Power Automate
+- 2 additional projects in the portfolio
 
 ---
 
-## Semana 5: Excel Avanzado y Power Query
+## Week 5: Advanced Excel and Power Query
 
-### Objetivo
-Dominar las herramientas de datos más usadas en entornos corporativos.
+### Objective
+Master the data tools most commonly used in corporate environments.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft Learn: Power Query](https://learn.microsoft.com/es-es/training/modules/clean-data-power-query/) | 🇪🇸 Español | Learning Path | 4 hrs |
-| [Excel Skills for Business (Coursera)](https://www.coursera.org/specializations/excel) | 🇬🇧 Inglés (subs ES) | Specialization | 6 hrs |
-| [Power Query Documentation](https://learn.microsoft.com/es-es/power-query/) | 🇪🇸 Español | Docs | Referencia |
-| [ExcelJet](https://exceljet.net/) | 🇬🇧 Inglés | Tutoriales | Referencia |
+| [Microsoft Learn: Power Query](https://learn.microsoft.com/es-es/training/modules/clean-data-power-query/) | 🇪🇸 Spanish | Learning Path | 4 hrs |
+| [Excel Skills for Business (Coursera)](https://www.coursera.org/specializations/excel) | 🇬🇧 English (ES subs) | Specialization | 6 hrs |
+| [Power Query Documentation](https://learn.microsoft.com/es-es/power-query/) | 🇪🇸 Spanish | Docs | Reference |
+| [ExcelJet](https://exceljet.net/) | 🇬🇧 English | Tutorials | Reference |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | Tablas dinámicas avanzadas | Dataset de incidentes |
-| Martes | VLOOKUP, INDEX/MATCH, XLOOKUP | Cruce de datos |
-| Miércoles | Power Query: conectar y transformar | ETL de logs |
-| Jueves | Power Query: combinaciones avanzadas | Merge de fuentes |
-| Viernes | Dashboards en Excel | Template reutilizable |
+| Monday | Advanced pivot tables | Incident dataset |
+| Tuesday | VLOOKUP, INDEX/MATCH, XLOOKUP | Data matching |
+| Wednesday | Power Query: connect and transform | Log ETL |
+| Thursday | Power Query: advanced combinations | Merge sources |
+| Friday | Dashboards in Excel | Reusable template |
 
-### 🔨 Proyecto: Dashboard de Seguridad Automatizado
+### 🔨 Project: Automated Security Dashboard
 
-Crear un dashboard ejecutivo que:
-- Conecte múltiples fuentes de datos (CSV de logs, API mock)
-- Transforme y limpie datos con Power Query
-- Presente métricas clave: incidentes/mes, tiempo de resolución, categorías
-- Se actualice automáticamente al refrescar
+Create an executive dashboard that:
+- Connects multiple data sources (log CSVs, mock API)
+- Transforms and cleans data with Power Query
+- Presents key metrics: incidents/month, resolution time, categories
+- Updates automatically on refresh
 
-**Entregable:** Archivo Excel + documentación en GitHub.
+**Deliverable:** Excel file + documentation in GitHub.
 
 ---
 
-## Semana 6: SQL Fundamentals
+## Week 6: SQL Fundamentals
 
-### Objetivo
-Consultar bases de datos para análisis de incidentes y reporting.
+### Objective
+Query databases for incident analysis and reporting.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [SQLBolt](https://sqlbolt.com/) | 🇬🇧 Inglés | Interactivo | 4-6 hrs |
-| [Khan Academy: SQL](https://www.khanacademy.org/computing/computer-programming/sql) | 🇪🇸 Español | Interactivo | 5 hrs |
-| [W3Schools SQL](https://www.w3schools.com/sql/) | 🇬🇧 Inglés | Tutorial | Referencia |
-| [Microsoft Learn: Azure SQL](https://learn.microsoft.com/es-es/training/paths/azure-sql-fundamentals/) | 🇪🇸 Español | Learning Path | 4 hrs |
-| [Mode Analytics SQL Tutorial](https://mode.com/sql-tutorial/) | 🇬🇧 Inglés | Práctico | 6 hrs |
+| [SQLBolt](https://sqlbolt.com/) | 🇬🇧 English | Interactive | 4-6 hrs |
+| [Khan Academy: SQL](https://www.khanacademy.org/computing/computer-programming/sql) | 🇪🇸 Spanish | Interactive | 5 hrs |
+| [W3Schools SQL](https://www.w3schools.com/sql/) | 🇬🇧 English | Tutorial | Reference |
+| [Microsoft Learn: Azure SQL](https://learn.microsoft.com/es-es/training/paths/azure-sql-fundamentals/) | 🇪🇸 Spanish | Learning Path | 4 hrs |
+| [Mode Analytics SQL Tutorial](https://mode.com/sql-tutorial/) | 🇬🇧 English | Practical | 6 hrs |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Ejercicios |
+| Day | Topic | Exercises |
 |-----|------|-----------|
-| Lunes | SELECT, WHERE, ORDER BY | SQLBolt Lessons 1-4 |
-| Martes | JOINs (INNER, LEFT, RIGHT) | SQLBolt Lessons 6-7 |
-| Miércoles | Aggregation (COUNT, SUM, AVG, GROUP BY) | SQLBolt Lessons 10-12 |
-| Jueves | Subqueries y CTEs | Mode Analytics |
-| Viernes | CREATE, INSERT, UPDATE | Diseño de schema |
-| Sábado | **Proyecto completo** | — |
+| Monday | SELECT, WHERE, ORDER BY | SQLBolt Lessons 1-4 |
+| Tuesday | JOINs (INNER, LEFT, RIGHT) | SQLBolt Lessons 6-7 |
+| Wednesday | Aggregation (COUNT, SUM, AVG, GROUP BY) | SQLBolt Lessons 10-12 |
+| Thursday | Subqueries and CTEs | Mode Analytics |
+| Friday | CREATE, INSERT, UPDATE | Schema design |
+| Saturday | **Complete project** | — |
 
-### 🔨 Proyecto: Base de Datos de Tracking de Incidentes
+### 🔨 Project: Incident Tracking Database
 
 ```sql
 -- Schema para gestión de incidentes de seguridad
@@ -91,112 +91,110 @@ Consultar bases de datos para análisis de incidentes y reporting.
 --          top categorías, carga por analista
 ```
 
-**Entregable:** 
-- Schema SQL documentado
-- 10+ queries útiles para reporting
-- README explicando el diseño
-- Repositorio en GitHub
+**Deliverable:**`n- Documented SQL schema
+- 10+ useful reporting queries
+- README explaining the design
+- GitHub repository
 
 ---
 
-## Semana 7: Power BI
+## Week 7: Power BI
 
-### Objetivo
-Crear visualizaciones ejecutivas que comuniquen insights de datos.
+### Objective
+Create executive visualizations that communicate data insights.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft Learn: Power BI](https://learn.microsoft.com/es-es/training/paths/create-use-analytics-reports-power-bi/) | 🇪🇸 Español | Learning Path | 8 hrs |
-| [Power BI: Preparar y visualizar datos](https://learn.microsoft.com/es-es/training/paths/prepare-visualize-data-power-bi/) | 🇪🇸 Español | Learning Path | 6 hrs |
-| [Guy in a Cube (YouTube)](https://www.youtube.com/@GuyInACube) | 🇬🇧 Inglés | Videos | Referencia |
-| [SQLBI: DAX Fundamentals](https://www.sqlbi.com/learn/introduction-to-dax/) | 🇬🇧 Inglés | Curso | 4 hrs |
+| [Microsoft Learn: Power BI](https://learn.microsoft.com/es-es/training/paths/create-use-analytics-reports-power-bi/) | 🇪🇸 Spanish | Learning Path | 8 hrs |
+| [Power BI: Prepare and visualize data](https://learn.microsoft.com/es-es/training/paths/prepare-visualize-data-power-bi/) | 🇪🇸 Spanish | Learning Path | 6 hrs |
+| [Guy in a Cube (YouTube)](https://www.youtube.com/@GuyInACube) | 🇬🇧 English | Videos | Reference |
+| [SQLBI: DAX Fundamentals](https://www.sqlbi.com/learn/introduction-to-dax/) | 🇬🇧 English | Course | 4 hrs |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | Instalación, conexión de datos, primer reporte | MS Learn Mod 1 |
-| Martes | Visualizaciones: gráficos, tablas, KPIs | MS Learn Mod 2 |
-| Miércoles | DAX básico: medidas y columnas calculadas | SQLBI intro |
-| Jueves | Modelado de datos y relaciones | Dataset de seguridad |
-| Viernes | Publicación y sharing | Power BI Service |
-| Sábado | **Proyecto final** | — |
+| Monday | Installation, data connection, first report | MS Learn Mod 1 |
+| Tuesday | Visualizations: charts, tables, KPIs | MS Learn Mod 2 |
+| Wednesday | Basic DAX: measures and calculated columns | SQLBI intro |
+| Thursday | Data modeling and relationships | Security dataset |
+| Friday | Publishing and sharing | Power BI Service |
+| Saturday | **Final project** | — |
 
-### 🔨 Proyecto: Executive Security Metrics Dashboard
+### 🔨 Project: Executive Security Metrics Dashboard
 
-Dashboard en Power BI que muestre:
-- Resumen ejecutivo de postura de seguridad
-- Tendencias de incidentes (mes a mes)
-- Heat map de categorías de riesgo
-- SLAs de respuesta (cumplimiento vs. target)
-- Drill-down por equipo/región
+Power BI dashboard showing:
+- Executive summary of security posture
+- Incident trends (month over month)
+- Risk category heat map
+- Response SLAs (actual vs. target)
+- Drill-down by team/region
 
-**Entregable:** 
-- Archivo .pbix publicado
-- Screenshots en GitHub portfolio
-- Documentación del modelo de datos
+**Deliverable:**`n- Published .pbix file
+- Screenshots in GitHub portfolio
+- Data model documentation
 
 ---
 
-## Semana 8: Automatización con Power Automate
+## Week 8: Automation with Power Automate
 
-### Objetivo
-Crear flujos de trabajo automatizados que eliminen tareas manuales repetitivas.
+### Objective
+Create automated workflows that eliminate repetitive manual tasks.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft Learn: Power Automate](https://learn.microsoft.com/es-es/training/paths/automate-process-power-automate/) | 🇪🇸 Español | Learning Path | 6 hrs |
-| [Power Automate Documentation](https://learn.microsoft.com/es-es/power-automate/) | 🇪🇸 Español | Docs | Referencia |
-| [Power Automate in a Day](https://learn.microsoft.com/es-es/power-automate/guidance/planning/introduction) | 🇪🇸 Español | Workshop | 8 hrs |
-| [Reza Dorrani (YouTube)](https://www.youtube.com/@RezaDorrani) | 🇬🇧 Inglés | Tutoriales | Referencia |
+| [Microsoft Learn: Power Automate](https://learn.microsoft.com/es-es/training/paths/automate-process-power-automate/) | 🇪🇸 Spanish | Learning Path | 6 hrs |
+| [Power Automate Documentation](https://learn.microsoft.com/es-es/power-automate/) | 🇪🇸 Spanish | Docs | Reference |
+| [Power Automate in a Day](https://learn.microsoft.com/es-es/power-automate/guidance/planning/introduction) | 🇪🇸 Spanish | Workshop | 8 hrs |
+| [Reza Dorrani (YouTube)](https://www.youtube.com/@RezaDorrani) | 🇬🇧 English | Tutorials | Reference |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | Introducción, triggers, actions | Flujo email → Excel |
-| Martes | Condiciones, loops, variables | Lógica de negocio |
-| Miércoles | Conectores: SharePoint, Teams, Outlook | Integración M365 |
-| Jueves | HTTP connector y APIs | Conectar servicio externo |
-| Viernes | Error handling y monitoring | Flujo robusto |
-| Sábado | **Proyecto final** | — |
+| Monday | Introduction, triggers, actions | Email → Excel flow |
+| Tuesday | Conditions, loops, variables | Business logic |
+| Wednesday | Connectors: SharePoint, Teams, Outlook | M365 integration |
+| Thursday | HTTP connector and APIs | Connect external service |
+| Friday | Error handling and monitoring | Robust flow |
+| Saturday | **Final project** | — |
 
-### 🔨 Proyecto: Flujo Automatizado de Reporting de Tickets
+### 🔨 Project: Automated Ticket Reporting Flow
 
-Automatización que:
-1. Detecta nuevos tickets de seguridad (trigger)
-2. Clasifica por prioridad (condición)
-3. Notifica al equipo correcto (Teams)
-4. Actualiza dashboard (Excel/SharePoint)
-5. Genera reporte semanal automático (email)
+Automation that:
+1. Detects new security tickets (trigger)
+2. Classifies by priority (condition)
+3. Notifies the right team (Teams)
+4. Updates dashboard (Excel/SharePoint)
+5. Generates automatic weekly report (email)
 
-**Entregable:**
-- Flujo documentado con screenshots
-- Diagrama de arquitectura
-- README en GitHub
+**Deliverable:**
+- Documented flow with screenshots
+- Architecture diagram
+- README in GitHub
 
 ---
 
-## 📋 Checklist de Fase 2
+## 📋 Phase 2 Checklist
 
-- [ ] Excel: Power Query dominado
-- [ ] Dashboard de seguridad en Excel creado
-- [ ] SQL: Queries complejas funcionales
-- [ ] Base de datos de incidentes diseñada
-- [ ] Power BI: Dashboard ejecutivo publicado
-- [ ] Power Automate: Flujo de tickets operativo
-- [ ] 4 proyectos nuevos en GitHub portfolio
-- [ ] AZ-900 completado (si no se hizo en semana 4)
+- [ ] Excel: Power Query mastered
+- [ ] Security dashboard in Excel created
+- [ ] SQL: complex queries functional
+- [ ] Incident database designed
+- [ ] Power BI: executive dashboard published
+- [ ] Power Automate: ticket flow operational
+- [ ] 4 new projects in GitHub portfolio
+- [ ] AZ-900 completed (if not done in week 4)
 
-## 🔗 Valor para el CV
+## 🔗 Resume Value
 
-Después de esta fase, puedes decir:
-> "Diseñé e implementé dashboards ejecutivos de seguridad usando Power BI y SQL, automaticé flujos de reporting que redujeron tiempo manual en un 60%, y creé pipelines de datos con Power Query."
+After this phase, you can say:
+> "I designed and implemented executive security dashboards using Power BI and SQL, automated reporting flows that reduced manual time by 60%, and created data pipelines with Power Query."
 
-## ⏭️ Siguiente Fase
+## ⏭️ Next Phase
 
-[Fase 3: Ciberseguridad Moderna →](../cybersecurity/overview)
+[Phase 3: Modern Cybersecurity →](../cybersecurity/overview)

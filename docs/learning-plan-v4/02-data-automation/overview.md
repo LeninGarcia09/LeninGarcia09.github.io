@@ -1,140 +1,140 @@
 ---
 sidebar_position: 2
-title: "Fase 2 — Portafolio Técnico: RAG, Agentes y Evaluación"
+title: "Phase 2 — Technical Portfolio: RAG, Agents, and Evaluation"
 ---
 
-# Fase 2: Portafolio Técnico — RAG, Agentes y Evaluación (Semanas 5–12)
+# Phase 2: Technical Portfolio — RAG, Agents, and Evaluation (Weeks 5–12)
 
-> **Objetivo:** Construir la evidencia técnica central del perfil de AI Solution Architect. En 8 semanas produces **3 artefactos fuertes y reproducibles** (un pipeline de datos con valor de negocio, un sistema RAG evaluado y una comparativa de agentes) que sostienen la narrativa de arquitectura en entrevistas.
+> **Objective:** Build the core technical evidence for the AI Solution Architect profile. In 8 weeks you produce **3 strong, reproducible artifacts** (a data pipeline with business value, an evaluated RAG system, and an agent comparison) that support the architecture narrative in interviews.
 
-## 🎯 Resultados Esperados
+## 🎯 Expected Outcomes
 
-Al completar esta fase:
-- Pipeline de datos que alimenta un caso de AI, con métrica de impacto documentada
-- Sistema **RAG** implementado **con evaluación reproducible** (groundedness, relevance)
-- Comparativa de **agentes** con trazas y criterios de selección
-- 3 repos con README profesional listos para el **Gate CP2 (Semana 12)**
+By completing this phase:
+- Data pipeline feeding an AI use case, with documented impact metric
+- **RAG** system implemented **with reproducible evaluation** (groundedness, relevance)
+- **Agent** comparison with traces and selection criteria
+- 3 repos with professional README files ready for **Gate CP2 (Week 12)**
 
-:::tip[Regla de la fase]
-"Proof over study": cada semana cierra con evidencia publicada (repo, benchmark o write-up). Ver [Metodología](../methodology-best-practices).
+:::tip[Phase rule]
+"Proof over study": every week closes with published evidence (repo, benchmark, or write-up). See [Methodology](../methodology-best-practices).
 :::
 
 ---
 
-## Bloque A — Datos que alimentan AI (Semanas 5–8)
+## Block A — Data that feeds AI (Weeks 5–8)
 
-### Semana 5 — Proyecto de datos #1: ingesta y limpieza
+### Week 5 — Data project #1: ingestion and cleaning
 
-**Objetivo:** construir un pipeline reproducible que transforme datos crudos en un dataset listo para AI (base de un RAG o de un dashboard).
+**Objective:** build a reproducible pipeline that transforms raw data into an AI-ready dataset (the foundation for a RAG or dashboard).
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
 | [Python: pandas](https://pandas.pydata.org/docs/getting_started/index.html) | 🇬🇧 | Docs |
 | [Microsoft Learn: Power Query](https://learn.microsoft.com/es-es/training/modules/automate-data-cleaning-power-query/) | 🇪🇸 | Learning Path |
-| [SQL — SQLBolt](https://sqlbolt.com/) | 🇬🇧 | Interactivo |
+| [SQL — SQLBolt](https://sqlbolt.com/) | 🇬🇧 | Interactive |
 
-**Entregable:** repo `data-pipeline/` — script de ingesta + limpieza, dataset de salida versionado, README con diagrama de flujo y **una métrica** (registros procesados, % de errores corregidos).
+**Deliverable:** repo `data-pipeline/` — ingestion + cleaning script, versioned output dataset, README with flow diagram and **one metric** (records processed, % errors corrected).
 
-### Semana 6 — Proyecto de datos #2: métrica de impacto
+### Week 6 — Data project #2: impact metric
 
-**Objetivo:** enriquecer el pipeline con una segunda fuente y calcular una métrica de negocio (ahorro de tiempo, cobertura, calidad).
+**Objective:** enrich the pipeline with a second source and calculate a business metric (time savings, coverage, quality).
 
-**Entregable:** notebook o script que produce la métrica antes/después + write-up corto de "por qué importa al negocio".
+**Deliverable:** notebook or script that produces the before/after metric + short write-up explaining "why this matters to the business."
 
-### Semana 7 — Dashboard ejecutivo + write-up
+### Week 7 — Executive dashboard + write-up
 
-**Objetivo:** comunicar el resultado a una audiencia ejecutiva.
+**Objective:** communicate the result to an executive audience.
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
 | [Microsoft Learn: Power BI](https://learn.microsoft.com/es-es/training/paths/create-use-analytics-reports-power-bi/) | 🇪🇸 | Learning Path |
-| [DAX Guide (SQLBI)](https://dax.guide/) | 🇬🇧 | Referencia |
+| [DAX Guide (SQLBI)](https://dax.guide/) | 🇬🇧 | Reference |
 
-**Entregable:** dashboard (Power BI o similar) con 3–5 KPIs + write-up de 1 página con la historia del dato.
+**Deliverable:** dashboard (Power BI or similar) with 3–5 KPIs + 1-page write-up with the data story.
 
-### Semana 8 — Automatización del workflow + README
+### Week 8 — Workflow automation + README
 
-**Objetivo:** eliminar los pasos manuales del pipeline.
+**Objective:** remove manual steps from the pipeline.
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
 | [Power Automate](https://learn.microsoft.com/es-es/training/paths/automate-process-power-automate/) | 🇪🇸 | Learning Path |
-| [Python: scheduling / cron básico](https://docs.python.org/3/library/sched.html) | 🇬🇧 | Docs |
+| [Python: scheduling / basic cron](https://docs.python.org/3/library/sched.html) | 🇬🇧 | Docs |
 
-**Entregable:** flujo automatizado documentado + README que cualquiera pueda ejecutar. **Cierre del Bloque A: artefacto #1 publicable.**
+**Deliverable:** documented automated flow + README anyone can run. **Block A close: publishable artifact #1.**
 
 ---
 
-## Bloque B — RAG y Agentes (Semanas 9–12)
+## Block B — RAG and Agents (Weeks 9–12)
 
-### Semana 9 — RAG lab prerequisito + benchmark base
+### Week 9 — RAG prerequisite lab + baseline benchmark
 
-**Objetivo:** entender la arquitectura RAG y establecer una línea base de calidad medible.
+**Objective:** understand RAG architecture and establish a measurable quality baseline.
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
-| [Microsoft Learn: RAG con Azure AI](https://learn.microsoft.com/es-es/azure/ai-foundry/concepts/retrieval-augmented-generation) | 🇪🇸 | Docs |
+| [Microsoft Learn: RAG with Azure AI](https://learn.microsoft.com/es-es/azure/ai-foundry/concepts/retrieval-augmented-generation) | 🇪🇸 | Docs |
 | [LangChain: RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/) | 🇬🇧 | Tutorial |
 | [Azure AI Search](https://learn.microsoft.com/es-es/azure/search/) | 🇪🇸 | Docs |
 
-**Entregable:** diagrama de arquitectura RAG + un set de 15–20 preguntas de evaluación (tu "benchmark base").
+**Deliverable:** RAG architecture diagram + a set of 15–20 evaluation questions (your "baseline benchmark").
 
-### Semana 10 — Implementación RAG + evaluación
+### Week 10 — RAG implementation + evaluation
 
-**Objetivo:** construir el RAG y **medir su calidad** (no solo que "funcione").
+**Objective:** build the RAG and **measure its quality** (not just that it "works").
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
 | [Azure AI Evaluation SDK](https://learn.microsoft.com/es-es/azure/ai-foundry/how-to/develop/evaluate-sdk) | 🇪🇸 | Tutorial |
 | [Chunking strategies](https://learn.microsoft.com/es-es/azure/search/vector-search-how-to-chunk-documents) | 🇪🇸 | Docs |
 
-**Arquitectura de referencia:** ingesta → chunking → embeddings → vector store (Azure AI Search / Chroma) → retrieval (híbrido + reranking) → generación con **citas de fuente** → evaluación (groundedness, relevance).
+**Reference architecture:** ingestion → chunking → embeddings → vector store (Azure AI Search / Chroma) → retrieval (hybrid + reranking) → generation with **source citations** → evaluation (groundedness, relevance).
 
-**Entregable:** repo `rag-evaluado/` — RAG funcional + reporte de evaluación con métricas por pregunta. **Artefacto #2 publicable.**
+**Deliverable:** repo `rag-evaluado/` — functional RAG + evaluation report with metrics per question. **Publishable artifact #2.**
 
-### Semana 11 — Agentes comparativos + trazas
+### Week 11 — Comparative agents + traces
 
-**Objetivo:** comparar 2–3 enfoques de agentes sobre una misma tarea y justificar la selección.
+**Objective:** compare 2–3 agent approaches on the same task and justify the selection.
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
 | [Azure AI Agent Service](https://learn.microsoft.com/es-es/azure/ai-services/agents/) | 🇪🇸 | Docs |
 | [Agent Framework: Your First Agent](https://learn.microsoft.com/en-us/agent-framework/get-started/your-first-agent) | 🇬🇧 | Lab |
 | [LangGraph (open, portable)](https://langchain-ai.github.io/langgraph/) | 🇬🇧 | Docs |
 
-**Entregable:** repo con la misma tarea resuelta por 2–3 agentes, **trazas de ejecución** capturadas, y una tabla de trade-offs (latencia, costo, fiabilidad).
+**Deliverable:** repo with the same task solved by 2–3 agents, captured **execution traces**, and a trade-off table (latency, cost, reliability).
 
-### Semana 12 — Cierre CP2: 3 artefactos fuertes
+### Week 12 — CP2 close: 3 strong artifacts
 
-**Objetivo:** dejar los tres artefactos hiring-ready y pasar el gate.
+**Objective:** make the three artifacts hiring-ready and pass the gate.
 
-**Checklist del [Gate CP2](../checkpoints#gate-cp2-semana-12):**
-- [ ] 3 repos con README profesional
-- [ ] Al menos 1 benchmark reproducible (el RAG evaluado)
-- [ ] Al menos 1 write-up técnico publicado
-- [ ] Narrativa lista para whiteboard de arquitectura
+**Checklist for [Gate CP2](../checkpoints#gate-cp2-week-12):**
+- [ ] 3 repos with professional README files
+- [ ] At least 1 reproducible benchmark (the evaluated RAG)
+- [ ] At least 1 published technical write-up
+- [ ] Architecture whiteboard narrative ready
 
 ---
 
-## 📋 Checklist de Fase 2
+## 📋 Phase 2 Checklist
 
-- [ ] Pipeline de datos con métrica de impacto (artefacto #1)
-- [ ] Sistema RAG con evaluación reproducible (artefacto #2)
-- [ ] Comparativa de agentes con trazas (artefacto #3)
-- [ ] Dashboard ejecutivo + write-up publicados
-- [ ] 3 repos con README profesional
-- [ ] Gate CP2 aprobado
+- [ ] Data pipeline with impact metric (artifact #1)
+- [ ] RAG system with reproducible evaluation (artifact #2)
+- [ ] Agent comparison with traces (artifact #3)
+- [ ] Executive dashboard + write-up published
+- [ ] 3 repos with professional README files
+- [ ] Gate CP2 approved
 
-## Operacion v4
+## v4 Operations
 
 - [Checkpoint Gates](../checkpoints)
-- [Template de Evidencia](../evidence-template)
+- [Evidence Template](../evidence-template)
 - [Weekly Tracker](../weekly-tracker)
 
-## 🔗 Valor para el CV
+## 🔗 Resume Value
 
-> "Construí un sistema RAG empresarial con evaluación reproducible (groundedness/relevance), una comparativa de agentes con trazas y criterios de selección, y un pipeline de datos con impacto de negocio medible — todo publicado en GitHub."
+> "I built an enterprise RAG system with reproducible evaluation (groundedness/relevance), an agent comparison with traces and selection criteria, and a data pipeline with measurable business impact — all published on GitHub."
 
-## ⏭️ Siguiente Fase
+## ⏭️ Next Phase
 
-[Fase 3: Arquitectura + Seguridad Empresarial →](../cybersecurity/overview)
+[Phase 3: Enterprise Architecture + Security →](../cybersecurity/overview)

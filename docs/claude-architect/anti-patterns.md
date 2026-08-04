@@ -7,7 +7,6 @@ sidebar_position: 5
 
 # ⚠️ Key Anti-Patterns (High-Yield Exam Content)
 
-> 🌐 **Language:** English · [Versión en Español](./es/anti-patterns)
 
 These appear as distractors in ~60% of questions. If you can spot them, you eliminate 2–3 options immediately.
 

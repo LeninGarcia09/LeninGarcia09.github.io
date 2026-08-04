@@ -1,218 +1,218 @@
 ---
 sidebar_position: 3
-title: "Fase 3 — Ciberseguridad Moderna"
+title: "Phase 3 — Modern Cybersecurity"
 ---
 
-# Fase 3: Ciberseguridad Moderna (Semanas 9–12)
+# Phase 3: Modern Cybersecurity (Weeks 9–12)
 
-> **Objetivo:** Capitalizar la experiencia previa en informática forense y llevarla al nivel de ciberseguridad moderna con Zero Trust, SOC operations, y preparación para una certificación de seguridad (SC-900 u opción vendor-neutral).
+> **Objective:** Capitalize on prior digital forensics experience and raise it to modern cybersecurity level with Zero Trust, SOC operations, and preparation for a security certification (SC-900 or vendor-neutral option).
 
-:::info[Vendor-neutral por diseño]
-Esta fase usa Microsoft (Sentinel, Entra, SC-900) como **un** ejemplo concreto, pero las competencias son **agnósticas de proveedor**. Donde veas una herramienta Microsoft, tienes una alternativa abierta equivalente (Wazuh/Security Onion para SIEM, Sigma para reglas de detección, OWASP/MITRE para amenazas de IA). Elige según el stack de tu empleador objetivo.
+:::info[Vendor-neutral by design]
+This phase uses Microsoft (Sentinel, Entra, SC-900) as **one** concrete example, but the competencies are **vendor-agnostic**. Where you see a Microsoft tool, there is an equivalent open alternative (Wazuh/Security Onion for SIEM, Sigma for detection rules, OWASP/MITRE for AI threats). Choose based on your target employer's stack.
 :::
 
-:::tip[🧪 Aplica lo aprendido: Track de Retos de Seguridad de IA]
-Los 4 laboratorios del **[Track de Retos: Seguridad de IA Aplicada](../challenges-ai-security/overview)** (Garak, PyRIT, Presidio; OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF, ISO 42001) convierten esta fase en **evidencia de portafolio** — exactamente lo que piden roles como AI Security Engineer, Detection Engineer y Especialista en Seguridad de IA.
+:::tip[🧪 Apply what you learn: AI Security Challenge Track]
+The 4 labs in the **[Challenge Track: Applied AI Security](../challenges-ai-security/overview)** (Garak, PyRIT, Presidio; OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF, ISO 42001) turn this phase into **portfolio evidence** — exactly what roles such as AI Security Engineer, Detection Engineer, and AI Security Specialist ask for.
 :::
 
-## 🎯 Resultados Esperados
+## 🎯 Expected Outcomes
 
-Al completar esta fase:
-- Comprensión de SOC moderno y detección de amenazas
-- Threat modeling aplicado a sistemas AI
-- Identidad y Zero Trust implementados
-- Certificación SC-900 obtenida
-- Experiencia forense reposicionada como ventaja competitiva
+By completing this phase:
+- Understanding of modern SOC and threat detection
+- Threat modeling applied to AI systems
+- Identity and Zero Trust implemented
+- SC-900 certification earned
+- Forensics experience repositioned as a competitive advantage
 
 ---
 
-## Semana 9: SOC Fundamentals y Operaciones de Seguridad
+## Week 9: SOC Fundamentals and Security Operations
 
-### Objetivo
-Entender cómo funciona un Security Operations Center moderno y cómo AI lo está transformando.
+### Objective
+Understand how a modern Security Operations Center works and how AI is transforming it.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft Learn: Security Operations](https://learn.microsoft.com/es-es/training/paths/security-ops-sentinel/) | 🇪🇸 Español | Learning Path | 6 hrs |
-| [SC-200 Training](https://learn.microsoft.com/es-es/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) | 🇪🇸 Español | Learning Path | 8 hrs |
-| [SANS SOC Fundamentals](https://www.sans.org/cyber-security-courses/security-operations-center-soc/) | 🇬🇧 Inglés | Overview | Referencia |
-| [Microsoft Sentinel Documentation](https://learn.microsoft.com/es-es/azure/sentinel/) | 🇪🇸 Español | Docs | Referencia |
-| [Blue Team Labs Online](https://blueteamlabs.online/) | 🇬🇧 Inglés | Labs prácticos | 4-6 hrs |
-| [Wazuh — SIEM/XDR open source](https://wazuh.com/) | 🇬🇧 Inglés | Plataforma abierta | Referencia |
-| [Sigma — reglas de detección abiertas](https://github.com/SigmaHQ/sigma) | 🇬🇧 Inglés | Reglas (vendor-neutral) | Referencia |
-| [Splunk Free / Security Onion](https://securityonionsolutions.com/) | 🇬🇧 Inglés | SIEM alternativo | Referencia |
+| [Microsoft Learn: Security Operations](https://learn.microsoft.com/es-es/training/paths/security-ops-sentinel/) | 🇪🇸 Spanish | Learning Path | 6 hrs |
+| [SC-200 Training](https://learn.microsoft.com/es-es/training/paths/sc-200-mitigate-threats-using-microsoft-365-defender/) | 🇪🇸 Spanish | Learning Path | 8 hrs |
+| [SANS SOC Fundamentals](https://www.sans.org/cyber-security-courses/security-operations-center-soc/) | 🇬🇧 English | Overview | Reference |
+| [Microsoft Sentinel Documentation](https://learn.microsoft.com/es-es/azure/sentinel/) | 🇪🇸 Spanish | Docs | Reference |
+| [Blue Team Labs Online](https://blueteamlabs.online/) | 🇬🇧 English | Practical labs | 4-6 hrs |
+| [Wazuh — open source SIEM/XDR](https://wazuh.com/) | 🇬🇧 English | Open platform | Reference |
+| [Sigma — open detection rules](https://github.com/SigmaHQ/sigma) | 🇬🇧 English | Rules (vendor-neutral) | Reference |
+| [Splunk Free / Security Onion](https://securityonionsolutions.com/) | 🇬🇧 English | Alternative SIEM | Reference |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Recurso |
+| Day | Topic | Resource |
 |-----|------|---------|
-| Lunes | Roles en SOC, niveles de analista | MS Learn Security Ops |
-| Martes | SIEM/SOAR: Microsoft Sentinel | Sentinel docs + labs |
-| Miércoles | Detección de amenazas, alertas, KQL básico | MS Learn KQL |
-| Jueves | Incident response workflow moderno | Blue Team Labs |
-| Viernes | AI en SOC: automatización de detección | Investigar herramientas AI |
+| Monday | SOC roles, analyst tiers | MS Learn Security Ops |
+| Tuesday | SIEM/SOAR: Microsoft Sentinel | Sentinel docs + labs |
+| Wednesday | Threat detection, alerts, basic KQL | MS Learn KQL |
+| Thursday | Modern incident response workflow | Blue Team Labs |
+| Friday | AI in SOC: detection automation | Research AI tools |
 
-### Conexión con Forensics
+### Connection to Forensics
 
-| Tu Experiencia | Evolución Moderna |
+| Your Experience | Modern Evolution |
 |---------------|-------------------|
-| Análisis post-mortem | Real-time detection con SIEM |
-| Recuperación de evidencia | Digital forensics en cloud |
-| Cadena de custodia | Automated evidence collection |
-| Reportes de investigación | Incident response playbooks |
+| Post-mortem analysis | Real-time detection with SIEM |
+| Evidence recovery | Digital forensics in cloud |
+| Chain of custody | Automated evidence collection |
+| Investigation reports | Incident response playbooks |
 
 ---
 
-## Semana 10: Threat Modeling
+## Week 10: Threat Modeling
 
-### Objetivo
-Modelar amenazas para sistemas modernos, incluyendo sistemas AI.
+### Objective
+Model threats for modern systems, including AI systems.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft Threat Modeling Tool](https://learn.microsoft.com/es-es/azure/security/develop/threat-modeling-tool) | 🇪🇸 Español | Tool + docs | 4 hrs |
-| [STRIDE Methodology](https://learn.microsoft.com/es-es/azure/security/develop/threat-modeling-tool-threats) | 🇪🇸 Español | Framework | 2 hrs |
-| [OWASP Threat Modeling](https://owasp.org/www-community/Threat_Modeling) | 🇬🇧 Inglés | Guide | 3 hrs |
-| [AI/ML Threat Modeling (MITRE ATLAS)](https://atlas.mitre.org/) | 🇬🇧 Inglés | Framework | 4 hrs |
-| [Threat Modeling Manifesto](https://www.threatmodelingmanifesto.org/) | 🇬🇧 Inglés | Principles | 1 hr |
+| [Microsoft Threat Modeling Tool](https://learn.microsoft.com/es-es/azure/security/develop/threat-modeling-tool) | 🇪🇸 Spanish | Tool + docs | 4 hrs |
+| [STRIDE Methodology](https://learn.microsoft.com/es-es/azure/security/develop/threat-modeling-tool-threats) | 🇪🇸 Spanish | Framework | 2 hrs |
+| [OWASP Threat Modeling](https://owasp.org/www-community/Threat_Modeling) | 🇬🇧 English | Guide | 3 hrs |
+| [AI/ML Threat Modeling (MITRE ATLAS)](https://atlas.mitre.org/) | 🇬🇧 English | Framework | 4 hrs |
+| [Threat Modeling Manifesto](https://www.threatmodelingmanifesto.org/) | 🇬🇧 English | Principles | 1 hr |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | STRIDE framework | Modelar app web tradicional |
-| Martes | Attack Trees | Diagramar vectores de ataque |
-| Miércoles | MITRE ATT&CK basics | Mapear técnicas a defensas |
-| Jueves | MITRE ATLAS (AI threats) | Amenazas específicas de AI |
-| Viernes | **Proyecto** | Threat model completo |
+| Monday | STRIDE framework | Model a traditional web app |
+| Tuesday | Attack Trees | Diagram attack vectors |
+| Wednesday | MITRE ATT&CK basics | Map techniques to defenses |
+| Thursday | MITRE ATLAS (AI threats) | AI-specific threats |
+| Friday | **Project** | Complete threat model |
 
-### 🔨 Proyecto: Threat Model para AI Chatbot Corporativo
+### 🔨 Project: Threat Model for Corporate AI Chatbot
 
-Modelar amenazas para un chatbot empresarial con AI:
+Model threats for an enterprise AI chatbot:
 
-**Amenazas STRIDE aplicadas a AI:**
-- **Spoofing:** Impersonación de usuarios en el chat
+**STRIDE threats applied to AI:**
+- **Spoofing:** User impersonation in chat
 - **Tampering:** Prompt injection, data poisoning
-- **Repudiation:** Falta de audit trail en conversaciones
-- **Information Disclosure:** Leakage de datos confidenciales
-- **Denial of Service:** Abuse del modelo, token exhaustion
-- **Elevation of Privilege:** Jailbreak del modelo
+- **Repudiation:** Lack of audit trail in conversations
+- **Information Disclosure:** Confidential data leakage
+- **Denial of Service:** Model abuse, token exhaustion
+- **Elevation of Privilege:** Model jailbreak
 
-**Entregable:**
-- Diagrama de amenazas (draw.io o similar)
-- Documento con mitigaciones propuestas
-- Mapeo a MITRE ATLAS
-- Repositorio en GitHub
+**Deliverable:**
+- Threat diagram (draw.io or similar)
+- Document with proposed mitigations
+- Mapping to MITRE ATLAS
+- GitHub repository
 
 ---
 
-## Semana 11: Identidad y Zero Trust
+## Week 11: Identity and Zero Trust
 
-### Objetivo
-Dominar los fundamentos de identidad moderna y arquitectura Zero Trust.
+### Objective
+Master the fundamentals of modern identity and Zero Trust architecture.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft Zero Trust Guidance](https://learn.microsoft.com/es-es/security/zero-trust/) | 🇪🇸 Español | Framework | 4 hrs |
-| [Microsoft Entra ID Documentation](https://learn.microsoft.com/es-es/entra/fundamentals/) | 🇪🇸 Español | Docs | 6 hrs |
-| [NIST Zero Trust Architecture (SP 800-207)](https://csrc.nist.gov/pubs/sp/800/207/final) | 🇬🇧 Inglés | Standard | 3 hrs |
-| [Microsoft Learn: Identity & Access](https://learn.microsoft.com/es-es/training/paths/describe-azure-identity-access-security/) | 🇪🇸 Español | Learning Path | 4 hrs |
+| [Microsoft Zero Trust Guidance](https://learn.microsoft.com/es-es/security/zero-trust/) | 🇪🇸 Spanish | Framework | 4 hrs |
+| [Microsoft Entra ID Documentation](https://learn.microsoft.com/es-es/entra/fundamentals/) | 🇪🇸 Spanish | Docs | 6 hrs |
+| [NIST Zero Trust Architecture (SP 800-207)](https://csrc.nist.gov/pubs/sp/800/207/final) | 🇬🇧 English | Standard | 3 hrs |
+| [Microsoft Learn: Identity & Access](https://learn.microsoft.com/es-es/training/paths/describe-azure-identity-access-security/) | 🇪🇸 Spanish | Learning Path | 4 hrs |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | Zero Trust principles: Never trust, always verify | MS Zero Trust docs |
-| Martes | MFA, Conditional Access policies | Entra ID labs |
-| Miércoles | Identity governance, privileged access | PIM, access reviews |
-| Jueves | Zero Trust for AI systems | Cómo aplicar ZT a AI workloads |
-| Viernes | Zero Trust assessment | Evaluar escenario empresarial |
+| Monday | Zero Trust principles: Never trust, always verify | MS Zero Trust docs |
+| Tuesday | MFA, Conditional Access policies | Entra ID labs |
+| Wednesday | Identity governance, privileged access | PIM, access reviews |
+| Thursday | Zero Trust for AI systems | How to apply ZT to AI workloads |
+| Friday | Zero Trust assessment | Evaluate enterprise scenario |
 
-### 🔨 Proyecto: Zero Trust Assessment para Organización Ficticia
+### 🔨 Project: Zero Trust Assessment for Fictional Organization
 
-Crear un assessment de Zero Trust que incluya:
-- Evaluación del estado actual (score 1-5 por pilar)
-- Gaps identificados
-- Roadmap de implementación
+Create a Zero Trust assessment that includes:
+- Current-state evaluation (score 1-5 by pillar)
+- Identified gaps
+- Implementation roadmap
 - Quick wins vs. long-term improvements
-- Consideraciones especiales para AI/ML workloads
+- Special considerations for AI/ML workloads
 
-**Pilares evaluados:**
-1. Identidad
+**Evaluated pillars:**
+1. Identity
 2. Endpoints
-3. Aplicaciones
-4. Datos
-5. Infraestructura
-6. Red
+3. Applications
+4. Data
+5. Infrastructure
+6. Network
 
 ---
 
-## Semana 12: Preparación y Certificación SC-900
+## Week 12: SC-900 Preparation and Certification
 
-### Objetivo
-Consolidar conocimientos y obtener la certificación SC-900.
+### Objective
+Consolidate knowledge and earn the SC-900 certification.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft Learn: SC-900](https://learn.microsoft.com/es-es/training/paths/describe-concepts-of-security-compliance-identity/) | 🇪🇸 Español | Learning Path | 8 hrs |
-| [SC-900 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/security-compliance-and-identity-fundamentals/) | 🇪🇸 Español | Guía oficial | Referencia |
-| [John Savill's Technical Training (YouTube)](https://www.youtube.com/@NTFAQGuy) | 🇬🇧 Inglés | Video (study cram) | 2 hrs |
-| [Practice Assessment oficial de SC-900 (gratis)](https://learn.microsoft.com/es-es/credentials/certifications/security-compliance-and-identity-fundamentals/practice/assessment?assessmentId=17) | 🇪🇸 Español | Práctica oficial gratis | 2 hrs |
+| [Microsoft Learn: SC-900](https://learn.microsoft.com/es-es/training/paths/describe-concepts-of-security-compliance-identity/) | 🇪🇸 Spanish | Learning Path | 8 hrs |
+| [SC-900 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/security-compliance-and-identity-fundamentals/) | 🇪🇸 Spanish | Official guide | Reference |
+| [John Savill's Technical Training (YouTube)](https://www.youtube.com/@NTFAQGuy) | 🇬🇧 English | Video (study cram) | 2 hrs |
+| [Official SC-900 Practice Assessment (free)](https://learn.microsoft.com/es-es/credentials/certifications/security-compliance-and-identity-fundamentals/practice/assessment?assessmentId=17) | 🇪🇸 Spanish | Free official practice | 2 hrs |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Módulo SC-900 | Tema |
+| Day | SC-900 Module | Topic |
 |-----|---------------|------|
-| Lunes | Módulo 1 | Conceptos de seguridad, compliance e identidad |
-| Martes | Módulo 2 | Capacidades de Microsoft Entra |
-| Miércoles | Módulo 3 | Capacidades de soluciones de seguridad Microsoft |
-| Jueves | Módulo 4 | Capacidades de Microsoft compliance |
-| Viernes | Repaso | Exámenes de práctica |
-| Sábado | **Examen** | SC-900 |
+| Monday | Module 1 | Security, compliance, and identity concepts |
+| Tuesday | Module 2 | Microsoft Entra capabilities |
+| Wednesday | Module 3 | Microsoft security solutions capabilities |
+| Thursday | Module 4 | Microsoft compliance capabilities |
+| Friday | Review | Practice exams |
+| Saturday | **Exam** | SC-900 |
 
-### Certificación: SC-900
+### Certification: SC-900
 
-- **Costo:** $99 USD
-- **Idioma del examen:** Disponible en español
-- **Formato:** 40-60 preguntas, 45 minutos
-- **Puntuación para pasar:** 700/1000
-- **Dominios:**
+- **Cost:** $99 USD
+- **Exam language:** Available in Spanish
+- **Format:** 40-60 questions, 45 minutes
+- **Passing score:** 700/1000
+- **Domains:**
   - Security, compliance, and identity concepts (10-15%)
   - Microsoft Entra capabilities (25-30%)
   - Microsoft security solutions capabilities (25-30%)
   - Microsoft compliance solutions capabilities (25-30%)
 
-:::tip[Alternativas vendor-neutral a SC-900]
-SC-900 es una excelente puerta de entrada (barata, en español), pero **no es obligatoria**. Si tu empleador objetivo no es Microsoft-céntrico, considera **ISC2 CC** (examen gratuito vía el programa "1M Certified in Cybersecurity") o **CompTIA Security+** como credencial de seguridad vendor-neutral. Para el ángulo de **seguridad de IA** específicamente, tu diferenciador son los artefactos del [Track de Retos de Seguridad de IA](../challenges-ai-security/overview) + dominio de OWASP LLM Top 10, MITRE ATLAS y NIST AI RMF.
+:::tip[Vendor-neutral alternatives to SC-900]
+SC-900 is an excellent entry point (low cost, available in Spanish), but it is **not mandatory**. If your target employer is not Microsoft-centric, consider **ISC2 CC** (free exam through the "1M Certified in Cybersecurity" program) or **CompTIA Security+** as vendor-neutral security credentials. For the **AI security** angle specifically, your differentiator is the artifacts from the [AI Security Challenge Track](../challenges-ai-security/overview) + command of OWASP LLM Top 10, MITRE ATLAS, and NIST AI RMF.
 :::
 
 ---
 
-## 📋 Checklist de Fase 3
+## 📋 Phase 3 Checklist
 
-- [ ] SOC operations entendido
-- [ ] KQL básico funcional
-- [ ] Threat model para AI system completado
-- [ ] MITRE ATLAS explorado
-- [ ] Zero Trust principles dominados
-- [ ] Zero Trust assessment creado
-- [ ] SC-900 Learning Path completado
-- [ ] **Certificación SC-900 obtenida**
-- [ ] Portfolio actualizado con proyectos de security
+- [ ] SOC operations understood
+- [ ] Basic KQL functional
+- [ ] Threat model for AI system completed
+- [ ] MITRE ATLAS explored
+- [ ] Zero Trust principles mastered
+- [ ] Zero Trust assessment created
+- [ ] SC-900 Learning Path completed
+- [ ] **SC-900 certification earned**
+- [ ] Portfolio updated with security projects
 
-## 🔗 Valor para el CV
+## 🔗 Resume Value
 
-Después de esta fase:
-> "Profesional de ciberseguridad con certificaciones AZ-900 y SC-900, experiencia en threat modeling para sistemas AI (STRIDE + MITRE ATLAS), implementación de Zero Trust architecture, y operaciones SOC modernas con Microsoft Sentinel."
+After this phase:
+> "Cybersecurity professional with AZ-900 and SC-900 certifications, experience in threat modeling for AI systems (STRIDE + MITRE ATLAS), Zero Trust architecture implementation, and modern SOC operations with Microsoft Sentinel."
 
-## ⏭️ Siguiente Fase
+## ⏭️ Next Phase
 
-[Fase 4: AI para Negocios e IT →](../ai-business/overview)
+[Phase 4: AI for Business and IT →](../ai-business/overview)

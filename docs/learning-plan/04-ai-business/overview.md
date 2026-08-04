@@ -1,51 +1,51 @@
 ---
 sidebar_position: 4
-title: "Fase 4 — AI para Negocios e IT"
+title: "Phase 4 — AI for Business and IT"
 ---
 
-# Fase 4: AI para Negocios e IT (Semanas 13–20)
+# Phase 4: AI for Business and IT (Weeks 13–20)
 
-> **Objetivo:** Esta es la fase más importante del programa. Aquí es donde la experiencia previa se fusiona con AI para crear un perfil profesional de alto valor. Se construyen proyectos reales de AI que demuestran impacto empresarial.
+> **Objective:** This is the most important phase of the program. This is where prior experience merges with AI to create a high-value professional profile. Real AI projects are built to demonstrate business impact.
 
-## 🎯 Resultados Esperados
+## 🎯 Expected Outcomes
 
-Al completar esta fase:
-- Comprensión profunda de Generative AI y sus aplicaciones
-- Prompt engineering avanzado para escenarios empresariales
-- Conocimiento de AI Governance (NIST AI RMF, ISO 42001)
-- Responsible AI principles aplicados
-- Microsoft Copilot y agentes dominados
-- 2 proyectos AI completos en portfolio
-- Sitio web portfolio publicado
+By completing this phase:
+- Deep understanding of Generative AI and its applications
+- Advanced prompt engineering for enterprise scenarios
+- Knowledge of AI Governance (NIST AI RMF, ISO 42001)
+- Applied Responsible AI principles
+- Microsoft Copilot and agents mastered
+- 2 complete AI projects in the portfolio
+- Portfolio website published
 
 ---
 
-## Semana 13: Fundamentos de Generative AI
+## Week 13: Generative AI Foundations
 
-### Objetivo
-Entender cómo funcionan los LLMs, sus capacidades y limitaciones.
+### Objective
+Understand how LLMs work, their capabilities, and limitations.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [DeepLearning.AI: Generative AI for Everyone](https://www.deeplearning.ai/courses/generative-ai-for-everyone/) | 🇬🇧 Inglés (subs ES) | Curso | 5 hrs |
-| [Microsoft Learn: Generative AI](https://learn.microsoft.com/es-es/training/paths/introduction-generative-ai/) | 🇪🇸 Español | Learning Path | 4 hrs |
-| [Google: Introduction to Generative AI](https://www.cloudskillsboost.google/paths/118) | 🇬🇧 Inglés | Course | 3 hrs |
-| [Coursera: Generative AI Concepts](https://www.coursera.org/learn/introduction-to-generative-ai) | 🇬🇧 Inglés (subs ES) | Course | 4 hrs |
-| [IBM: Generative AI Fundamentals](https://www.ibm.com/training/collection/generative-ai) | 🇬🇧 Inglés | Course | 3 hrs |
+| [DeepLearning.AI: Generative AI for Everyone](https://www.deeplearning.ai/courses/generative-ai-for-everyone/) | 🇬🇧 English (ES subs) | Course | 5 hrs |
+| [Microsoft Learn: Generative AI](https://learn.microsoft.com/es-es/training/paths/introduction-generative-ai/) | 🇪🇸 Spanish | Learning Path | 4 hrs |
+| [Google: Introduction to Generative AI](https://www.cloudskillsboost.google/paths/118) | 🇬🇧 English | Course | 3 hrs |
+| [Coursera: Generative AI Concepts](https://www.coursera.org/learn/introduction-to-generative-ai) | 🇬🇧 English (ES subs) | Course | 4 hrs |
+| [IBM: Generative AI Fundamentals](https://www.ibm.com/training/collection/generative-ai) | 🇬🇧 English | Course | 3 hrs |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Recurso |
+| Day | Topic | Resource |
 |-----|------|---------|
-| Lunes | ¿Qué son los LLMs? Transformers, tokens | DeepLearning.AI |
-| Martes | Capacidades: text generation, summarization, code | Microsoft Learn |
-| Miércoles | Limitaciones: hallucinations, bias, knowledge cutoff | DeepLearning.AI |
-| Jueves | Casos de uso empresariales | Google course |
-| Viernes | Evaluación: ¿cuándo usar AI vs. no? | Reflexión + journal |
+| Monday | What are LLMs? Transformers, tokens | DeepLearning.AI |
+| Tuesday | Capabilities: text generation, summarization, code | Microsoft Learn |
+| Wednesday | Limitations: hallucinations, bias, knowledge cutoff | DeepLearning.AI |
+| Thursday | Enterprise use cases | Google course |
+| Friday | Evaluation: when to use AI vs. not? | Reflection + journal |
 
-### Conceptos Clave
+### Key Concepts
 
 ```
 LLM Architecture:
@@ -62,80 +62,80 @@ LLM Architecture:
 
 ---
 
-## Semana 14: Prompt Engineering
+## Week 14: Prompt Engineering
 
-### Objetivo
-Dominar el arte de comunicarse efectivamente con modelos de AI para obtener resultados profesionales.
+### Objective
+Master the art of communicating effectively with AI models to obtain professional results.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [DeepLearning.AI: ChatGPT Prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) | 🇬🇧 Inglés | Course | 2 hrs |
-| [Microsoft: Prompt Engineering Techniques](https://learn.microsoft.com/es-es/azure/ai-services/openai/concepts/prompt-engineering) | 🇪🇸 Español | Docs | 3 hrs |
-| [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering) | 🇬🇧 Inglés | Guide | 2 hrs |
-| [Anthropic Prompt Engineering](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) | 🇬🇧 Inglés | Guide | 2 hrs |
-| [Google: Prompt Design](https://ai.google.dev/gemini-api/docs/prompting-strategies) | 🇬🇧 Inglés | Guide | 2 hrs |
+| [DeepLearning.AI: ChatGPT Prompt Engineering](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) | 🇬🇧 English | Course | 2 hrs |
+| [Microsoft: Prompt Engineering Techniques](https://learn.microsoft.com/es-es/azure/ai-services/openai/concepts/prompt-engineering) | 🇪🇸 Spanish | Docs | 3 hrs |
+| [OpenAI Prompt Engineering Guide](https://platform.openai.com/docs/guides/prompt-engineering) | 🇬🇧 English | Guide | 2 hrs |
+| [Anthropic Prompt Engineering](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) | 🇬🇧 English | Guide | 2 hrs |
+| [Google: Prompt Design](https://ai.google.dev/gemini-api/docs/prompting-strategies) | 🇬🇧 English | Guide | 2 hrs |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Técnica | Práctica |
+| Day | Technique | Practice |
 |-----|---------|----------|
-| Lunes | Zero-shot, few-shot prompting | 10 prompts de práctica |
-| Martes | Chain of Thought (CoT) | Análisis paso a paso |
-| Miércoles | Role prompting + system prompts | Crear personas especializadas |
-| Jueves | Output formatting (JSON, tables, reports) | Templates empresariales |
-| Viernes | Prompt chains y workflows | Multi-step analysis |
+| Monday | Zero-shot, few-shot prompting | 10 practice prompts |
+| Tuesday | Chain of Thought (CoT) | Step-by-step analysis |
+| Wednesday | Role prompting + system prompts | Create specialized personas |
+| Thursday | Output formatting (JSON, tables, reports) | Enterprise templates |
+| Friday | Prompt chains and workflows | Multi-step analysis |
 
-### 🔨 Proyecto: Biblioteca de Prompts Profesionales
+### 🔨 Project: Professional Prompt Library
 
-Crear una colección documentada de prompts para:
+Create a documented collection of prompts for:
 
-**Seguridad:**
-- Análisis de incidentes de seguridad
-- Generación de IOCs a partir de logs
-- Resumen ejecutivo de vulnerabilidades
+**Security:**
+- Security incident analysis
+- IOC generation from logs
+- Executive vulnerability summaries
 
 **Compliance:**
-- Revisión de políticas contra frameworks
-- Gap analysis automatizado
-- Checklist de compliance
+- Policy review against frameworks
+- Automated gap analysis
+- Compliance checklist
 
 **Management:**
-- Resúmenes ejecutivos de proyectos
-- Análisis de riesgos
-- Planes de acción
+- Executive project summaries
+- Risk analysis
+- Action plans
 
-**Entregable:** Repositorio en GitHub con prompts documentados, categorizados, y con ejemplos de input/output.
+**Deliverable:** GitHub repository with documented, categorized prompts and input/output examples.
 
 ---
 
-## Semana 15: AI Governance
+## Week 15: AI Governance
 
-### Objetivo
-Entender los frameworks de gobernanza de AI que las organizaciones están adoptando.
+### Objective
+Understand the AI governance frameworks organizations are adopting.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) | 🇬🇧 Inglés | Framework | 6 hrs |
-| [ISO/IEC 42001:2023 Overview](https://www.iso.org/standard/81230.html) | 🇬🇧 Inglés | Standard | 3 hrs |
-| [EU AI Act Summary](https://artificialintelligenceact.eu/) | 🇬🇧 Inglés | Regulation | 4 hrs |
-| [OECD AI Principles](https://oecd.ai/en/ai-principles) | 🇪🇸 Español disponible | Principles | 2 hrs |
-| [Microsoft AI Governance Framework](https://blogs.microsoft.com/on-the-issues/2024/05/21/microsoft-ai-governance-blueprint/) | 🇬🇧 Inglés | Blueprint | 2 hrs |
+| [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) | 🇬🇧 English | Framework | 6 hrs |
+| [ISO/IEC 42001:2023 Overview](https://www.iso.org/standard/81230.html) | 🇬🇧 English | Standard | 3 hrs |
+| [EU AI Act Summary](https://artificialintelligenceact.eu/) | 🇬🇧 English | Regulation | 4 hrs |
+| [OECD AI Principles](https://oecd.ai/en/ai-principles) | 🇪🇸 Spanish available | Principles | 2 hrs |
+| [Microsoft AI Governance Framework](https://blogs.microsoft.com/on-the-issues/2024/05/21/microsoft-ai-governance-blueprint/) | 🇬🇧 English | Blueprint | 2 hrs |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Framework | Foco |
+| Day | Framework | Focus |
 |-----|-----------|------|
-| Lunes | NIST AI RMF: Govern function | Políticas y roles |
-| Martes | NIST AI RMF: Map function | Identificar riesgos AI |
-| Miércoles | NIST AI RMF: Measure function | Métricas y evaluación |
-| Jueves | NIST AI RMF: Manage function | Respuesta y monitoreo |
-| Viernes | ISO 42001 + EU AI Act overview | Contexto regulatorio global |
+| Monday | NIST AI RMF: Govern function | Policies and roles |
+| Tuesday | NIST AI RMF: Map function | Identify AI risks |
+| Wednesday | NIST AI RMF: Measure function | Metrics and evaluation |
+| Thursday | NIST AI RMF: Manage function | Response and monitoring |
+| Friday | ISO 42001 + EU AI Act overview | Global regulatory context |
 
-### Conceptos Clave: NIST AI RMF
+### Key Concepts: NIST AI RMF
 
 ```
 NIST AI Risk Management Framework:
@@ -159,93 +159,93 @@ NIST AI Risk Management Framework:
 
 ---
 
-## Semana 16: Responsible AI
+## Week 16: Responsible AI
 
-### Objetivo
-Aplicar principios de AI responsable en diseño y deployment de sistemas.
+### Objective
+Apply responsible AI principles in the design and deployment of systems.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft Responsible AI Resources](https://www.microsoft.com/ai/responsible-ai) | 🇪🇸 Español | Framework | 4 hrs |
-| [Microsoft Learn: Responsible AI](https://learn.microsoft.com/es-es/training/paths/responsible-ai-business-principles/) | 🇪🇸 Español | Learning Path | 4 hrs |
-| [Google: Responsible AI Practices](https://ai.google/responsibility/responsible-ai-practices/) | 🇬🇧 Inglés | Guide | 3 hrs |
-| [IBM AI Ethics](https://www.ibm.com/artificial-intelligence/ethics) | 🇬🇧 Inglés | Framework | 2 hrs |
-| [Partnership on AI](https://partnershiponai.org/) | 🇬🇧 Inglés | Resources | Referencia |
+| [Microsoft Responsible AI Resources](https://www.microsoft.com/ai/responsible-ai) | 🇪🇸 Spanish | Framework | 4 hrs |
+| [Microsoft Learn: Responsible AI](https://learn.microsoft.com/es-es/training/paths/responsible-ai-business-principles/) | 🇪🇸 Spanish | Learning Path | 4 hrs |
+| [Google: Responsible AI Practices](https://ai.google/responsibility/responsible-ai-practices/) | 🇬🇧 English | Guide | 3 hrs |
+| [IBM AI Ethics](https://www.ibm.com/artificial-intelligence/ethics) | 🇬🇧 English | Framework | 2 hrs |
+| [Partnership on AI](https://partnershiponai.org/) | 🇬🇧 English | Resources | Reference |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Principio | Práctica |
+| Day | Principle | Practice |
 |-----|-----------|----------|
-| Lunes | Fairness & inclusión | Evaluar bias en modelo |
-| Martes | Reliability & safety | Testing de edge cases |
-| Miércoles | Privacy & security | Data handling assessment |
-| Jueves | Transparency & explainability | Model cards, documentation |
-| Viernes | Accountability | Governance workflow design |
+| Monday | Fairness & inclusion | Evaluate model bias |
+| Tuesday | Reliability & safety | Edge-case testing |
+| Wednesday | Privacy & security | Data handling assessment |
+| Thursday | Transparency & explainability | Model cards, documentation |
+| Friday | Accountability | Governance workflow design |
 
-### 🔨 Proyecto: Responsible AI Impact Assessment
+### 🔨 Project: Responsible AI Impact Assessment
 
-Crear un assessment completo para un sistema AI ficticio:
+Create a complete assessment for a fictional AI system:
 
-1. **System Description:** Propósito, datos, stakeholders
-2. **Fairness Analysis:** Grupos impactados, bias potencial
-3. **Risk Evaluation:** Severidad × probabilidad
-4. **Mitigation Plan:** Controles técnicos y de proceso
-5. **Monitoring Plan:** Métricas continuas
-6. **Transparency:** Documentación para usuarios
+1. **System Description:** Purpose, data, stakeholders
+2. **Fairness Analysis:** Impacted groups, potential bias
+3. **Risk Evaluation:** Severity × likelihood
+4. **Mitigation Plan:** Technical and process controls
+5. **Monitoring Plan:** Continuous metrics
+6. **Transparency:** User documentation
 
-**Entregable:** Documento completo en GitHub con template reutilizable.
+**Deliverable:** Complete document in GitHub with reusable template.
 
 ---
 
-## Semana 17: Copilot Empresarial y Agentes Avanzados
+## Week 17: Enterprise Copilot and Advanced Agents
 
-### Objetivo
-Escalar de agentes básicos (ya construidos en la [Fase 1](../foundation/overview)) a **escenarios empresariales**: agentes autónomos, integración M365 Copilot, adopción y governance.
+### Objective
+Scale from basic agents (already built in [Phase 1](../foundation/overview)) to **enterprise scenarios**: autonomous agents, M365 Copilot integration, adoption, and governance.
 
-:::note[Fundamentos ya cubiertos]
-La construcción de tu primer agente en Copilot Studio se movió a la **Fase 1** como módulo prioritario. Esta semana asume que ya tienes un agente publicado y se enfoca en **capacidades avanzadas y estrategia empresarial**.
+:::note[Foundations already covered]
+Building your first agent in Copilot Studio moved to **Phase 1** as a priority module. This week assumes you already have a published agent and focuses on **advanced capabilities and enterprise strategy**.
 :::
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft 365 Copilot Adoption](https://adoption.microsoft.com/en-us/copilot/) | 🇬🇧 Inglés | Guía de adopción | 3 hrs |
-| [Learning Path: Prepare your organization for M365 Copilot](https://learn.microsoft.com/es-es/training/paths/prepare-your-organization-microsoft-365-copilot/) | 🇪🇸 Español | Learning Path | 6 hrs |
-| [Applied Skill: Enhance agents with autonomous capabilities](https://learn.microsoft.com/en-us/credentials/applied-skills/enhance-agents-with-autonomous-capabilities/) | 🇬🇧 Inglés | Credencial (lab) | 3-4 hrs |
-| [Copilot Studio Agent Academy (rangos avanzados)](https://microsoft.github.io/agent-academy/) | 🇬🇧 Inglés | Currículo práctico | Variable |
+| [Microsoft 365 Copilot Adoption](https://adoption.microsoft.com/en-us/copilot/) | 🇬🇧 English | Adoption guide | 3 hrs |
+| [Learning Path: Prepare your organization for M365 Copilot](https://learn.microsoft.com/es-es/training/paths/prepare-your-organization-microsoft-365-copilot/) | 🇪🇸 Spanish | Learning Path | 6 hrs |
+| [Applied Skill: Enhance agents with autonomous capabilities](https://learn.microsoft.com/en-us/credentials/applied-skills/enhance-agents-with-autonomous-capabilities/) | 🇬🇧 English | Credential (lab) | 3-4 hrs |
+| [Copilot Studio Agent Academy (advanced ranks)](https://microsoft.github.io/agent-academy/) | 🇬🇧 English | Practical curriculum | Variable |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | Agentes autónomos: triggers por evento | Añadir comportamiento autónomo a tu agente |
-| Martes | Agent flows avanzados + conectores | Integrar un sistema externo (Dataverse/API) |
-| Miércoles | M365 Copilot: extender con agentes declarativos | Agente sobre datos de la organización |
-| Jueves | Governance: DLP, autenticación, RAI para agentes | Revisión de seguridad del agente |
-| Viernes | Adoption strategy y rollout empresarial | Plan de despliegue + medición de valor |
+| Monday | Autonomous agents: event-based triggers | Add autonomous behavior to your agent |
+| Tuesday | Advanced agent flows + connectors | Integrate an external system (Dataverse/API) |
+| Wednesday | M365 Copilot: extend with declarative agents | Agent over organization data |
+| Thursday | Governance: DLP, authentication, RAI for agents | Agent security review |
+| Friday | Adoption strategy and enterprise rollout | Deployment plan + value measurement |
 
-> **Meta de la semana:** obtener la Applied Skill *"Enhance agents with autonomous capabilities"*, que valida agent flows, triggers autónomos y hand-off a humano.
+> **Weekly goal:** earn the *"Enhance agents with autonomous capabilities"* Applied Skill, which validates agent flows, autonomous triggers, and human hand-off.
 
 ---
 
-## Semana 18: Proyecto AI #1 — Security Incident Assistant
+## Week 18: AI Project #1 — Security Incident Assistant
 
-### Objetivo
-Construir un asistente AI funcional que demuestre skills de programación, AI, y seguridad.
+### Objective
+Build a functional AI assistant that demonstrates programming, AI, and security skills.
 
-### Especificación del Proyecto
+### Project Specification
 
 **Security Incident Assistant:**
-- Recibe descripción de un incidente de seguridad
-- Clasifica severidad automáticamente
-- Sugiere pasos de respuesta basados en el tipo
-- Genera resumen ejecutivo para management
-- Recomienda IOCs a buscar
+- Receives a security incident description
+- Classifies severity automatically
+- Suggests response steps based on type
+- Generates executive summary for management
+- Recommends IOCs to search for
 
-### Stack Técnico
+### Technical Stack
 
 ```
 Security Incident Assistant
@@ -259,42 +259,42 @@ Security Incident Assistant
 └── Documentation (README, architecture, usage)
 ```
 
-### Plan Semanal
+### Weekly Plan
 
-| Día | Tarea |
+| Day | Task |
 |-----|-------|
-| Lunes | Diseñar architecture, definir prompts |
-| Martes | Setup proyecto, API calls básicas |
-| Miércoles | Implementar clasificación + respuesta |
-| Jueves | UI básica (Streamlit) + testing |
-| Viernes | Documentación + deploy a GitHub |
-| Sábado | Polish + README profesional |
+| Monday | Design architecture, define prompts |
+| Tuesday | Project setup, basic API calls |
+| Wednesday | Implement classification + response |
+| Thursday | Basic UI (Streamlit) + testing |
+| Friday | Documentation + deploy to GitHub |
+| Saturday | Polish + professional README |
 
-### Entregable
-Repositorio completo en GitHub con:
-- Código funcional
-- README profesional con screenshots
-- Arquitectura documentada
-- Instrucciones de instalación
-- Ejemplo de uso
+### Deliverable
+Complete GitHub repository with:
+- Functional code
+- Professional README with screenshots
+- Documented architecture
+- Installation instructions
+- Usage example
 
 ---
 
-## Semana 19: Proyecto AI #2 — Risk Assessment Assistant
+## Week 19: AI Project #2 — Risk Assessment Assistant
 
-### Objetivo
-Construir un segundo proyecto AI enfocado en análisis de riesgo empresarial.
+### Objective
+Build a second AI project focused on enterprise risk analysis.
 
-### Especificación del Proyecto
+### Project Specification
 
 **Risk Assessment Assistant:**
-- Recibe información sobre un sistema o proyecto
-- Evalúa riesgos contra framework (NIST, ISO)
-- Genera matriz de riesgos priorizada
-- Propone controles de mitigación
-- Exporta reporte profesional
+- Receives information about a system or project
+- Evaluates risks against a framework (NIST, ISO)
+- Generates a prioritized risk matrix
+- Proposes mitigation controls
+- Exports a professional report
 
-### Stack Técnico
+### Technical Stack
 
 ```
 Risk Assessment Assistant
@@ -308,53 +308,53 @@ Risk Assessment Assistant
 └── Export capability (PDF or HTML)
 ```
 
-### Entregable
-Repositorio profesional con mismo estándar que Proyecto #1.
+### Deliverable
+Professional repository with the same standard as Project #1.
 
 ---
 
-## Semana 20: Portfolio Website
+## Week 20: Portfolio Website
 
-### Objetivo
-Crear sitio web profesional que muestre todo el trabajo realizado.
+### Objective
+Create a professional website showing all completed work.
 
-### Recursos
+### Resources
 
-| Recurso | Tipo | Uso |
+| Resource | Type | Use |
 |---------|------|-----|
-| [GitHub Pages](https://pages.github.com/) | Hosting gratuito | Deploy |
-| [Hugo](https://gohugo.io/) o [Docusaurus](https://docusaurus.io/) | Static site generator | Framework |
+| [GitHub Pages](https://pages.github.com/) | Free hosting | Deploy |
+| [Hugo](https://gohugo.io/) or [Docusaurus](https://docusaurus.io/) | Static site generator | Framework |
 | [Tailwind CSS](https://tailwindcss.com/) | Styling | Design |
 
-### Contenido del Portfolio
+### Portfolio Content
 
-1. **About Me** — Bio profesional, experiencia, visión
-2. **Skills** — Competencias técnicas con evidencia
-3. **Certifications** — AZ-900, SC-900, en progreso
-4. **Projects** — Cada proyecto con descripción, tech stack, link
-5. **Blog/Notes** — Aprendizajes clave (opcional)
+1. **About Me** — Professional bio, experience, vision
+2. **Skills** — Technical competencies with evidence
+3. **Certifications** — AZ-900, SC-900, in progress
+4. **Projects** — Each project with description, tech stack, link
+5. **Blog/Notes** — Key learnings (optional)
 6. **Contact** — LinkedIn, GitHub, email
 
 ---
 
-## 📋 Checklist de Fase 4
+## 📋 Phase 4 Checklist
 
-- [ ] Generative AI: Conceptos y limitaciones dominados
-- [ ] Prompt Engineering: Biblioteca de prompts creada
-- [ ] NIST AI RMF: Framework completo estudiado
-- [ ] ISO 42001: Overview completado
-- [ ] Responsible AI: Impact assessment realizado
-- [ ] Microsoft Copilot: Funcionalidades dominadas
-- [ ] **Proyecto 1: Security Incident Assistant** completado
-- [ ] **Proyecto 2: Risk Assessment Assistant** completado
-- [ ] **Portfolio website** publicado
-- [ ] GitHub portfolio con 7+ proyectos
+- [ ] Generative AI: concepts and limitations mastered
+- [ ] Prompt Engineering: prompt library created
+- [ ] NIST AI RMF: complete framework studied
+- [ ] ISO 42001: overview completed
+- [ ] Responsible AI: impact assessment completed
+- [ ] Microsoft Copilot: functionality mastered
+- [ ] **Project 1: Security Incident Assistant** completed
+- [ ] **Project 2: Risk Assessment Assistant** completed
+- [ ] **Portfolio website** published
+- [ ] GitHub portfolio with 7+ projects
 
-## 🔗 Valor para el CV
+## 🔗 Resume Value
 
-Después de esta fase:
-> "Desarrollé asistentes AI para análisis de incidentes de seguridad y evaluación de riesgos usando Python y Azure OpenAI. Implementé frameworks de AI Governance (NIST AI RMF, ISO 42001) y diseñé procesos de Responsible AI que aseguran fairness, transparency y accountability en deployments de AI empresarial."
+After this phase:
+> "I developed AI assistants for security incident analysis and risk assessment using Python and Azure OpenAI. I implemented AI Governance frameworks (NIST AI RMF, ISO 42001) and designed Responsible AI processes that ensure fairness, transparency, and accountability in enterprise AI deployments."
 
-## ⏭️ Siguiente Fase
+## ⏭️ Next Phase
 
-[Fase 5: Cloud + AI Integración →](../cloud-ai/overview)
+[Phase 5: Cloud + AI Integration →](../cloud-ai/overview)

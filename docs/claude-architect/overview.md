@@ -8,7 +8,6 @@ slug: /claude-architect/overview
 
 # Claude Certified Architect – Foundations
 
-> 🌐 **Language:** English · [Versión en Español](./es/overview)
 
 > **Vendor:** Anthropic · **Level:** Foundations · **Format:** 60 questions (multiple choice + multiple response), scenario-based  
 > **Exam:** 120 min · scaled score 100–1000, **720 to pass** · **$125 USD** · valid 12 months · online proctored or Pearson test center  

@@ -1,100 +1,100 @@
 ---
 sidebar_position: 1
-title: "Fase 1 — Fundamentos + AI-103 + Posicionamiento"
+title: "Phase 1 — Foundations + AI-103 + Positioning"
 ---
 
-# Fase 1: Fundamentos + AI-103 + Posicionamiento (Semanas 1–4)
+# Phase 1: Foundations + AI-103 + Positioning (Weeks 1–4)
 
-> **Objetivo:** Construir base tecnica y de posicionamiento para entrar al plan v4: Python aplicado, presencia profesional y readiness para AI-103.
+> **Objective:** Build the technical and positioning foundation for entering the v4 plan: applied Python, professional presence, and AI-103 readiness.
 
-## 🎯 Resultados Esperados
+## 🎯 Expected Outcomes
 
-Al completar esta fase:
-- Comprensión sólida de qué es AI y cómo transforma industrias
-- Python básico funcional para automatización
-- Git/GitHub operativo con repositorio propio
-- Readiness para AI-103 definida por dominio (con matriz de gaps)
-- LinkedIn y GitHub configurados profesionalmente
+By completing this phase:
+- Solid understanding of what AI is and how it transforms industries
+- Functional basic Python for automation
+- Git/GitHub operational with your own repository
+- AI-103 readiness defined by domain (with a gap matrix)
+- LinkedIn and GitHub configured professionally
 
 ---
 
-## Semana 1: Fundamentos de AI
+## Week 1: AI Foundations
 
-### Objetivo
-Entender cómo la AI está cambiando el mercado laboral y las industrias.
+### Objective
+Understand how AI is changing the labor market and industries.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Elements of AI](https://www.elementsofai.com/) | 🇪🇸 Español | Curso gratuito | 6-8 hrs |
-| [Microsoft AI Skills Navigator](https://aiskillsnavigator.microsoft.com/) | 🇬🇧 Inglés | Learning paths | 4-6 hrs |
-| [Google AI Essentials](https://grow.google/intl/es/courses-and-tools/) | 🇪🇸 Español | Curso | 4 hrs |
-| [IBM AI Fundamentals](https://www.ibm.com/training/collection/artificial-intelligence) | 🇬🇧 Inglés | Course | 3 hrs |
+| [Elements of AI](https://www.elementsofai.com/) | 🇪🇸 Spanish | Free course | 6-8 hrs |
+| [Microsoft AI Skills Navigator](https://aiskillsnavigator.microsoft.com/) | 🇬🇧 English | Learning paths | 4-6 hrs |
+| [Google AI Essentials](https://grow.google/intl/es/courses-and-tools/) | 🇪🇸 Spanish | Course | 4 hrs |
+| [IBM AI Fundamentals](https://www.ibm.com/training/collection/artificial-intelligence) | 🇬🇧 English | Course | 3 hrs |
 
-### Actividades Diarias (Lunes a Viernes)
+### Daily Activities (Monday to Friday)
 
-| Día | Actividad | Tiempo |
+| Day | Activity | Time |
 |-----|-----------|--------|
-| Lunes | Elements of AI — Capítulos 1-2 | 2 hrs |
-| Martes | Elements of AI — Capítulos 3-4 | 2 hrs |
-| Miércoles | Microsoft AI Skills — Módulo 1 | 2 hrs |
-| Jueves | Google AI Essentials — Módulo 1 | 2 hrs |
-| Viernes | Reflexión + Journal de aprendizaje | 1 hr |
+| Monday | Elements of AI — Chapters 1-2 | 2 hrs |
+| Tuesday | Elements of AI — Chapters 3-4 | 2 hrs |
+| Wednesday | Microsoft AI Skills — Module 1 | 2 hrs |
+| Thursday | Google AI Essentials — Module 1 | 2 hrs |
+| Friday | Reflection + learning journal | 1 hr |
 
-### Entregables de la Semana
+### Weekly Deliverables
 
-1. **Perfil de LinkedIn actualizado**
+1. **Updated LinkedIn profile**
    - Headline: "IT Professional | Transitioning to AI & Cloud Security"
-   - About: Incluir experiencia en forensics + visión AI
-   - Skills: Agregar AI, Cloud Computing, Cybersecurity
+   - About: Include forensics experience + AI vision
+   - Skills: Add AI, Cloud Computing, Cybersecurity
 
-2. **Cuenta de GitHub creada**
-   - Foto profesional
-   - Bio descriptiva
-   - README del perfil
+2. **GitHub account created**
+   - Professional photo
+   - Descriptive bio
+   - Profile README
 
-3. **Journal de Aprendizaje** (documento en GitHub)
-   - ¿Qué aprendí esta semana sobre AI?
-   - ¿Cómo se conecta con mi experiencia previa?
-   - ¿Qué oportunidades veo?
+3. **Learning Journal** (document in GitHub)
+   - What did I learn this week about AI?
+   - How does it connect to my prior experience?
+   - What opportunities do I see?
 
-### Conexión con Experiencia Previa
+### Connection to Prior Experience
 
-Tu background en **informática forense** te da ventaja:
-- Análisis de patrones → fundamento de Machine Learning
-- Cadena de custodia → AI Governance y audit trails
-- Investigación → Pensamiento analítico para AI
-- Documentación → Skills transferibles a AI compliance
+Your background in **digital forensics** gives you an advantage:
+- Pattern analysis → foundation of Machine Learning
+- Chain of custody → AI Governance and audit trails
+- Investigation → analytical thinking for AI
+- Documentation → transferable skills for AI compliance
 
 ---
 
-## Semana 2: Python para Profesionales AI
+## Week 2: Python for AI Professionals
 
-### Objetivo
-Programación básica en Python orientada a automatización y manejo de datos.
+### Objective
+Basic Python programming focused on automation and data handling.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Python para Todos (Py4E)](https://www.py4e.com/) | 🇪🇸 Español (subtítulos) | Curso + libro gratis | 10-12 hrs |
-| [Microsoft Learn: Python](https://learn.microsoft.com/es-es/training/paths/beginner-python/) | 🇪🇸 Español | Learning Path | 6 hrs |
-| [Codecademy Python](https://www.codecademy.com/learn/learn-python-3) | 🇬🇧 Inglés | Interactivo | 8 hrs |
-| [Automate the Boring Stuff](https://automatetheboringstuff.com/) | 🇬🇧 Inglés | Libro gratis | Referencia |
+| [Python para Todos (Py4E)](https://www.py4e.com/) | 🇪🇸 Spanish (subtitles) | Free course + book | 10-12 hrs |
+| [Microsoft Learn: Python](https://learn.microsoft.com/es-es/training/paths/beginner-python/) | 🇪🇸 Spanish | Learning Path | 6 hrs |
+| [Codecademy Python](https://www.codecademy.com/learn/learn-python-3) | 🇬🇧 English | Interactive | 8 hrs |
+| [Automate the Boring Stuff](https://automatetheboringstuff.com/) | 🇬🇧 English | Free book | Reference |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Recurso |
+| Day | Topic | Resource |
 |-----|------|---------|
-| Lunes | Variables, tipos de datos, strings | Py4E Cap 1-2 |
-| Martes | Condicionales y loops | Py4E Cap 3-5 |
-| Miércoles | Funciones | Py4E Cap 4 |
-| Jueves | Archivos y CSV | Py4E Cap 7 |
-| Viernes | APIs básicas (requests) | Microsoft Learn |
-| Sábado | **Proyecto de la semana** | — |
+| Monday | Variables, data types, strings | Py4E Cap 1-2 |
+| Tuesday | Conditionals and loops | Py4E Cap 3-5 |
+| Wednesday | Functions | Py4E Cap 4 |
+| Thursday | Files and CSV | Py4E Cap 7 |
+| Friday | Basic APIs (requests) | Microsoft Learn |
+| Saturday | **Project of the week** | — |
 
-### 🔨 Proyecto: Automatizador de Logs de Seguridad
+### 🔨 Project: Security Log Automator
 
 ```python
 """
@@ -110,41 +110,41 @@ Conexión con forensics: Automatización de lo que antes hacías manualmente
 # - Funciones reutilizables
 ```
 
-**Entregable:** Repositorio en GitHub con:
-- Script funcional
-- README.md explicando el proyecto
-- Ejemplo de input/output
-- Documentación de cómo ejecutarlo
+**Deliverable:** GitHub repository with:
+- Functional script
+- README.md explaining the project
+- Input/output example
+- Documentation on how to run it
 
 ---
 
-## Semana 3: Git y GitHub
+## Week 3: Git and GitHub
 
-### Objetivo
-Dominar el flujo de trabajo con Git para gestión de código y documentación.
+### Objective
+Master the Git workflow for code and documentation management.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [GitHub Skills](https://skills.github.com/) | 🇬🇧 Inglés | Interactivo | 4-6 hrs |
-| [Pro Git Book](https://git-scm.com/book/es/v2) | 🇪🇸 Español | Libro gratis | Referencia |
-| [Microsoft Learn: Git](https://learn.microsoft.com/es-es/training/paths/intro-to-vc-git/) | 🇪🇸 Español | Learning Path | 3 hrs |
-| [Git Immersion](https://gitimmersion.com/) | 🇬🇧 Inglés | Labs | 2 hrs |
+| [GitHub Skills](https://skills.github.com/) | 🇬🇧 English | Interactive | 4-6 hrs |
+| [Pro Git Book](https://git-scm.com/book/es/v2) | 🇪🇸 Spanish | Free book | Reference |
+| [Microsoft Learn: Git](https://learn.microsoft.com/es-es/training/paths/intro-to-vc-git/) | 🇪🇸 Spanish | Learning Path | 3 hrs |
+| [Git Immersion](https://gitimmersion.com/) | 🇬🇧 English | Labs | 2 hrs |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | Instalación, config, primer commit | GitHub Skills: Intro |
-| Martes | Branches, merge, conflicts | GitHub Skills: Branch |
-| Miércoles | Pull requests, reviews | GitHub Skills: PR |
-| Jueves | GitHub Pages, Actions básico | Deploy estático |
-| Viernes | Organización de repos, templates | Crear repo portfolio |
+| Monday | Installation, config, first commit | GitHub Skills: Intro |
+| Tuesday | Branches, merge, conflicts | GitHub Skills: Branch |
+| Wednesday | Pull requests, reviews | GitHub Skills: PR |
+| Thursday | GitHub Pages, basic Actions | Static deploy |
+| Friday | Repo organization, templates | Create portfolio repo |
 
-### 🔨 Proyecto: Repositorio de Portfolio Profesional
+### 🔨 Project: Professional Portfolio Repository
 
-Crear y publicar un repositorio organizado con:
+Create and publish an organized repository with:
 
 ```
 portfolio/
@@ -156,69 +156,69 @@ portfolio/
 └── docs/               # Documentación
 ```
 
-**Entregable:** Repositorio público en GitHub con estructura profesional.
+**Deliverable:** Public GitHub repository with a professional structure.
 
 ---
 
-## Semana 4: Azure AI Foundations para AI-103
+## Week 4: Azure AI Foundations for AI-103
 
-### Objetivo
-Mapear fundamentos de Azure AI y agentes a los dominios de AI-103 para cerrar brechas temprano.
+### Objective
+Map Azure AI and agent fundamentals to the AI-103 domains so gaps are closed early.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [AI-103 Certification Page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/) | 🇬🇧 Inglés | Referencia oficial | 1 hr |
-| [AI-103 Study Guide](https://aka.ms/AI103-StudyGuide) | 🇬🇧 Inglés | Guía oficial | Referencia |
-| [Step 1: Your First Agent](https://learn.microsoft.com/en-us/agent-framework/get-started/your-first-agent) | 🇬🇧 Inglés | Lab guiado | 1-2 hrs |
-| [Azure AI Foundry Training](https://learn.microsoft.com/en-us/training/browse/?products=azure&terms=foundry) | 🇬🇧 Inglés | Learning paths | 4-6 hrs |
+| [AI-103 Certification Page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/) | 🇬🇧 English | Official reference | 1 hr |
+| [AI-103 Study Guide](https://aka.ms/AI103-StudyGuide) | 🇬🇧 English | Official guide | Reference |
+| [Step 1: Your First Agent](https://learn.microsoft.com/en-us/agent-framework/get-started/your-first-agent) | 🇬🇧 English | Guided lab | 1-2 hrs |
+| [Azure AI Foundry Training](https://learn.microsoft.com/en-us/training/browse/?products=azure&terms=foundry) | 🇬🇧 English | Learning paths | 4-6 hrs |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Dominio AI-103 | Tema |
+| Day | AI-103 Domain | Topic |
 |-----|---------------|------|
-| Lunes | Dominio 1 | Plan and manage Azure AI solutions |
-| Martes | Dominio 2 | Implement generative AI and agentic solutions |
-| Miércoles | Dominio 3 | Implement computer vision solutions |
-| Jueves | Dominio 4 | Implement text analysis solutions |
-| Viernes | Dominio 5 | Implement information extraction solutions |
-| Sábado | Práctica | Matriz de gaps + rehearsal por objetivos |
+| Monday | Domain 1 | Plan and manage Azure AI solutions |
+| Tuesday | Domain 2 | Implement generative AI and agentic solutions |
+| Wednesday | Domain 3 | Implement computer vision solutions |
+| Thursday | Domain 4 | Implement text analysis solutions |
+| Friday | Domain 5 | Implement information extraction solutions |
+| Saturday | Practice | Gap matrix + objective-based rehearsal |
 
-### Hito de certificación: AI-103 readiness
+### Certification milestone: AI-103 readiness
 
-- **Costo:** Precio por region (Pearson Vue)
-- **Idioma del examen:** Ingles (validar disponibilidad vigente)
-- **Formato:** Evaluacion proctored, 120 minutos
-- **Puntuación para pasar:** 700/1000
-- **Preparación recomendada:** Sprint inicial de 2 semanas + cierre de gaps por dominio
+- **Cost:** Price by region (Pearson Vue)
+- **Exam language:** English (validate current availability)
+- **Format:** Proctored assessment, 120 minutes
+- **Passing score:** 700/1000
+- **Recommended preparation:** Initial 2-week sprint + domain gap closure
 
-### Conexión con Experiencia Previa
+### Connection to Prior Experience
 
-- **IT Management** → Ya entiendes infraestructura, ahora en cloud
-- **Forensics** → Cloud forensics es un campo en crecimiento
-- **Operations** → Cloud Operations (CloudOps) es high demand
+- **IT Management** → You already understand infrastructure, now in cloud
+- **Forensics** → Cloud forensics is a growing field
+- **Operations** → Cloud Operations (CloudOps) is high demand
 
 ---
 
-## 📋 Checklist de Fase 1
+## 📋 Phase 1 Checklist
 
-- [ ] LinkedIn actualizado con nuevo enfoque profesional
-- [ ] GitHub account con perfil completo
-- [ ] Elements of AI completado
-- [ ] Python básico funcional (script de logs)
-- [ ] Git workflow dominado
-- [ ] Repositorio portfolio creado
-- [ ] Matriz de dominios AI-103 completada
-- [ ] Plan de cierre de gaps AI-103 definido
-- [ ] Journal de aprendizaje al día
+- [ ] LinkedIn updated with the new professional focus
+- [ ] GitHub account with complete profile
+- [ ] Elements of AI completed
+- [ ] Functional basic Python (log script)
+- [ ] Git workflow mastered
+- [ ] Portfolio repository created
+- [ ] AI-103 domain matrix completed
+- [ ] AI-103 gap closure plan defined
+- [ ] Learning journal up to date
 
-## Operacion v4
+## v4 Operations
 
 - [Checkpoint Gates v4](../checkpoints)
-- [Template de Evidencia v4](../evidence-template)
+- [Evidence Template v4](../evidence-template)
 - [Weekly Tracker v4](../weekly-tracker)
 
-## ⏭️ Siguiente Fase
+## ⏭️ Next Phase
 
-[Fase 2: Portafolio Técnico — RAG, Agentes y Evaluación →](../data-automation/overview)
+[Phase 2: Technical Portfolio — RAG, Agents, and Evaluation →](../data-automation/overview)

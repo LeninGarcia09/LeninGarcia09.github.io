@@ -7,7 +7,6 @@ sidebar_position: 4
 
 # 🗓️ 12-Week Study Plan
 
-> 🌐 **Language:** English · [Versión en Español](./es/study-plan)
 >
 > A **study aid** (~1 hour/day · 84 hours). This is not an official exam specification — it's a suggested path. Combine the [official courses](./courses) with the [domains](./domains).
 

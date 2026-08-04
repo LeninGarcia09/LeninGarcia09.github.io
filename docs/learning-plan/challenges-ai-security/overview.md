@@ -1,51 +1,51 @@
 ---
 sidebar_position: 1
-title: "Track de Retos — Seguridad de IA Aplicada"
+title: "Challenge Track — Applied AI Security"
 ---
 
-# 🧪 Track de Retos: Seguridad de IA Aplicada
+# 🧪 Challenge Track: Applied AI Security
 
-> **Vendor-neutral. Gratis. Práctico.** Cuatro laboratorios que convierten tu experiencia en ciberseguridad en **evidencia de portafolio** para roles de Seguridad y Gobernanza de IA — sin depender de ningún proveedor.
+> **Vendor-neutral. Free. Practical.** Four labs that turn your cybersecurity experience into **portfolio evidence** for AI Security and Governance roles — without depending on any vendor.
 
-:::info[Por qué existe este track]
-Las ofertas de trabajo en seguridad de IA (AI Security Engineer, Detection Engineer, Especialista en Seguridad de IA, Consultor de Seguridad) piden una cosa por encima de todo: **haberlo hecho, no solo estudiado**. Cada reto aquí produce un **artefacto verificable** (un reporte, un mapeo de amenazas, un assessment) que puedes publicar en GitHub y explicar en una entrevista. Todas las herramientas son **de código abierto y gratuitas**.
+:::info[Why this track exists]
+AI security job postings (AI Security Engineer, Detection Engineer, AI Security Specialist, Security Consultant) ask for one thing above all: **having done it, not only studied it**. Each challenge here produces a **verifiable artifact** (a report, a threat mapping, an assessment) that you can publish on GitHub and explain in an interview. All tools are **open source and free**.
 :::
 
-## 🎯 Para quién es
+## 🎯 Who it is for
 
-Profesionales de IT / ciberseguridad / forense en reposicionamiento hacia IA. No necesitas ser desarrollador senior: necesitas Python básico y disciplina. Complementa la **[Fase 3: Ciberseguridad](../cybersecurity/overview)** y la **[Fase 5: Cloud + AI](../cloud-ai/overview)** del plan.
+IT / cybersecurity / forensics professionals repositioning toward AI. You do not need to be a senior developer: you need basic Python and discipline. It complements **[Phase 3: Cybersecurity](../cybersecurity/overview)** and **[Phase 5: Cloud + AI](../cloud-ai/overview)** of the plan.
 
-## 🧰 Los 4 retos
+## 🧰 The 4 challenges
 
-| # | Reto | Herramienta abierta | Frameworks | Artefacto de portafolio |
+| # | Challenge | Open tool | Frameworks | Portfolio artifact |
 |---|------|---------------------|-----------|-------------------------|
-| [1](./challenge-01) | Auditoría de LLM (OWASP Top 10) | **garak** | OWASP LLM Top 10 | Reporte de vulnerabilidades de un LLM |
-| [2](./challenge-02) | Red-teaming de IA + mapeo de amenazas | **PyRIT** | MITRE ATLAS | Informe de red-team con TTPs mapeadas |
-| [3](./challenge-03) | Assessment de gobernanza | *(ninguna — documento)* | NIST AI RMF + ISO/IEC 42001 | Gap assessment ejecutivo |
-| [4](./challenge-04) | Detección/anonimización de PII (DLP) | **Presidio** | GDPR / LFPDPPP | Pipeline de clasificación de datos |
+| [1](./challenge-01) | LLM audit (OWASP Top 10) | **garak** | OWASP LLM Top 10 | Vulnerability report for an LLM |
+| [2](./challenge-02) | AI red-teaming + threat mapping | **PyRIT** | MITRE ATLAS | Red-team report with mapped TTPs |
+| [3](./challenge-03) | Governance assessment | *(none — document)* | NIST AI RMF + ISO/IEC 42001 | Executive gap assessment |
+| [4](./challenge-04) | PII detection/anonymization (DLP) | **Presidio** | GDPR / LFPDPPP | Data classification pipeline |
 
-## 🧭 Cómo estos retos te consiguen empleo
+## 🧭 How these challenges help you get hired
 
-Cada reto está anclado a responsabilidades reales de ofertas actuales de seguridad de IA:
+Each challenge is anchored to real responsibilities in current AI security job descriptions:
 
-| Responsabilidad típica en JDs | Reto que la evidencia |
+| Typical responsibility in JDs | Challenge that evidences it |
 |-------------------------------|------------------------|
-| "Interpretar alertas de IA, reducir falsos positivos, tuning de detección" | Reto 1 + Reto 2 |
-| "Red-teaming / threat hunting con IA; inteligencia de amenazas adversariales" | Reto 2 |
-| "Requisitos de seguridad de IA, cumplimiento (EU AI Act, NIST AI RMF), gobernanza y ética" | Reto 3 |
-| "Identificación y clasificación de datos sensibles (DLP, PII), protección de datos" | Reto 4 |
+| "Interpret AI alerts, reduce false positives, tune detection" | Challenge 1 + Challenge 2 |
+| "AI red-teaming / threat hunting; adversarial threat intelligence" | Challenge 2 |
+| "AI security requirements, compliance (EU AI Act, NIST AI RMF), governance and ethics" | Challenge 3 |
+| "Identification and classification of sensitive data (DLP, PII), data protection" | Challenge 4 |
 
-:::tip[Regla de oro del portafolio]
-Un reto no está "terminado" hasta que cumple la [rúbrica de capstone](../methodology-best-practices#rúbrica-de-capstone-calidad-hiring-ready): README profesional, reproducible, diagrama, decisiones/trade-offs, y una demo de 5 minutos que puedas explicar sin notas.
+:::tip[Golden portfolio rule]
+A challenge is not "finished" until it meets the [capstone rubric](../methodology-best-practices#capstone-rubric-hiring-ready-quality): professional README, reproducible steps, diagram, decisions/trade-offs, and a 5-minute demo you can explain without notes.
 :::
 
 ---
 
-## ⚙️ Paso 0 — Entorno aislado (una sola vez, ~5 min)
+## ⚙️ Step 0 — Isolated environment (one time, ~5 min)
 
-Los Retos 1, 2 y 4 usan Python. Crea **un** entorno reutilizable para los tres.
+Challenges 1, 2, and 4 use Python. Create **one** reusable environment for all three.
 
-**Dónde ejecutas esto:** en tu propia máquina (Windows, macOS o Linux). No necesitas cloud ni tarjeta de crédito.
+**Where to run this:** on your own machine (Windows, macOS, or Linux). You do not need cloud or a credit card.
 
 ```bash
 # Crea y entra en la carpeta del track
@@ -61,33 +61,33 @@ mkdir reports
 ```
 
 <details>
-<summary>¿Qué modelo/LLM uso para probar? (opciones gratis)</summary>
+<summary>Which model/LLM should I use for testing? (free options)</summary>
 
-No necesitas pagar por un modelo para practicar. Opciones:
+You do not need to pay for a model to practice. Options:
 
-- **Modelo local con [Ollama](https://ollama.com/)** (gratis, corre en tu máquina): `ollama run llama3.2` y apunta las herramientas al endpoint local. **Recomendado** para practicar sin costo ni riesgo.
-- **Tier gratuito de un proveedor** (OpenAI, Google, Anthropic, Azure) si ya tienes acceso — usa una clave con límite de gasto.
-- **Modelo de Hugging Face** descargado localmente.
+- **Local model with [Ollama](https://ollama.com/)** (free, runs on your machine): `ollama run llama3.2` and point the tools to the local endpoint. **Recommended** for practicing at no cost and with low risk.
+- **Free tier from a provider** (OpenAI, Google, Anthropic, Azure) if you already have access — use a key with a spending limit.
+- **Hugging Face model** downloaded locally.
 
-> ⚠️ **Solo prueba modelos que te pertenezcan o para los que tengas permiso explícito.** Hacer red-teaming a un sistema de terceros sin autorización es ilegal.
+> ⚠️ **Only test models you own or have explicit permission to test.** Red-teaming a third-party system without authorization is illegal.
 </details>
 
 ---
 
-## ✅ Checklist del track
+## ✅ Track checklist
 
-- [ ] Entorno aislado creado (Paso 0)
-- [ ] Reto 1: reporte de garak publicado en GitHub
-- [ ] Reto 2: informe de red-team con mapeo a MITRE ATLAS
-- [ ] Reto 3: gap assessment NIST AI RMF + ISO 42001
-- [ ] Reto 4: pipeline de detección de PII con Presidio
-- [ ] Los 4 artefactos cumplen la rúbrica de capstone
-- [ ] LinkedIn y CV actualizados con estos proyectos
+- [ ] Isolated environment created (Step 0)
+- [ ] Challenge 1: garak report published on GitHub
+- [ ] Challenge 2: red-team report mapped to MITRE ATLAS
+- [ ] Challenge 3: NIST AI RMF + ISO 42001 gap assessment
+- [ ] Challenge 4: PII detection pipeline with Presidio
+- [ ] All 4 artifacts meet the capstone rubric
+- [ ] LinkedIn and CV updated with these projects
 
-## 🔗 Valor para el CV
+## 🔗 Resume Value
 
-> "Ejecuté auditorías de seguridad de LLMs (OWASP LLM Top 10) con garak, red-teaming de IA mapeado a MITRE ATLAS con PyRIT, un gap assessment de gobernanza alineado a NIST AI RMF e ISO/IEC 42001, y un pipeline de detección de PII con Presidio — todo publicado como evidencia reproducible en GitHub."
+> "I executed LLM security audits (OWASP LLM Top 10) with garak, AI red-teaming mapped to MITRE ATLAS with PyRIT, a governance gap assessment aligned to NIST AI RMF and ISO/IEC 42001, and a PII detection pipeline with Presidio — all published as reproducible evidence on GitHub."
 
 ---
 
-*Todas las herramientas y frameworks de este track están verificados en [Fuentes y Verificación](../sources-and-verification#seguridad-de-ia--herramientas-abiertas-y-gratuitas-vendor-neutral).*
+*All tools and frameworks in this track are verified in [Sources and Verification](../sources-and-verification#ai-security--open-and-free-tools-vendor-neutral).*

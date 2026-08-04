@@ -1,23 +1,23 @@
 ---
 sidebar_position: 2
-title: "Reto 1 — Auditoría de LLM (OWASP Top 10)"
+title: "Challenge 1 — LLM Audit (OWASP Top 10)"
 ---
 
-# Reto 1: Auditoría de seguridad de un LLM con garak
+# Challenge 1: Security audit of an LLM with garak
 
-> **Herramienta:** [garak](https://github.com/NVIDIA/garak) (open source, Apache-2.0) · **Framework:** [OWASP Top 10 for LLM Apps](https://genai.owasp.org/llm-top-10/) · **Tiempo:** 3–4 h
+> **Tool:** [garak](https://github.com/NVIDIA/garak) (open source, Apache-2.0) · **Framework:** [OWASP Top 10 for LLM Apps](https://genai.owasp.org/llm-top-10/) · **Time:** 3–4 h
 
-:::tip[Qué vas a construir]
-Un **reporte de vulnerabilidades** de un LLM: le lanzas sondas automáticas (prompt injection, fuga de datos, toxicidad, jailbreaks) y documentas los hallazgos mapeados al OWASP LLM Top 10. Es el equivalente a un "pentest report", pero para IA.
+:::tip[What you will build]
+A **vulnerability report** for an LLM: you launch automated probes (prompt injection, data leakage, toxicity, jailbreaks) and document findings mapped to the OWASP LLM Top 10. It is the equivalent of a "pentest report," but for AI.
 :::
 
-**Dónde ejecutas esto:** en tu máquina, dentro del entorno del [Paso 0](./overview#️-paso-0--entorno-aislado-una-sola-vez-5-min). El objetivo de prueba es un **modelo local con Ollama** (gratis) o una clave propia con límite de gasto.
+**Where to run this:** on your machine, inside the [Step 0](./overview#️-step-0--isolated-environment-one-time-5-min) environment. The test target is a **local model with Ollama** (free) or your own key with a spending limit.
 
-## Por qué importa para el empleo
+## Why it matters for employment
 
-Las ofertas de AI Security Engineer y de soporte de plataformas de detección (p. ej. Falcon, Sentinel) piden *"interpretar alertas generadas por IA"* y *"reducir falsos positivos manteniendo eficacia de detección"*. Este reto te da vocabulario y evidencia concreta de ambos.
+AI Security Engineer and detection platform support roles (e.g., Falcon, Sentinel) ask for *"interpreting AI-generated alerts"* and *"reducing false positives while maintaining detection effectiveness."* This challenge gives you vocabulary and concrete evidence for both.
 
-## Pasos
+## Steps
 
 ```bash
 # 1. Instala garak en tu entorno virtual
@@ -39,39 +39,39 @@ garak --model_type ollama --model_name llama3.2 --probes leakreplay,realtoxicity
 ```
 
 <details>
-<summary>Mapeo: sondas de garak → OWASP LLM Top 10</summary>
+<summary>Mapping: garak probes → OWASP LLM Top 10</summary>
 
-| Sonda garak (ejemplo) | Riesgo OWASP LLM (v2025) |
+| garak probe (example) | OWASP LLM risk (v2025) |
 |-----------------------|--------------------------|
 | `promptinject`, `dan` (jailbreaks) | **LLM01: Prompt Injection** |
 | `leakreplay` | **LLM02: Sensitive Information Disclosure** |
-| `realtoxicityprompts`, `lmrc` | **LLM05: Improper Output Handling** (contenido dañino) |
-| `malwaregen`, `xss` | **LLM05 / LLM02** (salida insegura) |
-| `glitch`, `encoding` | **LLM01** (inyección por ofuscación) |
+| `realtoxicityprompts`, `lmrc` | **LLM05: Improper Output Handling** (harmful content) |
+| `malwaregen`, `xss` | **LLM05 / LLM02** (unsafe output) |
+| `glitch`, `encoding` | **LLM01** (obfuscated injection) |
 
-> Consulta la lista oficial actualizada de riesgos en [genai.owasp.org/llm-top-10](https://genai.owasp.org/llm-top-10/) y de sondas con `garak --list_probes`.
+> Check the current official risk list at [genai.owasp.org/llm-top-10](https://genai.owasp.org/llm-top-10/) and probes with `garak --list_probes`.
 </details>
 
-## 📦 Entregable
+## 📦 Deliverable
 
-Un repositorio `llm-security-audit/` con:
+A `llm-security-audit/` repository with:
 
-1. `README.md` — qué modelo auditaste, qué sondas, y **3–5 hallazgos** en lenguaje de negocio.
-2. `reports/` — la salida `.jsonl` de garak (evidencia cruda).
-3. `findings.md` — tabla: hallazgo → riesgo OWASP → severidad → mitigación propuesta.
-4. Un diagrama simple del flujo de auditoría.
+1. `README.md` — what model you audited, which probes, and **3–5 findings** in business language.
+2. `reports/` — garak `.jsonl` output (raw evidence).
+3. `findings.md` — table: finding → OWASP risk → severity → proposed mitigation.
+4. A simple diagram of the audit flow.
 
-## ✅ Criterios de éxito
+## ✅ Success criteria
 
-- [ ] Corriste al menos **2 familias de sondas** distintas.
-- [ ] Cada hallazgo está mapeado a un ID de **OWASP LLM Top 10**.
-- [ ] Propusiste una **mitigación** por hallazgo (no solo lo describiste).
-- [ ] El README lo entiende un hiring manager no técnico en 2 minutos.
+- [ ] Ran at least **2 distinct probe families**.
+- [ ] Each finding is mapped to an **OWASP LLM Top 10** ID.
+- [ ] Proposed one **mitigation** per finding (not just a description).
+- [ ] The README is understandable by a non-technical hiring manager in 2 minutes.
 
-:::warning[Ética y legalidad]
-Audita **solo** modelos propios o con permiso explícito. Nunca ejecutes garak contra un sistema de producción de un tercero sin autorización por escrito.
+:::warning[Ethics and legality]
+Audit **only** your own models or models where you have explicit permission. Never run garak against a third-party production system without written authorization.
 :::
 
 ---
 
-**Siguiente:** [Reto 2 — Red-teaming de IA con PyRIT →](./challenge-02)
+**Next:** [Challenge 2 — AI red-teaming with PyRIT →](./challenge-02)

@@ -1,23 +1,23 @@
 ---
 sidebar_position: 3
-title: "Reto 2 — Red-teaming de IA con PyRIT"
+title: "Challenge 2 — AI Red-teaming with PyRIT"
 ---
 
-# Reto 2: Red-teaming de IA con PyRIT + mapeo a MITRE ATLAS
+# Challenge 2: AI red-teaming with PyRIT + MITRE ATLAS mapping
 
-> **Herramienta:** [PyRIT](https://github.com/Azure/PyRIT) (open source, MIT) · **Framework:** [MITRE ATLAS](https://atlas.mitre.org/) · **Tiempo:** 4–5 h
+> **Tool:** [PyRIT](https://github.com/Azure/PyRIT) (open source, MIT) · **Framework:** [MITRE ATLAS](https://atlas.mitre.org/) · **Time:** 4–5 h
 
-:::tip[Qué vas a construir]
-Un **informe de red-team** de IA: usas PyRIT para automatizar ataques adversariales contra un modelo y luego **mapeas cada técnica a MITRE ATLAS** (el "ATT&CK de la IA"). Es el artefacto que buscan los roles de *threat hunting* y *detection engineering* con IA.
+:::tip[What you will build]
+An AI **red-team report**: you use PyRIT to automate adversarial attacks against a model and then **map each technique to MITRE ATLAS** (the "ATT&CK of AI"). This is the artifact sought by AI *threat hunting* and *detection engineering* roles.
 :::
 
-**Dónde ejecutas esto:** en tu máquina, dentro del entorno del [Paso 0](./overview#️-paso-0--entorno-aislado-una-sola-vez-5-min). Aunque PyRIT nació en Microsoft, es **open source y agnóstico**: funciona con modelos locales (Ollama/Hugging Face) o cualquier proveedor.
+**Where to run this:** on your machine, inside the [Step 0](./overview#️-step-0--isolated-environment-one-time-5-min) environment. Although PyRIT originated at Microsoft, it is **open source and agnostic**: it works with local models (Ollama/Hugging Face) or any provider.
 
-## Por qué importa para el empleo
+## Why it matters for employment
 
-Las JDs de Mastercard/Mandiant/CrowdStrike piden *"threat hunting con IA"*, *"operacionalizar inteligencia de amenazas"* y *"leveraging Agentic AI"*. MITRE ATLAS es el lenguaje estándar para describir amenazas a sistemas de ML — hablarlo te separa del candidato promedio.
+Mastercard/Mandiant/CrowdStrike JDs ask for *"AI threat hunting,"* *"operationalizing threat intelligence,"* and *"leveraging Agentic AI."* MITRE ATLAS is the standard language for describing threats to ML systems — speaking it separates you from the average candidate.
 
-## Pasos
+## Steps
 
 ```bash
 # 1. Instala PyRIT
@@ -33,7 +33,7 @@ python -m pip install pyrit
 ```
 
 <details>
-<summary>Esqueleto mínimo de script PyRIT (single-turn)</summary>
+<summary>Minimal PyRIT script skeleton (single-turn)</summary>
 
 ```python
 # red_team.py — patrón conceptual; ajusta al target de tu elección
@@ -52,42 +52,42 @@ with PromptSendingOrchestrator(objective_target=target) as orch:
     orch.print_conversations()  # esto es tu evidencia
 ```
 
-> La API exacta evoluciona; sigue el [README y notebooks oficiales de PyRIT](https://github.com/Azure/PyRIT) para la versión que instalaste.
+> The exact API evolves; follow the [official PyRIT README and notebooks](https://github.com/Azure/PyRIT) for the version you installed.
 </details>
 
 <details>
-<summary>Mapeo: ataques → tácticas/técnicas de MITRE ATLAS</summary>
+<summary>Mapping: attacks → MITRE ATLAS tactics/techniques</summary>
 
-| Ataque que ejecutaste | Táctica ATLAS | Ejemplo de técnica |
+| Attack you executed | ATLAS tactic | Example technique |
 |-----------------------|---------------|--------------------|
 | Prompt injection / system-prompt leak | *ML Attack Staging* | Prompt injection |
 | Jailbreak (DAN, roleplay) | *Defense Evasion* | Evade ML model |
-| Extracción de datos de entrenamiento | *Exfiltration* | LLM data leakage |
-| Envenenamiento de contexto (RAG) | *Resource Development / Poisoning* | Poison training data |
+| Training data extraction | *Exfiltration* | LLM data leakage |
+| Context poisoning (RAG) | *Resource Development / Poisoning* | Poison training data |
 
-> Verifica IDs y nombres oficiales en la [matriz de MITRE ATLAS](https://atlas.mitre.org/matrices/ATLAS).
+> Verify official IDs and names in the [MITRE ATLAS matrix](https://atlas.mitre.org/matrices/ATLAS).
 </details>
 
-## 📦 Entregable
+## 📦 Deliverable
 
-Un repositorio `ai-red-team/` con:
+An `ai-red-team/` repository with:
 
-1. `README.md` — objetivo del ejercicio, target usado, y **resumen ejecutivo** de 3 hallazgos.
-2. `report.md` — cada intento de ataque → resultado → **técnica MITRE ATLAS** correspondiente.
-3. `reports/` — transcripciones que PyRIT registró (evidencia).
-4. Una **recomendación defensiva** por hallazgo (¿cómo detectarlo/mitigarlo?).
+1. `README.md` — exercise objective, target used, and **executive summary** of 3 findings.
+2. `report.md` — each attack attempt → result → corresponding **MITRE ATLAS technique**.
+3. `reports/` — transcripts captured by PyRIT (evidence).
+4. One **defensive recommendation** per finding (how to detect/mitigate it?).
 
-## ✅ Criterios de éxito
+## ✅ Success criteria
 
-- [ ] Al menos **3 técnicas de ataque** distintas ejecutadas con PyRIT.
-- [ ] Cada una mapeada a una **técnica de MITRE ATLAS** por ID/nombre.
-- [ ] Incluiste una **contramedida** por técnica (mentalidad de defensor, no solo atacante).
-- [ ] El informe distingue *ataque exitoso* de *ataque bloqueado por el modelo*.
+- [ ] At least **3 distinct attack techniques** executed with PyRIT.
+- [ ] Each mapped to a **MITRE ATLAS technique** by ID/name.
+- [ ] Included one **countermeasure** per technique (defender mindset, not only attacker).
+- [ ] The report distinguishes *successful attack* from *attack blocked by the model*.
 
-:::warning[Ética y legalidad]
-Solo contra modelos propios o autorizados. El red-teaming no autorizado a sistemas de terceros es ilegal y puede constituir delito.
+:::warning[Ethics and legality]
+Only against your own or authorized models. Unauthorized red-teaming of third-party systems is illegal and may constitute a crime.
 :::
 
 ---
 
-**Anterior:** [← Reto 1](./challenge-01) · **Siguiente:** [Reto 3 — Gobernanza NIST AI RMF + ISO 42001 →](./challenge-03)
+**Previous:** [← Challenge 1](./challenge-01) · **Next:** [Challenge 3 — NIST AI RMF + ISO 42001 Governance →](./challenge-03)

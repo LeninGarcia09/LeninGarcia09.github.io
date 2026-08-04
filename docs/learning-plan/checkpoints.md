@@ -5,73 +5,73 @@ title: "Checkpoint Gates v4"
 
 # Checkpoint Gates v4
 
-Esta pagina define los gates de ejecucion del plan v4 para evitar estudiar sin evidencia.
+This page defines the v4 plan execution gates to avoid studying without evidence.
 
-## Reglas de aprobacion
+## Approval rules
 
-- Un gate se considera verde solo si existe evidencia verificable publicada.
-- Si un gate queda amarillo, se activa plan de recuperacion de 2 semanas.
-- Si un gate queda rojo, se pausa nueva certificacion y se recupera primero el backlog de entregables.
+- A gate is considered green only if published, verifiable evidence exists.
+- If a gate is yellow, a 2-week recovery plan is activated.
+- If a gate is red, new certification work pauses and the deliverable backlog is recovered first.
 
-Seguimiento operativo semanal: [Weekly Tracker v4](./weekly-tracker)
+Weekly operational tracking: [Weekly Tracker v4](./weekly-tracker)
 
-## Gate CP1 (Semana 4)
+## Gate CP1 (Week 4)
 
-**Objetivo:** Base tecnica + posicionamiento listos para ejecutar portafolio.
+**Objective:** Technical foundation + positioning ready to execute the portfolio.
 
-Checklist minima:
-- AI-103 readiness por dominio documentada (gaps y plan de cierre).
-- CV y LinkedIn con logros cuantificados.
-- Outreach inicial ejecutado (minimo 4 contactos relevantes).
-- Repositorio de trabajo inicial en estado publicable.
+Minimum checklist:
+- AI-103 readiness documented by domain (gaps and closure plan).
+- CV and LinkedIn with quantified achievements.
+- Initial outreach executed (minimum 4 relevant contacts).
+- Initial work repository in publishable state.
 
-## Gate CP2 (Semana 12)
+## Gate CP2 (Week 12)
 
-**Objetivo:** Evidencia tecnica fuerte de ejecucion.
+**Objective:** Strong technical evidence of execution.
 
-Checklist minima:
-- 3 proyectos publicos con README profesional.
-- Al menos 1 benchmark reproducible (evaluacion, calidad o costo).
-- Al menos 1 write-up tecnico publicado.
-- Narrativa tecnica preparada para whiteboard de arquitectura.
+Minimum checklist:
+- 3 public projects with professional README files.
+- At least 1 reproducible benchmark (evaluation, quality, or cost).
+- At least 1 published technical write-up.
+- Technical narrative prepared for architecture whiteboard.
 
-## Gate CP3 (Semana 16)
+## Gate CP3 (Week 16)
 
-**Objetivo:** Credibilidad de arquitectura y seguridad enterprise.
+**Objective:** Enterprise architecture and security credibility.
 
-Checklist minima:
-- AZ-305 completado o calendarizado con fecha cerrada.
-- Decision gate de seguridad ejecutado (SC-500 o SC-900) y evidencia de avance.
-- 1 artefacto de seguridad AI publicado (checklist, threat model o red-team report).
+Minimum checklist:
+- AZ-305 completed or scheduled with a firm date.
+- Security decision gate executed (SC-500 or SC-900) and evidence of progress.
+- 1 published AI security artifact (checklist, threat model, or red-team report).
 
-## Gate CP4 (Semana 21)
+## Gate CP4 (Week 21)
 
-**Objetivo:** Visibilidad de mercado + narrativa de valor.
+**Objective:** Market visibility + value narrative.
 
-Checklist minima:
-- 3 piezas tecnicas publicadas (comparativa, benchmark o caso aplicado).
-- Framework de value realization con KPI tree documentado.
-- Networking activo con seguimiento semanal (conversaciones y referrals).
+Minimum checklist:
+- 3 technical pieces published (comparison, benchmark, or applied case).
+- Value realization framework with documented KPI tree.
+- Active networking with weekly follow-up (conversations and referrals).
 
-## Gate CP5 (Semana 26)
+## Gate CP5 (Week 26)
 
-**Objetivo:** Pipeline de entrevistas en ejecucion.
+**Objective:** Interview pipeline in execution.
 
-Checklist minima:
-- Paquete de entrevistas listo: historia ejecutiva, deep dive tecnico y postmortem.
-- Aplicaciones y referidos en curso con tracking.
-- Al menos 2 loops avanzando a etapas finales.
+Minimum checklist:
+- Interview package ready: executive story, technical deep dive, and postmortem.
+- Applications and referrals underway with tracking.
+- At least 2 loops advancing to final stages.
 
-## KPI operativos sugeridos (semanales)
+## Suggested operational KPIs (weekly)
 
-- Horas de ejecucion real: 7-9 h/semana.
-- Entregables publicados: 1 cada 2 semanas.
-- Networking: 2 conversaciones por semana.
-- Deuda tecnica de portafolio: 0 items criticos abiertos por mas de 2 semanas.
+- Real execution hours: 7-9 h/week.
+- Published deliverables: 1 every 2 weeks.
+- Networking: 2 conversations per week.
+- Portfolio technical debt: 0 critical items open for more than 2 weeks.
 
-## Protocolo de recuperacion (si un gate falla)
+## Recovery protocol (if a gate fails)
 
-1. Congelar nuevos cursos/certs por 1-2 semanas.
-2. Cerrar entregables pendientes con prioridad alta.
-3. Publicar evidencia minima del gate en riesgo.
-4. Reabrir roadmap solo cuando el gate vuelva a amarillo o verde.
+1. Freeze new courses/certs for 1-2 weeks.
+2. Close pending deliverables with high priority.
+3. Publish minimum evidence for the at-risk gate.
+4. Reopen the roadmap only when the gate returns to yellow or green.

@@ -1,23 +1,23 @@
 ---
 sidebar_position: 5
-title: "Reto 4 — Detección de PII (DLP) con Presidio"
+title: "Challenge 4 — PII Detection (DLP) with Presidio"
 ---
 
-# Reto 4: Pipeline de detección y anonimización de PII con Presidio
+# Challenge 4: PII detection and anonymization pipeline with Presidio
 
-> **Herramienta:** [Presidio](https://github.com/data-privacy-stack/presidio) (open source, MIT) · **Marcos:** GDPR / LFPDPPP · **Tiempo:** 3–4 h
+> **Tool:** [Presidio](https://github.com/data-privacy-stack/presidio) (open source, MIT) · **Frameworks:** GDPR / LFPDPPP · **Time:** 3–4 h
 
-:::tip[Qué vas a construir]
-Un **pipeline de clasificación de datos**: detecta datos personales (PII) en texto — nombres, correos, teléfonos, tarjetas, CURP/RFC — y los **anonimiza** automáticamente. Es el corazón de un programa de DLP y clasificación de datos.
+:::tip[What you will build]
+A **data classification pipeline**: detects personal data (PII) in text — names, emails, phones, cards, CURP/RFC — and **anonymizes** it automatically. This is the heart of a DLP and data classification program.
 :::
 
-**Dónde ejecutas esto:** en tu máquina, dentro del entorno del [Paso 0](./overview#️-paso-0--entorno-aislado-una-sola-vez-5-min). Presidio dejó de ser un proyecto de Microsoft y hoy es mantenido por la comunidad ([data-privacy-stack](https://data-privacy-stack.github.io/presidio/)) — 100% abierto.
+**Where to run this:** on your machine, inside the [Step 0](./overview#️-step-0--isolated-environment-one-time-5-min) environment. Presidio is no longer a Microsoft project and is now maintained by the community ([data-privacy-stack](https://data-privacy-stack.github.io/presidio/)) — 100% open.
 
-## Por qué importa para el empleo
+## Why it matters for employment
 
-La JD de BBVA pide *"identificación y clasificación de datos sensibles (PII) con herramientas automatizadas (DLP, BigID, Varonis)"* y *"salvaguarda de información confidencial según normativa"*. La de MAPFRE pide *"cumplimiento en protección de datos"*. Este reto te da un DLP funcional que **puedes demostrar en vivo** en la entrevista, sin licencias caras.
+The BBVA JD asks for *"identification and classification of sensitive data (PII) with automated tools (DLP, BigID, Varonis)"* and *"safeguarding confidential information according to regulation."* MAPFRE asks for *"compliance in data protection."* This challenge gives you a functional DLP you **can demonstrate live** in an interview, without expensive licenses.
 
-## Pasos
+## Steps
 
 ```bash
 # 1. Instala Presidio (analyzer + anonymizer) y el modelo de lenguaje de spaCy
@@ -27,7 +27,7 @@ python -m spacy download en_core_web_lg
 ```
 
 <details>
-<summary>Script mínimo: detectar + anonimizar PII</summary>
+<summary>Minimal script: detect + anonymize PII</summary>
 
 ```python
 # dlp.py — detecta y anonimiza PII en un texto
@@ -49,44 +49,44 @@ anonimizado = anonymizer.anonymize(text=texto, analyzer_results=resultados)
 print(anonimizado.text)   # -> Contacta a <PERSON> en <EMAIL_ADDRESS> o al <PHONE_NUMBER>.
 ```
 
-> La API oficial y reconocedores personalizados están en la [documentación de Presidio](https://data-privacy-stack.github.io/presidio/).
+> The official API and custom recognizers are in the [Presidio documentation](https://data-privacy-stack.github.io/presidio/).
 </details>
 
 <details>
-<summary>Extiende: reconocedor personalizado para RFC/CURP (México)</summary>
+<summary>Extend: custom recognizer for RFC/CURP (Mexico)</summary>
 
-Presidio permite añadir reconocedores por **regex** para identificadores locales que no trae de fábrica (ej. RFC, CURP, CLABE). Crea un `PatternRecognizer` con el patrón correspondiente y regístralo en el `AnalyzerEngine`. Documentar este paso demuestra que entiendes **contexto regulatorio local** (LFPDPPP) — un gran diferenciador para roles en LATAM.
+Presidio lets you add **regex** recognizers for local identifiers it does not include by default (e.g., RFC, CURP, CLABE). Create a `PatternRecognizer` with the corresponding pattern and register it in the `AnalyzerEngine`. Documenting this step demonstrates that you understand **local regulatory context** (LFPDPPP) — a major differentiator for LATAM roles.
 
 </details>
 
-## 📦 Entregable
+## 📦 Deliverable
 
-Un repositorio `pii-dlp-pipeline/` con:
+A `pii-dlp-pipeline/` repository with:
 
-1. `README.md` — qué tipos de PII detecta y para qué normativa (GDPR/LFPDPPP).
-2. `dlp.py` — el pipeline de detección + anonimización.
-3. `samples/` — textos de entrada (ficticios) y su salida anonimizada.
-4. Al menos **un reconocedor personalizado** (RFC, CURP o similar) con su justificación.
-5. Un breve mapa: *tipo de PII → riesgo regulatorio → acción de tratamiento*.
+1. `README.md` — which PII types it detects and for which regulation (GDPR/LFPDPPP).
+2. `dlp.py` — the detection + anonymization pipeline.
+3. `samples/` — input texts (fictional) and their anonymized output.
+4. At least **one custom recognizer** (RFC, CURP, or similar) with its justification.
+5. A brief map: *PII type → regulatory risk → handling action*.
 
-## ✅ Criterios de éxito
+## ✅ Success criteria
 
-- [ ] Detectas al menos **4 tipos de PII** distintos.
-- [ ] Anonimizas correctamente (redacción o reemplazo por token).
-- [ ] Añadiste **1 reconocedor personalizado** local (RFC/CURP/CLABE).
-- [ ] Explicaste el vínculo con **GDPR o LFPDPPP** en el README.
+- [ ] Detect at least **4 distinct PII types**.
+- [ ] Anonymize correctly (redaction or token replacement).
+- [ ] Added **1 local custom recognizer** (RFC/CURP/CLABE).
+- [ ] Explained the link with **GDPR or LFPDPPP** in the README.
 
-:::warning[Usa datos ficticios]
-Nunca proceses PII real de personas sin base legal y consentimiento. Para este reto usa **datos sintéticos/ficticios** que tú generes.
+:::warning[Use fictional data]
+Never process real people's PII without legal basis and consent. For this challenge use **synthetic/fictional data** that you generate.
 :::
 
 ---
 
-**Anterior:** [← Reto 3](./challenge-03) · **Volver al** [inicio del track](./overview)
+**Previous:** [← Challenge 3](./challenge-03) · **Back to** [track home](./overview)
 
-## 🎓 Terminaste el track — ¿ahora qué?
+## 🎓 You finished the track — now what?
 
-1. Publica los **4 repos** en tu GitHub y fíjalos (pin) en tu perfil.
-2. Escribe **1 post de LinkedIn por reto** explicando qué aprendiste (esto genera visibilidad con reclutadores).
-3. Añade la [línea de CV](./overview#-valor-para-el-cv) a tu currículum.
-4. Prepara una **demo de 5 minutos** de tu favorito para entrevistas.
+1. Publish the **4 repos** on your GitHub and pin them on your profile.
+2. Write **1 LinkedIn post per challenge** explaining what you learned (this creates recruiter visibility).
+3. Add the [resume line](./overview#-resume-value) to your CV.
+4. Prepare a **5-minute demo** of your favorite for interviews.

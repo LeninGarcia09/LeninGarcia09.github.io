@@ -135,19 +135,6 @@ const sidebars = {
     { type: 'doc', id: 'claude-architect/study-plan', label: '🗓️ Study Plan (12 wk)' },
     { type: 'doc', id: 'claude-architect/anti-patterns', label: '⚠️ Key Anti-Patterns' },
     { type: 'doc', id: 'claude-architect/resources', label: '🔗 Resources & Sources' },
-    {
-      type: 'category',
-      label: '🇪🇸 Español',
-      collapsed: true,
-      items: [
-        { type: 'doc', id: 'claude-architect/es/overview', label: '🏠 Vista General' },
-        { type: 'doc', id: 'claude-architect/es/domains', label: '📚 Los 5 Dominios' },
-        { type: 'doc', id: 'claude-architect/es/courses', label: '🎓 Cursos + Mock Exam' },
-        { type: 'doc', id: 'claude-architect/es/study-plan', label: '🗓️ Plan de Estudio (12 sem)' },
-        { type: 'doc', id: 'claude-architect/es/anti-patterns', label: '⚠️ Anti-Patrones Clave' },
-        { type: 'doc', id: 'claude-architect/es/resources', label: '🔗 Recursos y Fuentes' },
-      ],
-    },
   ],
 
   resourcesSidebar: [

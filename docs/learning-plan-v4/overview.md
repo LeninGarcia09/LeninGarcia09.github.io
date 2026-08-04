@@ -1,99 +1,99 @@
 ---
 sidebar_position: 1
-title: "AI Solution Architect — Responsible AI (26 Semanas)"
+title: "AI Solution Architect — Responsible AI (26 Weeks)"
 ---
 
 # AI Solution Architect — Responsible AI
 
-> **Programa intensivo de 26 semanas (~9 horas/semana)** para posicionarte como **AI Solution Architect con foco en Responsible AI**: llevar soluciones de AI de piloto a producción con arquitectura sólida, gobernanza y adopción medible en negocio, con evidencia técnica publicable.
+> **Intensive 26-week program (~9 hours/week)** to position yourself as an **AI Solution Architect focused on Responsible AI**: taking AI solutions from pilot to production with solid architecture, governance, measurable business adoption, and publishable technical evidence.
 
-:::info[Cómo se diferencia de los otros dos planes]
-Este es uno de tres planes del sitio. Para evitar confusión:
-- 🛡️ **[AI Security Professional (9 meses)](../learning-plan/overview)** — reempleo **vendor-neutral** en AI/seguridad (gratis primero, cualquier plataforma).
-- 🧠 **[Executive AI Leadership Plan](../executive-ai-leadership/overview)** — liderazgo ejecutivo de AI.
-- 🏗️ **Este plan** — ruta técnica **AI Solution Architect + Responsible AI**, Microsoft-first (AI-103, AZ-305, SC-500), orientada a construir arquitectura y gobernanza de AI empresarial.
+:::info[How this differs from the other two plans]
+This is one of three plans on the site. To avoid confusion:
+- 🛡️ **[AI Security Professional (9 months)](../learning-plan/overview)** — **vendor-neutral** re-employment in AI/security (free first, any platform).
+- 🧠 **[Executive AI Leadership Plan](../executive-ai-leadership/overview)** — executive AI leadership.
+- 🏗️ **This plan** — a technical **AI Solution Architect + Responsible AI** path, Microsoft-first (AI-103, AZ-305, SC-500), focused on building enterprise AI architecture and governance.
 :::
 
-## Perfil objetivo
+## Target profile
 
-- Experiencia en gestion de IT y operaciones
-- Background en ciberseguridad y analisis forense
-- Base funcional en programacion (Python, APIs, automatizacion)
-- Necesidad de reposicionamiento en roles AI de alto impacto
+- Experience in IT management and operations
+- Background in cybersecurity and digital forensics
+- Functional programming foundation (Python, APIs, automation)
+- Need to reposition into high-impact AI roles
 
-## Tesis profesional
+## Professional thesis
 
-"Llevo soluciones de AI de piloto a produccion, con arquitectura, gobernanza y adopcion medible en negocio."
+"I take AI solutions from pilot to production, with architecture, governance, and measurable business adoption."
 
-## Principios v4
+## v4 principles
 
-- **Proof over study:** cada bloque termina con evidencia publica (repo, benchmark o write-up).
-- **Cert + proyecto acoplados:** ninguna certificacion va sola.
-- **GA-first:** usar rutas y credenciales vigentes del portfolio 2026.
-- **Sequencing disciplinado:** 1 hilo de cert + 1 hilo de proyecto + 1 hilo de networking por semana.
+- **Proof over study:** every block ends with public evidence (repo, benchmark, or write-up).
+- **Cert + project coupled:** no certification stands alone.
+- **GA-first:** use current paths and credentials from the 2026 portfolio.
+- **Disciplined sequencing:** 1 certification thread + 1 project thread + 1 networking thread per week.
 
-## Estructura del plan
+## Plan structure
 
-| Fase | Semanas | Enfoque |
+| Phase | Weeks | Focus |
 |------|---------|---------|
-| [Fase 1](./foundation/overview) | 1-4 | Fundamentos + AI-103 + posicionamiento |
-| [Fase 2](./data-automation/overview) | 5-12 | Portafolio tecnico (RAG, agentes, evaluacion) |
-| [Fase 3](./cybersecurity/overview) | 13-16 | Arquitectura + seguridad empresarial (AZ-305 + SC-500) |
-| [Fase 4](./ai-business/overview) | 17-21 | Value realization + contenido publico + networking |
-| [Fase 5](./cloud-ai/overview) | 22-26 | Entrevistas, role-play ejecutivo y pipeline de aplicaciones |
-| [Fase 6](./career-launch/overview) | Paralelo | Operacion comercial de carrera (referidos, outreach, seguimiento) |
+| [Phase 1](./foundation/overview) | 1-4 | Foundations + AI-103 + positioning |
+| [Phase 2](./data-automation/overview) | 5-12 | Technical portfolio (RAG, agents, evaluation) |
+| [Phase 3](./cybersecurity/overview) | 13-16 | Enterprise architecture + security (AZ-305 + SC-500) |
+| [Phase 4](./ai-business/overview) | 17-21 | Value realization + public content + networking |
+| [Phase 5](./cloud-ai/overview) | 22-26 | Interviews, executive role-play, and application pipeline |
+| [Phase 6](./career-launch/overview) | Parallel | Career commercial operation (referrals, outreach, follow-up) |
 
-## Certificaciones (vigentes 2026)
+## Certifications (current in 2026)
 
-1. **AI-103** - Azure AI Apps and Agents Developer Associate (prioridad critica; **reemplaza a AI-102, que se retira el 30-jun-2026**)
+1. **AI-103** - Azure AI Apps and Agents Developer Associate (critical priority; **replaces AI-102, which retires on Jun 30, 2026**)
 2. **AZ-305** - Azure Solutions Architect Expert (Designing Microsoft Azure Infrastructure Solutions)
-3. **SC-500** - Cloud and AI Security Engineer Associate (**verificar estado beta/GA antes de calendarizar exam**)
+3. **SC-500** - Cloud and AI Security Engineer Associate (**verify beta/GA status before scheduling the exam**)
 4. **GitHub Copilot (GH-300)** (quick win)
-5. **AI-200** - Azure AI Cloud Developer Associate (opcional, segun necesidad en loops activos)
+5. **AI-200** - Azure AI Cloud Developer Associate (optional, depending on active interview loops)
 
-:::tip[Antes de empezar: lee estas dos paginas]
-Todo el portafolio de certificaciones AI de Microsoft esta rotando en 2026 (betas y reemplazos). Para que este plan sea confiable:
+:::tip[Before you start: read these two pages]
+The entire Microsoft AI certification portfolio is rotating in 2026 (betas and replacements). To keep this plan reliable:
 
-- 📚 [**Fuentes y Verificacion v4**](./sources-and-verification) — cada certificacion, framework y recurso con enlace a su fuente primaria oficial.
-- 🧭 [**Metodologia y Mejores Practicas v4**](./methodology-best-practices) — por que el plan usa "proof over study", 70-20-10 y una rubrica de capstone "hiring-ready".
-- 🎯 [**Competencias + Benchmark Externo**](./role-competency-map) — las 10 competencias del rol contrastadas con Azure Well-Architected for AI, AWS, Google Cloud, Chip Huyen y DeepLearning.AI, con autoevaluacion y cross-walk multiplataforma.
+- 📚 [**Sources and Verification v4**](./sources-and-verification) — every certification, framework, and resource linked to its official primary source.
+- 🧭 [**Methodology and Best Practices v4**](./methodology-best-practices) — why the plan uses "proof over study," 70-20-10, and a "hiring-ready" capstone rubric.
+- 🎯 [**Competencies + External Benchmark**](./role-competency-map) — the 10 role competencies compared with Azure Well-Architected for AI, AWS, Google Cloud, Chip Huyen, and DeepLearning.AI, with self-assessment and a multi-platform cross-walk.
 
-**Verifica siempre el estado (beta/GA) y los *skills measured* en la pagina oficial antes de calendarizar un examen.**
+**Always verify status (beta/GA) and *skills measured* on the official page before scheduling an exam.**
 :::
 
-## Entregables minimos del plan
+## Minimum plan deliverables
 
-- 3 repos tecnicos fuertes (RAG evaluado, comparativa tri-plataforma de agentes, benchmark fine-tuning vs RAG)
-- 3-5 piezas publicas (arquitectura, evaluacion, seguridad, valor de negocio)
-- 1 one-pager de despliegue seguro enterprise AI
-- 1 framework reusable de value realization con KPI tree
+- 3 strong technical repos (evaluated RAG, tri-platform agent comparison, fine-tuning vs. RAG benchmark)
+- 3-5 public pieces (architecture, evaluation, security, business value)
+- 1 one-pager for secure enterprise AI deployment
+- 1 reusable value realization framework with KPI tree
 
-## Checkpoints de control
+## Control checkpoints
 
-| Fecha objetivo | Gate |
+| Target date | Gate |
 |----------------|------|
-| Semana 4 | AI-103 completado + CV cuantificado + outreach iniciado |
-| Semana 12 | 3 proyectos publicos con evaluacion reproducible |
-| Semana 16 | AZ-305 + avance fuerte en seguridad AI empresarial |
-| Semana 21 | 3 publicaciones tecnicas + pipeline de networking activo |
-| Semana 26 | Loops de entrevista en curso y paquete de historias listo |
+| Week 4 | AI-103 completed + quantified CV + outreach started |
+| Week 12 | 3 public projects with reproducible evaluation |
+| Week 16 | AZ-305 + strong progress in enterprise AI security |
+| Week 21 | 3 technical publications + active networking pipeline |
+| Week 26 | Interview loops underway and story package ready |
 
-Recursos operativos:
+Operational resources:
 - [Checkpoint Gates v4](./checkpoints)
-- [Template de Evidencia v4](./evidence-template)
+- [Evidence Template v4](./evidence-template)
 - [Weekly Tracker v4](./weekly-tracker)
 
-## Regla de actualizacion continua
+## Continuous update rule
 
-Antes de cada sprint de certificacion o arquitectura:
-- Verifica en Microsoft Learn estado de examen, skills measured y disponibilidad de practice assessment.
-- Si hay cambios de portfolio, actualiza el plan primero y estudia despues.
+Before each certification or architecture sprint:
+- Verify exam status, skills measured, and practice assessment availability on Microsoft Learn.
+- If the portfolio changes, update the plan first and study afterward.
 
-## Nota de implementacion
+## Implementation note
 
-Este overview y las fases del learning plan ya estan alineados a la ruta v4,
-con checkpoints operativos y plantilla de evidencia para ejecucion semanal.
+This overview and the learning plan phases are already aligned to the v4 path,
+with operational checkpoints and an evidence template for weekly execution.
 
 ---
 
-Plan versionado para mantener trazabilidad de cambios de mercado, portfolio de certificaciones y demanda real de entrevistas.
+Versioned plan to preserve traceability of market changes, certification portfolio changes, and real interview demand.

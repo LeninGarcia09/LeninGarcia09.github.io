@@ -1,100 +1,100 @@
 ---
 sidebar_position: 3
-title: "Fase 3 — Arquitectura + Seguridad Empresarial (AZ-305 + SC-500)"
+title: "Phase 3 — Enterprise Architecture + Security (AZ-305 + SC-500)"
 ---
 
-# Fase 3: Arquitectura + Seguridad Empresarial (Semanas 13–16)
+# Phase 3: Enterprise Architecture + Security (Weeks 13–16)
 
-> **Objetivo:** Elevar los artefactos de la Fase 2 al nivel **empresarial**: diseño de arquitectura defendible (encaminado a **AZ-305**) y seguridad de AI (encaminado a **SC-500**) con threat modeling, guardrails y un checklist enterprise reutilizable.
+> **Objective:** Raise the Phase 2 artifacts to the **enterprise** level: defensible architecture design (leading toward **AZ-305**) and AI security (leading toward **SC-500**) with threat modeling, guardrails, and a reusable enterprise checklist.
 
-## 🎯 Resultados Esperados
+## 🎯 Expected Outcomes
 
-Al completar esta fase:
-- **Threat model** del sistema RAG/agente con mitigaciones priorizadas
-- Avance sólido en **AZ-305** con una decisión de arquitectura documentada (ADR)
-- Ejercicio de **red-team / guardrails** sobre tu propio sistema de AI
-- Checklist de seguridad y arquitectura **enterprise** reutilizable
-- Listo para el **Gate CP3 (Semana 16)**
+By completing this phase:
+- **Threat model** for the RAG/agent system with prioritized mitigations
+- Solid progress in **AZ-305** with one documented architecture decision (ADR)
+- **Red-team / guardrails** exercise against your own AI system
+- Reusable **enterprise** security and architecture checklist
+- Ready for **Gate CP3 (Week 16)**
 
-:::info[Este plan es Microsoft-first]
-Las certificaciones ancla son **AZ-305** (arquitectura) y **SC-500** (seguridad cloud & AI). Los frameworks abiertos (OWASP LLM, MITRE ATLAS, NIST AI RMF) se usan como lenguaje común de riesgo.
+:::info[This plan is Microsoft-first]
+The anchor certifications are **AZ-305** (architecture) and **SC-500** (cloud & AI security). Open frameworks (OWASP LLM, MITRE ATLAS, NIST AI RMF) are used as a common risk language.
 :::
 
 ---
 
-## Semana 13 — Threat model + mitigaciones
+## Week 13 — Threat model + mitigations
 
-**Objetivo:** modelar amenazas específicas de sistemas de AI (no solo de la app tradicional).
+**Objective:** model threats specific to AI systems (not only the traditional app).
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
 | [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) | 🇬🇧 | Framework |
-| [MITRE ATLAS](https://atlas.mitre.org/) | 🇬🇧 | Matriz de amenazas |
-| [Microsoft: Threat Modeling AI/ML](https://learn.microsoft.com/es-es/security/engineering/threat-modeling-aiml) | 🇪🇸 | Guía |
+| [MITRE ATLAS](https://atlas.mitre.org/) | 🇬🇧 | Threat matrix |
+| [Microsoft: Threat Modeling AI/ML](https://learn.microsoft.com/es-es/security/engineering/threat-modeling-aiml) | 🇪🇸 | Guide |
 
-**Entregable:** documento de threat model del sistema de la Fase 2 — prompt injection, data leakage, poisoning, model DoS — con mitigaciones priorizadas por riesgo.
+**Deliverable:** threat model document for the Phase 2 system — prompt injection, data leakage, poisoning, model DoS — with mitigations prioritized by risk.
 
-## Semana 14 — AZ-305: avance + decisión de seguridad
+## Week 14 — AZ-305: progress + security decision
 
-**Objetivo:** progresar en la certificación de arquitectura y aterrizar una decisión de diseño.
+**Objective:** advance the architecture certification and ground one design decision.
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
-| [AZ-305 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/resources/study-guides/az-305) | 🇪🇸 | Guía oficial |
+| [AZ-305 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/resources/study-guides/az-305) | 🇪🇸 | Official guide |
 | [Azure Well-Architected Framework](https://learn.microsoft.com/es-es/azure/well-architected/) | 🇪🇸 | Framework |
-| [Architecture Decision Records (ADR)](https://learn.microsoft.com/es-es/azure/well-architected/architect-role/architecture-decision-record) | 🇪🇸 | Práctica |
+| [Architecture Decision Records (ADR)](https://learn.microsoft.com/es-es/azure/well-architected/architect-role/architecture-decision-record) | 🇪🇸 | Practice |
 
-**Entregable:** **ADR** documentando una decisión clave de tu arquitectura (identidad, red, almacenamiento de datos sensibles, o hosting del modelo) con alternativas y trade-offs.
+**Deliverable:** **ADR** documenting a key architecture decision (identity, network, sensitive data storage, or model hosting) with alternatives and trade-offs.
 
-## Semana 15 — Red-team / guardrails + checklist enterprise
+## Week 15 — Red-team / guardrails + enterprise checklist
 
-**Objetivo:** atacar tu propio sistema y añadir defensas.
+**Objective:** attack your own system and add defenses.
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
-| [SC-500 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/resources/study-guides/sc-500) | 🇪🇸 | Guía oficial |
-| [Azure AI Content Safety](https://learn.microsoft.com/es-es/azure/ai-services/content-safety/) | 🇪🇸 | Servicio |
-| [PyRIT — Python Risk Identification Toolkit](https://github.com/Azure/PyRIT) | 🇬🇧 | Herramienta open |
+| [SC-500 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/resources/study-guides/sc-500) | 🇪🇸 | Official guide |
+| [Azure AI Content Safety](https://learn.microsoft.com/es-es/azure/ai-services/content-safety/) | 🇪🇸 | Service |
+| [PyRIT — Python Risk Identification Toolkit](https://github.com/Azure/PyRIT) | 🇬🇧 | Open tool |
 
-**Entregable:** reporte de red-team (prompts adversariales + resultados) + guardrails implementados (content filter, validación de salida) + **checklist enterprise** de seguridad de AI.
+**Deliverable:** red-team report (adversarial prompts + results) + implemented guardrails (content filter, output validation) + **enterprise checklist** for AI security.
 
-## Semana 16 — Cierre CP3: arquitectura + seguridad
+## Week 16 — CP3 close: architecture + security
 
-**Objetivo:** consolidar arquitectura y seguridad en un paquete presentable.
+**Objective:** consolidate architecture and security into a presentable package.
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
 | [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) | 🇬🇧 | Framework |
-| [ISO/IEC 42001](https://www.iso.org/standard/81230.html) | 🇬🇧 | Estándar |
+| [ISO/IEC 42001](https://www.iso.org/standard/81230.html) | 🇬🇧 | Standard |
 
-**Checklist del [Gate CP3](../checkpoints#gate-cp3-semana-16):**
-- [ ] Threat model con mitigaciones priorizadas
-- [ ] ADR de arquitectura publicado
-- [ ] Red-team + guardrails demostrados
-- [ ] Checklist enterprise de seguridad reutilizable
-- [ ] Progreso verificable en AZ-305 y SC-500
+**Checklist for [Gate CP3](../checkpoints#gate-cp3-week-16):**
+- [ ] Threat model with prioritized mitigations
+- [ ] Architecture ADR published
+- [ ] Red-team + guardrails demonstrated
+- [ ] Reusable enterprise security checklist
+- [ ] Verifiable progress in AZ-305 and SC-500
 
 ---
 
-## 📋 Checklist de Fase 3
+## 📋 Phase 3 Checklist
 
-- [ ] Threat model del sistema RAG/agente (OWASP LLM + MITRE ATLAS)
-- [ ] ADR con decisión de arquitectura y trade-offs
-- [ ] Ejercicio de red-team con guardrails aplicados
-- [ ] Checklist de seguridad y arquitectura enterprise
-- [ ] Plan de examen para AZ-305 y SC-500
-- [ ] Gate CP3 aprobado
+- [ ] Threat model for the RAG/agent system (OWASP LLM + MITRE ATLAS)
+- [ ] ADR with architecture decision and trade-offs
+- [ ] Red-team exercise with applied guardrails
+- [ ] Enterprise security and architecture checklist
+- [ ] Exam plan for AZ-305 and SC-500
+- [ ] Gate CP3 approved
 
-## Operacion v4
+## v4 Operations
 
 - [Checkpoint Gates](../checkpoints)
-- [Template de Evidencia](../evidence-template)
+- [Evidence Template](../evidence-template)
 - [Weekly Tracker](../weekly-tracker)
 
-## 🔗 Valor para el CV
+## 🔗 Resume Value
 
-> "Diseñé y aseguré un sistema de AI a nivel empresarial: threat model mapeado a OWASP LLM Top 10 y MITRE ATLAS, decisiones de arquitectura documentadas (ADR) alineadas al Well-Architected Framework, y guardrails validados con red-teaming — respaldado por certificación AZ-305 y SC-500."
+> "I designed and secured an enterprise-level AI system: threat model mapped to OWASP LLM Top 10 and MITRE ATLAS, architecture decisions documented (ADR) and aligned to the Well-Architected Framework, and guardrails validated with red-teaming — backed by AZ-305 and SC-500 certification work."
 
-## ⏭️ Siguiente Fase
+## ⏭️ Next Phase
 
-[Fase 4: Value Realization + Contenido + Networking →](../ai-business/overview)
+[Phase 4: Value Realization + Content + Networking →](../ai-business/overview)
