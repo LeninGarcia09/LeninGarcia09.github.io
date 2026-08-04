@@ -1,23 +1,86 @@
 {
-  "title": { "message": "Responsible AI Architect" },
-  "logo.alt": { "message": "Lenin Garcia — Arquitectura de IA e IA Responsable" },
-  "item.label.🎯 Skill Tracks": { "message": "🎯 Rutas de Habilidades" },
-  "item.label.🎓 Certifications": { "message": "🎓 Certificaciones" },
-  "item.label.📦 Resources": { "message": "📦 Recursos" },
-  "item.label.🗺️ Career Plans": { "message": "🗺️ Planes de Carrera" },
-  "item.label.GitHub": { "message": "GitHub" },
-  "item.label.🏗️ AI Architecture + Responsible AI": { "message": "🏗️ Arquitectura de IA + IA Responsable" },
-  "item.label.🤖 Azure AI Foundry + Hosted Agents": { "message": "🤖 Azure AI Foundry + Agentes Alojados" },
-  "item.label.⚖️ Responsible AI & Governance": { "message": "⚖️ IA Responsable y Gobernanza" },
-  "item.label.🔬 Agentic Reliability": { "message": "🔬 Fiabilidad Agéntica" },
-  "item.label.🛡️ Agentic Security & Governance": { "message": "🛡️ Seguridad y Gobernanza para Agentes de IA" },
-  "item.label.🧠 AI-102: Azure AI Engineer": { "message": "🧠 AI-102: Ingeniero de IA de Azure" },
-  "item.label.🏗️ AZ-305: Solutions Architect Expert": { "message": "🏗️ AZ-305: Arquitecto de Soluciones Expert" },
-  "item.label.🛡️ SC-500: Cloud & AI Security": { "message": "🛡️ SC-500: Seguridad de Nube e IA" },
-  "item.label.🔧 AZ-104: Azure Administrator": { "message": "🔧 AZ-104: Administrador de Azure" },
-  "item.label.🌐 AZ-700: Network Engineer": { "message": "🌐 AZ-700: Ingeniero de Redes" },
-  "item.label.🟠 Claude Certified Architect": { "message": "🟠 Claude Certified Architect" },
-  "item.label.🛡️ AI Security Professional (9 meses)": { "message": "🛡️ Profesional de Seguridad de IA (9 meses)" },
-  "item.label.🏗️ AI Solution Architect — Responsible AI (26 sem)": { "message": "🏗️ Arquitecto de Soluciones de IA — IA Responsable (26 sem)" },
-  "item.label.🧠 Executive AI Leadership Plan": { "message": "🧠 Plan de Liderazgo Ejecutivo en IA" }
+  "title": {
+    "message": "Responsible AI Architect",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Lenin Garcia — Arquitectura de IA e IA Responsable",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.🎯 Skill Tracks": {
+    "message": "🎯 Rutas de Habilidades",
+    "description": "Navbar item with label 🎯 Skill Tracks"
+  },
+  "item.label.🎓 Certifications": {
+    "message": "🎓 Certificaciones",
+    "description": "Navbar item with label 🎓 Certifications"
+  },
+  "item.label.📦 Resources": {
+    "message": "📦 Recursos",
+    "description": "Navbar item with label 📦 Resources"
+  },
+  "item.label.🗺️ Career Plans": {
+    "message": "🗺️ Planes de Carrera",
+    "description": "Navbar item with label 🗺️ Career Plans"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.🏗️ AI Architecture + Responsible AI": {
+    "message": "🏗️ Arquitectura de IA + IA Responsable",
+    "description": "Navbar item with label 🏗️ AI Architecture + Responsible AI"
+  },
+  "item.label.🤖 Azure AI Foundry + Hosted Agents": {
+    "message": "🤖 Azure AI Foundry + Agentes Alojados",
+    "description": "Navbar item with label 🤖 Azure AI Foundry + Hosted Agents"
+  },
+  "item.label.⚖️ Responsible AI & Governance": {
+    "message": "⚖️ IA Responsable y Gobernanza",
+    "description": "Navbar item with label ⚖️ Responsible AI & Governance"
+  },
+  "item.label.🔬 Agentic Reliability": {
+    "message": "🔬 Fiabilidad Agéntica",
+    "description": "Navbar item with label 🔬 Agentic Reliability"
+  },
+  "item.label.🛡️ Agentic Security & Governance": {
+    "message": "🛡️ Seguridad y Gobernanza para Agentes de IA",
+    "description": "Navbar item with label 🛡️ Agentic Security & Governance"
+  },
+  "item.label.🧠 AI-102: Azure AI Engineer": {
+    "message": "🧠 AI-102: Ingeniero de IA de Azure",
+    "description": "Navbar item with label 🧠 AI-102: Azure AI Engineer"
+  },
+  "item.label.🏗️ AZ-305: Solutions Architect Expert": {
+    "message": "🏗️ AZ-305: Arquitecto de Soluciones Expert",
+    "description": "Navbar item with label 🏗️ AZ-305: Solutions Architect Expert"
+  },
+  "item.label.🛡️ SC-500: Cloud & AI Security": {
+    "message": "🛡️ SC-500: Seguridad de Nube e IA",
+    "description": "Navbar item with label 🛡️ SC-500: Cloud & AI Security"
+  },
+  "item.label.🔧 AZ-104: Azure Administrator": {
+    "message": "🔧 AZ-104: Administrador de Azure",
+    "description": "Navbar item with label 🔧 AZ-104: Azure Administrator"
+  },
+  "item.label.🌐 AZ-700: Network Engineer": {
+    "message": "🌐 AZ-700: Ingeniero de Redes",
+    "description": "Navbar item with label 🌐 AZ-700: Network Engineer"
+  },
+  "item.label.🟠 Claude Certified Architect": {
+    "message": "🟠 Claude Certified Architect",
+    "description": "Navbar item with label 🟠 Claude Certified Architect"
+  },
+  "item.label.🛡️ AI Security Professional (9 meses)": {
+    "message": "🛡️ Profesional de Seguridad de IA (9 meses)",
+    "description": "Navbar item with label 🛡️ AI Security Professional (9 meses)"
+  },
+  "item.label.🏗️ AI Solution Architect — Responsible AI (26 sem)": {
+    "message": "🏗️ Arquitecto de Soluciones de IA — IA Responsable (26 sem)",
+    "description": "Navbar item with label 🏗️ AI Solution Architect — Responsible AI (26 sem)"
+  },
+  "item.label.🧠 Executive AI Leadership Plan": {
+    "message": "🧠 Plan de Liderazgo Ejecutivo en IA",
+    "description": "Navbar item with label 🧠 Executive AI Leadership Plan"
+  }
 }

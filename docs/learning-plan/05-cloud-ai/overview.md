@@ -1,59 +1,59 @@
 ---
 sidebar_position: 5
-title: "Fase 5 — Cloud + AI Integración"
+title: "Phase 5 — Cloud + AI Integration"
 ---
 
-# Fase 5: Cloud + AI Integración (Semanas 21–28)
+# Phase 5: Cloud + AI Integration (Weeks 21–28)
 
-> **Objetivo:** Integrar conocimientos de cloud y AI en soluciones empresariales completas. Construir sistemas RAG, aprender evaluación de modelos, y obtener certificación AI-900 (con opción avanzada de AI-103).
+> **Objective:** Integrate cloud and AI knowledge into complete enterprise solutions. Build RAG systems, learn model evaluation, and earn AI-900 certification (with optional advanced AI-103 path).
 
-## 🎯 Resultados Esperados
+## 🎯 Expected Outcomes
 
-Al completar esta fase:
-- Azure AI Foundry dominado (modelos, evaluaciones, agentes)
-- RAG (Retrieval-Augmented Generation) implementado
-- Evaluación y monitoreo de AI en producción
-- Certificación AI-900 obtenida
-- Sistema RAG funcional en portfolio
+By completing this phase:
+- Azure AI Foundry mastered (models, evaluations, agents)
+- RAG (Retrieval-Augmented Generation) implemented
+- AI evaluation and monitoring in production
+- AI-900 certification earned
+- Functional RAG system in portfolio
 
 ---
 
-## Semanas 21-22: Azure AI Foundry
+## Weeks 21-22: Azure AI Foundry
 
-### Objetivo
-Dominar la plataforma de AI de Microsoft para construir y desplegar soluciones empresariales.
+### Objective
+Master Microsoft's AI platform for building and deploying enterprise solutions.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Azure AI Foundry Documentation](https://learn.microsoft.com/es-es/azure/ai-foundry/) | 🇪🇸 Español | Docs | 8 hrs |
-| [Microsoft Learn: Azure AI Foundry (¿Qué es?)](https://learn.microsoft.com/es-es/azure/ai-foundry/what-is-azure-ai-foundry) | 🇪🇸 Español | Docs | 6 hrs |
-| [Azure AI Foundry Quickstarts](https://learn.microsoft.com/es-es/azure/ai-foundry/quickstarts/get-started-code) | 🇪🇸 Español | Labs | 4 hrs |
-| [Azure OpenAI Service](https://learn.microsoft.com/es-es/azure/ai-services/openai/) | 🇪🇸 Español | Docs | 4 hrs |
-| [DeepLearning.AI: Building with Azure AI](https://www.deeplearning.ai/) | 🇬🇧 Inglés | Course | 3 hrs |
+| [Azure AI Foundry Documentation](https://learn.microsoft.com/es-es/azure/ai-foundry/) | 🇪🇸 Spanish | Docs | 8 hrs |
+| [Microsoft Learn: Azure AI Foundry (What is it?)](https://learn.microsoft.com/es-es/azure/ai-foundry/what-is-azure-ai-foundry) | 🇪🇸 Spanish | Docs | 6 hrs |
+| [Azure AI Foundry Quickstarts](https://learn.microsoft.com/es-es/azure/ai-foundry/quickstarts/get-started-code) | 🇪🇸 Spanish | Labs | 4 hrs |
+| [Azure OpenAI Service](https://learn.microsoft.com/es-es/azure/ai-services/openai/) | 🇪🇸 Spanish | Docs | 4 hrs |
+| [DeepLearning.AI: Building with Azure AI](https://www.deeplearning.ai/) | 🇬🇧 English | Course | 3 hrs |
 
-### Plan Semana 21
+### Week 21 Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | Azure AI Foundry: overview, projects, hubs | Crear proyecto |
-| Martes | Modelos disponibles: GPT-4, GPT-4o, Phi | Comparar modelos |
-| Miércoles | Playground: prompt testing y refinement | Experimentar |
-| Jueves | Deployments: quotas, rate limits, regions | Deploy modelo |
-| Viernes | Content filters y safety settings | Configurar safety |
+| Monday | Azure AI Foundry: overview, projects, hubs | Create project |
+| Tuesday | Available models: GPT-4, GPT-4o, Phi | Compare models |
+| Wednesday | Playground: prompt testing and refinement | Experiment |
+| Thursday | Deployments: quotas, rate limits, regions | Deploy model |
+| Friday | Content filters and safety settings | Configure safety |
 
-### Plan Semana 22
+### Week 22 Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | Azure AI Agents: overview y tipos | Explorar Agent Service |
-| Martes | Agents con tools: code interpreter, file search | Build agent |
-| Miércoles | Evaluations: built-in y custom metrics | Evaluar respuestas |
-| Jueves | Prompt flow: flujos de orquestación | Diseñar flow |
-| Viernes | Monitoring y logging en producción | Dashboard de métricas |
+| Monday | Azure AI Agents: overview and types | Explore Agent Service |
+| Tuesday | Agents with tools: code interpreter, file search | Build agent |
+| Wednesday | Evaluations: built-in and custom metrics | Evaluate responses |
+| Thursday | Prompt flow: orchestration flows | Design flow |
+| Friday | Monitoring and logging in production | Metrics dashboard |
 
-### Conceptos Clave
+### Key Concepts
 
 ```
 Azure AI Foundry:
@@ -79,44 +79,44 @@ Azure AI Foundry:
 
 ---
 
-## Semanas 23-24: RAG (Retrieval-Augmented Generation)
+## Weeks 23-24: RAG (Retrieval-Augmented Generation)
 
-### Objetivo
-Construir un sistema que responde preguntas basándose en documentos internos, eliminando hallucinations.
+### Objective
+Build a system that answers questions based on internal documents, eliminating hallucinations.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft Learn: RAG with Azure AI](https://learn.microsoft.com/es-es/azure/ai-foundry/concepts/retrieval-augmented-generation) | 🇪🇸 Español | Docs | 3 hrs |
-| [DeepLearning.AI: Building RAG Applications](https://www.deeplearning.ai/short-courses/) | 🇬🇧 Inglés | Course | 3 hrs |
-| [LangChain RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/) | 🇬🇧 Inglés | Tutorial | 4 hrs |
-| [Azure AI Search Documentation](https://learn.microsoft.com/es-es/azure/search/) | 🇪🇸 Español | Docs | 4 hrs |
-| [Pinecone: RAG Guide](https://www.pinecone.io/learn/retrieval-augmented-generation/) | 🇬🇧 Inglés | Guide | 2 hrs |
+| [Microsoft Learn: RAG with Azure AI](https://learn.microsoft.com/es-es/azure/ai-foundry/concepts/retrieval-augmented-generation) | 🇪🇸 Spanish | Docs | 3 hrs |
+| [DeepLearning.AI: Building RAG Applications](https://www.deeplearning.ai/short-courses/) | 🇬🇧 English | Course | 3 hrs |
+| [LangChain RAG Tutorial](https://python.langchain.com/docs/tutorials/rag/) | 🇬🇧 English | Tutorial | 4 hrs |
+| [Azure AI Search Documentation](https://learn.microsoft.com/es-es/azure/search/) | 🇪🇸 Spanish | Docs | 4 hrs |
+| [Pinecone: RAG Guide](https://www.pinecone.io/learn/retrieval-augmented-generation/) | 🇬🇧 English | Guide | 2 hrs |
 
-### Plan Semana 23
+### Week 23 Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | RAG concepts: why, how, architecture | Diagramar sistema |
-| Martes | Embeddings: text → vectors | Generar embeddings |
-| Miércoles | Vector stores: Azure AI Search, Pinecone | Setup vector store |
-| Jueves | Chunking strategies: size, overlap | Procesar documentos |
-| Viernes | Retrieval: similarity search, hybrid | Implementar búsqueda |
+| Monday | RAG concepts: why, how, architecture | Diagram system |
+| Tuesday | Embeddings: text → vectors | Generate embeddings |
+| Wednesday | Vector stores: Azure AI Search, Pinecone | Setup vector store |
+| Thursday | Chunking strategies: size, overlap | Process documents |
+| Friday | Retrieval: similarity search, hybrid | Implement search |
 
-### Plan Semana 24
+### Week 24 Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | Generation: prompt con contexto | System prompts para RAG |
-| Martes | Evaluation: groundedness, relevance | Medir calidad |
-| Miércoles | Advanced: reranking, metadata filters | Mejorar precisión |
-| Jueves | Production: caching, monitoring | Optimizar |
-| Viernes | **Deploy proyecto completo** | — |
+| Monday | Generation: prompt with context | System prompts for RAG |
+| Tuesday | Evaluation: groundedness, relevance | Measure quality |
+| Wednesday | Advanced: reranking, metadata filters | Improve precision |
+| Thursday | Production: caching, monitoring | Optimize |
+| Friday | **Deploy complete project** | — |
 
-### 🔨 Proyecto: Internal Policy Chatbot
+### 🔨 Project: Internal Policy Chatbot
 
-Chatbot que responde preguntas sobre políticas internas de una organización:
+Chatbot that answers questions about an organization's internal policies:
 
 ```
 Policy Chatbot Architecture:
@@ -140,56 +140,56 @@ Policy Chatbot Architecture:
     └── API endpoint
 ```
 
-**Documentos de ejemplo:**
-- Política de seguridad de información
-- Política de uso aceptable
-- Plan de respuesta a incidentes
-- Política de privacidad de datos
+**Example documents:**
+- Information security policy
+- Acceptable use policy
+- Incident response plan
+- Data privacy policy
 
-**Entregable:** Repositorio completo con código, documentación, y demo.
+**Deliverable:** Complete repository with code, documentation, and demo.
 
 ---
 
-## Semanas 25-26: AI Monitoring y Safety
+## Weeks 25-26: AI Monitoring and Safety
 
-### Objetivo
-Aprender a monitorear sistemas AI en producción y detectar problemas antes que impacten usuarios.
+### Objective
+Learn to monitor AI systems in production and detect issues before they impact users.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft: AI Content Safety](https://learn.microsoft.com/es-es/azure/ai-services/content-safety/) | 🇪🇸 Español | Docs | 3 hrs |
-| [Azure AI Evaluation SDK](https://learn.microsoft.com/es-es/azure/ai-foundry/how-to/develop/evaluate-sdk) | 🇪🇸 Español | Tutorial | 4 hrs |
-| [Giskard: AI Testing](https://www.giskard.ai/) | 🇬🇧 Inglés | Tool | 3 hrs |
-| [OWASP Top 10 for LLMs](https://owasp.org/www-project-top-10-for-large-language-model-applications/) | 🇬🇧 Inglés | Framework | 4 hrs |
-| [Microsoft: Red Teaming AI](https://learn.microsoft.com/es-es/azure/ai-services/openai/concepts/red-teaming) | 🇪🇸 Español | Guide | 2 hrs |
+| [Microsoft: AI Content Safety](https://learn.microsoft.com/es-es/azure/ai-services/content-safety/) | 🇪🇸 Spanish | Docs | 3 hrs |
+| [Azure AI Evaluation SDK](https://learn.microsoft.com/es-es/azure/ai-foundry/how-to/develop/evaluate-sdk) | 🇪🇸 Spanish | Tutorial | 4 hrs |
+| [Giskard: AI Testing](https://www.giskard.ai/) | 🇬🇧 English | Tool | 3 hrs |
+| [OWASP Top 10 for LLMs](https://owasp.org/www-project-top-10-for-large-language-model-applications/) | 🇬🇧 English | Framework | 4 hrs |
+| [Microsoft: Red Teaming AI](https://learn.microsoft.com/es-es/azure/ai-services/openai/concepts/red-teaming) | 🇪🇸 Spanish | Guide | 2 hrs |
 
-### Plan Semana 25
+### Week 25 Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | Hallucinations: causas y detección | Evaluar modelos |
-| Martes | Content safety: filtros y moderación | Implementar filtros |
-| Miércoles | Prompt injection: ataques y defensas | Red team ejercicio |
-| Jueves | Data leakage: prevención | PII detection |
-| Viernes | OWASP Top 10 for LLMs | Assessment |
+| Monday | Hallucinations: causes and detection | Evaluate models |
+| Tuesday | Content safety: filters and moderation | Implement filters |
+| Wednesday | Prompt injection: attacks and defenses | Red team exercise |
+| Thursday | Data leakage: prevention | PII detection |
+| Friday | OWASP Top 10 for LLMs | Assessment |
 
-### Plan Semana 26
+### Week 26 Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | Evaluation metrics: groundedness, coherence | SDK de evaluación |
-| Martes | A/B testing de prompts y modelos | Framework de testing |
-| Miércoles | Monitoring dashboards | Azure Monitor + AI |
-| Jueves | Alerting y incident response para AI | Playbooks |
-| Viernes | AI Red Team exercise completo | Documentar findings |
+| Monday | Evaluation metrics: groundedness, coherence | Evaluation SDK |
+| Tuesday | A/B testing prompts and models | Testing framework |
+| Wednesday | Monitoring dashboards | Azure Monitor + AI |
+| Thursday | Alerting and incident response for AI | Playbooks |
+| Friday | Complete AI Red Team exercise | Document findings |
 
-### 🔨 Proyecto: AI Safety Testing Framework
+### 🔨 Project: AI Safety Testing Framework
 
-Crear un framework de testing que incluya:
-1. Test cases para prompt injection
-2. Evaluation de groundedness (hallucinaciones)
+Create a testing framework that includes:
+1. Test cases for prompt injection
+2. Groundedness evaluation (hallucinations)
 3. PII detection checks
 4. Content safety validation
 5. Performance benchmarks
@@ -197,89 +197,89 @@ Crear un framework de testing que incluya:
 
 ---
 
-## Semanas 27-28: Certificación AI-900 (+ Opcional AI-103)
+## Weeks 27-28: AI-900 Certification (+ Optional AI-103)
 
-### Objetivo
-Consolidar conocimiento y obtener certificación AI-900.
+### Objective
+Consolidate knowledge and earn AI-900 certification.
 
-### Recursos para AI-900
+### AI-900 Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft Learn: AI-900](https://learn.microsoft.com/es-es/training/paths/get-started-with-artificial-intelligence-on-azure/) | 🇪🇸 Español | Learning Path | 8 hrs |
-| [AI-900 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/azure-ai-fundamentals/) | 🇪🇸 Español | Guía oficial | Referencia |
-| [John Savill's Technical Training (YouTube)](https://www.youtube.com/@NTFAQGuy) | 🇬🇧 Inglés | Video (study cram) | 2 hrs |
-| [Practice Assessment oficial de AI-900 (gratis)](https://learn.microsoft.com/es-es/credentials/certifications/azure-ai-fundamentals/practice/assessment?assessmentId=26) | 🇪🇸 Español | Práctica oficial gratis | 2 hrs |
+| [Microsoft Learn: AI-900](https://learn.microsoft.com/es-es/training/paths/get-started-with-artificial-intelligence-on-azure/) | 🇪🇸 Spanish | Learning Path | 8 hrs |
+| [AI-900 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/azure-ai-fundamentals/) | 🇪🇸 Spanish | Official guide | Reference |
+| [John Savill's Technical Training (YouTube)](https://www.youtube.com/@NTFAQGuy) | 🇬🇧 English | Video (study cram) | 2 hrs |
+| [Official AI-900 Practice Assessment (free)](https://learn.microsoft.com/es-es/credentials/certifications/azure-ai-fundamentals/practice/assessment?assessmentId=26) | 🇪🇸 Spanish | Free official practice | 2 hrs |
 
-### Plan Semana 27
+### Week 27 Plan
 
-| Día | Módulo | Tema |
+| Day | Module | Topic |
 |-----|--------|------|
-| Lunes | Módulo 1 | AI workloads y consideraciones |
-| Martes | Módulo 2 | Machine Learning fundamentals |
-| Miércoles | Módulo 3 | Computer Vision |
-| Jueves | Módulo 4 | NLP y Document Intelligence |
-| Viernes | Módulo 5 | Generative AI |
+| Monday | Module 1 | AI workloads and considerations |
+| Tuesday | Module 2 | Machine Learning fundamentals |
+| Wednesday | Module 3 | Computer Vision |
+| Thursday | Module 4 | NLP and Document Intelligence |
+| Friday | Module 5 | Generative AI |
 
-### Plan Semana 28
+### Week 28 Plan
 
-| Día | Actividad |
+| Day | Activity |
 |-----|-----------|
-| Lunes | Repaso general + gaps |
-| Martes | Practice exams |
-| Miércoles | Repaso áreas débiles |
-| Jueves | Practice exam final |
-| Viernes | **Examen AI-900** |
-| Sábado | Si pasó: planear siguiente credencial (AI-103 o vendor-neutral) |
+| Monday | General review + gaps |
+| Tuesday | Practice exams |
+| Wednesday | Review weak areas |
+| Thursday | Final practice exam |
+| Friday | **AI-900 exam** |
+| Saturday | If passed: plan next credential (AI-103 or vendor-neutral) |
 
-### Certificación: AI-900
+### Certification: AI-900
 
-- **Costo:** $99 USD
-- **Idioma:** Disponible en español
-- **Formato:** 40-60 preguntas, 45 minutos
-- **Puntuación para pasar:** 700/1000
-- **Dominios:**
+- **Cost:** $99 USD
+- **Language:** Available in Spanish
+- **Format:** 40-60 questions, 45 minutes
+- **Passing score:** 700/1000
+- **Domains:**
   - AI workloads and considerations (15-20%)
   - Machine Learning on Azure (20-25%)
   - Computer Vision workloads (15-20%)
   - NLP workloads (15-20%)
   - Generative AI workloads (15-20%)
 
-### Opcional: AI-103 (si hay tiempo y motivación)
+### Optional: AI-103 (if there is time and motivation)
 
-Para candidatos avanzados con objetivo **de desarrollo**, AI-103 agrega valor:
-- Nivel Associate (más peso que Fundamentals)
-- **Sucesor de AI-102** (retirado 30-jun-2026); cubre apps de IA generativa y soluciones multi-agente con Microsoft Foundry (Python)
-- Verifica precio, estado (beta/GA) y temario en la [página oficial de AI-103](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/)
-- Requiere 4-6 semanas adicionales de preparación
+For advanced candidates with a **development** objective, AI-103 adds value:
+- Associate level (more weight than Fundamentals)
+- **Successor to AI-102** (retired Jun 30, 2026); covers generative AI apps and multi-agent solutions with Microsoft Foundry (Python)
+- Verify price, status (beta/GA), and syllabus on the [official AI-103 page](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/)
+- Requires 4-6 additional weeks of preparation
 
-:::tip[¿Gobernanza/programa en vez de desarrollo? Considera vendor-neutral]
-Si tu objetivo es **AI Program Manager / AI Governance / TPM** (no escribir código de producción), una credencial **vendor-neutral** como **IAPP AIGP** o **PMI-CPMAI** (examen en español) suele rendir más que AI-103. Ver la escalera completa en [Plan Overview](../overview#-certificaciones--escalera-vendor-neutral-gratis-primero).
+:::tip[Governance/program instead of development? Consider vendor-neutral]
+If your target is **AI Program Manager / AI Governance / TPM** (not writing production code), a **vendor-neutral** credential such as **IAPP AIGP** or **PMI-CPMAI** (exam in Spanish) often provides more return than AI-103. See the full ladder in [Plan Overview](../overview#-certifications--vendor-neutral-ladder-free-first).
 :::
 
-:::note[Portabilidad del stack]
-Los patrones de esta fase (RAG, evaluación, agentes, safety) **no dependen de un proveedor**. Todo lo que construyes en Azure AI Foundry se replica con **LangChain / LlamaIndex**, modelos abiertos (**Llama, Mistral, Phi**) y vector stores abiertos (**ChromaDB, pgvector, FAISS**). Usa Azure como *un* ejemplo, pero documenta tu proyecto de forma agnóstica para que aplique a empleadores que usan AWS, GCP o stacks open-source.
+:::note[Stack portability]
+The patterns in this phase (RAG, evaluation, agents, safety) **do not depend on one vendor**. Everything you build in Azure AI Foundry can be replicated with **LangChain / LlamaIndex**, open models (**Llama, Mistral, Phi**), and open vector stores (**ChromaDB, pgvector, FAISS**). Use Azure as *one* example, but document your project in a vendor-agnostic way so it applies to employers using AWS, GCP, or open-source stacks.
 :::
 
 ---
 
-## 📋 Checklist de Fase 5
+## 📋 Phase 5 Checklist
 
-- [ ] Azure AI Foundry: modelos, agents, evaluations
-- [ ] RAG: sistema completo implementado
-- [ ] Policy Chatbot: funcional y documentado
-- [ ] AI Safety: OWASP LLM Top 10 entendido
-- [ ] Red teaming: ejercicio completado
-- [ ] AI Safety Testing Framework: creado
-- [ ] AI-900 Learning Path: completado
-- [ ] **Certificación AI-900: obtenida**
-- [ ] Portfolio: 10+ proyectos en GitHub
+- [ ] Azure AI Foundry: models, agents, evaluations
+- [ ] RAG: complete system implemented
+- [ ] Policy Chatbot: functional and documented
+- [ ] AI Safety: OWASP LLM Top 10 understood
+- [ ] Red teaming: exercise completed
+- [ ] AI Safety Testing Framework: created
+- [ ] AI-900 Learning Path: completed
+- [ ] **AI-900 certification: earned**
+- [ ] Portfolio: 10+ projects in GitHub
 
-## 🔗 Valor para el CV
+## 🔗 Resume Value
 
-Después de esta fase:
-> "Implementé sistemas RAG empresariales con Azure AI Foundry, incluyendo document ingestion, vector search y generation con source citations. Diseñé frameworks de AI safety testing que evalúan hallucinations, prompt injection y data leakage. Certificaciones: AZ-900, SC-900, AI-900."
+After this phase:
+> "I implemented enterprise RAG systems with Azure AI Foundry, including document ingestion, vector search, and generation with source citations. I designed AI safety testing frameworks that evaluate hallucinations, prompt injection, and data leakage. Certifications: AZ-900, SC-900, AI-900."
 
-## ⏭️ Siguiente Fase
+## ⏭️ Next Phase
 
-[Fase 6: Lanzamiento de Carrera →](../career-launch/overview)
+[Phase 6: Career Launch →](../career-launch/overview)

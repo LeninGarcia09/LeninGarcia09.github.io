@@ -1,75 +1,75 @@
 ---
 sidebar_position: 4
-title: "Reto 3 — Gobernanza: NIST AI RMF + ISO 42001"
+title: "Challenge 3 — Governance: NIST AI RMF + ISO 42001"
 ---
 
-# Reto 3: Gap assessment de gobernanza de IA (NIST AI RMF + ISO/IEC 42001)
+# Challenge 3: AI governance gap assessment (NIST AI RMF + ISO/IEC 42001)
 
-> **Herramienta:** ninguna — es un **artefacto documental** · **Frameworks:** [NIST AI RMF 1.0](https://www.nist.gov/itl/ai-risk-management-framework) + [ISO/IEC 42001](https://www.iso.org/standard/81230.html) · **Tiempo:** 4–6 h
+> **Tool:** none — it is a **documentation artifact** · **Frameworks:** [NIST AI RMF 1.0](https://www.nist.gov/itl/ai-risk-management-framework) + [ISO/IEC 42001](https://www.iso.org/standard/81230.html) · **Time:** 4–6 h
 
-:::tip[Qué vas a construir]
-Un **gap assessment ejecutivo**: tomas una organización (real o ficticia), evalúas su madurez de gobernanza de IA contra NIST AI RMF e ISO/IEC 42001, y entregas un reporte con hallazgos, riesgos y un roadmap. Es exactamente lo que hace un consultor de seguridad de IA o un Especialista en Seguridad de IA en su primer trimestre.
+:::tip[What you will build]
+An **executive gap assessment**: you take an organization (real or fictional), evaluate its AI governance maturity against NIST AI RMF and ISO/IEC 42001, and deliver a report with findings, risks, and a roadmap. This is exactly what an AI security consultant or AI Security Specialist does in their first quarter.
 :::
 
-**Dónde ejecutas esto:** en tu editor de texto / procesador de documentos. **No requiere código ni herramientas.** Es el reto que demuestra tu lado *advisory* y ejecutivo — clave para roles senior y de consultoría (Mandiant, MAPFRE, BBVA).
+**Where to run this:** in your text editor / document processor. **No code or tools required.** This challenge demonstrates your *advisory* and executive side — key for senior and consulting roles (Mandiant, MAPFRE, BBVA).
 
-## Por qué importa para el empleo
+## Why it matters for employment
 
-Varias JDs piden literalmente *"cumplimiento normativo (GDPR, LFPDPPP, EU AI Act, NIST AI RMF)"*, *"gobernanza y ética de IA"* y *"assessments de madurez con recomendaciones para liderazgo"*. Este artefacto es tu prueba directa. Además, alimenta la certificación **[IAPP AIGP](../sources-and-verification#certificaciones-vendor-neutral-verificadas)** que recomienda el plan.
+Several JDs literally ask for *"regulatory compliance (GDPR, LFPDPPP, EU AI Act, NIST AI RMF),"* *"AI governance and ethics,"* and *"maturity assessments with leadership recommendations."* This artifact is your direct proof. It also feeds the **[IAPP AIGP](../sources-and-verification#vendor-neutral-certifications-verified)** certification recommended by the plan.
 
-## Pasos
+## Steps
 
-1. **Elige un sujeto.** Una empresa ficticia (p. ej. "una aseguradora que despliega un chatbot de reclamaciones") o una real con info pública.
-2. **Evalúa contra las 4 funciones del NIST AI RMF:** *Govern, Map, Measure, Manage*. Para cada una, califica madurez (Inexistente / Inicial / Definido / Gestionado).
-3. **Cruza con controles clave de ISO/IEC 42001** (política de IA, roles y responsabilidades, gestión de riesgos de IA, gestión del ciclo de vida, gestión de datos).
-4. **Documenta gaps** — dónde falla y por qué es un riesgo (regulatorio, reputacional, operacional).
-5. **Prioriza un roadmap** (Ahora / 90 días / 12 meses) con owner sugerido por acción.
+1. **Choose a subject.** A fictional company (e.g., "an insurer deploying a claims chatbot") or a real one with public information.
+2. **Evaluate against the 4 NIST AI RMF functions:** *Govern, Map, Measure, Manage*. For each one, rate maturity (Nonexistent / Initial / Defined / Managed).
+3. **Cross-check with key ISO/IEC 42001 controls** (AI policy, roles and responsibilities, AI risk management, lifecycle management, data management).
+4. **Document gaps** — where it fails and why it is a risk (regulatory, reputational, operational).
+5. **Prioritize a roadmap** (Now / 90 days / 12 months) with a suggested owner for each action.
 
 <details>
-<summary>Plantilla de tabla de assessment (cópiala)</summary>
+<summary>Assessment table template (copy it)</summary>
 
-| Función NIST AI RMF | Control / pregunta | Madurez (0–3) | Gap / riesgo | Acción recomendada | Plazo |
+| NIST AI RMF Function | Control / question | Maturity (0–3) | Gap / risk | Recommended action | Timeline |
 |---------------------|--------------------|:-------------:|--------------|--------------------|-------|
-| **Govern** | ¿Existe una política de IA aprobada por dirección? | 1 | Sin ownership ejecutivo | Nombrar responsable de IA + política | Ahora |
-| **Map** | ¿Se inventarían los sistemas de IA y sus usos? | 0 | No hay inventario | Crear registro de sistemas de IA | 90 días |
-| **Measure** | ¿Se prueban sesgos y robustez antes de producción? | 1 | Pruebas ad-hoc | Definir suite de evaluación | 90 días |
-| **Manage** | ¿Hay respuesta a incidentes específica de IA? | 0 | No existe | Extender IR playbook a IA | 12 meses |
+| **Govern** | Is there an AI policy approved by leadership? | 1 | No executive ownership | Name AI owner + policy | Now |
+| **Map** | Are AI systems and uses inventoried? | 0 | No inventory | Create AI system register | 90 days |
+| **Measure** | Are bias and robustness tested before production? | 1 | Ad-hoc testing | Define evaluation suite | 90 days |
+| **Manage** | Is there AI-specific incident response? | 0 | Does not exist | Extend IR playbook to AI | 12 months |
 
-> El puntaje es tu juicio profesional documentado — lo importante es la **justificación**, no el número.
+> The score is your documented professional judgment — the **justification** matters more than the number.
 </details>
 
 <details>
-<summary>Mapa rápido: regulación → función NIST que la cubre</summary>
+<summary>Quick map: regulation → NIST function it covers</summary>
 
-| Regulación / marco | Dónde impacta |
+| Regulation / framework | Where it impacts |
 |--------------------|---------------|
-| **EU AI Act** (clasificación por riesgo) | Govern + Map |
-| **GDPR / LFPDPPP** (datos personales) | Map + Manage (ver también [Reto 4](./challenge-04)) |
-| **NIST AI RMF** | las 4 funciones |
-| **ISO/IEC 42001** (AIMS) | Govern (sistema de gestión) |
+| **EU AI Act** (risk classification) | Govern + Map |
+| **GDPR / LFPDPPP** (personal data) | Map + Manage (see also [Challenge 4](./challenge-04)) |
+| **NIST AI RMF** | all 4 functions |
+| **ISO/IEC 42001** (AIMS) | Govern (management system) |
 
 </details>
 
-## 📦 Entregable
+## 📦 Deliverable
 
-Un documento `ai-governance-assessment.pdf` (o repo con `.md`) con:
+A document `ai-governance-assessment.pdf` (or repo with `.md`) with:
 
-1. **Resumen ejecutivo** (1 página) — nivel de madurez general + top 3 riesgos.
-2. Tabla de assessment completa (plantilla de arriba).
-3. **Roadmap priorizado** con plazos y owners.
-4. Un párrafo de "qué regulaciones aplican y por qué".
+1. **Executive summary** (1 page) — overall maturity level + top 3 risks.
+2. Full assessment table (template above).
+3. **Prioritized roadmap** with timelines and owners.
+4. One paragraph explaining "which regulations apply and why."
 
-## ✅ Criterios de éxito
+## ✅ Success criteria
 
-- [ ] Evaluaste las **4 funciones** del NIST AI RMF.
-- [ ] Referenciaste al menos **3 controles de ISO/IEC 42001**.
-- [ ] Cada gap tiene **riesgo + acción + plazo + owner**.
-- [ ] El resumen ejecutivo es entendible por un board (sin jerga técnica).
+- [ ] Evaluated the **4 functions** of the NIST AI RMF.
+- [ ] Referenced at least **3 ISO/IEC 42001 controls**.
+- [ ] Every gap has **risk + action + timeline + owner**.
+- [ ] The executive summary is understandable by a board (no technical jargon).
 
-:::info[Sin costo]
-NIST AI RMF es **gratuito y descargable**. ISO/IEC 42001 es de pago, pero para este reto basta con la estructura pública de la norma y resúmenes oficiales — no necesitas comprarla para practicar.
+:::info[No cost]
+NIST AI RMF is **free and downloadable**. ISO/IEC 42001 is paid, but for this challenge the public structure of the standard and official summaries are enough — you do not need to buy it to practice.
 :::
 
 ---
 
-**Anterior:** [← Reto 2](./challenge-02) · **Siguiente:** [Reto 4 — Detección de PII con Presidio →](./challenge-04)
+**Previous:** [← Challenge 2](./challenge-02) · **Next:** [Challenge 4 — PII Detection with Presidio →](./challenge-04)

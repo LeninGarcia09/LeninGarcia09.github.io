@@ -1,142 +1,142 @@
 ---
 sidebar_position: 8
-title: "Metodología y Mejores Prácticas"
+title: "Methodology and Best Practices"
 ---
 
-# Metodología y Mejores Prácticas (Best-in-Class)
+# Methodology and Best Practices (Best-in-Class)
 
-:::info[Por qué esta página]
-Un buen plan no es solo una lista de cursos: es un **diseño de desarrollo profesional**. Esta página explica los principios —tomados de programas de reskilling de clase mundial y de la ciencia del aprendizaje— que hacen que este plan funcione, y añade las **prácticas que faltaban** para llevarlo al nivel de los mejores programas del mundo. Todas las afirmaciones tienen fuente primaria en [Fuentes y Verificación](./sources-and-verification).
+:::info[Why this page exists]
+A good plan is not just a list of courses: it is a **professional development design**. This page explains the principles — taken from world-class reskilling programs and learning science — that make this plan work, and adds the **missing practices** that raise it to the level of the world's best programs. Every claim has a primary source in [Sources and Verification](./sources-and-verification).
 :::
 
-## El diseño está anclado en evidencia
+## The design is anchored in evidence
 
-Este plan replica deliberadamente el ADN de los programas de reskilling con mejores resultados de empleabilidad:
+This plan deliberately replicates the DNA of reskilling programs with the strongest employability outcomes:
 
-| Programa | Diseño clave | Señal de resultado |
+| Program | Key design | Outcome signal |
 |----------|--------------|--------------------|
-| [Google Career Certificates](https://grow.google/certificates/) | Proyectos prácticos + capstone + portafolio; **consorcio de empleadores** | ~75% reporta un resultado positivo de carrera en 6 meses (dato del proveedor) |
-| [AWS re/Start](https://aws.amazon.com/training/restart/) | **Cohorte** full-time 12 semanas + labs de escenario real + credencial reconocida | Alta conexión a empleo tras completar (dato del proveedor) |
-| [IBM SkillsBuild](https://skillsbuild.org/) | **Aprendizaje basado en proyectos** + credenciales apilables + portafolio | Rutas de carrera con credenciales verificables |
+| [Google Career Certificates](https://grow.google/certificates/) | Practical projects + capstone + portfolio; **employer consortium** | ~75% report a positive career outcome within 6 months (provider-reported data) |
+| [AWS re/Start](https://aws.amazon.com/training/restart/) | Full-time 12-week **cohort** + real-scenario labs + recognized credential | Strong employment connection after completion (provider-reported data) |
+| [IBM SkillsBuild](https://skillsbuild.org/) | **Project-based learning** + stackable credentials + portfolio | Career paths with verifiable credentials |
 
-**Denominador común:** proyectos reales → portafolio → credencial reconocida → conexión con empleadores. Este plan ya hace las tres primeras; abajo reforzamos la cuarta.
+**Common denominator:** real projects → portfolio → recognized credential → employer connection. This plan already does the first three; below we reinforce the fourth.
 
 ---
 
-## Principio 1 — Modelo 70-20-10 (aprender como aprenden los líderes)
+## Principle 1 — 70-20-10 model (learn like leaders learn)
 
-El modelo **70-20-10** proviene de investigación del **Center for Creative Leadership** (McCall, Lombardo y Eichinger — *The Lessons of Experience*, 1988):
+The **70-20-10** model comes from research by the **Center for Creative Leadership** (McCall, Lombardo, and Eichinger — *The Lessons of Experience*, 1988):
 
-- **70% experiencia** — proyectos y práctica real (el corazón de este plan)
-- **20% social** — mentoría, coaching, comunidad y feedback
-- **10% formal** — cursos y certificaciones
+- **70% experience** — projects and real practice (the heart of this plan)
+- **20% social** — mentorship, coaching, community, and feedback
+- **10% formal** — courses and certifications
 
-:::warning[Brecha detectada en el plan original]
-El plan es **fuerte en el 70% (proyectos) y el 10% (certificaciones)**, pero **débil en el 20% social** (mentoría, cohorte, feedback). Los programas de clase mundial deben gran parte de su tasa de empleo a ese 20%. La sección *"Añade el 20 que falta"* más abajo lo corrige.
+:::warning[Gap detected in the original plan]
+The plan is **strong in the 70% (projects) and the 10% (certifications)**, but **weak in the social 20%** (mentorship, cohort, feedback). World-class programs owe much of their employment rate to that 20%. The section *"Add the missing 20"* below fixes it.
 :::
 
 ---
 
-## Principio 2 — Estudiar con ciencia del aprendizaje, no fuerza bruta
+## Principle 2 — Study with learning science, not brute force
 
-La investigación (Dunlosky et al., 2013; Roediger & Butler, 2011) demuestra que unas pocas técnicas superan ampliamente a releer o subrayar:
+Research (Dunlosky et al., 2013; Roediger & Butler, 2011) shows that a few techniques vastly outperform rereading or highlighting:
 
-| Técnica | Qué es | Cómo aplicarla aquí |
+| Technique | What it is | How to apply it here |
 |---------|--------|---------------------|
-| **Active recall** | Recordar sin mirar notas | Al terminar cada módulo, cierra el material y escribe de memoria lo aprendido |
-| **Spaced repetition** | Repasar en intervalos crecientes | Usa **Anki**: tarjetas de conceptos de examen (AZ-900/SC-900/AI-900), repaso 1d → 3d → 7d → 21d |
-| **Retrieval practice** | Auto-testeo frecuente | Usa los **practice assessments oficiales gratuitos** de Microsoft cada semana, no solo al final |
-| **Interleaving** | Mezclar temas | Alterna hilos: 1 cert + 1 proyecto + 1 networking por semana |
+| **Active recall** | Remember without looking at notes | At the end of each module, close the material and write what you learned from memory |
+| **Spaced repetition** | Review at increasing intervals | Use **Anki**: exam concept cards (AZ-900/SC-900/AI-900), review 1d → 3d → 7d → 21d |
+| **Retrieval practice** | Frequent self-testing | Use the **free official practice assessments** from Microsoft every week, not only at the end |
+| **Interleaving** | Mix topics | Alternate threads: 1 cert + 1 project + 1 networking action per week |
 
-:::tip[Protocolo de estudio semanal (30 min extra, gran impacto)]
-**Viernes:** cierra todo el material y responde de memoria "¿qué aprendí?" (active recall). **Fin de semana:** repasa el mazo de Anki (spaced repetition) + 1 practice assessment (retrieval). Esto convierte estudio pasivo en retención real y reduce el tiempo total a examen.
+:::tip[Weekly study protocol (30 extra minutes, high impact)]
+**Friday:** close all material and answer from memory "what did I learn?" (active recall). **Weekend:** review the Anki deck (spaced repetition) + 1 practice assessment (retrieval). This turns passive study into real retention and reduces total exam time.
 :::
 
 ---
 
-## Principio 3 — Alineación con el mercado (WEF Future of Jobs 2025)
+## Principle 3 — Market alignment (WEF Future of Jobs 2025)
 
-El [Future of Jobs Report 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) del Foro Económico Mundial confirma la dirección de este plan:
+The World Economic Forum's [Future of Jobs Report 2025](https://www.weforum.org/publications/the-future-of-jobs-report-2025/) confirms the direction of this plan:
 
-- **86%** de los empleadores espera que la IA transforme su negocio para 2030.
-- **La brecha de habilidades es la barrera #1** para la transformación (citada por ~63% de empleadores).
-- **39%** de las habilidades centrales cambiarán para 2030; ~**59%** de la fuerza laboral necesitará formación.
+- **86%** of employers expect AI to transform their business by 2030.
+- **The skills gap is the #1 barrier** to transformation (cited by ~63% of employers).
+- **39%** of core skills will change by 2030; ~**59%** of the workforce will need training.
 
-**Top skills 2025→2030** y dónde las desarrolla este plan:
+**Top skills 2025→2030** and where this plan develops them:
 
-| Skill en demanda (WEF 2025) | Dónde se construye en el plan |
+| In-demand skill (WEF 2025) | Where it is built in the plan |
 |-----------------------------|-------------------------------|
-| Pensamiento analítico | Fase 2 (datos, SQL, Power BI) |
-| Alfabetización en IA y big data | Fases 1, 4 y 5 (AI, GenAI, RAG) |
-| Alfabetización tecnológica | Todo el plan (cloud, Python, Git) |
-| Redes y ciberseguridad | Fase 3 (Zero Trust, SOC, SC-900) |
-| Resiliencia, flexibilidad, agilidad | Fase 6 (búsqueda + adaptación) |
-| Pensamiento creativo | Proyectos y capstones |
-| Liderazgo e influencia social | Networking + comunicación ejecutiva |
-| Curiosidad y aprendizaje continuo | Recursos post-programa |
+| Analytical thinking | Phase 2 (data, SQL, Power BI) |
+| AI and big data literacy | Phases 1, 4, and 5 (AI, GenAI, RAG) |
+| Technological literacy | Entire plan (cloud, Python, Git) |
+| Networks and cybersecurity | Phase 3 (Zero Trust, SOC, SC-900) |
+| Resilience, flexibility, agility | Phase 6 (search + adaptation) |
+| Creative thinking | Projects and capstones |
+| Leadership and social influence | Networking + executive communication |
+| Curiosity and continuous learning | Post-program resources |
 
-> Traducción: **cada fase mapea a una habilidad que el mercado ya está pagando.** Usa esta tabla en entrevistas para justificar el plan con datos, no con opinión.
-
----
-
-## Añade el 20% que falta — Mentoría, cohorte y empleadores
-
-Esto es lo que separa un plan "de estudio en solitario" de un programa de clase mundial. **Incorpóralo desde la Semana 1, en paralelo a las fases.**
-
-### 1. Consíguete el "20 social"
-- **Un mentor** en un rol objetivo (AI Program/Governance). Pídelo vía LinkedIn con un mensaje breve (ver plantilla en Fase 6). Meta: 1 conversación de 30 min al mes.
-- **Una cohorte o comunidad** para no estudiar solo: [Microsoft Learn communities](https://learn.microsoft.com/), comunidades de AI Governance/IAPP, grupos locales en Meetup, servidores de Discord de estudio de certificaciones Azure.
-- **Un "accountability partner"** que revise tu avance semanal (aunque no sea del área).
-
-### 2. Simula el "consorcio de empleadores" tú mismo
-Los mejores programas conectan con empleadores; hazlo manualmente y **empieza temprano, no en la Fase 6**:
-- Construye una lista de **15-20 empresas objetivo** desde la Fase 2.
-- Haz **1-2 informational interviews al mes** durante todo el plan (no solo al final).
-- Sigue a hiring managers y comparte tus proyectos a medida que los publicas (prueba de trabajo continua).
-
-### 3. Trata cada fase como un sprint con revisión
-- **Demo Day propio:** al cerrar cada fase, presenta tu proyecto (grabado en 5 min o ante tu mentor/cohorte). Explicar en voz alta consolida el aprendizaje y es práctica directa de entrevista.
+> Translation: **each phase maps to a skill the market is already paying for.** Use this table in interviews to justify the plan with data, not opinion.
 
 ---
 
-## Capa de medición — OKRs, no solo checklists
+## Add the missing 20% — Mentorship, cohort, and employers
 
-Los checklists dicen *qué hiciste*; los OKRs dicen *si estás avanzando hacia el empleo*. Añade estos objetivos trimestrales:
+This is what separates a "solo study plan" from a world-class program. **Incorporate it from Week 1, in parallel with the phases.**
 
-| Objetivo (trimestral) | Resultados clave medibles |
+### 1. Get the "social 20"
+- **A mentor** in a target role (AI Program/Governance). Ask through LinkedIn with a brief message (see template in Phase 6). Goal: 1 conversation of 30 minutes per month.
+- **A cohort or community** so you do not study alone: [Microsoft Learn communities](https://learn.microsoft.com/), AI Governance/IAPP communities, local Meetup groups, Azure certification study Discord servers.
+- **An accountability partner** who reviews your weekly progress (even if they are not in the field).
+
+### 2. Simulate the "employer consortium" yourself
+The best programs connect with employers; do it manually and **start early, not in Phase 6**:
+- Build a list of **15-20 target companies** starting in Phase 2.
+- Conduct **1-2 informational interviews per month** throughout the plan (not only at the end).
+- Follow hiring managers and share your projects as you publish them (continuous proof of work).
+
+### 3. Treat every phase as a sprint with review
+- **Your own Demo Day:** at each phase close, present your project (recorded in 5 minutes or to your mentor/cohort). Explaining aloud consolidates learning and directly practices interviews.
+
+---
+
+## Measurement layer — OKRs, not only checklists
+
+Checklists say *what you did*; OKRs say *whether you are moving toward employment*. Add these quarterly objectives:
+
+| Objective (quarterly) | Measurable key results |
 |-----------------------|---------------------------|
-| **O1: Credibilidad técnica** | 2 certificaciones + 4 proyectos publicados con README profesional |
-| **O2: Prueba de trabajo** | Portafolio web live + 3 demos grabadas de proyectos |
-| **O3: Capital social (el 20%)** | 1 mentor activo + 6 informational interviews + 300+ conexiones relevantes en LinkedIn |
-| **O4: Pipeline de empleo** | 15 empresas objetivo mapeadas + aplicaciones activas + 1+ loop de entrevista |
+| **O1: Technical credibility** | 2 certifications + 4 projects published with professional README |
+| **O2: Proof of work** | Live portfolio website + 3 recorded project demos |
+| **O3: Social capital (the 20%)** | 1 active mentor + 6 informational interviews + 300+ relevant LinkedIn connections |
+| **O4: Employment pipeline** | 15 target companies mapped + active applications + 1+ interview loop |
 
-:::tip[Revisión quincenal (15 min)]
-Cada dos semanas puntúa cada KR de 0.0 a 1.0. Un KR estancado dos ciclos seguidos es una **señal de escalamiento**: cambia de recurso, pide ayuda al mentor o ajusta el alcance. Medir el progreso hacia el *empleo* —no solo hacia el *estudio*— es lo que hacen los mejores programas.
+:::tip[Biweekly review (15 min)]
+Every two weeks, score each KR from 0.0 to 1.0. A KR stalled for two consecutive cycles is an **escalation signal**: change resource, ask the mentor for help, or adjust scope. Measuring progress toward *employment* — not only toward *study* — is what the best programs do.
 :::
 
 ---
 
-## Rúbrica de capstone (calidad "hiring-ready")
+## Capstone rubric ("hiring-ready" quality)
 
-Antes de dar por terminado cualquier proyecto del portafolio, debe cumplir:
+Before considering any portfolio project complete, it must meet:
 
-- [ ] **README profesional** — problema, solución, stack, resultado/impacto, screenshots
-- [ ] **Reproducible** — instrucciones de instalación y ejemplo de input/output
-- [ ] **Diagrama de arquitectura** — cómo encajan las piezas
-- [ ] **Decisiones y trade-offs** — por qué elegiste este enfoque (esto es lo que preguntan en entrevistas)
-- [ ] **Responsible AI / seguridad** — riesgos considerados (alinea con NIST AI RMF cuando aplique)
-- [ ] **Demo de 5 minutos** — puedes explicarlo en voz alta sin notas
+- [ ] **Professional README** — problem, solution, stack, result/impact, screenshots
+- [ ] **Reproducible** — installation instructions and input/output example
+- [ ] **Architecture diagram** — how the pieces fit together
+- [ ] **Decisions and trade-offs** — why you chose this approach (this is what interviews ask)
+- [ ] **Responsible AI / security** — risks considered (align with NIST AI RMF when applicable)
+- [ ] **5-minute demo** — you can explain it aloud without notes
 
-> Un proyecto que pasa esta rúbrica no es "una tarea": es **evidencia verificable** que sostiene una historia de entrevista.
+> A project that passes this rubric is not "an assignment": it is **verifiable evidence** that supports an interview story.
 
 ---
 
-## Resumen: qué añade esta metodología al plan
+## Summary: what this methodology adds to the plan
 
-1. **Ancla el plan en evidencia** (WEF 2025, CCL 70-20-10, ciencia del aprendizaje, programas líderes).
-2. **Cierra la brecha del 20% social** con mentoría, cohorte y accountability desde la Semana 1.
-3. **Adelanta la conexión con empleadores** en vez de dejarla para el final.
-4. **Sube la retención** con active recall + spaced repetition + practice assessments.
-5. **Cambia checklists por OKRs** para medir avance hacia el empleo, no solo hacia el estudio.
+1. **Anchors the plan in evidence** (WEF 2025, CCL 70-20-10, learning science, leading programs).
+2. **Closes the social 20% gap** with mentorship, cohort, and accountability from Week 1.
+3. **Moves employer connection earlier** instead of leaving it to the end.
+4. **Improves retention** with active recall + spaced repetition + practice assessments.
+5. **Replaces checklists with OKRs** to measure progress toward employment, not only toward study.
 
-Fuentes primarias de todos estos marcos: [Fuentes y Verificación](./sources-and-verification).
+Primary sources for all these frameworks: [Sources and Verification](./sources-and-verification).

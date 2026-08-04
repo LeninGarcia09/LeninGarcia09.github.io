@@ -1,101 +1,101 @@
 ---
 sidebar_position: 1
-title: "Fase 1 — Fundamentos de Tecnología Moderna"
+title: "Phase 1 — Modern Technology Foundations"
 ---
 
-# Fase 1: Fundamentos de Tecnología Moderna (Semanas 1–4)
+# Phase 1: Modern Technology Foundations (Weeks 1–4)
 
-> **Objetivo:** Construir la base tecnológica moderna que todo profesional AI necesita. Establecer presencia digital profesional.
+> **Objective:** Build the modern technology foundation every AI professional needs. Establish a professional digital presence.
 
-## 🎯 Resultados Esperados
+## 🎯 Expected Outcomes
 
-Al completar esta fase:
-- Comprensión sólida de qué es AI y cómo transforma industrias
-- Python básico funcional para automatización
-- Git/GitHub operativo con repositorio propio
-- Certificación AZ-900 obtenida o en progreso
-- **Primer agente funcional construido en Microsoft Copilot Studio** (listo para oportunidades de proyecto)
-- LinkedIn y GitHub configurados profesionalmente
+By completing this phase:
+- Solid understanding of what AI is and how it transforms industries
+- Functional basic Python for automation
+- Git/GitHub operational with your own repository
+- AZ-900 certification earned or in progress
+- **First functional agent built in Microsoft Copilot Studio** (ready for project opportunities)
+- LinkedIn and GitHub configured professionally
 
 ---
 
-## Semana 1: Fundamentos de AI
+## Week 1: AI Foundations
 
-### Objetivo
-Entender cómo la AI está cambiando el mercado laboral y las industrias.
+### Objective
+Understand how AI is changing the labor market and industries.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Elements of AI](https://www.elementsofai.com/) | 🇪🇸 Español | Curso gratuito | 6-8 hrs |
-| [Microsoft AI Skills Initiative](https://www.microsoft.com/en-us/ai/ai-skills) | 🇬🇧 Inglés | Learning paths | 4-6 hrs |
-| [Google AI Essentials](https://grow.google/ai-essentials/) | 🇬🇧 Inglés (subs ES) | Curso + certificado | 4-8 hrs |
-| [IBM AI Fundamentals](https://www.ibm.com/training/collection/artificial-intelligence) | 🇬🇧 Inglés | Course | 3 hrs |
+| [Elements of AI](https://www.elementsofai.com/) | 🇪🇸 Spanish | Free course | 6-8 hrs |
+| [Microsoft AI Skills Initiative](https://www.microsoft.com/en-us/ai/ai-skills) | 🇬🇧 English | Learning paths | 4-6 hrs |
+| [Google AI Essentials](https://grow.google/ai-essentials/) | 🇬🇧 English (ES subs) | Course + certificate | 4-8 hrs |
+| [IBM AI Fundamentals](https://www.ibm.com/training/collection/artificial-intelligence) | 🇬🇧 English | Course | 3 hrs |
 
-### Actividades Diarias (Lunes a Viernes)
+### Daily Activities (Monday to Friday)
 
-| Día | Actividad | Tiempo |
+| Day | Activity | Time |
 |-----|-----------|--------|
-| Lunes | Elements of AI — Capítulos 1-2 | 2 hrs |
-| Martes | Elements of AI — Capítulos 3-4 | 2 hrs |
-| Miércoles | Microsoft AI Skills — Módulo 1 | 2 hrs |
-| Jueves | Google AI Essentials — Módulo 1 | 2 hrs |
-| Viernes | Reflexión + Journal de aprendizaje | 1 hr |
+| Monday | Elements of AI — Chapters 1-2 | 2 hrs |
+| Tuesday | Elements of AI — Chapters 3-4 | 2 hrs |
+| Wednesday | Microsoft AI Skills — Module 1 | 2 hrs |
+| Thursday | Google AI Essentials — Module 1 | 2 hrs |
+| Friday | Reflection + learning journal | 1 hr |
 
-### Entregables de la Semana
+### Weekly Deliverables
 
-1. **Perfil de LinkedIn actualizado**
+1. **Updated LinkedIn profile**
    - Headline: "IT Professional | Transitioning to AI & Cloud Security"
-   - About: Incluir experiencia en forensics + visión AI
-   - Skills: Agregar AI, Cloud Computing, Cybersecurity
+   - About: Include forensics experience + AI vision
+   - Skills: Add AI, Cloud Computing, Cybersecurity
 
-2. **Cuenta de GitHub creada**
-   - Foto profesional
-   - Bio descriptiva
-   - README del perfil
+2. **GitHub account created**
+   - Professional photo
+   - Descriptive bio
+   - Profile README
 
-3. **Journal de Aprendizaje** (documento en GitHub)
-   - ¿Qué aprendí esta semana sobre AI?
-   - ¿Cómo se conecta con mi experiencia previa?
-   - ¿Qué oportunidades veo?
+3. **Learning Journal** (document in GitHub)
+   - What did I learn this week about AI?
+   - How does it connect to my prior experience?
+   - What opportunities do I see?
 
-### Conexión con Experiencia Previa
+### Connection to Prior Experience
 
-Tu background en **informática forense** te da ventaja:
-- Análisis de patrones → fundamento de Machine Learning
-- Cadena de custodia → AI Governance y audit trails
-- Investigación → Pensamiento analítico para AI
-- Documentación → Skills transferibles a AI compliance
+Your background in **digital forensics** gives you an advantage:
+- Pattern analysis → foundation of Machine Learning
+- Chain of custody → AI Governance and audit trails
+- Investigation → analytical thinking for AI
+- Documentation → transferable skills for AI compliance
 
 ---
 
-## Semana 2: Python para Profesionales AI
+## Week 2: Python for AI Professionals
 
-### Objetivo
-Programación básica en Python orientada a automatización y manejo de datos.
+### Objective
+Basic Python programming focused on automation and data handling.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Python para Todos (Py4E)](https://www.py4e.com/) | 🇪🇸 Español (subtítulos) | Curso + libro gratis | 10-12 hrs |
-| [Microsoft Learn: Python](https://learn.microsoft.com/es-es/training/paths/beginner-python/) | 🇪🇸 Español | Learning Path | 6 hrs |
-| [Codecademy Python](https://www.codecademy.com/learn/learn-python-3) | 🇬🇧 Inglés | Interactivo | 8 hrs |
-| [Automate the Boring Stuff](https://automatetheboringstuff.com/) | 🇬🇧 Inglés | Libro gratis | Referencia |
+| [Python para Todos (Py4E)](https://www.py4e.com/) | 🇪🇸 Spanish (subtitles) | Free course + book | 10-12 hrs |
+| [Microsoft Learn: Python](https://learn.microsoft.com/es-es/training/paths/beginner-python/) | 🇪🇸 Spanish | Learning Path | 6 hrs |
+| [Codecademy Python](https://www.codecademy.com/learn/learn-python-3) | 🇬🇧 English | Interactive | 8 hrs |
+| [Automate the Boring Stuff](https://automatetheboringstuff.com/) | 🇬🇧 English | Free book | Reference |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Recurso |
+| Day | Topic | Resource |
 |-----|------|---------|
-| Lunes | Variables, tipos de datos, strings | Py4E Cap 1-2 |
-| Martes | Condicionales y loops | Py4E Cap 3-5 |
-| Miércoles | Funciones | Py4E Cap 4 |
-| Jueves | Archivos y CSV | Py4E Cap 7 |
-| Viernes | APIs básicas (requests) | Microsoft Learn |
-| Sábado | **Proyecto de la semana** | — |
+| Monday | Variables, data types, strings | Py4E Cap 1-2 |
+| Tuesday | Conditionals and loops | Py4E Cap 3-5 |
+| Wednesday | Functions | Py4E Cap 4 |
+| Thursday | Files and CSV | Py4E Cap 7 |
+| Friday | Basic APIs (requests) | Microsoft Learn |
+| Saturday | **Project of the week** | — |
 
-### 🔨 Proyecto: Automatizador de Logs de Seguridad
+### 🔨 Project: Security Log Automator
 
 ```python
 """
@@ -111,42 +111,42 @@ Conexión con forensics: Automatización de lo que antes hacías manualmente
 # - Funciones reutilizables
 ```
 
-**Entregable:** Repositorio en GitHub con:
-- Script funcional
-- README.md explicando el proyecto
-- Ejemplo de input/output
-- Documentación de cómo ejecutarlo
+**Deliverable:** GitHub repository with:
+- Functional script
+- README.md explaining the project
+- Input/output example
+- Documentation on how to run it
 
 ---
 
-## Semana 3: Git y GitHub
+## Week 3: Git and GitHub
 
-### Objetivo
-Dominar el flujo de trabajo con Git para gestión de código y documentación.
+### Objective
+Master the Git workflow for code and documentation management.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [GitHub Skills](https://skills.github.com/) | 🇬🇧 Inglés | Interactivo | 4-6 hrs |
-| [Pro Git Book](https://git-scm.com/book/es/v2) | 🇪🇸 Español | Libro gratis | Referencia |
-| [Microsoft Learn: Git](https://learn.microsoft.com/es-es/training/paths/intro-to-vc-git/) | 🇪🇸 Español | Learning Path | 3 hrs |
-| [Git Immersion](https://gitimmersion.com/) | 🇬🇧 Inglés | Labs | 2 hrs |
-| [GitHub Foundations (GH-900) — ruta de prep gratis](https://learn.microsoft.com/es-es/credentials/certifications/github-foundations/) | 🇬🇧 Inglés | Cert quick-win (prep gratis) | Referencia |
+| [GitHub Skills](https://skills.github.com/) | 🇬🇧 English | Interactive | 4-6 hrs |
+| [Pro Git Book](https://git-scm.com/book/es/v2) | 🇪🇸 Spanish | Free book | Reference |
+| [Microsoft Learn: Git](https://learn.microsoft.com/es-es/training/paths/intro-to-vc-git/) | 🇪🇸 Spanish | Learning Path | 3 hrs |
+| [Git Immersion](https://gitimmersion.com/) | 🇬🇧 English | Labs | 2 hrs |
+| [GitHub Foundations (GH-900) — free prep path](https://learn.microsoft.com/es-es/credentials/certifications/github-foundations/) | 🇬🇧 English | Cert quick-win (free prep) | Reference |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Tema | Práctica |
+| Day | Topic | Practice |
 |-----|------|----------|
-| Lunes | Instalación, config, primer commit | GitHub Skills: Intro |
-| Martes | Branches, merge, conflicts | GitHub Skills: Branch |
-| Miércoles | Pull requests, reviews | GitHub Skills: PR |
-| Jueves | GitHub Pages, Actions básico | Deploy estático |
-| Viernes | Organización de repos, templates | Crear repo portfolio |
+| Monday | Installation, config, first commit | GitHub Skills: Intro |
+| Tuesday | Branches, merge, conflicts | GitHub Skills: Branch |
+| Wednesday | Pull requests, reviews | GitHub Skills: PR |
+| Thursday | GitHub Pages, basic Actions | Static deploy |
+| Friday | Repo organization, templates | Create portfolio repo |
 
-### 🔨 Proyecto: Repositorio de Portfolio Profesional
+### 🔨 Project: Professional Portfolio Repository
 
-Crear y publicar un repositorio organizado con:
+Create and publish an organized repository with:
 
 ```
 portfolio/
@@ -158,142 +158,142 @@ portfolio/
 └── docs/               # Documentación
 ```
 
-**Entregable:** Repositorio público en GitHub con estructura profesional.
+**Deliverable:** Public GitHub repository with a professional structure.
 
 ---
 
-## Semana 4: Cloud Fundamentals (Azure)
+## Week 4: Cloud Fundamentals (Azure)
 
-### Objetivo
-Entender cloud computing y prepararse para la certificación AZ-900.
+### Objective
+Understand cloud computing and prepare for the AZ-900 certification.
 
-### Recursos Principales
+### Main Resources
 
-| Recurso | Idioma | Tipo | Duración |
+| Resource | Language | Type | Duration |
 |---------|--------|------|----------|
-| [Microsoft Learn: AZ-900](https://learn.microsoft.com/es-es/training/paths/az-900-describe-cloud-concepts/) | 🇪🇸 Español | Learning Path | 8-10 hrs |
-| [Azure Fundamentals (YouTube)](https://www.youtube.com/playlist?list=PLGjZwEtPN7j-Q59JYso3L4_yoCjj2syrM) | 🇬🇧 Inglés | Video series | 6 hrs |
-| [AZ-900 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/azure-fundamentals/) | 🇪🇸 Español | Guía oficial | Referencia |
-| [Cloud Computing Concepts](https://www.coursera.org/learn/cloud-computing) | 🇬🇧 Inglés | Course | 4 hrs |
+| [Microsoft Learn: AZ-900](https://learn.microsoft.com/es-es/training/paths/az-900-describe-cloud-concepts/) | 🇪🇸 Spanish | Learning Path | 8-10 hrs |
+| [Azure Fundamentals (YouTube)](https://www.youtube.com/playlist?list=PLGjZwEtPN7j-Q59JYso3L4_yoCjj2syrM) | 🇬🇧 English | Video series | 6 hrs |
+| [AZ-900 Study Guide](https://learn.microsoft.com/es-es/credentials/certifications/azure-fundamentals/) | 🇪🇸 Spanish | Official guide | Reference |
+| [Cloud Computing Concepts](https://www.coursera.org/learn/cloud-computing) | 🇬🇧 English | Course | 4 hrs |
 
-### Plan Diario
+### Daily Plan
 
-| Día | Módulo AZ-900 | Tema |
+| Day | AZ-900 Module | Topic |
 |-----|---------------|------|
-| Lunes | Módulo 1 | Conceptos de cloud computing |
-| Martes | Módulo 2 | Beneficios de usar cloud |
-| Miércoles | Módulo 3 | Tipos de servicios cloud |
-| Jueves | Módulo 4 | Azure architecture y servicios |
-| Viernes | Módulo 5 | Identidad, gobierno, compliance |
-| Sábado | Práctica | Examen de práctica + revisión |
+| Monday | Module 1 | Cloud computing concepts |
+| Tuesday | Module 2 | Benefits of using cloud |
+| Wednesday | Module 3 | Types of cloud services |
+| Thursday | Module 4 | Azure architecture and services |
+| Friday | Module 5 | Identity, governance, compliance |
+| Saturday | Practice | Practice exam + review |
 
-### Certificación: AZ-900
+### Certification: AZ-900
 
-- **Costo:** $99 USD (descuentos disponibles)
-- **Idioma del examen:** Disponible en español
-- **Formato:** 40-60 preguntas, 45 minutos
-- **Puntuación para pasar:** 700/1000
-- **Preparación recomendada:** 2 semanas de estudio (empezar esta semana, completar en semana 5)
+- **Cost:** $99 USD (discounts available)
+- **Exam language:** Available in Spanish
+- **Format:** 40-60 questions, 45 minutes
+- **Passing score:** 700/1000
+- **Recommended preparation:** 2 weeks of study (start this week, complete in week 5)
 
-### Conexión con Experiencia Previa
+### Connection to Prior Experience
 
-- **IT Management** → Ya entiendes infraestructura, ahora en cloud
-- **Forensics** → Cloud forensics es un campo en crecimiento
-- **Operations** → Cloud Operations (CloudOps) es high demand
+- **IT Management** → You already understand infrastructure, now in cloud
+- **Forensics** → Cloud forensics is a growing field
+- **Operations** → Cloud Operations (CloudOps) is high demand
 
 ---
 
-## 🚀 Módulo Prioritario: Microsoft Copilot Studio (Fast-Track)
+## 🚀 Priority Module: Microsoft Copilot Studio (Fast-Track)
 
-:::info[Por qué está en la Fase 1 y no más adelante]
-Copilot Studio es **low-code/no-code**: no requiere Python ni cloud avanzado, así que puedes empezar **desde el Día 1** en paralelo a las semanas anteriores. Con oportunidades reales de proyecto en el horizonte, este módulo te deja **listo para construir agentes en semanas, no meses**. Es la habilidad de esta fase con mayor retorno inmediato para el mercado.
+:::info[Why it is in Phase 1 and not later]
+Copilot Studio is **low-code/no-code**: it does not require Python or advanced cloud skills, so you can start **from Day 1** in parallel with the previous weeks. With real project opportunities on the horizon, this module makes you **ready to build agents in weeks, not months**. It is the highest immediate market-return skill in this phase.
 :::
 
-### Objetivo
-Construir, probar, publicar y **gobernar** un agente (copilot) funcional en Microsoft Copilot Studio, y validar la habilidad con una credencial oficial verificable.
+### Objective
+Build, test, publish, and **govern** a functional agent (copilot) in Microsoft Copilot Studio, and validate the skill with an official verifiable credential.
 
-### Qué es Copilot Studio (contexto)
-Plataforma gráfica de Microsoft para crear **agentes conversacionales y autónomos** que responden con IA generativa sobre tus datos (knowledge grounding), ejecutan acciones vía **agent flows / Power Automate**, y se publican en **Teams, sitios web, M365 Copilot** y otros canales. Es la evolución de Power Virtual Agents.
+### What Copilot Studio is (context)
+Microsoft's graphical platform for creating **conversational and autonomous agents** that answer with generative AI over your data (knowledge grounding), execute actions through **agent flows / Power Automate**, and publish to **Teams, websites, M365 Copilot**, and other channels. It is the evolution of Power Virtual Agents.
 
-### Recursos Principales (verificados)
+### Main Resources (verified)
 
-| Recurso | Idioma | Tipo | Costo |
+| Resource | Language | Type | Cost |
 |---------|--------|------|-------|
-| [Documentación oficial de Copilot Studio](https://learn.microsoft.com/es-es/microsoft-copilot-studio/) | 🇪🇸 Español | Docs | Gratis |
-| [Learning Path: Create agents in Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/paths/create-extend-custom-copilots-microsoft-copilot-studio/) | 🇬🇧 Inglés | Learning Path (9 módulos, con labs) | Gratis |
-| [Copilot Studio Agent Academy](https://microsoft.github.io/agent-academy/) | 🇬🇧 Inglés | Currículo práctico por rangos + misiones | Gratis |
-| [Agent in a Day — Workshop](https://learn.microsoft.com/en-us/training/paths/agents-online-workshop/) | 🇬🇧 Inglés | Workshop guiado | Gratis |
-| [Copilot Studio Samples (GitHub)](https://github.com/microsoft/CopilotStudioSamples) | 🇬🇧 Inglés | Ejemplos reutilizables | Gratis |
+| [Official Copilot Studio documentation](https://learn.microsoft.com/es-es/microsoft-copilot-studio/) | 🇪🇸 Spanish | Docs | Free |
+| [Learning Path: Create agents in Microsoft Copilot Studio](https://learn.microsoft.com/en-us/training/paths/create-extend-custom-copilots-microsoft-copilot-studio/) | 🇬🇧 English | Learning Path (9 modules, with labs) | Free |
+| [Copilot Studio Agent Academy](https://microsoft.github.io/agent-academy/) | 🇬🇧 English | Practical curriculum by ranks + missions | Free |
+| [Agent in a Day — Workshop](https://learn.microsoft.com/en-us/training/paths/agents-online-workshop/) | 🇬🇧 English | Guided workshop | Free |
+| [Copilot Studio Samples (GitHub)](https://github.com/microsoft/CopilotStudioSamples) | 🇬🇧 English | Reusable examples | Free |
 
-:::tip[Prueba gratuita]
-Copilot Studio ofrece **prueba gratuita** para practicar sin costo. Actívala desde la [página del producto](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio) para tener un entorno real donde construir tu primer agente.
+:::tip[Free trial]
+Copilot Studio offers a **free trial** so you can practice at no cost. Activate it from the [product page](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio) to get a real environment where you can build your first agent.
 :::
 
-### Componentes Críticos a Dominar
+### Critical Components to Master
 
-Estos son los bloques que separan "hice un chatbot de demo" de "puedo entregar un agente listo para negocio":
+These are the blocks that separate "I built a demo chatbot" from "I can deliver a business-ready agent":
 
-| # | Componente | Por qué es crítico |
+| # | Component | Why it is critical |
 |---|-----------|--------------------|
-| 1 | **Topics y trigger phrases** | Diseño conversacional: cómo el agente entiende e inicia flujos |
-| 2 | **Generative answers + knowledge grounding** | Respuestas con IA sobre TUS fuentes (SharePoint, sitios, docs) — reduce alucinaciones |
-| 3 | **Entities y variables** | Capturar y reutilizar datos del usuario dentro de la conversación |
-| 4 | **Agent flows / Power Automate** | Que el agente **ejecute acciones** (crear ticket, consultar sistema, enviar correo) |
-| 5 | **Triggers autónomos y manejo de errores** | Agentes que actúan por evento, con fallback y **hand-off a humano** |
-| 6 | **Publicación multicanal** | Desplegar en Teams, web y M365 Copilot |
-| 7 | **Responsible AI y governance** | Autenticación, alcance de datos, DLP y control de contenido (alinea con NIST AI RMF — ver Fase 4) |
+| 1 | **Topics and trigger phrases** | Conversational design: how the agent understands and starts flows |
+| 2 | **Generative answers + knowledge grounding** | AI answers over YOUR sources (SharePoint, sites, docs) — reduces hallucinations |
+| 3 | **Entities and variables** | Capture and reuse user data inside the conversation |
+| 4 | **Agent flows / Power Automate** | Make the agent **execute actions** (create ticket, query system, send email) |
+| 5 | **Autonomous triggers and error handling** | Agents that act on events, with fallback and **human hand-off** |
+| 6 | **Multi-channel publishing** | Deploy to Teams, web, and M365 Copilot |
+| 7 | **Responsible AI and governance** | Authentication, data scope, DLP, and content control (aligns with NIST AI RMF — see Phase 4) |
 
-### Ruta de Aprendizaje (2 semanas en paralelo, ~1 hr/día)
+### Learning Path (2 weeks in parallel, ~1 hr/day)
 
-| Etapa | Foco | Práctica |
+| Stage | Focus | Practice |
 |-------|------|----------|
-| Días 1-2 | Fundamentos + activar prueba gratuita | Crear tu primer agente "Hola mundo" |
-| Días 3-4 | Topics, entities, variables | Diseñar un flujo conversacional real |
-| Días 5-6 | Generative answers + knowledge | Conectar una fuente de conocimiento propia |
-| Días 7-8 | Agent flows / Power Automate | Que el agente ejecute una acción |
-| Días 9-10 | Triggers autónomos + manejo de errores | Añadir comportamiento autónomo + hand-off |
-| Días 11-12 | Publicar + governance | Desplegar en Teams + revisar seguridad/RAI |
+| Days 1-2 | Foundations + activate free trial | Create your first "Hello world" agent |
+| Days 3-4 | Topics, entities, variables | Design a real conversational flow |
+| Days 5-6 | Generative answers + knowledge | Connect your own knowledge source |
+| Days 7-8 | Agent flows / Power Automate | Make the agent execute an action |
+| Days 9-10 | Autonomous triggers + error handling | Add autonomous behavior + hand-off |
+| Days 11-12 | Publish + governance | Deploy to Teams + review security/RAI |
 
-### 🔨 Proyecto: Agente de Help Desk / Onboarding
+### 🔨 Project: Help Desk / Onboarding Agent
 
-Construir un agente que resuelva un problema de negocio real y demuestre los 7 componentes:
+Build an agent that solves a real business problem and demonstrates the 7 components:
 
-- Responde preguntas frecuentes usando una **base de conocimiento** (generative answers)
-- Captura datos del usuario con **entities/variables**
-- Ejecuta una **acción** vía agent flow (ej. registrar una solicitud)
-- Escala a un humano cuando no puede resolver (**hand-off**)
-- Publicado en **Teams** y documentado
+- Answers FAQs using a **knowledge base** (generative answers)
+- Captures user data with **entities/variables**
+- Executes an **action** through an agent flow (e.g., log a request)
+- Escalates to a human when it cannot resolve (**hand-off**)
+- Published in **Teams** and documented
 
-**Entregable:** Repositorio en GitHub con: descripción del caso de negocio, diagrama del agente (topics + flows), capturas del agente funcionando, y una **demo grabada de 5 min**. Este proyecto es evidencia directa para oportunidades de proyecto con Copilot Studio.
+**Deliverable:** GitHub repository with: business case description, agent diagram (topics + flows), screenshots of the working agent, and a **5-minute recorded demo**. This project is direct evidence for Copilot Studio project opportunities.
 
-### 🏅 Credencial oficial (quick-win verificable)
+### 🏅 Official credential (verifiable quick win)
 
-Microsoft ofrece **Applied Skills**: credenciales por **laboratorio interactivo** (no examen de opción múltiple), gratuitas o de bajo costo, que validan que **realmente sabes construir agentes**:
+Microsoft offers **Applied Skills**: credentials based on an **interactive lab** (not a multiple-choice exam), free or low cost, that validate that you **really know how to build agents**:
 
-| Credencial | Qué evalúa | Fuente oficial |
+| Credential | What it evaluates | Official source |
 |-----------|-----------|----------------|
-| **Create agents in Microsoft Copilot Studio** | Crear y publicar un agente de extremo a extremo | [learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/applied-skills/create-agents-in-microsoft-copilot-studio/) |
-| **Enhance agents with autonomous capabilities** | Agent flows, triggers autónomos, manejo de errores y hand-off | [learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/applied-skills/enhance-agents-with-autonomous-capabilities/) |
+| **Create agents in Microsoft Copilot Studio** | Create and publish an end-to-end agent | [learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/applied-skills/create-agents-in-microsoft-copilot-studio/) |
+| **Enhance agents with autonomous capabilities** | Agent flows, autonomous triggers, error handling, and hand-off | [learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/applied-skills/enhance-agents-with-autonomous-capabilities/) |
 
-> **Meta de la fase:** obtener al menos la Applied Skill *"Create agents in Microsoft Copilot Studio"*. Es un badge de LinkedIn que demuestra capacidad práctica —exactamente lo que un cliente o empleador quiere ver antes de asignar un proyecto.
+> **Phase goal:** earn at least the *"Create agents in Microsoft Copilot Studio"* Applied Skill. It is a LinkedIn badge that demonstrates practical capability — exactly what a client or employer wants to see before assigning a project.
 
 ---
 
-## 📋 Checklist de Fase 1
+## 📋 Phase 1 Checklist
 
-- [ ] LinkedIn actualizado con nuevo enfoque profesional
-- [ ] GitHub account con perfil completo
-- [ ] Elements of AI completado
-- [ ] Python básico funcional (script de logs)
-- [ ] Git workflow dominado
-- [ ] Repositorio portfolio creado
-- [ ] AZ-900 Learning Path completado
-- [ ] Examen AZ-900 programado o completado
-- [ ] **Copilot Studio: prueba gratuita activada + primer agente construido**
-- [ ] **Proyecto: Agente de Help Desk / Onboarding publicado en Teams**
-- [ ] **Applied Skill "Create agents in Microsoft Copilot Studio" obtenida (o en progreso)**
-- [ ] Journal de aprendizaje al día
+- [ ] LinkedIn updated with new professional focus
+- [ ] GitHub account with complete profile
+- [ ] Elements of AI completed
+- [ ] Functional basic Python (log script)
+- [ ] Git workflow mastered
+- [ ] Portfolio repository created
+- [ ] AZ-900 Learning Path completed
+- [ ] AZ-900 exam scheduled or completed
+- [ ] **Copilot Studio: free trial activated + first agent built**
+- [ ] **Project: Help Desk / Onboarding Agent published in Teams**
+- [ ] **Applied Skill "Create agents in Microsoft Copilot Studio" earned (or in progress)**
+- [ ] Learning journal up to date
 
-## ⏭️ Siguiente Fase
+## ⏭️ Next Phase
 
-[Fase 2: Datos y Automatización →](../data-automation/overview)
+[Phase 2: Data and Automation →](../data-automation/overview)

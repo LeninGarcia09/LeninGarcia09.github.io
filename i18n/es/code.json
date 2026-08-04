@@ -1,0 +1,263 @@
+{
+  "homepage.layout.title": {
+    "message": "Inicio"
+  },
+  "homepage.skill.azureAiFoundry.title": {
+    "message": "Azure AI Foundry + Hosted Agents"
+  },
+  "homepage.skill.type": {
+    "message": "Ruta de Habilidades"
+  },
+  "homepage.skill.azureAiFoundry.desc": {
+    "message": "Laboratorios listos para producción: residencia de datos, alucinaciones de agentes, seguridad multi-agent y orquestación de IA a escala empresarial."
+  },
+  "homepage.tag.foundry": {
+    "message": "Foundry"
+  },
+  "homepage.tag.agents": {
+    "message": "Agentes"
+  },
+  "homepage.tag.enterprise": {
+    "message": "Empresarial"
+  },
+  "homepage.tag.multiAgent": {
+    "message": "Multi-Agent"
+  },
+  "homepage.skill.responsibleAi.title": {
+    "message": "Responsible AI y Gobernanza"
+  },
+  "homepage.skill.responsibleAi.desc": {
+    "message": "RAI Standard v2, Purview AI Hub, Azure AI Content Safety, red teaming con PyRIT, cumplimiento de EU AI Act y NIST RMF."
+  },
+  "homepage.tag.governance": {
+    "message": "Gobernanza"
+  },
+  "homepage.tag.compliance": {
+    "message": "Cumplimiento"
+  },
+  "homepage.tag.euAiAct": {
+    "message": "EU AI Act"
+  },
+  "homepage.tag.redTeaming": {
+    "message": "Red Teaming"
+  },
+  "homepage.skill.agenticReliability.title": {
+    "message": "Confiabilidad Agéntica"
+  },
+  "homepage.skill.agenticReliability.desc": {
+    "message": "Los 5 modos de falla que eliminan agentes de IA en producción. Construye defensas contra alucinaciones, deterioro del contexto, brechas matemáticas, degradación de inteligencia y deriva semántica."
+  },
+  "homepage.tag.production": {
+    "message": "Producción"
+  },
+  "homepage.tag.hallucination": {
+    "message": "Alucinación"
+  },
+  "homepage.tag.trace": {
+    "message": "TRACE"
+  },
+  "homepage.tag.finra": {
+    "message": "FINRA"
+  },
+  "homepage.challenge.hallucinationAudit.title": {
+    "message": "La Auditoría de Alucinaciones"
+  },
+  "homepage.challenge.hallucinationAudit.previewScenario": {
+    "message": "El agente analista financiero fabrica cifras para el informe de la junta"
+  },
+  "homepage.challenge.contextRot.title": {
+    "message": "Deterioro del Contexto a Escala"
+  },
+  "homepage.challenge.contextRot.previewScenario": {
+    "message": "El agente de decisión clínica se degrada después de 3 turnos"
+  },
+  "homepage.challenge.verifiableOrchestrator.title": {
+    "message": "El Orquestador Verificable"
+  },
+  "homepage.challenge.verifiableOrchestrator.previewScenario": {
+    "message": "El regulador exige una pista de auditoría para cada cifra de IA"
+  },
+  "homepage.challenge.semanticControl.title": {
+    "message": "Control Semántico"
+  },
+  "homepage.challenge.semanticControl.previewScenario": {
+    "message": "El agente usa una composición de índice obsoleta de 2023"
+  },
+  "homepage.cert.azureAiApps.name": {
+    "message": "Desarrollador de Apps y Agentes de Azure AI"
+  },
+  "homepage.cert.level.associate": {
+    "message": "Associate"
+  },
+  "homepage.cert.solutionsArchitect.name": {
+    "message": "Solutions Architect Expert"
+  },
+  "homepage.cert.level.expert": {
+    "message": "Expert"
+  },
+  "homepage.cert.cloudAiSecurity.name": {
+    "message": "Seguridad de Cloud e IA"
+  },
+  "homepage.cert.azureAdministrator.name": {
+    "message": "Azure Administrator"
+  },
+  "homepage.cert.networkEngineer.name": {
+    "message": "Network Engineer"
+  },
+  "homepage.cert.claudeArchitect.name": {
+    "message": "Claude Certified Architect – Foundations"
+  },
+  "homepage.cert.level.foundations": {
+    "message": "Fundamentos"
+  },
+  "homepage.resource.tools.title": {
+    "message": "Herramientas"
+  },
+  "homepage.resource.tools.desc": {
+    "message": "Más de 64 herramientas para arquitectos de IA — observabilidad, evaluación, cómputo determinista y red teaming"
+  },
+  "homepage.resource.articles.title": {
+    "message": "Artículos"
+  },
+  "homepage.resource.articles.desc": {
+    "message": "Lecturas seleccionadas: patrón TRACE, artículos académicos, Azure WAF AI y benchmarks de alucinaciones"
+  },
+  "homepage.resource.learning.title": {
+    "message": "Aprendizaje"
+  },
+  "homepage.resource.learning.desc": {
+    "message": "Rutas de MS Learn, Anthropic Academy, cursos, repositorios y canales de YouTube"
+  },
+  "homepage.stats.challenges": {
+    "message": "Retos"
+  },
+  "homepage.stats.certifications": {
+    "message": "Certificaciones"
+  },
+  "homepage.stats.tools": {
+    "message": "Herramientas"
+  },
+  "homepage.stats.skillTracks": {
+    "message": "Rutas de Habilidades"
+  },
+  "homepage.cta.agenticReliability": {
+    "message": "🔬 Comienza con Agentic Reliability"
+  },
+  "homepage.cta.azureAiFoundry": {
+    "message": "🤖 Ruta de Azure AI Foundry"
+  },
+  "homepage.career.label": {
+    "message": "Rutas de Carrera"
+  },
+  "homepage.career.title": {
+    "message": "Dos Planes de Desarrollo"
+  },
+  "homepage.career.description": {
+    "message": "Elige la ruta que se ajuste a tu ritmo: el plan original de 36 semanas o el modelo v4 de 26 semanas enfocado en ejecución."
+  },
+  "homepage.career.aiSecurityProfessional": {
+    "message": "🛡️ Abrir AI Security Professional (9 meses)"
+  },
+  "homepage.career.learningPlanV4": {
+    "message": "🧭 Abrir Plan de Aprendizaje v4 (26 semanas)"
+  },
+  "homepage.career.weeklyTracker": {
+    "message": "📊 Seguimiento Semanal"
+  },
+  "homepage.career.checkpointGates": {
+    "message": "✅ Puertas de Control"
+  },
+  "homepage.quickAccess.label": {
+    "message": "Acceso Rápido"
+  },
+  "homepage.quickAccess.title": {
+    "message": "Ir a un Reto"
+  },
+  "homepage.challenge.hallucinationAudit.scenario": {
+    "message": "El agente analista financiero fabrica cifras para el informe de la junta — hooks PostToolUse, contratos de error estructurados"
+  },
+  "homepage.track.agenticReliability": {
+    "message": "Agentic Reliability"
+  },
+  "homepage.challenge.contextRot.scenario": {
+    "message": "El agente de decisión clínica pierde precisión después de 3 turnos — presupuesto de contexto, patrones de scratchpad"
+  },
+  "homepage.challenge.verifiableOrchestrator.scenario": {
+    "message": "El regulador exige una pista de auditoría para cada cifra generada por IA — patrón TRACE, DuckDB, FINRA"
+  },
+  "homepage.challenge.semanticControlBusinessRules.title": {
+    "message": "Control Semántico y Reglas de Negocio"
+  },
+  "homepage.challenge.semanticControlBusinessRules.scenario": {
+    "message": "El agente usa una composición de índice obsoleta de 2023 — registro de conceptos MCP, contextualización temporal"
+  },
+  "homepage.challenge.patientData.title": {
+    "message": "Los Datos de Pacientes Nunca Salen de la VNet"
+  },
+  "homepage.challenge.patientData.scenario": {
+    "message": "Implementa un agente de IA dentro de una VNet hospitalaria — private endpoints, HIPAA, residencia de datos"
+  },
+  "homepage.track.azureAiFoundry": {
+    "message": "Azure AI Foundry"
+  },
+  "homepage.challenge.agentHallucinating.title": {
+    "message": "Agente con Alucinaciones el 20% del Tiempo"
+  },
+  "homepage.challenge.agentHallucinating.scenario": {
+    "message": "La tasa de alucinaciones del agente en producción se dispara — guardrails, evaluación, monitoreo"
+  },
+  "homepage.challenge.euAiInventory.title": {
+    "message": "Inventario de EU AI en 30 Días"
+  },
+  "homepage.challenge.euAiInventory.scenario": {
+    "message": "El regulador de la UE exige un inventario completo de sistemas de IA — Purview AI Hub, clasificación"
+  },
+  "homepage.track.responsibleAi": {
+    "message": "Responsible AI"
+  },
+  "homepage.challenge.shadowAiDetection.title": {
+    "message": "Detección de Shadow AI"
+  },
+  "homepage.challenge.shadowAiDetection.scenario": {
+    "message": "Descubre uso de IA no autorizado en toda la organización — gobernanza con Purview AI Hub"
+  },
+  "homepage.section.skillTracks.label": {
+    "message": "Rutas de Habilidades"
+  },
+  "homepage.section.skillTracks.title": {
+    "message": "Arquitectura de IA Empresarial"
+  },
+  "homepage.section.skillTracks.description": {
+    "message": "Cada ruta está construida a partir de problemas reales de clientes — no ejercicios de laboratorio ni memorización para exámenes. Decisiones reales de arquitectura de producción con código, ejercicios de romper y reparar, y verificaciones de conocimiento."
+  },
+  "homepage.track.challenges": {
+    "message": "{count} retos"
+  },
+  "homepage.track.explore": {
+    "message": "Explorar Ruta →"
+  },
+  "homepage.challengePreview.label": {
+    "message": "Retos en esta ruta"
+  },
+  "homepage.certifications.label": {
+    "message": "Certificaciones"
+  },
+  "homepage.certifications.title": {
+    "message": "Preparación para Certificación"
+  },
+  "homepage.resources.label": {
+    "message": "Referencia"
+  },
+  "homepage.resources.title": {
+    "message": "Herramientas y Recursos"
+  },
+  "homepage.contact.title": {
+    "message": "Comentarios y Contacto"
+  },
+  "homepage.contact.description": {
+    "message": "¿Encontraste un error, tienes una sugerencia de escenario o quieres hablar sobre un reto? Contáctanos o abre un issue en GitHub."
+  },
+  "homepage.contact.openIssue": {
+    "message": "Abrir un Issue en GitHub"
+  }
+}

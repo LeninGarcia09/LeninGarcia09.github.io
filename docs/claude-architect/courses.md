@@ -7,7 +7,6 @@ sidebar_position: 3
 
 # 🎓 Official Anthropic Academy Courses (free, self-paced)
 
-> 🌐 **Language:** English · [Versión en Español](./es/courses)
 
 **Official Anthropic courses** (free, no mandatory sign-up, on `anthropic.skilljar.com`). Mapped to the exam domains — use them as the practical core of your study plan:
 

@@ -1,88 +1,88 @@
 ---
 sidebar_position: 5
-title: "Fase 5 — Entrevistas, Role-play y Pipeline"
+title: "Phase 5 — Interviews, Role-play, and Pipeline"
 ---
 
-# Fase 5: Entrevistas, Role-play Ejecutivo y Pipeline (Semanas 22–26)
+# Phase 5: Interviews, Executive Role-play, and Pipeline (Weeks 22–26)
 
-> **Objetivo:** Convertir la evidencia en **ofertas**. Preparas el paquete de entrevistas, practicas el deep dive técnico con demo guiada, construyes historias STAR desde tus artefactos, y operas un pipeline de aplicaciones con referrals y seguimiento hasta cerrar loops.
+> **Objective:** Convert evidence into **offers**. You prepare the interview package, practice the technical deep dive with a guided demo, build STAR stories from your artifacts, and operate an application pipeline with referrals and follow-up until loops close.
 
-## 🎯 Resultados Esperados
+## 🎯 Expected Outcomes
 
-Al completar esta fase:
-- Paquete de entrevistas + **pitch ejecutivo** de 90 segundos
-- **Deep dive técnico** con demo guiada de tu sistema de AI
-- Historias **STAR** + postmortem por cada artefacto
-- Pipeline de aplicaciones **con tracking** (referrals priorizados)
-- Loops activos gestionados hasta el cierre — **Gate CP5 (Semana 26)**
+By completing this phase:
+- Interview package + 90-second **executive pitch**
+- **Technical deep dive** with guided demo of your AI system
+- **STAR** stories + postmortem for each artifact
+- Application pipeline **with tracking** (referrals prioritized)
+- Active loops managed to closure — **Gate CP5 (Week 26)**
 
 ---
 
-## Semana 22 — Paquete de entrevistas + pitch ejecutivo
+## Week 22 — Interview package + executive pitch
 
-**Objetivo:** tener listo el material para cualquier ronda.
+**Objective:** have the material ready for any round.
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
-| [System design para AI/ML](https://github.com/donnemartin/system-design-primer) | 🇬🇧 | Repo |
-| [Behavioral interview + método STAR (Copilot)](https://learn.microsoft.com/es-es/training/modules/enhance-linkedin-profile-with-copilot-ace-your-interview/) | 🇪🇸 | Learning Path |
+| [System design for AI/ML](https://github.com/donnemartin/system-design-primer) | 🇬🇧 | Repo |
+| [Behavioral interview + STAR method (Copilot)](https://learn.microsoft.com/es-es/training/modules/enhance-linkedin-profile-with-copilot-ace-your-interview/) | 🇪🇸 | Learning Path |
 
-**Entregable:** one-pager de perfil + pitch ejecutivo de 90 s ("qué construyo, qué valor genero") + lista de 8–10 preguntas frecuentes con respuestas ensayadas.
+**Deliverable:** profile one-pager + 90-second executive pitch ("what I build, what value I generate") + list of 8–10 common questions with rehearsed answers.
 
-## Semana 23 — Deep dive técnico + demo guiada
+## Week 23 — Technical deep dive + guided demo
 
-**Objetivo:** poder defender la arquitectura en whiteboard y mostrarla funcionando.
+**Objective:** defend the architecture on a whiteboard and show it working.
 
-**Entregable:** guion de **demo guiada** de tu RAG evaluado o comparativa de agentes (5–7 min) + set de respuestas a "¿por qué esta decisión?" apoyadas en tus ADR de la Fase 3.
+**Deliverable:** **guided demo** script for your evaluated RAG or agent comparison (5–7 min) + response set for "why this decision?" backed by your Phase 3 ADRs.
 
-## Semana 24 — Postmortem + historias STAR
+## Week 24 — Postmortem + STAR stories
 
-**Objetivo:** narrar el trabajo con estructura y honestidad (incluye qué mejorarías).
+**Objective:** narrate the work with structure and honesty (including what you would improve).
 
-**Entregable:** 5–6 historias **STAR** derivadas de tus artefactos (situación, tarea, acción, resultado) + un **postmortem** técnico ("qué falló, qué aprendí") — muy valorado en roles senior.
+**Deliverable:** 5–6 **STAR** stories derived from your artifacts (situation, task, action, result) + a technical **postmortem** ("what failed, what I learned") — highly valued in senior roles.
 
-## Semana 25 — Aplicaciones + referrals con tracking
+## Week 25 — Applications + referrals with tracking
 
-**Objetivo:** ejecutar el pipeline de forma sistemática.
+**Objective:** execute the pipeline systematically.
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
-| [Cómo pedir un referral efectivo](https://learn.microsoft.com/es-es/training/modules/career-growth/) | 🇪🇸 | Guía |
+| [How to ask for an effective referral](https://learn.microsoft.com/es-es/training/modules/career-growth/) | 🇪🇸 | Guide |
 
-**Entregable:** tabla de pipeline (empresa, rol, contacto, estado, próximo paso, fecha) con **10–15 aplicaciones priorizando referrals** sobre aplicaciones frías. Ver [Fase 6](../career-launch/overview) para el motor continuo.
+**Deliverable:** pipeline table (company, role, contact, status, next step, date) with **10–15 applications prioritizing referrals** over cold applications. See [Phase 6](../career-launch/overview) for the continuous engine.
 
-## Semana 26 — Cierre CP5: loops activos
+## Week 26 — CP5 close: active loops
 
-**Objetivo:** llevar las conversaciones abiertas a decisión.
+**Objective:** move open conversations to a decision.
 
-**Entregable + [Gate CP5](../checkpoints#gate-cp5-semana-26):**
-- [ ] Paquete de entrevistas completo (pitch + STAR + demo)
-- [ ] Al menos una demo técnica ensayada extremo a extremo
-- [ ] Pipeline activo con ≥10 aplicaciones y seguimiento
-- [ ] Loops de entrevista gestionados con próximos pasos claros
+**Deliverable + [Gate CP5](../checkpoints#gate-cp5-week-26):**
+- [ ] Complete interview package (pitch + STAR + demo)
+- [ ] At least one end-to-end technical demo rehearsed
+- [ ] Active pipeline with ≥10 applications and follow-up
+- [ ] Interview loops managed with clear next steps
 
 ---
 
-## 📋 Checklist de Fase 5
+## 📋 Phase 5 Checklist
 
-- [ ] Pitch ejecutivo de 90 segundos
-- [ ] Demo guiada del sistema de AI (5–7 min)
-- [ ] 5–6 historias STAR + postmortem técnico
-- [ ] Pipeline con tracking y referrals priorizados
-- [ ] Loops activos gestionados hasta el cierre
-- [ ] Gate CP5 aprobado
+- [ ] 90-second executive pitch
+- [ ] Guided demo of the AI system (5–7 min)
+- [ ] 5–6 STAR stories + technical postmortem
+- [ ] Pipeline with tracking and prioritized referrals
+- [ ] Active loops managed to closure
+- [ ] Gate CP5 approved
 
-## Operacion v4
+## v4 Operations
 
 - [Checkpoint Gates](../checkpoints)
-- [Template de Evidencia](../evidence-template)
+- [Evidence Template](../evidence-template)
 - [Weekly Tracker](../weekly-tracker)
-- Motor continuo: [Fase 6 — Operación Comercial de Carrera](../career-launch/overview)
+- Continuous engine: [Phase 6 — Career Commercial Operation](../career-launch/overview)
 
-## 🔗 Valor para el CV
+## 🔗 Resume Value
 
-> "Presento mi trabajo como un arquitecto senior: pitch ejecutivo, demo técnica guiada de un sistema de AI evaluado, historias STAR respaldadas por artefactos reales y decisiones de arquitectura documentadas — gestionando el pipeline con referrals y seguimiento disciplinado."
+> "I present my work like a senior architect: executive pitch, guided technical demo of an evaluated AI system, STAR stories backed by real artifacts, and documented architecture decisions — while managing the pipeline with referrals and disciplined follow-up."
 
-## ⏭️ Motor Continuo
+## ⏭️ Continuous Engine
 
-[Fase 6: Operación Comercial de Carrera →](../career-launch/overview)
+[Phase 6: Career Commercial Operation →](../career-launch/overview)

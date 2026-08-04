@@ -1,63 +1,63 @@
 ---
 sidebar_position: 8
-title: "Template de Evidencia v4"
+title: "Evidence Template v4"
 ---
 
-# Template de Evidencia v4
+# Evidence Template v4
 
-Usa este template para estandarizar cada entregable tecnico del plan.
+Use this template to standardize every technical deliverable in the plan.
 
-## 1) Ficha rapida del artefacto
+## 1) Quick artifact brief
 
-- Nombre del artefacto:
-- Fase / semana:
-- Tipo: repositorio | benchmark | write-up | checklist | demo
-- Estado: draft | publicado | en revision
-- Link publico:
+- Artifact name:
+- Phase / week:
+- Type: repository | benchmark | write-up | checklist | demo
+- Status: draft | published | under review
+- Public link:
 
-## 2) Problema que resuelve
+## 2) Problem it solves
 
-- Contexto del problema:
-- Riesgo de no resolverlo:
-- Usuario o stakeholder objetivo:
+- Problem context:
+- Risk of not solving it:
+- Target user or stakeholder:
 
-## 3) Solucion implementada
+## 3) Implemented solution
 
-- Arquitectura resumida (5-8 lineas):
-- Stack tecnico:
-- Decisiones clave y tradeoffs:
+- Architecture summary (5-8 lines):
+- Technical stack:
+- Key decisions and tradeoffs:
 
-## 4) Evidencia tecnica verificable
+## 4) Verifiable technical evidence
 
-- Capturas o demo:
-- Pruebas ejecutadas:
-- Metricas (calidad, costo, latencia, precision):
-- Limitaciones conocidas:
+- Screenshots or demo:
+- Tests executed:
+- Metrics (quality, cost, latency, precision):
+- Known limitations:
 
-## 5) Evidencia de negocio
+## 5) Business evidence
 
-- KPI principal impactado:
-- Baseline (antes):
-- Resultado (despues):
-- Supuestos y alcance:
+- Primary KPI impacted:
+- Baseline (before):
+- Result (after):
+- Assumptions and scope:
 
-## 6) Narrativa para entrevistas
+## 6) Interview narrative
 
-- Pitch ejecutivo (60-90 segundos):
-- Deep dive tecnico (5 minutos):
-- Failure / aprendizaje:
-- Siguiente mejora planificada:
+- Executive pitch (60-90 seconds):
+- Technical deep dive (5 minutes):
+- Failure / learning:
+- Next planned improvement:
 
-## 7) Checklist de publicacion
+## 7) Publication checklist
 
-- README claro con arquitectura y setup.
-- Variables y secretos documentados.
-- Pasos de reproduccion incluidos.
-- Resultado visible (captura, video o salida esperada).
-- Licencia y contacto agregados.
+- Clear README with architecture and setup.
+- Variables and secrets documented.
+- Reproduction steps included.
+- Visible result (screenshot, video, or expected output).
+- License and contact added.
 
-## 8) Decision gate asociado
+## 8) Associated decision gate
 
-- Gate al que contribuye: CP1 | CP2 | CP3 | CP4 | CP5
-- Criterio exacto que cumple:
-- Evidencia minima requerida:
+- Gate it contributes to: CP1 | CP2 | CP3 | CP4 | CP5
+- Exact criterion it satisfies:
+- Minimum evidence required:

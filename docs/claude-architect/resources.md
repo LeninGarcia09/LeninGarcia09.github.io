@@ -7,7 +7,6 @@ sidebar_position: 6
 
 # 🔗 Resources
 
-> 🌐 **Language:** English · [Versión en Español](./es/resources)
 
 | Resource | Link |
 |----------|------|

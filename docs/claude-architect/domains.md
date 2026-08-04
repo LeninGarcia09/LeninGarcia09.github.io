@@ -7,7 +7,6 @@ sidebar_position: 2
 
 # 📚 The 5 Exam Domains
 
-> 🌐 **Language:** English · [Versión en Español](./es/domains)
 >
 > Per-domain breakdown: key concepts, anti-patterns, and official Anthropic resources. Weights (%) are on the [Exam Overview](./overview#the-5-exam-domains).
 

@@ -1,95 +1,95 @@
 ---
 sidebar_position: 6
-title: "Fase 6 — Operación Comercial de Carrera (Paralelo)"
+title: "Phase 6 — Career Commercial Operation (Parallel)"
 ---
 
-# Fase 6: Operación Comercial de Carrera (Paralelo — Semanas 1–26)
+# Phase 6: Career Commercial Operation (Parallel — Weeks 1–26)
 
-> **Objetivo:** El motor **siempre activo** que corre en paralelo a las Fases 1–5. Tratas tu búsqueda como un pipeline comercial: referidos, outreach y seguimiento disciplinado. No es una fase secuencial — es la disciplina semanal que multiplica el resultado de todo lo demás.
+> **Objective:** The **always-on** engine that runs in parallel with Phases 1–5. You treat your search like a commercial pipeline: referrals, outreach, and disciplined follow-up. It is not a sequential phase — it is the weekly discipline that multiplies the result of everything else.
 
-## 🎯 Resultados Esperados
+## 🎯 Expected Outcomes
 
-Manteniendo esta operación durante las 26 semanas:
-- Motor de **referidos** activo (calidad sobre volumen)
-- **Outreach** semanal dirigido a roles y personas específicas
-- **Seguimiento** sistemático (ningún loop se enfría por olvido)
-- Marca personal que acompaña la evidencia técnica de cada fase
+By maintaining this operation during the 26 weeks:
+- Active **referral** engine (quality over volume)
+- Weekly **outreach** targeted to specific roles and people
+- Systematic **follow-up** (no loop cools off because it was forgotten)
+- Personal brand that accompanies the technical evidence from each phase
 
-:::tip[Regla del motor]
-Cada semana, sin excepción: **3 outreach nuevos + 5 seguimientos + 1 pieza de visibilidad**. La consistencia gana sobre la intensidad esporádica.
+:::tip[Engine rule]
+Every week, without exception: **3 new outreach messages + 5 follow-ups + 1 visibility piece**. Consistency beats sporadic intensity.
 :::
 
 ---
 
-## 🔁 Ritmo Semanal (constante)
+## 🔁 Weekly Rhythm (constant)
 
-| Actividad | Meta semanal | Notas |
+| Activity | Weekly goal | Notes |
 |-----------|--------------|-------|
-| Outreach nuevo | 3 contactos | Prioriza referidos internos sobre aplicaciones frías |
-| Seguimientos | 5 mensajes | Reactiva conversaciones sin próximo paso |
-| Visibilidad | 1 acción | Comentar, compartir un aprendizaje, o publicar |
-| Actualización de pipeline | 1 revisión | Estado + próximo paso + fecha para cada oportunidad |
+| New outreach | 3 contacts | Prioritize internal referrals over cold applications |
+| Follow-ups | 5 messages | Reactivate conversations with no next step |
+| Visibility | 1 action | Comment, share a learning, or publish |
+| Pipeline update | 1 review | Status + next step + date for each opportunity |
 
 ---
 
-## 🌐 Referidos (el canal de mayor conversión)
+## 🌐 Referrals (the highest-conversion channel)
 
-**Objetivo:** que la mayoría de tus procesos entren por referido, no por el portal.
+**Objective:** most of your processes should enter through referral, not the portal.
 
-| Recurso | Idioma | Tipo |
+| Resource | Language | Type |
 |---------|--------|------|
 | [Career growth (Microsoft Learn)](https://learn.microsoft.com/es-es/training/modules/career-growth/) | 🇪🇸 | Learning Path |
-| [LinkedIn: red profesional efectiva](https://www.linkedin.com/learning/) | 🇬🇧/🇪🇸 | Cursos |
+| [LinkedIn: effective professional network](https://www.linkedin.com/learning/) | 🇬🇧/🇪🇸 | Courses |
 
-**Prácticas:**
-- Mapea 5 empresas objetivo → identifica 2 contactos internos por empresa
-- Pide referido **después** de aportar valor (compartir un artefacto relevante)
-- Reactiva contactos dormidos con un motivo concreto (una publicación, un logro)
+**Practices:**
+- Map 5 target companies → identify 2 internal contacts per company
+- Ask for a referral **after** providing value (sharing a relevant artifact)
+- Reactivate dormant contacts with a concrete reason (a publication, an achievement)
 
-## ✉️ Outreach dirigido
+## ✉️ Targeted outreach
 
-**Prácticas:**
-- Mensaje corto, personalizado, con una razón clara de contacto
-- Enlaza **un** artefacto relevante (no tu portafolio entero)
-- Pide algo pequeño y específico (15 min, una opinión, una referencia)
+**Practices:**
+- Short, personalized message with a clear reason for contact
+- Link **one** relevant artifact (not your whole portfolio)
+- Ask for something small and specific (15 min, an opinion, a referral)
 
-## 📊 Seguimiento y pipeline
+## 📊 Follow-up and pipeline
 
-**Prácticas:**
-- Tabla única: empresa, rol, contacto, fuente, estado, próximo paso, fecha
-- Regla "sin próximo paso = riesgo": toda fila debe tener una acción futura
-- Cadencia de seguimiento: día 3, día 7, día 14 antes de cerrar el loop
-
----
-
-## 🔗 Cómo se conecta con las demás fases
-
-- **Fase 1–3:** cada artefacto nuevo (RAG, threat model, ADR) es material fresco de outreach
-- **Fase 4:** las publicaciones técnicas alimentan la visibilidad semanal
-- **Fase 5:** el pipeline formal (Semana 25–26) se apoya en la red construida aquí desde la Semana 1
+**Practices:**
+- Single table: company, role, contact, source, status, next step, date
+- Rule "no next step = risk": every row must have a future action
+- Follow-up cadence: day 3, day 7, day 14 before closing the loop
 
 ---
 
-## 📋 Checklist del Motor (revisar cada semana)
+## 🔗 How it connects to the other phases
 
-- [ ] 3 outreach nuevos enviados
-- [ ] 5 seguimientos realizados
-- [ ] 1 acción de visibilidad
-- [ ] Pipeline actualizado (todas las filas con próximo paso)
-- [ ] Al menos 1 conversación de referido en curso
+- **Phases 1–3:** every new artifact (RAG, threat model, ADR) is fresh outreach material
+- **Phase 4:** technical publications feed weekly visibility
+- **Phase 5:** the formal pipeline (Weeks 25–26) is supported by the network built here since Week 1
 
-## Operacion v4
+---
+
+## 📋 Engine Checklist (review every week)
+
+- [ ] 3 new outreach messages sent
+- [ ] 5 follow-ups completed
+- [ ] 1 visibility action
+- [ ] Pipeline updated (all rows with next step)
+- [ ] At least 1 referral conversation in progress
+
+## v4 Operations
 
 - [Checkpoint Gates](../checkpoints)
-- [Template de Evidencia](../evidence-template)
+- [Evidence Template](../evidence-template)
 - [Weekly Tracker](../weekly-tracker)
 
-## 🔗 Valor para el CV
+## 🔗 Resume Value
 
-> "Opero mi desarrollo de carrera como un pipeline comercial: referidos priorizados, outreach dirigido y seguimiento disciplinado, sincronizado con la evidencia técnica que produzco cada semana."
+> "I operate my career development like a commercial pipeline: prioritized referrals, targeted outreach, and disciplined follow-up, synchronized with the technical evidence I produce every week."
 
-## 🏁 Cierre del Programa
+## 🏁 Program Close
 
-Al completar las Fases 1–5 con el motor de la Fase 6 activo, tienes: **3 artefactos técnicos evaluados**, arquitectura y seguridad de nivel empresarial, contenido público, y un pipeline activo de oportunidades — el perfil completo de un **AI Solution Architect con foco en Responsible AI**.
+By completing Phases 1–5 with the Phase 6 engine active, you have: **3 evaluated technical artifacts**, enterprise-level architecture and security, public content, and an active opportunity pipeline — the full profile of an **AI Solution Architect focused on Responsible AI**.
 
-[Volver al Overview del Plan →](../overview)
+[Back to Plan Overview →](../overview)
