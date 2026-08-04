@@ -1,0 +1,334 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.foundrySkillSidebar.category.Platform & Architecture": {
+    "message": "Platform & Architecture",
+    "description": "The label for category 'Platform & Architecture' in sidebar 'foundrySkillSidebar'"
+  },
+  "sidebar.foundrySkillSidebar.category.Agent Service & Types": {
+    "message": "Agent Service & Types",
+    "description": "The label for category 'Agent Service & Types' in sidebar 'foundrySkillSidebar'"
+  },
+  "sidebar.foundrySkillSidebar.category.Hosted Agents": {
+    "message": "Hosted Agents",
+    "description": "The label for category 'Hosted Agents' in sidebar 'foundrySkillSidebar'"
+  },
+  "sidebar.foundrySkillSidebar.category.Observability & Evaluation": {
+    "message": "Observability & Evaluation",
+    "description": "The label for category 'Observability & Evaluation' in sidebar 'foundrySkillSidebar'"
+  },
+  "sidebar.foundrySkillSidebar.category.Multi-Agent Orchestration": {
+    "message": "Multi-Agent Orchestration",
+    "description": "The label for category 'Multi-Agent Orchestration' in sidebar 'foundrySkillSidebar'"
+  },
+  "sidebar.foundrySkillSidebar.doc.Track Overview": {
+    "message": "Track Overview",
+    "description": "The label for the doc item 'Track Overview' in sidebar 'foundrySkillSidebar', linking to the doc azure-ai-foundry/overview"
+  },
+  "sidebar.foundrySkillSidebar.doc.Prerequisites & Setup": {
+    "message": "Prerequisites & Setup",
+    "description": "The label for the doc item 'Prerequisites & Setup' in sidebar 'foundrySkillSidebar', linking to the doc azure-ai-foundry/prerequisites"
+  },
+  "sidebar.foundrySkillSidebar.doc.CLI & SDK Cheat Sheet": {
+    "message": "CLI & SDK Cheat Sheet",
+    "description": "The label for the doc item 'CLI & SDK Cheat Sheet' in sidebar 'foundrySkillSidebar', linking to the doc azure-ai-foundry/cheat-sheet"
+  },
+  "sidebar.responsibleAiSidebar.category.RAI Standard & Governance": {
+    "message": "RAI Standard & Governance",
+    "description": "The label for category 'RAI Standard & Governance' in sidebar 'responsibleAiSidebar'"
+  },
+  "sidebar.responsibleAiSidebar.category.Purview AI Hub & Shadow AI": {
+    "message": "Purview AI Hub & Shadow AI",
+    "description": "The label for category 'Purview AI Hub & Shadow AI' in sidebar 'responsibleAiSidebar'"
+  },
+  "sidebar.responsibleAiSidebar.category.Fairness & Bias Mitigation": {
+    "message": "Fairness & Bias Mitigation",
+    "description": "The label for category 'Fairness & Bias Mitigation' in sidebar 'responsibleAiSidebar'"
+  },
+  "sidebar.responsibleAiSidebar.doc.Track Overview": {
+    "message": "Track Overview",
+    "description": "The label for the doc item 'Track Overview' in sidebar 'responsibleAiSidebar', linking to the doc responsible-ai/overview"
+  },
+  "sidebar.ai102Sidebar.doc.Exam Overview": {
+    "message": "Exam Overview",
+    "description": "The label for the doc item 'Exam Overview' in sidebar 'ai102Sidebar', linking to the doc ai-102/overview"
+  },
+  "sidebar.az305Sidebar.doc.Exam Overview": {
+    "message": "Exam Overview",
+    "description": "The label for the doc item 'Exam Overview' in sidebar 'az305Sidebar', linking to the doc az-305/overview"
+  },
+  "sidebar.sc500Sidebar.doc.Exam Overview": {
+    "message": "Exam Overview",
+    "description": "The label for the doc item 'Exam Overview' in sidebar 'sc500Sidebar', linking to the doc sc-500/overview"
+  },
+  "sidebar.az104Sidebar.doc.Exam Overview": {
+    "message": "Exam Overview",
+    "description": "The label for the doc item 'Exam Overview' in sidebar 'az104Sidebar', linking to the doc az-104/overview"
+  },
+  "sidebar.az700Sidebar.doc.Exam Overview": {
+    "message": "Exam Overview",
+    "description": "The label for the doc item 'Exam Overview' in sidebar 'az700Sidebar', linking to the doc az-700/overview"
+  },
+  "sidebar.agenticReliabilitySidebar.category.The Hallucination Audit": {
+    "message": "The Hallucination Audit",
+    "description": "The label for category 'The Hallucination Audit' in sidebar 'agenticReliabilitySidebar'"
+  },
+  "sidebar.agenticReliabilitySidebar.category.Context Rot at Scale": {
+    "message": "Context Rot at Scale",
+    "description": "The label for category 'Context Rot at Scale' in sidebar 'agenticReliabilitySidebar'"
+  },
+  "sidebar.agenticReliabilitySidebar.category.The Verifiable Orchestrator": {
+    "message": "The Verifiable Orchestrator",
+    "description": "The label for category 'The Verifiable Orchestrator' in sidebar 'agenticReliabilitySidebar'"
+  },
+  "sidebar.agenticReliabilitySidebar.category.Semantic Control": {
+    "message": "Semantic Control",
+    "description": "The label for category 'Semantic Control' in sidebar 'agenticReliabilitySidebar'"
+  },
+  "sidebar.agenticReliabilitySidebar.doc.Track Overview": {
+    "message": "Track Overview",
+    "description": "The label for the doc item 'Track Overview' in sidebar 'agenticReliabilitySidebar', linking to the doc agentic-reliability/overview"
+  },
+  "sidebar.agenticSecuritySidebar.category.Objective & Autonomy Risk": {
+    "message": "Objective & Autonomy Risk",
+    "description": "The label for category 'Objective & Autonomy Risk' in sidebar 'agenticSecuritySidebar'"
+  },
+  "sidebar.agenticSecuritySidebar.category.Permission & Blast Radius": {
+    "message": "Permission & Blast Radius",
+    "description": "The label for category 'Permission & Blast Radius' in sidebar 'agenticSecuritySidebar'"
+  },
+  "sidebar.agenticSecuritySidebar.category.Data Protection & Runtime Monitoring": {
+    "message": "Data Protection & Runtime Monitoring",
+    "description": "The label for category 'Data Protection & Runtime Monitoring' in sidebar 'agenticSecuritySidebar'"
+  },
+  "sidebar.agenticSecuritySidebar.category.Governance, Brakes & Executive Readout": {
+    "message": "Governance, Brakes & Executive Readout",
+    "description": "The label for category 'Governance, Brakes & Executive Readout' in sidebar 'agenticSecuritySidebar'"
+  },
+  "sidebar.agenticSecuritySidebar.doc.Track Overview": {
+    "message": "Track Overview",
+    "description": "The label for the doc item 'Track Overview' in sidebar 'agenticSecuritySidebar', linking to the doc agentic-security-governance/overview"
+  },
+  "sidebar.aiArchitectureRaiSidebar.doc.Track Overview": {
+    "message": "Track Overview",
+    "description": "The label for the doc item 'Track Overview' in sidebar 'aiArchitectureRaiSidebar', linking to the doc ai-architecture-rai/overview"
+  },
+  "sidebar.aiArchitectureRaiSidebar.doc.Week 1: RAI Foundations for Architects": {
+    "message": "Week 1: RAI Foundations for Architects",
+    "description": "The label for the doc item 'Week 1: RAI Foundations for Architects' in sidebar 'aiArchitectureRaiSidebar', linking to the doc ai-architecture-rai/week-01"
+  },
+  "sidebar.aiArchitectureRaiSidebar.doc.Week 2: Architecture Patterns + RAI by Design": {
+    "message": "Week 2: Architecture Patterns + RAI by Design",
+    "description": "The label for the doc item 'Week 2: Architecture Patterns + RAI by Design' in sidebar 'aiArchitectureRaiSidebar', linking to the doc ai-architecture-rai/week-02"
+  },
+  "sidebar.aiArchitectureRaiSidebar.doc.Week 3: Microsoft Stack Deep Dive": {
+    "message": "Week 3: Microsoft Stack Deep Dive",
+    "description": "The label for the doc item 'Week 3: Microsoft Stack Deep Dive' in sidebar 'aiArchitectureRaiSidebar', linking to the doc ai-architecture-rai/week-03"
+  },
+  "sidebar.aiArchitectureRaiSidebar.doc.Week 4: Applied Design + Review Practice": {
+    "message": "Week 4: Applied Design + Review Practice",
+    "description": "The label for the doc item 'Week 4: Applied Design + Review Practice' in sidebar 'aiArchitectureRaiSidebar', linking to the doc ai-architecture-rai/week-04"
+  },
+  "sidebar.claudeArchitectSidebar.category.🇪🇸 Español": {
+    "message": "🇪🇸 Español",
+    "description": "The label for category '🇪🇸 Español' in sidebar 'claudeArchitectSidebar'"
+  },
+  "sidebar.claudeArchitectSidebar.doc.🏠 Exam Overview": {
+    "message": "🏠 Exam Overview",
+    "description": "The label for the doc item '🏠 Exam Overview' in sidebar 'claudeArchitectSidebar', linking to the doc claude-architect/overview"
+  },
+  "sidebar.claudeArchitectSidebar.doc.📚 The 5 Domains": {
+    "message": "📚 The 5 Domains",
+    "description": "The label for the doc item '📚 The 5 Domains' in sidebar 'claudeArchitectSidebar', linking to the doc claude-architect/domains"
+  },
+  "sidebar.claudeArchitectSidebar.doc.🎓 Courses + Mock Exam": {
+    "message": "🎓 Courses + Mock Exam",
+    "description": "The label for the doc item '🎓 Courses + Mock Exam' in sidebar 'claudeArchitectSidebar', linking to the doc claude-architect/courses"
+  },
+  "sidebar.claudeArchitectSidebar.doc.🗓️ Study Plan (12 wk)": {
+    "message": "🗓️ Study Plan (12 wk)",
+    "description": "The label for the doc item '🗓️ Study Plan (12 wk)' in sidebar 'claudeArchitectSidebar', linking to the doc claude-architect/study-plan"
+  },
+  "sidebar.claudeArchitectSidebar.doc.⚠️ Key Anti-Patterns": {
+    "message": "⚠️ Key Anti-Patterns",
+    "description": "The label for the doc item '⚠️ Key Anti-Patterns' in sidebar 'claudeArchitectSidebar', linking to the doc claude-architect/anti-patterns"
+  },
+  "sidebar.claudeArchitectSidebar.doc.🔗 Resources & Sources": {
+    "message": "🔗 Resources & Sources",
+    "description": "The label for the doc item '🔗 Resources & Sources' in sidebar 'claudeArchitectSidebar', linking to the doc claude-architect/resources"
+  },
+  "sidebar.claudeArchitectSidebar.doc.🏠 Vista General": {
+    "message": "🏠 Vista General",
+    "description": "The label for the doc item '🏠 Vista General' in sidebar 'claudeArchitectSidebar', linking to the doc claude-architect/es/overview"
+  },
+  "sidebar.claudeArchitectSidebar.doc.📚 Los 5 Dominios": {
+    "message": "📚 Los 5 Dominios",
+    "description": "The label for the doc item '📚 Los 5 Dominios' in sidebar 'claudeArchitectSidebar', linking to the doc claude-architect/es/domains"
+  },
+  "sidebar.claudeArchitectSidebar.doc.🎓 Cursos + Mock Exam": {
+    "message": "🎓 Cursos + Mock Exam",
+    "description": "The label for the doc item '🎓 Cursos + Mock Exam' in sidebar 'claudeArchitectSidebar', linking to the doc claude-architect/es/courses"
+  },
+  "sidebar.claudeArchitectSidebar.doc.🗓️ Plan de Estudio (12 sem)": {
+    "message": "🗓️ Plan de Estudio (12 sem)",
+    "description": "The label for the doc item '🗓️ Plan de Estudio (12 sem)' in sidebar 'claudeArchitectSidebar', linking to the doc claude-architect/es/study-plan"
+  },
+  "sidebar.claudeArchitectSidebar.doc.⚠️ Anti-Patrones Clave": {
+    "message": "⚠️ Anti-Patrones Clave",
+    "description": "The label for the doc item '⚠️ Anti-Patrones Clave' in sidebar 'claudeArchitectSidebar', linking to the doc claude-architect/es/anti-patterns"
+  },
+  "sidebar.claudeArchitectSidebar.doc.🔗 Recursos y Fuentes": {
+    "message": "🔗 Recursos y Fuentes",
+    "description": "The label for the doc item '🔗 Recursos y Fuentes' in sidebar 'claudeArchitectSidebar', linking to the doc claude-architect/es/resources"
+  },
+  "sidebar.resourcesSidebar.doc.Resources Hub": {
+    "message": "Resources Hub",
+    "description": "The label for the doc item 'Resources Hub' in sidebar 'resourcesSidebar', linking to the doc resources/overview"
+  },
+  "sidebar.resourcesSidebar.doc.🛠️ Tools": {
+    "message": "🛠️ Tools",
+    "description": "The label for the doc item '🛠️ Tools' in sidebar 'resourcesSidebar', linking to the doc resources/tools"
+  },
+  "sidebar.resourcesSidebar.doc.📰 Articles": {
+    "message": "📰 Articles",
+    "description": "The label for the doc item '📰 Articles' in sidebar 'resourcesSidebar', linking to the doc resources/articles"
+  },
+  "sidebar.resourcesSidebar.doc.📚 Learning": {
+    "message": "📚 Learning",
+    "description": "The label for the doc item '📚 Learning' in sidebar 'resourcesSidebar', linking to the doc resources/learning"
+  },
+  "sidebar.learningPlanSidebar.category.Fase 1: Fundamentos (Semanas 1-4)": {
+    "message": "Fase 1: Fundamentos (Semanas 1-4)",
+    "description": "The label for category 'Fase 1: Fundamentos (Semanas 1-4)' in sidebar 'learningPlanSidebar'"
+  },
+  "sidebar.learningPlanSidebar.category.Fase 2: Datos & Automatización (Semanas 5-8)": {
+    "message": "Fase 2: Datos & Automatización (Semanas 5-8)",
+    "description": "The label for category 'Fase 2: Datos & Automatización (Semanas 5-8)' in sidebar 'learningPlanSidebar'"
+  },
+  "sidebar.learningPlanSidebar.category.Fase 3: Ciberseguridad (Semanas 9-12)": {
+    "message": "Fase 3: Ciberseguridad (Semanas 9-12)",
+    "description": "The label for category 'Fase 3: Ciberseguridad (Semanas 9-12)' in sidebar 'learningPlanSidebar'"
+  },
+  "sidebar.learningPlanSidebar.category.Fase 4: AI para Negocios (Semanas 13-20)": {
+    "message": "Fase 4: AI para Negocios (Semanas 13-20)",
+    "description": "The label for category 'Fase 4: AI para Negocios (Semanas 13-20)' in sidebar 'learningPlanSidebar'"
+  },
+  "sidebar.learningPlanSidebar.category.Fase 5: Cloud + AI (Semanas 21-28)": {
+    "message": "Fase 5: Cloud + AI (Semanas 21-28)",
+    "description": "The label for category 'Fase 5: Cloud + AI (Semanas 21-28)' in sidebar 'learningPlanSidebar'"
+  },
+  "sidebar.learningPlanSidebar.category.Fase 6: Lanzamiento (Semanas 29-36)": {
+    "message": "Fase 6: Lanzamiento (Semanas 29-36)",
+    "description": "The label for category 'Fase 6: Lanzamiento (Semanas 29-36)' in sidebar 'learningPlanSidebar'"
+  },
+  "sidebar.learningPlanSidebar.category.🧪 Retos: Seguridad de IA Aplicada": {
+    "message": "🧪 Retos: Seguridad de IA Aplicada",
+    "description": "The label for category '🧪 Retos: Seguridad de IA Aplicada' in sidebar 'learningPlanSidebar'"
+  },
+  "sidebar.learningPlanSidebar.doc.🛡️ AI Security Professional": {
+    "message": "🛡️ AI Security Professional",
+    "description": "The label for the doc item '🛡️ AI Security Professional' in sidebar 'learningPlanSidebar', linking to the doc learning-plan/overview"
+  },
+  "sidebar.learningPlanSidebar.doc.✅ Fuentes y Verificación": {
+    "message": "✅ Fuentes y Verificación",
+    "description": "The label for the doc item '✅ Fuentes y Verificación' in sidebar 'learningPlanSidebar', linking to the doc learning-plan/sources-and-verification"
+  },
+  "sidebar.learningPlanSidebar.doc.🧭 Metodología y Mejores Prácticas": {
+    "message": "🧭 Metodología y Mejores Prácticas",
+    "description": "The label for the doc item '🧭 Metodología y Mejores Prácticas' in sidebar 'learningPlanSidebar', linking to the doc learning-plan/methodology-best-practices"
+  },
+  "sidebar.learningPlanV4Sidebar.category.Fase 1: Fundamentos + AI-103 (Sem 1-4)": {
+    "message": "Fase 1: Fundamentos + AI-103 (Sem 1-4)",
+    "description": "The label for category 'Fase 1: Fundamentos + AI-103 (Sem 1-4)' in sidebar 'learningPlanV4Sidebar'"
+  },
+  "sidebar.learningPlanV4Sidebar.category.Fase 2: Portafolio Técnico — RAG & Agentes (Sem 5-12)": {
+    "message": "Fase 2: Portafolio Técnico — RAG & Agentes (Sem 5-12)",
+    "description": "The label for category 'Fase 2: Portafolio Técnico — RAG & Agentes (Sem 5-12)' in sidebar 'learningPlanV4Sidebar'"
+  },
+  "sidebar.learningPlanV4Sidebar.category.Fase 3: Arquitectura + Seguridad (Sem 13-16)": {
+    "message": "Fase 3: Arquitectura + Seguridad (Sem 13-16)",
+    "description": "The label for category 'Fase 3: Arquitectura + Seguridad (Sem 13-16)' in sidebar 'learningPlanV4Sidebar'"
+  },
+  "sidebar.learningPlanV4Sidebar.category.Fase 4: Value Realization + Visibilidad (Sem 17-21)": {
+    "message": "Fase 4: Value Realization + Visibilidad (Sem 17-21)",
+    "description": "The label for category 'Fase 4: Value Realization + Visibilidad (Sem 17-21)' in sidebar 'learningPlanV4Sidebar'"
+  },
+  "sidebar.learningPlanV4Sidebar.category.Fase 5: Entrevistas + Pipeline (Sem 22-26)": {
+    "message": "Fase 5: Entrevistas + Pipeline (Sem 22-26)",
+    "description": "The label for category 'Fase 5: Entrevistas + Pipeline (Sem 22-26)' in sidebar 'learningPlanV4Sidebar'"
+  },
+  "sidebar.learningPlanV4Sidebar.category.Fase 6: Operación Comercial de Carrera (Paralelo)": {
+    "message": "Fase 6: Operación Comercial de Carrera (Paralelo)",
+    "description": "The label for category 'Fase 6: Operación Comercial de Carrera (Paralelo)' in sidebar 'learningPlanV4Sidebar'"
+  },
+  "sidebar.learningPlanV4Sidebar.doc.🏗️ AI Solution Architect — RAI": {
+    "message": "🏗️ AI Solution Architect — RAI",
+    "description": "The label for the doc item '🏗️ AI Solution Architect — RAI' in sidebar 'learningPlanV4Sidebar', linking to the doc learning-plan-v4/overview"
+  },
+  "sidebar.learningPlanV4Sidebar.doc.📊 Weekly Tracker (26 sem)": {
+    "message": "📊 Weekly Tracker (26 sem)",
+    "description": "The label for the doc item '📊 Weekly Tracker (26 sem)' in sidebar 'learningPlanV4Sidebar', linking to the doc learning-plan-v4/weekly-tracker"
+  },
+  "sidebar.learningPlanV4Sidebar.doc.✅ Checkpoint Gates": {
+    "message": "✅ Checkpoint Gates",
+    "description": "The label for the doc item '✅ Checkpoint Gates' in sidebar 'learningPlanV4Sidebar', linking to the doc learning-plan-v4/checkpoints"
+  },
+  "sidebar.learningPlanV4Sidebar.doc.🧾 Evidence Template": {
+    "message": "🧾 Evidence Template",
+    "description": "The label for the doc item '🧾 Evidence Template' in sidebar 'learningPlanV4Sidebar', linking to the doc learning-plan-v4/evidence-template"
+  },
+  "sidebar.learningPlanV4Sidebar.doc.📚 Fuentes y Verificación": {
+    "message": "📚 Fuentes y Verificación",
+    "description": "The label for the doc item '📚 Fuentes y Verificación' in sidebar 'learningPlanV4Sidebar', linking to the doc learning-plan-v4/sources-and-verification"
+  },
+  "sidebar.learningPlanV4Sidebar.doc.🧭 Metodología y Mejores Prácticas": {
+    "message": "🧭 Metodología y Mejores Prácticas",
+    "description": "The label for the doc item '🧭 Metodología y Mejores Prácticas' in sidebar 'learningPlanV4Sidebar', linking to the doc learning-plan-v4/methodology-best-practices"
+  },
+  "sidebar.learningPlanV4Sidebar.doc.🎯 Competencias + Benchmark Externo": {
+    "message": "🎯 Competencias + Benchmark Externo",
+    "description": "The label for the doc item '🎯 Competencias + Benchmark Externo' in sidebar 'learningPlanV4Sidebar', linking to the doc learning-plan-v4/role-competency-map"
+  },
+  "sidebar.executiveAiLeadershipSidebar.category.Phase 1: Executive AI Foundation": {
+    "message": "Phase 1: Executive AI Foundation",
+    "description": "The label for category 'Phase 1: Executive AI Foundation' in sidebar 'executiveAiLeadershipSidebar'"
+  },
+  "sidebar.executiveAiLeadershipSidebar.category.Phase 2: Commercial AI for Growth": {
+    "message": "Phase 2: Commercial AI for Growth",
+    "description": "The label for category 'Phase 2: Commercial AI for Growth' in sidebar 'executiveAiLeadershipSidebar'"
+  },
+  "sidebar.executiveAiLeadershipSidebar.category.Phase 3: Governance, Risk, and Contracts": {
+    "message": "Phase 3: Governance, Risk, and Contracts",
+    "description": "The label for category 'Phase 3: Governance, Risk, and Contracts' in sidebar 'executiveAiLeadershipSidebar'"
+  },
+  "sidebar.executiveAiLeadershipSidebar.category.Phase 4: Scale Across Regions and Portfolio": {
+    "message": "Phase 4: Scale Across Regions and Portfolio",
+    "description": "The label for category 'Phase 4: Scale Across Regions and Portfolio' in sidebar 'executiveAiLeadershipSidebar'"
+  },
+  "sidebar.executiveAiLeadershipSidebar.doc.🎯 Plan Overview": {
+    "message": "🎯 Plan Overview",
+    "description": "The label for the doc item '🎯 Plan Overview' in sidebar 'executiveAiLeadershipSidebar', linking to the doc executive-ai-leadership/overview"
+  },
+  "sidebar.executiveAiLeadershipSidebar.doc.⚡ First 90 Days": {
+    "message": "⚡ First 90 Days",
+    "description": "The label for the doc item '⚡ First 90 Days' in sidebar 'executiveAiLeadershipSidebar', linking to the doc executive-ai-leadership/90-day-execution"
+  },
+  "sidebar.executiveAiLeadershipSidebar.doc.💼 Value Projects": {
+    "message": "💼 Value Projects",
+    "description": "The label for the doc item '💼 Value Projects' in sidebar 'executiveAiLeadershipSidebar', linking to the doc executive-ai-leadership/value-projects"
+  },
+  "sidebar.executiveAiLeadershipSidebar.doc.🎓 Certification Roadmap": {
+    "message": "🎓 Certification Roadmap",
+    "description": "The label for the doc item '🎓 Certification Roadmap' in sidebar 'executiveAiLeadershipSidebar', linking to the doc executive-ai-leadership/certification-roadmap"
+  },
+  "sidebar.executiveAiLeadershipSidebar.doc.📈 KPI Scorecard": {
+    "message": "📈 KPI Scorecard",
+    "description": "The label for the doc item '📈 KPI Scorecard' in sidebar 'executiveAiLeadershipSidebar', linking to the doc executive-ai-leadership/kpi-scorecard"
+  },
+  "sidebar.executiveAiLeadershipSidebar.doc.✅ Sources & Verification": {
+    "message": "✅ Sources & Verification",
+    "description": "The label for the doc item '✅ Sources & Verification' in sidebar 'executiveAiLeadershipSidebar', linking to the doc executive-ai-leadership/sources-and-verification"
+  }
+}
