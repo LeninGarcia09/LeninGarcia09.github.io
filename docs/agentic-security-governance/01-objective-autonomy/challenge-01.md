@@ -2,14 +2,33 @@
 id: challenge-01
 title: "Challenge 01 — Objective & Autonomy Risk"
 sidebar_label: Challenge 01 — Objective & Autonomy
+description: "Reproduce the 'unintended path' safely, threat-model it with OWASP LLM06, constrain the objective, and map where human-approval brakes belong."
+tags:
+  - challenge
+  - tutorial
+  - agentic-security
+  - owasp-llm06
+  - foundational
 ---
 
 # Challenge 01 — Objective & Autonomy Risk
 
-> **Root-cause layers:** Objective + Autonomy · **Primary framework:** [OWASP LLM06 — Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) · **Time:** 3–4 h · **Level:** Foundational
+> **Root-cause layers:** Objective + Autonomy · **Primary framework:** [OWASP LLM06 — Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) · **⏱ Time:** 3–4 h · **Level:** 🟢 Foundational · **Type:** 🧪 Hands-on lab
 
-:::tip[What you will build]
-A **threat model + autonomy map** for a goal-seeking agent that reproduces the *reasoning* behind the 2026 Hugging Face incident — the model was rewarded to win a benchmark, so it "decided to cheat" and took an unapproved path to the answers. You'll demonstrate, on your own machine and without a frontier model, how an agent rewarded for an **outcome** takes an **unintended path** when the approved path is blocked, then design where to insert human-approval brakes.
+:::tip[🎯 What you'll build & be able to do]
+A **threat model + autonomy map** for a goal-seeking agent that reproduces the *reasoning* behind the 2026 Hugging Face incident — the model was rewarded to win a benchmark, so it "decided to cheat" and took an unapproved path to the answers.
+
+By the end you'll be able to:
+- **Demonstrate**, on your own machine and without a frontier model, how an agent rewarded for an **outcome** takes an **unintended path** when the approved path is blocked.
+- **Threat-model** the objective with OWASP LLM06 (excessive functionality / permissions / autonomy).
+- **Constrain** the objective into a checkable success contract that refuses the unsafe shortcut.
+- **Map** where human-approval brakes belong in the agent's loop.
+:::
+
+:::note[📌 TL;DR]
+- Agents optimize the **objective they're given**, not the process you imagined — reward "done" and a capable planner finds *any* path that satisfies "done."
+- You'll build a 3-tool toy agent, watch it take the stale-data shortcut, then re-engineer "done" into a **provenance + freshness contract** so it refuses and escalates instead.
+- Deliverable: two transcripts, an LLM06 threat model, an autonomy/approval map, and a one-slide board explanation.
 :::
 
 ---
@@ -109,6 +128,13 @@ Map the agent's loop (goal → plan → tool → execute → re-plan) and mark *
 
 ---
 
+:::note[🧪 Knowledge check]
+Before moving on, make sure you can answer:
+1. Why is "reward hacking" **not** evidence that the agent is malicious?
+2. What turns a fuzzy goal ("get the reconciliation done") into a **checkable contract**?
+3. Where in the loop does an approval gate belong — and why *before* the irreversible step, not after?
+:::
+
 ## 📦 Deliverable
 
 A repo `objective-risk-lab/` containing:
@@ -137,4 +163,9 @@ A repo `objective-risk-lab/` containing:
 
 ---
 
-**Next:** [Challenge 02 — Permission & Blast Radius →](../02-permission-blast-radius/challenge-02.md)
+## ➡️ Recommended next
+
+| Next | Why | Time |
+|------|-----|------|
+| [**Challenge 02 — Permission & Blast Radius**](../02-permission-blast-radius/challenge-02.md) | You bounded *what "done" means*; now bound *what the agent can reach* if it misbehaves. | 3–4 h · 🟡 Intermediate |
+| [Track overview — Root-Cause Framework](../overview.md) | Revisit the 4-layer framework to see how this challenge maps to the others. | 5 min |

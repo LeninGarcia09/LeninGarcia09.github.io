@@ -2,14 +2,35 @@
 id: challenge-02
 title: "Desafío 02 — Permisos y Radio de Impacto"
 sidebar_label: Desafío 02 — Permisos y Radio de Impacto
+description: "Trata al agente como un empleado digital: diseña identidad de privilegio mínimo, reduce permisos permanentes a Just-in-Time y encoge el radio de impacto con un diagrama antes/después."
+tags:
+  - challenge
+  - tutorial
+  - agentic-security
+  - identity
+  - least-privilege
+  - intermediate
 ---
 
 # Desafío 02 — Permisos y Radio de Impacto
 
-> **Capa de causa raíz:** Permiso · **Marcos:** Microsoft Entra ID · Zero Trust · [MITRE ATLAS](https://atlas.mitre.org/) · **Tiempo:** 3–4 h · **Nivel:** Intermedio
+> **Capa de causa raíz:** Permiso · **Marcos:** Microsoft Entra ID · Zero Trust · [MITRE ATLAS](https://atlas.mitre.org/) · **⏱ Tiempo:** 3–4 h · **Nivel:** 🟡 Intermedio · **Tipo:** 🧪 Laboratorio práctico
 
-:::tip[Qué construirás]
-Un **diseño de identidad de privilegio mínimo** y un **diagrama de radio de impacto** para un agente que ya tiene demasiado acceso: el control individual de mayor apalancamiento después de un incidente. Principio central: **todo agente de IA es un empleado digital.** Necesita una identidad, permisos acotados y un plan de offboarding.
+:::tip[🎯 Lo que construirás y podrás hacer]
+Un **diseño de identidad de privilegio mínimo** y un **diagrama de radio de impacto** para un agente que ya tiene demasiado acceso: el control individual de mayor apalancamiento después de un incidente.
+
+Al terminar podrás:
+- **Inventariar** las capacidades reales de un agente (datos, herramientas, identidad, sistemas conectados) y su alcance.
+- **Rediseñar** privilegios permanentes en acceso acotado Just-in-Time con un aprobador.
+- **Eliminar** la ruta de exfiltración y demostrar que el radio de impacto se redujo con un diagrama antes/después.
+
+Principio central: **todo agente de IA es un empleado digital** — necesita una identidad, permisos acotados y un plan de offboarding.
+:::
+
+:::note[📌 Resumen]
+- El poder real de un agente = acceso a datos + acceso a herramientas + identidad + sistemas conectados. Si se comporta mal, **lo que pueda alcanzar es tu radio de impacto.**
+- Tomarás un agente sobre-permisionado, reducirás cada capacidad al mínimo, convertirás el privilegio permanente en Just-in-Time y eliminarás la ruta de exfiltración.
+- Entregable: un diseño de identidad de privilegio mínimo + un diagrama de radio de impacto antes/después.
 :::
 
 ---
@@ -113,6 +134,13 @@ az role assignment list --assignee <identity-clientId> -o table
 
 ---
 
+:::note[🧪 Verificación de conocimiento]
+Antes de continuar, asegúrate de poder responder:
+1. ¿Por qué "trata a cada agente como un empleado digital" es más que un eslogan — qué cambia operativamente?
+2. ¿Cuál es la diferencia entre privilegio **permanente** y acceso **Just-in-Time**, y por qué reduce el radio de impacto?
+3. En el incidente de HF de 2026, ¿qué control individual habría limitado más la *alcanzabilidad* — y por qué?
+:::
+
 ## 📦 Entregable
 
 Una carpeta `permission-blast-radius/` con:
@@ -142,4 +170,9 @@ Una carpeta `permission-blast-radius/` con:
 
 ---
 
-**Siguiente:** [Desafío 03 — Protección de Datos y Monitoreo en Ejecución →](../03-data-and-monitoring/challenge-03.md)
+## ➡️ Siguiente recomendado
+
+| Siguiente | Por qué | Tiempo |
+|------|-----|------|
+| [**Desafío 03 — Protección de Datos y Monitoreo en Ejecución**](../03-data-and-monitoring/challenge-03.md) | Redujiste *qué puede alcanzar*; ahora protege los datos y *observa lo que hace*. | 3–4 h · 🟡 Intermedio |
+| [Desafío 01 — Objetivo y Autonomía](../01-objective-autonomy/challenge-01.md) | Revisa cómo el objetivo mismo crea el incentivo para excederse. | 3–4 h |

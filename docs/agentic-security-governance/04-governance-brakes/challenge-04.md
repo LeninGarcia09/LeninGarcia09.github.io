@@ -2,14 +2,33 @@
 id: challenge-04
 title: "Challenge 04 — Governance, Brakes & Executive Readout"
 sidebar_label: Challenge 04 — Governance & Brakes
+description: "Capstone: design human-approval gates, a kill-switch runbook, and access-revocation processes, then integrate 01–03 into a board-ready executive readout."
+tags:
+  - challenge
+  - tutorial
+  - agentic-security
+  - governance
+  - capstone
 ---
 
 # Challenge 04 — Governance, Brakes & Executive Readout
 
-> **Root-cause layers:** Autonomy + all · **Frameworks:** [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) (Govern/Manage) · [Microsoft Agentic AI Taxonomy](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents/) · **Time:** 3–4 h · **Level:** Capstone
+> **Root-cause layers:** Autonomy + all · **Frameworks:** [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework) (Govern/Manage) · [Microsoft Agentic AI Taxonomy](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents/) · **⏱ Time:** 3–4 h · **Level:** 🔴 Capstone · **Type:** 🧪 Hands-on lab + 📊 executive readout
 
-:::tip[What you will build]
-The **brakes** every autonomous system needs — human-approval gates, a **kill-switch runbook**, and access-revocation processes — plus the capstone **"Build a Secure AI Agent"** exercise and a **board-ready executive readout**. This challenge integrates the deliverables from 01–03 into a single governance package.
+:::tip[🎯 What you'll build & be able to do]
+The **brakes** every autonomous system needs — human-approval gates, a **kill-switch runbook**, and access-revocation processes — plus the capstone **"Build a Secure AI Agent"** exercise and a **board-ready executive readout**.
+
+By the end you'll be able to:
+- **Design** approval gates that sit before irreversible or out-of-scope actions.
+- **Write** a kill-switch + access-revocation runbook you could execute under pressure.
+- **Integrate** the deliverables from Challenges 01–03 into one governance package.
+- **Brief** a board on agentic risk and the controls that make adoption safe.
+:::
+
+:::note[📌 TL;DR]
+- Every autonomous system needs **brakes**: approval gates, a kill switch, and revocation — designed before you need them.
+- This capstone stitches 01–03 into a single governance package and a one-page executive readout.
+- Deliverable: approval-gate design + kill-switch runbook + board readout + the completed "Build a Secure AI Agent" exercise.
 :::
 
 ---
@@ -106,6 +125,13 @@ Produce a **one-page** readout using the four takeaways. This is what you actual
 </details>
 
 ---
+
+:::note[🧪 Knowledge check]
+Before you assemble the readout, make sure you can answer:
+1. What is the difference between an **approval gate** and a **kill switch** — and when do you need each?
+2. What must a kill-switch runbook contain to be executable *under pressure* (who, what, how, verification)?
+3. How would you explain to a board that these brakes **enable** adoption rather than block it?
+:::
 
 ## 📦 Deliverable
 

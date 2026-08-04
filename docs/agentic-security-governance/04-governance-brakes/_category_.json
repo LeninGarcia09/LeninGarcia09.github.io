@@ -1,4 +1,8 @@
 {
   "label": "Governance, Brakes & Executive Readout",
-  "position": 4
+  "position": 4,
+  "link": {
+    "type": "doc",
+    "id": "agentic-security-governance/governance-brakes/challenge-04"
+  }
 }

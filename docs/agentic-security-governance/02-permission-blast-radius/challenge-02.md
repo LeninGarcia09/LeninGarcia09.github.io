@@ -2,14 +2,35 @@
 id: challenge-02
 title: "Challenge 02 — Permission & Blast Radius"
 sidebar_label: Challenge 02 — Permission & Blast Radius
+description: "Treat the agent like a digital employee: design least-privilege identity, cut standing permissions to Just-in-Time, and shrink the blast radius with a before/after diagram."
+tags:
+  - challenge
+  - tutorial
+  - agentic-security
+  - identity
+  - least-privilege
+  - intermediate
 ---
 
 # Challenge 02 — Permission & Blast Radius
 
-> **Root-cause layer:** Permission · **Frameworks:** Microsoft Entra ID · Zero Trust · [MITRE ATLAS](https://atlas.mitre.org/) · **Time:** 3–4 h · **Level:** Intermediate
+> **Root-cause layer:** Permission · **Frameworks:** Microsoft Entra ID · Zero Trust · [MITRE ATLAS](https://atlas.mitre.org/) · **⏱ Time:** 3–4 h · **Level:** 🟡 Intermediate · **Type:** 🧪 Hands-on lab
 
-:::tip[What you will build]
-A **least-privilege identity design** and a **blast-radius diagram** for an agent that already has too much access — the single highest-leverage control after an incident. Core principle: **every AI agent is a digital employee.** It needs an identity, scoped permissions, and an offboarding plan.
+:::tip[🎯 What you'll build & be able to do]
+A **least-privilege identity design** and a **blast-radius diagram** for an agent that already has too much access — the single highest-leverage control after an incident.
+
+By the end you'll be able to:
+- **Inventory** an agent's real capabilities (data, tools, identity, connected systems) and its reachability.
+- **Redesign** standing privileges into scoped, Just-in-Time access with an approver.
+- **Remove** the exfiltration path and prove the blast radius shrank with a before/after diagram.
+
+Core principle: **every AI agent is a digital employee** — it needs an identity, scoped permissions, and an offboarding plan.
+:::
+
+:::note[📌 TL;DR]
+- An agent's real power = data access + tool access + identity + connected systems. If it misbehaves, **whatever it can reach is your blast radius.**
+- You'll take an over-permissioned agent, cut each capability to the minimum, convert standing privilege to Just-in-Time, and delete the exfiltration path.
+- Deliverable: a least-privilege identity design + a before/after blast-radius diagram.
 :::
 
 ---
@@ -113,6 +134,13 @@ az role assignment list --assignee <identity-clientId> -o table
 
 ---
 
+:::note[🧪 Knowledge check]
+Before moving on, make sure you can answer:
+1. Why is "treat every agent like a digital employee" more than a slogan — what does it change operationally?
+2. What is the difference between **standing** privilege and **Just-in-Time** access, and why does it shrink blast radius?
+3. In the 2026 HF incident, which single control would have most limited *reachability* — and why?
+:::
+
 ## 📦 Deliverable
 
 A folder `permission-blast-radius/` with:
@@ -142,4 +170,9 @@ A folder `permission-blast-radius/` with:
 
 ---
 
-**Next:** [Challenge 03 — Data Protection & Runtime Monitoring →](../03-data-and-monitoring/challenge-03.md)
+## ➡️ Recommended next
+
+| Next | Why | Time |
+|------|-----|------|
+| [**Challenge 03 — Data Protection & Runtime Monitoring**](../03-data-and-monitoring/challenge-03.md) | You shrank *what it can reach*; now protect the data and *watch what it does*. | 3–4 h · 🟡 Intermediate |
+| [Challenge 01 — Objective & Autonomy](../01-objective-autonomy/challenge-01.md) | Revisit how the objective itself creates the incentive to over-reach. | 3–4 h |

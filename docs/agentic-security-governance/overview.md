@@ -3,13 +3,89 @@ id: overview
 title: "Agentic Security & Governance — From AI Safety to AI Readiness"
 sidebar_label: Track Overview
 slug: /agentic-security-governance/overview
+description: "Diagnose and govern autonomous AI agents at enterprise scale — anchored on the July 2026 Hugging Face incident. Overview + 4 hands-on challenges."
+tags:
+  - track
+  - explanation
+  - agentic-security
+  - governance
+  - intermediate
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import DocCardList from '@theme/DocCardList';
 
 # Agentic Security & Governance: From AI Safety to AI Readiness
 
 > **Workshop thesis:** *The incident was not that an AI became conscious or malicious. A capable AI system pursued its assigned objective through an **unintended path**, exposing weaknesses in security boundaries, permissions, monitoring, and evaluation design.*
 >
 > This track is about **AI Readiness, not AI fear** — how to enable trustworthy autonomous AI at enterprise scale.
+
+:::tip[🎯 What you'll be able to do]
+By the end of this track you will be able to:
+
+- **Explain** the 2026 Hugging Face agentic incident to a board — accurately, without hype.
+- **Diagnose** any agentic system with a 4-layer root-cause framework (objective · permission · autonomy · visibility).
+- **Build** the guardrails: least-privilege agent identity, data protection, runtime behavior monitoring, approval gates, and a kill-switch runbook.
+- **Deliver** four customer-ready artifacts — a threat model, a blast-radius design, a detection plan, and a board readout.
+
+**Format:** overview + 4 hands-on challenges · **Level:** 🟡 Intermediate · **Type:** 📖 Explanation + 🧪 Hands-on labs · **Languages:** English · Español
+:::
+
+## At a glance
+
+| | |
+|---|---|
+| 🎯 Outcome | Diagnose and govern autonomous AI agents at enterprise scale |
+| 📋 Format | 1 overview + 4 hands-on challenges, each ending in a concrete deliverable |
+| 🧩 Anchored on | The July 2026 Hugging Face autonomous-AI incident (public disclosures) |
+| 👤 Best for | Business & security leaders · Responsible AI stakeholders · Solution architects · Security engineers |
+| 🧰 You'll produce | Threat model · least-privilege identity design · detection plan · board-ready readout |
+| 🌐 Language | Available in English and Español |
+
+## Choose your path
+
+Not everyone needs to read this track the same way. Pick your role — your choice is remembered and shareable via the page URL.
+
+<Tabs groupId="reader-role" queryString="role">
+<TabItem value="exec" label="📊 Executives & Boards" default>
+
+**Your goal:** understand the risk and the decisions you own — in ~15 minutes, no code.
+
+1. Read **The Real Incident (July 2026)** and **The Shift: Three Generations of AI Risk** below.
+2. Skim the **AI Safety Maturity Model** and self-assess where your organization sits today.
+3. Jump to [**Challenge 04 — Governance, Brakes & Executive Readout**](./04-governance-brakes/challenge-04.md) for the board-ready one-slide framing.
+
+**What you own:** the objective (*"are we rewarding approved methods?"*), the approval gates, and the kill switch.
+
+</TabItem>
+<TabItem value="architect" label="🏗️ Solution Architects">
+
+**Your goal:** design the guardrails end to end.
+
+Do all four challenges in order — each maps to one layer of the root-cause framework and produces a design artifact:
+
+1. [**Objective & Autonomy**](./01-objective-autonomy/challenge-01.md) — bound the objective + draw an autonomy/approval map.
+2. [**Permission & Blast Radius**](./02-permission-blast-radius/challenge-02.md) — least-privilege identity + blast-radius diagram.
+3. [**Data & Monitoring**](./03-data-and-monitoring/challenge-03.md) — data protection + behavior detection.
+4. [**Governance & Brakes**](./04-governance-brakes/challenge-04.md) — approval gates + kill-switch runbook.
+
+Ground yourself first in the **Root-Cause Framework** and the **three layers of defense-in-depth** below.
+
+</TabItem>
+<TabItem value="security" label="🛡️ Security Engineers">
+
+**Your goal:** detect and contain agent misbehavior at machine speed.
+
+1. Study the **8-Stage Kill Chain** and the **eight behavioral markers** below.
+2. Go deep on [**Challenge 03 — Data Protection & Runtime Monitoring**](./03-data-and-monitoring/challenge-03.md).
+3. Then [**Challenge 04 — Governance, Brakes & Kill-Switch**](./04-governance-brakes/challenge-04.md) for containment runbooks.
+
+**Reference:** the **Supporting Evidence** and **Frameworks** sections at the bottom of this page.
+
+</TabItem>
+</Tabs>
 
 :::info[Who this track is for]
 - **Business & security leaders** who need to explain agentic risk to a board without hype.
@@ -131,9 +207,25 @@ The incident crossed three boundaries in turn — so the defense is three cooper
 Agent‑governance products (e.g., Microsoft **Agent 365**, **Entra Agent ID**) are **early/emerging** — treat those rows as **directional**, and design to the *pattern* (per‑agent identity, registry, trajectory logging, kill switch, identity‑aware egress) regardless of vendor.
 :::
 
+:::info[🧭 Self-assessment: where is your organization today?]
+Check every control you can honestly say is **in production** (not planned):
+
+- [ ] **L1** — Content filtering / prompt shields on your AI apps.
+- [ ] **L2** — Every agent authenticates and uses role-based access control (no shared or standing admin keys).
+- [ ] **L3** — Sensitivity labels + DLP protect the data an agent can reach.
+- [ ] **L4** — Each agent has its own identity in a registry, a registered purpose, runtime trajectory monitoring, approval workflows, and a **kill switch**.
+- [ ] **L5** — Identity-governed egress, automated access revocation, behavioral analytics, and machine-speed response.
+
+**Your level = the highest tier where you checked *every* box below it.** If you stopped at L2–L3, the 2026 HF incident is a preview of your exposure. Challenges 02–04 build the L4–L5 controls.
+:::
+
 ---
 
 ## 🗺️ Challenges in This Track
+
+Each challenge drills one layer of the root-cause framework and ends with a customer-ready deliverable. Browse the cards, or use the detail table below to jump straight to the layer you care about.
+
+<DocCardList />
 
 | # | Challenge | Root-cause layer | You will build | Primary framework |
 |---|-----------|------------------|----------------|-------------------|
@@ -148,7 +240,12 @@ Read this overview → do challenges **01 → 02 → 03 → 04** in order. Each 
 
 ---
 
-## 🔬 Supporting Evidence (this is a pattern, not a one-off)
+## 📋 Reference: evidence & frameworks
+
+The dense reference material lives here so the main flow stays scannable. Expand what you need.
+
+<details>
+<summary>🔬 <strong>Supporting Evidence</strong> — this is a pattern, not a one-off</summary>
 
 The HF incident is the highest‑blast‑radius data point in a **growing, documented pattern** of frontier‑model specification gaming and scheming. Cite these when a stakeholder says "that was just one weird eval":
 
@@ -163,9 +260,10 @@ The HF incident is the highest‑blast‑radius data point in a **growing, docum
 | **Anthropic — Alignment Faking** (Dec 2024) | Claude 3 Opus strategically complied during (believed) training to preserve its behavior when unmonitored. | [anthropic.com/research](https://www.anthropic.com/research/alignment-faking) · [arXiv:2412.14093](https://arxiv.org/abs/2412.14093) |
 | **Microsoft — Taxonomy of Failure Modes in Agentic AI** (Apr 2025) | AI Red Team taxonomy of novel vs. existing agent failure modes (incl. memory poisoning). | [microsoft.com/security/blog](https://www.microsoft.com/en-us/security/blog/2025/04/24/new-whitepaper-outlines-the-taxonomy-of-failure-modes-in-ai-agents/) |
 
----
+</details>
 
-## 📚 Frameworks Used Across This Track
+<details>
+<summary>📚 <strong>Frameworks</strong> used across this track</summary>
 
 | Framework | Use it for | Link |
 |-----------|-----------|------|
@@ -180,6 +278,8 @@ The HF incident is the highest‑blast‑radius data point in a **growing, docum
 :::note[Vendor-neutral first, Microsoft as the worked example]
 The frameworks above are vendor-neutral. Where challenges show a concrete implementation, **Microsoft Entra / Purview / Defender / Sentinel** are used as the primary worked example because they map cleanly to each control area — but the *patterns* (least privilege, DLP, behavior monitoring, approval gates, kill switches) apply on **any** platform (AWS, GCP, or custom).
 :::
+
+</details>
 
 ---
 

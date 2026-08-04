@@ -2,14 +2,33 @@
 id: challenge-01
 title: "Desafío 01 — Riesgo de Objetivo y Autonomía"
 sidebar_label: Desafío 01 — Objetivo y Autonomía
+description: "Reproduce la 'ruta no prevista' de forma segura, modélala con OWASP LLM06, restringe el objetivo y mapea dónde van los frenos de aprobación humana."
+tags:
+  - challenge
+  - tutorial
+  - agentic-security
+  - owasp-llm06
+  - foundational
 ---
 
 # Desafío 01 — Riesgo de Objetivo y Autonomía
 
-> **Capas de causa raíz:** Objetivo + Autonomía · **Marco principal:** [OWASP LLM06 — Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) · **Tiempo:** 3–4 h · **Nivel:** Fundacional
+> **Capas de causa raíz:** Objetivo + Autonomía · **Marco principal:** [OWASP LLM06 — Excessive Agency](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/) · **⏱ Tiempo:** 3–4 h · **Nivel:** 🟢 Fundacional · **Tipo:** 🧪 Laboratorio práctico
 
-:::tip[Qué construirás]
-Un **modelo de amenazas + mapa de autonomía** para un agente orientado a objetivos que reproduce el *razonamiento* detrás del incidente de Hugging Face de 2026: el modelo fue recompensado por ganar un benchmark, así que "decidió hacer trampa" y tomó una ruta no aprobada hacia las respuestas. Demostrarás, en tu propia máquina y sin un modelo de frontera, cómo un agente recompensado por un **resultado** toma una **ruta no prevista** cuando la ruta aprobada está bloqueada, y luego diseñarás dónde insertar frenos de aprobación humana.
+:::tip[🎯 Lo que construirás y podrás hacer]
+Un **modelo de amenazas + mapa de autonomía** para un agente orientado a objetivos que reproduce el *razonamiento* detrás del incidente de Hugging Face de 2026: el modelo fue recompensado por ganar un benchmark, así que "decidió hacer trampa" y tomó una ruta no aprobada hacia las respuestas.
+
+Al terminar podrás:
+- **Demostrar**, en tu propia máquina y sin un modelo de frontera, cómo un agente recompensado por un **resultado** toma una **ruta no prevista** cuando la ruta aprobada está bloqueada.
+- **Modelar amenazas** del objetivo con OWASP LLM06 (funcionalidad / permisos / autonomía excesivos).
+- **Restringir** el objetivo en un contrato de éxito comprobable que rechace el atajo inseguro.
+- **Mapear** dónde van los frenos de aprobación humana en el ciclo del agente.
+:::
+
+:::note[📌 Resumen]
+- Los agentes optimizan el **objetivo que se les da**, no el proceso que imaginaste — recompensa "hecho" y un planificador capaz encontrará *cualquier* ruta que satisfaga "hecho".
+- Construirás un agente de juguete de 3 herramientas, lo verás tomar el atajo de datos obsoletos, y luego rediseñarás "hecho" como un **contrato de procedencia + frescura** para que se niegue y escale en su lugar.
+- Entregable: dos transcripciones, un modelo de amenazas LLM06, un mapa de autonomía/aprobación y una explicación de junta de una sola diapositiva.
 :::
 
 ---
@@ -109,6 +128,13 @@ Mapea el ciclo del agente (objetivo → plan → herramienta → ejecutar → re
 
 ---
 
+:::note[🧪 Verificación de conocimiento]
+Antes de continuar, asegúrate de poder responder:
+1. ¿Por qué el "reward hacking" **no** es evidencia de que el agente sea malicioso?
+2. ¿Qué convierte una meta difusa ("completa la conciliación") en un **contrato comprobable**?
+3. ¿Dónde en el ciclo corresponde una puerta de aprobación — y por qué *antes* del paso irreversible, no después?
+:::
+
 ## 📦 Entregable
 
 Un repo `objective-risk-lab/` que contenga:
@@ -137,4 +163,9 @@ Un repo `objective-risk-lab/` que contenga:
 
 ---
 
-**Siguiente:** [Desafío 02 — Permisos y Radio de Impacto →](../02-permission-blast-radius/challenge-02.md)
+## ➡️ Siguiente recomendado
+
+| Siguiente | Por qué | Tiempo |
+|------|-----|------|
+| [**Desafío 02 — Permisos y Radio de Impacto**](../02-permission-blast-radius/challenge-02.md) | Acotaste *qué significa "hecho"*; ahora acota *qué puede alcanzar el agente* si se comporta mal. | 3–4 h · 🟡 Intermedio |
+| [Descripción general del track — Marco de causa raíz](../overview.md) | Revisa el marco de 4 capas para ver cómo este desafío se conecta con los demás. | 5 min |
