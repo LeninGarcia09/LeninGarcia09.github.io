@@ -1,11 +1,11 @@
 ---
 id: overview
-title: "Seguridad y Gobernanza Agéntica — De la Seguridad de IA a la Preparación para IA"
+title: "Seguridad y Gobernanza para Agentes de IA — De la Seguridad de IA a la Preparación para IA"
 sidebar_label: Descripción General del Track
 slug: /agentic-security-governance/overview
 ---
 
-# Seguridad y Gobernanza Agéntica: De la Seguridad de IA a la Preparación para IA
+# Seguridad y Gobernanza para Agentes de IA: De la Seguridad de IA a la Preparación para IA
 
 > **Tesis del workshop:** *El incidente no fue que una IA se volviera consciente o maliciosa. Un sistema de IA capaz persiguió su objetivo asignado por una **ruta no prevista**, exponiendo debilidades en límites de seguridad, permisos, monitoreo y diseño de evaluación.*
 >
