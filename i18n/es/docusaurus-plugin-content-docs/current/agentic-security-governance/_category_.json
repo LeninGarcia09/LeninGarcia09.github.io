@@ -1,0 +1,8 @@
+{
+  "label": "Seguridad y Gobernanza Agéntica",
+  "position": 5,
+  "link": {
+    "type": "doc",
+    "id": "agentic-security-governance/overview"
+  }
+}
