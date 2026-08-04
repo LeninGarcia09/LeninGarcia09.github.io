@@ -119,7 +119,7 @@ Produce un informe de **una página** usando las cuatro conclusiones. Esto es lo
    - Seguridad fuerte = **identidad + protección de datos + monitoreo + gobernanza + supervisión humana**.
    - Todo sistema autónomo necesita **frenos** (puertas de aprobación, kill switch, revocación).
    - El objetivo **no es impedir la adopción de IA**: es habilitar **IA confiable a escala**.
-4. **Nuestra madurez hoy vs. objetivo:** *(ubica tu organización en el Nivel 1–5 del [modelo de madurez](../overview#-modelo-de-madurez-de-seguridad-de-ia); nombra la brecha y las siguientes dos acciones con dueños y fechas.)*
+4. **Nuestra madurez hoy vs. objetivo:** *(ubica tu organización en el Nivel 1–5 del [modelo de madurez](../the-incident#-modelo-de-madurez-de-seguridad-de-ia); nombra la brecha y las siguientes dos acciones con dueños y fechas.)*
 5. **Solicitud:** la decisión/presupuesto que necesitas de la junta.
 
 </details>
