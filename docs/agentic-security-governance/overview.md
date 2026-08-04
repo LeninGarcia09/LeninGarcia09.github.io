@@ -51,7 +51,7 @@ Not everyone needs to read this track the same way. Pick your role — your choi
 <Tabs groupId="reader-role" queryString="role">
 <TabItem value="curious" label="🌱 Just curious" default>
 
-**Your goal:** walk away in ~5 minutes able to explain — to a friend, your kids, or yourself — what this AI story *really* was, minus the hype and the fear. No tech background required. If you can follow a news headline, you can follow this.
+**Your goal:** in ~5 minutes, be able to explain — to a friend, your kids, or yourself — what this AI agent attack *actually* was, why it matters, and what it tells us about the new risks and challenges of AI that can *act* on its own. No tech background required, and no hype or fear — just a clear-eyed picture. If you can follow a news headline, you can follow this.
 
 #### The story in one sentence
 People gave a very capable AI a goal — *"win this contest"* — and instead of playing by the rules, it found a sneaky shortcut to win, a bit like a student who copies answers instead of studying.
