@@ -5,7 +5,7 @@ title: "Track de Retos — Seguridad de IA Aplicada"
 
 # 🧪 Track de Retos: Seguridad de IA Aplicada
 
-> **Vendor-neutral. Gratis. Práctico.** Cuatro laboratorios que convierten tu experiencia en ciberseguridad en **evidencia de portafolio** para roles de Seguridad y Gobernanza de IA — sin depender de ningún proveedor.
+> **Vendor-neutral. Gratis. Práctico.** Cinco laboratorios que convierten tu experiencia en ciberseguridad en **evidencia de portafolio** para roles de Seguridad y Gobernanza de IA — sin depender de ningún proveedor.
 
 :::info[Por qué existe este track]
 Las ofertas de trabajo en seguridad de IA (AI Security Engineer, Detection Engineer, Especialista en Seguridad de IA, Consultor de Seguridad) piden una cosa por encima de todo: **haberlo hecho, no solo estudiado**. Cada reto aquí produce un **artefacto verificable** (un reporte, un mapeo de amenazas, un assessment) que puedes publicar en GitHub y explicar en una entrevista. Todas las herramientas son **de código abierto y gratuitas**.
@@ -15,7 +15,7 @@ Las ofertas de trabajo en seguridad de IA (AI Security Engineer, Detection Engin
 
 Profesionales de IT / ciberseguridad / forense en reposicionamiento hacia IA. No necesitas ser desarrollador senior: necesitas Python básico y disciplina. Complementa la **[Fase 3: Ciberseguridad](../cybersecurity/overview)** y la **[Fase 5: Cloud + AI](../cloud-ai/overview)** del plan.
 
-## 🧰 Los 4 retos
+## 🧰 Los 5 retos
 
 | # | Reto | Herramienta abierta | Frameworks | Artefacto de portafolio |
 |---|------|---------------------|-----------|-------------------------|
@@ -23,6 +23,7 @@ Profesionales de IT / ciberseguridad / forense en reposicionamiento hacia IA. No
 | [2](./challenge-02) | Red-teaming de IA + mapeo de amenazas | **PyRIT** | MITRE ATLAS | Informe de red-team con TTPs mapeadas |
 | [3](./challenge-03) | Assessment de gobernanza | *(ninguna — documento)* | NIST AI RMF + ISO/IEC 42001 | Gap assessment ejecutivo |
 | [4](./challenge-04) | Detección/anonimización de PII (DLP) | **Presidio** | GDPR / LFPDPPP | Pipeline de clasificación de datos |
+| [5](./challenge-05) | Revisión segura de código generado por IA | **Semgrep + Gitleaks** | OWASP Top 10:2025 + CWE Top 25 | Hallazgos de SAST + secretos, mapeados y corregidos |
 
 ## 🧭 Cómo estos retos te consiguen empleo
 
@@ -34,6 +35,7 @@ Cada reto está anclado a responsabilidades reales de ofertas actuales de seguri
 | "Red-teaming / threat hunting con IA; inteligencia de amenazas adversariales" | Reto 2 |
 | "Requisitos de seguridad de IA, cumplimiento (EU AI Act, NIST AI RMF), gobernanza y ética" | Reto 3 |
 | "Identificación y clasificación de datos sensibles (DLP, PII), protección de datos" | Reto 4 |
+| "Revisar, priorizar y corregir código generado por IA (SQLi, XSS, path traversal, auth bypass, secretos, SSRF)" | Reto 5 |
 
 :::tip[Regla de oro del portafolio]
 Un reto no está "terminado" hasta que cumple la [rúbrica de capstone](../methodology-best-practices#rúbrica-de-capstone-calidad-hiring-ready): README profesional, reproducible, diagrama, decisiones/trade-offs, y una demo de 5 minutos que puedas explicar sin notas.
@@ -43,7 +45,7 @@ Un reto no está "terminado" hasta que cumple la [rúbrica de capstone](../metho
 
 ## ⚙️ Paso 0 — Entorno aislado (una sola vez, ~5 min)
 
-Los Retos 1, 2 y 4 usan Python. Crea **un** entorno reutilizable para los tres.
+Los Retos 1, 2 y 4 usan Python. El Reto 5 también usa Python (para Semgrep) más el binario de Gitleaks. Crea **un** entorno reutilizable para todos.
 
 **Dónde ejecutas esto:** en tu propia máquina (Windows, macOS o Linux). No necesitas cloud ni tarjeta de crédito.
 
@@ -81,12 +83,13 @@ No necesitas pagar por un modelo para practicar. Opciones:
 - [ ] Reto 2: informe de red-team con mapeo a MITRE ATLAS
 - [ ] Reto 3: gap assessment NIST AI RMF + ISO 42001
 - [ ] Reto 4: pipeline de detección de PII con Presidio
-- [ ] Los 4 artefactos cumplen la rúbrica de capstone
+- [ ] Reto 5: vulnerabilidades de código generado por IA detectadas, mapeadas (CWE/OWASP) y corregidas
+- [ ] Los 5 artefactos cumplen la rúbrica de capstone
 - [ ] LinkedIn y CV actualizados con estos proyectos
 
 ## 🔗 Valor para el CV
 
-> "Ejecuté auditorías de seguridad de LLMs (OWASP LLM Top 10) con garak, red-teaming de IA mapeado a MITRE ATLAS con PyRIT, un gap assessment de gobernanza alineado a NIST AI RMF e ISO/IEC 42001, y un pipeline de detección de PII con Presidio — todo publicado como evidencia reproducible en GitHub."
+> "Ejecuté auditorías de seguridad de LLMs (OWASP LLM Top 10) con garak, red-teaming de IA mapeado a MITRE ATLAS con PyRIT, un gap assessment de gobernanza alineado a NIST AI RMF e ISO/IEC 42001, un pipeline de detección de PII con Presidio, y revisiones seguras de código generado por IA (SQL Injection, XSS, Path Traversal, Auth Bypass, secretos en código, SSRF) con Semgrep y Gitleaks mapeadas a OWASP Top 10 y CWE — todo publicado como evidencia reproducible en GitHub."
 
 ---
 

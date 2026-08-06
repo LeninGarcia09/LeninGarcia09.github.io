@@ -82,11 +82,4 @@ Nunca proceses PII real de personas sin base legal y consentimiento. Para este r
 
 ---
 
-**Anterior:** [← Reto 3](./challenge-03) · **Volver al** [inicio del track](./overview)
-
-## 🎓 Terminaste el track — ¿ahora qué?
-
-1. Publica los **4 repos** en tu GitHub y fíjalos (pin) en tu perfil.
-2. Escribe **1 post de LinkedIn por reto** explicando qué aprendiste (esto genera visibilidad con reclutadores).
-3. Añade la [línea de CV](./overview#-valor-para-el-cv) a tu currículum.
-4. Prepara una **demo de 5 minutos** de tu favorito para entrevistas.
+**Anterior:** [← Reto 3](./challenge-03) · **Siguiente:** [Reto 5 — Revisión Segura de Código Generado por IA →](./challenge-05)

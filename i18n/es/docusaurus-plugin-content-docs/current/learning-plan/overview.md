@@ -70,7 +70,7 @@ Esta filosofía se inspira en el modelo **70-20-10** (Center for Creative Leader
 | [Fase 6](./career-launch/overview) | 29–36 | Lanzamiento de Carrera |
 
 :::tip[🧪 Retos prácticos de Seguridad de IA (vendor-neutral)]
-En paralelo a la Fase 3, construye evidencia real con el **[Track de Retos: Seguridad de IA Aplicada](./challenges-ai-security/overview)** — 4 laboratorios prácticos con herramientas 100% gratuitas y abiertas (Garak, PyRIT, Presidio) alineados a OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF e ISO 42001. Cada reto produce un artefacto para tu portafolio.
+En paralelo a la Fase 3, construye evidencia real con el **[Track de Retos: Seguridad de IA Aplicada](./challenges-ai-security/overview)** — 5 laboratorios prácticos con herramientas 100% gratuitas y abiertas (Garak, PyRIT, Presidio, Semgrep + Gitleaks) alineados a OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF, ISO 42001 y OWASP Top 10:2025. Cada reto produce un artefacto para tu portafolio — incluyendo revisión segura de código generado por IA (SQL Injection, XSS, Path Traversal, Auth Bypass, secretos en código, SSRF).
 :::
 
 ## 🎓 Certificaciones — Escalera Vendor-Neutral (gratis primero)

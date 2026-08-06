@@ -110,9 +110,17 @@ Base del [Track de Retos: Seguridad de IA Aplicada](./challenges-ai-security/ove
 | garak | Escáner de vulnerabilidades de LLMs | Gratis (Apache-2.0) | [github.com/NVIDIA/garak](https://github.com/NVIDIA/garak) |
 | PyRIT | Toolkit de red-teaming de IA generativa | Gratis (MIT) | [github.com/Azure/PyRIT](https://github.com/Azure/PyRIT) |
 | Presidio | Detección/anonimización de PII (DLP) | Gratis (MIT) | [github.com/data-privacy-stack/presidio](https://github.com/data-privacy-stack/presidio) |
+| OWASP Top 10:2025 | Riesgos de seguridad en apps web (SQLi, XSS, SSRF, auth, etc.) | Gratis | [owasp.org/Top10/2025](https://owasp.org/Top10/2025/) |
+| MITRE CWE Top 25 | Debilidades de software más peligrosas (actualizado anualmente) | Gratis | [cwe.mitre.org/top25](https://cwe.mitre.org/top25/) |
+| Semgrep OSS | Análisis estático de código (SAST) para revisar código generado por IA | Gratis (LGPL 2.1) | [github.com/semgrep/semgrep](https://github.com/semgrep/semgrep) |
+| Gitleaks | Detección de secretos (credenciales/API keys hardcodeadas) | Gratis (MIT) | [github.com/gitleaks/gitleaks](https://github.com/gitleaks/gitleaks) |
 
 :::note[Cambios de ubicación ya verificados (2026-07)]
 `garak` se movió de `leondz/garak` a **`NVIDIA/garak`**. **Presidio** salió de la organización de Microsoft a **`data-privacy-stack/presidio`** (docs en [data-privacy-stack.github.io/presidio](https://data-privacy-stack.github.io/presidio/)). Usa siempre las URLs nuevas.
+:::
+
+:::note[Cambio de edición del OWASP Top 10]
+OWASP publicó la edición **Top 10:2025**, que sustituye a la edición 2021 (`owasp.org/Top10/` ahora redirige a ella). Los números de categoría cambiaron — por ejemplo, SSRF ahora está incluido en **A01:2025 Broken Access Control** en lugar de ser categoría propia como en 2021. Cita siempre la edición vigente y verifica los números de categoría antes de una entrevista o examen, ya que OWASP los renumera periódicamente.
 :::
 
 :::tip[Para quien está entre trabajos]

@@ -12,7 +12,7 @@ This phase uses Microsoft (Sentinel, Entra, SC-900) as **one** concrete example,
 :::
 
 :::tip[🧪 Apply what you learn: AI Security Challenge Track]
-The 4 labs in the **[Challenge Track: Applied AI Security](../challenges-ai-security/overview)** (Garak, PyRIT, Presidio; OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF, ISO 42001) turn this phase into **portfolio evidence** — exactly what roles such as AI Security Engineer, Detection Engineer, and AI Security Specialist ask for.
+The 5 labs in the **[Challenge Track: Applied AI Security](../challenges-ai-security/overview)** (Garak, PyRIT, Presidio, Semgrep + Gitleaks; OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF, ISO 42001, OWASP Top 10:2025) turn this phase into **portfolio evidence** — exactly what roles such as AI Security Engineer, Detection Engineer, and AI Security Specialist ask for.
 :::
 
 ## 🎯 Expected Outcomes
@@ -107,6 +107,23 @@ Model threats for an enterprise AI chatbot:
 - Document with proposed mitigations
 - Mapping to MITRE ATLAS
 - GitHub repository
+
+### 🔎 Secure code review for AI-generated code and agents
+
+AI coding assistants (Copilot, ChatGPT, Claude) can reproduce classic, well-documented vulnerability classes because they were trained on code that contains them. Reviewing AI-generated code for these is now a core AppSec skill — the ability to be the human control gate, not just the prompt author.
+
+| Vulnerability | CWE | OWASP Top 10:2025 category | Free detection tool |
+|----------------|-----|------------------------------|------------------------|
+| SQL Injection | [CWE-89](https://cwe.mitre.org/data/definitions/89.html) | A05:2025 – Injection | [Semgrep](https://github.com/semgrep/semgrep) (`p/owasp-top-ten`) |
+| Cross-Site Scripting (XSS) | [CWE-79](https://cwe.mitre.org/data/definitions/79.html) | A05:2025 – Injection | Semgrep (`p/owasp-top-ten`) |
+| Path Traversal | [CWE-22](https://cwe.mitre.org/data/definitions/22.html) | A01:2025 – Broken Access Control | Semgrep (`p/security-audit`) |
+| Auth Bypass | [CWE-287](https://cwe.mitre.org/data/definitions/287.html) / [CWE-306](https://cwe.mitre.org/data/definitions/306.html) | A07:2025 – Authentication Failures | Semgrep (`p/security-audit`) + [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/) checklist |
+| Secrets in Code | [CWE-798](https://cwe.mitre.org/data/definitions/798.html) | A02:2025 – Security Misconfiguration | [Gitleaks](https://github.com/gitleaks/gitleaks) |
+| SSRF | [CWE-918](https://cwe.mitre.org/data/definitions/918.html) | A01:2025 – Broken Access Control | Semgrep (`p/security-audit`) |
+
+> Also see [MITRE CWE Top 25 Most Dangerous Software Weaknesses](https://cwe.mitre.org/top25/) for the broader, annually-updated list these 6 classes come from. [GitHub CodeQL](https://codeql.github.com/) (free for public/open-source repos) and [Copilot Autofix](https://github.blog/2024-01-16-github-copilot-autofix/) are strong complementary/vendor options once you have budget or a GitHub Advanced Security license.
+
+**Practice this hands-on** in [Challenge 5 — Secure Code Review for AI-Generated Code](../challenges-ai-security/challenge-05), part of the parallel Challenge Track.
 
 ---
 
