@@ -71,9 +71,9 @@
     "message": "📚 Aprendizaje",
     "description": "The label of footer link with label=📚 Learning linking to /docs/resources/learning"
   },
-  "link.item.label.🛡️ AI Security Professional (9 meses)": {
+  "link.item.label.🛡️ AI Security Professional (9 months)": {
     "message": "🛡️ Profesional de Seguridad de IA (9 meses)",
-    "description": "The label of footer link with label=🛡️ AI Security Professional (9 meses) linking to /docs/learning-plan/overview"
+    "description": "The label of footer link with label=🛡️ AI Security Professional (9 months) linking to /docs/learning-plan/overview"
   },
   "link.item.label.🏗️ AI Solution Architect — Responsible AI (26 sem)": {
     "message": "🏗️ Arquitecto de Soluciones de IA — IA Responsable (26 sem)",

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 8
 title: "Metodología y Mejores Prácticas"
+pagination_label: "🧭 Metodología y Mejores Prácticas"
 ---
 
 # Metodología y Mejores Prácticas (Best-in-Class)

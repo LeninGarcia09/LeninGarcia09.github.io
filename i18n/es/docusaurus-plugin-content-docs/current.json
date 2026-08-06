@@ -171,45 +171,45 @@
     "message": "📚 Aprendizaje",
     "description": "The label for the doc item '📚 Learning' in sidebar 'resourcesSidebar', linking to the doc resources/learning"
   },
-  "sidebar.learningPlanSidebar.category.Fase 1: Fundamentos (Semanas 1-4)": {
+  "sidebar.learningPlanSidebar.category.Phase 1: Foundations (Weeks 1-4)": {
     "message": "Fase 1: Fundamentos (Semanas 1-4)",
-    "description": "The label for category 'Fase 1: Fundamentos (Semanas 1-4)' in sidebar 'learningPlanSidebar'"
+    "description": "The label for category 'Phase 1: Foundations (Weeks 1-4)' in sidebar 'learningPlanSidebar'"
   },
-  "sidebar.learningPlanSidebar.category.Fase 2: Datos & Automatización (Semanas 5-8)": {
+  "sidebar.learningPlanSidebar.category.Phase 2: Data & Automation (Weeks 5-8)": {
     "message": "Fase 2: Datos y Automatización (Semanas 5-8)",
-    "description": "The label for category 'Fase 2: Datos & Automatización (Semanas 5-8)' in sidebar 'learningPlanSidebar'"
+    "description": "The label for category 'Phase 2: Data & Automation (Weeks 5-8)' in sidebar 'learningPlanSidebar'"
   },
-  "sidebar.learningPlanSidebar.category.Fase 3: Ciberseguridad (Semanas 9-12)": {
+  "sidebar.learningPlanSidebar.category.Phase 3: Cybersecurity (Weeks 9-12)": {
     "message": "Fase 3: Ciberseguridad (Semanas 9-12)",
-    "description": "The label for category 'Fase 3: Ciberseguridad (Semanas 9-12)' in sidebar 'learningPlanSidebar'"
+    "description": "The label for category 'Phase 3: Cybersecurity (Weeks 9-12)' in sidebar 'learningPlanSidebar'"
   },
-  "sidebar.learningPlanSidebar.category.Fase 4: AI para Negocios (Semanas 13-20)": {
+  "sidebar.learningPlanSidebar.category.Phase 4: AI for Business (Weeks 13-20)": {
     "message": "Fase 4: IA para Negocios (Semanas 13-20)",
-    "description": "The label for category 'Fase 4: AI para Negocios (Semanas 13-20)' in sidebar 'learningPlanSidebar'"
+    "description": "The label for category 'Phase 4: AI for Business (Weeks 13-20)' in sidebar 'learningPlanSidebar'"
   },
-  "sidebar.learningPlanSidebar.category.Fase 5: Cloud + AI (Semanas 21-28)": {
+  "sidebar.learningPlanSidebar.category.Phase 5: Cloud + AI (Weeks 21-28)": {
     "message": "Fase 5: Cloud + IA (Semanas 21-28)",
-    "description": "The label for category 'Fase 5: Cloud + AI (Semanas 21-28)' in sidebar 'learningPlanSidebar'"
+    "description": "The label for category 'Phase 5: Cloud + AI (Weeks 21-28)' in sidebar 'learningPlanSidebar'"
   },
-  "sidebar.learningPlanSidebar.category.Fase 6: Lanzamiento (Semanas 29-36)": {
-    "message": "Fase 6: Lanzamiento (Semanas 29-36)",
-    "description": "The label for category 'Fase 6: Lanzamiento (Semanas 29-36)' in sidebar 'learningPlanSidebar'"
+  "sidebar.learningPlanSidebar.category.Phase 6: Career Launch (Weeks 29-36)": {
+    "message": "Fase 6: Lanzamiento Profesional (Semanas 29-36)",
+    "description": "The label for category 'Phase 6: Career Launch (Weeks 29-36)' in sidebar 'learningPlanSidebar'"
   },
-  "sidebar.learningPlanSidebar.category.🧪 Retos: Seguridad de IA Aplicada": {
+  "sidebar.learningPlanSidebar.category.🧪 Challenges: Applied AI Security": {
     "message": "🧪 Retos: Seguridad de IA Aplicada",
-    "description": "The label for category '🧪 Retos: Seguridad de IA Aplicada' in sidebar 'learningPlanSidebar'"
+    "description": "The label for category '🧪 Challenges: Applied AI Security' in sidebar 'learningPlanSidebar'"
   },
   "sidebar.learningPlanSidebar.doc.🛡️ AI Security Professional": {
     "message": "🛡️ AI Security Professional",
     "description": "The label for the doc item '🛡️ AI Security Professional' in sidebar 'learningPlanSidebar', linking to the doc learning-plan/overview"
   },
-  "sidebar.learningPlanSidebar.doc.✅ Fuentes y Verificación": {
+  "sidebar.learningPlanSidebar.doc.✅ Sources & Verification": {
     "message": "✅ Fuentes y Verificación",
-    "description": "The label for the doc item '✅ Fuentes y Verificación' in sidebar 'learningPlanSidebar', linking to the doc learning-plan/sources-and-verification"
+    "description": "The label for the doc item '✅ Sources & Verification' in sidebar 'learningPlanSidebar', linking to the doc learning-plan/sources-and-verification"
   },
-  "sidebar.learningPlanSidebar.doc.🧭 Metodología y Mejores Prácticas": {
+  "sidebar.learningPlanSidebar.doc.🧭 Methodology & Best Practices": {
     "message": "🧭 Metodología y Mejores Prácticas",
-    "description": "The label for the doc item '🧭 Metodología y Mejores Prácticas' in sidebar 'learningPlanSidebar', linking to the doc learning-plan/methodology-best-practices"
+    "description": "The label for the doc item '🧭 Methodology & Best Practices' in sidebar 'learningPlanSidebar', linking to the doc learning-plan/methodology-best-practices"
   },
   "sidebar.learningPlanV4Sidebar.category.Fase 1: Fundamentos + AI-103 (Sem 1-4)": {
     "message": "Fase 1: Fundamentos + AI-103 (Sem 1-4)",
