@@ -1,6 +1,7 @@
 ---
 sidebar_position: 7
 title: "Fuentes y Verificación"
+pagination_label: "✅ Fuentes y Verificación"
 ---
 
 # Fuentes y Verificación
