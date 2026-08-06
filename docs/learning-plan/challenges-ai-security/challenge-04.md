@@ -82,11 +82,4 @@ Never process real people's PII without legal basis and consent. For this challe
 
 ---
 
-**Previous:** [← Challenge 3](./challenge-03) · **Back to** [track home](./overview)
-
-## 🎓 You finished the track — now what?
-
-1. Publish the **4 repos** on your GitHub and pin them on your profile.
-2. Write **1 LinkedIn post per challenge** explaining what you learned (this creates recruiter visibility).
-3. Add the [resume line](./overview#-resume-value) to your CV.
-4. Prepare a **5-minute demo** of your favorite for interviews.
+**Previous:** [← Challenge 3](./challenge-03) · **Next:** [Challenge 5 — Secure Code Review for AI-Generated Code →](./challenge-05)

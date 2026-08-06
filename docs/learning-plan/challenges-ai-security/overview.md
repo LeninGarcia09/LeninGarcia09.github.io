@@ -5,7 +5,7 @@ title: "Challenge Track — Applied AI Security"
 
 # 🧪 Challenge Track: Applied AI Security
 
-> **Vendor-neutral. Free. Practical.** Four labs that turn your cybersecurity experience into **portfolio evidence** for AI Security and Governance roles — without depending on any vendor.
+> **Vendor-neutral. Free. Practical.** Five labs that turn your cybersecurity experience into **portfolio evidence** for AI Security and Governance roles — without depending on any vendor.
 
 :::info[Why this track exists]
 AI security job postings (AI Security Engineer, Detection Engineer, AI Security Specialist, Security Consultant) ask for one thing above all: **having done it, not only studied it**. Each challenge here produces a **verifiable artifact** (a report, a threat mapping, an assessment) that you can publish on GitHub and explain in an interview. All tools are **open source and free**.
@@ -15,7 +15,7 @@ AI security job postings (AI Security Engineer, Detection Engineer, AI Security 
 
 IT / cybersecurity / forensics professionals repositioning toward AI. You do not need to be a senior developer: you need basic Python and discipline. It complements **[Phase 3: Cybersecurity](../cybersecurity/overview)** and **[Phase 5: Cloud + AI](../cloud-ai/overview)** of the plan.
 
-## 🧰 The 4 challenges
+## 🧰 The 5 challenges
 
 | # | Challenge | Open tool | Frameworks | Portfolio artifact |
 |---|------|---------------------|-----------|-------------------------|
@@ -23,6 +23,7 @@ IT / cybersecurity / forensics professionals repositioning toward AI. You do not
 | [2](./challenge-02) | AI red-teaming + threat mapping | **PyRIT** | MITRE ATLAS | Red-team report with mapped TTPs |
 | [3](./challenge-03) | Governance assessment | *(none — document)* | NIST AI RMF + ISO/IEC 42001 | Executive gap assessment |
 | [4](./challenge-04) | PII detection/anonymization (DLP) | **Presidio** | GDPR / LFPDPPP | Data classification pipeline |
+| [5](./challenge-05) | Secure code review of AI-generated code | **Semgrep + Gitleaks** | OWASP Top 10:2025 + CWE Top 25 | SAST + secrets findings, mapped and fixed |
 
 ## 🧭 How these challenges help you get hired
 
@@ -34,6 +35,7 @@ Each challenge is anchored to real responsibilities in current AI security job d
 | "AI red-teaming / threat hunting; adversarial threat intelligence" | Challenge 2 |
 | "AI security requirements, compliance (EU AI Act, NIST AI RMF), governance and ethics" | Challenge 3 |
 | "Identification and classification of sensitive data (DLP, PII), data protection" | Challenge 4 |
+| "Review, triage, and remediate AI-generated code (SQLi, XSS, path traversal, auth bypass, secrets, SSRF)" | Challenge 5 |
 
 :::tip[Golden portfolio rule]
 A challenge is not "finished" until it meets the [capstone rubric](../methodology-best-practices#capstone-rubric-hiring-ready-quality): professional README, reproducible steps, diagram, decisions/trade-offs, and a 5-minute demo you can explain without notes.
@@ -43,7 +45,7 @@ A challenge is not "finished" until it meets the [capstone rubric](../methodolog
 
 ## ⚙️ Step 0 — Isolated environment (one time, ~5 min)
 
-Challenges 1, 2, and 4 use Python. Create **one** reusable environment for all three.
+Challenges 1, 2, and 4 use Python. Challenge 5 also uses Python (for Semgrep) plus the Gitleaks binary. Create **one** reusable environment for all of them.
 
 **Where to run this:** on your own machine (Windows, macOS, or Linux). You do not need cloud or a credit card.
 
@@ -81,12 +83,13 @@ You do not need to pay for a model to practice. Options:
 - [ ] Challenge 2: red-team report mapped to MITRE ATLAS
 - [ ] Challenge 3: NIST AI RMF + ISO 42001 gap assessment
 - [ ] Challenge 4: PII detection pipeline with Presidio
-- [ ] All 4 artifacts meet the capstone rubric
+- [ ] Challenge 5: AI-generated code vulnerabilities detected, mapped (CWE/OWASP), and fixed
+- [ ] All 5 artifacts meet the capstone rubric
 - [ ] LinkedIn and CV updated with these projects
 
 ## 🔗 Resume Value
 
-> "I executed LLM security audits (OWASP LLM Top 10) with garak, AI red-teaming mapped to MITRE ATLAS with PyRIT, a governance gap assessment aligned to NIST AI RMF and ISO/IEC 42001, and a PII detection pipeline with Presidio — all published as reproducible evidence on GitHub."
+> "I executed LLM security audits (OWASP LLM Top 10) with garak, AI red-teaming mapped to MITRE ATLAS with PyRIT, a governance gap assessment aligned to NIST AI RMF and ISO/IEC 42001, a PII detection pipeline with Presidio, and secure code reviews of AI-generated code (SQL Injection, XSS, Path Traversal, Auth Bypass, Secrets in Code, SSRF) with Semgrep and Gitleaks mapped to OWASP Top 10 and CWE — all published as reproducible evidence on GitHub."
 
 ---
 

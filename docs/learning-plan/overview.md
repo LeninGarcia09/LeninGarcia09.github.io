@@ -70,7 +70,7 @@ This philosophy is inspired by the **70-20-10** model (Center for Creative Leade
 | [Phase 6](./career-launch/overview) | 29–36 | Career Launch |
 
 :::tip[🧪 Practical AI Security Challenges (vendor-neutral)]
-In parallel with Phase 3, build real evidence with the **[Challenge Track: Applied AI Security](./challenges-ai-security/overview)** — 4 hands-on labs with 100% free and open tools (Garak, PyRIT, Presidio) aligned to OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF, and ISO 42001. Each challenge produces a portfolio artifact.
+In parallel with Phase 3, build real evidence with the **[Challenge Track: Applied AI Security](./challenges-ai-security/overview)** — 5 hands-on labs with 100% free and open tools (Garak, PyRIT, Presidio, Semgrep + Gitleaks) aligned to OWASP LLM Top 10, MITRE ATLAS, NIST AI RMF, ISO 42001, and OWASP Top 10:2025. Each challenge produces a portfolio artifact — including secure code review of AI-generated code (SQL Injection, XSS, Path Traversal, Auth Bypass, Secrets in Code, SSRF).
 :::
 
 ## 🎓 Certifications — Vendor-Neutral Ladder (free first)
