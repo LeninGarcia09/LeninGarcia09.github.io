@@ -127,12 +127,15 @@ export default function Home() {
           {/* ── Career Plans ────────────────────────────────────── */}
           <div className={styles.sectionHeader} style={{ marginTop: "2rem" }}>
             <span className={styles.sectionLabel}><Translate id="homepage.career.label">Career Roadmaps</Translate></span>
-            <h2 className={styles.sectionTitle}><Translate id="homepage.career.title">Two Development Plans</Translate></h2>
+            <h2 className={styles.sectionTitle}><Translate id="homepage.career.title">Choose Your Career Path</Translate></h2>
           </div>
           <p style={{ marginTop: "-1rem", marginBottom: "1.5rem", color: "var(--ifm-color-emphasis-700)", maxWidth: "720px" }}>
-            <Translate id="homepage.career.description">Choose the roadmap that fits your pace: the original 36-week plan or the execution-focused v4 26-week model.</Translate>
+            <Translate id="homepage.career.description">Start AI engineering with A, B, or C based on your experience, or explore the existing security and architecture plans.</Translate>
           </p>
           <div className={styles.heroCta} style={{ justifyContent: "flex-start", marginBottom: "2rem" }}>
+            <Link className="button button--primary button--lg" to="/docs/ai-engineering/overview">
+              <Translate id="homepage.career.aiEngineering">AI Engineering: A, B, C</Translate>
+            </Link>
             <Link className="button button--primary button--lg" to="/docs/learning-plan/overview">
               <Translate id="homepage.career.aiSecurityProfessional">🛡️ Open AI Security Professional (9 meses)</Translate>
             </Link>

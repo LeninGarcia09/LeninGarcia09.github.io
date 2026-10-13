@@ -1,4 +1,7 @@
 {
+  "link.item.label.AI Engineering: A, B, C": {
+    "message": "Ingeniería de IA: A, B, C"
+  },
   "link.title.Skill Tracks": {
     "message": "Rutas de Habilidades",
     "description": "The title of the footer links column with title=Skill Tracks in the footer"

@@ -2,6 +2,18 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
+  aiEngineeringSidebar: [
+    'ai-engineering/overview',
+    'ai-engineering/path-a',
+    'ai-engineering/path-b',
+    'ai-engineering/path-c',
+    'ai-engineering/credentials',
+    'ai-engineering/portfolio-career',
+    'ai-engineering/source-review',
+    'ai-engineering/epam-reality-check',
+    'ai-engineering/senior-delivery-bridge',
+    'ai-engineering/senior-resources',
+  ],
   foundrySkillSidebar: [
     { type: 'doc', id: 'azure-ai-foundry/overview', label: 'Track Overview' },
     { type: 'doc', id: 'azure-ai-foundry/prerequisites', label: 'Prerequisites & Setup' },
