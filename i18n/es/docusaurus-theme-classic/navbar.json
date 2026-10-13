@@ -1,4 +1,7 @@
 {
+  "item.label.AI Engineering: A, B, C": {
+    "message": "Ingeniería de IA: A, B, C"
+  },
   "title": {
     "message": "Responsible AI Architect",
     "description": "The title in the navbar"

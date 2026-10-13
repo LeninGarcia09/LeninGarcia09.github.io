@@ -150,10 +150,13 @@
     "message": "Rutas de Carrera"
   },
   "homepage.career.title": {
-    "message": "Dos Planes de Desarrollo"
+    "message": "Elige tu Ruta de Carrera"
   },
   "homepage.career.description": {
-    "message": "Elige la ruta que se ajuste a tu ritmo: el plan original de 36 semanas o el modelo v4 de 26 semanas enfocado en ejecución."
+    "message": "Empieza ingeniería de IA con A, B o C según tu experiencia, o explora los planes existentes de seguridad y arquitectura."
+  },
+  "homepage.career.aiEngineering": {
+    "message": "Ingeniería de IA: A, B, C"
   },
   "homepage.career.aiSecurityProfessional": {
     "message": "🛡️ Abrir AI Security Professional (9 meses)"
