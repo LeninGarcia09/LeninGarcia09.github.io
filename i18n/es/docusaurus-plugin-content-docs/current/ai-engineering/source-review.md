@@ -1,68 +1,63 @@
 ---
 sidebar_position: 7
-title: "Revisión de referencia y verificación"
+title: "Fuentes y Verificación"
 ---
 
-# Revisión de AI Engineering from Scratch
+# Cómo se utilizan las fuentes
 
-**Consultado el 13 de octubre de 2026:** [README](https://github.com/rohitg00/ai-engineering-from-scratch), [ROADMAP](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/ROADMAP.md) y [Career Practice](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/learning-paths/CAREER-PRACTICE.md). Es revisión curricular, **no auditoría de código ni verificación de cada lección**. Los enlaces siguen main, que cambia.
+**Fecha de revisión: 13 de octubre de 2026.** Sí, [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) informa el plan. Se revisaron [README](https://github.com/rohitg00/ai-engineering-from-scratch), [ROADMAP](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/ROADMAP.md) y [Career Practice](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/learning-paths/CAREER-PRACTICE.md), además del contenido seleccionado abajo.
 
-## Qué conservar
+Es **revisión curricular/de contenido, no auditoría de todo el código**. No se copian lecciones a estas páginas. Las actividades son nuestra secuencia original de proyecto pequeño con enlaces de atribución.
 
-README prioriza implementar, probar e inspeccionar y ofrece Retrieval Evaluation Lab, Agent Trace Debugger y Tool Call Firewall. Career Practice ya recomienda **un proyecto coherente, prerrequisitos, criterio de producto, feedback y evidencia sin garantía de empleo**.
+## Qué se conserva y adapta
 
-Conservamos estas ideas; no afirmamos que la referencia carezca de proyectos, rutas de carrera u operación.
+La referencia enfatiza implementación, pruebas, inspección de fallos y proyecto coherente. Conservamos esas prácticas y comparación por consulta del laboratorio. Acotamos su currículo amplio a tres niveles iniciales, enlazamos recursos junto a actividades, incluimos tiempo independiente/revisión y separamos profundidad opcional.
 
-| Observación | Adaptación propuesta |
+No usamos duraciones de fases como garantías. ROADMAP anuncia unas 332 horas; aquí usamos presupuestos propios de 336/480 horas y criterios. Completar lección/proyecto no establece experiencia profesional.
+
+## Contenido de referencia efectivamente inspeccionado
+
+| Contenido | Uso seleccionado | Límite |
+| --- | --- | --- |
+| [Git and Collaboration](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/00-setup-and-tooling/02-git-and-collaboration/docs/en.md) | B11: versiones locales, ramas y exclusiones | No verifica cada lección de configuración |
+| [Model evaluation](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/02-ml-fundamentals/09-model-evaluation/docs/en.md) | Referencia complementaria de divisiones, métricas y fuga | scikit-learn y curso principal guían actividades ML |
+| [RAG](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/11-llm-engineering/06-rag/docs/en.md) | A15/A17, C25–26: carga, fragmentos, embeddings, almacenamiento, recuperación y generación | No se adoptan afirmaciones universales de costo/privacidad/superioridad; compara por tarea |
+| [Retrieval Evaluation Lab](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/projects/retrieval-evaluation-lab) | A16/A18: rankings, precisión/recobrado, orden y comparación individual | Descripción/mapa inspeccionados; ejecutor/solución no ejecutados ni auditados |
+| [Tool schema design](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/13-tools-and-protocols/05-tool-schema-design/docs/en.md) | A14/A19: descripciones/restricciones | Benchmarks no verificados independientemente |
+| [Agent loop](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/14-agent-engineering/01-the-agent-loop/docs/en.md) | A19: registro, observaciones y parada/presupuesto | Conceptos seleccionados, no toda cadena de prerrequisitos |
+| [Failure modes](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/14-agent-engineering/26-failure-modes-agentic/docs/en.md) | A20/entrega: cascadas, contexto y herramientas | No verifica cada artículo o afirmación industrial |
+| [Secrets and audit](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/17-infrastructure-and-production/25-security-secrets-audit/docs/en.md) | Revisión contextual, no lectura semanal obligatoria | No adopta incidentes, patrones universales o umbrales como estándares verificados |
+| [Career Practice](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/learning-paths/CAREER-PRACTICE.md) | Proyecto único, requisitos, reproducción y feedback real | Sus rutas laborales no son obligatorias ni promesas de empleo |
+
+Los enlaces siguen `main`, que cambia. Registra fecha/revisión usada en cada ejercicio.
+
+## Educación y documentación primaria consultadas
+
+| Fuente | Contenido y pertinencia |
 | --- | --- |
-| Veinte fases cubren matemáticas, ML, visión, audio, transformers, agentes, infraestructura y alineación | Separar por nivel/rol; no exigir todas las especialidades para aplicaciones |
-| Python, TypeScript, Rust y Julia | A empieza con Python + SQL; otros lenguajes por vacante |
-| ROADMAP muestra ~332 horas arriba y ~1.081 al final, incluyendo ~620 de capstones | Estimaciones internamente inconsistentes; publicar presupuesto propio con proyecto/revisión |
-| README anuncia 528 lecciones; footer ROADMAP dice 523 | No usar conteos como métrica de finalización |
-| Career Practice excluye proyecto/revisión de los minutos guiados | Incluirlos en presupuesto y avanzar por puertas |
-| Páginas revisadas enfatizan implementación/rutas, no secuencia de selección de exámenes oficiales | Agregar verificación actual, distinciones de credenciales y selección de una nube |
+| [CS50P](https://cs50.harvard.edu/python/) | Descripción, semanas 0–9 y requisitos del proyecto final; selecciones directas B |
+| [CS50 SQL](https://cs50.harvard.edu/sql/) | Descripción y Querying/Relating/Designing para datos |
+| [Especialización ML](https://www.coursera.org/specializations/machine-learning-introduction) | Tres cursos y temas supervisados/no supervisados; no tareas protegidas |
+| [fast.ai](https://course.fast.ai/) | Descripción y páginas de lecciones 1–2: requisitos, entrenamiento/despliegue y grabaciones Part 1 2022 |
+| [HF LLM](https://huggingface.co/learn/llm-course/en/chapter1/1) | Introducción/requisitos, Tokenizers, introducciones a entrenamiento y Datasets |
+| [scikit-learn](https://scikit-learn.org/stable/common_pitfalls.html) | Fuga/errores frecuentes, validación cruzada y [calibración](https://scikit-learn.org/stable/modules/calibration.html) con explicaciones/ejemplos |
+| [Bootstrap SciPy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html) | Ejemplo sintético de remuestreo, variabilidad e intervalos para práctica estadística C |
+| [PostgreSQL](https://www.postgresql.org/docs/current/tutorial.html) | Tutorial, transacciones y funciones de ventana |
+| [pytest](https://docs.pytest.org/en/stable/getting-started.html), [uv](https://docs.astral.sh/uv/guides/projects/), [FastAPI](https://fastapi.tiangolo.com/tutorial/) | Pruebas, proyectos/entornos, primeros pasos API, entrada/salida, errores, seguridad y concurrencia |
+| [Docker](https://docs.docker.com/get-started/tutorials/run-an-app/), [CI Python](https://docs.github.com/en/actions/tutorials/build-and-test-code/python) | Aplicación/contenedor/Compose y guía de compilación/pruebas |
+| [pgvector](https://github.com/pgvector/pgvector), [MLflow](https://mlflow.org/docs/latest/ml/tracking/) | Búsqueda/persistencia/cambios y registro de experimentos/artefactos |
+| [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) | README/acceso y descripciones de módulos 2–6: experimentos, orquestación, despliegue, monitoreo y buenas prácticas |
+| [LangGraph](https://docs.langchain.com/oss/python/langgraph/persistence), [MCP](https://modelcontextprotocol.io/docs/learn/architecture) | Persistencia/interrupts y arquitectura del protocolo para entrega opcional |
+| [Registro de credenciales](./credentials) | AI-103/guía, AI-102 retirado, AWS ML Associate y Google ML oficiales; solo estado/alcance público |
 
-**Inferencia:** acotar prerrequisitos debería reducir trabajo innecesario para aplicaciones. No medimos tiempo ni contratación frente al original.
+## Límites de verificación {/* #verification-limits */}
 
-## Lecciones seleccionadas
+- Se consultaron páginas públicas y contenido seleccionado; no demuestra que todo enlace interno, video, código o ejercicio funcione.
+- URLs iniciales tipo `/python/0/` y `/sql/0/` devolvieron 404. El índice reveló rutas correctas **`/weeks/…/`**, consultadas para las selecciones. La extracción simplificada omitió la lista, por lo que se inspeccionó HTML.
+- Docker redirigió URL antigua de workshop; usamos tutorial de aplicación consultado. MCP redirigió arquitectura a documentación versionada. Fija versiones de protocolo/SDK.
+- No se realizó inscripción, pago, despliegue de nube ni reserva de examen. Tareas protegidas, precios/citas locales, acceso a evaluación y resultados siguen sin verificar.
+- Disponibilidad/temas no constituyen ranking de “mejores” ni evidencia laboral. Preparación individual exige artefactos reales y revisión.
 
-Son referencia, **no otro curso completo obligatorio**. Consulta README/ROADMAP para lecciones adyacentes y requisitos.
+La mayoría de recursos externos está en inglés. Esta ruta española explica las mismas actividades, sin prometer traducción del proveedor ni disponibilidad de exámenes en español.
 
-| Etapa | Fuente | Uso |
-| --- | --- | --- |
-| Configuración | [Fase 0](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/00-setup-and-tooling) | Git, entornos, APIs, Docker y debugging |
-| Evaluación ML | [Model evaluation](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/02-ml-fundamentals/09-model-evaluation/docs/en.md) | Divisiones, métricas y baselines |
-| Recuperación | [RAG](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/11-llm-engineering/06-rag/docs/en.md), [laboratorio](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/projects/retrieval-evaluation-lab) | Implementación y regresiones por consulta |
-| Agentes | [Bucle](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/14-agent-engineering/01-the-agent-loop/docs/en.md), [fallos](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/14-agent-engineering/26-failure-modes-agentic/docs/en.md) | Runtime acotado antes de multiagentes |
-| Contratos | [Tool schema](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/13-tools-and-protocols/05-tool-schema-design/docs/en.md) | Validación y límites de confianza |
-| Operación | [Seguridad/secretos/auditoría](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/17-infrastructure-and-production/25-security-secrets-audit/docs/en.md) | Minimización de datos y evidencia |
-| Carrera | [Career Practice](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/learning-paths/CAREER-PRACTICE.md) | Un proyecto, reproducción y feedback |
-
-Firewall Rust y debugger TypeScript son electivas, no requisitos de A. README limita sus demostraciones; no son autorización completa ni sandbox.
-
-## Registro de fuentes primarias
-
-| Fuente | Hecho soportado | Límite |
-| --- | --- | --- |
-| [CS50P](https://cs50.harvard.edu/python/) y [CS50 SQL](https://cs50.harvard.edu/sql/) | OpenCourseWare gratuito y contenidos de Python/pruebas/datos | Confirmar términos de certificados |
-| [ML Specialization](https://www.coursera.org/specializations/machine-learning-introduction) | Tres cursos Stanford Online/DeepLearning.AI y alcance ML | Sin resultado laboral independiente; checkout cambia |
-| [fast.ai](https://course.fast.ai/) | Gratis para programadores, grabaciones Part 1 de 2022 | APIs/paquetes pueden requerir documentación actual |
-| [Hugging Face](https://huggingface.co/learn/llm-course/en/chapter1/1) | Gratis; recomienda Python y deep learning inicial | Lectura seleccionada no es finalización |
-| [AI-103](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/) y [guía](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) | Rol Python/Foundry y dominios del examen | Reverificar agenda, idioma, precio y práctica |
-| [Azure AI Engineer retirado](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/) | Certificación y renovación retiradas | Material antiguo no es temario actual |
-| [AWS ML Associate](https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/) | Fin C01 inglés y transición C02 beta | No asumir GA ni tiempos de resultados |
-| [Google ML Engineer](https://cloud.google.com/learn/certification/machine-learning-engineer) | Datos/pipelines/MLOps y programación no evaluada directamente | Demanda regional y preparación individual no establecidas |
-
-Todas consultadas el **2026-10-13**. Sustentan cobertura técnica, **no ranking estadístico de valor para empleadores**.
-
-## Mercado e incertidumbre
-
-Los perfiles de Microsoft/Google apoyan habilidades seleccionadas, pero **no son estudio representativo del mercado laboral**. No contamos con muestra regional verificada ni evidencia causal de credencial a empleo para esta persona. **Evidencia insuficiente** para prometer prima salarial, probabilidad de contratación o mejor certificación universal.
-
-Usa el [método de vacantes](./portfolio-career#carrera-desde-el-inicio): nivel, región, fecha, Python/SQL/ML/datos/nube y credenciales requeridas/preferidas. Revisa mensualmente; certificado no implica elegibilidad sénior.
-
-Reverifica exámenes antes de pagar y trimestralmente; registra fuente, fecha y cambios. Es una secuencia original que referencia el trabajo upstream sin copiar sus lecciones ni afirmar endorsement.
-
-## Evidencia posterior de empleadores
-
-La [auditoría EPAM](./epam-reality-check), también del 13-oct-2026, añade cuatro vacantes verificadas. Resuelve ausencia de muestra concreta para esos roles, **no** ausencia de datos regionales representativos ni evidencia causal credencial/empleo. El [puente](./senior-delivery-bridge) atiende brechas explícitas; preparación individual exige evaluación.
+Revisa enlaces rotos cuando aparezcan, APIs sensibles a versiones antes de implementar y credenciales antes de pagar. Registra fuente/fecha del cambio, sin asumir vigencia de códigos anteriores.

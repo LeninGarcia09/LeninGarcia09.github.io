@@ -126,15 +126,15 @@ export default function Home() {
 
           {/* ── Career Plans ────────────────────────────────────── */}
           <div className={styles.sectionHeader} style={{ marginTop: "2rem" }}>
-            <span className={styles.sectionLabel}><Translate id="homepage.career.label">Career Roadmaps</Translate></span>
-            <h2 className={styles.sectionTitle}><Translate id="homepage.career.title">Choose Your Career Path</Translate></h2>
+            <span className={styles.sectionLabel}><Translate id="homepage.career.label">Learning Journeys</Translate></span>
+            <h2 className={styles.sectionTitle}><Translate id="homepage.career.title">Choose Your Starting Point</Translate></h2>
           </div>
           <p style={{ marginTop: "-1rem", marginBottom: "1.5rem", color: "var(--ifm-color-emphasis-700)", maxWidth: "720px" }}>
-            <Translate id="homepage.career.description">Start AI engineering with A, B, or C based on your experience, or explore the existing security and architecture plans.</Translate>
+            <Translate id="homepage.career.description">Build understanding through one connected project. Choose A, B, or C for selected resources, practical assignments and clear completion gates, or explore the existing security and architecture plans.</Translate>
           </p>
           <div className={styles.heroCta} style={{ justifyContent: "flex-start", marginBottom: "2rem" }}>
             <Link className="button button--primary button--lg" to="/docs/ai-engineering/overview">
-              <Translate id="homepage.career.aiEngineering">AI Engineering: A, B, C</Translate>
+              <Translate id="homepage.career.aiEngineering">AI Learning Journeys: A, B, C</Translate>
             </Link>
             <Link className="button button--primary button--lg" to="/docs/learning-plan/overview">
               <Translate id="homepage.career.aiSecurityProfessional">🛡️ Open AI Security Professional (9 meses)</Translate>

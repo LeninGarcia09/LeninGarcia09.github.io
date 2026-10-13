@@ -2,24 +2,30 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## AI engineering learning paths
+## AI engineering learning journeys
 
 The [AI engineering track](docs/ai-engineering/overview.md) adds three starting points without replacing the existing plans:
 
-- **A:** basic Python to AI application engineering, with a detailed 28-week sequence.
-- **B:** complete beginner, with a 12-week programming on-ramp before A.
-- **C:** experienced software engineer, with deeper ML, data pipelines, training, and MLOps.
+- **A:** basic Python to building AI applications: 28 weeks at 12 hours/week.
+- **B:** new to programming: a 12-week on-ramp before A (40 weeks total).
+- **C:** solid software foundations: deeper ML, data pipelines, training and MLOps
+  (32 weeks at 15 hours/week).
 
-Courses, official exam status, portfolio gates, and the review of
-`rohitg00/ai-engineering-from-scratch` are documented in the track. Matching Spanish
-pages live under `i18n/es/docusaurus-plugin-content-docs/current/ai-engineering`.
-Recheck provider pages before changing certification recommendations or paying for an exam.
+Each route links selected readings directly beside practical assignments and
+completion gates. One public/synthetic project connects the outcomes; tools are
+examples rather than an employer-specific stack. Budgets are estimates, not guarantees.
 
-The [EPAM reality check](docs/ai-engineering/epam-reality-check.md) maps four senior
-vacancies to curriculum coverage and separate experience requirements. Experienced
-engineers can use the [Senior Delivery Bridge](docs/ai-engineering/senior-delivery-bridge.md):
-16 shared weeks and one 8-week specialization, with
-[verified research](docs/ai-engineering/senior-resources.md). It does not replace professional tenure.
+The [capability guide](docs/ai-engineering/capability-guide.md) supports self-review.
+[Optional delivery practice](docs/ai-engineering/delivery-practice.md) adds 16 shared
+weeks and one 8-week focus (360 additional hours). Courses and credentials are
+optional; official provider names remain for attribution, not employer targeting.
+
+The [source review](docs/ai-engineering/source-review.md) explains selective use of
+`rohitg00/ai-engineering-from-scratch`, public-page verification and limits—not a
+whole-repository code audit. Recheck current credential versions, access and prices
+before paying. Matching Spanish pages live under
+`i18n/es/docusaurus-plugin-content-docs/current/ai-engineering`; external resources
+may remain in English.
 
 ## Installation
 

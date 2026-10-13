@@ -1,43 +1,45 @@
 ---
 sidebar_position: 3
-title: "B: From Zero to AI Development"
+title: "B: Programming Foundations"
 ---
 
-# B: programming foundations before AI engineering
+# B: a confident first step into programming
 
-**For:** someone who has never written software. **Planning budget:** 40 weeks at 12 hours/week = **480 hours**: a 12-week on-ramp, followed by A's 28-week sequence. This is a phase roadmap; A supplies the detailed downstream weekly checklist.
+**Start here if:** you have not written software before. **Budget:** 40 weeks × 12 hours = **480 hours**: a 12-week on-ramp (**144 hours**) followed by [A's 28 weeks](./path-a) (**336 hours**).
 
-Do not begin with model internals, agents, or cloud exams. First learn to understand, debug, and test ordinary programs.
+Begin with ordinary programs you can understand, debug and test. No paid exam, model training or cloud subscription is needed for the on-ramp. Each week: about 6 hours learning, 5 practice and 1 explaining/reviewing.
 
-| Phase | Weeks | Primary resource | Exit gate |
-| --- | --- | --- | --- |
-| Python fundamentals | 1-8 | Complete [Harvard CS50P](https://cs50.harvard.edu/python/): lectures, problem sets, final project | Write and explain a small file-processing program; tests, exceptions, no copied solution |
-| Data and developer habits | 9-12 | Selected [CS50 SQL](https://cs50.harvard.edu/sql/) lessons; upstream setup/Git lessons | Query joined tables, call an API, version code, reproduce a bug with a test |
-| Software delivery | 13-16 | A weeks 1-4 | Runnable API/database service with CI |
-| Practical ML | 17-24 | A weeks 5-12; Stanford Online/DeepLearning.AI specialization | Model beats or honestly explains failure against a simple baseline |
-| LLMs and retrieval | 25-30 | A weeks 13-18 | Grounded assistant, citations, held-out evaluation |
-| Workflows and production | 31-38 | A weeks 19-26 | Bounded tools, deployment, monitoring, recovery |
-| Career launch | 39-40 | A weeks 27-28 | Explainable portfolio, CV, mock interviews, targeted applications |
+## Your first 12 weeks
 
-## First four weeks
+The CS50P lessons below include lecture materials and problem-set links. Complete their assessed work according to the provider's rules if seeking course completion. The project exercises in the final column are additional practice, not replacements for those requirements.
 
-| Week | Practice | Save as evidence |
+| Week | Open and study | Try it and save the result |
 | --- | --- | --- |
-| 1 | Functions, variables, terminal basics | A small input/output program and explanation |
-| 2 | Conditions, loops, lists/dictionaries | A data-cleaning script with edge cases |
-| 3 | Exceptions, files, unit tests | Tests for missing files and invalid records |
-| 4 | Rebuild an earlier exercise without copying | Bug journal and a clear explanation of the fix |
+| 1 | [CS50P: Functions, Variables](https://cs50.harvard.edu/python/weeks/0/) | Write a small question/topic input program; explain each function and value. |
+| 2 | [Conditionals](https://cs50.harvard.edu/python/weeks/1/) and [Loops](https://cs50.harvard.edu/python/weeks/2/) | Process a list of questions; handle an empty list and unexpected input. |
+| 3 | [Exceptions](https://cs50.harvard.edu/python/weeks/3/) and [Libraries](https://cs50.harvard.edu/python/weeks/4/) | Catch invalid values, use a library and inspect one API response. |
+| 4 | [Unit Tests](https://cs50.harvard.edu/python/weeks/5/) and [File I/O](https://cs50.harvard.edu/python/weeks/6/) | Read/write CSV; test a missing file and a malformed record. Rebuild one function without copying. |
+| 5 | [Regular Expressions](https://cs50.harvard.edu/python/weeks/7/) | Validate a simple identifier; explain where plain string checks are easier. |
+| 6 | [Object-Oriented Programming](https://cs50.harvard.edu/python/weeks/8/) and [Et Cetera](https://cs50.harvard.edu/python/weeks/9/) | Model one question as an object; add a command-line argument and explain the design. |
+| 7 | [CS50P final project](https://cs50.harvard.edu/python/project/) | Plan and implement a small question organizer; follow the current function/test requirements. |
+| 8 | [CS50P final project](https://cs50.harvard.edu/python/project/) and [course overview](https://cs50.harvard.edu/python/) | Finish missing problem sets and the project. **Gate B1:** independently explain files, exceptions and tests. |
+| 9 | [CS50 SQL: Querying](https://cs50.harvard.edu/sql/weeks/0/) | Load a small dataset; write filtering, ordering and aggregate queries. |
+| 10 | [Relating](https://cs50.harvard.edu/sql/weeks/1/) and [Designing](https://cs50.harvard.edu/sql/weeks/2/) | Join questions to topics; define keys and constraints, then test invalid data. |
+| 11 | [Upstream Git and Collaboration](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/00-setup-and-tooling/02-git-and-collaboration/docs/en.md) and [uv projects](https://docs.astral.sh/uv/guides/projects/) | Version a change, exclude secrets/generated files and reproduce the environment. Practice locally before sharing. |
+| 12 | Revisit [Libraries/API material](https://cs50.harvard.edu/python/weeks/4/) and [A's entry check](./path-a#entry-check) | Add a timeout and failed-response handling; reproduce a bug with a test. **Gate B2:** pass A's entry check independently. |
 
-Continue the remaining CS50P material and final project in weeks 5-8. The course contains ten weeks of material; this eight-week allocation is a **study estimate**, not the provider's promised pace. Extend it if needed. If the A entry check is still difficult at week 12, stay in the on-ramp.
+CS50P contains ten instructional weeks plus a final project. This plan groups some topics into eight study weeks; **it is not the provider's promised pace**. Extend it whenever lectures, exercises or the project need more time. Selected SQL lessons are not completion of CS50 SQL.
 
-## Courses, credentials, and realistic entry roles
+## Continue the same project through A
 
-CS50P's university provenance makes it a credible learning resource; its course certificate is **not a Harvard degree or professional AI certification**. Use [credential distinctions](./credentials) when writing your CV.
+| B calendar | Follow | Completion evidence |
+| --- | --- | --- |
+| 13–16 | [A, phase 1](./path-a#phase-software) | Tested API/database service and reproducible setup |
+| 17–24 | [A, phase 2](./path-a#phase-ml) | Baseline, held-out evaluation and explained model errors |
+| 25–30 | [A, phases 3–4](./path-a#phase-language-models) | Structured feature, grounded answers and retrieval evaluation |
+| 31–38 | [A, phases 5–6](./path-a#phase-workflows) | Bounded tools, sandbox delivery, monitoring and recovery |
+| 39–40 | [A, phase 7](./path-a#phase-review) | Clear case studies and independent review |
 
-No paid exam is required in the on-ramp. After completing A's deployment gate, evaluate one role-relevant cloud exam. AI literacy or fundamentals badges may help orientation, but do not substitute for coding.
+Do not restart the project or buy a new course at every phase. Keep a small bug journal: what you expected, what happened, how you tested the fix.
 
-Consider junior Python developer, automation developer, data-support roles with SQL, or AI application roles that genuinely accept beginners. This plan does not remove degree, location, language, or experience requirements. Spend one hour/week checking real postings and improving technical communication.
-
-**Continue:** [A's detailed weekly plan](./path-a) and the [shared portfolio rubric](./portfolio-career).
-
-The [EPAM reality check](./epam-reality-check) confirms that B is not a direct route into the listed senior jobs. It inherits A's strengthened tooling, but professional production experience is a separate requirement. Do not skip the on-ramp to study an enterprise platform or paid exam first.
+Course certificates recognize the provider's completion conditions, not a degree or professional experience. See [courses and credentials](./credentials); optional exams come after practical gates, not before them.

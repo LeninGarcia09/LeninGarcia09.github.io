@@ -1,89 +1,99 @@
 ---
 sidebar_position: 2
-title: "A: AI Application Engineer"
+title: "A: Building AI Applications"
 ---
 
-# A: career switcher to AI application engineer
+# A: from basic Python to an explainable AI application
 
-**Goal:** demonstrate that you can build, evaluate, ship, and explain a small AI application. Target junior AI application developer, Python/backend developer with AI features, or AI integration roles where the experience requirements match your background.
+**Aim:** build, evaluate, deliver and explain one useful application through three connected outcomes: a data/ML service, a grounded assistant and a bounded workflow.
 
-**Budget:** 28 weeks x 12 hours = **336 planned hours**. Each week: approximately 6 hours learning, 5 hours building/testing, and 1 hour career research or communication. Estimates include independent project work but exclude exam fees, failed-exam retakes, and additional remediation. At 6 hours/week, budget roughly 56 weeks rather than compressing the gates.
+**Budget:** 28 weeks × 12 hours = **336 planned hours**. Allow about 6 hours learning, 5 building/testing and 1 explaining/reviewing weekly. At 6 hours/week, plan approximately 56 weeks. Course assignments, debugging and peer review can require more time; do not compress the gates to meet a date.
 
-## Entry check
+## Entry check {/* #entry-check */}
 
-Without asking an AI assistant to produce the solution, write a Python program that reads JSON/CSV, calls an HTTP API with a timeout, handles a failed response, and saves a result. Add two tests and commit it to Git. Explain environments, exceptions, and each dependency.
+Without generated solutions, write a Python program that reads JSON/CSV, calls an HTTP API with a timeout, handles a failed response and saves a result. Add two tests and version it with Git. Explain environments, exceptions and dependencies. If this is difficult, start [B](./path-b).
 
-If you cannot do this, use [B](./path-b). AI assistance is allowed during subsequent work, but you must review generated code and reproduce the behavior independently.
+## How to use the plan
 
-## The seven phases
+Follow the **selected topic**, not the entire documentation site. Each output below is an original project assignment; it is not necessarily a provider's assessed exercise. For the ML specialization, complete the provider's required assignments if pursuing its completion certificate. Use one public/synthetic learning-support workbench throughout.
 
-| Phase | Weeks / hours | Primary learning | Evidence before advancing |
-| --- | --- | --- | --- |
-| 1. Software + SQL | 1-4 / 48 | Selected [CS50P](https://cs50.harvard.edu/python/) and [CS50 SQL](https://cs50.harvard.edu/sql/) lessons; upstream Phase 0 | Tested API over a relational dataset |
-| 2. Applied ML | 5-12 / 96 | [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction) | Baseline comparison, held-out evaluation, error analysis |
-| 3. LLM foundations | 13-14 / 24 | Selected [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter1/1) concepts; upstream LLM lessons | Structured-output feature with failure tests |
-| 4. Retrieval + evaluation | 15-18 / 48 | Upstream retrieval/evaluation lessons and Retrieval Evaluation Lab | RAG benchmark against lexical search and no-retrieval baselines |
-| 5. Bounded workflows | 19-20 / 24 | Upstream agent loop, tool schema, and failure-mode lessons | Read-only workflow, validated inputs, approval boundary |
-| 6. Deployment + one credential | 21-26 / 72 | Official preparation for the selected cloud credential | Reproducible deployment, monitoring, rollback, exam-gap checklist |
-| 7. Career packaging | 27-28 / 24 | Portfolio reviews and mock interviews | Three explainable outcomes, role-matched CV, application evidence |
+For a concrete example, use Python, pytest, FastAPI and a relational database. SQLite is enough to start; PostgreSQL is useful when adding persistent vector search. Keep a reproducible environment. Equivalent familiar tools are acceptable if they produce the same evidence. A framework or cloud name is not a learning outcome.
 
-Course access, credentials, and optional extensions: [courses and certifications](./credentials). Exact source lesson links: [reference mapping](./source-review#selected-reference-lessons).
+## Phase 1 — Make ordinary software dependable {/* #phase-software */}
 
-## Weekly checklist
-
-Each row is one week's main task. Save the output in your project repository. An unfinished gate carries forward; do not add another framework to disguise a missing foundation.
-
-| Week | Main task | Output |
+| Week | Open and study | Apply it to your project |
 | --- | --- | --- |
-| 1 | Fix entry-check gaps; use Python 3.12+ compatible dependencies, uv, Git, Ruff, pytest | Locked environment, lint/test CI and malformed-data tests |
-| 2 | Query SQL: joins, aggregation, nulls; inspect licensing and duplicates | Dataset card, schema, and five useful queries |
-| 3 | Expose ingestion/query with FastAPI, Pydantic and Uvicorn; use PostgreSQL | Validated contracts, failure tests and one async I/O vs blocking example |
-| 4 | Add a container and CI; have someone reproduce setup | **Gate 1:** clean-clone API + database + passing CI |
-| 5 | ML course: regression, loss, features; define a non-ML baseline | Problem statement and majority/heuristic baseline |
-| 6 | Classification and train/validation/test splits | Leakage checks and a frozen split manifest |
-| 7 | Regularization, decision thresholds, appropriate metrics | Precision/recall tradeoff with error examples |
-| 8 | Neural-network concepts and practical training | Small trained model; explain overfitting and loss |
-| 9 | Trees and model selection | Compare a simple linear model and a tree model |
-| 10 | Unsupervised learning and recommendation concepts | One relevant experiment; explain when not to use it |
-| 11 | Finish specialization assignments; reproduce the chosen model | Versioned preprocessing/training script and seed |
-| 12 | Evaluate untouched test data; expose prediction through the API | **Gate 2:** ML service + model card + honest baseline comparison |
-| 13 | Tokenization, context, embeddings, model/API contracts | Input/output limits and a small comparison notebook |
-| 14 | Structured output, timeout, retry budget, invalid output | Tested extraction/classification feature; explicit errors |
-| 15 | Build ingestion with source IDs, chunking, updates/deletion; persist vectors in pgvector | Versioned PostgreSQL index, rebuild command and public/synthetic corpus |
-| 16 | Compare lexical and embedding retrieval | Frozen query set with relevance labels and recall@k |
-| 17 | Ground answers in passages; include citations and abstention | Answer scoring rubric and unanswerable cases |
-| 18 | Run the retrieval lab and end-to-end evaluation | **Gate 3:** per-query deltas + quality/latency/cost report |
-| 19 | Implement one tool workflow before adding orchestration | Typed tool schema, allowlisted read-only operations |
-| 20 | Port the bounded flow to LangGraph; one MCP tool contract; test failure, step limits and approval | **Gate 4:** direct vs framework comparison, tool-contract and denial/approval examples |
-| 21 | Select one cloud from target postings; deploy a small service | Recorded configuration, secrets outside source, cost cap |
-| 22 | Add CI release checks, dependency pins, health/readiness checks | Deploy/redeploy instructions and reproducible release |
-| 23 | Measure latency, token cost, errors, and evaluation drift | Operational report; no unsupported production claims |
-| 24 | Rehearse upstream failure and rollback; try user feedback | Runbook and one improvement with before/after evidence |
-| 25 | Map the official exam syllabus to implemented skills | Gap list; short labs for missing domains |
-| 26 | Run official practice assessment if available; fix gaps | **Gate 5:** another person can run, evaluate, and recover the app |
-| 27 | Write CV bullets and two project case studies; practice code/SQL and a technical English explanation | Evidence-linked CV and recorded explanation with feedback |
-| 28 | Practice system design; submit role-matched applications | **Gate 6:** review-ready portfolio and application tracker |
+| 1 | [CS50P: Unit Tests](https://cs50.harvard.edu/python/weeks/5/), then [pytest: Get Started](https://docs.pytest.org/en/stable/getting-started.html); use [uv projects](https://docs.astral.sh/uv/guides/projects/) for the environment example | Package the question reader. Test invalid records and missing files; save dependency versions and run commands. |
+| 2 | [CS50 SQL: Querying](https://cs50.harvard.edu/sql/weeks/0/) and [Relating](https://cs50.harvard.edu/sql/weeks/1/) | Store questions and topics in two tables; write five queries using joins, aggregation and null handling. Record provenance and duplicates. |
+| 3 | FastAPI [first steps](https://fastapi.tiangolo.com/tutorial/first-steps/), [request bodies](https://fastapi.tiangolo.com/tutorial/body/) and [errors](https://fastapi.tiangolo.com/tutorial/handling-errors/) | Expose one question/query endpoint. Test valid and malformed requests and a database failure. |
+| 4 | [Docker: build and share an application](https://docs.docker.com/get-started/tutorials/run-an-app/) and [Python CI](https://docs.github.com/en/actions/tutorials/build-and-test-code/python): build/test workflow | Containerize the API; run tests in CI. **Gate 1:** another person can reproduce the API/database setup from a clean clone. |
 
-## Keeping the scope realistic
+## Phase 2 — Learn what makes a model useful {/* #phase-ml */}
 
-The ML phase aims to complete all three specialization courses, **not only watch videos**. If assignments exceed the 96-hour budget, extend this phase; claim a completion certificate only after meeting the provider's requirements.
+Follow the [Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction) in its provider order. The links below deliberately reuse the program page; the topics tell you what to select, not an invented week numbering inside the course.
 
-The two-week LLM phase is an **orientation**, not completion of the entire Hugging Face course. That course recommends good Python and introductory deep learning. Use the ML neural-network material first; if it is insufficient, add selected [fast.ai](https://course.fast.ai/) lessons before attempting Hugging Face training exercises. Advanced fine-tuning and reasoning-model chapters are optional extensions or C material.
+| Week | Open and study | Apply it to your project |
+| --- | --- | --- |
+| 5 | [ML specialization](https://www.coursera.org/specializations/machine-learning-introduction): supervised learning, regression and loss | Define the prediction task. Create a majority/heuristic baseline before training a model. |
+| 6 | [ML specialization](https://www.coursera.org/specializations/machine-learning-introduction): classification; [scikit-learn cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html): test vs validation data | Freeze a train/validation/test split; explain why the split fits your data. |
+| 7 | [ML specialization](https://www.coursera.org/specializations/machine-learning-introduction): regularization and model evaluation; [common pitfalls](https://scikit-learn.org/stable/common_pitfalls.html): leakage | Fit preprocessing only on training data. Compare decision thresholds using precision/recall and five errors. |
+| 8 | [ML specialization](https://www.coursera.org/specializations/machine-learning-introduction): neural networks and training | Train a small course model; plot loss and explain overfitting. Transfer only relevant ideas to your classifier. |
+| 9 | [ML specialization](https://www.coursera.org/specializations/machine-learning-introduction): decision trees and ensembles | Compare a simple linear model and a tree on the same validation split. |
+| 10 | [ML specialization](https://www.coursera.org/specializations/machine-learning-introduction): clustering, anomaly detection and recommendations | Run one small course experiment; explain whether it helps your project. Do not force it into the app. |
+| 11 | [ML specialization](https://www.coursera.org/specializations/machine-learning-introduction): remaining required assignments | Close course gaps; turn the chosen model's preprocessing/training into a versioned script with a seed. |
+| 12 | [scikit-learn cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html): final hold-out evaluation | **Gate 2:** evaluate untouched test data, expose prediction through the API and write a model card with baseline comparison and limitations. |
 
-Use Python, SQL, one API framework, one database, one model provider, and one deployment target. Learn one orchestration framework only after the direct implementation works. Defer Rust/Julia, custom CUDA, distributed training, complex multi-agent systems, and multimodal projects unless target roles require them.
+The **96-hour ML allocation is an estimate**, including project practice. Completing all three courses and their assignments may take longer. Extend this phase rather than treating watched videos as completion.
 
-### Enhancement from real postings
+## Phase 3 — Add a language-model feature carefully {/* #phase-language-models */}
 
-The [EPAM audit](./epam-reality-check) makes the foundation stack explicit: uv/Ruff/pytest, FastAPI/Pydantic/Uvicorn, PostgreSQL/pgvector and a first LangGraph/MCP exercise. These are introductions, not enterprise-stack mastery. Use the [official resource references](./senior-resources) and extend a phase if needed; the same 336-hour budget is still only an estimate.
+| Week | Open and study | Apply it to your project |
+| --- | --- | --- |
+| 13 | [Hugging Face introduction](https://huggingface.co/learn/llm-course/en/chapter1/1) and [Tokenizers](https://huggingface.co/learn/llm-course/en/chapter2/4) | Compare token counts for short/long inputs. Record model, input limits, allowed data and approximate request cost. |
+| 14 | FastAPI [response models](https://fastapi.tiangolo.com/tutorial/response-model/) and [errors](https://fastapi.tiangolo.com/tutorial/handling-errors/); [tool schema lesson](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/13-tools-and-protocols/05-tool-schema-design/docs/en.md): descriptions and parameter constraints | Add a structured topic suggestion. Validate outputs; test timeout, malformed output and a bounded retry. Start with a mock response before using a model. |
 
-For E2/E3, practice technical English weekly and obtain a separate assessment if B2 is unknown; a demo does not certify a language level. For these EPAM targets, replace weeks 25-26 exam preparation with failed delivery gates and role-gap assessment if an exam has no current value. Do not substitute a two-week agent exercise for E2's one-year production-agent requirement.
+This is an orientation, not completion of the Hugging Face course. It recommends good Python and introductory deep learning. If the neural-network material is still unclear, add selected [fast.ai](https://course.fast.ai/) model-training practice **outside this budget** before attempting HF training exercises.
 
-## Certification is a separate gate
+## Phase 4 — Retrieve evidence, then evaluate answers {/* #phase-retrieval */}
 
-For Azure-oriented application jobs, **AI-103** is the first-choice recommendation, not a universal requirement. It also covers vision, text analysis, and information extraction: the RAG project alone is **not sufficient exam preparation**. Use weeks 25-26 for gaps and extend preparation if needed.
+RAG means **retrieval-augmented generation**: retrieve relevant passages and use them as context for an answer. It does not guarantee correctness.
 
-Do not schedule an exam solely because week 26 arrived. Use the [credential decision rules](./credentials#when-to-pay-for-an-exam). For AWS/Google ML-oriented jobs, consider C and the relevant exam after enough hands-on practice.
+| Week | Open and study | Apply it to your project |
+| --- | --- | --- |
+| 15 | [Upstream RAG lesson](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/11-llm-engineering/06-rag/docs/en.md): loading, chunking, embeddings and storage; [pgvector](https://github.com/pgvector/pgvector): getting started, update/delete | Give documents stable IDs; build a small persistent index with a rebuild command. Test changed and deleted documents. |
+| 16 | [Retrieval Evaluation Lab](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/projects/retrieval-evaluation-lab): stages 1–2, ranking validation and precision/recall | Create labeled development queries. Compare lexical and embedding retrieval using recall@k; retain labels and per-query results. |
+| 17 | [Upstream RAG lesson](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/11-llm-engineering/06-rag/docs/en.md): retrieval and generation | Return passage citations or “not enough evidence.” Manually score answer correctness, citation support and abstention separately. |
+| 18 | [Retrieval Evaluation Lab](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/projects/retrieval-evaluation-lab): stages 3–4, rank-sensitive metrics and comparisons | **Gate 3:** compare retrieval and no-retrieval answers on untouched queries; report per-query regressions, latency and cost using the [shared rubric](./portfolio-practice#completion-gates). |
 
-Begin market research in week 1 and portfolio conversations at Gate 2. You may apply earlier when you meet a posting's requirements; neither course completion nor an exam is permission to claim professional experience.
+The upstream lab notes that some runner functionality requires POSIX. On Windows, use WSL for that runner or implement the ranking exercises in your own project; do not claim its grader passed unless you ran it.
 
-**Next:** use the [portfolio rubric](./portfolio-career) to assess each gate.
+## Phase 5 — Keep workflows bounded {/* #phase-workflows */}
+
+| Week | Open and study | Apply it to your project |
+| --- | --- | --- |
+| 19 | [Agent loop](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/14-agent-engineering/01-the-agent-loop/docs/en.md): tool registry, observations and stop conditions; revisit [tool schemas](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/13-tools-and-protocols/05-tool-schema-design/docs/en.md) | Implement one direct read-only lookup flow. Validate arguments and cap steps/time; no arbitrary code execution or real writes. |
+| 20 | [Failure modes](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/14-agent-engineering/26-failure-modes-agentic/docs/en.md): cascading errors, context loss and tool misuse | **Gate 4:** test missing tools, bad arguments, hostile retrieved text and exhausted budgets. Produce a draft for human review; permissions remain outside the model. |
+
+Framework persistence and protocol integration are [optional delivery extensions](./delivery-practice), not extra requirements hidden in two weeks.
+
+## Phase 6 — Deliver, observe and recover {/* #phase-delivery */}
+
+| Week | Open and study | Apply it to your project |
+| --- | --- | --- |
+| 21 | [Docker application tutorial](https://docs.docker.com/get-started/tutorials/run-an-app/): images, Compose and sharing; [MLOps deployment module](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/04-deployment): batch vs online | Release a small sandbox service. Use local hosting first or one familiar cloud; record configuration and teardown. |
+| 22 | [Python CI](https://docs.github.com/en/actions/tutorials/build-and-test-code/python): test/build checks; revisit [pytest](https://docs.pytest.org/en/stable/getting-started.html) | Pin dependencies, add health checks and make a seeded regression fail the release checks. Keep secrets outside source. |
+| 23 | [MLOps monitoring module](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/05-monitoring): health, quality and drift indicators | Measure latency, errors, cost and quality on a declared workload. A simple report is enough; the full dashboard stack is not required. |
+| 24 | [MLOps best-practices module](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/06-best-practices): integration tests and delivery | Simulate an upstream outage, rehearse rollback and write a short recovery guide. |
+| 25 | [Capability guide](./capability-guide) and [credential choices](./credentials) | Fix one failed capability. **Optional substitution:** map one current exam's objectives to evidence and gaps; do not add all exam domains to this week's budget. |
+| 26 | [Project review rubric](./portfolio-practice#completion-gates) | **Gate 5:** another person can run, evaluate and recover the app. If pursuing an exam, extend preparation until its separate requirements are met. |
+
+Hosted APIs, cloud use, course access, exams and retakes have separate costs. Declare a spending limit and cleanup procedure before use; an alert is not a hard cap.
+
+## Phase 7 — Make your learning easy to understand {/* #phase-review */}
+
+| Week | Open and study | Apply it to your project |
+| --- | --- | --- |
+| 27 | [Upstream Career Practice](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/learning-paths/CAREER-PRACTICE.md): one project, feedback and reproducibility; [evidence template](./portfolio-practice#evidence-record) | Write two short case studies explaining a baseline, failure, improvement and known limit. Record a five-minute walkthrough. |
+| 28 | [Capability guide](./capability-guide) and [review practice](./portfolio-practice#review-and-explain) | **Gate 6:** demonstrate the three connected outcomes; ask for a reproduction/design review, record actual feedback and choose one next improvement. |
+
+**Optional depth:** advanced fine-tuning, distributed training, multi-agent systems and additional platforms come after the gates, when a clear learning question justifies them. For deeper data and model training, continue with [C](./path-c).

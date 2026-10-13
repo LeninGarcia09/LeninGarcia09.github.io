@@ -1,49 +1,61 @@
 ---
 sidebar_position: 1
-title: "AI Engineering: Choose A, B, or C"
+title: "AI Engineering Learning Journeys"
 ---
 
-# AI engineering: three starting points, one evidence-first approach
+# Build understanding. Create something useful. Show how it works.
 
-**Start with [Path A](./path-a)** if you know basic Python and want to build AI applications. Learn one stack, finish useful projects, and pursue one role-relevant certification instead of collecting badges.
+Learn AI engineering through a small, connected project—not a collection of unrelated tutorials. Choose a starting point, follow the selected readings beside each assignment, and advance when you can explain and reproduce the result.
 
-| Path | Starting point | Direction | Planning estimate |
+| Journey | Start here when… | What you will explore | Planning budget |
 | --- | --- | --- | --- |
-| **[A: AI application engineer](./path-a)** | Career switcher with basic Python | APIs, practical ML, LLM applications, evaluated RAG, bounded tools, deployment | 28 weeks at 12 hours/week |
-| **[B: From zero to AI development](./path-b)** | No programming experience | Programming and data foundations, then the A sequence | 40 weeks at 12 hours/week |
-| **[C: ML and data engineering](./path-c)** | Experienced software engineer | Deeper statistics, data pipelines, model training, experimentation, MLOps, plus GenAI | 32 weeks at 15 hours/week |
+| **[A: Building AI applications](./path-a)** | You know basic Python | Software foundations, practical ML, language models, retrieval, bounded workflows, delivery | 28 weeks × 12 hours = **336 hours** |
+| **[B: Programming foundations](./path-b)** | You are new to programming | Python, testing, data and Git, followed by A | 40 weeks × 12 hours = **480 hours** |
+| **[C: ML and data systems](./path-c)** | You already build and deploy software | Deeper ML, data pipelines, model training, experimentation and MLOps, with applied retrieval | 32 weeks × 15 hours = **480 hours** |
 
-These are **proposed study budgets, not completion or employment guarantees**. Use the gates, not the calendar, to advance. A is the first fully detailed weekly path; B and C have separate phase roadmaps and exit criteria.
+These are study estimates, not deadlines or guarantees. At half the weekly time, allow approximately twice as many weeks. Extend any phase when an assignment or completion gate needs more practice.
 
-## What makes this easier to follow?
+## One project, growing with you
 
-- **One primary course at a time.** Harvard foundations where needed, the Stanford Online/DeepLearning.AI ML Specialization, selected Hugging Face material, and official cloud preparation.
-- **Three portfolio outcomes, not dozens of unfinished tutorials.** A data/ML service, a grounded assistant, and a bounded workflow that extend the same problem domain.
-- **One cloud and one exam.** Select by target jobs and practical experience; exams are optional, never a prerequisite to applying.
-- **A measurable exit gate per phase.** Reproducible code, independent evaluation, operational failures, and an explanation you can defend.
+Use a **learning-support workbench**: a small collection of public or synthetic questions, topic labels, and licensed reference documents. Begin with a program that organizes questions. Add a classifier, answers supported by passages, and a read-only lookup workflow that produces a draft for human review.
 
-The course providers and certification scopes are verified on the [credentials page](./credentials). Their reputation is **not evidence that their certificates guarantee interviews, salary gains, or employment**.
+This is an example, not a required industry or product. Another low-risk domain is fine if it supports the same exercises. Keep one domain throughout. Do not publish personal data, private documents or credentials.
 
-## Your first study session
+## Your first session
 
-1. Choose a target role and region. Record 10 recent employer postings, separating required skills from preferences and seniority.
-2. Attempt A's [entry check](./path-a#entry-check). If you cannot complete it, start B; if you already ship software and want training/data depth, choose C.
-3. Choose one public or synthetic dataset and one workflow, such as support-ticket triage. Never publish customer data, credentials, or private company documents.
-4. Open one repository and record your baseline, weekly evidence, and the next failed gate. Do not enroll in multiple paid courses yet.
+1. Try A's [entry check](./path-a#entry-check). Choose B if you need programming practice; choose C if your software foundations are solid and you want more ML/data depth.
+2. Write one sentence about what your project should help a person do.
+3. Select a small dataset you are allowed to use. Record its source, license and limitations.
+4. Open the first linked lesson and complete the assigned exercise. Save a short explanation and one reproducible result.
 
-## Read in this order
+## A sustainable study rhythm
 
-| Need | Page |
+For A/B, budget roughly **6 hours learning, 5 building/testing and 1 explaining/reviewing** each week. C uses **6 learning, 7 implementing/evaluating and 2 reviewing**. Read or watch a selected topic, try it without copying, deliberately introduce a failure, then explain the fix. Review AI-assisted code and reproduce its behavior independently; follow each course's academic-honesty rules for assessed work.
+
+The core stack is deliberately small: Python, SQL, one API library, one database and one model interface. Named tools are worked examples, not a requirement to master every framework. Start locally; add hosted services only when a delivery exercise needs them.
+
+## A few terms, in plain language
+
+- **ML (machine learning):** models learn patterns from examples; compare them with a simple non-ML baseline.
+- **LLM (large language model):** a model that processes and generates language; fluent output can still be wrong.
+- **Embeddings:** numerical representations used to compare items such as text passages.
+- **Held-out data:** examples kept away from model fitting and tuning so you can test a finished choice.
+- **Model card:** a short record of intended use, data, evaluation and known limitations.
+- **MLOps:** practices that connect model/data versions, repeatable training, delivery, monitoring and recovery.
+- **Completion gate:** evidence you check before advancing; not just time spent studying.
+
+## Where to go next
+
+| Need | Open |
 | --- | --- |
-| A concrete weekly sequence | [Path A: 28-week implementation plan](./path-a) |
-| A beginner on-ramp | [Path B: foundations first](./path-b) |
-| More Machine Learning and Data | [Path C: ML + data systems](./path-c) |
-| What is worth studying or paying for? | [Courses and certifications](./credentials) |
-| What should a reviewer see? | [Portfolio, gates, and career execution](./portfolio-career) |
-| What changed from the reference repository? | [Source review and verification](./source-review) |
+| A weekly sequence with direct resources | [A: Building AI applications](./path-a) |
+| A beginner-friendly on-ramp | [B: Programming foundations](./path-b) |
+| More ML, data and training depth | [C: ML and data systems](./path-c) |
+| Reproducible outcomes and completion gates | [Project and review practice](./portfolio-practice) |
+| A clear capability self-check | [Capability guide](./capability-guide) |
+| Optional operational depth after the foundations | [Delivery practice](./delivery-practice) |
+| Course access and optional credentials | [Courses and credentials](./credentials) |
+| How the reference repository was used | [Sources and verification](./source-review) |
+| Focused extensions, not another required course | [Learning resources](./learning-resources) |
 
-The existing security, architect, and leadership plans remain separate. This path is for **building software**, not a shortcut to senior architect, research scientist, or governance leadership roles.
-
-## Targeting senior vacancies?
-
-Read the [four-role EPAM reality check](./epam-reality-check) before choosing a certificate. A/B are foundations; C provides more ML/data depth, but none supplies years of professional production delivery. Experienced engineers can add the [Senior Delivery Bridge](./senior-delivery-bridge): 16 shared weeks plus one 8-week agentic, Python solution, media, or lead specialization. [Research and official resources](./senior-resources) explain the additions.
+Resources were selected for clear instruction, prerequisites, exercises and relevance—not a claimed universal “best” ranking. Provider and official credential names remain for attribution. The journeys do not target an employer or position, award professional experience, or promise employment.

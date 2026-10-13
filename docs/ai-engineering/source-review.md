@@ -1,70 +1,63 @@
 ---
 sidebar_position: 7
-title: "Reference Review and Source Verification"
+title: "Sources and Verification"
 ---
 
-# Reviewing AI Engineering from Scratch
+# How the learning sequence uses its sources
 
-**Reviewed October 13, 2026:** the public [README](https://github.com/rohitg00/ai-engineering-from-scratch), [ROADMAP](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/ROADMAP.md), and [Career Practice guide](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/learning-paths/CAREER-PRACTICE.md). This is a curriculum review, **not a code audit or verification of every lesson**. The links track a moving main branch.
+**Review date: October 13, 2026.** Yes, [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) informs this plan. Its [README](https://github.com/rohitg00/ai-engineering-from-scratch), [ROADMAP](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/ROADMAP.md) and [Career Practice](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/learning-paths/CAREER-PRACTICE.md) were reviewed, together with the selected lesson/project content linked below.
 
-## Keep the strongest parts
+This is a **curriculum/content review, not a whole-repository code audit**. No upstream lessons are copied into these pages. The weekly assignments are our own small-project sequence with attribution links.
 
-The README emphasizes implement/test/inspect work and offers concrete projects: Retrieval Evaluation Lab, Agent Trace Debugger, and Tool Call Firewall. The Career Practice guide already recommends **one coherent project, prerequisite checks, product judgment, feedback, and evidence rather than a job guarantee**.
+## What was retained and adapted?
 
-Our path retains those ideas. We are not claiming the original lacks projects, career routes, or production practices.
+The reference emphasizes implementation, tests, failure inspection and one coherent project. We retain those practices and the retrieval lab's query-by-query comparisons. We narrow its broad curriculum into three starting-level routes, put selected resources beside assignments, include independent project/review time and separate optional depth.
 
-## What changes, and why?
+The reference's phase timings are not used as completion guarantees. Its ROADMAP headline is roughly 332 hours; this plan uses its own 336/480-hour budgets and gates. Completing a source lesson or project does not establish professional experience.
 
-| Observed source characteristic | Proposed adaptation |
+## Selected upstream content actually inspected
+
+| Content | Selected use | Boundary |
+| --- | --- | --- |
+| [Git and Collaboration](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/00-setup-and-tooling/02-git-and-collaboration/docs/en.md) | B11: local versioning, branching and ignored files | Not verification of every setup lesson |
+| [Model evaluation](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/02-ml-fundamentals/09-model-evaluation/docs/en.md) | Supporting reference for splits, metrics and leakage | Primary scikit-learn/course readings lead the ML assignments |
+| [RAG](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/11-llm-engineering/06-rag/docs/en.md) | A15/A17 and C25–26: loading, chunking, embedding, storage, retrieval and generation | Broad cost/privacy/superiority claims are not adopted; task-specific comparison remains necessary |
+| [Retrieval Evaluation Lab](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/projects/retrieval-evaluation-lab) | A16/A18: ranking validation, precision/recall, rank-sensitive metrics and per-query comparison | Project description/stage map inspected; runner and solution code not executed or audited |
+| [Tool schema design](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/13-tools-and-protocols/05-tool-schema-design/docs/en.md) | A14/A19: descriptions and parameter constraints | Not independent verification of its benchmark claims |
+| [Agent loop](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/14-agent-engineering/01-the-agent-loop/docs/en.md) | A19: registry, observations and stop/budget conditions | Selected concepts, not completion of its full prerequisite chain |
+| [Failure modes](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/14-agent-engineering/26-failure-modes-agentic/docs/en.md) | A20/delivery: cascading errors, context loss and tool misuse | Paper/industry claims and all linked references not independently verified |
+| [Secrets and audit lesson](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/17-infrastructure-and-production/25-security-secrets-audit/docs/en.md) | Background review only; not required weekly reading | Its incidents, universal patterns and policy thresholds are not adopted as verified standards |
+| [Career Practice](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/learning-paths/CAREER-PRACTICE.md) | One project, prerequisite checks, reproduction and actual feedback | Its career-specific overlays are not required or an employment promise |
+
+The links follow a moving `main` branch. Record the source revision/date you actually use for an exercise.
+
+## Primary education and documentation checked
+
+| Source | Content accessed and relevance |
 | --- | --- |
-| Twenty phases span math, ML, vision, speech, transformers, agents, infrastructure, and alignment | Route by starting level and role; most application learners do not need every specialty before shipping |
-| Python, TypeScript, Rust, and Julia appear in the repository | A uses Python + SQL first; add another language only for a target role |
-| The ROADMAP gives both a roughly 332-hour headline and a roughly 1,081-hour footer, including a roughly 620-hour capstone phase | Treat source durations as internally inconsistent; publish separate learner budgets including project/review time |
-| README advertises 528 lessons; ROADMAP footer lists 523 | Do not use lesson counts as a completion metric; counts were inconsistent at review time |
-| Career Practice says guided lesson minutes exclude independent project and review time | Include those activities explicitly in the weekly budget; advance on gates |
-| The assessed source pages focus on implementation and specialist routes, not an official-exam selection sequence | Add current provider verification, course/exam distinctions, one-cloud selection, and dated rechecks |
+| [CS50P](https://cs50.harvard.edu/python/) | Course overview, weeks 0–9 pages and final-project requirements; direct selections in B |
+| [CS50 SQL](https://cs50.harvard.edu/sql/) | Overview and Querying/Relating/Designing pages; selected data foundations |
+| [ML specialization](https://www.coursera.org/specializations/machine-learning-introduction) | Three-course description and supervised/unsupervised subject coverage; not protected assignments |
+| [fast.ai](https://course.fast.ai/) | Course overview and lessons 1–2 pages: coding prerequisites, model training/deployment and 2022 Part 1 recordings |
+| [HF LLM course](https://huggingface.co/learn/llm-course/en/chapter1/1) | Introduction/prerequisites, Tokenizers, fine-tuning introduction and Datasets introduction |
+| [scikit-learn](https://scikit-learn.org/stable/common_pitfalls.html) | Leakage/common pitfalls, cross-validation and [probability calibration](https://scikit-learn.org/stable/modules/calibration.html) explanations/examples |
+| [SciPy bootstrap](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html) | Synthetic resampling example, variability and confidence intervals for C's statistical practice |
+| [PostgreSQL](https://www.postgresql.org/docs/current/tutorial.html) | Tutorial, transactions and window-function content |
+| [pytest](https://docs.pytest.org/en/stable/getting-started.html), [uv](https://docs.astral.sh/uv/guides/projects/), [FastAPI](https://fastapi.tiangolo.com/tutorial/) | Testing example, project/environment management, API first steps/request bodies/response models/errors/security and concurrency pages |
+| [Docker](https://docs.docker.com/get-started/tutorials/run-an-app/), [Python CI](https://docs.github.com/en/actions/tutorials/build-and-test-code/python) | Application/container/Compose tutorial and build/test workflow guide |
+| [pgvector](https://github.com/pgvector/pgvector), [MLflow](https://mlflow.org/docs/latest/ml/tracking/) | Vector search/persistence/update/delete and experiment/run/artifact tracking |
+| [MLOps Zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) | README/access conditions and modules 2–6 descriptions: tracking, orchestration, deployment, monitoring and best practices |
+| [LangGraph](https://docs.langchain.com/oss/python/langgraph/persistence), [MCP](https://modelcontextprotocol.io/docs/learn/architecture) | Persistence/interrupt content and protocol architecture; optional delivery concepts |
+| [Credential register](./credentials) | Official Microsoft AI-103/study-guide, retired AI-102, AWS ML Associate and Google ML pages rechecked; public scope/status only |
 
-**Inference:** narrowing the prerequisite chain should reduce unnecessary work for an application-focused learner. We have not measured completion time or employment outcomes against the original.
+## Verification limits {/* #verification-limits */}
 
-## Selected reference lessons
+- Public pages and selected content were fetched; this is not proof that every nested link, video, code sample or course exercise works.
+- Initial bare CS50 `/python/0/` and `/sql/0/`-style URLs returned 404. The provider's weeks index exposed the correct **`/weeks/…/`** paths; the selections in this plan were fetched at those corrected URLs. The index's simplified extraction omitted its lesson list, so its HTML was inspected.
+- Docker's old workshop URL redirected; the plan uses the fetched application tutorial. MCP's architecture URL redirected to a versioned documentation page. Pin protocol/SDK versions before implementation.
+- No enrollment, checkout, cloud deployment or exam booking was performed. Paid/sign-in assignments, local price/appointments, assessment access and credential outcomes remain unverified.
+- Source availability and subject coverage are not a “best-in-class” ranking or evidence of employment outcomes. Individual readiness needs actual artifacts and review.
 
-Use these as a reference shelf, **not an additional course to finish in full**. Start with the linked README/ROADMAP for adjacent lessons and prerequisites.
+Most linked resources are in English; the Spanish route explains the same assignments but does not promise translated provider material or Spanish exam availability.
 
-| Stage | Source | Use |
-| --- | --- | --- |
-| Setup | [Phase 0](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/phases/00-setup-and-tooling) | Git, environments, APIs, Docker, debugging |
-| ML evaluation | [Model evaluation](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/02-ml-fundamentals/09-model-evaluation/docs/en.md) | Splits, metrics, baselines |
-| Retrieval | [RAG](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/11-llm-engineering/06-rag/docs/en.md) and [Retrieval Evaluation Lab](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/projects/retrieval-evaluation-lab) | Implement retrieval and inspect per-query regressions |
-| Agents | [Agent loop](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/14-agent-engineering/01-the-agent-loop/docs/en.md) and [failure modes](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/14-agent-engineering/26-failure-modes-agentic/docs/en.md) | Bounded runtime before multi-agent orchestration |
-| Tool contracts | [Tool schema design](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/13-tools-and-protocols/05-tool-schema-design/docs/en.md) | Validate requests; explain trust boundaries |
-| Operations | [Security, secrets, audit](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/17-infrastructure-and-production/25-security-secrets-audit/docs/en.md) | Secret handling, data minimization, audit evidence |
-| Career | [Career Practice](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/learning-paths/CAREER-PRACTICE.md) | One project, independent reproduction, feedback, ownership |
-
-The Rust firewall and TypeScript trace-debugger projects are useful electives, not A prerequisites. Their README explicitly limits what their demonstrations establish; do not present them as a complete authorization system or sandbox.
-
-## Primary-source verification register
-
-| Source accessed | Supported fact | Limit |
-| --- | --- | --- |
-| [Harvard CS50P](https://cs50.harvard.edu/python/) and [CS50 SQL](https://cs50.harvard.edu/sql/) | Free OpenCourseWare; programming/testing and relational-data curricula | Certificate terms need separate confirmation |
-| [Coursera ML Specialization](https://www.coursera.org/specializations/machine-learning-introduction) | Three-course program in collaboration with Stanford Online/DeepLearning.AI; supervised/unsupervised ML | No independent employment outcome established; checkout terms vary |
-| [fast.ai](https://course.fast.ai/) | Free practical deep-learning course for coders; Part 1 page identifies 2022 recordings | Stable concepts may need current package/API documentation |
-| [Hugging Face LLM Course](https://huggingface.co/learn/llm-course/en/chapter1/1) | Free course; recommends good Python and introductory deep learning | Selected reading is not full completion |
-| [AI-103](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/) and [study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) | Python/Foundry application role and current exam domains | Scheduling, local price, language, and assessment availability must be rechecked |
-| [Retired Azure AI Engineer credential](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/) | Certification and renewal assessment marked retired | Old learning material is not the current exam syllabus |
-| [AWS ML Engineer Associate](https://aws.amazon.com/certification/certified-machine-learning-engineer-associate/) | English C01 end date and C02 beta transition | Do not silently label the beta GA or assume result timing |
-| [Google Professional ML Engineer](https://cloud.google.com/learn/certification/machine-learning-engineer) | ML/data platforms/pipelines/MLOps scope; coding not directly assessed | Region-specific demand and individual readiness not established |
-
-All rows were accessed on **2026-10-13**. Source facts support subject coverage, **not a statistical ranking of credentials by employer value**.
-
-## Market evidence and honest uncertainty
-
-Microsoft and Google role descriptions support the skills selected, but provider descriptions are **not representative labor-market research**. No verified regional employer sample or causal credential-to-employment data was available for this learner. **Insufficient evidence available** to claim a salary premium, hiring probability, or universally best certification.
-
-Use the [posting-sample method](./portfolio-career#career-work-begins-before-the-final-phase) to validate the path locally. Track role level, geography, posting date, required Python/SQL/ML/data/cloud skills, and required vs preferred credentials. Revise priorities monthly; do not infer senior-role eligibility from a certificate.
-
-Recheck all official credentials before purchase and every quarter. Record changes, date, and source rather than silently replacing an exam code. This is an original study sequence referencing upstream work; it does not copy their lessons or claim provider endorsement.
-
-## Subsequent employer evidence
-
-The [EPAM reality check](./epam-reality-check), also dated October 13, 2026, adds four verified employer postings. This resolves the absence of a concrete employer sample for those roles, **not** the absence of representative regional market data or causal credential/employment evidence. The resulting [senior bridge](./senior-delivery-bridge) addresses explicit delivery gaps; individual readiness still requires assessment.
+Recheck broken links when encountered, version-sensitive APIs before implementation and official credentials before payment. Record a source/date change rather than silently assuming older exam codes remain current.

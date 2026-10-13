@@ -1,47 +1,61 @@
 ---
 sidebar_position: 1
-title: "Ingeniería de IA: elige A, B o C"
+title: "Rutas de Aprendizaje en Ingeniería de IA"
 ---
 
-# Ingeniería de IA: tres puntos de partida
+# Comprende. Construye algo útil. Explica cómo funciona.
 
-**Empieza por [A](./path-a)** si ya sabes Python básico y quieres construir aplicaciones de IA. Aprende una sola pila, termina proyectos útiles y elige una certificación relacionada con tus puestos objetivo, en vez de acumular insignias.
+Aprende ingeniería de IA con un proyecto pequeño y conectado, no con una colección de tutoriales aislados. Elige tu punto de partida, sigue las lecturas junto a cada actividad y avanza cuando puedas explicar y reproducir el resultado.
 
-| Ruta | Punto de partida | Dirección | Estimación de planificación |
+| Ruta | Empieza aquí si… | Qué explorarás | Presupuesto estimado |
 | --- | --- | --- | --- |
-| **[A: Ingeniería de aplicaciones de IA](./path-a)** | Cambio de carrera con Python básico | APIs, ML práctico, LLM, RAG evaluado, herramientas acotadas y despliegue | 28 semanas a 12 horas/semana |
-| **[B: Desde cero](./path-b)** | Sin experiencia programando | Fundamentos de programación y datos, luego A | 40 semanas a 12 horas/semana |
-| **[C: Machine Learning y Datos](./path-c)** | Ingeniero de software experimentado | Estadística, pipelines de datos, entrenamiento, experimentación, MLOps y GenAI | 32 semanas a 15 horas/semana |
+| **[A: Construcción de aplicaciones de IA](./path-a)** | Conoces Python básico | Software, ML práctico, modelos de lenguaje, recuperación, flujos acotados y entrega | 28 semanas × 12 horas = **336 horas** |
+| **[B: Fundamentos de programación](./path-b)** | No tienes experiencia programando | Python, pruebas, datos y Git; después, la secuencia A | 40 semanas × 12 horas = **480 horas** |
+| **[C: Sistemas de ML y datos](./path-c)** | Ya construyes y despliegas software | Mayor profundidad en ML, pipelines de datos, entrenamiento, experimentación y MLOps, con recuperación aplicada | 32 semanas × 15 horas = **480 horas** |
 
-Son **presupuestos de estudio propuestos, no garantías de finalización ni empleo**. Avanza por criterios de salida, no por calendario. A es la primera ruta con un detalle semanal completo; B y C tienen mapas de fases y criterios propios.
+Son estimaciones de estudio, no plazos ni garantías. Con la mitad del tiempo semanal, calcula aproximadamente el doble de semanas. Extiende una fase cuando una actividad o criterio de avance requiera más práctica.
 
-## Qué simplificamos
+## Un proyecto que crece contigo
 
-- **Un curso principal a la vez:** Harvard cuando falten fundamentos, la especialización de ML de Stanford Online/DeepLearning.AI, módulos seleccionados de Hugging Face y preparación oficial.
-- **Tres resultados de portafolio:** servicio de datos/ML, asistente fundamentado y flujo acotado, sobre un mismo dominio.
-- **Una nube y un examen:** según las vacantes y la experiencia práctica. Los exámenes son opcionales, nunca permiso para postular.
-- **Una puerta de salida medible por fase:** código reproducible, evaluación independiente, fallos operativos y explicación defendible.
+Usa un **asistente de apoyo al aprendizaje**: una colección pequeña de preguntas públicas o sintéticas, etiquetas de temas y documentos de referencia con licencia. Empieza organizando preguntas; añade un clasificador, respuestas respaldadas por pasajes y un flujo de consulta de solo lectura que prepare un borrador para revisión humana.
 
-La existencia y el alcance de los cursos y exámenes se verifican en [credenciales](./credentials). Su reputación **no prueba que un certificado garantice entrevistas, salario o empleo**.
+Es un ejemplo, no un sector o producto obligatorio. Puedes elegir otro dominio de bajo riesgo que permita las mismas actividades. Mantén un solo dominio durante la ruta. No publiques datos personales, documentos privados ni credenciales.
 
-## Primera sesión
+## Tu primera sesión
 
-1. Elige puesto y región. Registra 10 vacantes recientes de empleadores, separando requisitos, preferencias y seniority.
-2. Intenta la [prueba de entrada de A](./path-a#prueba-de-entrada). Si no puedes resolverla, empieza B. Si ya despliegas software y buscas entrenamiento/datos, elige C.
-3. Selecciona datos públicos o sintéticos y un flujo, por ejemplo clasificación de tickets. No publiques datos de clientes, credenciales ni documentos privados.
-4. Abre un repositorio con línea base, evidencia semanal y próxima puerta pendiente. No compres varios cursos todavía.
+1. Intenta la [prueba de entrada de A](./path-a#entry-check). Elige B si necesitas programación; C si dominas las bases de software y deseas profundizar en ML/datos.
+2. Escribe una frase sobre lo que tu proyecto ayudará a una persona a hacer.
+3. Selecciona datos pequeños que tengas permiso de usar. Registra fuente, licencia y limitaciones.
+4. Abre la primera lección y realiza la actividad. Guarda una explicación breve y un resultado reproducible.
+
+## Un ritmo sostenible
+
+Para A/B: aproximadamente **6 horas de aprendizaje, 5 de construcción/pruebas y 1 de explicación/revisión** por semana. C: **6 de aprendizaje, 7 de implementación/evaluación y 2 de revisión**. Estudia el tema seleccionado, aplícalo sin copiar, provoca un fallo controlado y explica la corrección. Revisa código asistido por IA y reproduce su comportamiento; respeta las reglas de honestidad académica del proveedor.
+
+La base es pequeña: Python, SQL, una biblioteca de API, una base de datos y una interfaz de modelo. Las herramientas nombradas son ejemplos, no una lista que debas dominar. Empieza localmente; añade servicios alojados solo cuando la práctica de entrega los necesite.
+
+## Algunos términos, en lenguaje sencillo
+
+- **ML (machine learning):** modelos que aprenden patrones de ejemplos; compáralos con una referencia simple sin ML.
+- **LLM (modelo de lenguaje grande):** procesa y genera lenguaje; una respuesta fluida puede ser incorrecta.
+- **Embeddings:** representaciones numéricas para comparar elementos, como pasajes de texto.
+- **Datos reservados:** ejemplos separados del entrenamiento y ajuste para evaluar una elección terminada.
+- **Ficha del modelo:** registro breve de uso previsto, datos, evaluación y limitaciones.
+- **MLOps:** prácticas que conectan versiones de modelos/datos, entrenamiento repetible, entrega, monitoreo y recuperación.
+- **Criterio de avance:** evidencia que compruebas antes de continuar, no solo horas de estudio.
+
+## Dónde continuar
 
 | Necesidad | Página |
 | --- | --- |
-| Secuencia semanal | [A: plan de 28 semanas](./path-a) |
-| Fundamentos desde cero | [B](./path-b) |
-| Más Machine Learning y Datos | [C](./path-c) |
-| Qué estudiar y pagar | [Cursos y certificaciones](./credentials) |
-| Qué mostrar a un revisor | [Portafolio y ejecución de carrera](./portfolio-career) |
-| Qué cambió frente a la referencia | [Revisión y verificación](./source-review) |
+| Secuencia semanal con recursos directos | [A: Aplicaciones de IA](./path-a) |
+| Introducción para principiantes | [B: Programación](./path-b) |
+| Mayor profundidad en ML, datos y entrenamiento | [C: Sistemas de ML y datos](./path-c) |
+| Resultados reproducibles y criterios de avance | [Proyecto y revisión](./portfolio-practice) |
+| Autoevaluación clara | [Guía de capacidades](./capability-guide) |
+| Profundidad operativa opcional | [Práctica de entrega](./delivery-practice) |
+| Acceso a cursos y credenciales opcionales | [Cursos y credenciales](./credentials) |
+| Uso del repositorio de referencia | [Fuentes y verificación](./source-review) |
+| Extensiones puntuales, no otro curso obligatorio | [Recursos de aprendizaje](./learning-resources) |
 
-Los planes existentes de seguridad, arquitectura y liderazgo permanecen separados. Esta ruta se enfoca en **construir software**; no es un atajo a arquitecto sénior, investigador o líder de gobernanza.
-
-## ¿Buscas vacantes sénior?
-
-Lee el [reality check de cuatro puestos EPAM](./epam-reality-check) antes de elegir certificado. A/B son fundamentos; C profundiza ML/datos, pero ninguna crea años profesionales de producción. Profesionales experimentados pueden añadir el [puente sénior](./senior-delivery-bridge): 16 semanas comunes y una rama de 8 en agentes, soluciones Python, medios o liderazgo. [Investigación/recursos](./senior-resources).
+La selección considera claridad, requisitos previos, ejercicios y pertinencia; no afirma un ranking universal de los “mejores”. Se conservan los nombres oficiales de proveedores y credenciales para atribuir correctamente. Las rutas no apuntan a un empleador o puesto, no otorgan experiencia profesional ni prometen empleo.

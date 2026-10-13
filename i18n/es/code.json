@@ -147,16 +147,16 @@
     "message": "🤖 Ruta de Azure AI Foundry"
   },
   "homepage.career.label": {
-    "message": "Rutas de Carrera"
+    "message": "Rutas de Aprendizaje"
   },
   "homepage.career.title": {
-    "message": "Elige tu Ruta de Carrera"
+    "message": "Elige tu Punto de Partida"
   },
   "homepage.career.description": {
-    "message": "Empieza ingeniería de IA con A, B o C según tu experiencia, o explora los planes existentes de seguridad y arquitectura."
+    "message": "Aprende con un proyecto conectado. Elige A, B o C con recursos seleccionados, actividades prácticas y criterios claros, o explora los planes existentes de seguridad y arquitectura."
   },
   "homepage.career.aiEngineering": {
-    "message": "Ingeniería de IA: A, B, C"
+    "message": "Rutas de IA: A, B, C"
   },
   "homepage.career.aiSecurityProfessional": {
     "message": "🛡️ Abrir AI Security Professional (9 meses)"

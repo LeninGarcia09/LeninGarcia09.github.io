@@ -1,61 +1,84 @@
 ---
 sidebar_position: 4
-title: "C: Machine Learning + Data Engineering"
+title: "C: ML and Data Systems"
 ---
 
-# C: experienced software engineer to ML and data systems
+# C: deepen the data, training and operational foundations
 
-**For:** engineers who already build tested APIs, use Git/CI, query SQL, and deploy services. **Planning budget:** 32 weeks at 15 hours/week = **480 hours**. Allocate approximately 6 hours learning, 7 hours implementation/evaluation, and 2 hours career and technical communication.
+**Start here if:** you already build tested APIs, use Git/CI, query SQL and deploy services. **Budget:** 32 weeks × 15 hours = **480 hours**: roughly 6 hours learning, 7 implementation/evaluation and 2 reviewing each week.
 
-This path deliberately adds **more Machine Learning and Data** than A. Training and data pipelines are first-class work, not an optional notebook beside an LLM application.
+This journey deliberately goes deeper into **machine learning and data** than A. Training, data quality and repeatable pipelines are central—not an optional notebook beside a language-model feature.
 
 ## Entry gate
 
-Show a production-style service you can explain, a SQL query using joins and window functions, a reproducible container, and a CI failure you diagnosed. If software foundations are missing, take A first. Existing software experience does not establish ML experience.
+Show a service you can explain, a SQL join/window query, a reproducible container and a CI failure you diagnosed. Fill software gaps with [A](./path-a) first. Software experience does not establish ML understanding.
 
-## Separate phase roadmap
+Use the same learning-support workbench: version question/topic events, train a classifier and compare documentation-answer approaches. These are three outcomes of **one system**, not three unrelated projects.
 
-| Phase | Weeks / hours | Learn and implement | Exit evidence |
-| --- | --- | --- | --- |
-| Statistics + ML foundations | 1-6 / 90 | [ML Specialization](https://www.coursera.org/specializations/machine-learning-introduction); probability, linear algebra, optimization, sampling, leakage, uncertainty | Regression/classification baselines; split strategy; confidence intervals and slice errors |
-| Data engineering | 7-12 / 90 | Advanced SQL, relational modeling, batch ingestion, incremental updates, schema evolution, data contracts, quality tests, lineage | Idempotent pipeline + backfill + malformed-data quarantine + tested transformations |
-| Deep learning + NLP | 13-18 / 90 | Selected [fast.ai](https://course.fast.ai/) training/deployment lessons, then [Hugging Face](https://huggingface.co/learn/llm-course/en/chapter1/1) datasets, tokenization, training/fine-tuning | Reproducible training job, versioned dataset, baseline vs fine-tuned model report |
-| MLOps + serving | 19-24 / 90 | Tracking, model registry concepts, feature consistency, batch/online inference, CI evaluation, rollout/rollback, drift | Training-to-serving pipeline; rollback rehearsal; latency and quality alerts |
-| Applied GenAI + data retrieval | 25-28 / 60 | Hybrid retrieval, reranking, data access filters, evaluation, prompt/model versioning; compare retrieval and fine-tuning | Held-out RAG experiment; documented choice and cost/quality tradeoff |
-| Specialization + career | 29-32 / 60 | One cloud's official exam preparation, system-design practice, case studies, applications | Exam-gap map and three defensible portfolio outcomes |
+## Phase 1 — ML foundations and statistical judgment
 
-These are selected course modules except where the full ML specialization is named. Completing this roadmap does not imply completion of fast.ai, the full Hugging Face course, or a professional certification. Extend any phase when assignments or gates need more time.
+**Weeks 1–6 / 90 hours.** Complete the ML specialization's required work if seeking its certificate; extend the phase if it exceeds this allocation. Supplement a mathematical gap rather than assuming coding familiarity replaces it.
 
-## Three connected projects
-
-| Project | Minimum implementation | What makes it different from A |
+| Weeks | Selected resource and focus | Assignment and evidence |
 | --- | --- | --- |
-| Data product | Public/synthetic event ingestion into a relational/analytical store; quality contracts, incremental processing, backfill, documented lineage | Recoverability, data semantics, freshness, duplicates, and reproducibility |
-| Trained ML service | Compare heuristic, linear/tree, and a small neural model; train on versioned data; deploy batch and API inference | Model selection, tuning without test leakage, experiment tracking, training-serving consistency |
-| Retrieval/model adaptation benchmark | Same task and held-out queries; compare prompt-only, RAG, and a justified small fine-tune | Data provenance, model/dataset versions, slice analysis, cost, operational complexity |
+| 1–2 | [ML specialization](https://www.coursera.org/specializations/machine-learning-introduction): regression, classification, loss and optimization | Explain features, vector/matrix shapes and gradients in a small model. Compare heuristic and linear baselines. |
+| 3–4 | [ML specialization](https://www.coursera.org/specializations/machine-learning-introduction): neural networks, trees and model selection; [cross-validation](https://scikit-learn.org/stable/modules/cross_validation.html) | Choose random, grouped or temporal splits appropriately. Tune on development data only; compare model errors by slice. |
+| 5–6 | [ML specialization](https://www.coursera.org/specializations/machine-learning-introduction): unsupervised/recommendation material and remaining assignments; [common pitfalls](https://scikit-learn.org/stable/common_pitfalls.html); [SciPy bootstrap example](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html): resampling and intervals | Explain leakage, imbalance, missing values and thresholds. Estimate variability by repeatedly sampling synthetic independent observations; document the interval and assumptions. **Gate C1:** baseline report, split manifest and justified limitations. |
 
-A fine-tune is **not mandatory if it is unjustified**. Explain the decision and run a small controlled training experiment instead. Use local CPU/small-model exercises first; GPU spend needs a written cap and cleanup plan.
+## Phase 2 — Turn data into a recoverable product
 
-## Required data and ML depth
+**Weeks 7–12 / 90 hours.** Start with a local batch pipeline. Scheduling tools are optional until the command-line pipeline works.
 
-Be able to defend splits for temporal/grouped data, missing-value handling, class imbalance, calibration, threshold selection, feature leakage, drift vs data bugs, and reproducibility. For data engineering, demonstrate keys/constraints, schema migrations, idempotency, retries, failed-record handling, lineage, and deletion.
+| Weeks | Selected resource and focus | Assignment and evidence |
+| --- | --- | --- |
+| 7–8 | [CS50 SQL: Designing](https://cs50.harvard.edu/sql/weeks/2/), [PostgreSQL transactions](https://www.postgresql.org/docs/current/tutorial-transactions.html) and [window functions](https://www.postgresql.org/docs/current/tutorial-window.html) | Define keys, constraints and event history. Test failed transactions and calculate rolling topic counts. |
+| 9–10 | [MLOps orchestration module](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/03-orchestration): parameterized scripts, dependencies and backfills | Build incremental ingestion; rerunning the same batch must not duplicate records. Quarantine malformed records and recover a failed run. |
+| 11–12 | [HF Datasets introduction](https://huggingface.co/learn/llm-course/en/chapter5/1): loading, slicing and processing | Version dataset snapshots, transformations and schema changes. **Gate C2:** backfill, deletion, quality checks and lineage reproduce from source to training set. |
 
-Distributed processing, Kubernetes, feature stores, forecasting, recommendation, and computer vision are **role-driven electives**. Add Spark or another engine only when the dataset or target jobs justify it; do not spend the core plan rebuilding infrastructure.
+## Phase 3 — Train and adapt a small model
 
-## Delivery enhancement for senior targets
+**Weeks 13–18 / 90 hours.** The fast.ai page identifies Part 1 recordings as 2022; use current library documentation and compatible pinned versions. Selected lessons are not full-course completion.
 
-The [EPAM audit](./epam-reality-check) identifies application/agent requirements not established by ML/data study. Keep this path's ML depth, but use explicit tools in the artifacts: uv/Ruff/pytest and FastAPI/Pydantic/Uvicorn for packaging/serving; PostgreSQL/pgvector for relational/vector data; NumPy, pandas or Polars, scikit-learn, PyTorch, HF datasets/tokenizers and sentence-transformers where applicable; MLflow for recorded experiments. Explain the conceptual mapping to TensorFlow/Keras rather than claiming untested proficiency.
+| Weeks | Selected resource and focus | Assignment and evidence |
+| --- | --- | --- |
+| 13–14 | fast.ai [lesson 1](https://course.fast.ai/Lessons/lesson1.html): training/using a model; [lesson 2](https://course.fast.ai/Lessons/lesson2.html): your dataset and deployment | Train a small model, save weights and compare training/validation behavior. Explain overfitting and the compute budget. |
+| 15–16 | [HF Tokenizers](https://huggingface.co/learn/llm-course/en/chapter2/4) and [fine-tuning chapter introduction](https://huggingface.co/learn/llm-course/en/chapter3/1), then its preprocessing/training sections | Run a small text-classification training exercise on versioned data. Record tokenizer, model, seed, metrics and resource use. |
+| 17–18 | [MLflow tracking](https://mlflow.org/docs/latest/ml/tracking/): runs, experiments and artifacts; [probability calibration](https://scikit-learn.org/stable/modules/calibration.html): calibration curves; revisit [leakage pitfalls](https://scikit-learn.org/stable/common_pitfalls.html) | Compare heuristic, linear/tree and adapted-model results on the same untouched split. Check whether predicted confidence matches observed frequencies; fit any calibration on development data only. **Gate C3:** reproducible training and honest baseline comparison. |
 
-Use selected [MLOps Zoomcamp modules](https://github.com/DataTalksClub/mlops-zoomcamp) during weeks 19-24, not an additional full nine-week course inside the same budget. At weeks 29-32, prioritize delivery/design/English gaps over an exam for the four EPAM targets. Extend the phase when required.
+Use CPU-sized or small models first. Fine-tuning the application is not mandatory if it is unjustified; the controlled training exercise still provides learning evidence. GPU or API spend needs a cap and cleanup plan.
 
-For those roles, add the [Senior Delivery Bridge](./senior-delivery-bridge) after the admission gates. Kubernetes and Redis/Kafka become concrete E3 exercises, while AgentCore/Strands or diffusion/video belong to separate branches. This **adds up to 360 proposed hours** if taken in full; it is not hidden inside C's 480-hour estimate and does not create the required professional tenure.
+## Phase 4 — Connect training to serving
 
-## Credentials and target roles
+**Weeks 19–24 / 90 hours.** Select the indicated MLOps Zoomcamp topics—not the complete additional nine-week course. Translate its examples to your existing project rather than adopting every demonstrated service.
 
-For ML production on AWS, consider **AWS Certified Machine Learning Engineer - Associate**, but the official page currently lists an **MLA-C02 English beta transition**. Do not plan the retired English MLA-C01 sitting. Prefer waiting for a stable syllabus if you do not need a beta.
+| Weeks | Selected resource and focus | Assignment and evidence |
+| --- | --- | --- |
+| 19–20 | [Experiment tracking module](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/02-experiment-tracking): artifacts, lineage and model versions | Track training runs and register/version a candidate. Test feature consistency between training and serving. |
+| 21–22 | [Deployment module](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/04-deployment): batch and online serving; [best practices](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/06-best-practices): tests and CI | Serve one model by API and batch job. Block a seeded regression in CI; rehearse a failed release and rollback. |
+| 23–24 | [Monitoring module](https://github.com/DataTalksClub/mlops-zoomcamp/tree/main/05-monitoring): health, quality and drift | Simulate missing/shifted data; distinguish drift from a pipeline bug. **Gate C4:** training-to-serving pipeline, alerts/report and recovery evidence. |
 
-For Google-oriented ML/data roles, evaluate **Professional Machine Learning Engineer** after substantial hands-on practice. It is not proof of coding proficiency. AI-103 fits Azure **application** roles but does not replace the ML/data evidence above.
+## Phase 5 — Compare retrieval and model adaptation
 
-Target ML engineer, data engineer supporting AI, AI platform/MLOps engineer, or applied AI engineer according to prior experience and postings. Research-scientist and senior roles may require qualifications this path does not provide.
+**Weeks 25–28 / 60 hours.**
 
-**Continue:** [official courses and exams](./credentials), [evidence rubric](./portfolio-career), and [source mapping](./source-review).
+| Weeks | Selected resource and focus | Assignment and evidence |
+| --- | --- | --- |
+| 25–26 | [Upstream RAG lesson](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/phases/11-llm-engineering/06-rag/docs/en.md) and [pgvector](https://github.com/pgvector/pgvector): search and persistence | Build lexical/embedding retrieval; enforce document access filters outside the model. Test updates, deletion and denied access with synthetic identities. |
+| 27–28 | [Retrieval Evaluation Lab](https://github.com/rohitg00/ai-engineering-from-scratch/tree/main/projects/retrieval-evaluation-lab): query comparisons; [shared answer rubric](./portfolio-practice#completion-gates) | **Gate C5:** compare prompt-only and RAG on one frozen answer task. Compare adaptation only if trained for that same task; classifier scores are not answer-quality scores. Report slice errors, cost and complexity. |
+
+The upstream lab has POSIX-dependent runner features; use WSL where needed or implement the metric exercises independently. Record which checks actually ran.
+
+## Phase 6 — Consolidate and explain
+
+**Weeks 29–32 / 60 hours.**
+
+| Weeks | Selected resource and focus | Assignment and evidence |
+| --- | --- | --- |
+| 29–30 | [Capability guide](./capability-guide), [MLflow tracking](https://mlflow.org/docs/latest/ml/tracking/) and [optional credentials](./credentials) | Repair the weakest gate. Optionally map one relevant exam syllabus to gaps; exam preparation is not automatically included in 60 hours. |
+| 31–32 | [Upstream Career Practice](https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/learning-paths/CAREER-PRACTICE.md): feedback and reproduction; [review practice](./portfolio-practice#review-and-explain) | **Gate C6:** a reviewer recreates one data failure, one training result and one serving recovery. Write three connected case studies with actual results and limitations. |
+
+## Optional depth, kept separate
+
+Distributed processing, streaming, feature stores, Kubernetes, recommendation, forecasting and vision are electives. Add one when a clear dataset/workload or learning question justifies it; record additional time and cost. Do not rebuild infrastructure to hide weak data or evaluation.
+
+For stateful workflows or more operational practice, the [delivery extension](./delivery-practice) adds **360 proposed hours** if taken in full. It is not hidden inside C's 480 hours. Certificates and project uptime do not award professional experience.
