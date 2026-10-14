@@ -14,6 +14,19 @@ const sidebars = {
     'ai-engineering/delivery-practice',
     'ai-engineering/learning-resources',
   ],
+  fintechFinanceSidebar: [
+    { type: 'doc', id: 'fintech-finance/overview', label: 'Learning Paths Overview' },
+    {
+      type: 'category',
+      label: 'Learning Horizons',
+      items: [
+        { type: 'doc', id: 'fintech-finance/path-3-months', label: '3-Month Foundation' },
+        { type: 'doc', id: 'fintech-finance/path-6-months', label: '6-Month Specialization' },
+        { type: 'doc', id: 'fintech-finance/path-9-months', label: '9-Month Advanced Practice' },
+      ],
+    },
+    { type: 'doc', id: 'fintech-finance/resources-and-evidence', label: 'Resources & Opportunity Evidence' },
+  ],
   foundrySkillSidebar: [
     { type: 'doc', id: 'azure-ai-foundry/overview', label: 'Track Overview' },
     { type: 'doc', id: 'azure-ai-foundry/prerequisites', label: 'Prerequisites & Setup' },

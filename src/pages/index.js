@@ -136,6 +136,9 @@ export default function Home() {
             <Link className="button button--primary button--lg" to="/docs/ai-engineering/overview">
               <Translate id="homepage.career.aiEngineering">AI Learning Journeys: A, B, C</Translate>
             </Link>
+            <Link className="button button--primary button--lg" to="/docs/fintech-finance/overview">
+              <Translate id="homepage.career.fintechFinance">Finance &amp; FinTech Learning Paths</Translate>
+            </Link>
             <Link className="button button--primary button--lg" to="/docs/learning-plan/overview">
               <Translate id="homepage.career.aiSecurityProfessional">🛡️ Open AI Security Professional (9 meses)</Translate>
             </Link>

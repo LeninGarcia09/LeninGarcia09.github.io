@@ -128,6 +128,7 @@ const config = {
             type: 'dropdown',
             items: [
               { type: 'docSidebar', sidebarId: 'aiEngineeringSidebar', label: 'AI Learning Journeys: A, B, C' },
+              { type: 'docSidebar', sidebarId: 'fintechFinanceSidebar', label: 'Finance & FinTech Learning Paths' },
               { type: 'docSidebar', sidebarId: 'learningPlanSidebar', label: '🛡️ AI Security Professional (9 months)' },
               { type: 'docSidebar', sidebarId: 'learningPlanV4Sidebar', label: '🏗️ AI Solution Architect — Responsible AI (26 sem)' },
               { type: 'docSidebar', sidebarId: 'executiveAiLeadershipSidebar', label: '🧠 Executive AI Leadership Plan' },
@@ -176,6 +177,7 @@ const config = {
               { label: '📰 Articles', to: '/docs/resources/articles' },
               { label: '📚 Learning', to: '/docs/resources/learning' },
               { label: 'AI Learning Journeys: A, B, C', to: '/docs/ai-engineering/overview' },
+              { label: 'Finance & FinTech Learning Paths', to: '/docs/fintech-finance/overview' },
               { label: '🛡️ AI Security Professional (9 months)', to: '/docs/learning-plan/overview' },
               { label: '🏗️ AI Solution Architect — Responsible AI (26 sem)', to: '/docs/learning-plan-v4/overview' },
               { label: '🧠 Executive AI Leadership Plan', to: '/docs/executive-ai-leadership/overview' },

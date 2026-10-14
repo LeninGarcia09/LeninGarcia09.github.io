@@ -2,6 +2,10 @@
   "item.label.AI Learning Journeys: A, B, C": {
     "message": "Rutas de IA: A, B, C"
   },
+  "item.label.Finance & FinTech Learning Paths": {
+    "message": "Rutas de Finanzas y FinTech",
+    "description": "Navbar item with label Finance & FinTech Learning Paths"
+  },
   "title": {
     "message": "Responsible AI Architect",
     "description": "The title in the navbar"

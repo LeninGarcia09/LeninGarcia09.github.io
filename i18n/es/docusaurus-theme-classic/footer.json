@@ -2,6 +2,10 @@
   "link.item.label.AI Learning Journeys: A, B, C": {
     "message": "Rutas de IA: A, B, C"
   },
+  "link.item.label.Finance & FinTech Learning Paths": {
+    "message": "Rutas de Finanzas y FinTech",
+    "description": "The label of footer link with label=Finance & FinTech Learning Paths linking to /docs/fintech-finance/overview"
+  },
   "link.title.Skill Tracks": {
     "message": "Rutas de Habilidades",
     "description": "The title of the footer links column with title=Skill Tracks in the footer"
